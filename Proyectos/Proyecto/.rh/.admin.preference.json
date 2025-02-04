@@ -1,5 +1,10 @@
 {
   "recent-files::internal:document": [{
+    "title": "bienvenido",
+    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/bienvenido.htm",
+    "pinned": false,
+    "time": "Feb 4, 5:02 PM"
+  }, {
     "title": "Responsive HTML",
     "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/publish/presets/Responsive HTML.preset",
     "pinned": false,
@@ -119,11 +124,6 @@
     "path": "C:/Productos LEN RH2022/BAS CS/Proyecto/contents/BASCSHTML/tabla__Servicios.htm",
     "pinned": false,
     "time": "Jan 9, 9:54 AM"
-  }, {
-    "title": "consulta_de_comprobantes",
-    "path": "C:/Productos LEN RH2022/BAS CS/Proyecto/contents/BASCSHTML/consulta_de_comprobantes.htm",
-    "pinned": false,
-    "time": "Jan 9, 9:52 AM"
   }],
   "generate.outputs": {
     "C:/Productos LES RH2022/Bascshelp_test/publish/presets/Test2.preset": {
@@ -165,7 +165,7 @@
     "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/publish/presets/Responsive HTML.preset": {
       "exists": true,
       "path": "C:/Productos LEN RH2022/BASCS/Salidas/index.htm",
-      "time": "2025-01-28T12:18:46-03:00",
+      "time": "2025-02-04T17:05:21-03:00",
       "logFile": "C:/Users/admin/AppData/Local/Temp/RHTMP/Responsive HTML.ehtml"
     }
   },
