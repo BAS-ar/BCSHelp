@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <section name="PDF">
+    <element name="TableOfContents" value="Contenido"></element>
+    <element name="TitlePageFileName" value="Capítulo__Página_Título.doc"></element>
+    <element name="CrossReferencePrefix" value="Consulte"></element>
+    <element name="GlossaryHeadingStyleName" value="Encabezado de glosario"></element>
+    <element name="GlossaryTermStyleName" value="Término de glosario"></element>
+    <element name="GlossaryDefinitionStyleName" value="Definición de glosario"></element>
+    <element name="TitlePageTitleStyleName" value="Título de la página de título"></element>
+    <element name="TocPageTitleStyleName" value="Título de la página Contenido"></element>
+    <element name="Search" value="Búsqueda"></element>
+  </section>
+  <section name="ResponsiveHelp">
+    <element name="Search" value="Búsqueda"></element>
+    <element name="HomeButton" value="Inicio"></element>
+    <element name="SearchPageTitle" value="Resultados de búsqueda"></element>
+    <element name="JS_alert_InvalidExpression_1" value="La cadena de búsqueda que ha escrito no es válida"></element>
+    <element name="IndexFilterKewords" value="Encontrar palabra clave"></element>
+    <element name="GlossaryFilterTerms" value="Encontrar término"></element>
+    <element name="ShowAll" value="Mostrar todo"></element>
+    <element name="ShowHide" value="Mostrar/Ocultar"></element>
+    <element name="IeCompatibilityErrorMsg" value="Esta página no se puede ver en Internet Explorer 8 o versiones anteriores."></element>
+    <element name="NoScriptErrorMsg" value="Active la compatibilidad con JavaScript en el explorador para ver esta página."></element>
+    <element name="EnableAndSearch" value="Mostrar resultados que incluyan todas las palabras de búsqueda"></element>
+    <element name="HighlightSearchResults" value="Resaltar resultados de búsqueda"></element>
+    <element name="Filter" value="Filtrar"></element>
+    <element name="NavTip" value="Menú"></element>
+    <element name="Copyright" value="Versión 4.6.0 (actualizado hasta FX047 inclusive) Vigencia: 31-07-2024"></element>
+    <element name="unsetAsFavorite" value="Quitar de favoritos"></element>
+    <element name="nofavoritesFound" value="No ha marcado ninguna página como favorita."></element>
+    <element name="SearchButtonTitle" value="Buscar"></element>
+    <element name="FilterIntro" value="Seleccione filtro(s):"></element>
+  </section>
+</configuration>

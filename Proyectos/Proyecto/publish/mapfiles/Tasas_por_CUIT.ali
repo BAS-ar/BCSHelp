@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aliaslist version="1.0">
+  <alias name="Tasas_por_CUIT" value="231501"></alias>
+  <alias name="Tablas:_Tasas_por_CUIT" value="231502" link="../../contents/BASCSHTML/tabla__Tasas_por_CUIT.htm"></alias>
+  <alias name="Tabla:_Tasas_por_CUIT" value="231503"></alias>
+</aliaslist>

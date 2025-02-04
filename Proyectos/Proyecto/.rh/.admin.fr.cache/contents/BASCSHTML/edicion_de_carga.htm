@@ -1,0 +1,113 @@
+
+  Edición de carga
+  Mediante esta tarea, es posible efectuar modificaciones a las cargas generadas.
+  Se pueden agregar comprobantes a una carga, cambiar la carga asignada a los comprobantes o eliminar comprobantes de una carga.
+  Se deben indicar el lote, fecha de lote y número de carga que se desea editar.
+  En ese momento se exhibe una tabla con todos los comprobantes que integran la carga, y se muestran totales generales de destinatarios (clientes , agentes o depósitos), bultos, peso, volumen, cantidad de unidades e importes de la carga.
+  Los datos a ingresar para la edición de carga son:
+  
+   Lote
+  
+     Tipo
+    Código de lote correspondiente a las
+      facturas automáticas cuya carga se desea editar.
+    Si se desea editar cargas de facturas
+      que no provienen del cierre de un lote de facturación automática,
+      se debe dejar en blanco este campo.
+     Fecha
+    Fecha del lote correspondiente a las
+      facturas automáticas cuya carga se desea editar.
+    Si se desea editar cargas de facturas
+      que no provienen del cierre de un lote de facturación automática,
+      se debe indicar aquí la fecha de los comprobantes de venta que componen
+      dichas cargas.
+  
+   Carga
+  
+    Número de carga que se desea editar.
+    Al indicar el número de carga se exhibe
+      una lista conteniendo todos los comprobantes que integran dicha carga
+      y los totales de destinatarios, bultos, peso, volumen e importes correspondientes.
+  
+   Buscar
+  
+    Mediante este botón es posible la búsqueda
+      y selección de comprobantes de un lote y carga determinados.
+    Al seleccionar comprobantes con este botón
+      los mismos se agregan en la tabla de comprobantes exhibida en la pantalla
+      y pasan a integrar la carga que se está editando.
+  
+   Tabla de Comprobantes
+  
+    En esta tabla se exhiben, uno a uno, los
+      comprobantes de venta correspondientes al lote, fecha y carga indicados.
+    Se muestra para cada comprobante, el destino
+      (cliente , agente
+      o depósito titular), el
+      tipo y número de comprobante, la cantidad de bultos asociada y el
+      importe.
+    A medida que se agregan o eliminan comprobantes
+      en esta tabla, se van modificando automáticamente los totales generales
+      de destinatarios, bultos e importes de la carga indicada.
+    Fecha
+    Fecha del comprobante de ventas que
+      se exhibe en la línea de la tabla.
+    Tipo
+    Tipo  del comprobante de ventas
+      que se exhibe en la línea de la tabla.
+    Número
+    Prefijo y número del comprobante de
+      ventas que se exhibe en la línea de la tabla. Se dispone de un enlace
+      a la consulta correspondiente.
+    Destino
+    Código del cliente
+      , agente o depósito
+      titular del comprobante de ventas que se exhibe en la línea de la
+      tabla.
+    Posicionando el cursor en esta columna
+      se exhibe la descripción completa del destino (generalmente aparece
+      cortada debido al ancho por defecto de la misma).
+    En este dato se ofrece un enlace a
+      la consulta correspondiente.
+    Deposito
+    Corresponde al depósito del cual sale
+      la mercadería. Se ofrece un enlace a la consulta correspondiente.
+    Bultos
+    Cantidad de bultos asociada al comprobante
+      de ventas cuyo número se exhibe en la columna anterior.
+    Si el comprobante es una nota de crédito
+      se ofrece grisado y en letra cursiva. En este caso el dato no suma
+      al total de la columna.
+    Peso
+    Peso total de la mercadería entregada
+      con el comprobante de ventas.
+    Si el comprobante es una nota de crédito
+      se ofrece grisado y en letra cursiva. En este caso el dato no suma
+      al total de la columna.
+    Volumen
+    Volumen total de la mercadería entregada
+      con el comprobante de ventas.
+    Si el comprobante es una nota de crédito
+      se ofrece grisado y en letra cursiva. En este caso el dato no suma
+      al total de la columna.
+    Cantidad
+    Cantidad total de unidades entregadas
+      con el comprobante de ventas.
+    Si el comprobante es una nota de crédito
+      se ofrece grisado y en letra cursiva. En este caso el dato no suma
+      al total de la columna.
+    Importe
+    Importe del comprobante de ventas
+      que se exhibe en la línea de la tabla.
+  
+  
+  
+    //<![CDATA[
+    if (typeof(TextPopupInit) != 'function') TextPopupInit = new Function();
+    TextPopupInit('a1', 'POPUP706986467');
+    TextPopupInit('a2', 'POPUP706988366');
+    TextPopupInit('a3', 'POPUP706953579');
+    TextPopupInit('a4', 'POPUP706951575');
+    //]]>
+  
+

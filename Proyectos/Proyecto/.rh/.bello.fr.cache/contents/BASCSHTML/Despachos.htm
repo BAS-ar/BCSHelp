@@ -1,0 +1,112 @@
+
+
+Despacho de importación
+Esta tarea permite incorporar al sistema la información 
+ asociada a los despachos que amparan el ingreso y comercialización de 
+ la mercadería importada.
+Luego, al registrar comprobantes de ingreso de mercadería, 
+ se podrá hacer referencia a los despachos de importación que se hayan 
+ definido mediante esta tarea de modo de asociar, a los bienes 
+ que ingresan, el número de despacho al cual corresponden.
+Una vez ingresados al sistema, los bienes y las unidades 
+ que corresponden a cada despacho, el sistema administra automáticamente 
+ el stock de cada uno de los despachos definidos.
+El stock de los despachos se actualiza, en forma automática, 
+ desde el de fecha más antigua avanzando hacia los de fecha más reciente. 
+ Esto significa que las unidades que egresan de un determinado bien, se 
+ descuentan del despacho más antiguo que lo incluye y que posee stock disponible. 
+ Si la cantidad existente en el despacho no es suficiente para cubrir el 
+ egreso, éste se completa con el despacho siguiente y así, sucesivamente, 
+ hasta cubrir la cantidad total de unidades que egresan.
+Del mismo modo, el sistema administra, en forma automática, 
+ el reingreso de mercadería importada, originado, por ejemplo, en las devoluciones 
+ de clientes. En ese caso se actualiza 
+ el stock del despacho de fecha más reciente asociado al bien que ingresa; 
+ si las unidades que ingresan exceden la cantidad original de dicho despacho, 
+ se actualiza el de fecha inmediata anterior y así, sucesivamente, hasta 
+ cubrir la cantidad total de unidades que ingresan.
+Se prevén informes que permiten consultar el stock disponible 
+ de cada despacho definido en el sistema, como así también, las cantidades 
+ originales del mismo y las que ya se han facturado.
+Del mismo modo, se podrá consultar, para cada ítem, 
+ los despachos mediante los cuales se produjo su ingreso y, para cada uno 
+ de ellos, la cantidad ingresada, la facturada y la que aún se encuentra 
+ disponible.
+En la definición de un despacho se registran solamente 
+ los datos generales del mismo. Luego, cuando se registre el comprobante 
+ de ingreso correspondiente (factura o remito), se informan los ítems, 
+ las cantidades que conforman el envío y se referencia el código de un 
+ despacho que debe haberse definido previamente mediante esta tarea.
+ 
+ 
+ Despacho
+
+	Código identificatorio del despacho.
+	Al registrar (mediante factura o remito) 
+	 el ingreso de la mercadería correspondiente a un despacho, éste debe 
+	 invocarse mediante este dato.
+	Luego, cuando se produzca el egreso de 
+	 la mercadería, el código de despacho se imprimirá acompañando a los 
+	 ítems, en los comprobantes mediante los cuales éstos egresan (facturas 
+	 y remitos).
+ 
+ Fecha
+
+	Fecha correspondiente al despacho.
+ 
+ Aduana
+
+	Aduana por la que ingresa la mercadería 
+	 asociada al despacho.
+	Este dato se incluye en los informes relativos 
+	 al despacho y, si se desea, puede imprimirse en los comprobantes mediante 
+	 los cuales egresan los ítems correspondientes al despacho.
+ 
+ País de Origen
+
+	País del cual proviene la mercadería.
+	Al igual que el campo anterior, este dato 
+	 se incluye en los informes y, si se desea, en los comprobantes de 
+	 egreso asociados a los ítems correspondientes al despacho.
+ 
+ Observaciones
+
+	Texto asociado al despacho.
+	Se exhibe junto a él en todos los informes 
+	 que provee el sistema.
+ Estampillas 
+
+	Posibilidad de ingresar en forma manual, 
+	 la numeración de las estampillas de importación asociadas al despacho 
+	 en cuestión.
+	La numeración ingresada en el campo desde 
+	 debe ser menor a la numeración ingresada en el campo hasta.
+ 
+ Garantía 
+
+	Si 
+	 el Despacho tiene asociada una garantía, es posible dejar constancia 
+	 de la misma en este apartado.
+	La carga de 
+	 esta información no es obligatoria, y puede realizarse en una instancia 
+	 posterior al alta del despacho.
+ 
+ Tipo
+
+	Permite 
+	 identificar el tipo de Garantía asociada al Despacho. Pudiendo ser:
+	
+		Efectivo. 
+		 Se habilita una casilla para indicar el importe de la misma.
+		Caución. 
+		 En caso de seleccionar esta opción, se habilitan casilleros para 
+		 ingresar los datos relacionados a la Póliza (fecha de emisión, 
+		 Compañía emisora, número, fecha de vencimiento e importe. La fecha 
+		 de vencimiento debe ser igual o mayor a la fecha de emisión de 
+		 la póliza).
+		Mixta. 
+		 En caso de seleccionar esta opción, se habilitarán ambas posibilidades.
+	
+
+
+

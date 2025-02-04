@@ -1,0 +1,376 @@
+
+
+Stock físico
+Este informe permite ver el detalle de las cantidades 
+ de unidades en stock de los ítems con los que se trabaja.
+Pueden seleccionarse para imprimir rangos de rubros 
+ , ítems y depósitos y puede emitirse el listado hasta una fecha determinada 
+ y con diferentes ordenamientos.
+Para los ítems que trabajan con doble unidad de medida 
+ se pueden ver las existencias en ambas unidades.
+Para los ítems que trabajan con medidas y colores pueden 
+ verse las existencias consolidando medidas y/o colores, detallando las 
+ existencias por cada color y/o medida posible, o puede emitirse el listado 
+ en forma tabular. Esta última opción muestra en la línea del listado correspondiente 
+ a cada ítem las existencias para las diferentes medidas del mismo, una 
+ a continuación de la otra en forma de tabla.
+Cuando el listado se emita detallando depósitos y colores, 
+ y las medidas se expongan en forma tabular se exhibirá, para cada código 
+ de ítem, un total por cada columna de medida.
+Para los ítems que trabajan con partidas o despachos 
+ pueden verse las existencias detalladas por cada partida o por cada despacho. 
+ Puede, además, solicitarse que sólo se incluyan los ítems con alguna de 
+ esas características.
+Las existencias pueden emitirse detallando por depósito 
+ , es decir, mostrando para cada depósito el detalle de las existencias 
+ de los ítems del mismo, y los totales para cada depósito.
+También podrá solicitarse la inclusión de la mercadería 
+ en tránsito, es decir, aquella que egresó de un depósito con destino a 
+ otro depósito.
+En este listado se incluyen movimientos pertenecientes 
+ a los lotes de generación automática. Se indicarán con una L junto a la 
+ cantidad si la existencia del ítem incluye movimientos correspondientes 
+ a un lote, y se detallará en el pie de página que incluye valores del 
+ lote.
+Pueden incluirse en el listado todos los ítems o pueden 
+ seleccionarse los productos a listar por código de ítem, por código de 
+ selección o por atributos y valores de atributos de los ítems.
+Es posible, además, incluir en la impresión del informe 
+ una carátula en la que se detallan 
+ todas las opciones seleccionadas por el usuario al solicitarlo.
+Para emitir el listado primero se ingresan los datos 
+ en las distintas fichas contenidas en la tarea, de manera tal de filtrar 
+ la información de acuerdo a las necesidades. Luego se debe presionar el 
+ ícono (botón) de la barra de herramientas superior que corresponda al 
+ tipo de emisión requerida. El uso de estos botones se detalla en el link 
+ Emisión disponible en un párrafo 
+ posterior.
+Al momento de imprimir un informe (tanto por pantalla 
+ como por papel) se puede utilizar el formato standard del sistema, o indicar 
+ un formato personalizado de impresión. 
+ Este último se indica en el campo homónimo que, en general, se encuentra 
+ en la zona inferior de la primer solapa y su funcionalidad está detallada 
+ a continuación en el link Emisión.
+Los datos solicitados para la emisión del listado son 
+ los siguientes:
+ 
+ 
+ Ficha Rangos
+
+	 Rubro
+	Código de rubro cuyos ítems se desean 
+	 incluir en el listado.
+	Puede seleccionarse un rubro en particular 
+	 o un grupo de rubros. Si este dato es dejado en blanco, se incluirán 
+	 todos los rubros en el informe.
+	 Hasta 
+	 fecha
+	Fecha hasta la cual se desean considerar 
+	 las existencias de los ítems.
+	Si no se indica ninguna fecha, se 
+	 consideran las existencias de los ítems hasta el final.
+	Si se indica una fecha no se tendrán 
+	 en cuenta para el cálculo de las existencias los ingresos y egresos 
+	 de materiales registrados en una fecha posterior a esta.
+	 Depósito/Planta
+	Código de depósito 
+	 cuyas existencias desean incluirse en el informe.
+	Puede seleccionarse un depósito en 
+	 particular o un grupo de depósitos. Si este dato es dejado en blanco, 
+	 se incluirán todos los depósitos en el informe.
+	Cuando se indique un único depósito, 
+	 o se detallen depósitos, los valores siempre corresponden a mínimo 
+	 y al stock ideal indicados en la Ficha Depósitos de la Tabla de Bienes, 
+	 caso contrario al mínimo y/o máximo que se indica en la solapa Stock.
+	 Origen
+	Se debe tildar si el stock a listar 
+	 corresponde a depósitos, plantas o ambos.
+	Depósito
+	Planta
+	 Tipo
+	Propio
+	de 
+	 terceros
+	Los depósitos de terceros puede ser 
+	 plantas de producción o depósitos involucrados en remitos cárnicos.
+ Emisión
+ FCC 
+ (Fecha de certeza contable)
+ 
+ Ficha Opciones
+
+	 Stock 
+	 físico en cero
+	Indicación de si se desean incluir 
+	 o no en el listado los ítems con existencia en cero.
+	 Incluye 
+	 stock en tránsito
+	Indicación de si se desea incluir 
+	 o no en el listado, para cada ítem, la cantidad de mercadería "en 
+	 tránsito", es decir, la mercadería no recibida aún por el depósito 
+	 cuyo stock se lista. Este tipo de stock se genera en operaciones de 
+	 transferencia de mercadería entre depósitos.
+	Las transferencias de mercadería se 
+	 registran mediante un remito que refleja el egreso de un depósito 
+	 determinado con destino a otro depósito y un remito de ingreso que 
+	 refleja la recepción de la mercadería transferida, en el depósito 
+	 de destino. Durante el lapso de tiempo que media entre la salida de 
+	 la mercadería del depósito de origen y su ingreso en el depósito indicado 
+	 como destino, la misma permanece en tránsito.
+	Los ítems con unidades en tránsito 
+	 se exhiben con una letra T 
+	 a la izquierda de la cantidad, indicando que la misma incluye unidades 
+	 aún no ingresadas pero que están en tránsito.
+	A su vez, al indicar esta opción es 
+	 posible especificar que el stock en tránsito se sume al stock físico 
+	 existente en el depósito de destino o, de lo contrario, se detalle 
+	 en forma separada. Para ellos se deberá marcar la opción correspondiente. 
+	 A saber:
+	 
+	 Suma al depósito de destino
+	Si se marca esta opción se adicionará 
+	 a la línea de cada ítem para el que exista stock en tránsito, una 
+	 letra T indicando que la cantidad 
+	 que se exhibe en dicha línea incluye unidades en tránsito.
+	 
+	 Detalla aparte el stock no físico
+	Si en cambio, se marca la opción 
+	 Detalla aparte el stock no físico, se exhibirán sin desglosar por 
+	 depósitos, los ítems y las cantidades correspondientes bajo el rótulo 
+	 Stock en tránsito, a continuación de la información correspondiente 
+	 a cada uno de los depósitos incluidos en el listado.
+	Ambas opciones se habilitan cuando 
+	 se activa el campo Incluye stock en tránsito. No obstante, la segunda 
+	 de ellas (Detalla aparte stock no 
+	 físico) sólo se habilita si el informe se solicita con Depósitos 
+	 Detallados.
+	 Incluye 
+	 bienes propios en poder de terceros
+	Indicación de si se desean incluir 
+	 en el listado ítems correspondientes a egresos de mercadería pendientes. 
+	 Por ejemplo aquella mercadería que se ha otorgado en calidad de préstamo. 
+	 Esta opción se encontrará disponible siempre y cuando no se solicite 
+	 el detalle de las medidas en forma tabular.
+	En este caso el informe luego de incluir 
+	 las existencias de los ítems que correspondan, según las opciones 
+	 elegidas, exhibe los ítems en poder de terceros detallados por concepto 
+	 pero sin desglosar por depósito.
+	 No incluir 
+	 stock vendido no entregado
+	Este stock 
+	 corresponde al stock vendido que aún no fue entregado o que fue entregado 
+	 en una fecha posterior al hasta fecha.
+	El objetivo 
+	 es tener la posibilidad de restar o no de la cantidad en stock, las 
+	 unidades que ya están vendidas pero todavía no se entregaron. Al tildarlo 
+	 se indica que se desea restar al stock dichas cantidades. Por defecto 
+	 no está tildado, por lo que estos informes consideran el stock vendido 
+	 no entregado como si hubiera sido entregado.
+	El cálculo 
+	 del valor del stock vendido no entregado se obtiene de las líneas 
+	 de las facturas de venta pendientes de entrega.
+	 Sólo 
+	 ítems por debajo del mínimo
+	Indicación de si se desean incluir 
+	 en el listado sólo los ítems cuyas existencias se encuentran por debajo 
+	 de la existencia mínima indicada en la definición de cada ítem.
+	 Sólo 
+	 ítems que superan el máximo
+	Indicación de si se desean incluir 
+	 en el listado sólo los ítems cuyas existencias superan la existencia 
+	 máxima indicada en la definición de cada ítem.
+	 Normalizado 
+	 a contenedor default
+	Si se selecciona esta opción, para 
+	 los ítems contenedores, se mostrará la cantidad expresada en unidades 
+	 del contenedor default de cada ítem, es decir, se divide la cantidad 
+	 de unidades del ítem por la cantidad de unidades del ítem que hay 
+	 en el contenedor default.
+	Esta opción se desactivará en caso 
+	 de emitir el listado detallando medidas en forma tabular.
+	 Detallar 
+	 ubicaciones
+	Este campo sólo se habilita cuando 
+	 el informe se solicita detallando depósitos y las medidas no se exhiban 
+	 en forma tabular.
+	Cabe aclarar que, cuando se indique 
+	 detallar ubicaciones para un depósito solo, el sistema verificará 
+	 que éste administre múltiples ubicaciones por ítem, pero cuando se 
+	 indique un conjunto de depósitos no hará verificación alguna.
+	Cuando se detallen ubicaciones, para 
+	 aquellos depósitos que administren múltiples ubicaciones por ítem, 
+	 se considerarán las ubicaciones indicadas a través de los movimientos 
+	 por depósito que correspondan a las existencias generales, es decir, 
+	 no a fecha, en la primera unidad y segunda unidad de medida.
+	Debe tenerse en cuenta que sólo se 
+	 detallarán aquellas que presenten al menos una de las existencias 
+	 generales distinta de cero. Esta información se detallará en letra 
+	 itálica, y los valores correspondientes a las existencias generales 
+	 no estarán incluidos en los totales.
+	 Depósitos
+	Indicación de la forma en que se desean 
+	 visualizar las existencias por depósito 
+	 .
+	Las opciones son:
+	 
+	 Consolidados
+	Si se seleccionan depósitos Consolidados 
+	 se listarán las existencias de los ítems de todos los depósitos sumadas, 
+	 es decir, se mostrará para cada ítem su existencia total.
+	 
+	 Detallados
+	Si se seleccionan depósitos Detallados se listarán las existencias 
+	 de los ítems para cada depósito, es decir, se mostrará cada depósito 
+	 con el detalle de las existencias de los ítems del mismo. Al finalizar 
+	 el detalle de cada depósito se imprimen los totales de unidades del 
+	 mismo.
+	En ambos casos, sólo se tendrán en 
+	 cuenta los depósitos del rango seleccionado.
+	 Ordenamiento
+	Indicación del ordenamiento con el 
+	 que se desea emitir el listado.
+	Las opciones son:
+	 
+	 Ítem
+	Si se selecciona ordenamiento 
+	 Ítem se imprimirán las existencias 
+	 ordenadas por código de ítems.
+	 
+	 Rubro
+	Si se selecciona ordenamiento 
+	 Rubro se imprimirán las existencias 
+	 ordenadas por código de rubro . Se 
+	 mostrará cada rubro del rango seleccionado con el detalle de las existencias 
+	 de los ítems de ese rubro y se imprimen totales de unidades por rubro.
+	En ambos casos, se permite además 
+	 efectuar el ordenamiento por:
+	 
+	 Código
+	 
+	 Descripción.
+	 Nivel 
+	 de detalle
+	Indicación del nivel de detalle que 
+	 se desea otorgar al informe.
+	Las opciones son:
+	 
+	 Ítem
+	Si se selecciona la opción Ítem 
+	 se mostrarán las existencias totales de cada ítem, sin tener en cuenta 
+	 la partida o el despacho 
+	 asociado a cada unidad.
+	 
+	 Partida
+	Si se selecciona la opción Partida 
+	 se mostrarán las existencias de cada ítem detallando las cantidades 
+	 por partida especificando el código y la descripción correspondiente 
+	 a cada partida.
+	 
+	 Sólo ítems con partidas
+	Si se selecciona Partida se activa 
+	 este campo y es posible incluir sólo los ítems que trabajan con partidas.
+	 
+	 Despacho
+	Si se selecciona la opción Despacho 
+	 se mostrarán las existencias de cada ítem detallando las cantidades 
+	 por despacho.
+	 
+	 Sólo ítems con despacho
+	Si se selecciona Despacho se activa 
+	 este campo y es posible incluir sólo los ítems que trabajan con despachos.
+	 
+	 Número de serie
+	Si se selecciona la opción Número 
+	 de serie se mostrarán las existencias de cada ítem detallando las 
+	 cantidades por número de serie.
+	Este nivel de detalle sólo está 
+	 habilitado si se consolidan colores y medidas y si no se incluyen 
+	 los bienes los bienes en poder de terceros. Sólo se incluyen ítems 
+	 con existencia distinta de cero.
+	Para los ítems que manejan números 
+	 de serie en cantidades unitarias, los números de serie se concatenan 
+	 usando como delimitador el separador para datos complementarios indicado 
+	 en Parámetros Datos Generales; 
+	 para los que no manejan cantidades unitarias se detallarán uno debajo 
+	 del otro.
+	 
+	 Sólo ítems con nros de serie
+	Si se selecciona Nro de serie 
+	 se activa este campo y es posible incluir sólo los ítems que trabajan 
+	 con números de serie.
+	Incluir 
+	 observaciones
+	Si se selecciona Nro de serie 
+	 se activa este campo y es posible incluir observaciones de los números 
+	 de serie que se detallen.
+	Si no se incluyen, para los ítems 
+	 que tienen series unitarias, el informe muestra los números de serie 
+	 uno al lado del otro. Si se incluyen, se muestra un número de serie 
+	 por línea y al lado de dicho campo las observaciones correspondientes.
+	 Colores
+	Indicación de la forma en que se desean 
+	 visualizar en el listado los ítems que trabajan con colores. Las opciones 
+	 son:
+	 
+	 Consolidados
+	Si se selecciona colores Consolidados se muestran las existencias 
+	 totales de cada ítem, sin tener en cuenta el color de cada unidad.
+	 
+	 Detallados
+	Si se selecciona colores Detallados se muestran las existencias 
+	 de cada ítem detallando por código de color.
+	 Ordenar 
+	 por Despacho / Partida
+	Este campo se habilita en caso que 
+	 se haya indicado como Nivel de detalle la opción Despacho o la opción 
+	 partida.
+	En caso que se tilde, para cada ítem 
+	 se detallarán los despachos/ partidas asociados.
+	Para cada despacho/ partida, en caso 
+	 que se detallen medidas y/o colores, se detallarán las medidas y colores 
+	 que intervienen. En este caso, el informe presentará totales por despacho/ 
+	 partida cuando detalle medidas y/o colores.
+	Cabe observar que cuando se ordene 
+	 por despacho/ partida no se podrán detallar ubicaciones.
+	 Medidas
+	Indicación de la forma en que se desean 
+	 visualizar en el listado los ítems que trabajan con medidas.
+	Las opciones son:
+	 
+	 Consolidadas
+	Si se selecciona medidas Consolidadas se muestran las existencias 
+	 totales de cada ítem, sin tener en cuenta la medida de cada unidad.
+	 
+	 Detalladas
+	Si se selecciona medidas Detalladas se muestran las existencias 
+	 de cada ítem detallando por código de medida.
+	 
+	 Tabular
+	Si se selecciona medidas Tabular se muestran las existencias 
+	 de cada ítem para cada medida, una a continuación de la otra en forma 
+	 de tabla. Este listado presenta un total general de cantidades al 
+	 final, pero este total no distingue ni colores ni medidas
+	 
+	 Títulos
+	Si se tilda la opción Tabular 
+	 se habilita el campo Títulos 
+	 donde es posible indicar con que tabla de títulos se filtrará el informe.
+	Si se indica una tabla de títulos, 
+	 para cada ítem, si por definición su tabla de medidas está incluida 
+	 en alguna de las filas de la tabla de títulos indicada y la medida 
+	 aparece entre las que se definieron para esa fila en la tabla de títulos, 
+	 la cantidad se encolumnará bajo dicha medida. Caso contrario, se incluirá 
+	 la cantidad en la columna que corresponde a cantidades cuya medida 
+	 no está en la tabla de títulos.
+	 
+	 Ordenar por tabla
+	Indicación de si se desea que 
+	 la información se exhiba ordenada primero por tabla de medidas, y 
+	 luego por ítem o rubro, según sea el ordenamiento que se haya seleccionado.
+	Este campo solo se habilita en 
+	 caso de haber seleccionado la opción Tabular.
+ 
+ Ficha Productos
+
+
+

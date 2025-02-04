@@ -1,0 +1,67 @@
+
+
+Impresión Partes de producción
+Permite imprimir los partes de producción registrados 
+ en el sistema.
+ 
+ 
+ Desde número
+
+	Número del comprobante desde el que se 
+	 desea imprimir.
+	Deben completarse el prefijo y el número. 
+	 Si el número no se completa, se realizará la impresión desde el primer 
+	 comprobante de venta existente con el prefijo indicado.
+	El prefijo y el número pueden ser completados 
+	 manualmente o seleccionarse de la lista de comprobantes ingresados 
+	 que provee el sistema en este punto para permitir la selección.
+ 
+ Hasta número
+
+	Número del comprobante hasta el que se 
+	 desea imprimir.
+	Deben completarse el prefijo y el número. 
+	 Si el número no se completa, se realizará la impresión hasta el último 
+	 comprobante de venta existente con el prefijo indicado.
+	El prefijo y el número pueden ser completados 
+	 manualmente o seleccionarse de la lista de comprobantes ingresados 
+	 que provee el sistema en este punto para permitir la selección.
+	Si se indica desde y hasta un mismo número 
+	 de comprobante, se realizará la emisión de ese comprobante de venta 
+	 en particular.
+ 
+ Sólo los comprobantes no impresos
+
+	Indica si se desean emitir solamente los 
+	 comprobantes que aún no han sido emitidos o todos los que se incluyen 
+	 en el rango de números indicado.
+	 
+ 
+ Período a considerar
+ 
+ Para tener en cuenta
+
+	El ingreso de rango de fechas 
+	 no es obligatorio.
+	El 
+	 sistema al momento de imprimir verifica si para el rango de números 
+	 indicado hay comprobantes repetidos en más de una vigencia, avisando 
+	 al usuario de tal eventualidad sugiriendo indicar un rango de fechas 
+	 para evitar las repeticiones. Además, se consulta al usuario si desea 
+	 seguir con la impresión o no.
+	En 
+	 caso de continuar con la impresión el sistema imprimirá todos los 
+	 comprobantes en el rango indicado teniendo en cuenta el rango de fechas 
+	 indicado aunque haya números de comprobante repetidos, por lo que 
+	 un mismo número de comprobante podría imprimirse más de una vez para 
+	 diferentes vigencias de fechas.
+ 
+//<![CDATA[
+	if( typeof( TextPopupInit ) != 'function' ) TextPopupInit = new Function();
+	TextPopupInit('a1', 'POPUP749092534');
+	TextPopupInit('a2', 'POPUP749088355');
+	TextPopupInit('a3', 'POPUP749078039');
+	TextPopupInit('a4', 'POPUP749051032');
+//]]>
+
+

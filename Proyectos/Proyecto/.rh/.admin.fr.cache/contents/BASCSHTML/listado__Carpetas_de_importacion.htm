@@ -1,0 +1,189 @@
+
+
+Carpetas de Importación
+Este informe permite listar los datos asociados a las 
+ Carpetas de Importación (CI) 
+ registradas en el sistema.
+Se muestra para cada CI, despachante, país de origen, 
+ estado, las diferentes fechas, tipo de transporte, factor de precosteo 
+ de la CI, Incoterm, observaciones y luego el detalle de la orden de compra 
+ desglosada por ítems, indicando su descripción, cantidad original, importe, 
+ factor de precosteo de cada ítem, número de permiso de importación, y 
+ el costo total.
+Los datos solicitados para la emisión del listado son 
+ los siguientes:
+ 
+ 
+ Ficha Rangos
+
+	 Carpeta
+	Código correspondiente a la Carpeta 
+	 de Importación que se desea incluir en el listado.
+	Puede seleccionarse una CI en particular 
+	 o un grupo de ellas. Si este dato es dejado en blanco, se incluirán 
+	 en el informe, todos las CI existentes en el sistema.
+	 Despachante
+	Se debe indicar el Despachante de 
+	 Aduana (agente) que tiene a su cargo 
+	 la CI que se quiere consultar.
+	Es posible seleccionar un Despachante 
+	 de aduanas o un rango de ellos. En caso de dejar el campo en blanco, 
+	 el sistema listará todas las CI, independientemente tengan o no despachantes 
+	 de aduana asociados.
+	 Procedencia
+	País del cual proviene la mercadería.
+	 Estado
+	Determina el estado en el cual se 
+	 encuentra la CI, y por ende los bienes asociados a ella. Pudiendo 
+	 ser:
+	
+		En Aduana: La mercadería esta 
+		 en Aduana.
+		Cerrada: La carpeta esta cerrada.
+		En Depósito: la mercadería esta 
+		 en deposito.
+		Embarcado: la mercadería esta 
+		 en viaje.
+		Inicial: la carpeta esta en 
+		 estado inicial.
+		En operador Logístico: la mercadería 
+		 esta entregada al transporte internacional.
+		Producción: la mercadería solicitada 
+		 está en proceso de producción.
+	
+	 Salida
+	Fecha de salida de los bienes informado 
+	 en la CI a través de los eventos.
+	 Arribo
+	Fecha de arribo de los bienes informado 
+	 en la CI a través de los eventos.
+	 En Depósito
+	Fecha de ingreso de los bienes al 
+	 depósito, informado en la CI a través de los eventos.
+ 
+ Ficha Opciones
+
+	 Incluir
+	Permite incluir la información referente 
+	 a:
+	
+		Eventos. 
+		 Muestra todos los eventos incluidos en cada CI, detallado la información 
+		 o documento incluido. Los eventos se muestran ordenados por fecha.
+		Comprobantes 
+		 Asociados. Corresponde a comprobantes de compra, ingresos de mercadería 
+		 y revalúos asociados a la carpeta.
+		Ingresos. 
+		 Corresponde a los ingresos de mercadería asociados a las líneas 
+		 de órdenes de compra incluidas en la CI.
+		Gastos. 
+		 Incluye todos los comprobantes de compra que incluyen servicios 
+		 del tipo gastos de importación asociados a la CI. En caso de existir 
+		 algún gasto con método discrecional, se detalla la información 
+		 de los ítems incluidos con datos de la OC, el bien, descripción 
+		 e importe del mismo.
+	
+	 Valores
+	Permite listar la información según 
+	 las siguientes opciones:
+	
+		Sin 
+		 Valorizar.
+		Valorizado. 
+		 En este caso, se debe seleccionar la moneda, local o extranjera, 
+		 en la cual se expresará el costo. Si existieran comprobantes sin 
+		 valorizar, el programa emitirá una alerta de la situación. En 
+		 caso de aceptar la alerta, el sistema efectuará la valorización 
+		 de los movimientos pendiente.
+		Reexpresado 
+		 en la moneda de la orden de compra
+	
+ 
+ Ficha Proveedores
+ 
+ Ficha Ítems
+En esta ficha pueden indicarse diferentes 
+ filtros a aplicar a los ítems que se incluyen 
+ en el listado.
+ 
+ Ficha Gastos
+
+	En esta ficha pueden filtrarse los distintos 
+	 comprobantes de compra que incluyen servicios 
+	 del tipo de gastos de importación asociados a la CI, a ser incluidas 
+	 en el listado.
+	Pueden filtrarse los servicios por código, 
+	 por código de selección o por atributos 
+	 y valores de atributos.
+	 Gastos
+	Código del gasto 
+	 que se desea incluir en el informe.
+	Puede seleccionarse un gasto o servicio 
+	 en particular, o un grupo de ellos. Si este dato es dejado en blanco, 
+	 se incluirán todos los servicios asociados a las CI seleccionadas 
+	 en el informe.
+	 Código 
+	 de Selección
+	De acuerdo al código que se indique, 
+	 se considerará o no cada uno de los servicios del rango seleccionado, 
+	 según el código de selección que se haya asignado a cada uno de ellos.
+	Los servicios que se incluyen son 
+	 aquellos cuyo código de selección coincide con el ingresado. Se pueden 
+	 ingresar los caracteres ? 
+	 y * que cumplen la función 
+	 de comodines. El carácter ? 
+	 se utiliza para un único carácter y el * 
+	 para varios.
+	Si no se especifica ningún código 
+	 de selección, todos los servicios del rango solicitado intervendrán 
+	 en el listado.
+	 Tabla 
+	 de Atributos
+	Esta tabla permite informar los atributos asociados a los servicios 
+	 que se desean incluir en el listado con sus valores de atributo.
+	Atributo
+	Código de atributo 
+	 de los servicios que se desean incluir en el listado.
+	De acuerdo al atributo y al valor 
+	 de atributo que se indique se considerará o no cada uno de los servicios 
+	 del rango seleccionado, según los atributos y valores que se hayan 
+	 asignado a cada uno de ellos.
+	Si no se especifica ningún atributo, 
+	 todos los servicios del rango solicitado intervendrán en el listado.
+	Descripción
+	Descripción del atributo correspondiente 
+	 al código informado.
+	Valor
+	Valor del atributo 
+	 informado asociado a los servicios que se desean incluir en el informe.
+	Debe corresponder a un valor ya 
+	 definido en el sistema para el atributo indicado en el campo Código.
+	De acuerdo al atributo y al valor 
+	 de atributo que se indique se considerará o no cada uno de los servicios 
+	 del rango seleccionado, según los atributos y valores que se hayan 
+	 asignado a cada uno de ellos.
+	Si se indica un valor, se incluirán 
+	 en el listado los servicios que tengan asociados el valor del atributo 
+	 indicado.
+	Si no se especifica ningún valor 
+	 de atributo, todos los servicios del rango solicitado que tengan el 
+	 atributo indicado, intervendrán en el listado.
+	Descripción
+	Descripción del valor asociado 
+	 al atributo correspondiente al código informado.
+ 
+ En caso de 
+ la existencia de OC con explosión de colores y medidas, el código del 
+ bien que se lista es el código madre sin indicar el detalle de colores 
+ y medidas, y la cantidad se corresponde a la suma de todas las cantidades 
+ explotadas. Si el informe se emite seleccionando las opciones Valorizado 
+ o Reexpresado, se verá el costo de cada ítem de la OC siempre y cuando 
+ la CI se encuentre en el estado “cerrada”.
+//<![CDATA[
+	if( typeof( TextPopupInit ) != 'function' ) TextPopupInit = new Function();
+	TextPopupInit('a1', 'POPUP616357821');
+	TextPopupInit('a2', 'POPUP616371908');
+	TextPopupInit('a3', 'POPUP616387136');
+//]]>
+
+

@@ -1,0 +1,67 @@
+
+
+Impresión de guías
+Pueden imprimirse las guías seleccionándolas por un 
+ rango de números de comprobante de las mismas, o puede imprimirse una 
+ guía en particular.
+La cantidad de copias a imprimir de cada guía depende 
+ del talonario al cual pertenecen las 
+ guías que se imprimen. La impresora por la cual se emiten las guías y 
+ el formato de impresión de las mismas también vienen indicados en el talonario 
+ correspondiente.
+El formato de impresión está contenido en un archivo 
+ de extensión QRP que contiene 
+ los datos del comprobante que se deseen imprimir, la ubicación de los 
+ mismos en el formulario, la forma que tiene el encabezado, cuerpo y pie 
+ del formulario, etc.
+El sistema se entrega con un archivo denominado SPBFGU01.QRP que contiene el formato 
+ de impresión standard de las guías. Este archivo puede ser modificado 
+ por el usuario según las necesidades de la empresa.
+Los datos a ingresar para la emisión son:
+ 
+ 
+ Desde número
+
+	Número de comprobante de la guía desde 
+	 la que se desea imprimir.
+	Si este campo no se completa, se realizará 
+	 la impresión desde la primera guía existente.
+	Si se ingresa un número se deben completar 
+	 el prefijo y el número de la guía a partir de la cual se realizará 
+	 la emisión. El prefijo y el número pueden ser completados manualmente 
+	 o seleccionarse de la lista de comprobantes ingresados que provee 
+	 el sistema en este punto para permitir la selección.
+	El prefijo trae asociado el número de 
+	 talonario de las guías a imprimir.
+ 
+ Hasta número
+
+	Número de comprobante de la guía hasta 
+	 la que se desea imprimir.
+	Si este campo no se completa, se realizará 
+	 la impresión hasta la última guía existente.
+	Si se ingresa un número se deben completar 
+	 el prefijo y el número de la guía hasta la cual se realizará la emisión. 
+	 El prefijo y el número pueden ser completados manualmente o seleccionarse 
+	 de la lista de comprobantes ingresados que provee el sistema en este 
+	 punto para permitir la selección.
+	Si se indica desde y hasta un mismo número 
+	 de guía, se realizará la emisión de esa guía en particular.
+ 
+ Sólo los comprobantes no impresos
+
+	Indicación de si se desean emitir solamente 
+	 las guías que aún no han sido emitidas o todas las que se incluyen 
+	 en el rango de números indicado.
+	 
+ 
+ Período a considerar
+ 
+//<![CDATA[
+	if( typeof( TextPopupInit ) != 'function' ) TextPopupInit = new Function();
+	TextPopupInit('a1', 'POPUP657934874');
+	TextPopupInit('a2', 'POPUP657944044');
+	TextPopupInit('a3', 'POPUP657980078');
+//]]>
+
+

@@ -1,0 +1,387 @@
+{
+  "recent-files::internal:document": [{
+    "title": "Responsive HTML",
+    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/publish/presets/Responsive HTML.preset",
+    "pinned": false,
+    "time": "Jan 28, 12:14 PM"
+  }, {
+    "title": "tabla__Importacion_de_exenciones_impositivas",
+    "path": "C:/Productos LEN RH2022/BAS CS/Proyecto/contents/BASCSHTML/tabla__Importacion_de_exenciones_impositivas.htm",
+    "pinned": false,
+    "time": "Jan 17, 1:19 PM"
+  }, {
+    "title": "tabla__Importacion_de_porcentajes_para_Convenio_Multilateral",
+    "path": "C:/Productos LEN RH2022/BAS CS/Proyecto/contents/BASCSHTML/tabla__Importacion_de_porcentajes_para_Convenio_Multilateral.htm",
+    "pinned": false,
+    "time": "Jan 17, 1:13 PM"
+  }, {
+    "title": "tabla__Importacion_de_padrones",
+    "path": "C:/Productos LEN RH2022/BAS CS/Proyecto/contents/BASCSHTML/tabla__Importacion_de_padrones.htm",
+    "pinned": false,
+    "time": "Jan 17, 1:12 PM"
+  }, {
+    "title": "comprobantes_de_compra",
+    "path": "C:/Productos LEN RH2022/BAS CS/Proyecto/contents/BASCSHTML/comprobantes_de_compra.htm",
+    "pinned": false,
+    "time": "Jan 17, 1:08 PM"
+  }, {
+    "title": "comprobantes_de_venta",
+    "path": "C:/Productos LEN RH2022/BAS CS/Proyecto/contents/BASCSHTML/comprobantes_de_venta.htm",
+    "pinned": false,
+    "time": "Jan 17, 1:01 PM"
+  }, {
+    "title": "parametros__Datos_generales",
+    "path": "C:/Productos LEN RH2022/BAS CS/Proyecto/contents/BASCSHTML/parametros__Datos_generales.htm",
+    "pinned": false,
+    "time": "Jan 17, 12:59 PM"
+  }, {
+    "title": "parametros__Fiscalizacion_electronica",
+    "path": "C:/Productos LEN RH2022/BAS CS/Proyecto/contents/BASCSHTML/parametros__Fiscalizacion_electronica.htm",
+    "pinned": false,
+    "time": "Jan 16, 10:34 AM"
+  }, {
+    "title": "Bascshelp",
+    "path": "C:/Productos LEN RH2022/BAS CS/Proyecto/toc/Bascshelp.toc",
+    "pinned": false,
+    "time": "Jan 16, 10:34 AM"
+  }, {
+    "title": "bienvenido",
+    "path": "C:/Productos LEN RH2022/BAS CS/Proyecto/contents/BASCSHTML/bienvenido.htm",
+    "pinned": false,
+    "time": "Jan 16, 10:00 AM"
+  }, {
+    "title": "tabla__Empresas",
+    "path": "C:/Productos LEN RH2022/BAS CS/Proyecto/contents/BASCSHTML/tabla__Empresas.htm",
+    "pinned": false,
+    "time": "Jan 16, 9:54 AM"
+  }, {
+    "title": "bCS1361__Generacion_de_datos",
+    "path": "C:/Productos LEN RH2022/BAS CS/Proyecto/contents/BASCSHTML/bCS1361__Generacion_de_datos.htm",
+    "pinned": false,
+    "time": "Jan 16, 9:51 AM"
+  }, {
+    "title": "comprobantes_de_venta__Impresion",
+    "path": "C:/Productos LEN RH2022/BAS CS/Proyecto/contents/BASCSHTML/comprobantes_de_venta__Impresion.htm",
+    "pinned": false,
+    "time": "Jan 16, 9:46 AM"
+  }, {
+    "title": "bCSCITI__Exportacion_a_AFIP_DGI_CITI_Compras",
+    "path": "C:/Productos LEN RH2022/BAS CS/Proyecto/contents/BASCSHTML/bCSCITI__Exportacion_a_AFIP_DGI_CITI_Compras.htm",
+    "pinned": false,
+    "time": "Jan 16, 9:45 AM"
+  }, {
+    "title": "bCSARCIBA__Exportacion_a_SIAp_Arciba",
+    "path": "C:/Productos LEN RH2022/BAS CS/Proyecto/contents/BASCSHTML/bCSARCIBA__Exportacion_a_SIAp_Arciba.htm",
+    "pinned": false,
+    "time": "Jan 16, 9:44 AM"
+  }, {
+    "title": "bCSSICORE__Exportacion_a_SIAp_Sicore",
+    "path": "C:/Productos LEN RH2022/BAS CS/Proyecto/contents/BASCSHTML/bCSSICORE__Exportacion_a_SIAp_Sicore.htm",
+    "pinned": false,
+    "time": "Jan 16, 9:43 AM"
+  }, {
+    "title": "impresion_automatica_Consideraciones",
+    "path": "C:/Productos LEN RH2022/BAS CS/Proyecto/contents/BASCSHTML/impresion_automatica_Consideraciones.htm",
+    "pinned": false,
+    "time": "Jan 16, 9:41 AM"
+  }, {
+    "title": "remito_carnico",
+    "path": "C:/Productos LEN RH2022/BAS CS/Proyecto/contents/BASCSHTML/remito_carnico.htm",
+    "pinned": false,
+    "time": "Jan 16, 9:40 AM"
+  }, {
+    "title": "domicilios",
+    "path": "C:/Productos LEN RH2022/BAS CS/Proyecto/contents/BASCSHTML/domicilios.htm",
+    "pinned": false,
+    "time": "Jan 16, 9:37 AM"
+  }, {
+    "title": "fiscalizacion_manual",
+    "path": "C:/Productos LEN RH2022/BAS CS/Proyecto/contents/BASCSHTML/fiscalizacion_manual.htm",
+    "pinned": false,
+    "time": "Jan 16, 9:34 AM"
+  }, {
+    "title": "administrador_de_comprobantes_electronicos",
+    "path": "C:/Productos LEN RH2022/BAS CS/Proyecto/contents/BASCSHTML/administrador_de_comprobantes_electronicos.htm",
+    "pinned": false,
+    "time": "Jan 16, 9:30 AM"
+  }, {
+    "title": "tabla__Sucursales",
+    "path": "C:/Productos LEN RH2022/BAS CS/Proyecto/contents/BASCSHTML/tabla__Sucursales.htm",
+    "pinned": false,
+    "time": "Jan 9, 11:04 AM"
+  }, {
+    "title": "ordenes_de_Compra",
+    "path": "C:/Productos LEN RH2022/BAS CS/Proyecto/contents/BASCSHTML/ordenes_de_Compra.htm",
+    "pinned": false,
+    "time": "Jan 9, 10:56 AM"
+  }, {
+    "title": "tabla__Servicios",
+    "path": "C:/Productos LEN RH2022/BAS CS/Proyecto/contents/BASCSHTML/tabla__Servicios.htm",
+    "pinned": false,
+    "time": "Jan 9, 9:54 AM"
+  }, {
+    "title": "consulta_de_comprobantes",
+    "path": "C:/Productos LEN RH2022/BAS CS/Proyecto/contents/BASCSHTML/consulta_de_comprobantes.htm",
+    "pinned": false,
+    "time": "Jan 9, 9:52 AM"
+  }],
+  "generate.outputs": {
+    "C:/Productos LES RH2022/Bascshelp_test/publish/presets/Test2.preset": {
+      "exists": true,
+      "path": "C:/Users/admin/Documents/My RoboHelp Projects/outputs/Bascs/Test2/index.htm",
+      "time": "2024-07-23T18:05:31-03:00",
+      "logFile": "C:/Users/admin/AppData/Local/Temp/RHTMP/Test2.ehtml"
+    },
+    "C:/Productos LES RH2022/Bascshelp_test/publish/presets/html.preset": {
+      "exists": false,
+      "path": false,
+      "time": "2024-07-23T18:09:05-03:00",
+      "logFile": "C:/Users/admin/AppData/Local/Temp/RHTMP/html.ehtml"
+    },
+    "C:/Productos LES RH2022/Bascshelp_test/publish/presets/Retst12.preset": {
+      "exists": true,
+      "path": "C:/Users/admin/Documents/My RoboHelp Projects/outputs/Bascs/Retst12/index.htm",
+      "time": "2024-07-23T18:12:02-03:00",
+      "logFile": "C:/Users/admin/AppData/Local/Temp/RHTMP/Retst12.ehtml"
+    },
+    "C:/Productos LEN RH2022/BAS CS/Proyecto/publish/presets/Responsive.preset": {
+      "exists": true,
+      "path": "C:/Productos LEN RH2022/BAS CS/Salidas/index.htm",
+      "time": "2024-07-24T15:42:26-03:00",
+      "logFile": "C:/Users/admin/AppData/Local/Temp/RHTMP/Responsive.ehtml"
+    },
+    "C:/Productos LEN RH2022/BAS CS/Proyecto/publish/presets/Retst12.preset": {
+      "exists": true,
+      "path": "C:/Productos LEN RH2022/BAS CS/Salidas/index.htm",
+      "time": "2024-07-24T15:51:08-03:00",
+      "logFile": "C:/Users/admin/AppData/Local/Temp/RHTMP/Retst12.ehtml"
+    },
+    "C:/Productos LEN RH2022/BAS CS/Proyecto/publish/presets/Responsive HTML.preset": {
+      "exists": true,
+      "path": "C:/Productos LEN RH2022/BAS CS/Salidas/index.htm",
+      "time": "2025-01-16T10:37:58-03:00",
+      "logFile": "C:/Users/admin/AppData/Local/Temp/RHTMP/Responsive HTML.ehtml"
+    },
+    "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/publish/presets/Responsive HTML.preset": {
+      "exists": true,
+      "path": "C:/Productos LEN RH2022/BASCS/Salidas/index.htm",
+      "time": "2025-01-28T12:18:46-03:00",
+      "logFile": "C:/Users/admin/AppData/Local/Temp/RHTMP/Responsive HTML.ehtml"
+    }
+  },
+  "recent-files::external:document": [{
+    "title": "Responsive HTML",
+    "path": "C:/Users/admin/AppData/Local/Temp/RHTMP/Responsive HTML.ehtml",
+    "pinned": false,
+    "time": "Jul 31, 3:17 PM"
+  }, {
+    "title": "Retst12",
+    "path": "C:/Users/admin/AppData/Local/Temp/RHTMP/Retst12.ehtml",
+    "pinned": false,
+    "time": "Jul 24, 3:51 PM"
+  }, {
+    "title": "Test2",
+    "path": "C:/Users/admin/AppData/Local/Temp/RHTMP/Test2.ehtml",
+    "pinned": false,
+    "time": "Jul 23, 6:05 PM"
+  }],
+  "Map ID:columns": {
+    "Map No.": true,
+    "Map ID": true,
+    "Map File": false,
+    "Topic": false,
+    "Title": false,
+    "Folder": false
+  },
+  "recent-files::internal:image": [{
+    "title": "image1000",
+    "path": "C:/Productos LEN RH2022/BAS CS/Proyecto/contents/assets/images/BASCSIMAG/image1000.JPG",
+    "pinned": false,
+    "time": "Nov 25, 5:25 PM"
+  }, {
+    "title": "Boton_de_opcion",
+    "path": "C:/Productos LEN RH2022/BAS CS/Proyecto/contents/assets/images/BASCSIMAG/Boton_de_opcion.gif",
+    "pinned": false,
+    "time": "Nov 6, 2:21 PM"
+  }, {
+    "title": "Flecha_opciones",
+    "path": "C:/Productos LEN RH2022/BAS CS/Proyecto/contents/assets/images/BASCSIMAG/Flecha_opciones.gif",
+    "pinned": false,
+    "time": "Sep 23, 3:27 PM"
+  }, {
+    "title": "Boton_generico",
+    "path": "C:/Productos LEN RH2022/BAS CS/Proyecto/contents/assets/images/BASCSIMAG/Boton_generico.gif",
+    "pinned": false,
+    "time": "Aug 12, 3:30 PM"
+  }, {
+    "title": "LOGOBASCS",
+    "path": "C:/Productos LEN RH2022/BAS CS/Proyecto/contents/assets/images/BASCSIMAG/LOGOBASCS.jpg",
+    "pinned": false,
+    "time": "Jul 31, 3:40 PM"
+  }, {
+    "title": "LOGOBAS CS",
+    "path": "C:/Productos LEN RH2022/BAS CS/Proyecto/contents/assets/images/BASCSIMAG/LOGOBAS CS.jpg",
+    "pinned": false,
+    "time": "Jul 31, 3:24 PM"
+  }, {
+    "title": "favicon_Logo_BAS",
+    "path": "C:/Productos LEN RH2022/BAS CS/Proyecto/contents/assets/images/BASCSIMAG/favicon_Logo_BAS.png",
+    "pinned": false,
+    "time": "Jul 31, 3:21 PM"
+  }, {
+    "title": "LOGOBAS CS",
+    "path": "C:/Productos LEN RH2022/BAS CS/Proyecto/contents/assets/images/BASCSIMAG/LOGOBAS CS.bmp",
+    "pinned": false,
+    "time": "Jul 31, 3:21 PM"
+  }],
+  "Topic List:column-width": {
+    "0": 348
+  },
+  "recent-files::internal:hyperlink": [{
+    "title": "bienvenido",
+    "path": "C:/Productos LEN RH2022/BAS CS/Proyecto/contents/BASCSHTML/bienvenido.htm",
+    "pinned": false,
+    "time": "Nov 25, 6:02 PM"
+  }, {
+    "title": "cambio_de_empresa_sucursal",
+    "path": "C:/Productos LEN RH2022/BAS CS/Proyecto/contents/BASCSHTML/cambio_de_empresa_sucursal.htm",
+    "pinned": false,
+    "time": "Nov 25, 5:30 PM"
+  }, {
+    "title": "Consulta_de_proveedores",
+    "path": "C:/Productos LEN RH2022/BAS CS/Proyecto/contents/BASCSHTML/consulta_de_proveedores.htm",
+    "pinned": false,
+    "time": "Nov 12, 3:47 PM"
+  }, {
+    "title": "Aplicaciones_de_cuentas_corrientes",
+    "path": "C:/Productos LEN RH2022/BAS CS/Proyecto/contents/BASCSHTML/aplicaciones_de_cuentas_corrientes.htm",
+    "pinned": false,
+    "time": "Sep 23, 3:26 PM"
+  }, {
+    "title": "Administracion_de_Documentos",
+    "path": "C:/Productos LEN RH2022/BAS CS/Proyecto/contents/BASCSHTML/administracion_de_Documentos.htm",
+    "pinned": false,
+    "time": "Aug 7, 3:58 PM"
+  }, {
+    "title": "ver_ultimos_movimientos_consultas",
+    "path": "C:/Productos LEN RH2022/BAS CS/Proyecto/contents/BASCSHTML/ver_ultimos_movimientos_consultas.htm",
+    "pinned": false,
+    "time": "Aug 6, 4:26 PM"
+  }, {
+    "title": "Ver_aplicaciones",
+    "path": "C:/Productos LEN RH2022/BAS CS/Proyecto/contents/BASCSHTML/ver_aplicaciones.htm",
+    "pinned": false,
+    "time": "Aug 6, 4:25 PM"
+  }, {
+    "title": "Tareas_de_la_orden_de_produccion",
+    "path": "C:/Productos LEN RH2022/BAS CS/Proyecto/contents/BASCSHTML/tareas_de_la_orden_de_produccion.htm",
+    "pinned": false,
+    "time": "Aug 6, 4:25 PM"
+  }, {
+    "title": "seleccion_comprobantes",
+    "path": "C:/Productos LEN RH2022/BAS CS/Proyecto/contents/BASCSHTML/seleccion_comprobantes.htm",
+    "pinned": false,
+    "time": "Aug 6, 4:24 PM"
+  }, {
+    "title": "Retención_de_SUSS_en_pagos_y_recibos",
+    "path": "C:/Productos LEN RH2022/BAS CS/Proyecto/contents/BASCSHTML/retencion_de_SUSS_en_pagos_y_recibos.htm",
+    "pinned": false,
+    "time": "Aug 6, 4:24 PM"
+  }, {
+    "title": "Retención_de_ingresos_brutos_en_pagos",
+    "path": "C:/Productos LEN RH2022/BAS CS/Proyecto/contents/BASCSHTML/retencion_de_ingresos_brutos_en_pagos.htm",
+    "pinned": false,
+    "time": "Aug 6, 4:24 PM"
+  }, {
+    "title": "Retención_de_IIBB_en_recibos",
+    "path": "C:/Productos LEN RH2022/BAS CS/Proyecto/contents/BASCSHTML/retencion_de_IIBB_en_recibos.htm",
+    "pinned": false,
+    "time": "Aug 6, 4:23 PM"
+  }, {
+    "title": "Remito_carnico",
+    "path": "C:/Productos LEN RH2022/BAS CS/Proyecto/contents/BASCSHTML/remito_carnico.htm",
+    "pinned": false,
+    "time": "Aug 6, 4:22 PM"
+  }, {
+    "title": "Requerimientos",
+    "path": "C:/Productos LEN RH2022/BAS CS/Proyecto/contents/BASCSHTML/Requerimientos.htm",
+    "pinned": false,
+    "time": "Aug 6, 4:22 PM"
+  }, {
+    "title": "Refrescar",
+    "path": "C:/Productos LEN RH2022/BAS CS/Proyecto/contents/BASCSHTML/refrescar.htm",
+    "pinned": false,
+    "time": "Aug 6, 4:22 PM"
+  }, {
+    "title": "Provincias_para_ingresos_brutos_en_Ventas",
+    "path": "C:/Productos LEN RH2022/BAS CS/Proyecto/contents/BASCSHTML/provincias_para_ingresos_brutos_en_Ventas.htm",
+    "pinned": false,
+    "time": "Aug 6, 4:21 PM"
+  }, {
+    "title": "Prefijo_de_comprobantes_externos",
+    "path": "C:/Productos LEN RH2022/BAS CS/Proyecto/contents/BASCSHTML/prefijo_de_comprobantes_externos.htm",
+    "pinned": false,
+    "time": "Aug 6, 4:21 PM"
+  }, {
+    "title": "Plantilla",
+    "path": "C:/Productos LEN RH2022/BAS CS/Proyecto/contents/BASCSHTML/plantilla.htm",
+    "pinned": false,
+    "time": "Aug 6, 4:20 PM"
+  }, {
+    "title": "Período_a_considerar",
+    "path": "C:/Productos LEN RH2022/BAS CS/Proyecto/contents/BASCSHTML/periodo_a_considerar.htm",
+    "pinned": false,
+    "time": "Aug 6, 4:20 PM"
+  }, {
+    "title": "Otras_retenciones",
+    "path": "C:/Productos LEN RH2022/BAS CS/Proyecto/contents/BASCSHTML/otras_retenciones.htm",
+    "pinned": false,
+    "time": "Aug 6, 4:20 PM"
+  }, {
+    "title": "ordenamiento_de_datos_en_consultas",
+    "path": "C:/Productos LEN RH2022/BAS CS/Proyecto/contents/BASCSHTML/ordenamiento_de_datos_en_consultas.htm",
+    "pinned": false,
+    "time": "Aug 6, 4:19 PM"
+  }, {
+    "title": "Ordenamiento_Aplicaciones",
+    "path": "C:/Productos LEN RH2022/BAS CS/Proyecto/contents/BASCSHTML/ordenamiento_Aplicaciones.htm",
+    "pinned": false,
+    "time": "Aug 6, 4:19 PM"
+  }, {
+    "title": "Necesidad_de_abastecimiento_por_item",
+    "path": "C:/Productos LEN RH2022/BAS CS/Proyecto/contents/BASCSHTML/necesidad_de_abastecimiento_por_item.htm",
+    "pinned": false,
+    "time": "Aug 6, 4:19 PM"
+  }, {
+    "title": "Necesidad_de_abastecimiento_por_comprobante",
+    "path": "C:/Productos LEN RH2022/BAS CS/Proyecto/contents/BASCSHTML/necesidad_de_abastecimiento_por_comprobante.htm",
+    "pinned": false,
+    "time": "Aug 6, 4:19 PM"
+  }, {
+    "title": "movimientos_depositos_planta",
+    "path": "C:/Productos LEN RH2022/BAS CS/Proyecto/contents/BASCSHTML/movimientos_depositos_planta.htm",
+    "pinned": false,
+    "time": "Aug 6, 4:18 PM"
+  }],
+  "Stylesheets:orderByOpts": "1",
+  "Topic List:columns": {
+    "Topic": true,
+    "Title": true,
+    "Topic Status": false,
+    "Author": false,
+    "TOC": true,
+    "Folder": false,
+    "Index": false,
+    "Search": false,
+    "Topic Condition Tags": false,
+    "Content Condition Tags": false,
+    "Stylesheets": false,
+    "Topic Layout": true,
+    "See Also": false,
+    "Last Modified": true,
+    "Notes": true
+  },
+  "Topic References:column-width": {
+    "0": 294.3125
+  }
+}

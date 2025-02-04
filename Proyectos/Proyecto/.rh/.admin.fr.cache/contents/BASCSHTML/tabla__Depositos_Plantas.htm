@@ -1,0 +1,333 @@
+
+
+Depósitos/Plantas
+En este punto se definen mediante un código todos los 
+ depósitos, propios y de terceros (para remitos cárnicos)  y plantas 
+ con los que se trabaja.
+Todos los movimientos que se registren en el sistema 
+ podrán llevar asociados un depósito. Las ventas, las devoluciones de mercadería 
+ a proveedores , las entregas en consignación, 
+ los préstamos, los ingresos de mercadería, las transferencias, etc., llevan 
+ asociados el depósito al cual ingresan o del cual egresan.
+La planta representa el lugar físico donde se produce 
+ por lo cual, en ella, se registran las ordenes y los partes de producción, 
+ además de los movimientos de ingreso y egreso de materiales. La planta 
+ puede ser Propia o de Terceros.
+Si se trabaja con múltiples empresas se deberán definir 
+ los depósitos de cada empresa y sucursal con la que se trabaja. Los depósitos 
+ que se ingresen se registrarán en la empresa en la cual está el usuario 
+ en ese momento.
+A continuación se detallan los datos que deben ingresarse:
+ 
+ 
+ Empresa
+
+	Código de empresa en la cual se ingresa 
+	 el depósito o planta que se está definiendo.
+	Este dato no se ingresa manualmente. Para 
+	 los depósitos nuevos que se ingresen, se completa el dato automáticamente 
+	 con el código de la empresa en la cual está el usuario en ese momento; 
+	 y sólo podrán verse o modificarse los depósitos asociados a esa empresa.
+ 
+ Código
+
+	Número de hasta cuatro dígitos que identifica 
+	 al depósito o a la planta.
+	Por ejemplo, 1, 
+	 11, 25, etc.
+	 
+ 
+ Descripción
+
+	Denominación del depósito o planta.
+	Por ejemplo, Depósito central, Sucursal 
+	 15, etc.
+ 
+ Sucursal
+
+	Sucursal 
+	 para la cual se habilita el depósito o planta que se está definiendo.
+	Podrá ingresarse una sucursal definida 
+	 en la empresa para la cual se ingresa el depósito.
+	Sólo podrá utilizarse el depósito en los 
+	 comprobantes que se ingresen en la empresa y la sucursal a la cual 
+	 corresponde el mismo.
+ 
+ Lote
+
+	Número de lote actual del depósito indicado.
+	Este campo no puede modificarse, simplemente 
+	 muestra el número del lote en el que está el depósito.
+	Cuando se define un depósito automáticamente 
+	 se le asigna el Lote Número 1 
+	 y se continuará incorporando información en él, hasta tanto se realice 
+	 la tarea Cierre de depósito, 
+	 mediante la cual se cierra el Lote 
+	 Número 1 y, automáticamente, se abre el Lote 
+	 Número 2 que incorporará información hasta tanto vuelva a realizarse 
+	 el siguiente cierre del depósito, abriéndose el Lote 
+	 Número 3 y así sucesivamente.
+	Por cada depósito, existe un único lote 
+	 activo a la vez y es en dicho lote en el que se trabaja cada vez que 
+	 se efectúan movimientos de mercadería en el depósito.
+ 
+ Tipo
+
+	 Depósito
+	Si se tilda la opción depósito se 
+	 indica que el elemento que se está definiendo es un depósito.
+	 Planta
+	Si se tilda esta opción, se indica 
+	 que se está definiendo una planta. Al indicarse esta opción se deshabilitan 
+	 las opciones Control de Stock y el campo destinado a informar que 
+	 se permiten múltiples ubicaciones.
+	Además se activa el  campo Responsable 
+	 de la solapa Datos Generales.
+ 
+ Control de stock
+ 
+ Control exhaustivo de stock
+
+	Si se activa, en el caso de egresar 
+	 mercadería del depósito, el sistema no permitirá ingresar el comprobante 
+	 si esto produce stock negativo la fecha de ingreso del mismo o para 
+	 comprobantes ingresados con posterioridad.
+	En el caso de intentar eliminar ingresos 
+	 de mercadería, el sistema no lo permitirá si dicha eliminación produce 
+	 stock negativo a la fecha del comprobante a eliminar o para comprobantes 
+	 ingresados con posterioridad a dicha fecha.
+	En caso que se tilde no se podrá indicar 
+	 que permita stock negativo, y viceversa..
+ Permitir 
+ stock negativo
+
+	Indicación de si se permitirá o no 
+	 que la existencia del depósito sea negativa.
+	Esta opción se presenta deshabilitada 
+	 en las plantas.
+	Si no se permite stock negativo, siempre 
+	 que se ingresen comprobantes que involucren salidas de mercadería 
+	 del depósito, se controlará que haya existencia disponible para satisfacer 
+	 dichas entregas.
+	Si se permite stock negativo, no se 
+	 controlará la existencia en el depósito de los ítems 
+	 involucrados en los egresos de mercadería del depósito que se ingresen.
+ No 
+ avisar de stock insuficiente
+
+	Esta opción se habilita en caso 
+	 de activarse el campo Permitir stock negativo provisorio e indica 
+	 si se desea que al registrar egresos desde ese depósito se muestre 
+	 un aviso al usuario cuando el stock no sea suficiente, indicando tal 
+	 situación.
+	Si esta opción no se activa, al 
+	 ingresar cantidades en movimientos de mercadería que tengan por consecuencia 
+	 una insuficiencia de stock, a pesar que esté indicado que se permite 
+	 stock negativo, se emite un aviso al operador indicando la situación.
+	Por defecto, esta opción se ofrece 
+	 destildada, es decir que no se avisa si el stock es insuficiente. 
+	 El sistema ofrece por defecto la opción de no avisar.
+ Considerar 
+ stock reservado
+
+	Indicación de si se considerará o 
+	 no el stock asignado del depósito. Esta opción sólo se encontrará 
+	 habilitada en caso de no haber indicado la opción anterior.
+	El hecho de considerar el stock asignado, 
+	 implica que el sistema controlará la existencia de Stock Disponible 
+	 (Stock Actual – Stock Asignado) cada vez que se registre un comprobante 
+	 de egreso de mercadería, una factura o un pedido de ventas (en este 
+	 último casi el control se efectuará siempre y cuando así se haya indicado 
+	 en los Parámetros de Pedidos). Es decir, avisará que no hay existencias 
+	 cuando la diferencia entre el Stock Actual y el Stock Asignado dentro 
+	 del depósito sea igual a 0 o negativa.
+	Si se decide no considerar el Stock 
+	 Asignado en el depósito, el sistema sólo avisará que hay existencias 
+	 insuficientes cuando el Stock Actual sea igual a 0 o negativo.
+ 
+ Administra múltiples 
+ ubicaciones por ítem
+
+	Esta opción se presenta deshabilitada 
+	 en las plantas.
+	Activando este campo se indica si el depósito 
+	 administrará múltiples ubicaciones por ítem.
+	En ese caso, cada producto que ingrese 
+	 al depósito podrá ubicarse en todas las ubicaciones que se requiera., 
+	 mediante la tarea Ubicar en depósito
+	Si no se activa, cada ítem que ingresa 
+	 o egresa del depósito lo hace en una única ubicación que es la informada 
+	 en la ficha Depósitos de la tabla de Ítems.
+ 
+ Informar ubic. 
+ en egresos y facturas de venta
+
+	Este campo sólo se habilita al activar 
+	 el campo anterior. Si se activa, al realizar egresos de mercaderías 
+	 del depósito (comprobantes de egreso o facturas de venta) deberán 
+	 tener informada la ubicación, si la ubicación no estuviera informada 
+	 se exhibe un mensaje al operador para que confirme si desea continuar 
+	 con la tarea o cancelar la grabación.
+ 
+ Datos generales
+Domicilio
+ Contacto 
+ 1
+
+	Nombre del primer contacto en el depósito.
+	El sistema permite indicar para cada 
+	 depósito el nombre de dos contactos que se tengan en la misma.
+ 
+ Contacto 2
+
+	Nombre del segundo contacto en el 
+	 depósito.
+	El sistema permite indicar para cada 
+	 sucursal el nombre de dos contactos que se tengan en la misma.
+ Propio
+
+	Este campo debe activarse si se trata 
+	 de un depósito propio o un a planta propia.
+	Si se indicó una  planta  Propia, 
+	 se habilitan las solapas Insumos y Prod. Terminados.
+ Tercero
+
+	Este campo debe activarse si el depósito 
+	 o  la planta es de terceros.
+	 
+	 Proveedor
+	Si se indicó una  planta 
+	 de terceros, se debe indicar el proveedor correspondiente.
+	Si se indicó un depósito de terceros,para 
+	 el caso de remitos cárnicos,  se puede indicar un cliente o un 
+	 proveedor asociado.
+ Responsable
+
+	Es  posible indicar el o los responsables 
+	 de la planta o depósito. El usuario debe estar habilitado para ingresar 
+	 comprobantes en la empresa correspondiente.
+ 
+ Talonarios
+En esta solapa se definen talonarios a utilizar 
+ en el cierre de ordenes de producción, en el caso de definir una Planta, 
+ y en la desubicación de ítems, en el caso de definir un depósito que administra 
+ múltiples ubicaciones.
+ Mov. 
+ Internos
+
+	Sólo aplica en el caso que el depósito 
+	 administra múltiples ubicaciones por ítem.
+	En caso que en un comprobante de egreso 
+	 se indiquen las ubicaciones correspondientes a los bienes que egresan, 
+	 al grabar el comprobante de egreso se generará automáticamente un 
+	 comprobante de desubicación. Este se generará utilizando el talonario 
+	 que se indique en este campo (dicho talonario debe estar habilitado 
+	 para el tipo de comprobante UD-Ubicar en depósito.
+	Si no se indica el talonario, al registrar 
+	 el comprobante, se informará de la situación no permitiéndose continuar 
+	 con la grabación del mismo.
+ Devolución 
+ de insumos
+
+	Aplica en le caso de definir una Planta.
+	Se utiliza en el cierre de las órdenes 
+	 de producción para enviar a los correspondientes depósitos los insumos 
+	 sobrantes de la orden de producción que se cierra.
+ 
+ Envío de productos terminados
+
+	Aplica en le caso de definir una Planta.
+	Se utiliza en el cierre de las órdenes 
+	 de producción para enviar a los depósitos que correspondan los productos 
+	 terminados resultantes de la orden de producción que se cierra.
+ 
+ Ingresos Automáticos
+
+	Cuando se realiza un egreso a una planta 
+	 de terceros, el ingreso en dicha planta se genera en forma automática 
+	 utilizando este talonario.
+ Egresos 
+ automáticos
+
+	Cuando se realiza un ingreso cuyo origen 
+	 es una  planta de terceros, el egreso de la misma se genera en 
+	 forma automática utilizando este talonario.
+ 
+ Partes automáticos
+
+	Cuando se registra el ingreso de la planta 
+	 de terceros se genera un parte de producción en forma automática, 
+	 utilizando este talonario.
+ 
+ Ubicaciones
+Esta solapa sólo se habilita si se trata de 
+ un depósito.
+ Ubicación-Descripción
+
+	Se deben indicar los códigos y descripciones 
+	 de las ubicaciones que se administran en el depósito.
+ 
+ Insumos
+Esta solapa sólo se habilita si se trata de 
+ una planta propia y está destinada a indicar depósitos de origen o de 
+ devolución de insumos mediante atributos.
+  Depósitos 
+ Origen/Destino
+
+	 
+	 Atributos
+	Atributo por el que se desea identificar 
+	 a los insumos.
+	
+	Esta grilla dispone de columnas 
+	 para indicar el valor del atributo elegido, el depósito en el caso 
+	 de origen (columna Abas) y el depósito en el caso de devoluciones 
+	 (columna Dev).
+ 
+ Prod. Terminados
+Esta solapa sólo se habilita si se trata de 
+ una planta propia y está destinada a indicar depósitos de destino de productos 
+ terminados mediante atributos.
+  Depósitos 
+ Destino
+
+	 
+	 Atributos
+	Atributo por el que se desea identificar 
+	 a los productos terminados.
+	
+	Esta grilla dispone de columnas 
+	 para indicar el valor del atributo elegido y el depósito en el caso 
+	 de destino (columna Destino).
+ 
+//<![CDATA[
+	if( typeof( TextPopupInit ) != 'function' ) TextPopupInit = new Function();
+	TextPopupInit('a1', 'POPUP664443185');
+	TextPopupInit('a2', 'POPUP664489467');
+	TextPopupInit('a3', 'POPUP664487889');
+	TextPopupInit('a4', 'POPUP664525343');
+	TextPopupInit('a5', 'POPUP664509395');
+	TextPopupInit('a6', 'POPUP664544124');
+	TextPopupInit('a7', 'POPUP664611491');
+	TextPopupInit('a8', 'POPUP664653982');
+	TextPopupInit('a9', 'POPUP664687990');
+	TextPopupInit('a10', 'POPUP664713999');
+	TextPopupInit('a11', 'POPUP664716626');
+	TextPopupInit('a12', 'POPUP665065577');
+	TextPopupInit('a13', 'POPUP665140548');
+	TextPopupInit('a14', 'POPUP665139265');
+	TextPopupInit('a15', 'POPUP665154396');
+	TextPopupInit('a16', 'POPUP665190591');
+	TextPopupInit('a17', 'POPUP665227732');
+	TextPopupInit('a18', 'POPUP665252086');
+	TextPopupInit('a19', 'POPUP665271068');
+	TextPopupInit('a20', 'POPUP665335164');
+	TextPopupInit('a21', 'POPUP665329234');
+	TextPopupInit('a22', 'POPUP665368763');
+	TextPopupInit('a23', 'POPUP665397233');
+	TextPopupInit('a24', 'POPUP665446588');
+	TextPopupInit('a25', 'POPUP665853287');
+	TextPopupInit('a26', 'POPUP663710999');
+//]]>
+
+

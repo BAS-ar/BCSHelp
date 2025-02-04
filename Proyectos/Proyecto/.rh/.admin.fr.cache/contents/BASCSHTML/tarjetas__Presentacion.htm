@@ -1,0 +1,142 @@
+
+
+Presentación de tarjetas
+Una vez informados la fecha y el número a asociar al 
+ comprobante, se deben completar los datos que se detallan.
+En cualquier momento es posible dejar el comprobante 
+ en estado de preparación, de modo de seguir con el ingreso del mismo 
+ en una instancia posterior.
+ 
+ 
+ Caja
+
+	Código de la caja 
+	 donde se encuentran los cupones a presentar.
+ 
+ Tarjeta
+
+	Código de la tarjeta 
+	 asociada a los cupones a presentar
+	 
+ 
+ Moneda
+
+	Moneda 
+	 en la cual se registra la presentación.
+	Debe corresponder al código de una tabla 
+	 de tipo Cotización ingresada 
+	 en el sistema.
+	Si no se ingresa una moneda en particular, 
+	 se asumirá que la presentación es en moneda local. Al consultar la 
+	 tabla de Cotizaciones, 
+	 el sistema solo exhibirá aquellas que corresponden a las cuentas 
+	 bancarias de presentación de la tarjeta indicada.
+	Esta moneda restringe los planes de la 
+	 tarjeta que se podrán presentar ya que sólo se podrán presentar aquellos 
+	 cuya cuenta bancaria de presentación opere con esta moneda.
+ 
+ Plan
+
+	En el caso que se desee presentar solamente 
+	 los cupones de un determinado plan de la tarjeta informada en el dato 
+	 anterior, se debe ingresar el código correspondiente a dicho plan.
+	 
+ 
+ Hasta fecha
+
+	Fecha hasta la cual se desea incluir los 
+	 cupones en la tarea. El sistema solo exhibirá los cupones cuya fecha 
+	 sea menor o igual a la informada en este campo
+	 
+ 
+ Carga de cupones
+
+	Presionando este botón se cargarán en 
+	 el comprobante de presentación todos los cupones que correspondan 
+	 con la caja, código de tarjeta, 
+	 moneda, plan indicado 
+	 (en caso de haber informado alguno) y, también llegado el caso, cuyas 
+	 fechas sean menores o iguales a la que se informó en el campo Hasta fecha.
+ 
+ Ficha Comprobante
+
+	Al informar un código de tarjeta en el 
+	 encabezado del comprobante (en el dato dispuesto a tal fin) esta ficha 
+	 exhibe el detalle de todos los cupones correspondientes a dicha tarjeta 
+	 que aún se encuentran en cartera.
+	Se exhiben los cupones correspondientes 
+	 a todos los planes que se hayan habilitado para la tarjeta en cuestión, 
+	 excepto que se haya informado un plan en particular. En este caso 
+	 se exhiben solamente los cupones correspondientes al plan informado.
+	Las columnas que se exhiben son informativas, 
+	 es decir, detallan la información de los cupones en cartera existentes, 
+	 pero no son accesibles al usuario.
+	La única columna con la que es posible 
+	 interactuar es la columna Presenta.
+	Las líneas de la grilla de que no se incluyen 
+	 en la presentación se muestran en colores diferentes. Las líneas que 
+	 se incluyen en la presentación se muestran en el color que están configurados 
+	 los letreros de los campos en el sistema (azul, por ejemplo) y si 
+	 no se incluyen en la liquidación se muestran en color negro o en el 
+	 color que se use por defecto.
+	Presenta
+	Mediante esta columna se seleccionan 
+	 los cupones que se presentan al banco 
+	 . Los cupones a presentar serán aquellos para los que se exhiba Sí en este dato.
+	El sistema ofrece como cupones 
+	 a presentar (exhibe Sí) en 
+	 aquellos casos en que la fecha del cupón es anterior o igual a la 
+	 fecha en que se registra el comprobante. Los cupones con fecha posterior 
+	 se ofrecen con No en este 
+	 dato.
+	Los valores ofrecidos por el sistema 
+	 pueden cambiarse, es decir, se pueden incluir, o excluir, de la presentación 
+	 los cupones que se deseen, cambiando el Sí 
+	 por No y viceversa.
+	Por último, al pie de la tabla que detalla 
+	 los cupones, se exhibe:
+	 Cantidad 
+	 de cupones
+	Cantidad de cupones que se han de 
+	 presentar.
+	 Total 
+	 presentación
+	Este dato muestra el importe total 
+	 de los cupones que se presentan, es decir, aquellos para los que se 
+	 ha informado Sí (en el dato Presenta).
+	 Descuento
+	En función al porcentaje de descuento 
+	 informado para cada uno de los planes correspondientes a la tarjetas 
+	 , se calcula la comisión que cobra la empresa emisora de la tarjeta 
+	 y se exhibe en este dato.
+	 Total 
+	 a acreditar
+	Es el importe total por el cual se 
+	 ha de acreditar la correspondiente cuenta 
+	 bancaria . Dicho importe se calcula como diferencia entre los 
+	 correspondientes a los datos Total 
+	 presentación y Descuento.
+ 
+ Ficha Observaciones
+
+	 Observaciones
+	Permite ingresar un texto aclaratorio. 
+	 Este aparece en todos los informes en los que se incluye al comprobante.
+ 
+ Ficha Adjuntos 
+Permite adjuntar archivos externos. Una vez 
+ grabado el comprobante la administración de los archivos adjuntados se 
+ realiza desde el Proceso de Adjuntos.
+//<![CDATA[
+	if( typeof( TextPopupInit ) != 'function' ) TextPopupInit = new Function();
+	TextPopupInit('a1', 'POPUP745970859');
+	TextPopupInit('a2', 'POPUP745980313');
+	TextPopupInit('a3', 'POPUP746008168');
+	TextPopupInit('a4', 'POPUP746010235');
+	TextPopupInit('a5', 'POPUP746035086');
+	TextPopupInit('a6', 'POPUP746037668');
+	TextPopupInit('a7', 'POPUP746271916');
+	TextPopupInit('a8', 'POPUP745956229');
+//]]>
+
+

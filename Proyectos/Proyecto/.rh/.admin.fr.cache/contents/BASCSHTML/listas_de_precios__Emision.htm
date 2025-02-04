@@ -1,0 +1,252 @@
+
+
+Emisión de listas de precios
+Mediante esta tarea se emiten listas 
+ de precios . Se prevé la posibilidad de emitir informes que incluyan 
+ hasta cuatro listas de precios, cada una de ellas, en una columna diferente.
+Es importante tener en cuenta que la lista que se exponga 
+ en la columna número cuatro, sólo será visible cuando el informe se emita 
+ con un formato personalizado de impresión 
+ o se emita en una planilla de Excel o en formato tipo tabla.
+El listado se encabeza por un título general que informa 
+ el usuario y, como se ha dicho, puede incluir hasta cuatro columnas, cada 
+ una de ellas puede llevar un encabezado independiente (también informado 
+ por el usuario) e incluirá una lista de precios diferente.
+Para cada lista que se incluye en el listado, se puede 
+ indicar si los precios se pueden imprimir incluyendo, o no, los impuestos 
+ que gravan a los ítems, y se podrá o no tener en cuenta una condición 
+ de venta en particular, esto implica considerar los recargos y/o bonificaciones 
+ que la misma incluya.
+También se podrá reexpresar cada lista de precios incluida 
+ en otra moneda. Dicha reexpresión deberá efectuarse a una fecha determinada 
+ que no podrá ser anterior a la fecha de vigencia de la lista de precios 
+ a reexpresar.
+Los precios de los ítems que trabajan con medidas y 
+ colores se imprimirán detallados por color y medida si el ítem maneja 
+ distintos precios por color y/o por medida.
+La posibilidad de definir modelos, presente en todas 
+ las tareas del sistema, resulta sumamente útil en la emisión de listas 
+ de precios.
+En general, los tipos y formatos de listas que se emiten 
+ en forma estándar no varían en cuanto a la forma (solamente varía el contenido). 
+ Por lo cual, si se definen modelos que respondan a las necesidades de 
+ la organización, para emitir una lista bastará con elegir el modelo correspondiente 
+ obviando el completar todos los datos que solicita la tarea.
+No obstante, como mencionamos al inicio de este apartado, 
+ también es posible definir Formatos personalizados 
+ de impresión que se adapten a las necesidades de información del 
+ usuario.
+Pueden incluirse en el listado todos los ítems de la 
+ lista de precios o pueden seleccionarse los productos a listar por código 
+ de ítem, por código de selección o por atributos 
+ y valores de atributos de los ítems de la lista.
+Los datos que deben suministrarse al sistema para concretar 
+ la tarea son:
+ 
+ 
+ Ficha Opciones
+
+	 Título 
+	 1
+	Texto, de hasta 30 caracteres, que 
+	 encabeza el listado en letra resaltada y centrado.
+	 Título 
+	 2
+	Este texto, junto al anterior, encabeza 
+	 el informe.
+	Puede incluir hasta 30 caracteres, 
+	 se exhibe en letra resaltada y más pequeña que el Título 1 y, al igual 
+	 que aquel, se muestra centrado.
+	 Ordenamiento
+	La lista de precios puede emitirse 
+	 ordenada según los siguientes criterios:
+	 
+	 Ítem
+	 
+	 Rubro
+	 
+	 Atributo
+	Para el ordenamiento elegido el informe 
+	 puede emitirse ordenado por código o por descripción, para ello debe 
+	 activarse el botón que corresponda:
+	 
+	 Código
+	 
+	 Descripción
+	Si se selecciona ordenamiento 
+	 Rubro se listarán los ítems 
+	 agrupados por el rubro al que pertenecen y se detallará además por 
+	 subrubro.
+	Si se selecciona ordenamiento 
+	 Atributo se podrán seleccionar 
+	 además hasta cuatro niveles de atributos, 
+	 y se listarán los ítems agrupados por los valores de atributos de 
+	 los atributos indicados en cada nivel. Se listarán los ítems que tengan 
+	 los atributos indicados agrupados por el valor que tengan dichos atributos 
+	 para cada ítem. Los ítems que no tengan alguno de los atributos seleccionados 
+	 se listarán bajo el título Sin valor 
+	 de atributo.
+	Se podrá optar además por efectuar 
+	 un cambio de hoja por cada nivel de atributo, es decir, cambiar de 
+	 hoja cada vez que cambia el valor de un atributo de un determinado 
+	 nivel. El cambio de hoja puede indicarse para cada nivel para el cual 
+	 se seleccione un atributo.
+	 
+	 Precios generados o modificados en el período
+	Desde esta opción es posible seleccionar 
+	 los ítems de la lista, o las listas, cuyos precios han sido generados 
+	 o modificados en un período determinado. Es decir se filtran los ítems 
+	 en base a la fecha de generación de listas de precios o en base a 
+	 la fecha de modificación del precio del ítem en la lista.
+	 
+	 Periodo a considerar
+	 
+	 Fecha de reexpresión
+	Indicación de la fecha a considerar 
+	 para reexpresar en otra moneda aquellas listas para las cuales se 
+	 indicó una tabla de cotizaciones determinada. Esta fecha de reexpresión 
+	 deberá ser igual o posterior a la fecha de vigencia de la lista de 
+	 precios que se reexprese.
+Para emitir esta lista primero se ingresan los datos 
+ en la tarea, de manera tal de filtrar la información de acuerdo a las 
+ necesidades. Luego se debe presionar el ícono (botón) de la barra de herramientas 
+ superior que corresponda al tipo de emisión requerida. El uso de estos 
+ botones se detalla en el link Emisión 
+ disponible en un párrafo posterior.
+Al momento de imprimir una lista de precios (tanto por 
+ pantalla como por papel) se puede utilizar el formato standard del sistema, 
+ o indicar un formato personalizado de 
+ impresión. Este último se indica en el campo homónimo que, en general, 
+ se encuentra en la zona inferior de la primer solapa y su funcionalidad 
+ está detallada a continuación en el link Emisión.
+ 
+ Emisión
+ 
+ Ficha Columna 1,2,3 y 4
+
+	 Lista
+	Código de la lista de precios a incluir 
+	 en la columna del listado.
+	Puede corresponder a una lista normal 
+	 o dinámica.
+	 Título
+	Título de la columna.
+	 Vigencia
+	Fecha de vigencia correspondiente 
+	 a la lista informada.
+	 Agregar 
+	 el I.V.A.
+	Este botón se habilita sólo si la 
+	 lista informada en la columna no 
+	 es una lista de precios a consumidores finales.
+	Si el botón está activado, al precio 
+	 que figura en la lista de precios se le incorpora (si corresponde), 
+	 el importe de I.V.A. y ese valor es el que se exhibe en el listado.
+	Este cálculo de impuestos sólo afecta 
+	 a la impresión de la lista y no a los precios incluidos en la misma.
+	 Precios 
+	 vigentes al
+	Solo se debe completar en el caso 
+	 de listas dinámicas.
+	Es la fecha de vigencia de los precios 
+	 que se desea considerar. En base a este dato se determina la vigencia 
+	 de las listas de origen a tener en cuenta para el cálculo de las listas 
+	 dinámicas.
+	 Agregar 
+	 impuestos internos
+	Este 
+	 botón se habilita sólo si la lista informada en la columna no 
+	 es una lista de precios a consumidores finales.
+	Permite 
+	 incluir los impuestos internos en las listas de precios que se emitan.
+	Para 
+	 los ítems que tienen impuestos internos fijos se expresa el importe 
+	 del impuesto interno de cada ítem en la moneda de la lista de precios, 
+	 y se suma el importe fijo al precio del ítem en la lista.
+	Para 
+	 los ítems que calculan impuestos internos según el porcentaje indicado 
+	 en su tabla de impuestos, se aplicará el porcentaje al precio indicado 
+	 en la lista.
+	Este cálculo de impuestos sólo afecta 
+	 a la impresión de la lista y no a los precios incluidos en la misma.
+	 Condición 
+	 de venta
+	Condición de venta que afectará a 
+	 los precios de la lista incluida en esta columna. Los precios de la 
+	 lista se verán afectados por los recargos o bonificaciones establecidos 
+	 en la condición 
+	 de venta que se indique.
+	 Reexpresado
+	Indicación de si se desea reexpesar 
+	 en otra moneda los precios de la lista indicada.
+	 Moneda
+	Este campo sólo se activará en caso 
+	 de haber marcado la opción Reexpesado.
+	Aquí se deberá informar la Tabla 
+	 de cotizaciones cuyos valores se han de tener en cuenta para efectuar 
+	 la reexpresión de la lista de precios indicada.
+	 
+ 
+ Ficha Productos
+
+	En esta ficha pueden indicarse diferentes 
+	 filtros a aplicar a los ítems que se incluyen en la lista de precios 
+	 que se va a emitir.
+	Pueden filtrarse los ítems por código, 
+	 por código de selección o por atributos 
+	 y valores de atributos.
+	 Ítem
+	Código de ítem a incluir en la lista 
+	 de precios.
+	Puede seleccionarse un ítem en particular 
+	 o un grupo de ítems. Si este dato es dejado en blanco, se incluirán 
+	 todos los ítems de la lista de precios seleccionada.
+	 Código 
+	 de selección
+	De acuerdo al código que se indique 
+	 se considerará o no cada uno de los ítems del rango seleccionado, 
+	 según el código de selección que se haya asignado a cada uno de ellos.
+	Los ítems que se incluyen son aquellos 
+	 cuyo código de selección coincide con el ingresado. Se pueden ingresar 
+	 los caracteres ? y * 
+	 que cumplen la función de comodines. El carácter ? 
+	 se utiliza para un único carácter y el * 
+	 para varios.
+	Si no se especifica ningún código 
+	 de selección, todos los ítems del rango solicitado y de la lista de 
+	 precios seleccionada intervendrán en el listado.
+	 Tabla 
+	 de Atributos
+	Esta tabla permite informar los atributos asociados a los ítems que 
+	 se desean incluir en el listado con sus valores.
+	Código
+	Código del atributo 
+	 asociado a los ítems que se desean incluir en la emisión de la lista 
+	 de precios.
+	De acuerdo al atributo y al valor 
+	 de atributo que se indique se considerará o no cada uno de los ítems 
+	 del rango seleccionado, según los atributos y valores que se hayan 
+	 asignado a cada uno de ellos.
+	Si no se especifica ningún atributo, 
+	 todos los ítems del rango solicitado intervendrán en el listado.
+	Descripción
+	Descripción del atributo correspondiente 
+	 al código informado.
+	Valor
+	Valor del atributo 
+	 informado asociado a los ítems que se desean incluir en la emisión 
+	 de la lista de precios.
+	Debe corresponder a un valor ya definido 
+	 en el sistema para el atributo indicado en el campo Código.
+	Descripción
+	Descripción del valor asociado al 
+	 atributo correspondiente al código informado.
+ 
+//<![CDATA[
+	if( typeof( TextPopupInit ) != 'function' ) TextPopupInit = new Function();
+	TextPopupInit('a1', 'POPUP669921631');
+	TextPopupInit('a2', 'POPUP669997297');
+	TextPopupInit('a3', 'POPUP669990706');
+//]]>
+
+

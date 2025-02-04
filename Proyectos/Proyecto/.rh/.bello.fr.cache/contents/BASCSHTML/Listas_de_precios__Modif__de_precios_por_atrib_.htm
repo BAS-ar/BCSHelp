@@ -1,0 +1,106 @@
+
+
+Modificación de precios por atributo
+Esta tarea permite modificar en forma automática los 
+ precios de un conjunto de ítems incluidos en una lista de precios , afectándolos 
+ por un factor, mayor o menor a la unidad.
+Sólo pueden modificarse listas normales, es decir, que 
+ no se haya indicado Lista dinámica en su definición.
+La tarea actúa sobre todos aquellos ítems que están 
+ incluidos en la lista y que poseen un atributo 
+ en común.
+Es importante tener en cuenta que solo pueden modificarse 
+ los precios de listas de precios con fechas de vigencia iguales o posteriores 
+ a la fecha del día. Ahora bien, si se trata de listas de precios no habilitadas para ventas, si podrán 
+ modificarse los precios correspondientes a vigencias anteriores.
+En caso de haberse implementado un circuito de autorización 
+ de listas de precios, también podrán modificarse los precios de listas 
+ habilitadas para ventas con fechas de vigencia anteriores a la fecha del 
+ día siempre y cuando dichas listas se encuentren pendientes de autorizar.
+Lo interesante a tener en cuenta es que el atributo 
+ que se utiliza para agrupar a los ítems cuyos precios se han de modificar, 
+ es independiente de aquel que se ha utilizado para definir la lista. Esto 
+ posibilita, por ejemplo, determinar los ítems a incluir en la lista en 
+ función de los clientes a los que va destinada y, luego, efectuar modificaciones 
+ de precios por proveedor, línea, marca, tipo de bien, etc.
+Para realizar la tarea se deben completar los siguientes 
+ datos:
+ 
+ 
+ Empresa 
+ 
+
+	Código 
+	 de empresa en la cual esta definida la lista..
+	 
+ 
+ Lista
+
+	Código de la lista de precios cuyos 
+	 valores se desea modificar.
+	 
+ 
+ Día de vigencia
+
+	Fecha de vigencia correspondiente 
+	 a la lista informada.
+	 
+ 
+ Factores de cálculo
+
+	 Atributo
+	Código del atributo 
+	 asociado a los ítems de la lista de precios indicada, cuyos precios 
+	 se desean modificar.
+	 Tabla 
+	 de valores del atributo
+	Los valores de la lista a modificar 
+	 serán el resultado de multiplicar los precios de los ítems que tienen 
+	 el atributo indicado, por un factor.
+	Mediante esta tabla se informa, para 
+	 cada valor del atributo indicado, 
+	 por cuanto se han de multiplicar los precios asociados para obtener 
+	 los nuevos precios.
+	Los valores resultantes pueden redondearse 
+	 a la unidad o a múltiplos o submúltiplos de la misma.
+	Valor
+	Esta columna exhibe los códigos de 
+	 los valores del atributo indicado.
+	Descripción
+	Exhibe los nombres correspondientes 
+	 a los códigos de la columna Valor.
+	Factor
+	Factor por el que se multiplican los 
+	 precios correspondientes al valor de atributo del que se trate para 
+	 obtener el nuevo precio a asociar a los ítems que tienen asociados 
+	 el atributo y valor del atributo indicado.
+	Para no variar los valores asociados 
+	 a algún valor de atributo en particular, se debe dejar el factor en 
+	 1.
+	El factor puede ser un número mayor 
+	 o menor a la unidad, entero o decimal, según sean los requerimientos 
+	 a cumplir.
+	Redondeo
+	Se debe indicar a que unidad se desea 
+	 redondear los valores resultantes del cálculo.
+	Por ejemplo, si se informa 0.01, 
+	 se redondea a dos decimales. En cambio, informando 1 
+	 se redondea a la unidad. Si se informa 5, 
+	 se redondea en múltiplos de 5.
+	El sistema redondea hacia arriba cuando 
+	 el valor resultante es mayor o igual a la mitad del valor más próximo 
+	 (según el redondeo informado).
+	Por ejemplo, si se redondea a la unidad, 
+	 el valor resultante de redondear 3.30 
+	 y 2.7 será 3 
+	 y el de redondear 5.5 será 
+	 6.
+	Si se redondea a 5, 
+	 el valor resultante de redondear 21.4 
+	 y 17.5 será 20; 
+	 en cambio, 22.5 y 23.3 
+	 se redondearán a 25.
+ 
+
+
+

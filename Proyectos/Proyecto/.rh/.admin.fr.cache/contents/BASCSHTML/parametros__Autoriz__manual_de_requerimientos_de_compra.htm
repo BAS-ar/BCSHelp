@@ -1,0 +1,56 @@
+
+  Parámetros de Autorización de Requerimientos de compra
+  Según las necesidades de la empresa, es posible establecer circuitos de trabajo que requieran autorizar requerimientos de compra para que los mismas continúen su curso.
+  Se puede implementar el sistema de modo que los requerimientos de compra requieran de autorización para que sea posible darles curso. El que la requieran o no y, en el caso que la requieran, las condiciones que hacen que un requerimiento de compra deba autorizarse, quedan a elección del usuario.
+  Es posible indicar una tabla de autorizaciones para todos los requerimientos de compra en general, y/o indicar otras tablas, por ejemplo para los requerimientos con determinados ítems o grupos de compras.
+  Los parámetros pueden modificarse mientras se está operando con el sistema y la actualización de las opciones que se indiquen se realizará en forma inmediata sin necesidad de salir del sistema y volver a entrar.
+  Los parámetros de requerimientos posibles de configurar son:
+  
+   Para todos los requerimientos de compra
+  
+    Indicación de si se desea que todos los requerimientos de compra se autoricen. La forma en que deberá efectuarse la autorización dependerá de la tabla de autorizaciones que se indique.
+  
+   Tabla de autorizaciones
+  
+    Tabla que se usa para autorizar todas los requerimientos de compra.
+  
+   Con Ítems determinados
+  
+    Indicación de si los requerimientos que incluyen determinados ítems requieren o no autorización manual.
+     Atributo
+    Debe corresponder a un atributo ya definido en el sistema y aplicable a 
+        Ítems
+      .
+    Esta opción sólo se habilita si se indicó la autorización con Ítems
+       determinados.
+    
+    Los requerimientos de compra que incluyan ítems que tengan este atributo serán tenidos en cuenta para decidir si el requerimiento de compra requiere o no autorización. El que la requieran o no y la forma en que deberá efectuarse la misma dependerá de los valores del atributo que se informen en la tabla que sigue y de la tabla de autorizaciones que se indique para cada uno de dichos valores.
+     Tabla de valores
+    En esta tabla se deberán ingresar los distintos valores del atributo de ítems, indicado en el campo precedente, para los cuales se desea definir un circuito de autorización.
+    Valor
+    Valor del atributo cuyo código se indicó en el campo Atributo.
+    Esta opción sólo se habilita si se indicó la autorización manual con 
+        Ítems
+      
+      determinados.
+    
+    Los requerimientos que incluyan ítems que tengan este valor para el atributo indicado en el campo correspondiente, requerirán autorización para poder continuar su curso, la forma en que debe efectuarse la autorización dependerá de la tabla de autorizaciones que se indique.
+  
+   Por grupo de compra
+  
+    Permite parametrizar el sistema de modo que los requerimientos de compra requieren de autorización si incluyen ítems que pertenecen a determinados grupos de compras.
+    Grupo
+    Código del grupo de compras correspondiente alguno/s de los ítems que integran el requerimiento.
+    Esta opción sólo se habilita si se indicó que la autorización manual Por grupo de compra.
+    El que los requerimientos que incluyan ítems que correspondan al grupo de compras indicado requieran autorización o no y la forma en que deberá efectuarse la misma dependerá de la tabla de autorizaciones que se indique para cada grupo.
+  
+   Destinatarios
+  
+    Es posible indicar a quien/es se les envía email cuando un requerimiento queda totalmente autorizado o rechazado.
+     Al autorizar
+    Una o mas direcciones de email a las que se envía aviso al autorizar totalmente un requerimiento de compra. Puede indicarse una dirección de email o un tag que permita obtener una dirección de email. Por ejemplo,el tag "Requerido por" indica que se utilice la dirección de email del agente asociado al comprobante.
+     Al rechazar
+    Una o mas direcciones de email a las que se envía aviso al rechazar totalmente un requerimiento de compra. Puede indicarse una dirección de email o un tag que permita obtener una dirección de email. Por ejemplo,el tag "Requerido por" indica que se utilice la dirección de email del agente comprador del comprobante.
+  
+  
+

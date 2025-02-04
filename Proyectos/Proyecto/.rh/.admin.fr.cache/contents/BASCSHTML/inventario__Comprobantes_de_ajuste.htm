@@ -1,0 +1,128 @@
+
+
+Comprobantes de ajuste
+Mediante esta tarea se generan en forma automática los 
+ ingresos o egresos de mercadería que permiten corregir el inventario, 
+ es decir, hacer coincidir los datos del sistema con los datos reales del 
+ inventario físico tomado.
+Los remitos de ajuste se generan para un depósito determinado 
+ del cual se tomó el inventario. Antes de generar los remitos de ajuste 
+ se debe cerrar el inventario del depósito mediante la tarea correspondiente.
+En el listado de control de inventario si se selecciona 
+ imprimir las Diferencias entre datos 
+ del sistema y del inventario 
+ se verán los bienes en los que se detectan diferencias y la cantidad de 
+ unidades en la que difieren estos dos valores. Teniendo en cuenta que 
+ los datos del inventario registrados por el usuario corresponden a la 
+ información real de un depósito, mediante esta opción se pueden ver las 
+ modificaciones a realizar en el sistema para que los datos del mismo coincidan 
+ con la realidad. Estas modificaciones se registran automáticamente en 
+ el sistema mediante los Remitos de ajuste 
+ de inventario.
+Las diferencias del inventario se registrarán en un 
+ remito de egreso o de ingreso dependiendo del tipo de operación a realizar 
+ para corregir el stock de cada bien del inventario. Por ejemplo, si del 
+ ítem XXX en el depósito 1 hay registradas en el sistema 100 unidades y 
+ al tomar el inventario se detecta que hay 110 unidades, se generará una 
+ línea de un remito de ingreso por 10 unidades del ítem XXX. Y así se agruparán 
+ los bienes que deben ingresar, en un remito y los que deben egresar, en 
+ otro remito.
+Es importante destacar que se efectúa un control destinado 
+ a impedir la generación reiterada de remitos de ajuste para un mismo inventario.
+Si en el inventario hay un ítem que maneja despachos 
+ y/o partidas y/o series, al intentar hacer el ajuste aparece el siguiente 
+ mensaje de error “ En el inventario hay ítems que manejan despachos y/o 
+ partidas y/o series.¿ Desea continuar sin ajustar esos ítems?”. Si la 
+ respuesta es No, el sistema no hará nada. Si la respuesta es Sí, se hará 
+ el remito sin tener en cuenta dichos ítems.
+Los datos a ingresar para generar los remitos de ajuste 
+ son:
+ 
+ 
+ Depósito
+
+	Número de depósito 
+	 del cual se van a generar los remitos de ajuste.
+	Debe corresponder a un depósito definido 
+	 en el sistema, del que se haya tomado inventario y el mismo se haya 
+	 cerrado.
+	Al ingresar el depósito se mostrará el 
+	 número de inventario del cual 
+	 se generarán los remitos y la fecha 
+	 de inicio del mismo.
+	A continuación se deben ingresar los datos 
+	 de los remitos a generar.
+ 
+ Remitos de ajuste
+
+	 Fecha
+	Fecha que tendrán los remitos que se generen.
+	 Concepto
+	Código del concepto 
+	 que tendrán asociados los remitos que se generen.
+	Debe corresponder a un concepto definido 
+	 en el sistema y habilitado para Agentes.
+	 Agente
+	Código del agente 
+	 titular de los remitos de ajuste que se generen.
+	Debe corresponder a un agente definido 
+	 en el sistema y de tipo Destino de 
+	 materiales.
+	 Centro 
+	 de apropiación A
+	Código del centro 
+	 de apropiación correspondiente al centro A.
+	Al generar el remito si se detecta 
+	 que el ítem cuyo stock se ajusta, requiere un centro de apropiación, 
+	 se utilizará el que aquí se indique. El que lo requiera o no depende 
+	 de las subcuentas (centro de apropiación A o ambos centros) de la 
+	 imputación contable del inventario 
+	 y de la asociada al concepto indicado, en la posición contable del 
+	 ítem.
+	 Centro 
+	 de apropiación B
+	Código del centro 
+	 de apropiación correspondiente al centro B.
+	Al generar el remito si se detecta 
+	 que el ítem cuyo stock se ajusta, requiere el centro de apropiación 
+	 B, se utilizará el que aquí se indique. El que lo requiera o no depende 
+	 de las subcuentas (centro de apropiación B o ambos centros) de la 
+	 imputación contable del inventario 
+	 y de la asociada al concepto indicado, en la posición contable del 
+	 ítem.
+	 Prefijo 
+	 de ingreso
+	Prefijo que tendrá el remito de ingreso 
+	 que se genere.
+	 Prefijo 
+	 de egreso
+	Prefijo que tendrá el remito de egreso 
+	 que se genere.
+ 
+ Para tener en cuenta
+
+	Si un ítem se administra mediante doble 
+	 unidad de medida, puede ocurrir que al generarse los remitos de ajuste 
+	 de inventario queda la primera unidad con un signo y la segunda unidad 
+	 con el otro.
+	Para evitar este inconveniente, si el 
+	 ítem maneja doble unidad de medida y la diferencia entre los datos 
+	 del inventario y los datos del sistema resulta en cantidades de distintos 
+	 signos, el sistema considera a la línea como dos líneas y generará 
+	 un comprobante de ingreso por una de las cantidades y uno de egreso 
+	 por la otra cantidad.
+	Así por ejemplo, si en un ítem se encuentra 
+	 una diferencia en cantidad de 1 en la primera unidad, y en la segunda 
+	 unidad se encuentra una diferencia de cantidad de -0.25; se genera 
+	 un remito de egreso con cantidad 1 en la primera unidad y segunda 
+	 cantidad en 0 y un remito de ingreso con cantidad=0 en la primera 
+	 unidad y con cantidad=0,25 en la segunda cantidad.
+ 
+//<![CDATA[
+	if( typeof( TextPopupInit ) != 'function' ) TextPopupInit = new Function();
+	TextPopupInit('a2', 'POPUP679633385');
+	TextPopupInit('a3', 'POPUP679665744');
+	TextPopupInit('a1', 'POPUP682914074');
+//]]>
+
+

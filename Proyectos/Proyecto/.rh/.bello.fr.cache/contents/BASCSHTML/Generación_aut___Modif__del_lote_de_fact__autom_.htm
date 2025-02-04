@@ -1,0 +1,605 @@
+
+
+Modificación del lote de facturas automáticas
+Estas modificaciones pueden efectuarse todas las veces 
+ que se desee mientras los comprobantes se encuentren en el lote provisorio. 
+ Una vez cerrado el lote, ya no podrán efectuarse modificaciones a los 
+ mismos.
+Al ingresar en pantalla el número correspondiente al 
+ comprobante a modificar se exhibirán todos los datos del comprobante permitiendo 
+ su consulta y modificación.
+Pueden agregarse nuevas líneas al comprobante, eliminarse 
+ líneas de ítems que no se deseen facturar o modificar las líneas existentes 
+ o algunos de los demás datos del comprobante.
+Los datos a ingresar para efectuar modificaciones a 
+ las facturas automáticas son:
+ 
+ 
+ Número
+
+	Número provisorio de la factura que se 
+	 desea modificar.
+	Debe ingresarse el número de una factura 
+	 existente en el lote.
+	Puede ingresarse el número en forma manual 
+	 o seleccionarse de la lista de comprobantes que se exhibe pulsando 
+	 desde este campo la tecla F3.
+ 
+ Fecha
+
+	Fecha de la factura que se desea modificar.
+	 
+ 
+ Comprobante
+
+	Al indicarse un número de comprobante 
+	 se precarga este campo con el comprobante de venta que corresponda.
+	 
+ 
+ Cliente
+
+	Código del cliente titular de la factura 
+	 que se desea modificar.
+	Al precargar los datos del cliente se 
+	 exhibe un tooltip con el nombre de fantasía del cliente, de no contar 
+	 con dicho dato, se observará la razón social. 
+ 
+ Imputación contable
+
+	Código de la imputación 
+	 contable asociada a la factura seleccionada.
+	En este dato se exhibe la imputación contable 
+	 Por defecto indicada para 
+	 el cliente titular de la factura.
+	Esta cuenta será imputada en el asiento 
+	 contable del comprobante, que se generará al cerrar el lote al cual 
+	 pertenece la factura.
+ 
+ Moneda
+
+	Moneda asociada al comprobante.
+	Si no hay ninguna moneda indicada, se 
+	 asumirá que los importes de la factura están en moneda local. En caso 
+	 contrario, los mismos estarán expresados en la moneda que se indique.
+	Es importante tener en cuenta que, si 
+	 el comprobante fue generado en base a pedidos pendientes, la moneda 
+	 del comprobante será la misma moneda en la cual se registraron los 
+	 pedidos que factura.
+ 
+ Lote
+
+	 Tipo
+	Código del lote al cual corresponde 
+	 el comprobante seleccionado para modificar.
+	 Fecha
+	Fecha del lote al cual corresponde 
+	 el comprobante seleccionado para modificar.
+	 Depósito
+	Depósito de la factura que se desea modificar.
+	En caso que el depósito correspondiente 
+	 al egreso permita stock negativo provisorio y tenga la opción No avisar 
+	 de stock insuficiente de la Tabla de Depósitos/Plantas destildada, 
+	 se da un aviso al usuario informándolo sobre la insuficiencia de existencias 
+	 del ítem en cuestión. En caso contrario (opción de "No avisar 
+	 de stock insuficiente" tildada) no se emite ningún aviso. Esto 
+	 es válido para ítems con y sin colores y medidas, y que manejen una 
+	 y dos unidades de medida.
+	 Liberar 
+	 reserva de cantidades no entregadas
+	Si se tilda esta opción es posible modificar 
+	 el lote de facturas y liberar las cantidades no entregadas de pedidos 
+	 de venta externos e internos referenciados en dicho lote.
+	 Método 
+	 de pago
+	Tipo de pago del comprobante.
+	Las opciones son:
+	Contado
+	Cuenta corriente
+	En los comprobantes de Contado, 
+	 el pago debe registrarse conjuntamente con el registro del comprobante
+	Si el comprobante es de Cuenta 
+	 corriente, actualiza la cuenta corriente correspondiente al 
+	 cliente titular de la operación. En este caso, las fechas de vencimiento 
+	 y los importes a vencer en cada fecha se calculan teniendo en cuenta 
+	 la condición de venta asociada al comprobante.
+ 
+ Ficha Ítems
+ Tabla 
+ de Ítems
+
+	En esta tabla se exhiben, uno a uno, 
+	 los ítems que conforman la factura seleccionada para modificar.
+	Es posible agregar nuevos ítems a 
+	 esta tabla informando para cada ítem la cantidad que se factura, el 
+	 precio de cada unidad y, en función al tipo de ítem del que se trate, 
+	 se requerirá información adicional. Por ejemplo, para algunos bienes 
+	 se deben detallar las cantidades por color y por medida.
+	Para aquellos bienes 
+	 donde cada unidad se identifica con un número de serie, se deben informar 
+	 los números de serie asociados a cada una de las unidades que egresan.
+	Para los bienes que llevan asociado 
+	 un código de partida se debe informar el código de la partida correspondiente. 
+	 La misma debe haberse definido con anterioridad en la tabla destinada 
+	 a tal fin y debe tener registrado el ingreso del bien que se está 
+	 facturando.
+	Para los ítems que son conjuntos, 
+	 es decir, los que están compuestos por un conjunto de ítems que conforman 
+	 el mismo con distintas cantidades, al venderlos, se actualizan las 
+	 existencias de los ítems componentes.
+	Es importante tener en cuenta que 
+	 la forma en que el sistema solicita los datos a incluir en el comprobante 
+	 varía según cuál sea el tipo de bienes de los que se trate. En algunos 
+	 casos, como por ejemplo cuando se trabaja con doble unidad de medida 
+	 o con medidas y colores, se abre una ventana en el campo Cantidad 
+	 para requerir los datos necesarios.
+	En otros casos, como por ejemplo, 
+	 cuando deben informarse códigos de despachos 
+	 , de partidas o de centros 
+	 de apropiación , se incorporan columnas adicionales para permitir 
+	 incluir dicha información.
+	Ítem
+	Código del ítem asociado a la línea 
+	 de la factura.
+	Si se ingresa un ítem nuevo, el código 
+	 que se ingrese debe corresponder a un bien 
+	 , servicio o ítem 
+	 vario ingresado en el sistema y debe estar incluido en la lista 
+	 de precios asociada al cliente .
+	Puede ingresarse el código del ítem 
+	 o su código alternativo.
+	Descripción
+	Descripción del ítem indicado en el 
+	 dato anterior.
+	Comprobante
+	Se exhibe el número de comprobante 
+	 al que se hace referencia en la línea de la factura.
+	Cantidad
+	Cantidad de unidades que se facturan 
+	 del ítem indicado.
+	Aquí se presentan varias posibilidades 
+	 al ingresar nuevas líneas a la factura.
+	Si el ítem es un ítem 
+	 vario o es un servicio de tipo 
+	 Porcentaje o Importe, 
+	 no se solicitará información en este campo.
+	Si el ítem trabaja con doble unidad 
+	 de medida, se solicitará este campo si las ventas se registran en 
+	 la primera unidad. Si las ventas se registran en segunda unidad, al 
+	 ingresar la cantidad en la segunda unidad se completará este dato 
+	 en forma automática y podrá ser modificado sólo si se indicó que la 
+	 relación entre las unidades de medida es Variable.
+	Si el ítem trabaja con colores 
+	 y medidas se abrirá una 
+	 ventana que solicitará el ingreso de las cantidades para cada color 
+	 y medida vendida, y al finalizar el ingreso de datos en esa ventana, 
+	 se completará este dato con la cantidad total de unidades vendidas 
+	 para todos los colores y medidas del ítem.
+	Si el ítem es un contenedor, se abrirá 
+	 una ventana que solicita el código del ítem que contiene (se ofrecerá 
+	 el ítem indicado como default en la tabla de contenedores del bien) 
+	 y la cantidad del mismo, y luego se completará este dato con la cantidad 
+	 resultante de multiplicar la cantidad indicada por la cantidad de 
+	 unidades de este indicada en la definición del ítem contenedor.
+	Si el ítem trabaja con dimensiones, 
+	 se abrirá una ventana que solicitará el ingreso de cantidades para 
+	 cada dimensión posible definida para el ítem, y luego se completará 
+	 este dato con la cantidad resultante de multiplicar la cantidad indicada 
+	 por todas las dimensiones del ítem.
+	Cantidad en 2da unidad
+	Cantidad de unidades que se facturan 
+	 del ítem indicado en la segunda unidad de medida.
+	Si el ítem no trabaja con doble unidad 
+	 de medida, no se solicitará información en este campo.
+	Si el ítem trabaja con doble unidad 
+	 de medida, se solicitará este campo si las ventas se registran en 
+	 la segunda unidad. Si las ventas se registran en primera unidad, al 
+	 ingresar la cantidad en la primera unidad se completará este dato 
+	 en forma automática y podrá ser modificado sólo si se indicó que la 
+	 relación entre las unidades de medida es Variable.
+	Precio
+	Precio del ítem indicado.
+	Si el ítem es un servicio 
+	 o un ítem vario de tipo Importe o Nada, 
+	 no se solicitará información en este campo.
+	Si el ítem es de tipo Porcentaje, 
+	 se solicitará el ingreso de un porcentaje que será aplicado al total 
+	 del comprobante ingresado hasta ese momento, y el valor resultante 
+	 se exhibirá en el campo Importe. 
+	 De esta forma, es posible aplicar descuentos o recargos parciales 
+	 cuyo valor depende del valor de los ítems ingresados en las líneas 
+	 anteriores de la factura.
+	Si el ítem trabaja con colores 
+	 y medidas, en la ventana 
+	 donde se ingresaron las cantidades, podrán ingresarse también los 
+	 precios para cada color y medida. Esto es útil si se manejan distintos 
+	 precios por medida o por color. Si se utiliza un solo precio, podrá 
+	 indicarse el mismo en este dato.
+	Si la línea de la factura hace referencia 
+	 a un pedido se exhibirá el precio allí indicado, pudiendo el mismo 
+	 modificarse o no dependiendo de lo indicado en la condición de venta 
+	 asociada al comprobante. Si la condición de venta indica que se factura 
+	 a Precio del pedido, los precios 
+	 no podrán modificarse en este momento. Si la condición indica que 
+	 se factura a Lista de precios del 
+	 pedido, se ofrecerán los precios de esa lista asociada al pedido 
+	 y tampoco podrán modificarse.
+	Bonificación
+	Porcentaje de bonificación aplicado 
+	 sobre el precio unitario del ítem.
+	El sistema utiliza la tabla de bonificaciones 
+	 indicada en los Parámetros de Cuentas corrientes 
+	 como Primera bonificación, 
+	 para obtener el porcentaje a ofrecer, de acuerdo al valor del atributo 
+	 del cliente y al valor del atributo del ítem indicado.
+	El porcentaje de bonificación ofrecido 
+	 por el sistema podrá modificarse hasta un máximo que está determinado 
+	 por la tabla de bonificaciones indicada en los Parámetros de Cuentas corrientes 
+	 como Máxima de la Primera bonificación.
+	Si el ítem trabaja con colores 
+	 y medidas , en la ventana 
+	 donde se ingresaron las cantidades, podrán ingresarse también los 
+	 porcentajes de bonificación para cada color y medida. Esto es útil 
+	 si se manejan distintos porcentajes por medida o por color. Si se 
+	 utiliza un solo porcentaje, podrá indicarse el mismo en este dato.
+	Bonificación 2
+	Porcentaje de bonificación a aplicar 
+	 sobre el precio unitario del ítem con la primera bonificación ya aplicada.
+	El sistema utiliza la tabla de bonificaciones 
+	 indicada en los Parámetros de Cuentas corrientes 
+	 como Segunda bonificación, 
+	 para obtener el porcentaje a ofrecer, de acuerdo al valor del atributo 
+	 del cliente y al valor del atributo del ítem indicado.
+	El porcentaje de bonificación ofrecido 
+	 por el sistema podrá modificarse hasta un máximo que está determinado 
+	 por la tabla de bonificaciones indicada en los Parámetros de Cuentas corrientes 
+	 como Máxima de la Segunda bonificación.
+	Si el ítem trabaja con colores 
+	 y medidas , en la ventana 
+	 donde se ingresaron las cantidades, podrán ingresarse también los 
+	 porcentajes de bonificación para cada color y medida. Esto es útil 
+	 si se manejan distintos porcentajes por medida o por color. Si se 
+	 utiliza un solo porcentaje, podrá indicarse el mismo en este dato.
+	Importe
+	Importe de la línea de la factura.
+	Si el ítem es un bien, o un ítem 
+	 vario o servicio de tipo Porcentaje o Cantidad, 
+	 el importe de la línea ya fue calculado en base a la información ingresada 
+	 en los otros campos, y el mismo no podrá ser modificado.
+	Si el servicio 
+	 o ítem vario es de tipo Importe se debe ingresar aquí el 
+	 valor correspondiente al mismo.
+	Depósito
+	Código del depósito 
+	 que se asigna a la línea de la factura.
+	Despacho
+	Código de hasta quince caracteres 
+	 que indica el número de despacho del cual 
+	 egresa el ítem indicado.
+	Este dato podrá ingresarse para los 
+	 ítems que trabajan con despachos. Debe corresponder a un despacho 
+	 definido en el sistema y debe tener disponible la cantidad de unidades 
+	 del ítem que se está facturando.
+	Se mostrará una lista ordenada por 
+	 fecha con todos los despachos en los que ingresó el ítem que se está 
+	 facturando y podrá seleccionarse el que corresponda.
+	Partida
+	Código de hasta quince caracteres 
+	 que indica el número de partida de la cual 
+	 egresa el ítem indicado.
+	Este dato podrá ingresarse para los 
+	 ítems que trabajan con partidas. Debe corresponder a una partida definida 
+	 en el sistema para el ítem indicado.
+	Se mostrará una lista con todas las 
+	 partidas en las que ingresó el ítem que se está facturando y podrá 
+	 seleccionarse la que corresponda.
+	Mediante el botón que se observa al 
+	 lado de la partida asignada, se accede a una ventana de modificación 
+	 de partidas. Se muestra el código del ítem, color, medida y cantidades 
+	 asignadas a cada partida y despacho (si corresponde). 
+	En dicha ventana será posible eliminar 
+	 líneas de partidas o agregar nuevas partidas y despachos, de ser necesario, 
+	 e indicar la cantidad de las mismas, que nunca podrá superar el stock 
+	 disponible de cada partida.
+	Al oprimir el botón OK el sistema 
+	 validará que la suma de las cantidades de las partidas ingresadas 
+	 en ambas unidades de medida coincida con las cantidades originales 
+	 de la línea del comprobante. Si todo coincide, se procederá a modificar 
+	 la línea original del ítem, agregando las nuevas líneas de las partidas 
+	 indicadas en la modificación. 
+	Si el lote fue generado sin asignar 
+	 partidas automáticamente, las partidas tampoco serán asignadas automáticamente 
+	 en el momento de la modificación.
+	Números de serie
+	Si el ítem indicado trabaja con números 
+	 de serie, se abrirá una ventana que permitirá el ingreso de todos 
+	 los números de serie que egresan con el comprobante.
+	Se solicitará el ingreso de tantos 
+	 números como cantidad de unidades egresen del ítem.
+	El sistema brinda la posibilidad de 
+	 ingresar estos números en forma automática definiendo un prefijo común 
+	 y un rango de números para los mismos. Esto es muy útil en el caso 
+	 de egresos de grandes cantidades de mercadería seriada. Además, se 
+	 exhibirá una lista con todos los números de serie registrados en los 
+	 ingresos de mercadería del ítem, permitiendo también seleccionar de 
+	 estos números cuáles son los que egresan.
+	Centro de apropiación A
+	Código del centro 
+	 de apropiación A asociado a la línea del comprobante.
+	Para cada ítem ingresado en la factura 
+	 que tiene una tabla de posiciones contables asociadas, se verificará 
+	 si la imputación contable de inventario de la posición contable o 
+	 la de ventas o la asociada al concepto para ventas indicado en los 
+	 Parámetros de Datos Generales, tienen subcuentas de tipo centro de 
+	 apropiación A o ambos centros. En ese caso, se solicitará el ingreso 
+	 del centro de apropiación asociado.
+	Centro de apropiación B
+	Código del centro 
+	 de apropiación B asociado a la línea del comprobante.
+	Para cada ítem ingresado en la factura 
+	 que tiene una tabla de posiciones contables asociadas, se verificará 
+	 si la imputación contable de inventario de la posición contable o 
+	 la de ventas o la asociada al concepto para ventas indicado en los 
+	 Parámetros de Datos Generales, tienen subcuentas de tipo centro de 
+	 apropiación B o ambos centros. En ese caso, se solicitará el ingreso 
+	 del centro de apropiación asociado.
+ 
+ Ficha Totales
+
+	Esta ficha está destinada exclusivamente 
+	 a exhibir información relacionada a los totales de la factura. Los 
+	 totales son calculados automáticamente y los importes de I.V.A. y 
+	 demás impuestos pueden ser modificados en este momento. Los totales 
+	 se exhiben expresados en la moneda del comprobante.
+	Esta ficha puede ser consultada todas 
+	 las veces que sea necesario durante la modificación del comprobante 
+	 y la información de la misma se actualizará en forma automática a 
+	 medida que se ingresan líneas en el comprobante.
+	 Tabla 
+	 de Liquidación de Impuestos
+	Esta tabla muestra los totales gravados 
+	 y los importes de I.V.A., I.V.A. no inscripto, percepciones e impuestos 
+	 internos calculados automáticamente por el sistema en base a las tablas 
+	 de impuestos asociadas a los ítems 
+	 ingresados en la factura.
+	Los importes gravados son acumulados 
+	 por igual tasa de impuesto.
+	Para el cálculo del I.V.A. la tasa 
+	 se obtiene de la tasa de I.V.A. ventas de las tablas de impuestos 
+	 asociadas a los ítems facturados y para los clientes no inscriptos 
+	 se aplicará además la sobretasa indicada en la tasa de I.V.A. no inscripto 
+	 de la tabla de impuestos.
+	Para el cálculo de la percepción de 
+	 Ganancias la tasa se obtiene de la definición de las tablas de percepción 
+	 de Ganancias, en base a la tabla de percepción de Ganancias indicada 
+	 en la tabla de impuestos asociada a los ítems facturados y a la categoría 
+	 de percepción de Ganancias indicada en el tratamiento 
+	 impositivo del cliente titular 
+	 del comprobante. Si el cliente no tiene categoría de percepción de 
+	 Ganancias no se liquida este impuesto.
+	Para el cálculo de la percepción de 
+	 I.V.A. la tasa se obtiene de la definición de las tablas de percepción 
+	 de I.V.A, en base a la tabla de percepción de I.V.A. indicada en la 
+	 tabla de impuestos asociada a los ítems facturados y a la categoría 
+	 de percepción de I.V.A. indicada en el tratamiento 
+	 impositivo del cliente titular 
+	 del comprobante. Si el cliente no tiene categoría de percepción de 
+	 I.V.A. no se liquida este impuesto.
+	Para el cálculo de la percepción de 
+	 Ingresos Brutos la tasa se obtiene de la definición de la provincia 
+	 asociada al comprobante, en base a la tabla de percepción de Ingresos 
+	 Brutos indicada en la tabla de impuestos asociada a los ítems facturados 
+	 y a la categoría de percepción de Ingresos Brutos indicada en el tratamiento 
+	 impositivo del cliente titular del comprobante. Si el cliente no tiene 
+	 categoría de percepción de Ingresos Brutos no se liquida este impuesto.
+	Los impuestos internos pueden calcularse 
+	 de dos formas diferentes. Por un lado si los ítems facturados tienen 
+	 definido un importe fijo de impuesto interno, se calcula multiplicando 
+	 este importe por la cantidad de unidades facturada en cada caso. Para 
+	 los ítems sin importe fijo de impuesto interno, se calcula aplicando 
+	 la tasa de impuesto interno indicada en las tablas de impuestos asociadas 
+	 a los ítems.
+	Los importes correspondientes a los 
+	 ítems sin tabla de impuestos son prorrateados entre los ítems con 
+	 tabla de impuestos asociada.
+	Impuesto
+	Texto que identifica al tipo de impuesto 
+	 que se está liquidando en la línea de la tabla.
+	Los impuestos posibles de facturar 
+	 son: I.V.A., I.V.A. No Inscripto, Percepción Ganancias, Percepción 
+	 I.V.A., Percepción Ingresos brutos e Impuestos internos.
+	Importe gravado
+	Importe gravado correspondiente a 
+	 la tasa de impuestos indicada en la columna Tasa.
+	Se muestra el importe acumulado para 
+	 todos los ítems cuya tabla de impuestos tiene la tasa indicada en 
+	 la columna Tasa, como tasa 
+	 de impuestos correspondiente al impuesto que se está liquidando.
+	Tasa
+	Tasa de I.V.A., de percepción o de 
+	 impuesto interno que se aplica al importe gravado indicado en el campo 
+	 anterior.
+	Las tasas se obtienen de las tablas 
+	 de impuestos asociadas a los ítems facturados o de las tablas de percepción 
+	 indicadas en las tablas de impuestos.
+	Para los ítems con importe fijo de 
+	 impuesto interno se mostrará tasa cero.
+	Importe
+	Importe de I.V.A., percepción o impuesto 
+	 interno que resulta de aplicar la tasa indicada en el campo anterior 
+	 al importe gravado correspondiente.
+	 Provincia 
+	 para Ingresos Brutos
+	Este botón permite ver y modificar 
+	 el cálculo de percepciones de Ingresos Brutos hecho por BASCS.
+	Al pulsarlo se abrirá una ventana 
+	 en donde en una tablita se mostrarán las provincias para las que se 
+	 calcularon percepciones y el porcentaje del importe sujeto de cada 
+	 una. Si no se calcularon múltiples percepciones, y el cliente tiene 
+	 Convenio multilateral, se mostrarán además de la provincia del comprobante 
+	 todas las provincias del cliente, pero deshabilitadas y al hacer doble 
+	 clic sobre la línea se habilitará la provincia que se desee. Para 
+	 cada provincia se mostrará el porcentaje del cliente o el 100% según 
+	 lo que la provincia tenga indicado.
+	En esta tabla podrán agregarse o borrarse 
+	 provincias, o modificarse los porcentajes de aquellas provincias que 
+	 apliquen el porcentaje del convenio.
+	Al confirmar la información de la 
+	 ventana se recalcularán las percepciones de ingresos brutos utilizando 
+	 las provincias resaltadas en la tabla y los porcentajes de cada una, 
+	 y se mostrará el cálculo resultante en la tabla de totales de impuestos 
+	 de la factura.
+	Al confirmar la ventana se recalcularán 
+	 las percepciones de ingresos brutos utilizando las provincias resaltadas 
+	 en la tabla y los porcentajes de cada una, y se mostrará el cálculo 
+	 resultante en la tabla de totales de impuestos de la factura.
+	 Total 
+	 gravado
+	Importe total gravado de la factura.
+	Se exhibe la suma de los importes 
+	 gravados de la tabla.
+	 Total 
+	 Impuestos
+	Importe total de impuestos de la factura.
+	Se exhibe la suma de los importes 
+	 de I.V.A., percepciones e impuestos internos de la tabla.
+	 Ajuste 
+	 por base de redondeo
+	Este campo, cuyo valor se calcula 
+	 en la generación del lote de facturación automática, exhibe el importe 
+	 preciso para redondear el comprobante a la base de redondeo indicada 
+	 para moneda local o para la moneda en la que se expresa el comprobante.
+	Dicho ajuste se sustituirá en el momento 
+	 del cierre del lote por el ítem indicado en los parámetros generales 
+	 como ítem para base por redondeo.
+	 Total 
+	 comprobante
+	Importe total de la factura.
+	Se exhibe la suma de los importes 
+	 gravados más los importes de impuestos de la tabla de liquidación 
+	 de impuestos.
+ 
+ Ficha Entrega
+
+	Exhibe la cantidad total de unidades, 
+	 en primera y en segunda unidad, también se incluye la siguiente información:
+	 Bultos
+	Número que indica la cantidad de bultos 
+	 asociada al comprobante.
+	 Valor 
+	 declarado
+	Está destinado al seguro. Surge de 
+	 la lista de precios que se ha indicado en el parámetro correspondiente 
+	 a lista para valor declarado (en Configuración /Parámetros / ítems).
+	Cabe destacar que para los ítems con 
+	 medidas y colores que se indican por explosión en grilla de medidas 
+	 y colores, se utilizará el precio máximo para dicho ítem.
+	No se muestra este valor para las 
+	 notas de crédito o comprobantes sin entrega o comprobantes con remito 
+	 diferido asociado.
+	Si la lista de precios está expresada 
+	 en moneda diferente a la moneda local se utilizarán los cambios indicados 
+	 en el comprobante si coinciden con la moneda de la lista. En caso 
+	 contrario se utilizará la primera columna de cotización para dicha 
+	 moneda a la fecha del comprobante.
+	 Domicilio
+	Permite modificar el domicilio de 
+	 entrega.
+	 Obs. 
+	 Entrega
+	Permite modificar las observaciones.
+	 Cantidad
+	Cantidad de la mercadería entregada, 
+	 según la primera unidad de medida.
+	 2da 
+	 unidad
+	Cantidad de la mercadería entregada 
+	 expresada en la segunda unidad de medida.
+	 Peso
+	Peso total de la mercadería entregada 
+	 expresado en la unidad indicada en los Parámetros de ítems como unidad 
+	 de peso.
+	 Volumen
+	Volumen total de la mercadería entregada 
+	 expresado en la unidad indicada en los Parámetros de ítems como unidad 
+	 de volumen.
+ 
+ Ficha Período
+
+	Se habilita al modificar notas de crédito 
+	 del lote. Se muestra en esa solapa el periodo indicado al generar 
+	 el lote, si se ingresó el mismo y puede ingresarse o modificarse en 
+	 este momento.
+	No es obligatorio el ingreso del período 
+	 y solo se exigirá si se necesita determinar el período a imputar para 
+	 calcular percepciones de ingresos brutos en una provincia que solo 
+	 calcule para orígenes del mismo mes.
+	 
+	 Período 
+	Rango de fechas que se habilita al 
+	 generar notas de crédito automáticas. El ingreso del período no es 
+	 obligatorio de indicar y solo se va a exigir su ingreso para poder 
+	 generar notas de crédito con percepciones provinciales en alguna provincia 
+	 que tenga indicado que solo se calculan percepciones en orígenes del 
+	 mismo mes.
+	 
+	 Desde fecha
+	Fecha desde que va a ser utilizada 
+	 al generar notas de crédito con percepciones provinciales en alguna 
+	 provincia que tenga indicado que solo se calculan percepciones en 
+	 orígenes del mismo mes.
+	 
+	 Hasta fecha
+	Fecha hasta que va a ser utilizada 
+	 al generar notas de crédito con percepciones provinciales en alguna 
+	 provincia que tenga indicado que solo se calculan percepciones en 
+	 orígenes del mismo mes.
+ 
+ Ficha Mas
+
+	En esta ficha se muestran algunos datos 
+	 generales de la factura.
+	La factura generada automáticamente tendrá 
+	 en estos campos los valores correspondientes a los comprobantes facturados 
+	 por la misma.
+	 Vendedor
+	Código del vendedor 
+	 asociado a la factura.
+	 Lista 
+	 de precios
+	Código de la lista de precios asociada 
+	 a la factura.
+	 Condición 
+	 de venta
+	Código de la condición de venta que 
+	 asociada a la factura.
+	 Provincia
+	Código de la provincia 
+	 asociada a la factura.
+	 Tratamiento 
+	 impositivo
+	Código del tratamiento 
+	 impositivo asociado a la factura.
+	 Tratamiento 
+	 impositivo provincial
+	Código del tratamiento 
+	 impositivo provincial asociado a la factura.
+	 Observaciones
+	Permite ingresar un texto aclaratorio.
+ 
+ Ficha Permisos
+
+	Se habilita para las Facturas E pudiendo 
+	 ingresar en este momento la información del permiso de exportación. 
+	 No es obligatorio el ingreso.
+	 Destino
+	Código de la país 
+	 de destino del comprobante.
+	 Tabla 
+	 de permisos
+	Lista de permisos de embarque y códigos 
+	 de país.
+ 
+ 
+
+
+

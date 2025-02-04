@@ -1,0 +1,590 @@
+
+
+Partes de producción
+A través de este comprobante se asignan los costos a 
+ los productos resultantes del proceso productivo.
+También existe la posibilidad de ingresar una orden 
+ de producción en base a otros comprobantes ya ingresados en el sistema:
+ 
+ 
+ Comprobantes 
+ referenciados Partes de producción
+Si el parte de producción se genera desde el Control 
+ de Ordenes de Producción se muestra en el encabezado del comprobante y 
+ en las líneas de los recursos la tarea sobre la que se está generando 
+ el parte.
+Se debe tener en cuenta que no es posible referenciar 
+ ordenes de producción con tareas de distintas plantas.
+Al registrar partes de producción los datos a ingresar, 
+ además de la fecha y el número de comprobante son:
+ 
+ Depósito
+
+	Código de depósito del que egresarán los 
+	 insumos y en el que ingresarán los productos terminados que se registren 
+	 en el comprobante.
+	Si en este campo no se ingresa información, 
+	 el botón de búsqueda de Ordenes de producción, traerá todas aquellas 
+	 que se encuentren pendientes. Si se ingresa un código de depósito, 
+	 éste será utilizado como filtro de modo que la búsqueda sólo incluya 
+	 las órdenes de producción de ese depósito.
+ 
+ Planta
+
+	En caso de precargar el parte en base 
+	 a una orden de producción, el sistema exhibe el código de la planta 
+	 en al cual se realiza el proceso productivo.
+	 
+ 
+ Cancela Orden de Producción
+
+	Es posible que si se ingresa el parte 
+	 en base a una orden de producción se obtengan menos productos de los 
+	 indicados en dicho comprobante pero que, a pesar de ello, se decida 
+	 dar por cumplida la producción correspondiente a dicha Orden 
+	 de Producción y no mantener el comprobante pendiente por los 
+	 bienes no fabricados. En ese caso se deberá utilizar este campo para 
+	 indicar que, a pesar de las diferencias encontradas y de no haber 
+	 cumplido con la producción prevista, se decide dar por concluido el 
+	 proceso.
+ 
+ Hoja de ruta
+
+	Este campo podrá completarse con el código 
+	 de Hoja de ruta que se desee utilizar como base para registrar el 
+	 parte de producción, en el caso en que el parte se registre en forma 
+	 directa y no en base a órdenes de producción ingresadas.
+	Debe corresponder al código de una hoja 
+	 de ruta ya definida en el sistema.
+	La hoja de ruta determinará qué bienes 
+	 se han de fabricar y qué insumos y recursos se han de utilizar en 
+	 el proceso productivo.
+	El parte de producción no podrá registrarse 
+	 si la fecha de inicio de la Hoja de ruta es posterior a la fecha actual 
+	 o si su fecha de expiración sea anterior a la fecha actual.
+ 
+ Cantidad
+
+	Cantidad de unidades a producir con el 
+	 parte de producción que se está ingresando, en el caso en que el parte 
+	 se registre en forma directa en base a una hoja de ruta.
+	La cantidad a fabricar de cada bien se 
+	 obtendrá como:
+	Cantidad 
+	 x (Cantidad según Hoja de Ruta / Unidades equivalentes según Hoja 
+	 de ruta)
+	Una vez informada la hoja de ruta base 
+	 y la cantidad a producir, el parte de producción se precarga con la 
+	 información correspondiente a dicho documento.
+ 
+ 
+ Ficha Productos
+ Tabla de Ítems
+
+	Esta tabla se completa con los ítems 
+	 que conforman el parte de producción que se está registrando.
+	Si el parte de producción no se registra 
+	 en forma directa, se mostrarán en la tabla los productos terminados 
+	 indicados en la hoja de ruta o en la orden de producción en base a 
+	 la cual se ingresa, y se podrán modificar las cantidades fabricadas 
+	 y agregar bienes.
+	Si se modifican las cantidades del 
+	 primer ítem indicado como producto terminado en la Hoja o en la Orden 
+	 (ítem más significativo), el sistema ofrece el recálculo de insumos 
+	 y productos.
+	Ítem
+	Código del bien a incluir en el 
+	 parte de producción.
+	Descripción
+	Descripción del ítem indicado 
+	 en el dato anterior.
+	Si el ítem tiene asociada una 
+	 descripción larga, se exhibirá esta. Si no, se exhibirá la otra descripción. 
+	 Si el ítem no tiene descripción asociada, se solicitará el ingreso 
+	 de un detalle del mismo en este momento.
+	Observaciones
+	El sistema exhibe las observaciones 
+	 que tuviere el ítem, si éstas son previamente parametrizadas en la 
+	 tabla de bienes para el comprobante "Parte de producción".
+	Cantidad
+	Cantidad de unidades que se fabrican 
+	 del ítem indicado.
+	Aquí se presentan varias posibilidades.
+	Si el ítem trabaja con doble unidad 
+	 de medida, se solicitará este campo si las ventas se registran en 
+	 la primera unidad. Si las ventas se registran en segunda unidad, al 
+	 ingresar la cantidad en la segunda unidad se completará este dato 
+	 en forma automática y podrá ser modificado sólo si se indicó que la 
+	 relación entre las unidades de medida es Variable.
+	Si el ítem es un contenedor, se 
+	 abrirá una ventana que solicita el código del ítem que contiene (se 
+	 ofrecerá el ítem indicado como default en la tabla de contenedores 
+	 del bien) y la cantidad del mismo, y luego se completará este dato 
+	 con la cantidad resultante de multiplicar la cantidad indicada por 
+	 la cantidad de unidades de este indicada en la definición del ítem 
+	 contenedor.
+	Si el ítem trabaja con dimensiones, 
+	 se abrirá una ventana que solicitará el ingreso de cantidades para 
+	 cada dimensión posible definida para el ítem, y luego se completará 
+	 este dato con la cantidad resultante de multiplicar la cantidad indicada 
+	 por todas las dimensiones del ítem.
+	Cantidad en 2da unidad
+	Cantidad de unidades que se fabrican 
+	 del ítem indicado en la segunda unidad de medida.
+	Si el ítem no trabaja con doble 
+	 unidad de medida, no se solicitará información en este campo.
+	Si el ítem trabaja con doble unidad 
+	 de medida, se solicitará este campo si las ventas se registran en 
+	 la segunda unidad. Si las ventas se registran en primera unidad, al 
+	 ingresar la cantidad en la primera unidad se completará este dato 
+	 en forma automática y podrá ser modificado sólo si se indicó que la 
+	 relación entre las unidades de medida es Variable.
+	Si la relación es variable y al 
+	 ingresar la cantidad en segunda unidad de medida, la primera está 
+	 en cero, el sistema la calcula automáticamente.
+	Despacho
+	Código de hasta quince caracteres 
+	 que indica el número del despacho al cual ingresa el ítem indicado.
+	Este dato podrá ingresarse para 
+	 los ítems que trabajan con despachos. Debe corresponder a un despacho 
+	 definido en el sistema para el ítem indicado.
+	El sistema controla y no permite 
+	 ingresar más de un despacho por producto.
+	Partida
+	Código de hasta quince caracteres 
+	 que indica el número de la partida a la cual ingresa el ítem indicado.
+	Este dato podrá ingresarse para 
+	 los ítems que trabajan con partidas. Debe corresponder a una partida 
+	 definida en el sistema para el ítem indicado.
+	El sistema controla y no permite 
+	 ingresar más de una partida por producto.
+	Números de serie
+	Si el ítem indicado trabaja con 
+	 números de serie, se abrirá una ventana que permitirá el ingreso de 
+	 todos los números de serie que ingresan con el comprobante.
+	Se solicitará el ingreso de tantos 
+	 números como cantidad de unidades se fabriquen del ítem.
+	El sistema brinda la posibilidad 
+	 de ingresar estos números en forma automática definiendo un prefijo 
+	 común y un rango de números para los mismos. Esto es muy útil en el 
+	 caso de producción de grandes cantidades de mercadería seriada.
+	Cabe aclarar que si el producto 
+	 principal maneja números de serie, y se produce más de una unidad, 
+	 se deberá indicar la Traza del comprobante si se cumplen alguna de 
+	 las siguientes condiciones:
+	Existen insumos 
+	 con despacho, partidas o números de serie y se indicó más de un número 
+	 de serie en alguno de ellos.
+	Existen grupos en 
+	 los recursos.
+	Para ingresar la traza, en la 
+	 ventana destinada a informar los números de serie del producto terminado, 
+	 existe la columna Traza.
+	Al hacer doble clic sobre la traza 
+	 correspondiente a un producto, se precargan los grupos de los recursos 
+	 y los insumos que poseen despacho, partidas y/o números de serie, 
+	 de modo de indicar (mediante un tilde en la primera columna) cuales 
+	 corresponden al número de serie del producto terminado en cuestión.
+	Cuando se está ingresando la traza, 
+	 si ya se indicó algo para ese número de serie se pone de color azul 
+	 la x de la columna Traza.
+	Cuando se está ingresando la traza, 
+	 si un insumo ya está seleccionado para otro número de serie se muestra 
+	 en verde la línea de dicho insumo.
+	Si 
+	 el  parte de producción hace referencia a una orden de producción, 
+	 con un producto terminado que maneja números de serie, se ofrecen 
+	 los números de serie ingresados en la orden y también los números 
+	 de serie ingresados en los partes anteriores.
+	Porcentaje de costo
+	Número que indica qué porcentaje 
+	 del costo de los procesos de fabricación le corresponderá al producto 
+	 terminado indicado.
+	Para obtener el costo de los productos 
+	 terminados, se suman los costos de los insumos, de la mano de obra 
+	 y de la maquinaria afectadas al parte de producción y, se aplica el 
+	 porcentaje de incidencia indicado en cada producto. Dicho porcentaje 
+	 se considera con una precisión de 4 decimales.
+	Rel.
+	La información de este campo aplica 
+	 exclusivamente a productos que administran medidas y colores y se 
+	 debe utilizar solamente si el costo de los productos terminados no 
+	 se reparte uniformemente entre las diversas combinaciones medida-color.
+	Para ingresar información al campo, 
+	 debe hacerse "doble clic".
+	Si se ha ingresado algo en la 
+	 "Relación de Costos", la columna se muestra una "X" 
+	 en azul. Si no tiene nada ingresado, pero está previsto que se ingresen 
+	 datos en la grilla correspondiente, se muestra un "X" en 
+	 negro. Si no es posible ingresar relación de costos para el ítem, 
+	 no se muestra nada en esta columna (bienes sin medidas y colores).
+	Si no se indica nada en este campo 
+	 se considera que el costo de producción se reparte uniformemente entre 
+	 todos los productos resultantes del proceso, independientemente de 
+	 los colores y de las medidas que se hayan producido.
+	A veces, algunas medidas de un 
+	 ítem resultan más costosas que otras, por ejemplo, por utilizar mayor 
+	 cantidad de insumos.
+	Si por ejemplo, para un producto 
+	 terminado que se fabrica en blanco y negro, en los talles S, M, L 
+	 y XL, se indica como relación de costos las siguientes:
+	
+		
+			 
+			S
+			M
+			L
+			XL
+		
+		
+			Blanco
+			1
+			1.10
+			1.10
+			1.15
+		
+		
+			Negro
+			1
+			1.10
+			1.10
+			1.15
+		
+	
+	Significa que, independientemente 
+	 del color, los talles M y L tienen un 10% más de costo que los talles 
+	 S y los talles XL, un 15% más.
+	Si por ejemplo se producen 10/S, 
+	 20/M, 20/L y 10/XL unidades de un bien con la relación de costos indicada, 
+	 y el costo total de la producción resulta ser de 3300, el costo de 
+	 cada medida resulta de aplicar las siguientes fórmulas:
+	
+		
+			Base de costos = Costo 
+			 total / (Sumatoria de relación * cantidad)
+			Costo unitario de cada 
+			 medida-color = Base de costos * Relación
+		
+	
+	La "Sumatoria de relación 
+	 * cantidad" se refiere a la suma, para cada combinación medida-color, 
+	 del resultado de multiplicar la cantidad de unidades por la relación 
+	 que le corresponde.
+	Por lo cual, en el caso del ejemplo,
+	Base de costos = 3300 / (1*10 
+	 + 1.10*20 + 1.10*20 + 1.15*10) = 50,382
+	Luego, el costo para cada medida 
+	 será:
+	
+		
+			Costo S = 50,382 * 1 = 50,382
+			Costo M-L = 50,382 * 1,10 = 55,42
+			Costo XL = 50,382 * 1,15 = 57,94
+		
+	
+	Se debe tener en cuenta que si 
+	 se ingresa información en la grilla, debe ingresársela para todos 
+	 los talles y colores de modo que el cálculo de costos se realice en 
+	 forma correcta. Si no se ingresa nada, el costo se reparte uniformemente 
+	 entre todos los productos que se fabrican.
+	 
+ 
+ 
+ Ficha Productos cancelados
+
+	Esta solapa se habilita solo si el parte 
+	 de producción se genera desde el Control de Ordenes de Producción.
+	Solo es posible indicar productos terminados 
+	 que están en la Orden referenciada o en algunos de los partes parciales 
+	 previos que se hayan registrado.
+ 
+ Ficha Total de Insumos
+Esta ficha está destinada a exhibir la información 
+ relacionada a los totales de insumos utilizados en el parte de producción, 
+ permitiendo modificar dicha información si el proceso productivo lo requiere.
+ Tabla de Insumos
+
+	Se exhiben en esta tabla todos los 
+	 insumos utilizados para cumplimentar la fabricación de los ítems del 
+	 comprobante con la cantidad utilizada de cada uno.
+	Los totales de insumos son calculados 
+	 y actualizados automáticamente, en base a las líneas ingresadas en 
+	 el comprobante y a los insumos registrados en la orden de producción 
+	 o en la hoja de ruta utilizada como base del comprobante.
+	Podrán modificarse los insumos, eliminarse 
+	 los que no se utilicen o agregarse nuevos insumos si el proceso de 
+	 fabricación así lo requiere.
+ Remanentes
+
+	Si se está ingresando el parte de 
+	 la última tarea de una Orden de Producción con planta, se habilita 
+	 este botón. Al presionarlo el sistema carga en la tabla de insumos 
+	 todo lo que se envió a la planta, para esa Orden de Producción y no 
+	 fue utilizado.
+	Si un insumo ya estaba en la tabla 
+	 antes de presionar el botón, el sistema modifica la cantidad del mismo, 
+	 sino lo agrega al final.
+	Luego de presionar el botón el mismo 
+	 se deshabilita.
+	Ítem
+	Código del ítem o insumo requerido 
+	 en el parte de producción.
+	Descripción
+	Denominación correspondiente al 
+	 ítem cuyo código se exhibe en la columna anterior.
+	Observaciones
+	El sistema exhibe las observaciones 
+	 que tuviere el ítem, si éstas son previamente parametrizadas en la 
+	 tabla de bienes para el comprobante "Parte de producción".
+	Cantidad
+	Cantidad de unidades del insumo 
+	 utilizadas para cumplimentar el parte de producción.
+	En esta cantidad se acumulan las 
+	 cantidades del insumo utilizadas para producir todos los ítems incluidos 
+	 en el parte de producción, que requieren el insumo cuyo código se 
+	 indica en la columna ítem.
+	Si el ítem trabaja con doble unidad 
+	 de medida y la relación entre ellas es variable, si al ingresar la 
+	 cantidad en segunda unidad de medida, la primera está en cero, el 
+	 sistema la calcula automáticamente.
+	Cantidad en 2da unidad
+	Cantidad de unidades del insumo 
+	 indicado en la segunda unidad de medida.
+	Si el ítem no trabaja con doble 
+	 unidad de medida, no se exhibirá información en este campo.
+	Si la relación es variable y al 
+	 ingresar la cantidad en segunda unidad de medida, la primera está 
+	 en cero, el sistema la calcula automáticamente.
+	Despacho
+	Código de hasta quince caracteres 
+	 que indica el número de despacho del cual egresa el insumo indicado.
+	Este dato podrá ingresarse para 
+	 los ítems que trabajan con despachos. Debe corresponder a un despacho 
+	 definido en el sistema y debe tener disponible la cantidad de unidades 
+	 del ítem que se está utilizando.
+	El sistema mostrará una lista 
+	 ordenada por fecha con todos los despachos en los que ingresó el ítem 
+	 y podrá seleccionarse el despacho que corresponda.
+	Partida
+	Código de hasta quince caracteres 
+	 que indica el número de partida de la cual egresa el insumo indicado.
+	Este dato podrá ingresarse para 
+	 los ítems que trabajan con partidas. Debe corresponder a una partida 
+	 definida en el sistema para el ítem indicado.
+	El sistema mostrará una lista 
+	 con todas las partidas en las que ingresó el ítem y podrá seleccionarse 
+	 la partida que corresponda.
+	Números de serie
+	Si el insumo indicado trabaja 
+	 con números de serie, se abrirá una ventana que permitirá el ingreso 
+	 de todos los números de serie que se utilizan en el comprobante.
+	Se solicitará el ingreso de tantos 
+	 números como cantidad de unidades se utilicen del ítem.
+	El sistema brinda la posibilidad 
+	 de ingresar estos números en forma automática definiendo un prefijo 
+	 común y un rango de números para los mismos. Esto es muy útil en el 
+	 caso de egresos de grandes cantidades de mercadería seriada. Además, 
+	 se exhibirá una lista con todos los números de serie registrados en 
+	 los ingresos de mercadería del ítem, permitiendo también seleccionar 
+	 de estos números cuáles son los que se utilizan.
+	Dist.
+	La información que se informe 
+	 en este campo está destinada exclusivamente a los procesos que involucran 
+	 productos terminados con medidas y colores.
+	Para entrar información al campo, 
+	 presione "doble clic".
+	Para los insumos a los que se 
+	 ha informado una determinada distribución por medida, en esta columna 
+	 se muestra una "X" en azul. Si no se ha ingresado información 
+	 , pero está permitido que se ingrese, se muestra una "X" 
+	 en negro. Si no se puede ingresar distribución de medidas para el 
+	 ítem, la columna no exhibe nada.
+	Cuando se fabrica un bien en distintos 
+	 talles y colores puede ocurrir que, de determinado insumo, se requiera 
+	 utilizar distinta cantidad de unidades, o distintos colores, para 
+	 algunos talles.
+	Por ejemplo, el talle XL de una 
+	 prenda puede requerir más botones, o cierres de diferente medida, 
+	 que los talles L y M.
+	Posiblemente un cierre color beige 
+	 pueda utilizarse como insumo en prendas de diversos color claros pero 
+	 se requiera de un cierre más oscuro para otro conjunto de colores.
+	Para estos casos se prevé la posibilidad 
+	 de indicar, en relación a los insumos, la "distribución por medidas".
+	La "distribución por medida" 
+	 de los insumos indica como se distribuye la cantidad de unidades indicadas, 
+	 entre las distintas medidas del producto terminado.
+	Por supuesto, tiene sentido indicarla 
+	 cuando el producto terminado tiene distintas medidas y colores y el 
+	 insumo no se reparte uniformemente entre las mismas. Vale aclarar 
+	 que si la hoja de ruta tiene más de un producto terminado que se administra 
+	 con medidas, todos ellos deben corresponder a la misma tabla de medidas.
+	Por ejemplo, si se fabrican camperas 
+	 y uno de los insumos es "botones". Si las camperas llevan 
+	 distinta cantidad de botones según cual sea la medida, en "distribución 
+	 por medidas" diremos como se distribuye la cantidad total de 
+	 botones, entre las diversas medidas de las camisas.
+	Si se fabrican 60 camperas según 
+	 la curva 10/S, 20/L, 20/M, 10/XL y si los talles S llevan 10 botones, 
+	 los talles L y M llevan 12 y los talles XL llevan 14, en la hoja de 
+	 ruta se indicará::
+	
+		
+			Insumo
+			Cantidad
+			S
+			M
+			L
+		
+		
+			Botones
+			720 unidades
+			100
+			240
+			240
+		
+	
+	En el caso que las prendas del 
+	 ejemplo requieran cierres, y que los talles S y M requieran cierres 
+	 de 20 cm y los talles L y XL de 25 cm, la distribución por medida 
+	 resultaría:
+	
+		
+			 
+			Cantidad
+			S
+			M
+			L
+		
+		
+			cierres de 20 cm.
+			30
+			10
+			20
+			0
+		
+		
+			cierres de 25 cm.
+			30
+			0
+			0
+			20
+		
+	
+	Vale aclarar que, si luego de 
+	 producir, al registrar el parte de producción, se informa que no se 
+	 ha fabricado una determinada medida de campera, por ejemplo la medida 
+	 XL, al modificar el dato en el parte, el sistema no incluirá la cantidad 
+	 de insumos que corresponden a la distribución indicada. Es decir que, 
+	 por ejemplo en el caso de los botones, descontará la cantidad de botones 
+	 exacta necesaria para fabricar las camperas XL.
+ 
+ 
+ Ficha Total de Recursos
+Esta ficha está destinada a exhibir la información 
+ relacionada a los totales de recursos utilizados en las tareas mediante 
+ las cuales se cumplimenta el parte de producción, permitiendo modificar 
+ dicha información si el proceso productivo lo requiere.
+ Tabla de Recursos
+
+	Se exhiben en esta tabla todos los 
+	 recursos utilizados para cumplimentar la fabricación de los ítems 
+	 del comprobante.
+	En caso que el parte se registre invocando 
+	 a una orden de producción que pasó por el programa de control y ya 
+	 generó partes parciales de algunas tareas, el sistema trae sólo los 
+	 recursos de las tareas pendientes.
+	Es posible agregar nuevos recursos 
+	 en el parte, cambiar los que ofrece el sistema por otros y, también, 
+	 variar los porcentajes de utilización previstos en la hoja de ruta 
+	 o en la orden de producción utilizada como base.
+	Tarea
+	Código de tarea para la cual se 
+	 exhiben los recursos.
+	Grupo
+	Esta columna aparece con datos, 
+	 si al ingresar un parte de producción el mismo viene de una hoja de 
+	 ruta u orden de producción y estos tienen tareas que permiten diferentes 
+	 grupos de trabajo. En este caso el sistema genera automáticamente 
+	 tantos grupos como se indicó en la hoja u orden.
+	Tipo de recurso
+	Tipo de recurso que se utiliza 
+	 en el parte de producción que se está definiendo.
+	Debe corresponder al código de 
+	 un tipo de recurso ya definido en el sistema.
+	Descripción
+	Descripción del tipo de recurso 
+	 indicado en el dato anterior.
+	Recurso
+	Recursos que se utiliza en el 
+	 parte de producción que se está definiendo.
+	Debe corresponder al código de 
+	 recurso ya definido en el sistema y debe ser del tipo indicado.
+	Si se carga el parte sobre una 
+	 Hoja de Ruta y ésta tiene indicado el código de recurso, éste viene 
+	 precargado en este campo.
+	Descripción
+	Descripción del recurso indicado 
+	 en el dato anterior.
+	Porcentaje de uso
+	Porcentaje correspondiente al 
+	 uso que se le da al recurso del tipo indicado.
+	Este porcentaje indica si el recurso 
+	 se afecta totalmente a la tarea o en forma parcial.
+	Duración
+	Período de tiempo por el cual 
+	 el recurso se afecta al parte de producción que se está ingresando 
+	 expresado en horas, minutos o segundos.
+	Esta duración se obtiene de la 
+	 duración de todas las tareas componentes del proceso productivo en 
+	 las cuales se utiliza el recurso indicado.
+	Cantidad 1
+	Si hay más de un grupo por tarea 
+	 se habilita esta columna para indicar la cantidad del producto terminado.
+	Cuando se indica un valor para 
+	 un recurso de un grupo el mismo se copia a todos los integrantes del 
+	 grupo.
+	La suma de las cantidades de los 
+	 distintos grupos de una misma tarea deben dar el total de los que 
+	 se está informando.
+	Cantidad 2
+	Si hay más de un grupo por tarea 
+	 se habilita esta columna para indicar la cantidad del producto terminado 
+	 expresado en la segunda unidad.
+ 
+ 
+ Ficha Observaciones
+Permite ingresar un texto aclaratorio. 
+ Este aparece en todos los informes en los que se incluye al comprobante.
+ 
+ Ficha Adjuntos 
+Permite adjuntar archivos externos. Una vez 
+ grabado el comprobante la administración de los archivos adjuntados se 
+ realiza desde el Proceso de Adjuntos.
+ 
+ Para tener en cuenta
+
+	Al cargar “Partes de producción” desde la 
+	 correspondiente tarea del menú “Producción”, no se permite referenciar 
+	 a Ordenes de Producción con tareas de distintas plantas.
+	Cuando se indica en el insumo un color para 
+	 el producto terminado, el sistema controla que dicho producto terminado 
+	 tenga indicada una cantidad para dicho color.
+	No se permite indicar recursos de terceros 
+	 en los Partes de Producción.
+	Cuando se carga una hoja de ruta que tiene 
+	 indicado un recurso de tercero, el sistema no trae dicho recurso y, 
+	 si hay disponible uno propio, ofrece ese recurso.
+	Cuando se modifica la cantidad del producto 
+	 terminado principal, antes el sistema ofrecía recalcular los insumos 
+	 y recursos sólo cuando el parte referencia a una OP. A partir de ahora 
+	 también se ofrece recalcular en el caso que el parte de producción 
+	 se registre en base a una hoja de ruta.
+	Si se está cargando un parte de producción 
+	 en base a una hoja de ruta u orden de producción y el insumo tiene 
+	 una observación en la hoja o en la orden, se trae esa observación, 
+	 caso contrario se trae la ingresada en el ABM de ítems.
+	 
+
+
+

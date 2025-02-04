@@ -1,0 +1,110 @@
+
+  Pedidos
+  Según las necesidades de la empresa, es posible establecer circuitos de trabajo que requieran autorizar los pedidos previamente a la facturación y entrega de la mercadería que incluyen.
+  Se puede implementar el sistema de modo que los pedidos requieran de autorización para que sea posible darles curso. El que la requieran o no y, en el caso que la requieran, las condiciones que hacen que un pedido deba autorizarse, quedan a elección del usuario.
+  Es posible indicar una tabla de autorizaciones para todos los pedidos en general, e indicar otras tablas, por ejemplo para los pedidos de determinados clientes o que incluyen determinados ítems.
+  También es posible indicar que se deben autorizar los pedidos que incluyen determinados bienes o que tienen por destinatarios a determinados clientes, es posible indicar un atributo y luego informar diferentes tablas para algunos de los valores del mismo. Si no se informan todos los valores del atributo, los comprobantes correspondientes a los valores que no se indiquen se autorizarán automáticamente, es decir, no requerirán de autorización.
+  Los parámetros pueden modificarse mientras se está operando con el sistema y la actualización de las opciones que se indiquen se realizará en forma inmediata sin necesidad de salir del sistema y volver a entrar.
+  La información a configurar se agrupa en una serie de fichas según se detalla.
+  
+  Evaluar en función del:  comprobante
+  
+    Permite indicar qué importe se tiene en cuenta para autorizar, puede seleccionarse:
+    Total
+    Total gravado
+  
+   Para todos los pedidos
+  
+    Indicación de si se desea que todos los pedidos se autoricen. La forma en que deber efectuarse la autorización dependerá de la tabla de autorizaciones que se indique.
+  
+   Tabla autorización
+  
+    Tabla de autorización para autorizar todos los pedidos.
+  
+   Ítems
+  
+    Sólo se debe completar información en esta ficha si la autorización de pedidos se supedita a los ítems que incluyen.
+     Con textos varios determinados
+    Permite indicar criterios de autorización por textos varios del tipo importe o porcentaje. Requerirán autorización manual los comprobantes  que se ingresen con algún ítem texto vario de tipo importe o porcentaje y que cumpla además con los demás criterios indicados.
+     Con ítems determinados
+    Indicación de si los pedidos de ítems determinados requieren o no autorización.
+    En ese caso de deberá indicar los ítems que harán que los pedidos requieran de autorización mediante un atributo y los valores del mismo.
+     Atributo
+    Código de atributo mediante el cual . Debe corresponder a un atributo ya definido en el sistema y aplicable a Items.
+    Los pedidos que incluyan ítems que tengan este atributo serán tenidos en cuenta para decidir si el pedido requiere o no autorización. El que la requieran o no y la forma en que deberá efectuarse la misma dependerá de los valores del atributo que se informen en la tabla que sigue y de la tabla de autorizaciones que se indique para cada uno de dichos valores.
+     Tabla de valores
+    En esta tabla se deberán ingresar los distintos valores del atributo de ítems, indicado en el campo precedente, para los cuales se desea definir un circuito de autorización.
+    Valor
+    Valor del atributo cuyo código se indicó en el campo Atributo.
+    Los pedidos que incluyan ítems que tengan este valor para el atributo indicado en el campo correspondiente, requerirán autorización para poder ser facturados y la forma en que debe efectuarse la autorización dependerá de la tabla de autorizaciones que se indique.
+    Tabla de autorizaciones
+    Corresponde al valor de atributo indicado.
+  
+   Clientes
+  
+    Sólo se debe completar información en esta ficha si la autorización de pedidos se supedita a los clientes titulares de los mismos.
+     De clientes determinados
+    Indicación de si los pedidos de clientes determinados requieren o no autorización.
+     Atributo
+    Código de atributo. Debe corresponder a un atributo ya definido en el sistema y aplicable a Clientes.
+    Los pedidos de clientes que tengan este atributo serán tenidos en cuenta para decidir si el pedido requiere o no autorización. El que la requieran o no y la forma en que deberá efectuarse la misma dependerá de los valores del atributo que se informen en la tabla que sigue y de la tabla de autorizaciones que se indique para cada uno de dichos valores.
+     Tabla de valores
+    En esta tabla se deberán ingresar los distintos valores del atributo de clientes, indicado en el campo precedente, para los cuales se desea definir un circuito de autorización.
+    Valor
+    Valor del atributo cuyo código se indicó en el campo anterior.
+    Los pedidos de clientes que tengan este valor para el atributo indicado en el campo anterior, requerirán autorización para poder ser facturados y la forma en que debe efectuarse la autorización dependerá de la tabla de autorizaciones que se indique.
+    Tabla de autorizaciones
+    Corresponde al valor de atributo indicado.
+  
+   Condición de venta
+  
+    Sólo se debe completar información en esta ficha si la autorización de pedidos se supedita a que los pedidos tengan asociada determinada condición de venta.
+     Con condición de venta determinada
+    Indicación de si los pedidos con determinadas condiciones de venta requieren o no autorización.
+    En ese caso de deberá indicar las condiciones de venta que harán que los pedidos requieran de autorización mediante un atributo y los valores del mismo.
+     Tabla de condiciones de venta
+    En esta tabla se deberán ingresar las condiciones de venta que requieren que los pedidos se deban autorizar y, para cada una de ellas, la tabla de autorización correspondiente.
+    Valor
+    Código de la condición de venta cuyos pedidos requieran de autorización.
+    Los pedidos que tengan asociada esta condición requerirán de autorización para poder ser facturados y la forma en que debe efectuarse la autorización dependerá de la tabla de autorizaciones que se indique.
+    Tabla de autorizaciones
+    Corresponde a la condición de venta indicada.
+  
+   Advertidos
+  
+    Sólo se debe completar información en esta ficha si la autorización de pedidos se supedita a que los pedidos se hayan advertidos por crédito y/o stock.
+     Advertidos por crédito excedido
+    Indicación de si los pedidos advertidos por crédito excedido requieren o no autorización.
+     Advertidos por deuda vencida
+    Indicación de si los pedidos advertidos por deuda vencida requieren o no autorización.
+     Advertidos por valores rechazados
+    Indicación de si los pedidos advertidos por valores rechazados requieren o no autorización.
+     Tabla de autorización
+    En base a esta tabla se autorizarán todos los pedidos advertidos por las condiciones indicadas en los campos anteriores.
+     Advertidos por stock insuficiente
+    Indicación de si los pedidos advertidos por stock insuficiente requieren o no autorización.
+     Tabla de autorización
+    En base a esta tabla se autorizarán todos los pedidos advertidos por stock insuficiente.
+  
+   Cambio de precios
+  
+    Sólo se debe completar información en esta ficha si la autorización de pedidos se supedita a que se hayan efectuado modificaciones a los precios sugeridos en las listas de precios correspondientes a la toma del pedido.
+     Dentro del rango
+    Indicación de si los pedidos en los cuales se modificaron precios dentro del rango previsto, requieren de autorización.
+     Por encima del máximo
+    Indicación de si los pedidos en los cuales se modificaron precios por encima del rango, requieren de autorización.
+     Por debajo del mínimo
+    Indicación de si los pedidos en los cuales se modificaron precios por debajo del mínimo, requieren de autorización.
+     Tabla de autorización
+    En base a esta tabla se autorizarán todos los pedidos para los cuáles se indicó que requieren de autorización por modificación de precios.
+  
+   Avisos
+  
+    Es posible indicar a quien/es se les envía email cuando un pedido queda totalmente autorizado o rechazado.
+     Al autorizar
+    Una o mas direcciones de email a las que se envía aviso al autorizar totalmente un pedido. Puede indicarse una dirección de email o un tag que permita obtener una dirección de email. Por ejemplo,el tag "Vendedor" indica que se utilice la dirección de email del vendedor del comprobante.
+     Al rechazar
+    Una o mas direcciones de email a las que se envía aviso al rechazar totalmente un pedido. Puede indicarse una dirección de email o un tag que permita obtener una dirección de email. Por ejemplo,el tag "Vendedor" indica que se utilice la dirección de email del vendedor del comprobante.
+  
+  
+

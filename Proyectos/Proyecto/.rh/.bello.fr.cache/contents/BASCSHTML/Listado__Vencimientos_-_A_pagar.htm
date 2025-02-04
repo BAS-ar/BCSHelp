@@ -1,0 +1,164 @@
+
+
+Vencimientos de proveedores
+Mediante este informe se puede obtener un listado de 
+ comprobantes de compra no saldados, ordenados por vencimiento, con su 
+ correspondiente antigüedad en días, y el importe total de la deuda de 
+ un determinado proveedor o de varios.
+El listado muestra los vencimientos de los comprobantes 
+ de compras detallando fecha de vencimiento, fecha, tipo, número de comprobante, 
+ proveedor , días de antigüedad, importe 
+ del comprobante e importe pendiente de cobrar. Los importes se expresan 
+ en la moneda 
+ de cada comprobante.
+Las facturas de compra pendientes de autorización se 
+ exhiben acompañadas con la letra A 
+ indicando que aún no están autorizadas.
+Se imprimen los totales a pagar discriminados por moneda.
+Para emitir el listado primero se ingresan los datos 
+ en las distintas fichas contenidas en la tarea, de manera tal de filtrar 
+ la información de acuerdo a las necesidades. Luego se debe presionar el 
+ ícono (botón) de la barra de herramientas superior que corresponda al 
+ tipo de emisión requerida. El uso de estos botones se detalla en el link 
+ Emisión disponible en un párrafo 
+ posterior.
+Al momento de imprimir un informe (tanto por pantalla 
+ como por papel) se puede utilizar el formato standard del sistema, o indicar 
+ un formato personalizado de impresión. 
+ Este último se indica en el campo homónimo que, en general, se encuentra 
+ en la zona inferior de la primer solapa y su funcionalidad está detallada 
+ a continuación en el link Emisión.
+ 
+ Emisión
+ FCC 
+ (Fecha de certeza contable)
+Los datos a ingresar para solicitar la emisión del listado 
+ son:
+ 
+ 
+ Ficha Períodos
+
+	Desde esta ficha podemos seleccionar el 
+	 rango de datos a incluir en el informe. Podemos especificar desde 
+	 aquí un intervalo de cuentas corrientes de proveedores, solicitar 
+	 datos de un grupo de proveedores o hasta que sean atendidos por un 
+	 determinado comprador.
+	 Rango
+	 
+	 A Fecha
+	Permite listar los vencimientos a 
+	 una fecha determinada.
+	Los vencimientos que se detallan al 
+	 indicar una fecha en este campo se exhiben con el saldo a tal fecha 
+	 sin ser afectados por todos los comprobantes cuya fecha sea posterior 
+	 a la opción “ A Fecha”.
+	Si no se indica ninguna fecha, se 
+	 incluyen todos los vencimientos.
+	 
+	 Períodos
+	Se podrán indicar aquí hasta cuatro 
+	 fechas que delimiten distintos períodos en los cuales operan los vencimientos 
+	 de los comprobantes que se desea incluir en el informe.
+	A fin de poder indicar con mayor 
+	 facilidad los períodos se prevé la posibilidad de informar un intervalo 
+	 de días entre período y período, en base al cual el sistema construirá 
+	 automáticamente cada una de las fechas de corte.
+	 Comprador
+	Código de comprador 
+	 asociado a los comprobantes de compra cuyos vencimientos se desean 
+	 incluir en el informe. Permite obtener un informe de todos aquellos 
+	 proveedores que se incluyen en la cartera de un determinado comprador.
+	Debe corresponder al código de un 
+	 agente de tipo Comprador definido 
+	 en el sistema.
+	Puede seleccionarse un comprador en 
+	 particular o un grupo de compradores. Si este dato es dejado en blanco, 
+	 se incluirán todos los compradores en el informe.
+	 Imputación 
+	 contable
+	Códigos de las imputaciones 
+	 contables de proveedores asociadas a los comprobantes que se desean 
+	 incluir en el listado.
+	Puede seleccionarse una cuenta en 
+	 particular o un grupo de cuentas. Si este dato es dejado en blanco, 
+	 se considerarán los comprobantes de todos los proveedores que se incluyen 
+	 en el listado.
+	Si se indica alguna imputación sólo 
+	 se listarán para cada proveedor los comprobantes que tengan asociados 
+	 las imputaciones que se indicaron.
+ 
+ Ficha Opciones
+
+	Desde esta ficha podemos especificar el 
+	 ordenamiento de los datos en el informe y el tipo de listado a obtener.
+	 Ordenamiento
+	Permite ordenar los datos del informe 
+	 con diferentes criterios.
+	 Vencimiento
+	Si se selecciona ordenamiento 
+	 Vencimiento se ordenan los comprobantes listados por fecha de vencimiento. 
+	 Para cada fecha de vencimiento se detallan los comprobantes correspondientes 
+	 a esa fecha.
+	 
+	 Proveedor
+	Si se selecciona ordenamiento 
+	 Proveedor se ordenan los datos listados por código, razón social o 
+	 nombre de fantasía, según se indique en el cuadro Ordenamiento proveedor. 
+	 Para cada proveedor se detallan los vencimientos de sus comprobantes 
+	 asociados y se incluyen totales por proveedor. Cuando se ordenen las 
+	 cuentas corrientes por nombre de fantasía se detallará el nombre de 
+	 fantasía junto al código de la cuenta corriente y en la misma línea 
+	 la razón social. Análogamente cuando se orden por código o razón social 
+	 se detallará la razón social junto con el código de la cuenta corriente 
+	 y en la misma línea el nombre de fantasía.
+	 
+	 Comprador
+	Si se selecciona ordenamiento 
+	 Comprador se ordenan los datos 
+	 listados por código de comprador 
+	 . Para cada comprador se detallan los vencimientos de sus comprobantes 
+	 asociados y se incluyen totales por comprador. En este caso se puede 
+	 indicar un segundo nivel de ordenamiento, cuyas opciones son:
+	Proveedor
+	Importe
+	Vencimiento
+	Esto implica que los vencimientos 
+	 de los comprobantes correspondientes a cada comprador, serán a su 
+	 vez ordenados por proveedor (código, razón social o nombre de fantasía), 
+	 por importe del vencimiento o por fecha de vencimiento.
+	 Tipo 
+	 de Listado
+	Indicación de la forma en que se desean 
+	 listar los datos de los vencimientos de los proveedores. Si se desea 
+	 que se exhiban los vencimientos consolidados por proveedor 
+	 o detallados por comprobante.
+	 
+	 Detallado
+	 
+	 Consolidado
+	En todas las emisiones consolidadas 
+	 se consolidará la información más interna de acuerdo a los cortes 
+	 y, cuando corresponda, subcortes.
+	 Opciones
+	 
+	 Ficha
+	Si se selecciona tipo Ficha 
+	 se imprimen los proveedores o 
+	 compradores (según el ordenamiento 
+	 solicitado) separados entre sí, utilizando al menos una hoja para 
+	 cada uno.
+	Las emisiones tipo ficha sólo 
+	 cambian de hoja cuando cambia el valor por el que se realiza el ordenamiento 
+	 principal, es decir, cuando cambia el cliente/proveedor, cobrador 
+	 o vendedor/comprador y no si cambia el valor correspondiente al subordenamiento.
+	 
+	 Continuo
+	Si se selecciona tipo Continuo 
+	 se imprime un proveedor o comprador a continuación de otro.
+ 
+ Ficha Proveedores
+ 
+ Empresas
+
+
+

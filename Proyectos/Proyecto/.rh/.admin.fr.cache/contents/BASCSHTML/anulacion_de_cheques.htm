@@ -1,0 +1,72 @@
+
+
+Anulación de cheques
+El sistema permite anular cheques propios ingresados 
+ en el sistema.
+Los cheques que se permiten anular son aquellos emitidos 
+ por nosotros y reingresados nuevamente en el sistema con algún otro comprobante 
+ de caja . Por ejemplo, entregamos un cheque 
+ propio a un proveedor y luego el proveedor nos devuelve el cheque.
+Los cheques anulados pueden ser reingresados nuevamente 
+ al sistema, es decir, puede reutilizarse el número del mismo, puede ingresarse 
+ un cheque con el mismo número de uno que fue anulado.
+Las anulaciones de cheques pueden ser eliminadas a través 
+ del proceso de eliminación de comprobantes.
+La pantalla solicita una serie de datos a completar 
+ para identificar al cheque que se desea anular. Pueden ingresarse estos 
+ datos o puede seleccionarse el cheque a anular pulsando el botón Buscar. Mediante esta búsqueda, 
+ luego de indicar la cuenta bancaria 
+ y la chequera correspondiente, se accede a una lista que muestra todos 
+ los cheques emitidos y reingresados en el sistema, con sus datos asociados.
+Si el número de cheque se ingresa en forma manual al 
+ finalizar el ingreso del mismo y ejecutar la anulación, el sistema verifica 
+ si los mismos correspondan a un cheque válido o no.
+Los datos a ingresar para solicitar la anulación de 
+ un cheque son:
+ 
+ Fecha
+
+	Fecha del comprobante de anulación de 
+	 cheques.
+ Número
+
+	Prefijo y número del comprobante de 
+	 anulación de cheques.
+	 
+ Cuenta bancaria
+
+	Cuenta 
+	 bancaria asociada al cheque que se desea anular.
+ Chequera
+
+	Número de chequera del cheque que 
+	 se desea anular.
+	Debe corresponder al número de una 
+	 chequera habilitada para la cuenta bancaria indicada.
+ Número
+
+	Número externo del cheque que se desea 
+	 anular.
+	Debe corresponder a un número de cheque 
+	 emitido y reingresado para la cuenta bancaria y la chequera indicadas.
+	Al seleccionar el cheque a anular 
+	 se completa la pantalla con el importe del cheque seleccionado (y 
+	 si es en moneda diferente a la moneda local con la cantidad y la cotización) 
+	 y a partir de allí se puede anular el mismo.
+ Observaciones
+
+	Observación asociada al comprobante 
+	 que se genera. Ofrece como default la observación asociada al talonario.
+	 
+ 
+//<![CDATA[
+	if( typeof( TextPopupInit ) != 'function' ) TextPopupInit = new Function();
+	TextPopupInit('a1', 'POPUP732433519');
+	TextPopupInit('a2', 'POPUP732455760');
+	TextPopupInit('a3', 'POPUP732481181');
+	TextPopupInit('a4', 'POPUP732506662');
+	TextPopupInit('a5', 'POPUP732505235');
+	TextPopupInit('a6', 'POPUP732522677');
+//]]>
+
+

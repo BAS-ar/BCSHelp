@@ -1,0 +1,127 @@
+
+
+Ingreso de comprobantes internos
+Además de la fecha y el número a asociar al comprobante, 
+ se deben informar los datos que se detallan.
+En cualquier momento es posible dejar el comprobante 
+ en estado de preparación, de modo de seguir con el ingreso del mismo 
+ en una instancia posterior.
+ 
+ 
+ Destinatario
+
+	Tipo de cuenta corriente titular del comprobante. 
+	 Las opciones son:
+	Cliente
+	Proveedor
+	Según el tipo de destinatario se deberá 
+	 ingresar el código que designa al titular del comprobante.
+	Al precargar los datos del destinatario 
+	 se exhibe un tooltip con su nombre de fantasía y de no contar con 
+	 dicho dato, se observará la razón social. 
+	El dato se puede dejar en blanco. Esto 
+	 significa que el intercambio de valores que se registra en la caja, 
+	 no está asociado a ningún individuo en particular.
+ 
+ Caja
+
+	Código de la caja en la que tiene lugar 
+	 la transacción.
+	La caja determina las cuentas 
+	 a imputar en la registración contable de los comprobantes internos, 
+	 en relación a los medios de pago 
+	 que se utilicen en el comprobante.
+	En el asiento contable se imputarán las 
+	 cuentas asociadas a cada medio de pago en la caja indicada.
+ 
+ Totales
+
+	 Total 
+	 Ingresos
+	Exhibe la suma de los valores que 
+	 se ingresan al comprobante y que se registran como Ingresos.
+	 Total 
+	 Egresos
+	Exhibe la suma de los valores que 
+	 se ingresan al comprobante y que se registran como Egresos.
+ 
+ Ficha Valores
+Mediante esta ficha se informan los valores 
+ que se reciben y los que se entregan en el comprobante.
+Se deben detallar, uno a uno, los valores 
+ que ingresan y los que egresan.
+Los valores ingresan al comprobante invocando 
+ códigos de medios de pago . La 
+ información a asociar a cada uno dependerá del tipo de valor del que se 
+ trate.
+ Tabla de 
+ Valores
+ Tipo de movimiento
+
+	Según que el valor a informar 
+	 ingrese o egrese de la caja, se debe seleccionar:
+	Ingreso
+	Egreso
+	Valor
+	Código del medio 
+	 de pago correspondiente al valor.
+	A medida que se ingresan líneas en 
+	 el comprobante se van acumulando en los campos Total 
+	 Ingresos y Total Egresos 
+	 los importes totales de los valores recibidos y entregados.
+	Cada vez que se ingrese un medio de 
+	 pago, si la imputación contable asociada 
+	 al medio de pago (recordemos 
+	 que esta depende además de la caja en la cual se ingresa el comprobante) 
+	 trabaja en moneda extranjera, se solicitará además el ingreso del 
+	 importe en esta moneda y del cambio correspondiente a la misma.
+	En este caso puede ingresarse el importe 
+	 en moneda local y el cambio, y el sistema calcula automáticamente 
+	 el importe en moneda extranjera; o si se ingresan los dos importes 
+	 el sistema calcula el cambio resultante.
+	Los detalles de cómo trabaja cada 
+	 medio de pago en particular, pueden verse en el apartado correspondiente 
+	 a las tablas de medios de pago 
+	 .
+	En el egreso de valores, si el egreso 
+	 corresponde a valores que se encuentran en cartera, el sistema brinda 
+	 la posibilidad de exhibir todos los valores en cartera o solamente 
+	 aquellos que corresponden al titular del comprobante.
+	Otro tanto ocurre en el ingreso de 
+	 valores. Si en el ingreso se invocan valores que fueron entregados 
+	 previamente al titular del comprobante, el sistema ofrece la posibilidad 
+	 de incluir, en la ventana de selección, todos los valores entregados 
+	 o, solamente, los que corresponden al titular del comprobante.
+	Una vez ingresado el código correspondiente 
+	 al valor, y según el tipo de valor del que se trate, se deberá informar 
+	 su importe (como, por ejemplo, en el caso de efectivo) o seleccionar 
+	 uno de los que ofrece el sistema (cuando el código corresponde a un 
+	 valor existente en alguno de los inventarios de valores que se administran).
+	Para el ingreso de medios de pago de tipo cheque recibido y cheque 
+	 de pago diferido recibido, podrá habilitarse el uso de lectoras 
+	 de medios de pago que permiten registrar en forma automática los datos 
+	 consignados en los mismos. Pueden ingresarse automáticamente el Número 
+	 de Cheque, el Código del Banco Central, el número de Sucursal del 
+	 Banco y el Código Postal. Además, se efectúa un control destinado 
+	 a evitar que se registre dos veces un mismo valor. A tal efecto, se 
+	 exhibirá un mensaje de aviso Valor ya ingresado o Ticket ya ingresado 
+	 cada vez que por error se lea dos veces el mismo número de medio de 
+	 pago.
+	Es importante tener en cuenta que 
+	 la suma de los ingresos debe coincidir con la suma de los egresos. 
+	 En caso contrario se exhibe un cartel alusivo y no se permite grabar 
+	 el comprobante.
+ Ficha Observaciones
+
+	 Observaciones
+	Permite ingresar un texto aclaratorio. 
+	 Este aparece en todos los informes en los que se incluye al comprobante.
+ 
+ Ficha 
+ Adjuntos 
+Permite adjuntar archivos externos. Una vez 
+ grabado el comprobante la administración de los archivos adjuntados se 
+ realiza desde el Proceso de Adjuntos.
+
+
+

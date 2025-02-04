@@ -1,0 +1,392 @@
+
+
+Consulta del Balance
+Mediante este proceso es posible obtener en forma inmediata 
+ un balance completo y acceder a toda la información vinculada a cada uno 
+ de los valores expuestos en el mismo.
+Efectivamente, a través de los datos que se exhiben 
+ en la consulta es posible acceder a información detallada que justifica 
+ los valores expuestos. Para ello, los valores donde se prevé ampliar la 
+ información se exhiben en color azul y subrayados, de esta forma se indica 
+ que los mismos constituyen vínculos (links) a pantallas que permiten obtener 
+ más detalles (drilling). En este 
+ caso, accediendo al link correspondiente al saldo de una de las cuentas 
+ que forman parte del balance se abrirá una ventana con el mayor de dicha 
+ cuenta, vale decir, el detalle de los comprobantes que conforman dicho 
+ saldo . A la vez es posible acceder al asiento contable generado por cada 
+ uno de los comprobantes que se exhiben en el mayor mediante el vínculo 
+ que se ofrece a través de su número. Luego, desde la pantalla en la que 
+ se exhibe el asiento contable del comprobante, a través del link que se 
+ ofrece en el campo Número, es posible acceder la información detallada 
+ del comprobante.
+Es importante destacar que toda la información que aparece 
+ en la pantalla de consulta puede imprimirse oprimiendo el botón correspondiente.
+Para generar el balance a consultar el sistema ofrece 
+ una serie de cuadros de diálogo en los que se solicitan las mismas especificaciones 
+ que en la emisión del balance desde el menú de Informes.
+También es posible generar la consulta en base a un 
+ modelo previamente definido para el informe de emisión de Balances.
+Es posible programar la tarea para que se realice determinado 
+ día, a determinada hora, es decir, en forma desatendida.
+Las consultas efectuadas pueden almacenarse un nombre 
+ otorgado por el usuario. La consulta almacenada quedará disponible para 
+ volver a ser consultada en el futuro.
+Para generar una nueva consulta o acceder a una consulta 
+ almacenada se deben seguir los siguientes pasos:
+ 
+Cuadro Seleccionar 
+ operación
+
+	 Operación
+	 Nueva 
+	 consulta
+	Si se selecciona la opción Nueva 
+	 consulta, el sistema asume que el usuario desea generar un 
+	 nuevo balance para consultar sus valores.
+	 Basada 
+	 en modelo
+	En este caso es posible activar el 
+	 campo "Basada en modelo" 
+	 y seleccionar un modelo previamente definido para el informe de balance.
+	Al seleccionar un modelo el asistente 
+	 precarga las opciones guardadas en ese modelo, pudiendo modificarse 
+	 libremente.
+	Vale aclarar que desde el asistente 
+	 no es posible modificar los modelos existentes en BAS CS para las 
+	 consultas de balance.
+	 Consulta 
+	 almacenada
+	Si se selecciona la opción Consulta 
+	 almacenada, el sistema asume que se desea acceder a una consulta 
+	 previamente almacenada.
+ 
+Cuadro Filtros 
+ básicos
+
+	Indicación del tipo de asientos que se 
+	 incluyen en el listado.
+	 Diario 
+	 general
+	Si se elige Diario 
+	 general se considerarán en el listado todos los asientos registrados 
+	 manualmente en el diario general, los asientos de ajuste, los asientos 
+	 de cierre, los asientos resumen generados en cierres operativos de 
+	 subdiarios que resumen en el diario y los asientos correspondientes 
+	 a subdiarios que no resumen en el diario.
+	 Subdiario
+	Si se elige Subdiario 
+	 se deberá seleccionar luego el número de subdiario 
+	 a listar y se incluirán todos los asientos registrados automáticamente 
+	 por el sistema, al ingresar comprobantes en el subdiario indicado.
+	 Vista
+	Código de la vista utilizada para la emisión 
+	 del informe.
+	Mediante la Vista 
+	 se define el tipo de balance a imprimir, las cuentas que se incluyen, 
+	 los niveles de jerarquía, totales, subtotales, etc.
+	 Período 
+	 a considerar
+	 Valores
+	Según el tipo de balance que se quiera 
+	 consultar se debe seleccionar:
+	 Netos
+	 Saldos
+ 
+Cuadro Opciones
+
+	 Incluir 
+	 Asientos
+	 Asientos 
+	 no resumidos
+	Esta opción sólo está habilitada si 
+	 se seleccionó para imprimir el Diario 
+	 general.
+	Indica si se consideran o no en el 
+	 listado, los asientos de subdiarios 
+	 que resumen en el diario pero que aún no tienen efectuado el correspondiente 
+	 cierre operativo, o sea, que todavía no registraron en el diario los 
+	 asientos resumen de los subdiarios correspondientes.
+	 Asientos 
+	 de cierre del período
+	Esta opción sólo está habilitada si 
+	 se seleccionó para imprimir el Diario 
+	 general.
+	Indica si se consideran o no en el 
+	 listado, los asientos de cierre que 
+	 se encuentren dentro del rango de fechas en que se realiza la consulta.
+	 Cuentas 
+	 que no están en la vista
+	En caso que el balance se genere en 
+	 base a una vista, activando este campo se incluyen también las cuentas 
+	 que no figuran en la vista que se ha indicado.
+	 Asientos 
+	 de ajuste por valor corriente
+	Esta opción sólo está habilitada si 
+	 se seleccionó para imprimir el Diario 
+	 general.
+	Indica si se consideran o no en el 
+	 listado, los asientos de ajuste por 
+	 valor corriente registrados en el diario general, tanto en 
+	 forma manual como en forma automática.
+	 Asientos 
+	 de ajuste por inflación
+	Esta opción sólo está habilitada si 
+	 se seleccionó para imprimir el Diario 
+	 general.
+	Indica si se consideran o no en el 
+	 listado, los asientos de ajuste por 
+	 inflación registrados en el diario general, tanto en forma 
+	 manual como en forma automática.
+	 Saldos 
+	 en cero
+	Si se tilda se incluyen las cuentas 
+	 con saldo cero..
+	 Saldos 
+	 anteriores
+	En caso que se tilde, se incluye una 
+	 columna en le balance y en el detalle de las subcuentas mostrando 
+	 los saldos anteriores.
+	 Centros 
+	 de apropiación
+	 Centros 
+	 de apropiación
+	Código del centro 
+	 de apropiación a listar.
+	Si se indica un centro se considerarán 
+	 para las cuentas de subcuentas Centros 
+	 de apropiación A o 
+	 Ambos centros sólo los movimientos 
+	 del centro indicado.
+	Si no se indica ningún centro se considerarán 
+	 los movimientos de todos los centros de apropiación utilizados como 
+	 centro A.
+	 Centro 
+	 de apropiación B
+	Código del centro 
+	 de apropiación B a listar.
+	Si se indica un centro se considerarán 
+	 para las cuentas de subcuentas Centros 
+	 de apropiación B o Ambos centros 
+	 sólo los movimientos del centro indicado.
+	Si no se indica ningún centro se considerarán 
+	 los movimientos de todos los centros de apropiación utilizados como 
+	 centro B.
+	 Reexpresado
+	Indicación de si se desea emitir el 
+	 balance reexpresado en una determinada moneda o no.
+	Si se trabaja con moneda de contabilización 
+	 alternativa, esta opción sólo estará habilitada si se listan los valores 
+	 en moneda local.
+	Si se emite un balance reexpresado 
+	 se debe seleccionar la moneda 
+	 en la cual se expresan los valores, y se podrá efectuar la reexpresión 
+	 a la fecha hasta indicada, o se podrá reexpresar cada movimiento a 
+	 la fecha de valorización del mismo.
+	 En moneda
+	Este dato sólo se encuentra habilitado 
+	 si se seleccionó imprimir un balance reexpresado.
+	Código de tabla 
+	 de cotizaciones a la cual se desean reexpresar las sumas y saldos 
+	 del balance.
+	La reexpresión podrá efectuarse a 
+	 fecha de informe o a fecha de cada asiento.
+	Si se reexpresa a Fecha 
+	 de informe, se utilizará para efectuar la reexpresión la cotización 
+	 de la moneda correspondiente a la fecha hasta indicada para la emisión 
+	 del listado, y los valores reexpresados se obtendrán dividiendo cada 
+	 importe a listar por dicha cotización.
+	Si se reexpresa a Fecha 
+	 de asiento, se utilizará para efectuar la reexpresión la cotización 
+	 de la moneda correspondiente a la fecha de valorización de cada asiento, 
+	 y los valores reexpresados se obtendrán dividiendo cada importe a 
+	 listar por dicha cotización.
+	Es importante recordar que en ambos 
+	 casos, la cotización utilizada es la correspondiente a una fecha anterior 
+	 o igual a la fecha a la cual se reexpresa. Si no existe ningún valor 
+	 ingresado para esa fecha o para una anterior, el importe del asiento 
+	 no será reexpresado.
+ 
+Cuadro Tipos 
+ de comprobante
+
+	 Tabla 
+	 de Tipos de comprobantes
+	Se muestra en esta tabla una lista 
+	 con todos los tipos de 
+	 comprobantes posibles de seleccionar para incluir en el listado.
+	Esta opción permite, si se desea, 
+	 considerar para el balance, sólo los asientos de determinados tipos 
+	 de comprobantes.
+	Inicialmente la tabla tiene seleccionados 
+	 todos los tipos de comprobantes que contiene, de modo que si se imprime 
+	 el balance sin modificar esta tabla, todos los asientos que cumplen 
+	 con las opciones y rangos solicitados son considerados en el balance.
+	Haciendo doble click en la línea de 
+	 la tabla que se desee se procede a marcar o desmarcar un determinado 
+	 tipo a imprimir. Además, mediante el botón Invertir 
+	 selección se invierte la selección de toda la tabla. Es decir, 
+	 si la tabla tiene seleccionados todos los tipos de comprobantes, al 
+	 pulsar el botón no queda seleccionado ningún tipo y a partir de allí 
+	 puede elegirse algún comprobante en particular.
+	 
+ 
+Cuadro Empresas 
+ y Sucursales
+
+	 Tabla 
+	 Empresas
+	Si se trabaja con múltiples empresas, 
+	 aquí se deben indicar los asientos de qué empresas 
+	 se incluyen en la consulta.
+	 Tabla 
+	 Sucursales
+	Del mismo modo deberán indicar de 
+	 qué sucursal o sucursales se incluirán los asientos
+	Por default se muestra una lista con 
+	 todas las empresas y sucursales habilitadas para el usuario que está 
+	 efectuando la consulta, y en esta lista se ofrecen marcadas como habilitadas 
+	 todas las empresas y sucursales.
+	Pulsando los botones Invertir 
+	 las empresas o sucursales habilitadas se deshabilitan y las no habilitadas 
+	 se marcan automáticamente como habilitadas.
+	Pulsando los botones Todos 
+	 o Ninguno se marcan s o se 
+	 desmarcan todas las empresas o sucursales de la lista, respectivamente.
+	 
+ 
+Cuadro Finalizar
+
+	En este cuadro se exhibe la carátula 
+	 en la que se detallan todas las opciones seleccionadas por el usuario 
+	 al solicitar la consulta.
+	Es posible indicar que se desea guardar 
+	 la consulta bajo un nombre determinado. Para ello se deberá activar 
+	 la opción Guardar consulta 
+	 e informar en el campo siguiente el nombre de la misma.
+	Si se tilda el campo Incluye 
+	 información de subcuentas, para cada cuenta, se incluirá la 
+	 apertura por subcuentas.
+	Es posible diferir, para una determinada 
+	 fecha y hora, la generación de la consulta activando el campo Programar 
+	 tarea.
+	El trabajo se identificará en el agente 
+	 de SQL con el nombre que se informado en el campo correspondiente.
+	Una vez que se indica que se va a programar 
+	 la tarea, se solicita detalles de la fecha a la cual se desea realizar 
+	 la consulta y luego de un pedido de confirmación la tarea se incorpora 
+	 al Agente del SQL y se cierra la consulta contable.
+	Las "Consultas de balance" que 
+	 se programan para su ejecución en forma diferida pueden consultarse 
+	 seleccionando como operación "Consulta almacenada". Al hacerlo 
+	 se accede a una tabla que exhibe todas las consultas almacenadas y 
+	 que incluye una columna, llamada "Estado", que indica el 
+	 estado actual de cada una de las consultas almacenadas.
+	Los diferentes estados son:
+	Terminado: Indica que el balance 
+	 ha sido realizado y guardado satisfactoriamente.
+	Pendiente de generar: Indica que 
+	 el balance se encuentra pendiente de generar. Se mantiene en este 
+	 estado hasta que la programación de la tarea definida por el usuario, 
+	 se complete.
+	Al momento de ejecutarse, si no 
+	 hubo ningún error, el balance almacenado pasa al estado de Terminado. 
+	 En caso contrario el estado pasa a ser Generado con error.
+	Pendiente de actualizar: Indica 
+	 que el balance se encuentra pendiente de actualizar.
+	Este estado aparece cuando se 
+	 programa la actualización de una consulta de balance creada previamente 
+	 en forma desatendida. Una vez aprobado el trabajo la consulta se exhibe 
+	 con el estado mencionado.
+	Al igual que en el caso anterior, 
+	 al momento de ejecutarse, si no hubo ningún error, el balance almacenado 
+	 pasa al estado Terminado. En caso contrario el estado pasa a ser Generado 
+	 con error
+	En proceso: Indica que la programación 
+	 del balance se encuentra ejecutándose.
+	Mientras una consulta se encuentra 
+	 en este estado no se puede borrar, seleccionar, ni actualizar. Al 
+	 momento de terminar con el proceso si no hubo ningún error, el balance 
+	 almacenado pasa al estado de Terminado. En caso contrario el estado 
+	 pasa a ser Generado con error.
+	Generado con error: Indica que la 
+	 programación del balance se generó con error. Si esto ocurre, el job 
+	 de MS-SQL no se borra, de modo de permitir ver las causas del error.
+ 
+ 
+ Para tener en cuenta
+
+	La primera columna exhibe, si corresponde, 
+	 las subcuentas y ofrece un vinculo con la posibilidad de ver el detalle 
+	 de las mismas.
+	Este detalle muestra el total que muestra 
+	 el balance, pero agrupado por las subcuentas que posea la cuenta correspondiente.
+	El detalle tiene el mismo criterio de 
+	 filtrado que el Balance, debiendo coincidir el saldo total de las 
+	 subcuentas con el saldo que se muestra el balance.
+	Si la cuenta no resume en ningún subdiario, 
+	 entonces la columna de Débitos y Créditos también deben coincidir. 
+	 También se brinda la opción de guardar la información de todas las 
+	 subcuentas, cuando se programe la tarea para ejecutarse en otro momento. 
+	 En este caso se visualizarán los datos almacenados en la tabla al 
+	 momento de ejecutarse la tarea:
+	De otra forma se calcularán los detalles 
+	 por subcuentas al momento de visualizarlas, tal cual como su no se 
+	 hubiera guardado la información del balance.
+ 
+ Para tener en cuenta
+
+	Se observa una pequeña diferencia de centavos 
+	 en los saldos de las subcuentas y el balance cuando este último se 
+	 pide reexpresado en alguna moneda no sea la principal del sistema 
+	 y los movimientos de la cuenta están resumidos en subdiarios.
+	En caso que el saldo más el saldo anterior 
+	 de una cuenta sea distinto al saldo habitual de la cuenta, la situación 
+	 se indica con el carácter (#).
+ 
+ Para tener en cuenta
+
+	Es posible indicar, mediante un parámetro 
+	 que debe modificarse en la base de datos, que al generar asientos 
+	 resumen de un subdiario, si en el subdiario hay para resumir comprobantes 
+	 que no son ajustes y comprobantes que sí lo son, se resuman por separado.
+	Se generará de esta forma un asiento resumen 
+	 que resumirá los comprobantes comunes del subdiario, y eventualmente 
+	 se generará un asiento resumen que resumirá los comprobantes del subdiario 
+	 que sean ajustes por valor corriente, y otro que resumirá los comprobantes 
+	 del subdiario que sean ajustes por inflación.
+	Lo mismo se hará al generar asientos de 
+	 cierre.
+	De este modo, siempre que se incluyan 
+	 en un informe los asientos resumen, se tendrán en cuenta todos los 
+	 resúmenes del subdiario que se hayan generado, lo mismo con los cierres.
+	Si al emitir el balance y demás informes 
+	 contables y consultas se incluyen asientos de cierre, pero no se incluyen 
+	 asientos de ajustes, no se listarán los cierres de ajustes. De la 
+	 misma forma, si no se incluyen ajustes, tampoco se incluirán los resúmenes 
+	 de ajustes.
+ 
+ Para tener en cuenta
+
+	Si se selecciona una consulta de balance 
+	 con una configuración guardada y no se encuentra disponible la información 
+	 almacenada, se pregunta si quiere actualizar o no la consulta.
+	Si lo que no se puede recuperar de la 
+	 consulta almacenada es el dato de las subcuentas, se emite un Aviso 
+	 y se pregunta al usuario si igual desea actualizar la consulta sin 
+	 datos de las subcuentas.
+	 
+//<![CDATA[
+	if( typeof( TextPopupInit ) != 'function' ) TextPopupInit = new Function();
+	TextPopupInit('a1', 'POPUP639833732');
+	TextPopupInit('a2', 'POPUP639847839');
+	TextPopupInit('a3', 'POPUP639907895');
+	TextPopupInit('a4', 'POPUP639897544');
+	TextPopupInit('a5', 'POPUP639941868');
+	TextPopupInit('a6', 'POPUP639938280');
+	TextPopupInit('a7', 'POPUP640010791');
+	TextPopupInit('a8', 'POPUP640020683');
+	TextPopupInit('a9', 'POPUP639999445');
+	TextPopupInit('a10', 'POPUP640003076');
+//]]>
+
+

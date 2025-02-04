@@ -1,0 +1,83 @@
+
+
+Refinanciación de vencimientos - A cobrar
+Esta tarea permite modificar tanto en fechas como en 
+ importes, los vencimientos de los comprobantes de venta pendientes en 
+ las cuentas corrientes de los clientes 
+ .
+Al registrar en el sistema facturas de venta, las fechas 
+ de vencimiento y los importes a vencer en cada fecha se calculan teniendo 
+ en cuenta la condición 
+ de venta asociada al comprobante.
+Si la condición de venta indica que se permiten modificar 
+ las fechas de vencimiento calculadas mediante esta tarea podrán modificarse 
+ los vencimientos según las necesidades de cada caso.
+La refinanciación de vencimientos se registra en el 
+ sistema mediante un comprobante habilitado para tal fin. Se deben indicar 
+ la fecha y el número del comprobante de refinanciación.
+Cada comprobante de refinanciación puede modificar los 
+ vencimientos de un comprobante de venta determinado.
+La forma de operar es seleccionar un cliente 
+ y luego mediante el botón Comprobantes 
+ seleccionar de la lista de comprobantes de venta asociados al cliente 
+ indicado, cuál es el comprobante del que se desean modificar los vencimientos.
+Es importante destacar que el sistema permite refinanciar 
+ vencimientos de comprobantes 
+ internos de cuenta corriente.
+Los datos a ingresar para la refinanciación, además 
+ de la fecha y el número 
+ de comprobante, son:
+ 
+ 
+ Comprobante a refinanciar
+ Cliente
+Código de cliente 
+ titular del comprobante cuyos vencimientos se van a refinanciar.
+ Comprobantes
+Una vez ingresado el cliente, mediante 
+ este botón se accede a una ventana que muestra la lista de comprobantes 
+ de venta cuyos vencimientos pueden refinanciarse.
+Se exhibe para cada comprobante del cliente, 
+ el tipo, fecha, número y saldo.
+Al seleccionar el comprobante, haciendo 
+ click en la línea correspondiente de la tabla, se completa la pantalla 
+ con los datos del mismo, los vencimiento, totales e Imputación contable..
+ 
+ Ficha Vencimientos
+ 
+ Tabla de vencimientos
+Esta tabla se completa con la lista de 
+ vencimientos del comprobante seleccionado.
+Se muestra para cada vencimiento el número 
+ de cuota, fecha de vencimiento e importe.
+Esta lista puede modificarse según las 
+ necesidades, tanto las fechas de vencimiento como los importes de cada 
+ uno, pueden borrarse cuotas y también agregarse nuevas.
+Al lado de la tabla se muestra el importe 
+ total del comprobante, la suma de las cuotas y el importe que falta ingresar 
+ para que la suma de las cuotas coincida con el importe total. A medida 
+ que se modifican los vencimientos estos totales se mantienen actualizados 
+ y al intentar registrar la refinanciación, el sistema verificará que la 
+ suma de los importes de las cuotas coincida con el importe total del comprobante.
+Cuota
+Número de cuota de los vencimientos del 
+ comprobante seleccionado para refinanciar.
+Fecha de vencimiento
+Fecha de vencimiento del comprobante seleccionado 
+ para refinanciar.
+Importe
+Importe del vencimiento correspondiente 
+ a la cuota y fecha indicados.
+ 
+ Ficha Observaciones
+
+	 Observaciones
+	Observación asociada al comprobante 
+	 que se genera. Ofrece como default la observación asociada al talonario 
+	 del comprobante de refinanciación.
+//<![CDATA[
+	if( typeof( TextPopupInit ) != 'function' ) TextPopupInit = new Function();
+	TextPopupInit('a1', 'POPUP766580223');
+//]]>
+
+

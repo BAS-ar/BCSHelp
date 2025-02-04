@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aliaslist version="1.0">
+  <alias name="Welcome" value="2"></alias>
+  <alias name="Bienvenido" value="3" link="../../contents/BASCSHTML/bienvenido.htm"></alias>
+  <alias name="Listados_valorizados_tener_en_cuenta" value="4"></alias>
+  <alias name="Par�metros:_Especiales" value="5"></alias>
+  <alias name="Administrador_de_comprobantes_electr�nicos" value="6"></alias>
+</aliaslist>

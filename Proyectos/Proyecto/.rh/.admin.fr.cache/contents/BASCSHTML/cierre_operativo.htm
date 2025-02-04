@@ -1,0 +1,211 @@
+
+
+Cierre operativo
+El Cierre Operativo 
+ bloquea el ingreso y modificación de los asientos registrados con anterioridad 
+ a una fecha dada, de modo de no alterar la información ya contabilizada 
+ en el diario o en los subdiarios.
+En caso de contar con sucursales, el cierre del diario 
+ general y la generación de asientos resumen de subdiarios puede realizarse 
+ desde cualquiera de las sucursales, es decir, no es necesario estar ubicado 
+ en la sucursal que corresponde a la casa central.
+Los cierres operativos se realizan en forma independiente 
+ para cada uno de los subdiarios habilitados. Esto permite administrar 
+ períodos de registración contable independientes para cada uno de los 
+ subdiarios que se definan. No obstante para poder efectuar el cierre del 
+ Diario General a determinada fecha, es necesario haber cerrado cada uno 
+ de los subdiarios a esa misma fecha.
+Debe tenerse en cuenta que si se ha definido una Moneda de Contabilización Alternativa, 
+ los asientos contables generados se encontrarán expresados tanto en la 
+ moneda local como en aquella definida como de contabilización alternativa.
+En el caso de los subdiarios que resumen, la tarea, 
+ además de bloquear el ingreso de asientos a una fecha dada, genera y contabiliza 
+ en forma automática el asiento resumen del subdiario.
+Los asientos resumen se generan por cada sucursal. Por 
+ lo cual, cada imputación contable puede aparecer varias veces en un asiento 
+ resumen, si es que tuvo movimientos en distintas sucursales.
+Ante cualquier eventualidad es posible reabrir un subdiario, 
+ en caso que su cierre hubiese generado asiento resumen, éste se elimina 
+ en la reapertura.
+Es importante tener en cuenta que no será posible efectuar 
+ el cierre operativo del Subdiario de 
+ Compras si el mismo incluye facturas o notas de crédito pendientes 
+ de autorización. Tampoco será posible cerrar el Subdiario 
+ de Caja y Bancos si el mismo incluye ordenes de pago pendientes 
+ de autorización.
+Algunas características que presenta el cierre del los 
+ siguientes subdiarios:
+ 
+Cierre de subdiarios de Movimiento 
+ de Materiales
+Sólo puede haber 
+ un único subdiario de materiales para todas las empresas y debe tener 
+ cierre mensual obligatorio. Al cerrarlo se valorizan todos los movimientos 
+ del periodo y se genera el asiento resumen que consolida todos los movimientos 
+ de materiales del periodo que se cierra.
+Dicho asiento 
+ refleja los costos de todos los movimientos de materiales del período, 
+ resumidos en las imputaciones contables involucradas, y valorizando cada 
+ ítem según su método de valuación contable. La valuación también puede 
+ realizarse hasta una fecha, mediante el proceso de valuación manual.
+Es posible realizar 
+ el cierre operativo del subdiario de materiales con errores de valorización 
+ si el subdiario no realiza asiento en el cierre, es decir, si en la definición 
+ del subdiario de materiales se indicó esa opción.Si posteriormente por 
+ algún motivo se modifica dicha característica del subdiario, el sistema 
+ controlará los errores de valorización en subsiguientes cierres, para 
+ permitir dichos cierres, pero controlando que no haya errores de valuación 
+ en el período comprendido entre el último cierre que no generó asiento 
+ de materiales y el cierre actual.
+Cierre de subdiarios de Bienes de 
+ Uso
+En cuanto a los subdiarios de Bienes 
+ de Uso, el cierre implica la generación automática de los comprobantes 
+ de amortización de los bienes de uso de cada inventario y la registración 
+ contable de estos comprobantes en dichos subdiarios.
+Los comprobantes de amortización se generan 
+ por grupo de bienes de uso 
+ asociado a los inventarios que se amortizan y contienen para cada inventario 
+ el importe correspondiente a las cuotas de amortización de los bienes 
+ de uso afectados a cada uno.
+Se generarán cuotas mensuales o anuales dependiendo 
+ del período de amortización indicado en los Parámetros 
+ de Items. El importe de las cuotas se calcula en base al costo de 
+ los bienes afectados en cada inventario dividiendo dicho costo por la 
+ cantidad de cuotas que se deben generar. El costo de cada bien de un inventario 
+ se obtiene utilizando el método de valuación contable asociado al cada 
+ uno.
+La cantidad de cuotas de amortización a generar 
+ depende de la diferencia entre la vida útil de un inventario y la vida 
+ transcurrida.
+El subdiario de bienes de uso podrá cerrarse 
+ siempre mensualmente, aunque se hagan amortizaciones anuales. Si el cierre 
+ coincide con el mes de cierre de las amortizaciones anuales el sistema 
+ generará las amortizaciones necesarias. Si el cierre no coincide con el 
+ mes de cierre de las amortizaciones anuales el sistema sólo generará las 
+ amortizaciones previas de los inventarios afectados, que aún no hayan 
+ sido generadas, por lo que es recomendable hacer siempre el cierre mensual 
+ del subdiario de bienes de uso.
+Cierre de subdiarios de Bancos
+Con relación a los subdiarios de Bancos, 
+ el sistema avisa si detecta que hay cheques de pago diferido pendientes 
+ de efectivizar, con fecha de vencimiento anterior o igual a la fecha a 
+ la cual se desea ejecutar el cierre.
+Los datos a ingresar son:
+ 
+ Diario general
+
+	Para cerrar el diario general.
+	 
+ 
+ Cierre de ejercicio
+
+	Si se desea indicar  conjuntamente 
+	 al cierre del diario se cierra el ejercicio, se debe tildar este campo. 
+	 El hacerlo solamente indica que se trata de un cierre de ejercicio, 
+	 no elimina información ni genera asientos.
+	Se utiliza, por ejemplo, al pedir la auditoría de 
+	 cierres para el diario general, se informará si un cierre del diario 
+	 es cierre de ejercicio, mostrando al lado de la fecha de cierre un 
+	 asterisco, por ejemplo 30/06/2018 (*).  Lo mismo se podrá ver 
+	 al acceder al historial de cierres y reaperturas del diario general.
+	También es utilizado en algunas tareas 
+	 para generar los ajustes desde el ultimo cierre de ejercicio hasta 
+	 ahora.
+	 
+  Tipo de subdiario
+
+	Tildar para 
+	 cerrar un subdiario y seleccionar el tipo.
+	Si por ejemplo 
+	 se indica "Ventas", todos los subdiarios de tipo Ventas 
+	 se cerrarán a la fecha que se indique como fecha de cierre.
+	 Si 
+	 se selecciona Materiales, como hay uno solo, no se indicará ningún 
+	 otro dato.
+	 
+ 
+ Subdiario
+
+	Si se desea cerrar un subdiario, en particular, 
+	 indicar su número. En el caso del subdiario de material , el campo 
+	 se encuentra deshabilitado.
+	 
+ Todos los subdiarios
+
+	En el caso 
+	 de cerrar “todos” los subdiarios, para permitir consultar la fecha 
+	 de cierre de cada subdiario se habilita la opción “Ver fechas de último 
+	 cierre” que permite acceder a la consulta de estado de cierre. Allí 
+	 podrá visualizarse, entre otros, la fecha del último cierre de cada 
+	 subdiario.
+ 
+ Ultimo cierre 
+
+	Exhibe 
+	 la fecha del ultimo cierre realizado en el subdiario indicado.
+	 
+ 
+ Cierre
+
+	 Fecha
+	Fecha a la cual se realiza el cierre 
+	 operativo.
+	Toda la información contabilizada 
+	 en los elementos que se cierran, con fecha anterior a la indicada 
+	 en este dato, no podrá ser modificada.
+	Si se elige cerrar un subdiario que 
+	 tiene indicado Cierre mensual obligatorio, la primera vez que se realice 
+	 la tarea de cierre el sistema permite indicar una fecha pero luego, 
+	 a partir de allí, asume que los cierres son mensuales y en la fecha 
+	 que se haya indicado.
+	 Ajustar 
+	 Bienes de uso
+	Se habilita para subdiarios de materiales 
+	 siempre y cuando  exista algún talonario que permita ingresar 
+	 comprobantes de bienes de uso. 
+	Si se tilda, al cerrar el subdiario 
+	 se ajustarán los bienes de uso.
+	En este caso, una vez cerrado el subdiario, 
+	 se procede a ajustar las imputaciones contables correspondientes a 
+	 "Bienes de uso" y "Amortización acumulada", correspondientes 
+	 a grupos de bienes de uso que tienen indicado un talonario para modificaciones 
+	 de ajuste que contabiliza en el subdiario que se está cerrando.
+	En el caso de que el subdiario resuma 
+	 en el diario, se hace el asiento resumen con posterioridad al asiento 
+	 de ajuste.
+	Al finalizar el proceso de cierre 
+	 del subdiario, en el caso que se hayan ajustado bienes de uso, se 
+	 muestra una pantalla con un botón Detalles que permite acceder a la 
+	 información de los comprobantes generados por el ajuste.
+	 Asiento 
+	 resumen
+	 Número
+	Este dato sólo estará habilitado si 
+	 el subdiario para el que se efectúa el cierre operativo, se resume 
+	 en el diario. En este caso el asiento resumen se genera en este momento.
+	Prefijo y número que tendrá el asiento 
+	 resumen del subdiario del cual 
+	 se efectúa el cierre operativo.
+	Una vez ingresado el prefijo, según 
+	 cuál sea el método de numeración utilizado por el talonario asociado, 
+	 el sistema obtendrá y mostrará el número del asiento a generar.
+	 Observaciones
+	Este dato sólo estará habilitado si 
+	 el subdiario para el que se efectúa el cierre operativo, se resume 
+	 en el diario. En este caso el asiento resumen se genera en este momento.
+	Texto aclaratorio que tendrá el asiento 
+	 resumen que se genere.
+ 
+//<![CDATA[
+	if( typeof( TextPopupInit ) != 'function' ) TextPopupInit = new Function();
+	TextPopupInit('a1', 'POPUP675135427');
+	TextPopupInit('a2', 'POPUP675151904');
+	TextPopupInit('a3', 'POPUP675181132');
+	TextPopupInit('a4', 'POPUP675180377');
+	TextPopupInit('a5', 'POPUP675187338');
+	TextPopupInit('a7', 'POPUP677827383');
+	TextPopupInit('a6', 'POPUP675287144');
+//]]>
+
+

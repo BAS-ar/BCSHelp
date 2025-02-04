@@ -1,0 +1,157 @@
+
+
+Informes de retención
+Esta tarea permite obtener la información asociada a 
+ las retenciones efectuadas en los pagos a proveedores o en las cobranzas, 
+ ya sea por impuesto a las Ganancias o por I.V.A., por contribución al 
+ S.U.S.S., por impuesto a los Ingresos Brutos, etc.
+El informe se emite para un período de tiempo determinado 
+ y se debe seleccionar el tipo de retención a listar.
+El Tratamiento impositivo asociado a los clientes y 
+ proveedores determina si cada una de estas entidades actúan o no como 
+ agentes de retención y mediante las categorías de retención se determinan 
+ los porcentajes a aplicar en cada caso.
+El informe incluye, para cada mes, el detalle de los 
+ importes retenidos para cada proveedor o cliente a los que se le hayan 
+ efectuado o hayan sufrido retenciones del tipo que se solicite.
+Si el período indicado para emitir el informe abarca 
+ un rango mayor a cuatro meses, se imprimirá una línea para cada mes, sino 
+ se asignará una columna del listado para cada uno de los meses, imprimiendo 
+ una línea por cada proveedor o cliente.
+También es posible emitir el listado en forma detallada 
+ y de esta forma obtener el detalle de las retenciones efectuadas en cada 
+ comprobante asociado al cliente, proveedor o agente. En este caso, se 
+ listan la fecha, tipo y número de comprobante con el importe sujeto a 
+ retención y la retención calculada.
+Los importes de retención siempre se calculan y se imprimen 
+ en moneda local.
+Es posible, además, incluir en la impresión del informe 
+ una carátula en la que se detallan 
+ todas las opciones seleccionadas por el usuario al solicitarlo.
+Para emitir el listado primero se ingresan los datos 
+ en las distintas fichas contenidas en la tarea, de manera tal de filtrar 
+ la información de acuerdo a las necesidades. Luego se debe presionar el 
+ ícono (botón) de la barra de herramientas superior que corresponda al 
+ tipo de emisión requerida. El uso de estos botones se detalla en el link 
+ Emisión disponible en un párrafo 
+ posterior.
+Al momento de imprimir un informe (tanto por pantalla 
+ como por papel) se puede utilizar el formato standard del sistema, o indicar 
+ un formato personalizado de impresión. 
+ Este último se indica en el campo homónimo que, en general, se encuentra 
+ en la zona inferior de la primer solapa y su funcionalidad está detallada 
+ a continuación en el link Emisión.
+ 
+ Emisión
+ FCC 
+ (Fecha de certeza contable)
+Los datos solicitados para la emisión del listado son 
+ los siguientes:
+ 
+ Tipo de Retención
+
+	Indicación del tipo de retención para 
+	 el que se emite el listado.
+	 Retención 
+	 por embargo
+	Al indicar esta opción sólo se exhiben 
+	 las retenciones realizadas por embargos.
+	 No definida
+	Se exhiben todas las retenciones indicadas 
+	 como Otras retenciones.
+	 Impuesto 
+	 a las ganancias
+	Al indicar esta opción sólo se exhiben 
+	 las retenciones por el impuesto a las ganancias.
+	 Impuesto 
+	 al valor agregado
+	Al indicar esta opción sólo se exhiben 
+	 las retenciones por IVA.
+	 Impuesto 
+	 al sistema único de la seguridad social
+	Al indicar esta opción sólo se exhiben 
+	 las retenciones por el SUSS.
+	 Impuesto 
+	 a los ingresos brutos
+	Al indicar esta opción sólo se exhiben 
+	 las retenciones por IIBB.
+	 Provincia
+	Este dato sólo se encuentra habilitado 
+	 si se solicita imprimir retenciones de Ingresos Brutos.
+	Se puede seleccionar la provincia 
+	 para la cual se desean listar las retenciones.
+	Si no se indica ninguna provincia 
+	 se listan los totales de retención para todas las provincias en las 
+	 que se calcularon retenciones.
+	La provincia en la cual se calculan 
+	 las retenciones de Ingresos Brutos es la asociada a cada cliente o 
+	 proveedor para los que se efectúan las retenciones.
+	En el caso de tratarse de las retenciones 
+	 sufridas es posible indicar los movimientos a incluir, a saber:
+	 
+	 Movimientos de cuenta corriente
+	 
+	 Movimientos bancarios
+ 
+ Período a considerar
+ 
+ Retenciones
+
+	Indicación del tipo de retenciones a listar.
+	 Realizadas
+	Si se selecciona retenciones Realizadas se listarán las retenciones 
+	 del tipo solicitado que fueron efectuadas por la empresa en el período 
+	 de tiempo indicado, en el caso en que la empresa actúe como agente 
+	 de retención.
+	 Sufridas
+	Si se selecciona retenciones Sufridas se listarán las retenciones 
+	 del tipo solicitado que fueron efectuadas a la empresa en el período 
+	 de tiempo indicado.
+	 
+ 
+ Tipo de listado
+
+	Indicación del tipo de listado a imprimir.
+	 Consolidado 
+	 por mes
+	Si se selecciona tipo Consolidado 
+	 por mes se listarán las retenciones efectuadas o sufridas en 
+	 cada mes del rango de fechas solicitado. Si el período abarca más 
+	 de cuatro meses se listará una línea con el total retenido en cada 
+	 mes. Si no, se listará una columna con el importe total retenido en 
+	 cada mes.
+	 Detallado
+	Si se selecciona tipo Detallado 
+	 se listará el detalle de los comprobantes en los cuales se calcularon 
+	 retenciones en el período de tiempo solicitado. En este caso, es posible 
+	 indicar que se detallen los comprobantes anulados.
+	 Incluir 
+	 comprobantes anulados
+	Se habilita cuando se solicita el 
+	 informe en forma detallad.
+	Consolidar 
+	 información en el Administrador
+	En caso que se tilde, la información 
+	 se consolida en el cliente / proveedor Administrador
+ 
+ 
+ Para tener en cuenta
+
+	En las emisiones personalizadas de retenciones 
+	 realizadas de I.V.A. y ganancias detalladas, se puede detallar el 
+	 número que asigna el aplicativo SICORE al comprobante de retención.
+	La asociación entre los números de retención 
+	 y la numeración que asigna el aplicativo SICORE no es automática por 
+	 lo que, para que tales números puedan ser detallados, previamente 
+	 deben haberse relacionado mediante la tarea del SICORE habilitada 
+	 a tal fin.
+ 
+//<![CDATA[
+	if( typeof( TextPopupInit ) != 'function' ) TextPopupInit = new Function();
+	TextPopupInit('a1', 'POPUP585451422');
+	TextPopupInit('a3', 'POPUP583692607');
+	TextPopupInit('a4', 'POPUP631668949');
+	TextPopupInit('a2', 'POPUP585486421');
+//]]>
+
+

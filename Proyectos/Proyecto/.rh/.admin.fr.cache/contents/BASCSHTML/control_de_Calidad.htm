@@ -1,0 +1,144 @@
+
+
+Control de Calidad
+Este proceso actúa sobre comprobantes de ingreso de 
+ mercadería y sobre comprobantes de compras que involucren entrega de mercadería.
+El control de calidad puede realizarse sobre comprobantes 
+ de ingreso cuyos correspondientes talonarios tengan activado el check 
+ "Genera parte de diferencias", correspondan a proveedores e 
+ involucren ítems.
+Tiene por objeto indicar, en relación a cada comprobante, 
+ los productos que, a criterio del sector de recepción, se recibieron con 
+ fallas y detallar en qué consisten dichas fallas.
+Todo lo que se informe mediante el control de calidad 
+ se incorporará automáticamente a la tarea denominada "Resolución 
+ de partes de diferencia", como un incidente más a tener en cuenta 
+ cuando se analicen las diferencias entre "lo solicitado" y "lo 
+ recibido".
+El control de calidad de un comprobante puede hacerse 
+ en varias instancias, pudiendo ingresarse a la tarea todas las veces que 
+ se requiera, hasta tanto no se indique que el control se ha finalizado. 
+ Así, si se recibe gran cantidad de mercadería y el control requiere varios 
+ días, se podrán ir registrando las fallas. encontradas, a medida que se 
+ van encontrando.
+También es posible realizar el control de calidad al 
+ momento de registrar los comprobantes de ingreso de mercadería y de compras. 
+ Ambos comprobantes presentan fichas destinadas, específicamente, a tal 
+ fin.
+Independientemente que el control se realice en esta 
+ o en los comprobantes, se indicarán cada uno de los ítems que presentan 
+ fallas, la cantidad de piezas falladas y el detalle de la falla detectada.
+Luego, esta información integrará el Parte de diferencias 
+ conjuntamente con el resto de diferencias detectadas (en fechas de entrega, 
+ condiciones de compra, cantidades, etc.).
+Los comprobantes siguen estando disponibles para el 
+ control de calidad hasta tanto no se indique que el control de calidad 
+ ha finalizado y se resuelva el parte de diferencias correspondiente. Incluso, 
+ si se ha indicado que el control de calidad se ha finalizado, si no se 
+ ha resuelto el parte de diferencias, se podrá registrar información.
+ 
+ Tipo
+
+	Se debe indicar el tipo correspondiente 
+	 al comprobante a controlar. Este debe haberse registrado con un talonario 
+	 que indique Genera parte de diferencias. Además, no debe tener el 
+	 Parte de diferencia terminado.
+	Los tipos de comprobantes para los que 
+	 puede efectuarse control de calidad son:
+	Ingreso de mercadería
+	Factura de compra
+	Nota de débito
+	Comprobante interno de compras
+	Ticket
+	Factura-recibo
+	Liquidación
+ 
+ Proveedor
+
+	Código del proveedor correspondiente al 
+	 comprobante para el cual se requiere registrar fallas de calidad.
+	 
+ 
+ Fecha
+
+	Fecha del comprobante que se controla.
+	 
+ 
+ Número
+
+	Identificación del comprobante que se 
+	 controla.
+	 
+ 
+ Control finalizado
+
+	Permite dar por concluido el control de 
+	 calidad en relación al comprobante que se exhibe en pantalla.
+	A pesar de ello, hasta tanto no se resuelva 
+	 el parte de diferencias correspondiente, es posible actuar sobre comprobantes 
+	 para los cuales se haya informado que el control se ha finalizado.
+ 
+ Control de calidad
+
+	En esta ventana se registran todos los 
+	 bienes que presentan fallas de calidad.
+	Independientemente de donde se informen 
+	 los ítems con fallas, la ventana exhibe toda la información existente, 
+	 al respecto, permitiendo modificarla e ingresar nuevos ítems.
+	Ítem
+	Se deben informar los códigos de los ítems 
+	 para los cuáles se deben informar fallas. Estos deben ser bienes (no 
+	 se permite informar ni servicios ni textos) y deben estar incluidos 
+	 en el comprobante que se está controlando.
+	Si se accede a la ventana de búsqueda, 
+	 se ofrecen todos los ítems del comprobante, siendo posible seleccionar 
+	 varios productos a la vez de modo de precargarlos en forma conjunta.
+	Los bienes que manejan colores y medidas 
+	 deberán ingresarse, uno por cada línea, de acuerdo con la codificación 
+	 del color y la medida correspondiente indicada en los parámetros de 
+	 ítems (no se dispone de la grilla de "medidas-colores" para 
+	 la selección de los ítems a incluir en la ventana).
+	Descripción
+	Corresponde al ítem informado en el campo 
+	 anterior.
+	Cantidad
+	Cantidad de unidades del ítem que presentan 
+	 problemas.
+	Para los bienes que se administran con 
+	 números de serie, se deben seleccionar aquellos en los que, específicamente, 
+	 se observan las fallas a informar en el comprobante.
+	Al registrar el código de un ítem, siempre 
+	 se ofrece por defecto la cantidad ingresada en el comprobante a controlar, 
+	 ésta puede modificarse reemplazándola siempre por una cantidad menor.
+	Si se registra en forma directa un bien 
+	 con contenedores o dimensiones (sin seleccionarlo de la búsqueda), 
+	 el sistema ofrecerá los datos correspondientes al primero que se haya 
+	 ingresado en el comprobante.
+	Cantidad en 2da. unidad
+	En caso que las compras se registren en 
+	 la 2da. Unidad, se deben ingresar en este campo la cantidad de unidades 
+	 que presentan fallas.
+	Falla
+	Este campo permite registrar un texto 
+	 descriptivo de la falla detectada en el control de calidad.
+	Despacho
+	Código de despacho correspondiente, al 
+	 ítem a observar (en caso que corresponda).
+	Partida
+	Código de partida correspondiente, al 
+	 ítem a observar (en caso que corresponda).
+	Serie
+	Número de serie correspondiente, al ítem 
+	 a observar (en caso que corresponda).
+ 
+//<![CDATA[
+	if( typeof( TextPopupInit ) != 'function' ) TextPopupInit = new Function();
+	TextPopupInit('a6', 'POPUP602729213');
+	TextPopupInit('a1', 'POPUP771230300');
+	TextPopupInit('a2', 'POPUP771215683');
+	TextPopupInit('a3', 'POPUP771209450');
+	TextPopupInit('a4', 'POPUP771191412');
+	TextPopupInit('a5', 'POPUP771212111');
+//]]>
+
+

@@ -1,0 +1,404 @@
+
+
+Ingreso de Ordenes de producción
+Se pueden ingresar directamente o en base a una Hoja 
+ de ruta.
+Si se opta por la segunda opción, una vez informada 
+ la Hoja de ruta base y la cantidad a producir, la Orden de Producción 
+ se precarga con la información correspondiente a dicho documento. Esta 
+ información puede ser modificada.
+También existe la posibilidad de ingresar una orden 
+ de producción en base a otros comprobantes ya ingresados en el sistema:
+ 
+ 
+ Comprobantes 
+ referenciados órdenes de producción
+Cuando se registran las órdenes los datos a ingresar, 
+ además de la fecha y el número de comprobante son:
+ 
+ Depósito
+
+	Código de depósito asociado a la orden 
+	 de producción que se está ingresando.
+	Si se indica una planta en el campo homónimo 
+	 se debe indicar un código de depósito que es tomado como valor por 
+	 defecto en la solapa Insumos de las tareas definidas en la ficha Tareas.
+	Si no se indica una planta, representa 
+	 el depósito de insumos y de productos terminados.
+ 
+ Planta
+
+	Es posible indicar la planta en la cual 
+	 se realiza el proceso. Puede ser propia o de terceros.
+	Se debe tener en cuenta que una vez que 
+	 se ha comenzado a incorporar información al comprobante (ítems o tareas), 
+	 no se permite modificar, sacar o indicar el dato correspondiente a 
+	 la planta. Si se requiere hacerlo se debe cancelar el comprobante 
+	 y volver a empezar.
+ 
+ Responsable
+
+	Se ofrecen como responsables, por defecto, 
+	 los informados en la Hoja de ruta. Si la orden no cuenta con hoja 
+	 de ruta o si la misma no tiene indicado un responsable, será el responsable 
+	 de la planta
+	Los responsables que se indiquen pueden 
+	 operar sobre todas las tareas de la orden de producción, independientemente 
+	 de que las tareas tengan, o no, asignados responsables.
+ 
+ Hoja de ruta
+
+	Este campo podrá completarse con el código 
+	 de la Hoja de ruta que se desee utilizar como base para registrar 
+	 la orden de producción.
+	Debe corresponder al código de una hoja 
+	 de ruta ya definida en el sistema.
+	La orden de producción no podrá registrarse 
+	 si la fecha de inicio de la Hoja de ruta es posterior a la fecha actual 
+	 o si su fecha de expiración sea anterior a la fecha actual.
+ Inicio
+
+	Fecha y hora de inicio del proceso productivo 
+	 determinado por la hoja de ruta que se indique.
+	Al grabar, el sistema controla que esta 
+	 fecha sea igual o anterior a la fecha en la que comienza la primer 
+	 tarea.
+	Si se modifica la fecha de inicio, reemplazándola 
+	 por una fecha posterior, el sistema ofrece recalcular las fechas de 
+	 todas las tareas en función de sus dependencias.
+	Si se deja en blanco, o si la fecha de 
+	 inicio de la primer tarea a ejecutarse es anterior a esta fecha, al 
+	 grabar el comprobante el sistema ofrecerá modificar la fecha de inicio 
+	 de la orden de producción por la fecha de inicio de la primera tarea.
+ 
+ Terminación
+
+	Fecha y hora prevista para la finalización 
+	 del proceso productivo determinado por la hoja de ruta que se indique.
+	Esta fecha dependerá de la duración de 
+	 las tareas componentes y de los recursos que se encuentren disponibles 
+	 para las fechas requeridas, y deberá ser informada en forma acorde 
+	 a las mismas.
+	Al grabar el comprobante si esta fecha 
+	 no se ha indicado, el sistema ofrecerá completarla con la mayor fecha 
+	 de finalización de las últimas tareas a ejecutarse.
+	También se controla que esta fecha sea 
+	 mayor o igual a la fecha en la que termina la última tarea.
+ 
+ Cantidad
+
+	Cantidad de unidades a producir con la 
+	 orden de producción que se está ingresando.
+	Se recomienda indicar, como unidades equivalentes, 
+	 la misma cantidad de unidades a fabricar del producto terminado principalo 
+	 uno.
+	La cantidad a fabricar de cada bien se 
+	 obtendrá como:
+	Cantidad x (Cantidad 
+	 según Hoja de Ruta / Unidades equivalentes según Hoja de ruta)
+ 
+ 
+ Ficha Productos
+ Tabla de Ítems
+
+	En esta tabla se informarán uno a 
+	 uno los productos que se han de producir y sus correspondientes cantidades.
+	Si la Orden de producción se registra 
+	 en base a una hoja de ruta, en esta tabla se exhibirán los productos 
+	 informados en la misma, mostrando para cada uno la cantidad a producir.
+	Para los ítems que trabajan con doble 
+	 unidad de medida se mostrará la cantidad de unidades expresada en 
+	 cada unidad.
+	Ítem
+	Código de bien que se incluye 
+	 en la orden de producción.
+	El primer ítem que se ingresa 
+	 se considera el principal y es el que define el grado de avance.
+	No es posible ingresar dos líneas 
+	 diferentes del producto principal.
+	Observaciones
+	El sistema exhibe las observaciones 
+	 que tuviere el ítem, si éstas son previamente parametrizadas en la 
+	 tabla de bienes para el comprobante Orden de producción.
+	Descripción
+	Descripción del ítem exhibido 
+	 en el dato anterior.
+	Si el ítem tiene asociada una 
+	 descripción larga, se exhibirá esta. Si no, se exhibirá la otra descripción. 
+	 Si el ítem no tiene descripción asociada, se solicitará el ingreso 
+	 de un detalle del mismo en este momento.
+	Cantidad
+	Cantidad de unidades que se van 
+	 a producir del ítem indicado.
+	Si el ítem trabaja con doble unidad 
+	 de medida y la relación entre ellas es variable, si al ingresar la 
+	 cantidad en segunda unidad de medida, la primera está en cero, el 
+	 sistema la calcula automáticamente.
+	Si la orden proviene de una hoja 
+	 de ruta y se modifica la cantidad del producto terminado que figura 
+	 como producto principal en dicha hoja de ruta, el sistema ofrece recalcular 
+	 los insumos y recursos en función a la nueva cantidad informada.
+	Cantidad en 2da unidad
+	Cantidad de unidades que se van 
+	 a producir del ítem indicado en la segunda unidad de medida.
+	Si el ítem no trabaja con doble 
+	 unidad de medida, no se exhibirá información en este campo.
+	Si la relación es variable y al 
+	 ingresar la cantidad en segunda unidad de medida, la primera está 
+	 en cero, el sistema la calcula automáticamente.
+	Despacho
+	Código de hasta quince caracteres 
+	 que indica el número del despacho al cual ingresa el ítem indicado.
+	Este dato podrá ingresarse para 
+	 los ítems que trabajan con despachos. Debe corresponder a un despacho 
+	 definido en el sistema para el ítem indicado.
+	Partida
+	Código de hasta quince caracteres 
+	 que indica el número de la partida a la cual ingresa el ítem indicado.
+	Este dato podrá ingresarse para 
+	 los ítems que trabajan con partidas. Debe corresponder a una partida 
+	 definida en el sistema para el ítem indicado.
+	Los controles que se efectúan 
+	 sobre las partidas que se informan dependen del estado de los parámetros 
+	 de Producción disponibles en Parámetros 
+	 de ítems.
+	Números de serie
+	Si el ítem indicado trabaja con 
+	 números de serie, se abrirá una ventana que permitirá el ingreso de 
+	 todos los números de serie que ingresan con el comprobante.
+	Se solicitará el ingreso de tantos 
+	 números como cantidad de unidades se fabriquen del ítem.
+	El sistema brinda la posibilidad 
+	 de ingresar estos números en forma automática definiendo un prefijo 
+	 común y un rango de números para los mismos. Esto es muy útil en el 
+	 caso de producción de grandes cantidades de mercadería seriada.
+	Porcentaje de costo
+	Número que indica qué porcentaje 
+	 del costo de los procesos de fabricación le corresponderá al producto 
+	 terminado indicado.
+	Para obtener el costo de los productos 
+	 terminados, se suman los costos de los insumos, de la mano de obra 
+	 y de la maquinaria afectadas a la orden de producción y, se aplica 
+	 el porcentaje de incidencia indicado en cada producto.
+	Redondeo
+	Redondeo a aplicar en la cantidad 
+	 de productos necesarios, con indicación de hasta dos decimales.
+	Rel
+	La información de este campo aplica 
+	 exclusivamente a productos que administran medidas y colores y se 
+	 debe utilizar solamente si el costo de los productos terminados no 
+	 se reparte uniformemente entre las diversas combinaciones medida-color.
+	Para ingresar información al campo, 
+	 debe hacerse doble clic.
+	Si se ha ingresado algo en la 
+	 "Relación de Costos", la columna se muestra una "X" 
+	 en azul. Si no tiene nada ingresado, pero está previsto que se ingresen 
+	 datos en la grilla correspondiente, se muestra un "X" en 
+	 negro. Si no es posible ingresar relación de costos para el ítem, 
+	 no se muestra nada en esta columna (bienes sin medidas y colores).
+	Si no se indica nada en este campo 
+	 se considera que el costo de producción se reparte uniformemente entre 
+	 todos los productos resultantes del proceso, independientemente de 
+	 los colores y de las medidas que se hayan producido.
+	A veces, algunas medidas de un 
+	 ítem resultan más costosas que otras, por ejemplo, por utilizar mayor 
+	 cantidad de insumos.
+	Si por ejemplo, para un producto 
+	 terminado que se fabrica en blanco y negro, en los talles S, M, L 
+	 y XL, se indica como relación de costos las siguientes:
+	
+		
+			 
+			S
+			M
+			L
+			XL
+		
+		
+			Blanco
+			1
+			1.10
+			1.10
+			1.15
+		
+		
+			Negro
+			1
+			1.10
+			1.10
+			1.15
+		
+	
+	Significa que, independientemente 
+	 del color, los talles M y L tienen un 10% más de costo que los talles 
+	 S y los talles XL, un 15% más.
+	Si por ejemplo se producen 10/S, 
+	 20/M, 20/L y 10/XL unidades de un bien con la relación de costos indicada, 
+	 y el costo total de la producción resulta ser de 3300, el costo de 
+	 cada medida resulta de aplicar las siguientes fórmulas:
+	
+		
+			Base de costos = Costo total 
+			 / (Sumatoria de relación * cantidad)
+			Costo unitario de cada medida-color 
+			 = Base de costos * Relación
+		
+	
+	La "Sumatoria de relación 
+	 * cantidad" se refiere a la suma, para cada combinación medida-color, 
+	 del resultado de multiplicar la cantidad de unidades por la relación 
+	 que le corresponde.
+	Por lo cual, en el caso del ejemplo,
+	Base de costos = 3300 / (1*10 
+	 + 1.10*20 + 1.10*20 + 1.15*10) = 50,382
+	Luego, el costo para cada medida 
+	 será:
+	
+		
+			Costo S = 50,382 * 1 = 50,382
+			Costo M-L = 50,382 * 1,10 = 55,42
+			Costo XL = 50,382 * 1,15 = 57,94
+		
+	
+	Se debe tener en cuenta que si 
+	 se ingresa información en la grilla, debe ingresársela para todos 
+	 los talles y colores de modo que el cálculo de costos se realice en 
+	 forma correcta. Si no se ingresa nada, el costo se reparte uniformemente 
+	 entre todos los productos que se fabrican.
+	Pedidos
+	Esta columna) permite, al hacer 
+	 doble clic sobre cada fila, acceder a una ventana donde se pueden 
+	 ingresar, eliminar o modificar los datos del pedido de venta u otras 
+	 entregas relacionados con el ítem correspondiente a la línea.
+	En la ventana es posible ingresar, 
+	 eliminar o modificar los datos de los pedidos relacionados con el 
+	 ítem de la línea. Si se utiliza el botón de búsqueda en la columna 
+	 "Comprobante", se accede a los pedidos pendientes correspondientes 
+	 al ítem en cuestión.
+ 
+ Ficha Tareas
+
+	En esta ficha es posible definir cada 
+	 una de las etapas que permitirán concretar el proceso productivo correspondiente 
+	 a la Orden de producción que se está definiendo. Si la Orden se ingresa 
+	 en base a una hoja de ruta, esta ficha exhibirá toda la información 
+	 ingresada al definir la hoja de ruta que se haya tomado como base.
+	Para cada tarea podrán indicarse los insumos 
+	 requeridos, los tipos de recursos necesarios para realizar la tarea, 
+	 el tiempo necesario para su realización, la forma en que está relacionada 
+	 con otras tareas, etc.
+	Pulsando el botón Nueva 
+	 se abrirá una ventana que permitirá el ingreso de una nueva tarea 
+	 que será agregada a la orden de producción.
+	Pulsando el botón Modificar 
+	 mientras el cursor se encuentra posicionado en una de las líneas de 
+	 la tabla de tareas se abrirá una ventana que permitirá modificar los 
+	 datos de una tarea ya definida en la orden de producción.
+	A medida que se agregan nuevas tareas, 
+	 se va completando en esta ficha la tabla de tareas con los datos de 
+	 cada tarea definida.
+	Código
+	Código de tarea definida.
+	No puede haber dos tareas con 
+	 el mismo código.
+	Descripción
+	Descripción de la tarea informada.
+	Duración
+	Duración de la tarea expresada 
+	 en horas o minutos expresada con hasta dos decimales.
+	La duración que se exhibe se calcula 
+	 automáticamente en base a los datos informados en la orden de producción 
+	 o en la Hoja de ruta, y a la cantidad de unidades a producir.
+	 
+	 Incidencia
+	Tipo de incidencia de la tarea 
+	 en el proceso productivo.
+	Las opciones son:
+	Fija
+	Proporcional
+	Si se indica incidencia Fija, la duración de la tarea que 
+	 se indique, será independientes de la cantidad de piezas a fabricar.
+	En cambio, si se indica incidencia 
+	 Proporcional, la duración 
+	 de la tarea variará en función a la cantidad de bienes a producir.
+	Redondeo
+	Redondeo a aplicar en la cantidad 
+	 de recursos necesarios para completar la tarea, con indicación de 
+	 hasta dos decimales.
+	Divisible
+	Se exhibe un tilde si la tarea 
+	 puede dividirse.
+	Responsable
+	Responsable de la Tarea. Por defecto, 
+	 se exhibe el informado en la hoja de ruta.
+	Permite diferentes Grupos 
+	 de trabajo
+	El sistema exhibe un tilde si 
+	 la tarea permite diferentes grupos de trabajo en paralelo.
+	Cantidad de grupos
+	Si se muestra tildado el check 
+	 box anterior, se exhibe en este columna la cantidad de grupos de trabajo 
+	 que se utilizan en la tarea.
+	Planta
+	Debido a que la orden opera con 
+	 Plantas, se indica el código y la descripción de la misma.
+ Botones 
+ Nueva/Modificar
+ 
+ Ficha Observaciones
+
+	 Observación
+	Esta ficha permite incluir instrucciones, 
+	 consideraciones, y todo aquello que resulte de interés informar a 
+	 los responsables de concretar la Orden 
+	 de producción.
+ 
+ Ficha Adjuntos 
+Permite adjuntar archivos externos. Una vez 
+ grabado el comprobante la administración de los archivos adjuntados se 
+ realiza desde el Proceso de Adjuntos.
+ 
+ Para tener en cuenta
+
+	Cuando se graba una Orden de producción 
+	 el sistema controlará que nadie dependa de la última tarea indicada 
+	 y puede haber sólo una tarea final.
+	Si el comprobante tiene indicada una planta 
+	 en el encabezado, cada una de las tareas debe tener una planta indicada.
+	Si se indica un código de servicio para 
+	 una línea que corresponde a un recurso propio, si bien permite su 
+	 ingreso, al grabar, el sistema blanquea el campo del servicio.
+	No se permite grabar una orden de producción 
+	 si tiene alguna tarea en la que se haya indicado un servicio que tenga 
+	 asociado un grupo de compras que requiera control de presupuesto de 
+	 compras. 
+	En una tarea de una planta propia, no 
+	 es posible indicar un recurso de tercero.
+	La primera tarea No puede ocurrir en una 
+	 plante de terceros.
+	Se controla que dos tareas seguidas no 
+	 ocurran en planta de terceros.
+	El pasaje de tareas dependientes que ocurran 
+	 en plantas diferentes es uno a uno.
+	Se verifica que las cantidades de insumos 
+	 y/o productos terminados que se indican coincidan con el redondeo 
+	 indicado en cada caso.
+ 
+ 
+ 
+//<![CDATA[
+	if( typeof( TextPopupInit ) != 'function' ) TextPopupInit = new Function();
+	TextPopupInit('a1', 'POPUP679917658');
+	TextPopupInit('a2', 'POPUP679934794');
+	TextPopupInit('a3', 'POPUP679933177');
+	TextPopupInit('a4', 'POPUP679955599');
+	TextPopupInit('a5', 'POPUP679976220');
+	TextPopupInit('a6', 'POPUP679984469');
+	TextPopupInit('a7', 'POPUP679989954');
+	TextPopupInit('a8', 'POPUP680023900');
+	TextPopupInit('a9', 'POPUP680477600');
+	TextPopupInit('a10', 'POPUP680087350');
+	TextPopupInit('a11', 'POPUP680060319');
+//]]>
+
+

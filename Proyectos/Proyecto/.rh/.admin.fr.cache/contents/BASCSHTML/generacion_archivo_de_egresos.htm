@@ -1,0 +1,149 @@
+
+
+Generación archivo de egresos
+A través de esta tarea se podrá generar un archivo destinado 
+ a almacenar cada uno de los ítems incluidos en un determinado comprobante 
+ de egreso de mercadería o egreso de mercadería diferido.
+El archivo de comprobantes de egresos puede generarse, 
+ indistintamente, si la sucursal correspondiente al depósito del cual egresa 
+ la mercadería tiene indicada una cola de salida como así también cuando 
+ intercambia mensajes mediante tablas.
+Luego de ingresar los datos que se describen a continuación, 
+ el sistema solicitará el nombre del archivo donde se han de guardar los 
+ ítems incluidos en el comprobante seleccionado y el lugar físico donde 
+ se localizará el mismo.
+Para generar el archivo se deberán ingresar los siguientes 
+ datos:
+ 
+ 
+ Comprobante
+ Destino
+
+	En función del destinatario de la 
+	 mercadería, se debe seleccionar:
+	Depósito
+	Permite generar un archivo que 
+	 almacene los items incluidos en una salida (transferencia) hacia otro 
+	 depósito de la empresa.
+	Si se selecciona Depósito 
+	 se deberá informar a continuación el código que identifica al depósito 
+	 de indicado como destino del comprobante en base al cual se ha de 
+	 generar el archivo de egresos.
+	Cliente
+	Permite generar un archivo que 
+	 almacene los ítems incluidos en una salida con destino a un cliente. 
+	 Podría tratarse de un remito por ventas o de otro tipo de entregas, 
+	 tales como atenciones o muestras.
+	Si se selecciona Cliente 
+	 se deberá informar a continuación el código que identifica al cliente 
+	 indicado como destino del comprobante en base al cual se ha de generar 
+	 el archivo de egresos.
+ Número
+
+	Prefijo y número correspondiente al 
+	 comprobante de egreso que se desea incluir en el archivo.
+	El prefijo debe corresponder a un 
+	 talonario que admita el ingreso 
+	 de comprobantes de egreso de mercaderías.
+	Este dato no puede dejarse en blanco.
+ Generar 
+ Archivo
+
+	Presionando este botón el sistema 
+	 solicitará el nombre del archivo que se ha de generar. Este botón 
+	 solo se habilitará si la Sucursal 
+	 a la que corresponde el depósito 
+	 tiene indicada la opción Por Archivo.
+	 
+ Enviar 
+ mensaje
+
+	Presionando este botón el sistema, el 
+	 sistema grabará los datos del remito en una tabla de la base de datos 
+	 y, al ejecutar la aplicación ICR (Interfase de Conexión Remota), todos 
+	 los remitos se mandarán a la cola de salida correspondiente. Este 
+	 botón se habilitará tanto si la sucursal tiene definida una cola de 
+	 salida como cuando intercambia mensajes mediante tablas.
+ 
+ Armado de transferencias
+ Número
+
+	Número del armado 
+	 de transferencias cuyos egresos se desea incluir en el archivo 
+	 a generar.
+	Cada comprobantes de egreso correspondiente 
+	 al armado de transferencias indicado se enviará por archivo o por 
+	 mensaje, dependiendo de la sucursal 
+	 a la cual pertenece cada depósito.
+ Enviar
+
+	Presionando este botón el sistema 
+	 grabará los datos de los remitos en un archivo o en una tabla de la 
+	 base de datos, dependiendo de lo que se indique en la sucursal 
+	 a la cual pertenece cada depósito.
+	 
+ 
+ Para tener en cuenta
+
+	El archivo de texto que se genera 
+	 tiene el siguiente formato.
+	
+		
+			Campo
+			Inicio
+			Fin
+		
+		
+			Marca de envío de casa central
+			2
+			2
+		
+		
+			Número de remito
+			7
+			14
+		
+		
+			Fecha del remito
+			15
+			20
+		
+		
+			Producto: Código
+			23
+			35
+		
+		
+			Producto: Precio
+			86
+			98
+		
+		
+			Producto: Cantidad
+			100
+			110
+		
+		
+			Depósito remito
+			112
+			113
+		
+		
+			Producto: Cantidad en la unidad contraria 
+			 a la de ventas
+			119
+			129
+		
+	
+//<![CDATA[
+	if( typeof( TextPopupInit ) != 'function' ) TextPopupInit = new Function();
+	TextPopupInit('a1', 'POPUP601465126');
+	TextPopupInit('a2', 'POPUP601466351');
+	TextPopupInit('a3', 'POPUP601481541');
+	TextPopupInit('a4', 'POPUP601488411');
+	TextPopupInit('a5', 'POPUP601511062');
+	TextPopupInit('a6', 'POPUP601526518');
+	TextPopupInit('a7', 'POPUP601535645');
+//]]>
+
+

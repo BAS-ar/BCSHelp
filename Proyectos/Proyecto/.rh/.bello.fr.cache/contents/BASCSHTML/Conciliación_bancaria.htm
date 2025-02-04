@@ -1,0 +1,302 @@
+
+
+Conciliación bancaria
+El sistema prevé un proceso destinado a facilitar la 
+ tarea comúnmente conocida como Conciliación 
+ Bancaria.
+Esta consiste en comparar el resumen de cuenta (extracto 
+ bancario) que emite el banco con los movimientos registrados en el mayor 
+ de la cuenta correspondiente; de este modo se podrán encontrar las diferencias 
+ existentes entre ambos y, consecuentemente, en función de dichas diferencias, 
+ detectar errores y/o registrar los débitos y créditos que realiza el banco 
+ y, que suele informar, justamente, mediante dicho resumen de cuenta.
+Este proceso se lleva a cabo mediante una planilla destinada 
+ a tildar movimientos, que incluye columnas que exhiben la fecha, el tipo 
+ de comprobante, el número y el importe de los movimientos que afectan 
+ a una determinada cuenta bancaria. La tarea incluye además una serie de 
+ prestaciones destinadas a facilitar la búsqueda de los movimientos a tildar 
+ como, por ejemplo, el buscar los movimientos de determinado importe y 
+ la posibilidad de seleccionar el orden en que se desea que se presenten 
+ dichos movimientos (por fecha o por importe). También es posible seleccionar 
+ qué movimientos se desean incluir en la planilla de conciliación, a saber, 
+ sólo los movimientos no tildados, los movimientos tildados, o ambos, o 
+ incluir sólo los movimientos hasta una fecha determinada.
+Una vez tildados los movimientos que correspondan, e 
+ informados la fecha y el importe correspondientes al extracto bancario 
+ que se está conciliando, existen informes que ayudan a encontrar los movimientos 
+ que, por omisión y/o error, no se tildaron o se tildaron erróneamente 
+ y que, por ende, están causando diferencias.
+Cuando hablamos de diferencias nos referimos a que el 
+ importe correspondiente al saldo del extracto informado, no coincide con 
+ el que resulta de modificar el saldo del mayor, debitándolo o acreditándolo 
+ (según corresponda), con los importes correspondientes a los movimientos 
+ no tildados.
+En el caso que ambos importes coincidan, se puede proceder 
+ a realizar el cierre de conciliación que registra la fecha y el importe 
+ correspondientes a la conciliación realizada.
+Es posible que, a pesar de que la conciliación cierre 
+ correctamente, se cometan errores. Por ejemplo, porque se tildó un movimiento 
+ por otro y, por ser ambos del mismo importe, no se detectó el error cometido 
+ al momento en que éste se produjo. Para esos casos, se prevén tareas que 
+ brindan la posibilidad de acceder a conciliaciones ya efectuadas y cerradas, 
+ de modo de modificar las operaciones que se hayan tildado erróneamente 
+ y, luego, volver a realizar el correspondiente cierre.
+Una vez que se empieza a conciliar un extracto bancario 
+ no es necesario finalizar todo el proceso de comparación y tilde de los 
+ movimientos, en el mismo momento. Pueden tildarse algunos movimientos 
+ y salir de la tarea, y la próxima vez que se ingrese a la misma el sistema 
+ mostrará la planilla en el estado en que se dejó la misma, permitiendo 
+ continuar con la revisión de los movimientos faltantes.
+Los datos a ingresar para efectuar la conciliación son:
+ 
+ 
+ Cuenta bancaria
+
+	Código de cuenta bancaria de la cual se 
+	 efectúa la conciliación de los movimientos.
+	Al ingresar el código de una cuenta definida 
+	 en el sistema se exhibirán la fecha de cierre y el saldo del extracto 
+	 anterior y se podrán ingresar los datos del extracto actual. Además 
+	 se mostrará en este momento, la lista de movimientos del extracto 
+	 de la cuenta posibles de conciliar y los que ya fueron conciliados.
+ 
+ Ordenamiento
+
+	A la derecha del rótulo Ordenamiento se 
+	 exhibe el criterio por el cual están ordenadas las filas y se ofrece 
+	 un enlace para indicar otros criterios.
+	Por defecto, la tabla se presenta ordenada 
+	 por Fecha-Importe. Al hacer clic en el enlace se habilita una ventana 
+	 que permite definir el ordenamiento que se le desea dar a la grilla 
+	 de movimientos.
+	Es posible ordenar por todas las columnas 
+	 de la tabla, éstas se presentan en una tabla (a la izquierda) de modo 
+	 de seleccionar (pasándolas a la tabla de la derecha) las columnas 
+	 que se utilizarán para fijar el criterio de ordenamiento.
+	En la tabla de la derecha se deben incorporar 
+	 las columnas en base a las cuáles se desea ordenar la información. 
+	 Se pueden incluir uno o varios datos; para cada uno de ellos es posible 
+	 indicar que se ordene en forma ascendente o descendente.
+	Para transferir una columna de la tabla 
+	 de la izquierda a la tabla de la derecha y viceversa es posible hacer 
+	 clic, directamente, sobre dicha columna.
+	También se dispone de botones para transferir 
+	 elementos de una tabla a la otra:
+	 
+	 Transfiere un elemento de la tabla izquierda a la tabla derecha.
+	 
+	 Transfiere un elemento de la tabla derecha a la tabla izquierda
+	 
+	 Transfiere todos los elementos de la tabla izquierda a la tabla derecha.
+	 
+	 Transfiere todos los elementos de la tabla derecha a la tabla izquierda.
+	La información se ordena por la primera 
+	 columna que se indica en la tabla de la derecha, en el orden que allí 
+	 se indica. A igualdad de elementos de la primera columna se ordenará 
+	 por la segunda columna, a igualdad de éstos, por la tercera y así 
+	 sucesivamente.
+	Independientemente de esta forma de ordenar 
+	 las columnas, también, haciendo doble clic sobre los encabezados de 
+	 las columnas, la tabla se ordenará por el contenido de las mismas, 
+	 actualizándose el texto del enlace que se muestra en Ordenamiento.
+	Vale aclarar que el ordenamiento puede 
+	 guardarse en un modelo.
+ 
+ Extracto actual
+
+	 Fecha 
+	 de cierre
+	Fecha en la que se efectuará el cierre 
+	 del extracto actual para la cuenta bancaria indicada.
+	 Saldo
+	Saldo correspondiente al extracto 
+	 actual.
+	Este dato será el que se comparará 
+	 con el de los movimientos tildados, en el momento de realizar el cierre 
+	 de la conciliación.
+	El saldo se expresa en la moneda de 
+	 la imputación contable asociada a la cuenta bancaria indicada. Si 
+	 la imputación contable no tiene tabla de ajuste asociada, se asumen 
+	 los valores en moneda local.
+	 
+ 
+ Totales
+
+	Estos valores se van modificando a medida 
+	 que se van conciliando los movimientos.
+	 Saldo 
+	 inicial
+	Saldo correspondiente al extracto 
+	 del período anterior conciliado. Este dato lo informa el sistema y 
+	 no es posible cambiarlo.
+	 Conciliado
+	Importe correspondiente a los movimientos 
+	 conciliados en la conciliación actual.
+	 Diferencia
+	Diferencia entre el saldo actual indicado, 
+	 según extracto actual, y el real, que se va obteniendo en base a la 
+	 diferencia de saldos entre el extracto anterior y el actual más los 
+	 movimientos tildados
+	A medida que se van tildando movimientos 
+	 el dato Diferencia mostrará el importe que se debe agregar al saldo 
+	 actual para que este último sea correcto.
+	Este dato se exhibe solamente si está 
+	 activado el parámetro Muestra diferencia de saldo actual al ingresar 
+	 conciliación de la solapa Comprob.” De los Datos 
+	 generales ”.
+	 Saldo 
+	 cierre
+	Corresponde al saldo del extracto 
+	 actual.
+	en la solapa Comprobantes de los parámetros 
+	 de Datos Generales.
+ 
+ Tabla de conciliación
+
+	Esta tabla se completa con la lista de 
+	 movimientos de la cuenta bancaria registrados en el extracto actual.
+	Se incluyen los depósitos, débitos, créditos 
+	 y extracciones bancarias, las liquidaciones de cupones, los cheques 
+	 propios, depósitos de terceros y demás comprobantes en los cuales 
+	 participa la cuenta bancaria indicada.
+	Se muestra para cada movimiento la fecha, 
+	 el tipo de comprobante, número e importe.
+	La conciliación de cada movimiento puede 
+	 realizarse haciendo doble click en la línea correspondiente de la 
+	 tabla, en cuyo caso se resalta la línea seleccionada y se muestra 
+	 un Si en la columna que indica 
+	 si el movimiento está o no conciliado. Si la línea que se selecciona 
+	 ya tenía un movimiento conciliado, al hacer doble click, se deshace 
+	 ese tilde y se muestra un No 
+	 en la columna que indica si el movimiento está conciliado.
+	Concilia
+	Indicación de si el movimiento que 
+	 se muestra en la línea de la tabla está o no conciliado.
+	Puede seleccionarse Si 
+	 o No estando posicionado en 
+	 esta columna o puede hacerse doble click en la línea de la tabla para 
+	 cambiar la indicación de la misma.
+	Fecha
+	Fecha del comprobante de la cuenta 
+	 bancaria indicada, posible de conciliar.
+	Tipo
+	Tipo de comprobante de la cuenta bancaria, 
+	 posible de conciliar.
+	Número
+	Prefijo y número de comprobante de 
+	 la cuenta bancaria, posible de conciliar.
+	Débitos
+	Importe por el que se debita la cuenta 
+	 bancaria con el movimiento detallado en la línea.
+	Los importes de los débitos estarán 
+	 expresados en la moneda de la imputación contable asociada a la cuenta 
+	 bancaria indicada. Si la imputación contable no tiene tabla de ajuste 
+	 asociada, se asumen los valores en moneda local.
+	Créditos
+	Importe por el que se acredita la 
+	 cuenta bancaria con el movimiento detallado en la línea.
+	Los importes de los créditos estarán 
+	 expresados en la moneda de la imputación contable asociada a la cuenta 
+	 bancaria indicada. Si la imputación contable no tiene tabla de ajuste 
+	 asociada, se asumen los valores en moneda local.
+	 
+ 
+ Archivo
+Mediante este botón se accede a una ventana 
+ en donde es realizar la tarea de conciliación comparando la información 
+ de BAS CS con la que proviene de archivos de texto.
+ 
+ Buscar
+
+	Este botón permite acceder al patrón de 
+	 búsquedas
+	 Buscar
+	Se debe ingresar el número de valor 
+	 o importe a buscar
+	 Importe
+	SI se selecciona esta opción se realizará 
+	 la búsqueda por importe.
+	Si bien se busca en las columnas Débitos 
+	 y Créditos el valor exacto del importe que se informa, está previsto 
+	 el uso de comodines para buscar dentro de ciertos rangos.
+	Para ello se habilita la opción de 
+	 búsqueda en un rango de importes utilizando el asterisco (*) con el 
+	 siguiente esquema:
+	Por ejemplo si se indica buscar 15** 
+	 significa que se buscan rangos de importes de 1500.00 hasta 1599.99.
+	Si se indica 1*, buscará del 10.00 
+	 al 19.99.
+	Si se indica 740***, buscara del 740000.00 
+	 al 740999.99.
+	Los dígitos a la derecha del * no 
+	 se tienen en cuenta para la búsqueda. Si se indica 15*88 buscará del 
+	 15000.00 al 15999.99.
+	Si se indica 7*4567, buscará del 700000.00 
+	 al 799999.99.
+	 Número
+	Si se indica esta opción se realizará 
+	 la búsqueda por número.
+	Se indicará el número a buscar en 
+	 el campo correspondiente y, al presionar le botón Buscar, se buscará 
+	 en la columna Número de la tabla de conciliación, el valor exacto 
+	 del patrón indicado.
+	Una vez completadas las opciones de 
+	 búsqueda e informado el patrón a buscar, presionando el botón Buscar, el sistema busca el valor 
+	 en la grilla y se posicionará en la línea de la tabla cuyo número 
+	 de comprobante o importe corresponden con el mismo.
+	Si se sale de la ventana de búsqueda 
+	 y se vuelve a ingresar se recupera el patrón de búsqueda indicado 
+	 en la última búsqueda. Vale aclarar que estos datos no se guardan 
+	 en los modelos que se definan.
+	Si se sale de la ventana de búsqueda 
+	 y se posiciona el cursor sobre la tabla, oprimiendo F3 se puede seguir 
+	 buscando en la tabla según el último patrón de búsqueda indicado.
+	 
+ 
+ Ver
+
+	Este enlace permite acceder a una ventana 
+	 destinada a establecer los filtros disponibles para la selección de 
+	 los movimientos a conciliar:
+	 Tildados
+	Indicación de si se muestran en la 
+	 tabla de movimientos de la cuenta bancaria, los movimientos ya tildados.
+	 No tildados
+	Indicación de si se muestran en la 
+	 tabla de movimientos de la cuenta bancaria, los movimientos todavía 
+	 no tildados.
+	 No detallar 
+	 cheques en depósitos
+	Indicación de si se detallar los cheques 
+	 que conforman los depósitos.
+	Es posible abrir los depósitos de 
+	 modo de incluir el detalle de los cheques. Por defecto la conciliación 
+	 se presenta con los depósitos bancarios detallados por cheque, Esto 
+	 es así para los depósitos bancarios que sólo incluyan medios de pago 
+	 del tipo cheques propios o de terceros, diferidos o no. Los cheques 
+	 incluidos en depósitos bancarios que no cumplan con esta condición 
+	 no se detallarán nunca y se mostrará el total del depósito bancario 
+	 sin detallar medios de pago.
+	 Hasta 
+	 fecha
+	Fecha hasta la cual se desean incluir 
+	 los movimientos en la tabla de movimientos de la cuenta bancaria.
+	Si no se indica ninguna fecha se mostrarán 
+	 todos los movimientos de la cuenta, sin tener en cuenta su fecha.
+	Si hay movimientos tildados con fecha 
+	 posterior a la que se indique en este campo, se podrá observar un 
+	 símbolo de advertencia a la izquierda del rótulo Ver y, al posicionar 
+	 el cursor sobre el vínculo, se exhibirá un mensaje indicando dicha 
+	 eventualidad.
+ 
+ Para tener en cuenta
+
+	La grilla de movimientos muestra 300 líneas. Para 
+	 acceder a los movimientos anteriores o posteriores a los 300 que se 
+	 exhiben (cuando el total de movimientos a conciliar es superior a 
+	 300) se dispone de hipervínculos en la parte inferior derecha de la 
+	 tabla.
+	 
+
+
+

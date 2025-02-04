@@ -1,0 +1,352 @@
+
+
+Reserva de mercadería por ítem
+Una vez que se haya indicado el ítem 
+ del cual se desea reservar la mercadería y el depósito 
+ asociado, se mostrará una lista conteniendo todos los pedidos pendientes 
+ del ítem, con la cantidad pedida y la cantidad reservada a cada uno hasta 
+ ese momento. A partir de allí podrá modificarse la cantidad reservada, 
+ en forma manual o automática, y finalizar la tarea, para efectuar la registración 
+ de las nuevas reservaciones de mercadería efectuadas para el ítem.
+En el encabezado de la pantalla se exhibe el stock disponible 
+ del ítem (y color, si corresponde), en ambas unidades de medida, el stock 
+ actual de dicho ítem y la cantidad pendiente en pedidos y/o pedidos internos 
+ expresados ambos en la unidad del pendiente para ventas.
+Al hacer doble clic sobre el encabezado de las columnas: 
+ Fecha, Fecha de entrega, prioridad, medida, Código de la cuenta corriente, 
+ nombre de la cuenta corriente, tipo de comprobante y número de comprobante, 
+ la tabla de comprobantes a reservar se ordenará por dichos campos. El 
+ ordenamiento puede guardarse en el modelo.
+Los datos a ingresar para realizar la reserva de mercadería 
+ son:
+ 
+ 
+ Depósito
+
+	Código del depósito 
+	 en el cual se desea reservar la mercadería del ítem indicado.
+	Para los ítems que trabajan con medidas 
+	 se mostrará la cantidad disponible para cada medida del ítem en el 
+	 depósito indicado
+ 
+ Ítem
+
+	Código del ítem del cual se desea reservar 
+	 mercadería.
+	Debe corresponder a un bien 
+	 ingresado en el sistema.
+	Puede ingresarse el código del ítem o 
+	 su código alternativo.
+ 
+ Color
+
+	Este dato sólo se encuentra habilitado 
+	 si el ítem indicado maneja colores.
+	Código de color del ítem del cual se desea 
+	 reservar mercadería.
+	Debe corresponder a un color válido para 
+	 la tabla de colores asociada al ítem.
+ 
+ Cargar pedidos
+
+	Pulsando este botón se habilita una pantalla 
+	 intermedia denominada Filtrar, 
+	 en la misma es posible completar los siguientes datos:
+	 Fecha 
+	 de entrega hasta
+	
+		En el caso en que el ítem tenga 
+		 muchos pedidos pendientes es posible acotar el rango de pedidos 
+		 a los cuales se va a reservar mercadería, mediante el ingreso 
+		 de una fecha de entrega hasta la cual se va a realizar la reserva.
+		Este campo es opcional. Si no 
+		 se ingresa ninguna fecha se exhibirán todos los pedidos pendientes 
+		 del ítem.
+		Si se indica una fecha sólo será 
+		 posible reservar mercadería a los pedidos del ítem cuya fecha 
+		 de entrega no sea posterior a esta.
+	 Cliente
+	
+		 
+		 Atributo
+		Código de atributo 
+		 de los clientes titulares de 
+		 los pedidos a los cuales se desea reservar mercadería.
+		Si se indica un atributo, 
+		 sólo será posible reservar mercadería a los pedidos asociados 
+		 a los clientes que tengan definido el atributo indicado.
+		 
+		 Valor
+		Este dato sólo se encuentra 
+		 habilitado si se seleccionó un atributo de clientes.
+		Es el valor del atributo indicado 
+		 asociado a los clientes cuyos pedidos asociados se desean incluir 
+		 en la reserva de mercadería.
+		Si se indica un valor de atributo, 
+		 sólo se incluirán los pedidos asociados a los clientes que tengan 
+		 definido el atributo y valor de atributo indicados.
+	 Pedidos
+	
+		Indicación del tipo de pedidos 
+		 del ítem a los cuales se desea reservar mercadería.
+		 
+		 Internos
+		Indicación de si se desean 
+		 incluir los pedidos internos del ítem en el proceso de reserva 
+		 de mercadería.
+		 
+		 Externos
+		Indicación de si se desean 
+		 incluir los pedidos externos del ítem en el proceso de reserva 
+		 de mercadería.
+ 
+ Cantidad
+
+	 Disponible
+	Cantidad de unidades del ítem, disponibles 
+	 en el depósito indicado. El stock disponible resulta de restarle al 
+	 stock físico, el stock a entregar reservado.
+	 Stock
+	Cantidad de unidades del ítem en stock 
+	 en el depósito indicado.
+	 Pendiente
+	Cantidad de unidades del ítem que 
+	 se encuentran pendientes de entrega.
+ 
+ Ordenamiento Medida-Prioridad-Fecha
+Al hacer clic en este enlace se habilita una 
+ ventana que permite definir el ordenamiento que se le desea dar a los 
+ pedidos del ítem a los cuales se desea reservar mercadería.
+El ordenamiento por defecto es por Medida-Prioridad-Fecha. 
+ Si el sistema no maneja colores y medidas el ordenamiento es por Prioridad-Fecha.
+ Ordenamiento
+
+	Esta ventana permite seleccionar las 
+	 columnas por las que se desea ordenar la tabla. Se presentan dos tablas 
+	 que llamaremos:
+	Tabla A
+	Tabla B
+	En la Tabla A (primer columna) aparecen 
+	 los siguientes datos, que son los nombres de las columnas que permiten 
+	 el ordenamiento: fecha, fecha de entrega, prioridad, medida, código 
+	 de la cuenta corriente, nombre de la cuenta corriente, tipo de comprobante 
+	 y número del comprobante.
+	En la Tabla B (segunda columna) se 
+	 agregan los criterios en base a los cuales se desea ordenar la información. 
+	 Se puede incluir un dato, algunos o todos los datos que se vayan seleccionando 
+	 de la primer columna para definir el ordenamiento. Cada uno de estos 
+	 datos pueden ser ordenados en forma ascendente o descendente.
+	Para seleccionar y copiar datos de 
+	 la primer columna a la segunda y viceversa en forma unitaria se disponen 
+	 de los siguientes botones  
+	 y  . Para copiar todos los 
+	 datos de la columna A a la columna B o quitarlos existen los botones 
+	  y. 
+	 También para copiar una selección de columnas o eliminar una selección 
+	 de columnas se pueden utilizar las teclas SHIFT o CTRL.
+	Existen otros dos botones para subir 
+	 o bajar las columnas en la tabla derecha. El orden de las columnas 
+	 en dicha tabla establece el orden de los comprobantes a reservar.
+	Si no se elige ninguna columna para 
+	 definir el ordenamiento se ubican los pedidos en la lista sin ordenamiento, 
+	 y el sistema indica tal estado al lado del campo ordenamiento.
+ Reserva 
+ automática
+
+	Mediante este botón se efectúa la 
+	 reserva de mercadería automática del ítem indicado a los pedidos internos 
+	 y externos exhibidos en la tabla de pedidos pendientes del ítem.
+	Al oprimir este botón el sistema precarga 
+	 la tabla de comprobantes a reservar con los valores propuestos pero 
+	 sin actualizar la base de datos.
+	Para hacer efectiva la reserva automática, 
+	 el usuario tiene que grabar los valores propuestos por el sistema. 
+	 Si oprime la tecla cancelar o salir se pierden los valores de dicha 
+	 reserva automática.
+	Una vez pulsado este botón, y realizada 
+	 la reserva automática es posible nuevamente modificar la reserva si 
+	 existen pedidos para los cuales el usuario lo considere necesario.
+ Cancelar 
+ línea
+
+	Presionando este botón se cancela 
+	 una línea, que previamente debió haber sido seleccionada. La línea 
+	 que se cancela se muestra tachada. También se puede hacer doble clic 
+	 sobre el encabezado de la línea para cancelarla.
+	Si se selecciona una línea marcada 
+	 para cancelación y se oprime otra vez el botón, o se hace doble clic 
+	 sobre el encabezado, ésta pasa a su estado normal.
+	No se puede reservar cantidad a líneas 
+	 que van a ser canceladas.
+ Tabla de 
+ Pedidos pendientes
+En esta tabla se exhiben todos los pedidos 
+ pendientes del ítem indicado, a los cuales es posible reservar mercadería. 
+ Si se indicó un atributo de clientes se exhibirán los pedidos de los clientes 
+ que tengan asociado el atributo y el valor de atributo indicado.
+Se incluirán en la lista los pedidos internos 
+ del ítem, los externos o ambos dependiendo del tipo de pedidos que se 
+ haya seleccionado.
+Se muestra cada pedido con su fecha, tipo, 
+ número de comprobante, fecha de entrega, cantidad pedida, cantidad pendiente 
+ y cantidad reservada hasta el momento. Para los pedidos externos se muestra 
+ el cliente asociado y la prioridad de facturación del mismo; para los 
+ pedidos internos se muestra el agente o depósito dependiendo del tipo 
+ de destinatario del pedido.
+Es importante destacar que las cantidades 
+ exhibidas se encuentran expresadas en la Unidad para cantidades pendientes 
+ informada para cada ítem en la tabla de bienes.
+Se muestran también en esta lista los 
+ pedidos que requieran autorización manual y aún no hayan sido autorizados, 
+ pero no podrá reservarse mercadería a los mismos.
+Si no se controlan las entregas en exceso 
+ el sistema permite reservar los pedidos hasta el máximo de la cantidad 
+ disponible para dicho ítem aunque se supere la cantidad pendiente del 
+ pedido.
+Si se controlan las entregas en exceso 
+ pero se definió un porcentaje de exceso permitido en las entregas, el 
+ sistema permite reservar los pedidos hasta una cantidad que se corresponde 
+ a la cantidad pendiente del comprobante más el porcentaje por exceso permitido. 
+ Siempre teniendo en cuenta que haya stock disponible suficiente para reservar 
+ dicho ítem.
+Es posible reservar la mercadería a cada 
+ pedido en forma manual o en forma automática mediante el botón Reserva 
+ automática. Al pulsar este botón, el sistema reserva automáticamente 
+ la mercadería teniendo en cuenta para los pedidos externos, la prioridad 
+ de cada cliente y para clientes de igual prioridad tiene en cuenta la 
+ antigüedad de cada pedido. Para los pedidos internos se reserva dando 
+ mayor prioridad a los pedidos más antigüos.
+Fecha
+
+	Fecha de cada pedido pendiente 
+	 del ítem solicitado, al cual es posible reservar mercadería.
+Comprobante
+
+	Tipo de comprobante de cada pedido 
+	 pendiente del ítem solicitado, al cual es posible reservar mercadería.
+	 
+Número
+
+	Número de comprobante de cada 
+	 pedido pendiente del ítem solicitado, al cual es posible reservar 
+	 mercadería.
+	 
+Nombre
+
+	Razón social del cliente titular 
+	 del pedido cuyo número se exhibe en la columna Número.
+	Para los pedidos externos cuyo 
+	 destino sea agente, se mostrará el nombre del agente 
+	 titular del pedido y si el destino es depósito se mostrará la descripción 
+	 del depósito que pidió 
+	 la mercadería.
+Observaciones
+
+	En esta columna se exhibe la letra 
+	 X si existen observaciones asociadas al ítem correspondiente a la 
+	 línea. Presionando Enter en el campo se puede visualizar el texto 
+	 correspondiente a la observación.
+Cantidad 
+ reservada
+
+	Cantidad de unidades del ítem, 
+	 que se desean reservar al pedido cuyo número se exhibe en la columna 
+	 Número.
+	Esta cantidad se encuentra expresada 
+	 en la Unidad para cantidades pendientes 
+	 informada para cada ítem en la tabla de bienes.
+	Al completarse inicialmente la 
+	 tabla de pedidos pendientes se muestra aquí la cantidad reservada 
+	 del ítem en el pedido, hasta ese momento. Este valor es el que podrá 
+	 modificarse, ya sea en forma manual o automática.
+	Al oprimir el botón de la consulta 
+	 posicionados en esta columna, se abre la consulta de clientes precargada 
+	 con los códigos que se encuentran en esta grilla.
+Cantidad 
+ pendiente
+
+	Cantidad de unidades del ítem, 
+	 que se encuentran pendientes de entrega en el pedido cuyo número se 
+	 exhibe en la columna Número. 
+	 La misma se encuentra expresada en la unidad de medida correspondiente 
+	 a la cantidad reservada, es decir, en la Unidad 
+	 para cantidades pendientes informada para cada ítem en la tabla 
+	 de bienes.
+Cantidad 
+ pedida
+
+	Cantidad de unidades del ítem, 
+	 solicitadas en el pedido cuyo número se exhibe en la columna Número. La misma se encuentra expresada 
+	 en la unidad de medida correspondiente a la cantidad reservada, es 
+	 decir, en la Unidad para cantidades 
+	 pendientes informada para 
+	 cada ítem en la tabla de bienes.
+Fecha 
+ de entrega
+
+	Fecha de entrega del pedido.
+	 
+Cuenta 
+ corriente
+
+	Indica el número de la cuenta 
+	 del plan de cuentas contable correspondiente a la imputación del comprobante.
+	 
+Prioridad
+
+	Prioridad de facturación del cliente asociado a cada pedido al cual 
+	 es posible reservarle mercadería.
+	Autorizado
+	Indicación de si el pedido indicado 
+	 está o no autorizado.
+ 
+ 
+ A tener en cuenta
+
+	Esta tarea contempla la posibilidad de definir Modelos. Estos guardan todas las 
+	 modificaciones que se realicen en las columnas correspondientes a 
+	 la grilla de trabajo-
+	Al modificar la posición y el ancho de las columnas 
+	 de la tabla de detalle de comprobantes a reservar y grabar el modelo, 
+	 la posición y el ancho de las mismas queda almacenada en dicho modelo. 
+	 Al seleccionar un modelo que incluya la posición de las columnas, 
+	 la tabla se acomodará para mostrar las nuevas posiciones.
+	El ordenamiento de la tabla de comprobantes a reservar 
+	 indicado se puede guardar en el modelo cuando se selecciona la opción 
+	 Modifica los valores predeterminados guardados en el modelo.
+	Al grabar la tarea Reserva de mercadería por ítem 
+	 se cancelan las líneas de los pedidos indicados como pendientes de 
+	 cancelación y se reservan las cantidades indicadas en cada línea.
+	Al terminar el proceso de grabación se muestra una 
+	 pantalla con los detalles de los comprobantes generados si los hubiera. 
+	 Los talonarios necesarios para las cancelaciones se indican en la 
+	 tabla de Sucursales, en la solapa Comprobantes.
+ 
+//<![CDATA[
+	if( typeof( TextPopupInit ) != 'function' ) TextPopupInit = new Function();
+	TextPopupInit('a1', 'POPUP706963552');
+	TextPopupInit('a2', 'POPUP706993102');
+	TextPopupInit('a3', 'POPUP707067886');
+	TextPopupInit('a22', 'POPUP656071044');
+	TextPopupInit('a4', 'POPUP706930689');
+	TextPopupInit('a5', 'POPUP706970779');
+	TextPopupInit('a6', 'POPUP706981534');
+	TextPopupInit('a23', 'POPUP656070761');
+	TextPopupInit('a7', 'POPUP707343191');
+	TextPopupInit('a8', 'POPUP707287164');
+	TextPopupInit('a9', 'POPUP707304482');
+	TextPopupInit('a10', 'POPUP707390482');
+	TextPopupInit('a11', 'POPUP707411609');
+	TextPopupInit('a12', 'POPUP707439296');
+	TextPopupInit('a13', 'POPUP707472312');
+	TextPopupInit('a14', 'POPUP707469716');
+	TextPopupInit('a15', 'POPUP707580919');
+	TextPopupInit('a16', 'POPUP707578739');
+	TextPopupInit('a17', 'POPUP707619537');
+	TextPopupInit('a18', 'POPUP707630324');
+	TextPopupInit('a19', 'POPUP707641882');
+	TextPopupInit('a20', 'POPUP707667864');
+	TextPopupInit('a21', 'POPUP707031222');
+//]]>
+
+

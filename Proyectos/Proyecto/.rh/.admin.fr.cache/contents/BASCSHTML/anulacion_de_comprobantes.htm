@@ -1,0 +1,176 @@
+
+
+Anulación de comprobantes
+El sistema permite anular comprobantes ingresados en 
+ el sistema o comprobantes que nunca se van a ingresar y se quiere registrar 
+ como Anulados.
+La anulación de comprobantes inexistentes deberá utilizarse, 
+ por ejemplo, en el caso en que se arruinen formularios preimpresos de 
+ facturas de venta.
+La diferencia entre comprobantes eliminados y anulados 
+ radica en que los primeros desaparecen del sistema y pueden ser reingresados 
+ nuevamente, mientras que los comprobantes anulados, no pueden ser reingresados 
+ al sistema. Esto significa que no puede reutilizarse el número de comprobante 
+ asignado a un comprobante anulado, es decir, no puede ingresarse otro 
+ comprobante con el mismo número que el anulado.
+No es posible anular un comprobante de compras o ventas 
+ si el mismo está aplicado a otro comprobante. Durante el proceso de anulación 
+ el sistema informará de dicha eventualidad y ofrecerá una lista con los 
+ comprobantes a los que está aplicado.
+Cuando se trabaje con Carpetas 
+ de Importación , no se podrá anular ningún comprobante de compra 
+ (facturas, nota de debito o crédito, remitos de ingreso, ordenes de compra, 
+ etc) que tuviera líneas de bienes asociadas a carpetas de importación.
+Los comprobantes anulados aparecerán en los informes 
+ del sistema con la leyenda Comprobante 
+ anulado.
+La pantalla solicita una serie de datos a completar 
+ para identificar al comprobante que se desea anular. Pueden ingresarse 
+ estos datos o puede seleccionarse el comprobante a anular con el botón 
+ Buscar que figura en la parte 
+ inferior de la pantalla. Mediante este botón se accede a una lista que 
+ muestra todos los comprobantes existentes en el sistema con sus datos 
+ asociados. Si algún dato de la pantalla es ingresado antes de pulsar el 
+ botón, ese dato será utilizado como un filtro para buscar comprobantes. 
+ Por ejemplo, si se indica una fecha y luego se pulsa el botón aparecerán 
+ en la lista sólo los comprobantes con la fecha indicada en la pantalla, 
+ si no se indica ninguna fecha aparecerán todos.
+Debe tenerse en cuenta que los datos de la pantalla 
+ pueden ser completados manualmente o automáticamente mediante el botón 
+ Buscar.
+Si los datos se ingresan en forma manual al finalizar 
+ el ingreso de los mismos y ejecutar la anulación, el sistema verifica 
+ si los mismos corresponden a un comprobante existente en el sistema o 
+ no. Si el comprobante existe en el sistema, se registra como anulado, 
+ y si no existe, se crea un comprobante anulado y su número no podrá utilizarse 
+ para ingresar un nuevo comprobante.
+Los datos a ingresar para solicitar una anulación son:
+ 
+ Fecha
+
+	Fecha del comprobante a anular.
+	 
+ Tipo de comprobante
+
+	Tipo 
+	 de comprobante a anular.
+	El sistema permite seleccionar el 
+	 tipo de comprobante de una lista que contiene todos los tipos de comprobantes 
+	 posibles de anular. Pulsando el botón Buscar 
+	 se accede a esta lista que muestra los tipos de comprobante ordenados 
+	 alfabéticamente por su nombre.
+	El tipo que se seleccione determinará 
+	 qué datos de la pantalla es necesario completar para posibilitar la 
+	 anulación.
+	 
+ Número
+
+	Número del comprobante que se desea 
+	 anular. Está compuesto por el prefijo o sucursal, y el número propiamente 
+	 dicho.
+	Es posible anular un rango de comprobantes, 
+	 siempre que los mismos no hayan sido emitidos. Si sólo se completa 
+	 el número del primero de los campos se anulará únicamente el comprobante 
+	 allí indicado.
+	De esta manera es posible anular en 
+	 conjunto los comprobantes de un talonario vencido, apareciendo los 
+	 mismos como anulados en el subdiario correspondiente.
+	Si dentro del rango de números seleccionado 
+	 para anular hay comprobantes existentes o comprobantes que existieron 
+	 y fueron anulados o eliminados, se avisará tal circunstancia y no 
+	 se permitirá hacer la anulación. Es decir, sólo se permite anular 
+	 un rango si dentro de ese rango no hay ningún número de comprobante 
+	 que haya sido ingresado en el sistema en algún momento.
+ Cliente-Proveedor-Agente
+
+	Código del cliente 
+	 , proveedor o agente 
+	 titular del comprobante que se desea anular.
+	 
+ Cuenta bancaria
+
+	Cuenta 
+	 bancaria asociada al comprobante que se desea anular.
+	Este dato sólo será necesario indicarlo 
+	 si se seleccionó un tipo de comprobante que lo requiera, por ejemplo, 
+	 un comprobante de bancos como depósito bancario, liquidación de tarjetas, 
+	 etc.
+ Importe
+
+	Importe del comprobante que se desea 
+	 anular.
+	 
+ Buscar
+
+	Precarga una grilla con los comprobantes 
+	 que correspondan a los filtros ingresados, de modo se seleccionar 
+	 el que corresponde anular.
+	 
+ Observaciones de la anulación
+
+	Observaciones sobre la anulación que 
+	 se realiza, que quedan registradas en la transacción del comprobante 
+	 de anulación.
+	 
+ 
+ Para tener en cuenta
+
+	Al anular un egreso de mercaderías, que generó un 
+	 comprobante de desubicación cuando se ingresó el mismo se ofrece la 
+	 posibilidad de anular en el mismo momento los comprobantes de desubicación, 
+	 con opciones de: aceptar la anulación, no anular las desubicaciones 
+	 asociadas o cancelar la anulación del comprobante de egreso.
+	Para comprobantes que ingresen mercadería al stock, 
+	 si el depósito de ingreso maneja múltiples ubicaciones, el sistema 
+	 controla que la cantidad a anular se encuentre no ubicada.
+ 
+Controles 
+ personalizados
+
+	Es  posible para 
+	 un usuario, agregar controles especiales o acciones propias de su 
+	 implementación, que se ejecutarán luego de los controles que realiza 
+	 BASCS en el momento de la eliminación o anulación de un comprobante.
+	Esos controles y/o 
+	 acciones deben incluirse en la base de datos en una nueva stored procedure 
+	 llamada sp_eliminacion_valida_programable.
+	La stored procedure 
+	 tiene los siguientes parámetros:
+	   @Nrotrans     integer                                número 
+	 de transacción del comprobante de eliminación/anulación
+	   @error             integer 
+	 OUTPUT               número 
+	 de error
+	   @msgerror     char(155) 
+	 OUTPUT           mensaje 
+	 de error que se quiere devolver
+	Los parámetros @error 
+	 y @msgerror sirven para indicar que el proceso NO terminó satisfactoriamente 
+	 y se generó un aviso al operador que impedirá continuar con la eliminación/anulación.
+	En el caso de que 
+	 el proceso termine exitosamente el parámetro @error debería valer 
+	 0 (es el valor que tiene al inicio de la llamada).
+	Para abortar la transacción 
+	 es necesario indicar un valor diferente a cero en el parámetro @error 
+	 y el mensaje de aviso al operador en el parámetro @msgerror.
+	Se debe tener 
+	 en cuenta que EL CÓDIGO INGRESADO 
+	 EN ESTA STORED PROCEDURE NO PUEDE DEVOLVER RESULTSET DE DATOS, GENERAR 
+	 TRANSACCIONES O HACER COMMIT O ROLLBACK DE NINGÚN TIPO.
+	Se encontrarán ejemplos 
+	 de funcionalidad en el código de dicha stored procedure.
+//<![CDATA[
+	if( typeof( TextPopupInit ) != 'function' ) TextPopupInit = new Function();
+	TextPopupInit('a3', 'POPUP732417083');
+	TextPopupInit('a4', 'POPUP732427435');
+	TextPopupInit('a5', 'POPUP732447227');
+	TextPopupInit('a6', 'POPUP732456355');
+	TextPopupInit('a7', 'POPUP732480682');
+	TextPopupInit('a8', 'POPUP732485494');
+	TextPopupInit('a9', 'POPUP732502507');
+	TextPopupInit('a10', 'POPUP732506912');
+	TextPopupInit('a1', 'POPUP639245745');
+	TextPopupInit('a2', 'POPUP638871421');
+//]]>
+
+

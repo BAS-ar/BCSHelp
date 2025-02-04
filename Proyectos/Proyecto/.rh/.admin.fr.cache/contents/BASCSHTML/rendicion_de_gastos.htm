@@ -1,0 +1,74 @@
+
+
+Rendición de gastos
+Esta tarea permite dar de alta en el sistema una Rendición de gastos.
+La Rendición de Gastos 
+ se utiliza en los casos en que se entrega dinero a un individuo o sector 
+ para que realice sus compras y gastos en forma independiente y, luego, 
+ rinda el destino dado a los fondos que se le han asignado.
+También, y según sea la forma en que se registra la 
+ información, puede utilizarse para la administración de los fondos fijos 
+ que se asignen en la empresa.
+Por lo cual, el titular de la misma puede ser tanto 
+ un individuo como un sector. Uno u otro se representan mediante la figura 
+ de un agente (de tipo Rendición 
+ de gastos).
+Una vez incorporada una rendición de gastos en el sistema, 
+ se podrán imputar pagos, cobranzas y facturas de compra referenciando 
+ dicha rendición. Luego, los informes asociados a la rendición, detallarán 
+ el destino de los fondos asignados al agente titular del fondo asignado.
+Se prevé la posibilidad de cerrar 
+ una rendición de gastos . Esto significa que, una vez que se haya 
+ realizado la tarea de cierre, no se le podrá imputar mas información; 
+ es decir, no será posible aplicarle compras, gastos, recibos u órdenes 
+ de pago.
+La única condición que se requiere para cerrar una rendición 
+ es que su saldo sea cero. Es decir, que el total de los ingresos y de 
+ los egresos registrados en ella, coincidan.
+En cualquier momento es posible dejar el comprobante 
+ en estado de preparación, de modo de seguir con el ingreso del mismo 
+ en una instancia posterior.
+Los datos a asociar a una rendición de gastos, además 
+ de la fecha y número de comprobantes, son:
+ 
+ 
+ Agente
+
+	Código correspondiente al responsable 
+	 de la rendición.
+	Este debe estar definido en la tabla de 
+	 Agentes y debe ser un agente 
+	 de tipo Rendición de gastos
+ 
+ Imputación Contable
+
+	Cuenta 
+	 a imputar en los asientos correspondientes a los comprobantes donde 
+	 se invoque como titular al agente informado en el dato Agente.
+	Se ofrece la imputación contable por defecto 
+	 asociada al agente en su definición. Esta puede cambiarse por otra 
+	 siempre y cuando esta última se haya habilitado en la tabla de imputaciones contables correspondiente 
+	 al agente.
+ 
+ Vencimiento
+
+	Fecha de vencimiento asociada a la rendición. 
+	 Es un dato informativo.
+	Si se ingresa se podrá solicitar, al emitir 
+	 listados de rendiciones de gastos, incluir sólo las rendiciones vencidas, 
+	 las abiertas o ambas.
+ 
+ Observaciones
+
+	Texto aclaratorio a asociar al comprobante. 
+	 Aparece junto a él en todos los informes que lo incluyen.
+	 
+//<![CDATA[
+	if( typeof( TextPopupInit ) != 'function' ) TextPopupInit = new Function();
+	TextPopupInit('a1', 'POPUP670706781');
+	TextPopupInit('a2', 'POPUP670729043');
+	TextPopupInit('a3', 'POPUP670737746');
+	TextPopupInit('a4', 'POPUP670744983');
+//]]>
+
+

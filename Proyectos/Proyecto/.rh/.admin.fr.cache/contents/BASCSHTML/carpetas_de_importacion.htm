@@ -1,0 +1,430 @@
+
+
+Carpetas de Importación
+Mediante la Carpeta de Importación (CI) es posible administrar 
+ toda la información, movimientos y comprobantes asociados a los bienes 
+ importados y los trámites relacionados para ingresar la mercadería al 
+ país. Esto incluye la posibilidad de adjuntar documentos, dejar constancia 
+ de fechas claves (ingreso de mercadería, salida, despacho, en tramite, 
+ etc), relacionar facturas de gastos y distribuir éstos, entre los distintos 
+ bienes adquiridos, de modo de calcular el costo de la mercadería importada.
+La CI maneja diferentes estados vinculados al estadío 
+ en el cual se encuentra la mercadería relacionada, como por ejemplo embarcado, 
+ en operador logístico, en aduana, etc.., en función al estado de la CI, 
+ es posible realizar determinadas actividades. El estado de ésta, se visualiza 
+ en el margen superior derecho de la ventana. Para mayor información, ver 
+ aquí.
+Los datos a ingresar para dar de alta una CI, son los 
+ siguientes:
+ 
+ 
+ Código
+
+	Código numérico de hasta 16 caracteres, 
+	 que identificará la Carpeta de Importación y será utilizado para individualizarla 
+	 en todo el sistema.
+	El botón  permite 
+	 generar en forma automática el próximo numero disponible a asignar 
+	 a las CI.
+ Descripción
+
+	Denominación de la CI. Se dispone de hasta 
+	 sesenta caracteres para el ingreso.
+	 
+ 
+ Proveedor
+
+	Código del proveedor 
+	 al que se le emite la CI. Podrán seleccionarse solamente aquellos 
+	 que tengan en su configuración, tildado el campo Requiere carpeta 
+	 de importación.
+	Al precargar los datos del proveedor se 
+	 exhibe un tooltip con el nombre de fantasía del mismo, de no contar 
+	 con dicho dato, se observará la razón social. 
+ 
+ Ficha Datos Generales
+
+	 Despachante
+	Despachante de Aduana que tiene a 
+	 cargo los tramites de la importación de los bienes al país. Debe ser 
+	 dado de alta en la tabla de Agentes 
+	 como despachante de aduana.
+	 Incoterms
+	Código del Incoterm escogido para 
+	 la entrega de la mercadería.
+	 Procedencia
+	Código del país de procedencia de 
+	 la mercadería.
+	 Transporte
+	Tipo de transporte por el cual es 
+	 trasladada la mercadería al país.
+	 Identificación
+	Campo de texto libre para ingresar 
+	 los datos relacionados al transporte y/o transportista.
+	 Fechas 
+	 Estimadas
+	Las fechas que acá se visualizan se 
+	 ingresan mediante Eventos, en la solapa Eventos.
+	 
+	 Salida fecha estimada de salida 
+	 de la mercadería del País de procedencia.
+	 
+	 Arribo fecha estimada de llegada 
+	 de la mercadería al País (Argentina, por ejemplo).
+	 
+	 En Depósito fecha estimada 
+	 de ingreso de la mercadería al deposito de la empresa. Esta fecha 
+	 es la que asumen los informes de disponibilidad como fecha A Ingresar 
+	 de los bienes.
+ 
+ Ficha Ítems
+
+	Esta tabla permite relacionar los bienes 
+	 a importar, lo cual se realiza asociando una orden de compra (OC) 
+	 completa o una línea de ella.
+	Para poder realizar esto se deben dar 
+	 las siguientes condiciones:
+	La Orden 
+	 de Compra debe estar autorizada, contener ítems que requieran 
+	 una posición arancelaria y el proveedor asociado, estar configurado 
+	 para que requiera carpeta de importación.
+	La Carpeta 
+	 de Importación debe encontrarse en el estado inicial, no debe 
+	 tener ingreso de eventos con cambio de fechas y no debe poseer asociados 
+	 comprobantes de gastos que se encuentren prorrateados con el método 
+	 discrecional.
+	Eliminando los eventos que impliquen 
+	 cambios de fecha y/o estado, la CI vuelve a su estado original pudiendo 
+	 ingresar las OC necesarias.
+	En caso de poseer un gasto prorrateado 
+	 con el método discrecional, es posible modificar el método de prorrateo 
+	 de dicho gasto por otro diferente, dar ingreso a la OC y volver a 
+	 modificar el método, dejándolo en discrecional.
+	Se pueden asociar tantas OC (o líneas 
+	 de éstas) como fuese necesario. No es posible indicar una cantidad 
+	 de bienes diferente a la indicada en una línea de la OC. En caso de 
+	 necesitar hacer esto, se deberá modificar previamente la OC original.
+	En el caso del ingreso de una línea de 
+	 OC con explosión de colores y medidas, el código del bien que muestra 
+	 el sistema es el código madre, y la cantidad se corresponde a la suma 
+	 de todas las cantidades explotadas.
+	Si las OC están todas en la misma moneda, 
+	 los importes se visualizan en dicha moneda, sino se convierten a moneda 
+	 local, utilizando el cambio a la fecha actual de la moneda de la OC 
+	 (si la CI no esta cerrada), o al cambio de la fecha de cierre de la 
+	 carpeta (si así lo estuviera).
+	Para poder eliminar una OC de una CI, 
+	 se deben dar las siguientes condiciones:
+	La Carpeta 
+	 de Importación no debe poseer asociados comprobantes de gastos 
+	 que se encuentren prorrateados con el método discrecional.
+	En éste caso, es posible modificar 
+	 el método de prorrateo de dicho gasto por otro diferente, dar ingreso 
+	 a la OC y volver a modificar el método, dejándolo en discrecional.
+	 Tabla 
+	 de Ítems
+	La información que se visualiza en 
+	 esta tabla no es editable y se registra mediante los botones disponibles 
+	 a la derecha de la grilla.
+	 Agregar
+	Permite agregar una, varias o todas 
+	 las líneas de ítems de una OC. Se agregan una a una, las líneas de 
+	 las OC.
+	Seleccionando el botón, se abre una 
+	 ventana donde se debe indicar el talonario asociado, el número de 
+	 OC, los ítems de esa OC que se quisiera, el factor de precosteo y 
+	 el permiso de importación relacionados.
+	El factor de precosteo es el número 
+	 por el cual se multiplica el costo de la mercadería adquirida (indicado 
+	 en la OC), con el fin de sumar un importe adicional a éste costo, 
+	 y así tener un estimado del precio de venta de éste.
+	En el caso de la selección de la OC, 
+	 utilizando la tecla de función F3, el sistema listará todas aquellas 
+	 OC pendientes, autorizadas, relacionadas al proveedor de la CI, que 
+	 incluyan bienes con posición arancelaria y que aun no se hayan asociado 
+	 a ninguna CI.
+	 Modificar
+	Permite acceder a la información de 
+	 una línea de la grilla de ítems para modificar el factor de precosteo 
+	 y/o el permiso de importación asociado de cada línea de ítems.
+	 Eliminar
+	Permite eliminar una a una las líneas 
+	 de ítems agregadas. Para esto, se debe situar sobre la línea que se 
+	 quiere eliminar, seleccionarla y luego dar clic en el botón eliminar. 
+	 Dicha eliminación se reflejará definitivamente en la CI al oprimir 
+	 el botón grabar de la carpeta.
+	No es posible eliminar líneas de OC 
+	 si ya existen gastos con prorrateo discrecional asignados. Para sortear 
+	 este punto, se debe desasociar en forma completa el comprobante de 
+	 gasto, o, modificar el tipo de prorrateo asignado, ambas acciones 
+	 desde la solapa gastos. Una vez realizada esta acción es posible eliminar 
+	 la línea de OC que se necesita, y volver a asociar o editar el gasto 
+	 asociado.
+	 Agregar 
+	 O.C.
+	Permite agregar una o varias OC en 
+	 un solo paso, se agregarán a la lista tantas líneas como comprobantes 
+	 se agreguen.
+	Se muestran en la lista de selección 
+	 todas las OC pendientes correspondientes al proveedor de la CI, que 
+	 estén autorizadas, que incluyan bienes con posición arancelaria y 
+	 que aun no estén asociadas a ninguna CI.
+	En este caso, el factor de precosteo 
+	 se precarga con valor 1 y el permiso de importación queda en blanco. 
+	 Para registrar estos datos se debe ingresar, mediante el botón Modificar, 
+	 a cada una de las líneas e indicarlos para cada línea de ítems.
+	 Factor 
+	 de Precosteo
+	Este número representa un factor destinado 
+	 a estimar el costo de los bienes.
+	Cabe destacar la diferencia entre 
+	 el factor de precosteo de cada línea de ítem con el factor de precosteo 
+	 de la carpeta en general.
+	El factor para precosteo de cada línea, 
+	 el cual se carga en la solapa ítems, indica el proporcional que se 
+	 adiciona al costo de cada ítem indicado en la OC. Es por cada línea 
+	 de ítems.
+	El factor de precosteo de la carpeta, 
+	 corresponde a todos los bienes incorporados en la CI y surge de la 
+	 división de la suma del total de los costos estimados (costos de los 
+	 ítems una vez aplicado el factor para precosteo) con la suma del total 
+	 de los costos según las OC. Es un factor de toda la carpeta.
+	Para mayor información, ver aquí.
+ 
+ Ficha Eventos
+
+	Un evento es un hecho que sucede en la 
+	 vida de la CI y de la mercadería relacionada; y a través del cual 
+	 es posible:
+	Modificar 
+	 un estado. 
+	 Los estados Inicial y Cerrado son los únicos que no pueden ingresarse 
+	 a través de un evento.
+	Ingresar 
+	 o modificar fechas (salida, arribo y en depósito); y/o
+	Adjuntar 
+	 documentos.
+	 Eventos
+	Esta grilla exhibe los eventos registrados. 
+	 Los datos no son editables, y se registran a través de los botones 
+	 situados a la derecha de la misma. En caso de estar la carpeta cerrada, 
+	 estos botones se verán deshabilitados pudiendo solamente consultar 
+	 los eventos existentes.
+	 Agregar
+	Permite agregar un evento a la grilla. 
+	 Para mayor información ver aquí.
+	 Modificar
+	Permite acceder a la información de 
+	 una línea, para modificar el factor de precosteo y/o el permiso de 
+	 importación asociado de cada línea de ítems.
+	 Eliminar
+	Permite eliminar una a una las líneas 
+	 de ítems agregadas. Para esto, se debe situar sobre la línea que se 
+	 quiere eliminar, seleccionándola y luego dar clic en el botón eliminar. 
+	 Dicha eliminación se reflejará definitivamente en la CI al oprimir 
+	 el botón grabar de la carpeta.
+	 Consultar
+	Se habilita cuando la CI esta cerrada, 
+	 en cuyo caso se deshabilitan los otros botones quedando éste como 
+	 única posibilidad.
+ 
+ Ficha Ingresos
+
+	Permite visualizar los ingresos de mercadería 
+	 correspondientes a las OC asociada a la CI. Es decir, sólo se visualizarán 
+	 comprobantes de ingreso de mercadería asociados a OC de proveedores 
+	 del exterior, que contengan bienes que requieren posición arancelaria, 
+	 que se encuentren pendientes de asociar a otra CI y estén autorizados.
+	Para calcular 
+	 el costo de los ingresos de mercadería asociados a la carpeta, se 
+	 considerará el importe en moneda local de las facturas de compra que 
+	 los  referencien, usando el cambio de dichos comprobantes.
+	En caso que se hubiese eliminado una OC 
+	 con ingresos asociados, el sistema no los mostrará en esta instancia.
+	 Ingresos
+	Se visualizan los datos del comprobante 
+	 de ingreso de la mercadería (remito) con el detalle de la mercadería 
+	 involucrada, siendo éstos: fecha y número del comprobante de ingreso; 
+	 código, descripción y cantidad del ítem, y en caso de corresponder 
+	 2da unidad utilizada por éste; número de despacho asociado a cada 
+	 ítem.
+	Para visualizar los datos de cada 
+	 uno de ellos se debe presionar el botón refrescar  
+	 situado en el margen inferior derecho de la solapa.
+ 
+ Ficha Comprobantes
+
+	Permite visualizar los datos de los comprobantes 
+	 asociados a la CI; pudiendo ser éstos: ingresos de mercaderías, facturas 
+	 de compra y revalúos que se generan en el cierre de la CI.
+	En caso que se hubiese eliminado una OC 
+	 con comprobantes asociados, el sistema no los mostrará en esta instancia.
+	 Comprobantes
+	Se visualizan los datos de los distintos 
+	 comprobante, fecha y número del comprobante.
+	Para visualizar los datos de cada 
+	 uno de ellos se debe presionar el botón refrescar  
+	 situado en el margen inferior derecho de la solapa.
+ 
+ Ficha Gastos
+
+	Permite asociar los distintos gastos indirectos 
+	 de compra, transporte, logística, etc. asociados a la adquisición 
+	 e importación de la mercadería. Y así, calcular el costo final de 
+	 la mercadería adquirida.
+	Esto se realiza asociando un comprobante 
+	 de compra previamente cargado en el sistema, éste debe contener servicios 
+	 debe ser del tipo gastos de importación y debe encontrarse autorizado.
+	Un requisito indispensable para poder 
+	 ingresar gastos, es que la CI tenga previamente cargadas OC en la 
+	 solapa ítems.
+	En ningún caso, se podrá asociar un importe 
+	 menor al importe registrado en el comprobante. En caso de necesitar 
+	 realizar esto, primero se deberá modificar el mismo desde el proceso 
+	 correspondiente. Es posible indicar gastos con importes en negativo.
+	Los gastos se pueden asociar en dos momentos 
+	 diferentes. Uno es en esta pantalla, a través de los botones ubicados 
+	 en el margen derecho de la solapa. La otra posibilidad, es en el momento 
+	 de carga del comprobante de compra, en cuyo caso se dispone de una 
+	 columna a tal fin. Recordar que el servicio, debe ser siempre del 
+	 tipo gastos de importación.
+	 Gastos
+	Muestra los datos del comprobante 
+	 asociado, tipo y número del comprobante de compra; código, descripción, 
+	 importe y moneda del servicio, y tipo de prorrateo seleccionado para 
+	 el servicio en particular.
+	Los datos de la grilla no son editables 
+	 en forma directa, para ello deben utilizarse los botones ubicados 
+	 en el margen derecho de la solapa.
+	No es posible asociar un gasto por 
+	 un importe menor al indicado en una línea del comprobante.
+	Al final de la grilla, se muestra 
+	 el importe final de todos los gastos asociados.
+	Una vez cerrada la CI, en la columna 
+	 Importe se habilita un hipervínculo que permite acceder a la información 
+	 de cómo se repartió el importe de dicho gastos en los revalúos generados 
+	 al cerrar la carpeta. Este importe esta expresado en la moneda del 
+	 comprobante del gasto.
+	 Agregar
+	Permite agregar un comprobante de 
+	 gasto a la grilla, asociando así, un servicio del tipo gasto de importación 
+	 a la CI. A través de este botón, pueden agregarse uno o varios servicios, 
+	 de uno o varios comprobantes diferentes entre ellos-.
+	Para incorporar un servicio, se habilita 
+	 una nueva ventana. Ver aquí.
+	 Modificar
+	Permite modificar el tipo de prorrateo 
+	 seleccionado para el gasto en cuestión.
+	 Eliminar
+	Permite eliminar una a una las líneas 
+	 de gastos agregadas. Para esto, se debe situar sobre la línea que 
+	 se quiere eliminar, seleccionarla y luego dar clic en el botón eliminar. 
+	 Dicha eliminación se reflejará definitivamente en la CI al oprimir 
+	 el botón grabar de la carpeta.
+	 Agregar 
+	 compra
+	Permite agregar uno o varios comprobantes 
+	 de compra. La información seleccionada se agrega a la lista existente.
+	La ventana de selección muestra  todos 
+	 los comprobantes pendientes de asociar a CI, autorizados y que poseen 
+	 servicios del tipo gastos de importación.
+	 Cerrar
+	El circuito finaliza cerrando la CI, con 
+	 el botón ubicado en el margen superior derecho de la ventana. El Cierre 
+	 de una CI se realiza luego de haber finalizado la importación, es 
+	 decir, luego de que se hayan recibido los bienes en la empresa y se 
+	 hayan registrado en el sistema, todos los gastos relacionados.
+	El hecho de cerrar una CI, genera en forma 
+	 automática el revalúo de los ítems adquiridos, determinando el costo 
+	 de los mismos. Estos revalúos, se registran en forma automática en 
+	 la fecha a la cual se realiza el cierre de la carpeta.
+	Al generar los revalúos correspondientes 
+	 a los gastos asociados a la carpeta, en el caso en que los gastos 
+	 se hayan ingresados con servicios de tipo cantidad que valorizan a 
+	 la fecha de cierre, se utilizará como cuenta compensadora la cuenta 
+	 de servicios prestados/gozados que está definida en la posición contable 
+	 del servicio. Si dichos gastos no fueron ingresados con servicios 
+	 de ese tipo, se utiliza como cuenta compensadora la imputación contable 
+	 asociada al concepto.
+	Se considerará 
+	 el importe del gasto definido en moneda local, usando el cambio indicado 
+	 en el comprobante de gasto.
+	En caso 
+	 de tener definida una moneda de contabilización adicional, se generarán 
+	 tantos revalúos por remito de ingreso como cambio en moneda de contabilización 
+	 diferente haya en los gastos asociados, para que los importes de los 
+	 servicios queden en cero en moneda local y moneda de contabilización 
+	 adicional.
+	El comprobante de revalúo se genera en 
+	 la sucursal a la que pertenece el comprobante de ingreso y, por generarse 
+	 en forma automática, requiere que exista un talonario de revalúo definido 
+	 para esa sucursal. En caso de que no existiera este talonario, el 
+	 sistema dará aviso de la situación indicando la sucursal con el problema.
+	El sistema no efectuará el cierre de la 
+	 CI en caso que la generación de los revalúos provoque que el costo 
+	 de alguna línea de ingreso de mercadería sea negativo, avisando cuál 
+	 fue el comprobante con el problema.
+	 
+	Para Cerrar 
+	 una carpeta, las condiciones que deben darse en forma obligatoria 
+	 son:
+	Tener asociada una o varias 
+	 OC con ítems que tengan una posición arancelaria definida.
+	Que éstos bienes hayan sido 
+	 ingresados al stock y hayan sido controlados.
+	Registrar el Comprobante de 
+	 compra, asociándolo a los bienes y a la CI, a través de la OC.
+	Que todos los comprobantes involucrados, 
+	 estén autorizados.
+	Los gastos asociados deben tener 
+	 definido un método de prorrateo. Para el caso del método Discrecional, 
+	 el gasto debe estar distribuido en su totalidad, entre las líneas 
+	 de las OC indicadas.
+	En caso de no cumplirse alguno de estos 
+	 requisitos, el sistema dará aviso y no cerrará la CI.
+	Una vez cerrada la CI, sus datos pueden 
+	 consultarse pero no ser modificados, salvo que se reabra la carpeta.
+	 
+	Reabrir 
+	 una CI implica habilitarla nuevamente para modificar alguno 
+	 de sus datos o cargar otros gastos.
+	Los requisitos para reabrir una CI son:
+	El proveedor asociado a la carpeta 
+	 debe seguir requiriendo CI.
+	El agente asociado tiene que 
+	 seguir cumpliendo el rol de Despachante de Aduana.
+	Los bienes incluidos en las 
+	 líneas de las OC asociadas, deben seguir teniendo definida una posición 
+	 arancelaria.
+	Los gastos asociados deben seguir 
+	 siendo del tipo gastos de importación..
+	 
+	En caso de no cumplirse alguno de estos 
+	 requisitos, el sistema dará aviso y no reabrirá la CI.
+	Si se cumplen todos los requisitos, el 
+	 sistema procede a eliminar los revalúos generados en el cierre de 
+	 dicha CI, y a actualizar el estado de la misma con la última modificación 
+	 de estado ingresada en la solapa eventos. Recordar que en caso de 
+	 volver a un estado diferente al inicial, no será viable cargar más 
+	 OC.
+	Una vez reabierta, la CI queda disponible 
+	 para poder seguir operando con ella.
+ 
+ Para grabar 
+ modificaciones, es necesario que además de grabar las mismas en la solapa 
+ que se estén realizando, se grabe o ejecute  en la 
+ pantalla principal de CI.
+//<![CDATA[
+	if( typeof( TextPopupInit ) != 'function' ) TextPopupInit = new Function();
+	TextPopupInit('a7', 'POPUP741149324');
+	TextPopupInit('a8', 'POPUP741134463');
+	TextPopupInit('a9', 'POPUP741141223');
+	TextPopupInit('a1', 'POPUP648477119');
+	TextPopupInit('a2', 'POPUP648502078');
+	TextPopupInit('a3', 'POPUP648518953');
+	TextPopupInit('a4', 'POPUP648526540');
+	TextPopupInit('a5', 'POPUP648563144');
+	TextPopupInit('a6', 'POPUP648579262');
+//]]>
+
+

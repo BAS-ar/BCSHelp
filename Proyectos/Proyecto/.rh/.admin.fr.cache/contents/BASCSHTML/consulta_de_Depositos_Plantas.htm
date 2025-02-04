@@ -1,0 +1,243 @@
+
+  Consulta de Depósitos/Plantas
+  A través de esta consulta es posible obtener información referida a un determinado depósito o a una planta.
+  
+   Empresa
+  
+    En este campo el sistema sugiere la empresa
+      activa. No obstante ello, este dato se puede modificar seleccionando
+      cualquiera de las empresas instaladas.
+     
+  
+   Código
+  
+    Código del depósito o de planta a consultar..
+     
+  
+   Descripción
+  
+    Exhibe el nombre del depósito o planta
+      informado.
+     
+  
+   Ítems
+  
+    En este campo el sistema ofrece un enlace
+      a una ventana donde es posible establecer un filtro en relación a
+      los ítems.
+    Es posible informar uno o varios ítems
+      y/o un atributo de ítem y/o uno o varios valores de atributos.
+    De no seleccionar nada se muestran todos
+      los ítems que administran stock y tienen información en el depósito
+      indicado.
+     
+  
+   Ficha Existencias
+  
+     Mostrar
+      stock en tránsito
+    Si se tilda esta opción se incorpora
+      una columna En tránsito, en la grilla exhibida en la solapa, que muestra
+      las unidades que figuran en comprobantes con destino al depósito o
+      planta que se está consultando y que aun no han ingresado.
+     Detallar
+      colores y medidas
+    Si se tilda esta opción aparece en
+      la grilla exhibida en esta ficha, una línea por cada combinación de
+      medida y color.
+    En caso contrario (opción por defecto),
+      las cantidades relativas a los ítems que se administran en medidas
+      y colores se muestran consolidadas, disponiéndose de una lupa en la
+      columna Col/Med que permite consultar las cantidades correspondientes
+      a cada medida y color.
+    En caso que el ítem se administre
+      por partidas o despachos, se dispone de una columna que dispone de
+      una lupa que permitirá acceder al detalle de las partidas y despachos
+      correspondientes a cada combinación medida- color.
+    Ítem
+    Se exhibe el código de ítem que
+      administra stock en el depósito indicado.
+    Haciendo clic en los códigos de
+      ítems se accede a la consulta de ítems de compras.
+    Descripción
+    Nombre del ítem.
+    Reservado
+    Se exhibe el stock reservado por
+      ítem.
+    Haciendo clic en los datos correspondientes
+      al campo Cantidad de esta columna se accede a los comprobantes que
+      conforman dicho valor.
+    Disponible
+    Se exhibe el stock disponible
+      por ítem.
+    En tránsito
+    Esta columna se habilita cuando
+      se tilda Mostrar Stock en transito.
+    Se exhiben las unidades que figuran
+      en comprobantes con destino al depósito o planta que se está consultando
+      y que aun no han ingresado.
+    Haciendo clic en los datos correspondientes
+      a la cantidad en esta columna se accede a los comprobantes que conforman
+      dicho valor.
+    Cantidad
+    Se exhibe el stock físico por
+      ítem. Haciendo clic en este dato se accede a una ventana que contiene
+      los comprobantes que conforman dicho valor.
+    Cantidad 2
+    Se exhibe el stock físico por
+      ítem expresado en la segunda unidad de medida. Haciendo clic en este
+      dato se accede a una ventana que contiene los comprobantes que conforman
+      dicho valor.
+    Par/Des
+    Si los ítems se administran mediante
+      partidas y/o despachos se exhibe una lupa que permite acceder al detalle
+      de cantidades correspondientes a cada partida y despacho.
+    Series
+    Si los ítems se administran mediante
+      números de serie se exhibe una lupa que permite acceder al detalle
+      de cada uno de los números de serie del ítem donde el depósito (o
+      planta) está involucrado.
+    Col/Med
+    Si los ítems se administran mediante
+      colores y medidas se exhibe una lupa en la columna Col/Med que permite
+      consultar las cantidades correspondientes a cada medida y color.
+    En el caso que la consulta corresponda
+      a una planta, el enlace disponible en las columnas de cantidades exhibe
+      las correspondientes órdenes de producción.
+  
+   Ficha Existencia en ubicación
+  
+    Esta solapa solo es visible en la consulta
+      de depósitos y en el caso que éstos manejen múltiples ubicaciones.
+    Es posible indicar una ubicación en particular.
+      En ese caso se muestran los ítems que se encuentra allí alojados y
+      sus respectivas cantidades. Si no se selecciona una ubicación específica
+      se muestran todas las ubicaciones posibles para el depósito y los
+      ítems que están en el depósito sin ubicación asignada, se exhiben
+      como Sin ubicación.
+    Para cada ubicación se tiene un enlace
+      a los ítems.
+    En el campo ubicación se puede informar
+      una ubicación en particular o varias. Para indicar varias ubicaciones
+      se debe informar en el campo un patrón de búsqueda utilizando como
+      comodines los caracteres “%”, “*” y “?”.
+    Si en el campo Ubicación se indica Sin
+      ubicación se obtienen los productos pendientes de ubicar.
+  
+   Ficha Últimos movimientos
+  
+    Esta solapa sólo se visualiza en el caso
+      que la consulta se refiera a un depósito e incluye el detalle de los
+      movimientos involucrados en el mismo.
+    Se muestra un detalle de los últimos comprobantes
+      registrados para el depósito/planta que se está consultando. Por defecto
+      trae los últimos cinco movimientos, pero se puede indicar el número
+      de movimientos que se desee considerar.
+    Para seleccionar los comprobantes a incluir
+      en la grilla se debe acceder al enlace que se ofrece en el rótulo
+      Comprobantes. Por defecto, la consulta no tiene ningún comprobante
+      seleccionado.
+    
+      Comprobantes
+    
+    Se muestra para el período en cuestión,
+      cada uno de los comprobantes, detallando el tipo de comprobante del
+      que se trata, su prefijo y número, la fecha, el importe correspondiente
+      y la moneda en la que está expresado. Se dispone, además, de enlaces
+      a la consulta de comprobantes, en cada uno de los comprobantes que
+      se consultan.
+    Se dispone de un enlace, en el rótulo
+      Ordenamiento, destinado a indicar las columnas en base a las cuáles
+      se desea orden la información en la grilla y el orden correspondiente
+      a cada una de ellas.
+     Período
+        a considerar
+    
+      Ordenamiento
+    
+     Incluir
+      comprobantes de lote
+    Si se tilda esta opción se incluyen
+      comprobantes de lotes de facturación automática.
+    Debajo de la grilla se ofrece un enlace
+      destinado a indicar la cantidad de movimientos a consultar.
+    
+      Ver últimos movimientos
+    
+     Refrescar
+  
+   Ficha Orden de producción 
+  
+    Esta solapa sólo se exhibe si se indica
+      una planta y se utiliza para mostrar información sobre las órdenes
+      de producción pendientes y terminadas que se fabricaron o están fabricándose
+      en ella.
+    Se puede filtrar por rango de fechas y
+      ver sólo las órdenes que se encuentran pendientes o todas. Se exhibe
+      el estado correspondiente a cada una y en la columna Comprobante,
+      donde se exhiben los números de las ordenes de producción se dispone
+      de un enlaces para acceder al detalle del estado de cada una de ellas.
+    Se muestra la situación en la que se encuentra
+      la Orden de producción contando con información de productos terminados,
+      tareas, insumos, recursos y traza. De esta forma se pueden apreciar
+      los avances del proceso productivo, los ingresos y egresos que están
+      relacionados con la orden de producción y la traza informando todos
+      lo comprobantes que afectaron a dicha orden.
+    Se dispone de un enlace, en el rótulo
+      Ordenamiento, destinado a indicar las columnas en base a las cuáles
+      se desea orden la información en la grilla y el orden correspondiente
+      a cada una de ellas.
+    
+      Ordenamiento
+    
+    Debajo de la grilla se ofrece un enlace
+      destinado a indicar la cantidad de movimientos a consultar.
+    
+      Ver últimos movimientos
+    
+  
+   Ficha Datos Generales
+  
+    Esta solapa muestras datos generales del
+      depósito o de la planta según se registraron en la tabla de Depósitos/Plantas.
+     
+  
+   Ficha Talonarios
+  
+    Esta solapa muestras los talonarios para
+      Movimientos Internos (en caso de depósitos) y de Devolución de insumos
+      y Envío de productos terminados (en caso de plantas).
+     
+  
+   Ficha Ubicaciones
+  
+    Esta solapa solo es visible en la consulta
+      de depósitos y en el caso que éstos manejen múltiples ubicaciones.
+      Muestra los códigos y descripciones de las ubicaciones definidas en
+      el depósito.
+     
+  
+   Para tener en cuenta
+  Para acceder a los enlaces de Ordenamiento, Comprobantes y Cantidad máxima es necesario contar con los permisos de consulta, caso contrario, estos enlaces se exhibirán deshabilitados (en gris).
+  Si la consulta es de una planta:
+  El filtro de ítems que se indica en el encabezado de la consulta, en lo que respecta a actuar como filtro de las ordenes de producción pendientes y terminadas de la solapa Ordenes de producción, aplica tanto para productos terminados como para insumos.
+  Las órdenes que se incluyen en la solapa son las que tienen alguna tarea que se desarrolla en la planta que se indica en la consulta.
+  Al tildar Sólo órdenes pendientes, se detallarán aquellas órdenes de producción con tareas que se ejecutan en esa planta y que no esten terminadas.
+  
+  
+    //<![CDATA[
+    if (typeof(TextPopupInit) != 'function') TextPopupInit = new Function();
+    TextPopupInit('a1', 'POPUP664490422');
+    TextPopupInit('a2', 'POPUP664477828');
+    TextPopupInit('a3', 'POPUP664499815');
+    TextPopupInit('a4', 'POPUP664535068');
+    TextPopupInit('a10', 'POPUP667306747');
+    TextPopupInit('a5', 'POPUP664347826');
+    TextPopupInit('a6', 'POPUP664363952');
+    TextPopupInit('a11', 'POPUP665307726');
+    TextPopupInit('a7', 'POPUP664442930');
+    TextPopupInit('a8', 'POPUP664451939');
+    TextPopupInit('a9', 'POPUP664463065');
+    //]]>
+  
+

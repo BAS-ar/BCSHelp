@@ -1,0 +1,112 @@
+
+
+Resolución de Transferencias Incompletas
+Esta aplicación permite resolver remitos por transferencias 
+ entre depósitos (o desde y hacia plantas) que han quedado pendientes.
+Ante movimientos de egreso por transferencia es posible 
+ generar los correspondientes movimientos de ingreso completando la información 
+ que se exhibe en esta tarea.
+Los bienes ingresarán al depósito correspondiente a 
+ la transferencia y, si se lo solicita, también es posible generar movimientos 
+ de egreso de modo de dar de baja la mercadería que ingresó al depósito 
+ como resultado de la transferencia. A tal fin se deberá completar la información 
+ de la zona Egreso.
+ 
+ 
+ Ingreso
+
+	En este cuadro se debe ingresar la información 
+	 destinada a generar los remitos de ingreso.
+	En caso que el destino de la transferencia 
+	 sea una planta, no será posible generar remitos de egreso desde la 
+	 misma para dar de baja la mercadería transferida ya que, como se sabe, 
+	 los bienes que se transfieren a plantas siempre están asociados a 
+	 órdenes de producción.
+	 Número 
+	 interno
+	Talonario a utilizar en la generación 
+	 de los movimientos de ingreso.
+	 Depósito/Planta
+	Se debe especificar el depósito o 
+	 la planta que corresponda al destino de la transferencia, es decir, 
+	 de los movimientos de egreso que se encuentran pendientes
+	 Dep./Planta 
+	 Origen
+	Se debe indicar el depósito desde 
+	 el que egresó la mercadería a transferir.
+ 
+ Fecha
+
+	Permite indicar la fecha con la cual se 
+	 generarán los movimientos de ingreso.
+	 Fecha 
+	 de egreso
+	Si se indica esta opción los comprobantes 
+	 de ingreso se generan con la misma fecha de los comprobantes de egreso 
+	 que se encuentran pendientes.
+	 Fecha 
+	 determinada
+	Si se indica esta opción los comprobantes 
+	 de ingreso se generan con la fecha que se indique en el campo Fecha.
+	 Fecha
+	En caso de indicar Fecha determinada 
+	 se habilita este campo para que se ingrese la fecha con la cual se 
+	 generarán los comprobantes de ingreso.
+ 
+ Período a considerar
+ 
+ Egreso
+
+	Si se desea egresar la mercadería resultante 
+	 de las transferencias se debe completar la información de este cuadro.
+	 Egresar 
+	 ítems de las transferencias resueltas
+	Se debe tildar este campo para generar 
+	 los comprobantes de egreso correspondientes a las transferencias completadas.
+	 Concepto
+	Se debe indicar un concepto que no 
+	 deje comprobantes pendientes. Este será utilizado en los comprobantes 
+	 de egreso que se generen.
+	 Agente
+	Se debe indicar un agente de tipo 
+	 destino de materiales. Este será el destinatario de todos los comprobantes 
+	 de egreso que se generen.
+	 Número 
+	 interno
+	Talonario a utilizar en la generación 
+	 de los movimientos de egreso.
+	Una vez definidos todos los datos necesarios, 
+	 se deben seleccionar los movimientos de materiales pendientes oprimiendo 
+	 el botón Mov. Mat...” del encabezado del comprobante.
+ 
+ Grilla de comprobantes
+
+	Una vez seleccionados los comprobantes, 
+	 esta grilla exhibe los datos que se han seleccionado; ente otros, 
+	 la fecha, el prefijo, el número y el concepto del comprobante, los 
+	 ítems seleccionados, las cantidades en primera y en segunda unidad 
+	 de medida (si corresponde), el depósito origen, los despachos, las 
+	 partidas y los centros de apropiación correspondientes. En el caso 
+	 en que el ítem maneje centros de apropiación, está previsto modificar 
+	 los que ofrece el sistema y, si no se ofrece ninguno, indicarlos. 
+	 Lo mismo sucede si el centro de apropiación administra negocios; el 
+	 mismo puede ser modificado o indicado por el usuario.
+	Al finalizar la generación de los remitos 
+	 se emite un informe indicando la cantidad y el detalle de los comprobantes 
+	 generados.
+ 
+ 
+ Para tener en cuenta
+
+	Para poder generar los movimientos es necesario 
+	 que los subdiarios de materiales asociados a los talonarios que se 
+	 utilizan se encuentren abiertos a la fecha de generación de los comprobantes.
+	Es por ello que, al cerrar un subdiario de materiales, 
+	 se avisará si para ese subdiario hay transferencias de mercadería 
+	 anteriores a la fecha de cierre, que se encuentren pendientes. En 
+	 ese momento el usuario decidirá si desea continuar con el cierre o 
+	 no.
+ 
+
+
+

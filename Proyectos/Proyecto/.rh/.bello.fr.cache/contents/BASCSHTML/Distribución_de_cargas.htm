@@ -1,0 +1,190 @@
+
+
+Distribución de carga
+La asignación se puede hacer sobre comprobantes que 
+ provienen de un lote de facturación automática ya cerrado o sobre comprobantes 
+ que hayan sido ingresados manualmente al sistema.
+Si los comprobantes a los cuales se les va a asignar 
+ el número de carga fueron generados en forma automática, el tipo de lote 
+ que se debe indicar corresponde al informado durante el proceso de facturación 
+ automática.
+Si se desea asignar una carga a comprobantes de venta 
+ ingresados manualmente en el sistema, se debe dejar en blanco el campo 
+ correspondiente al lote y como fecha se debe indicar la fecha de los comprobantes 
+ que se desean seleccionar para asignarles la carga.
+Al indicar el lote y fecha de lote, el proceso exhibe 
+ una lista conteniendo todos los comprobantes de venta correspondientes 
+ al lote indicado. Es posible indicar para cada comprobante, cuál es el 
+ número de carga que les corresponde.
+En una tabla ubicada debajo de la lista de comprobantes 
+ se exhiben los totales por carga.
+Los datos a ingresar para la distribución de carga son:
+ 
+ 
+ Lote
+
+	 Tipo
+	Código de lote correspondiente a los 
+	 comprobantes automáticos a los que se desea asignarles una carga.
+	Si se desea asignar cargas a comprobantes 
+	 que no provienen del cierre de un lote de facturación automática, 
+	 se debe dejar en blanco este campo.
+	 Fecha
+	Fecha del lote correspondiente a los 
+	 comprobantes automáticos a los que se desea asignarles una carga.
+	Si se desea asignar cargas a comprobantes 
+	 que no provienen del cierre de un lote de facturación automática, 
+	 se debe indicar aquí la fecha de los comprobantes de venta a los cuales 
+	 se les van a asignar las cargas.
+ 
+ Mostrar comprobantes sin entrega
+
+	Si se tilda este campo se incluyen los 
+	 comprobantes sin entrega y es posible asignarles una carga.
+	 
+ 
+ Cliente
+
+	Permite establecer un filtro sobre los 
+	 clientes a incluir en la tarea.
+	El filtro se establece en base a un atributo 
+	 y los valores del mismo.
+	 Atributo
+	Atributo en base al cual se establece 
+	 el filtro.
+	Si no se indica nada, se consideran 
+	 todos los clientes.
+	 Valor
+	Valores del atributo indicado correspondientes 
+	 a los clientes a incluir en el informe.
+	 Depósito
+	Este filtro es opcional y puede indicarse 
+	 en este campo un depósito o un rango de los mismos para facilitar 
+	 la selección de los comprobantes que se desean asignar a las diferentes 
+	 cargas.
+ 
+ Tabla de Comprobantes
+
+	En esta tabla se exhiben, uno a uno, los 
+	 comprobantes de venta correspondientes al lote y fecha indicados.
+	Es posible mover las columnas de la tabla 
+	 de comprobantes que componen el lote y grabar la posición y ancho 
+	 actual de las columnas en un modelo.
+	Se muestra para cada comprobante, el destino 
+	 (cliente , agente 
+	 o depósito titular), la 
+	 fecha, el tipo y número de comprobante, la cantidad de bultos asociada, 
+	 y en una columna adicional de esta tabla se permite el ingreso del 
+	 número de carga al cual corresponde cada comprobante.
+	A medida que se asignan números de carga 
+	 en esta tabla, se va modificando automáticamente la tabla de totales 
+	 por carga, en donde se muestran los totales de bultos, peso, volumen 
+	 y la cantidad de destinatarios que conforman cada carga.
+	Para incluir un comprobante en una carga 
+	 que ya está en la tabla de totales se podrá una vez marcado el comprobante, 
+	 arrastrarlo a la Tabla de totales, 
+	 a la fila correspondiente a la carga en la cual se lo desea incluir. 
+	 Para ello debe posicionarse el mouse sobre la línea del comprobante 
+	 y mantener el botón izquierdo apretado unos instantes, hasta ver que 
+	 el cursor toma el siguiente aspecto:
+	Destino
+	Código y nombre del cliente 
+	 , agente o depósito 
+	 destinatario del comprobante de ventas correspondiente al lote y fecha 
+	 de lote indicados, que se exhibe en la línea de la tabla.
+	Posicionando el cursor en esta columna 
+	 se exhibe la descripción completa del destino (generalmente aparece 
+	 cortada debido al ancho por defecto de la misma).
+	En este dato se ofrece un enlace a 
+	 la consulta correspondiente.
+	Fecha
+	Fecha del comprobante de ventas que 
+	 se exhibe en la línea de la tabla.
+	Tipo 
+	Tipo del comprobante de ventas que 
+	 se exhibe en la línea de la tabla.
+	Número
+	Prefijo y número del comprobante de 
+	 ventas que se exhibe en la línea de la tabla. Se dispone de un enlace 
+	 a la consulta correspondiente.
+	Deposito
+	Corresponde al depósito del cual sale 
+	 la mercadería. Se ofrece un enlace a la consulta correspondiente.
+	Bultos
+	Cantidad de bultos asociada al comprobante 
+	 de ventas cuyo número se exhibe en la columna anterior.
+	Si el comprobante es una nota de crédito 
+	 se ofrece grisado y en letra cursiva. En este caso el dato no suma 
+	 al total de la columna.
+	Peso
+	Peso total de la mercadería entregada 
+	 con el comprobante de ventas cuyo número se exhibe en la columna Número.
+	Si el comprobante es una nota de crédito 
+	 se ofrece grisado y en letra cursiva. En este caso el dato no suma 
+	 al total de la columna.
+	Volumen
+	Volumen total de la mercadería entregada 
+	 con el comprobante de ventas correspondiente a la línea.
+	Si el comprobante es una nota de crédito 
+	 se ofrece grisado y en letra cursiva. En este caso el dato no suma 
+	 al total de la columna.
+	Cantidad
+	Cantidad total de unidades entregadas 
+	 con el comprobante de ventas cuyo número se exhibe en la columna Número.
+	Si el comprobante es una nota de crédito 
+	 se ofrece grisado y en letra cursiva. En este caso el dato no suma 
+	 al total de la columna.
+	Carga
+	Número de carga correspondiente al 
+	 comprobante de ventas que se exhibe en la línea de la tabla de comprobantes.
+	Es un número de hasta tres dígitos 
+	 que identifica a la carga que se asigna a los comprobantes.
+	A medida que se van asignando manualmente 
+	 números de carga, en la tabla de totales por carga se van mostrando 
+	 para cada carga, la cantidad de bultos que contiene y la cantidad 
+	 de clientes asociados.
+ 
+ Partidas
+
+	Mediante este botón es posible asignar 
+	 o modificar partidas cuando se asignan cargas a comprobantes con entrega 
+	 que estén en un lote abierto, y que incluyen ítems que manejan SOLO 
+	 partidas. Si no se cumplen esas condiciones el botón se mostrará deshabilitado 
+	 
+	Al oprimir el botón, se accede a una ventana 
+	 que muestra el detalle de los ítems que manejan sólo partida, mostrando 
+	 el  detalle de todas las partidas asociadas a las cargas y comprobantes 
+	 involucrados en la distribución que se está efectuando, y podrán cambiarse 
+	 dichas partidas por otras. 
+ 
+ Tabla de Totales por carga
+
+	En esta tabla se exhiben los datos de 
+	 la asignación de cargas efectuada en la tabla de comprobantes.
+	Los datos de esta se van actualizando 
+	 en forma automática a medida que se asignan cargas a los comprobantes 
+	 de venta.
+	Carga
+	Número de carga a la cual se asignaron 
+	 comprobantes de venta.
+	Se ofrece un enlace destinado a consultar 
+	 el detalle de los comprobantes incluidos en la carga seleccionada.
+	Bultos
+	Cantidad de bultos contenidos en la 
+	 carga indicada en la columna anterior.
+	Peso
+	Peso total de la carga indicada en 
+	 la columna Carga.
+	Volumen
+	Volumen total de la carga indicada 
+	 en la columna Carga.
+	Cantidad
+	Cantidad total de unidades de la carga 
+	 indicada en la columna Carga.
+	Destino
+	Cantidad de clientes, agentes y depósitos 
+	 asociados a la carga indicada.
+ 
+
+
+

@@ -1,0 +1,113 @@
+
+
+Incorporación a padrones
+Este proceso analiza las compras y las ventas realizadas 
+ durante los últimos doce meses.
+Mediante la utilización de valores de atributos, es 
+ posible identificar a los clientes y proveedores, para evaluar si superan 
+ determinadas magnitudes, a fin de incluirlos en el padrón de tasas para 
+ hacerle retenciones o percepciones de ingresos brutos.
+ 
+ 
+ Padrón
+
+	Código del padrón de tasas en el que se 
+	 incluirán los sujetos que superen los valores informados.
+	 
+ 
+ Coeficientes
+
+	% Percepción
+	Porcentaje de percepción que se le 
+	 aplicará a los sujetos que se incorporen al padrón.
+	% % Retención
+	Porcentaje de retención que se le 
+	 aplicará a los sujetos que se incorporen al padrón.
+ 
+ Proveedores
+
+	% Atributo
+	Código del atributo de proveedores.
+	% Valor
+	Valor del atributo informado en el 
+	 campo anterior que se utilizará para identificar a los proveedores 
+	 que se evaluarán en el proceso.
+ 
+ Clientes
+
+	% Atributo
+	Código del atributo de clientes.
+	% Valor
+	Valor del atributo informado en el 
+	 campo anterior que se utilizará para identificar a los clientes que 
+	 se evaluarán en el proceso.
+ 
+ Proveedor
+
+	Código del proveedor que se desea evaluar. 
+	 Si no se indica ningún proveedor, el proceso se realiza para los proveedores 
+	 que tengan el valor de atributo de proveedor informado. El proceso 
+	 puede realizarse las veces que sea necesario, indicando en cada caso 
+	 un proveedor distinto.
+ 
+ Cliente
+
+	Código del cliente que se desea evaluar. 
+	 Si no se indica ningún cliente, el proceso se realiza para los clientes 
+	 que tengan el valor de atributo de cliente informado. El proceso puede 
+	 realizarse las veces que sea necesario, indicando en cada caso un 
+	 cliente distinto.
+	 
+ 
+ Empresa
+
+	Código de la empresa.
+	En caso de indicar un código de empresa 
+	 se considerarán, para los proveedores y clientes que corresponda, 
+	 sólo las operaciones realizadas en dicha empresa.
+	Si este campo se deja en blanco, se considerarán 
+	 las operaciones realizadas por los sujetos en cada una de las empresas 
+	 de la base de datos, obteniendo un total de operaciones por empresa.
+ 
+ Límites
+
+	 
+	 Límite anual
+	Límite en pesos que debe considerarse 
+	 a fin de evaluar a los sujetos por las operaciones realizadas.
+	 
+	 Precio límite bienes
+	Precio unitario límite de los 
+	 bienes que debe considerarse a fin de evaluar a los sujetos.
+	 
+	 Considerar bienes y servicios
+	Este campo sólo debe activarse 
+	 si la empresa tiene bienes que fueron dados de alta como servicios 
+	 en el sistema.
+ 
+ Evaluación
+
+	Al presionar este botón, previo pedido 
+	 de confirmación, se evaluarán los proveedores que correspondan.
+	Es importante tener en cuenta que para 
+	 realizar el proceso es necesario completar la información referida 
+	 a atributo y valor para proveedores, o completar el campo Proveedor, 
+	 o completar la información referida a atributo y valor de clientes, 
+	 o completar el campo Cliente. Dicho de otra manera, para ejecutar 
+	 el proceso se debe indicar, al menos, un sujeto (cliente o proveedor) 
+	 o varios de ellos a través de los atributos y sus valores.
+ 
+//<![CDATA[
+	if( typeof( TextPopupInit ) != 'function' ) TextPopupInit = new Function();
+	TextPopupInit('a1', 'POPUP668892872');
+	TextPopupInit('a2', 'POPUP668831961');
+	TextPopupInit('a3', 'POPUP668846797');
+	TextPopupInit('a4', 'POPUP668863684');
+	TextPopupInit('a5', 'POPUP668864344');
+	TextPopupInit('a6', 'POPUP668903831');
+	TextPopupInit('a7', 'POPUP668893445');
+	TextPopupInit('a8', 'POPUP668920488');
+	TextPopupInit('a9', 'POPUP668931643');
+//]]>
+
+

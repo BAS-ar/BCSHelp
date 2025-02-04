@@ -1,0 +1,109 @@
+
+
+Impresión de recibos
+Permite imprimir los comprobantes registrados en el 
+ sistema.
+La cantidad de copias, formato de impresión, tipo de 
+ emisión (impresora o archivo) se definen en el talonario correspondiente.
+Independientemente de lo que se indique en el talonario, 
+ se dispone de botones 
+ para emitir el comprobante por impresora y en un archivo PDF.
+El formato de impresión está contenido en un archivo 
+ de extensión QRP que contiene 
+ los datos del comprobante que se deseen imprimir, la ubicación de los 
+ mismos en el formulario, la forma que tiene el encabezado, cuerpo y pie 
+ del formulario, etc.
+Si se imprime en archivo, si se desea, se podrá utilizar 
+ una plantilla a utilizar como fondo.
+En caso de imprimir un conjunto de comprobantes por 
+ Controlador fiscal, antes de realizarse 
+ la impresión aparecerá un resumen indicando la cantidad total de comprobantes 
+ detectados; la cantidad de comprobantes que ya han sido impresos, la cantidad 
+ de comprobantes que contienen errores y la cantidad de comprobantes a 
+ imprimir. Si se oprime el botón Continuar 
+ que exhibe dicho resumen se efectuará la impresión de los comprobantes 
+ indicados, si en cambio, se oprime el botón Cancelar, 
+ la misma no se efectuará. Oprimiendo el botón Detalles, 
+ se accederá a la información relativa a los comprobantes cuya impresión 
+ se ha solicitado, se exhibe el tipo de comprobante, la fecha, el prefijo, 
+ el número, el cliente, el total del comprobante y la moneda. En caso que 
+ algunos comprobantes incluyan errores, se exhibe también un texto que 
+ describe el tipo de error del cual se trate.
+Los datos a ingresar para la emisión son:
+ 
+ 
+ Desde número
+
+	Número de comprobante del recibo desde 
+	 el que se desea imprimir.
+	Deben completarse el prefijo y el número 
+	 de comprobante. Si el número no se completa, se realizará la impresión 
+	 desde el primer recibo existente para el prefijo indicado.
+	El prefijo y el número pueden ser completados 
+	 manualmente o seleccionarse de la lista de comprobantes ingresados 
+	 que provee el sistema en este punto para permitir la selección.
+	El prefijo trae asociado el número de 
+	 talonario de los recibos a imprimir.
+ 
+ Hasta número
+
+	Número de comprobante del recibo hasta 
+	 el que se desea imprimir.
+	Deben completarse el prefijo y el número 
+	 de comprobante. Si el número no se completa, se realizará la impresión 
+	 hasta el último recibo existente para el prefijo indicado.
+	El prefijo y el número pueden ser completados 
+	 manualmente o seleccionarse de la lista de comprobantes ingresados 
+	 que provee el sistema en este punto para permitir la selección.
+	Si se indica desde y hasta un mismo número 
+	 de recibo, se realizará la emisión de ese recibo en particular.
+ 
+ Sólo los comprobantes no impresos
+
+	Indicación de si se desean emitir solamente 
+	 los recibos que aún no han sido emitidos o todos los que se incluyen 
+	 en el rango de números indicado.
+	 
+ 
+ Mostrar estado actual de las aplicaciones
+
+	Indicación de si se desean ver las aplicaciones 
+	 de los comprobantes impresos al momento de emitir cada comprobante 
+	 o no.
+	 
+ 
+ Período a considerar
+ 
+ Para tener en cuenta
+
+	Si se usan formatos personalizados se 
+	 podrán incluir datos de la casa central como, por ejemplo, código, 
+	 razón social, nombre de fantasía, tipo y número impositivo, etc.
+	En la vista 
+	 preliminar y emisiones estándares de recibos, cuyo talonario indique 
+	 detalle de retenciones, se detallarán datos correspondientes a las 
+	 retenciones ordenados por tipo de retención, si corresponde provincia, 
+	 y fecha de retención, detallándose membretes por cada tipo de retención.
+	El ingreso de rango de fechas no es 
+	 obligatorio.
+	El sistema al momento de imprimir verifica 
+	 si para el rango de números indicado hay comprobantes repetidos en 
+	 más de una vigencia, avisando al usuario de tal eventualidad sugiriendo 
+	 indicar un rango de fechas para evitar las repeticiones. Además, se 
+	 consulta al usuario si desea seguir con la impresión o no.
+	En caso de continuar con la impresión 
+	 el sistema imprimirá todos los comprobantes en el rango indicado teniendo 
+	 en cuenta el rango de fechas indicado aunque haya números de comprobante 
+	 repetidos, por lo que un mismo número de comprobante podría imprimirse 
+	 más de una vez para diferentes vigencias de fechas.
+ 
+//<![CDATA[
+	if( typeof( TextPopupInit ) != 'function' ) TextPopupInit = new Function();
+	TextPopupInit('a1', 'POPUP664399409');
+	TextPopupInit('a2', 'POPUP664434873');
+	TextPopupInit('a3', 'POPUP664432253');
+	TextPopupInit('a4', 'POPUP664453301');
+	TextPopupInit('a5', 'POPUP664446068');
+//]]>
+
+

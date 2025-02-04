@@ -1,0 +1,198 @@
+
+Líneas de comprobantes de ingreso
+Item
+Código del ítem a incluir en el comprobante.
+Debe corresponder a un bien, 
+ servicio o ítem 
+ vario ingresado en el sistema.
+Puede ingresarse el código del ítem o 
+ su código alternativo.
+En este campo se cuenta con la opción 
+ de salir de la línea con la flecha hacia abajo del teclado. Al digitar 
+ dicho botón se indica el valor uno para el campo cantidad de esa línea 
+ (según la unidad de venta del bien) y se inserta una nueva línea para 
+ el comprobante. Esto ocurre sólo si el ítem no maneja dimensiones, contenedores, 
+ despachos, partidas, colores o números de serie. En estos casos, el cursor 
+ se posiciona en el campo cantidad de la línea tipeada ya que es necesario 
+ ingresar datos adicionales. Esta nueva opción de tipeo habilita la posibilidad 
+ de ingresar líneas de ítems con lector de código de barras de teclado.
+Descripción
+Descripción del ítem indicado en el dato 
+ anterior.
+Si el ítem tiene asociada una descripción 
+ larga, se exhibirá esta si en los Parámetros 
+ de datos generales se indica eso. Si no, se exhibirá la otra descripción. 
+ Si el ítem no tiene descripción asociada, se solicitará el ingreso de 
+ un detalle del mismo en este momento.
+Comprobante
+Número de comprobante al que se hace referencia 
+ en la línea del comprobante de ingreso.
+Este campo no está disponible si en los 
+ Parámetros de Datos Generales se indicó que no se utiliza la columna de 
+ comprobantes referenciados.
+Si la línea del ingreso de materiales 
+ fue insertada automáticamente en el comprobante mediante la selección 
+ de uno o más comprobantes pendientes, en esta columna se exhibe el número 
+ del comprobante seleccionado, correspondiente a cada ítem.
+Aquí se presenta la posibilidad de invocar 
+ un requerimiento, una orden de compra, un egreso de materiales o una factura 
+ de compra para el ítem indicado en la línea del comprobante. Es decir, 
+ una vez indicado el ítem es posible pulsar la tecla F3 
+ para buscar y seleccionar la línea del comprobante que se desea incluir 
+ en el ingreso de materiales. Al pulsar F3 
+ se abre una ventana que contiene una lista con todas las líneas de requerimientos, 
+ en las órdenes de compra, comprobantes de egreso de materiales y facturas 
+ de compra pendientes, ingresados para el ítem indicado. Al seleccionar 
+ una línea en esta tabla, los datos de la misma se copian a la correspondiente 
+ línea del ingreso de materiales. En este caso el número de comprobante, 
+ la cantidad y demás datos correspondientes a la línea del comprobante 
+ seleccionado se copiarán a la línea del ingreso de materiales desde la 
+ que se hizo la selección.
+Este dato no puede ingresarse manualmente. 
+ Se completa automáticamente al seleccionar comprobantes mediante los botones 
+ de comprobantes pendientes o mediante la tecla F3.
+Ref. 
+ Alt.
+Al hacer doble clic sobre esta columna 
+ (Referencia alternativo) se accede a una pantalla en la que se puede seleccionar 
+ una Orden de Compra pendiente en la cual el ítem esté como alternativo 
+ e indicar el ítem al cual reemplaza.
+Observaciones
+Si se ha parametrizado el sistema en forma 
+ acorde, aparece una columna para registrar las observaciones en relación 
+ al ítem de la línea.
+Cantidad
+Cantidad de unidades del ítem indicado.
+Aquí se presentan varias posibilidades.
+Si el ítem trabaja con doble unidad de 
+ medida, se solicitará este campo si las compras se registran en la primera 
+ unidad. Si las compras se registran en segunda unidad, al ingresar la 
+ cantidad en la segunda unidad se completará este dato en forma automática 
+ y podrá ser modificado sólo si se indicó que la relación entre las unidades 
+ de medida es Variable.
+Si el ítem trabaja con colores 
+ y medidas se abrirá una ventana 
+ que solicitará el ingreso de las cantidades para cada color y medida solicitada, 
+ y al finalizar el ingreso de datos en esa ventana, se completará este 
+ dato con la cantidad total de unidades indicadas para todos los colores 
+ y medidas del ítem.
+Si el ítem es un contenedor, se abrirá 
+ una ventana que solicita el código del ítem que contiene (se ofrecerá 
+ el ítem indicado como default en la tabla de contenedores del bien) y 
+ la cantidad del mismo, y luego se completará este dato con la cantidad 
+ resultante de multiplicar la cantidad indicada por la cantidad de unidades 
+ de este indicada en la definición del ítem contenedor.
+Si el ítem trabaja con dimensiones, se 
+ abrirá una ventana que solicitará el ingreso de cantidades para cada dimensión 
+ posible definida para el ítem, y luego se completará este dato con la 
+ cantidad resultante de multiplicar la cantidad indicada por todas las 
+ dimensiones del ítem.
+Si el grupo de compras asociado a los 
+ bienes que ingresan lo indica, se controlan las cantidades que ingresan 
+ de modo que la entrega no se realice en forma parcial y, en caso que existan 
+ diferencias, que éstas no excedan los porcentajes de tolerancia máximos 
+ admitidos.
+Cantidad 
+ en 2da unidad
+Cantidad de unidades que ingresan del 
+ ítem indicado en la segunda unidad de medida.
+Si el ítem no trabaja con doble unidad 
+ de medida, no se solicitará información en este campo.
+Si el ítem trabaja con doble unidad de 
+ medida, se solicitará este campo si las compras se registran en la segunda 
+ unidad. Si las compras se registran en primera unidad, al ingresar la 
+ cantidad en la primera unidad se completará este dato en forma automática 
+ y podrá ser modificado sólo si se indicó que la relación entre las unidades 
+ de medida es Variable.
+Despacho
+Código de hasta quince caracteres que 
+ indica el número de despacho al cual ingresa 
+ el ítem indicado.
+Este dato podrá ingresarse para los ítems 
+ que trabajan con despachos. Debe corresponder a un despacho definido en 
+ el sistema.
+Cabe acotar que, cuando se cargue un remito 
+ de ingreso referenciando algún comprobante como por ejemplo una orden 
+ de compra, al ingresar el primer despacho, si en el comprobante hay otros 
+ ítems que manejen despachos y no tienen aún uno definido, el sistema consulta 
+ si el usuario desea asignar el despacho recién ingresado a los demás ítems.
+En caso que se conteste “Sí”, el sistema 
+ asignará automáticamente el despacho informado al resto de los ítems, 
+ pudiendo reemplazarse por otros, si lo desea.
+Partida
+Código de hasta quince caracteres que 
+ indica el número de la partida a la cual ingresa 
+ el ítem indicado.
+Este dato podrá ingresarse para los ítems 
+ que trabajan con partidas. Debe corresponder a una partida definida en 
+ el sistema para el ítem indicado.
+Números 
+ de serie
+Si el ítem indicado trabaja con números 
+ de serie, se abrirá una ventana que permitirá el ingreso de todos los 
+ números de serie que ingresan con el comprobante.
+Números 
+ de serie con cantidades unitarias
+Se solicita el ingreso de tantos números 
+ como cantidad de unidades ingresen del ítem.
+El sistema brinda la posibilidad de 
+ ingresar estos números en forma automática definiendo un prefijo común 
+ y un rango de números para los mismos. Esto es muy útil en el caso de 
+ ingresos de grandes cantidades de mercadería seriada.
+Números 
+ de serie con cantidades no unitarias
+El sistema maneja también la idea 
+ de bienes que administran números de serie que no se asocian a cantidades 
+ unitarias.
+Si el bien no maneja cantidades unitarias, 
+ deberán indicarse tantos números de serie tal que la cantidad de todos 
+ ellos sumada, considerando la unidad de medida del comprobante, deberá 
+ ser igual a la cantidad ingresada para dicho bien si la relación entre 
+ unidades de medida es fija. Si la relación es variable, la suma de cantidades 
+ en ambas unidades de medida deberá ser igual a las cantidades en ambas 
+ unidades de medida indicadas para el bien.
+A tal fin, se habilita en la pantalla 
+ de ingreso la columna de cantidades para cada número de serie. Si la relación 
+ entre cantidades es fija se ingresa solo la cantidad en la unidad de medida 
+ del comprobante y se calcula la otra unidad de medida según la relación 
+ entre unidades. Si la relación es variable se podrán indicar ambas cantidades.
+ Para tener 
+ en cuenta
+Cabe aclarar en cuanto a ingreso por devoluciones, 
+ que las devoluciones de bienes que administren números de serie, deberán 
+ hacerse por la totalidad de la cantidad del número de serie del ítem devuelto.
+En cuanto al ingreso de bienes que maneja 
+ números de serie con doble unidad de medida y relación fija, no se permitirá 
+ el ingreso de éstos, en tanto que la unidad de medida de compras y ventas 
+ sea diferente.
+Centro 
+ de apropiación A
+Código del centro 
+ de apropiación A asociado a la línea del comprobante.
+Para cada ítem ingresado en el comprobante 
+ que tiene una tabla de posiciones contables asociadas, se verificará si 
+ la imputación contable de inventario 
+ de la posición contable o la asociada al concepto indicado en el comprobante, 
+ tienen subcuentas de tipo centro de apropiación A o ambos centros. En 
+ ese caso, se solicitará el ingreso del centro de apropiación asociado.
+Centro 
+ de apropiación B
+Código del centro 
+ de apropiación B asociado a la línea del comprobante.
+Para cada ítem ingresado en el comprobante 
+ que tiene una tabla de posiciones contables asociadas, se verificará si 
+ la imputación contable de inventario 
+ de la posición contable o la asociada al concepto indicado en el comprobante, 
+ tienen subcuentas de tipo centro de apropiación B o ambos centros. En 
+ ese caso, se solicitará el ingreso del centro de apropiación asociado.
+Orden 
+ de producción
+Esta columna sólo aparece en los ingresos 
+ a planta desde depósito.
+Se muestra el prefijo-número de las orden 
+ de producción correspondiente al movimiento.
+Pasando el cursor por la celda se muestra 
+ un tooltip que exhibe el prefijo-número de la orden, la tarea y el producto 
+ terminado principal de la orden de producción en cuestión.
+
+

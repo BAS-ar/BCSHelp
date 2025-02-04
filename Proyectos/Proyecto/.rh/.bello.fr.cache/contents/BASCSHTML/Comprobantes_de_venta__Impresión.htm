@@ -1,0 +1,188 @@
+
+
+Impresión de comprobantes de venta
+Permite imprimir los comprobantes registrados en el 
+ sistema.
+La cantidad de copias, formato de impresión, tipo de 
+ emisión (impresora o archivo) se definen en el talonario correspondiente.
+Independientemente de lo que se indique en el talonario, 
+ se dispone de botones 
+ para emitir el comprobante por impresora y en un archivo PDF.
+El formato de impresión está contenido en un archivo 
+ de extensión QRP que contiene 
+ los datos del comprobante que se deseen imprimir, la ubicación de los 
+ mismos en el formulario, la forma que tiene el encabezado, cuerpo y pie 
+ del formulario, etc.
+En caso que se desee pueden imprimirse comprobantes 
+ incluidos en un lote de comprobantes. Para ello bastará con informar el 
+ tipo y la fecha del lote cuyos comprobantes se desea imprimir.
+En caso de imprimir un conjunto de comprobantes por 
+ Controlador fiscal, antes de realizarse 
+ la impresión aparecerá un resumen indicando la cantidad total de comprobantes 
+ detectados; la cantidad de comprobantes que ya han sido impresos, la cantidad 
+ de comprobantes que contienen errores y la cantidad de comprobantes a 
+ imprimir. Si se oprime el botón Continuar 
+ que exhibe dicho resumen se efectuará la impresión de los comprobantes 
+ indicados, si en cambio, se oprime el botón Cancelar, 
+ la misma no se efectuará. Oprimiendo el botón Detalles, 
+ se accederá a la información relativa a los comprobantes cuya impresión 
+ se ha solicitado, se exhibe el tipo de comprobante, la fecha, el prefijo, 
+ el número, el cliente, el total del comprobante y la moneda. En caso que 
+ algunos comprobantes incluyan errores, se exhibe también un texto que 
+ describe el tipo de error del cual se trate.
+Si se lo desea, es posible consolidar los despachos 
+ y las partidas al momento de imprimir, previa configuración en la pantalla 
+ de Talonarios. Esto está disponible sólo para la opción de medidas no 
+ tabuladas.
+Los datos a ingresar para la emisión son:
+ 
+Lote
+ 
+ Tipo
+
+	Tipo de lote cuyos comprobantes se 
+	 desea imprimir.
+ 
+ Fecha
+
+	Fecha correspondiente al lote cuyos 
+	 comprobantes se han de imprimir.
+ 
+ Carga
+
+	En caso de indicar un lote, es posible 
+	 indicar la carga correspondiente a los comprobantes a imprimir..
+	Cuando habiendo indicado un lote no 
+	 se indique número de carga se imprimirán todas los egresos de mercadería 
+	 o facturas del lote cualesquiera sea su carga.
+ 
+ Talonario
+
+	Número de talonario del cual se desean 
+	 imprimir los comprobantes de venta.
+	Debe corresponder a un talonario que permita 
+	 el ingreso de comprobantes de venta y el mismo traerá asociado la 
+	 cantidad de copias a imprimir, la impresora y el formato de impresión 
+	 de los comprobantes.
+ 
+ Desde número
+
+	Número del comprobante desde el que se 
+	 desea imprimir.
+	Deben completarse el prefijo y el número. 
+	 Si el número no se completa, se realizará la impresión desde el primer 
+	 comprobante de venta existente con el prefijo indicado.
+	El prefijo y el número pueden ser completados 
+	 manualmente o seleccionarse de la lista de comprobantes ingresados 
+	 que provee el sistema en este punto para permitir la selección.
+ 
+ Hasta número
+
+	Número del comprobante hasta el que se 
+	 desea imprimir.
+	Deben completarse el prefijo y el número. 
+	 Si el número no se completa, se realizará la impresión hasta el último 
+	 comprobante de venta existente con el prefijo indicado.
+	El prefijo y el número pueden ser completados 
+	 manualmente o seleccionarse de la lista de comprobantes ingresados 
+	 que provee el sistema en este punto para permitir la selección.
+	Si se indica desde y hasta un mismo número 
+	 de comprobante, se realizará la emisión de ese comprobante de venta 
+	 en particular.
+ 
+ 
+ Sólo los comprobantes no impresos
+
+	Indicación de si se desean emitir solamente 
+	 los comprobantes de venta que aún no han sido emitidos o todos los 
+	 que se incluyen en el rango de números indicado.
+	 
+ 
+ Mostrar estado actual de las aplicaciones
+
+	Indicación de si se desean ver las aplicaciones 
+	 de los comprobantes impresos al momento de emitir cada comprobante 
+	 o no.
+	 
+ 
+ Período a considerar
+ 
+ Para tener en cuenta
+
+	Si 
+	 el talonario de los comprobantes a imprimir es preimpreso y requiere 
+	 fiscalización electrónica, no se pueden imprimir los comprobantes 
+	 con número igual a cero que no están numerados porque eso indica que 
+	 no tienen CAE. Al solicitar la impresión si el talonario requiere 
+	 fiscalización electrónica, se verifica que los comprobantes a imprimir 
+	 tengan CAE, informando en caso contrario al operador dado que dichos 
+	 comprobantes no pueden imprimirse.
+	En 
+	 la impresión de los comprobantes de venta se dispone de los input 
+	 variable strCodBarras y strCodBarrasX.
+	La variable strCodBarras 
+	 es una cadena de caracteres de longitud 40 que incluye el CUIT del 
+	 emisor, el código del comprobante para la AFIP, el punto de venta, 
+	 el número de CAE y la fecha de vencimiento de dicho CAE.
+	La variable strCodBarrasX 
+	 es igual a la anterior pero en formato de código de barras. Este valor 
+	 lo calcula automáticamente el sistema, en caso de no existir, al registrar 
+	 comprobantes de exportación e indicar para ellos un número de CAE, 
+	 ya sea a través del servicio de fiscalización electrónica, la importación 
+	 del comprobante con los datos de fiscalización electrónica por el 
+	 ICR, la importación de CAE o la impresión del comprobante.
+	Además se dispone, en la carpeta \Utils 
+	 de la instalación del puesto, de un archivo con nombre FuentesI2OF5.ZIP 
+	 que incluye los fonts necesarios para la impresión de la cadena anterior 
+	 con formato de código de barras.
+	Para tener disponibles dichos fonts en 
+	 el puesto hay que deszipear el archivo anterior y copiar los 3 archivos 
+	 que se generan en el directorio windows\fonts del puesto.
+	En 
+	 el caso de los autoimpresores que tienen que incluir en la impresión 
+	 del comprobante un código de barras (para identificar el tipo de comprobante) 
+	 y que utilizan un mismo talonario para diferentes tipos se debe proceder 
+	 de la manera que se indica para que el archivo de formato haga referencia 
+	 a un único BMP.
+	El mecanismo consiste en poner, en el 
+	 directorio Programs, los distintos archivos BMP con un nombre determinado, 
+	 de tal manera que el programa de impresión seleccione el adecuado 
+	 y lo envíe como variable al archivo QRP correspondiente al formato 
+	 de impresión.
+	El nombre de cada archivo que contenga 
+	 un código de barras debe estar compuesto por los siguientes cuatro 
+	 elementos:
+	Nombre del QRP
+	Numero de talonario
+	Tipo de comprobante 
+	 (FA, FB, CA, CB, DA, etc ...)
+	Extensión (.BMP)
+	Por ejemplo si se imprime una factura 
+	 A del talonario 2 cuyo formato es XXX.QRP, el código de barras del 
+	 comprobante será el que esté en el archivo XXX2FA.BMP.
+	Se debe tener en cuenta que es necesario 
+	 agregar al formato de impresión de comprobantes de ventas la variable 
+	 objBarCode de tipo Object. Dicha variable contendrá la imagen del 
+	 código de barras a imprimir en el comprobante debiendo ubicarla en 
+	 el lugar deseado.
+	El ingreso de rango de fechas 
+	 no es obligatorio.
+	El 
+	 sistema al momento de imprimir verifica si para el rango de números 
+	 indicado hay comprobantes repetidos en más de una vigencia, avisando 
+	 al usuario de tal eventualidad sugiriendo indicar un rango de fechas 
+	 para evitar las repeticiones. Además, se consulta al usuario si desea 
+	 seguir con la impresión o no.
+	En 
+	 caso de continuar con la impresión el sistema imprimirá todos los 
+	 comprobantes en el rango indicado teniendo en cuenta el rango de fechas 
+	 indicado aunque haya números de comprobante repetidos, por lo que 
+	 un mismo número de comprobante podría imprimirse más de una vez para 
+	 diferentes vigencias de fechas.
+	La 
+	 emisión predeterminada de comprobantes, que no correspondan a retenciones, 
+	 considerará si en el talonario se indicó que la emisión se realice 
+	 a través de la impresora por defecto del puesto o no.  
+
+
+

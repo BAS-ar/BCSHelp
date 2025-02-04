@@ -1,0 +1,42 @@
+{
+  "recent-files::internal:document": [{
+    "path": "C:/Aplicaciones/Robohelp019yHelpBCS/Help 460  25-06-24 FX047/Bascshelp_test/publish/presets/html.preset",
+    "pinned": false,
+    "time": "Jul 23, 5:41 PM"
+  }, {
+    "path": "C:/Aplicaciones/Robohelp019yHelpBCS/Help 460  25-06-24 FX047/Bascshelp_test/publish/presets/test 1.preset",
+    "pinned": false,
+    "time": "Jul 23, 5:35 PM"
+  }, {
+    "path": "C:/Aplicaciones/Robohelp019yHelpBCS/Help 460  25-06-24 FX047/Bascshelp_test/contents/BASCSHTML/Adjuntos.htm",
+    "pinned": false,
+    "time": "Jul 23, 5:35 PM"
+  }, {
+    "path": "C:/Aplicaciones/Robohelp019yHelpBCS/Help 460  25-06-24 FX047/Bascshelp_test/publish/presets/CHM test.preset",
+    "pinned": false,
+    "time": "Jul 23, 5:31 PM"
+  }],
+  "file-modified": "2024-07-23T17:46:38-03:00",
+  "generate": {
+    "outputs": {
+      "C:/Aplicaciones/Robohelp019yHelpBCS/Help 460  25-06-24 FX047/Bascshelp_test/publish/presets/CHM test.preset": {
+        "exists": true,
+        "path": "C:/Users/bello/OneDrive/Documentos1/My RoboHelp Projects/outputs/Bascs/CHM test/Bascs.chm",
+        "time": "2024-07-23T17:32:22-03:00",
+        "logFile": "C:/Users/bello/AppData/Local/Temp/RHTMP/CHM test.ehtml"
+      },
+      "C:/Aplicaciones/Robohelp019yHelpBCS/Help 460  25-06-24 FX047/Bascshelp_test/publish/presets/test 1.preset": {
+        "exists": true,
+        "path": "C:/Users/bello/OneDrive/Documentos1/My RoboHelp Projects/outputs/Bascs/test 1/index.htm",
+        "time": "2024-07-23T17:38:47-03:00",
+        "logFile": "C:/Users/bello/AppData/Local/Temp/RHTMP/test 1.ehtml"
+      },
+      "C:/Aplicaciones/Robohelp019yHelpBCS/Help 460  25-06-24 FX047/Bascshelp_test/publish/presets/html.preset": {
+        "exists": true,
+        "path": "C:/Users/bello/OneDrive/Documentos1/My RoboHelp Projects/outputs/Bascs/html/index.htm",
+        "time": "2024-07-23T17:49:21-03:00",
+        "logFile": "C:/Users/bello/AppData/Local/Temp/RHTMP/html.ehtml"
+      }
+    }
+  }
+}

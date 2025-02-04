@@ -1,0 +1,187 @@
+
+
+Cierre del lote
+Debe indicarse el lote correspondiente a los comprobantes 
+ que se requiere cerrar.
+Sólo será necesario informar los prefijos para los tipos 
+ de comprobantes incluidos en el lote que se está cerrando.
+Al cerrar el lote, si 
+ es de facturas, se controla  el crédito disponible de los clientes. 
+ Si los comprobantes se generan en base a pedidos que fueron autorizados 
+ por crédito excedido, o egresos registrados en base a pedidos autorizados 
+ por crédito excedido, se cierra el lote a pesar de que exceda el crédito 
+ disponible. 
+Al finalizar el proceso de cierre se exhibe un resumen 
+ que indica cuántos comprobantes se procesaron en el cierre actual, cuántos 
+ comprobantes de cada tipo se generaron en el cierre actual y cuantos comprobantes 
+ procesados tuvieron errores.
+Para aquellas facturas de venta cuya condición de venta 
+ tenga indicado que genera vencimientos a documentar se generarán las FC 
+ correspondientes al ejecutar esta tarea.
+Para la impresión de los comprobantes se prevé un botón 
+ denominado, justamente, Impresión. 
+ Este botón funciona diferente según el cierre del lote corresponda a uno 
+ o más prefijos.
+Si se indicó un solo prefijo en la tarea de cierre, 
+ al apretar el botón Impresión 
+ se pasa directamente a la ventana de impresión del tipo de comprobante 
+ para el que se informó dicho prefijo.
+Si el lote que se cierra incluye comprobantes que corresponden 
+ a varios prefijos, el botón Impresión 
+ muestra una ventana con los prefijos de los distintos tipos de comprobantes 
+ indicados en el cierre y, a la derecha de cada uno se ofrece un botón 
+ destinado a imprimir los mismos.
+Al cerrar un lote de egresos automáticos que corresponden 
+ a un talonario que requiere fiscalización electrónica, los mismos quedarán 
+ pendientes de fiscalizar (para Uruguay).
+Los datos a ingresar para el cierre son:
+ 
+ 
+ Lote
+
+	 Tipo
+	Tipo de lote que se desea cerrar.
+	Los comprobantes automáticos generados 
+	 en el lote que aquí se indique pasarán a integrar los movimientos 
+	 definitivos registrados en el sistema.
+	 Fecha
+	Fecha del lote de comprobantes automáticos 
+	 que se desea cerrar.
+	Los comprobantes automáticos generados 
+	 en el lote y fecha que aquí se indique pasarán a integrar los movimientos 
+	 definitivos registrados en el sistema.
+ 
+ Facturas
+
+	 Fecha
+	Fecha que tendrán las facturas definitivas 
+	 que se generen en base a los comprobantes del lote de comprobantes 
+	 automáticos seleccionado para cerrar.
+	 Prefijo 
+	 facturas A
+	Prefijo correspondiente a las facturas 
+	 A que se cierren.
+	El prefijo que aquí se indique determinará 
+	 el talonario asociado a cada factura 
+	 A que se cierre, el número 
+	 de comprobante definitivo que se asignará a cada factura, el subdiario 
+	 de ventas al cual ingresarán las facturas, etc.
+	 Prefijo 
+	 facturas B
+	Prefijo correspondiente a las facturas 
+	 B que se cierren.
+	El prefijo que aquí se indique determinará 
+	 el talonario asociado a cada factura 
+	 B que se cierre, el número 
+	 de comprobante definitivo que se asignará a cada factura, el subdiario 
+	 de ventas al cual ingresarán las facturas, etc.
+ 
+ Notas de crédito
+
+	 Fecha
+	Fecha que tendrán las notas de crédito 
+	 definitivas que se generen en base a los comprobantes del lote de 
+	 comprobantes automáticos seleccionado para cerrar.
+	 Prefijo 
+	 notas de crédito A
+	Prefijo correspondiente a las notas 
+	 de crédito A que se generen 
+	 en el cierre.
+	El prefijo que aquí se indique determinará 
+	 el talonario asociado a cada nota, el número de comprobante definitivo 
+	 que se asignará, el subdiario de ventas en el que se contabilizarán 
+	 los comprobantes, etc.
+	 Prefijo 
+	 notas de crédito B
+	Prefijo correspondiente a las notas 
+	 de crédito B que se generen 
+	 en el cierre.
+	El prefijo que aquí se indique determinará 
+	 el talonario asociado a cada nota, el número de comprobante definitivo 
+	 que se asignará, el subdiario de ventas en el que se contabilizarán 
+	 los comprobantes, etc.
+	 Fiscalización 
+	 en excepción
+	Se agrega en la opción de notas de 
+	 crédito la posibilidad de indicar un período en la fiscalización por 
+	 excepción. Se ve habilitada cuando se indique un talonario para la 
+	 generación de las notas de crédito A y/o B que requieran fiscalización 
+	 electrónica argentina.
+	 
+	 Período
+	Período a considerar en la fiscalización 
+	 electrónica de las notas de crédito del lote. 
+	 
+	 Fecha inicial
+	Fecha desde del período.
+	 
+	 Fecha final
+	Fecha hasta del período. No puede 
+	 ser posterior a la fecha de emisión del comprobante.
+ 
+ Liquidaciones
+
+	 Fecha
+	Fecha que tendrán las liquidaciones 
+	 definitivas que se generen en base a los comprobantes del lote de 
+	 comprobantes automáticos seleccionado para cerrar.
+	 Prefijo 
+	 liquidaciones A
+	Prefijo correspondiente a las liquidaciones A 
+	 que se generen en el cierre.
+	El prefijo que aquí se indique determinará 
+	 el talonario asociado a cada liquidación, el número de comprobante 
+	 definitivo que se asignará, el subdiario de ventas en el que se contabilizarán 
+	 los comprobantes, etc.
+	 Prefijo 
+	 liquidaciones B
+	Prefijo correspondiente a las liquidaciones B 
+	 que se generen en el cierre.
+	El prefijo que aquí se indique determinará 
+	 el talonario asociado a cada liquidación, el número de comprobante 
+	 definitivo que se asignará, el subdiario de ventas en el que se contabilizarán 
+	 los comprobantes, etc.
+ 
+ Liquidaciones crédito
+
+	 Fecha
+	Fecha que tendrán las liquidaciones 
+	 de crédito definitivas que se generen en base a los comprobantes del 
+	 lote de comprobantes automáticos seleccionado para cerrar.
+	 Prefijo 
+	 liquidaciones de crédito A
+	Prefijo correspondiente a las liquidaciones de crédito A 
+	 que se generen en el cierre.
+	El prefijo que aquí se indique determinará 
+	 el talonario asociado a cada liquidación, el número de comprobante 
+	 definitivo que se asignará, el subdiario de ventas en el que se contabilizarán 
+	 los comprobantes, etc.
+	 Prefijo 
+	 liquidaciones de crédito B
+	Prefijo correspondiente a las liquidaciones de 
+	 crédito B que se generen 
+	 en el cierre.
+	El prefijo que aquí se indique determinará 
+	 el talonario asociado a cada liquidación, el número de comprobante 
+	 definitivo que se asignará, el subdiario de ventas en el que se contabilizarán 
+	 los comprobantes, etc.
+ 
+ Egresos de mercadería
+
+	 Fecha
+	Fecha que tendrán los comprobantes 
+	 de egreso de mercadería definitivos que se generen en base a los comprobantes 
+	 del lote de comprobantes automáticos seleccionado para cerrar.
+	 Prefijo 
+	 Egreso/Egreso diferido
+	Prefijo correspondiente a los comprobantes 
+	 de egreso de mercadería que se cierren.
+	El prefijo que aquí se indique determinará 
+	 el talonario asociado a cada egreso 
+	 que se cierre, el número de comprobante definitivo que se asignará 
+	 a cada uno, el subdiario de movimiento 
+	 de materiales al cual ingresarán los comprobantes, etc.
+ 
+
+
+

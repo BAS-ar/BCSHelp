@@ -1,0 +1,73 @@
+
+
+Tablas de colores
+El sistema permite administrar bienes 
+ que se comercializan en diferentes colores. La indumentaria y el calzado 
+ son algunos ejemplos típicos de aplicación de esta prestación, pero también 
+ puede ser necesaria en otras actividades comerciales.
+En este punto se definen las tablas de colores que se 
+ podrán asociar a los bienes al momento 
+ de incorporarlos al sistema. Luego, cuando éstos bienes sean invocados 
+ en los comprobantes se podrá informar la cantidad y/o precio para cada 
+ uno de los colores en los que se comercializan.
+Las tablas de colores son básicamente listas de colores 
+ posibles agrupados bajo un código que los identifica y al hacer referencia 
+ a la tabla de colores en un bien se estarán definiendo los diferentes 
+ colores que podrá tener ese bien.
+Está previsto incluir hasta 2000 colores por tabla.
+A continuación se detallan todos los datos que deben 
+ ingresarse:
+ 
+ 
+ Código
+
+	Código que identifica a la tabla de colores 
+	 y será utilizado para individualizar la misma en todo el sistema.
+	Por ejemplo, CO1, 
+	 OS, 9, 
+	 etc.
+ 
+ Descripción
+
+	Denominación de la tabla de colores.
+	Se dispone de hasta veinticinco caracteres 
+	 para el ingreso.
+	Por ejemplo, Tabla 
+	 de azules, Colores 1, Colores 
+	 claros, etc.
+	En los ingresos de comprobantes, cuando 
+	 se abre la grilla en medidas y colores, posicionando el mouse sobre 
+	 el código del color en la columna del encabezado de las filas, se 
+	 muestra un tooltip con esta descripción. Para los códigos de color 
+	 sin nombre se mostrará la leyenda Sin nombre.
+ 
+ Tabla de colores
+
+	Esta tabla permite informar todos los 
+	 colores posibles que se le asocian a la tabla de colores. Está previsto 
+	 un máximo de 2000 colores por tabla.
+	Color
+	Código de color.
+	Se dispone de hasta tres caracteres 
+	 para codificar el color. Por ejemplo, AZU, 
+	 AMA, BLA, 
+	 etc.
+	Nombre
+	Nombre del color.
+	Genérico
+	Es posible indicar que un color es 
+	 Genérico.
+	El uso de colores genéricos tiene 
+	 aplicación exclusiva en el circuito de producción y permite dejar 
+	 pendiente la información de colores en las Hojas de Ruta y Ordenes 
+	 de producción. Sólo puede haber un color genérico en cada tabla de 
+	 color.
+ 
+//<![CDATA[
+	if( typeof( TextPopupInit ) != 'function' ) TextPopupInit = new Function();
+	TextPopupInit('a1', 'POPUP607857183');
+	TextPopupInit('a2', 'POPUP607862555');
+	TextPopupInit('a3', 'POPUP607856688');
+//]]>
+
+

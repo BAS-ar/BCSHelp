@@ -1,0 +1,112 @@
+
+  Producción en proceso
+  Esta consulta muestra las ordenes de producción que presentan productos terminados con cantidades pendientes y con tareas que tengan indicada la planta seleccionada.
+  Los datos a ingresar para consultar las órdenes de producción son:
+  
+   Empresa
+  
+    En este campo el sistema sugiere la empresa activa. No obstante ello, este dato se puede modificar seleccionando cualquiera de las empresas instaladas.
+     
+  
+   Planta
+  
+    Código de la planta que se desea consultar. Es posible seleccionar una planta o un grupo de ellas.
+     
+  
+   Productos terminados
+  
+    En este campo el sistema ofrece un enlace a una ventana donde es posible establecer un filtro en relación a los productos terminados.
+    Es posible informar uno o varios ítems y/o un atributo de ítem y/o uno o varios valores de atributos.
+    De no seleccionar nada se muestran todos los ítems que administran stock y tienen información en el depósito indicado.
+  
+   Insumos
+  
+    En este campo el sistema ofrece un enlace a una ventana donde es posible establecer un filtro en relación a los insumos.
+    Es posible informar uno o varios ítems y/o un atributo de ítem y/o uno o varios valores de atributos y el depósito.
+    De no seleccionar nada se muestran todos los ítems que administran stock y tienen información en el depósito indicado.
+  
+   Recursos
+  
+    Es posible indicar los recursos, para consultar aquellas órdenes que los incluyan (sólo se habilita si se filtra por fecha de tarea).
+     
+  
+   Fechas
+  
+    Desde este enlace se accede a una ventana para indicar:
+     Fechas
+    Es posible indicar si se desea consultar la producción por fecha de Comprobante o de Tarea (para que se habilite esta opción debe indicarse una planta).
+     Comprobante
+     Tarea
+     Período a considerar
+  
+   Estados
+  
+    Es posible indicar los estados de producción que se desean consultar.
+    Es posible seleccionar los estados de las órdenes de producción que se desean consultar. Los estados se exhiben en la columna de la izquierda de modo de seleccionar (pasándolas a la tabla de la derecha) los estados que se desean consultar.
+    Para transferir una columna de la izquierda a la derecha y viceversa es posible hacer clic, directamente, sobre dicho estado.
+    También se dispone de botones para transferir elementos de un lado a otro:
+     Transfiere un elemento de la tabla izquierda a la tabla derecha.
+     Transfiere un elemento de la tabla derecha a la tabla izquierda
+     Transfiere todos los elementos de la tabla izquierda a la tabla derecha.
+     Transfiere todos los elementos de la tabla derecha a la tabla izquierda.
+  
+  
+   Ordenamiento
+   Ver insumos pendientes
+  
+    Si se activa este campo se exhibe la información de insumos, si no se activa, se exhibe información de productos terminados.
+     
+  
+  Exportar
+  
+    Permite la exportación a planilla de cálculo y a Excel. La planilla de cálculo es una planilla similar a la generada con un Excel pero sin utilizar dicho programa. 
+    Se debe indicar el nombre del archivo a generar y si se desea visualizar el mismo al terminar la emisión.
+  
+  
+   Para tener en cuenta
+  
+    Cuando se filtre por fecha de comprobante y se indiquen filtros de insumos y/o depósitos, se observarán las órdenes de producción que, además de cumplir con los restantes filtros, presenten alguna tarea que tenga alguno de los insumos indicados y cuyos insumos salgan de alguno de los depósitos indicados.
+    Cuando se detalle por fecha de tarea y se indiquen filtros de insumos y/o depósitos, se considerarán las tareas que, además de cumplir con los restantes filtros utilicen alguno de los insumos indicados y cuyos insumos salgan de alguno de los depósitos indicados.
+    Respecto a este filtro vale aclarar que, cuando se detalle por fecha de comprobante, una vez obtenida la orden de producción con el estado y la tarea que se detallará, en ese momento se controlará si dicho estado está incluido en el filtro de Estados, de ser así se detallará; en caso contrario, no será incluida.
+    Cuando se detalle por fecha de tarea el filtro de Estados se aplicará sobre el estado de la tarea que se está considerando.
+    Si no se tilda el campo Ver insumos pendientes del encabezado de la consulta, la grilla incluirá información del producto terminado. Si se tilda, en lugar de esta información se mostrará la que corresponde a los insumos.
+    En caso de seleccionar Ver insumos pendientes se observarán columnas relacionadas a las cantidades:
+    ·      Necesarias
+    ·      Enviadas
+    ·      Pendientes
+    En cambio, si se pidieron productos terminados las columnas muestran:
+    Si la consulta es por fecha de comprobante, las cantidades corresponden a:
+    ·       Esperadas
+    ·       Terminadas
+    ·       En proceso
+    Si la consulta es por fecha de tarea, las columnas muestran cantidades:
+    ·       A producir
+    ·       Enviado
+    ·       Terminado
+    ·       Cancelado
+    ·       En proceso
+    Cuando la tarea esté en curso y la fecha de finalización estimada sea anterior a la fecha del día (hoy), el estado indicará que está En curso-Atrasada.
+    Cuando se detalle por fecha de comprobante y se indiquen filtros de insumos y/o depósitos, se observarán las órdenes de producción que, además de cumplir con los restantes filtros, presenten alguna tarea que tenga alguno de los insumos indicados y cuyos insumos salgan de alguno de los depósitos indicados.
+    Cuando se detalle por fecha de tarea y se indiquen filtros de insumos y/o depósitos, se considerarán las tareas que, además de cumplir con los restantes filtros utilicen  alguno de los insumos indicados y cuyos insumos salgan de alguno de los depósitos indicados.
+    La última consulta de la consulta muestra el Volumen.
+    El dato que se muestra corresponde a la cantidad en primera unidad de medida del ítem por el volumen indicado en el ABM de ítems. Si el ítem no tiene volumen, se observa la celda en blanco.
+    Para el caso de los insumos se toma la cantidad indicada en la columna Pendiente y se multiplica por el volumen del insumo.
+    Para el caso de los productos terminados, si la consulta se está pidiendo por fecha de comprobante, se toma la cantidad indicada en la columna En Proceso.  Si se pide por fecha de tarea se toma la cantidad resultante de restar lo indicado en la columna A producir menos lo indicado en la columna de Enviado.
+  
+  
+  
+    //<![CDATA[
+    if (typeof(TextPopupInit) != 'function') TextPopupInit = new Function();
+    TextPopupInit('a1', 'POPUP635156636');
+    TextPopupInit('a2', 'POPUP635172484');
+    TextPopupInit('a3', 'POPUP635164267');
+    TextPopupInit('a4', 'POPUP635196021');
+    TextPopupInit('a5', 'POPUP635210574');
+    TextPopupInit('a6', 'POPUP635202966');
+    TextPopupInit('a7', 'POPUP635236506');
+    TextPopupInit('a8', 'POPUP635217054');
+    TextPopupInit('a9', 'POPUP635251643');
+    TextPopupInit('a10', 'POPUP635060434');
+    //]]>
+  
+

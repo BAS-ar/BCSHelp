@@ -1,0 +1,187 @@
+
+
+Modificación del inventario
+Este comprobante se utiliza para agregar bienes a un 
+ inventario de bienes de uso definido en el sistema que no está desafectado, 
+ o agregar servicios de tipo importe por un valor positivo o negativo según 
+ aprecien o deprecien el inventario en cuestión.
+Para registrar un comprobante de modificación del inventario 
+ de bienes de uso se debe completar, la siguiente información:
+ 
+ 
+ Fecha
+
+	Fecha de ingreso del comprobante.
+ 
+ Número
+
+	Prefijo habilitado en el sistema para 
+	 dicho tipo de comprobante.
+	 
+ 
+ Depósito
+
+	Código del depósito 
+	 del cual egresarán los bienes a incluir en el inventario a modificar.
+	 
+ 
+ Inventario
+
+	Inventario para el cual se registra la 
+	 modificación.
+	Debe corresponder al código de un inventario 
+	 ya afectado, y que no esté desafectado.
+	Al ingresar el código se completa la pantalla 
+	 con los datos del inventario y podrán modificarse algunos de estos 
+	 datos. Por ejemplo: descripción, ubicación física, centro de apropiación 
+	 A, centro de apropiación B.
+	 
+ 
+ Descripción
+
+	Exhibe la Descripción del inventario para 
+	 el cual se registra la modificación.
+	 
+ 
+ Grupo de bienes de uso
+
+	Grupo de bien de uso asociado al inventario 
+	 que se está modificando. Este dato aparece precargado en la pantalla 
+	 y no es posible modificarlo.
+	 
+ 
+ Ubicación física
+
+	Exhibe el Código de ubicación física correspondiente 
+	 al inventario indicado.
+	 
+ Centro 
+ de apropiación A
+
+	Exhibe 
+	 el Código de centro A correspondiente al inventario indicado.
+	 
+ 
+ Centro de apropiación B
+
+	Exhibe el Código de centro B correspondiente 
+	 al inventario indicado.
+ 
+ 
+ Ficha Ítems
+ Tabla de 
+ Ítems
+ 
+ Ingreso de ítems al comprobante
+ 
+ Ficha Amortización
+
+	En esta ficha se informan las modificaciones 
+	 al inventario indicado en base a los cuales se calculan las amortizaciones 
+	 del mismo.
+	Los datos que pueden modificarse son los 
+	 siguientes:
+	 Vida 
+	 útil
+	Exhibe la Vida útil del inventario.
+	Si se modifica este campo, el sistema 
+	 habilita el campo Modificar valor restante del cuadro de texto Valor 
+	 restante.
+	La vida útil determina la cantidad 
+	 de cuotas de amortización que será necesario generar para amortizar 
+	 los bienes de uso del inventario. Esta cantidad de cuotas depende 
+	 además de la vida útil transcurrida de los bienes del inventario antes 
+	 de la afectación.
+	Recordemos que las cuotas de amortización 
+	 se registran en el sistema en forma automática a través de la generación 
+	 de comprobantes de amortización, al efectuar el cierre 
+	 operativo de los correspondientes subdiarios 
+	 de Bienes de uso.
+	También se calculará el valor de amortización 
+	 en Moneda de contabilización 
+	 adicional usando el valor de origen y el valor restante en dicha 
+	 moneda, en caso de haber informado una tabla 
+	 de cotizaciones a tal efecto en los Parámetros 
+	 Generales.
+	 Vida 
+	 útil transcurrida
+	Este dato aparece precargado, en función 
+	 del bien que se desea modificar.
+	 Valor 
+	 de origen:
+	En este cuadro de texto se precargan 
+	 los siguientes datos relacionados con el bien a modificar, si es que 
+	 corresponde:
+	 
+	 Moneda local
+	Valor del inventario al momento 
+	 de la afectación, expresado en moneda local.
+	 
+	 Moneda contabilización adicional
+	Este campo sólo se encontrará 
+	 visible y habilitado si se definió una Moneda de valuación y contabilización adicional. 
+	 En ese caso se exhibirá en este campo el valor de origen expresado 
+	 en dicha moneda.
+	 Amortizaciones 
+	 previas:
+	En este cuadro de texto se precargan 
+	 los siguientes datos relacionados con el bien a modificar, si es que 
+	 corresponde:
+	 
+	 Moneda local
+	Valor de las amortizaciones previas 
+	 al momento de la afectación, expresado en moneda local.
+	 
+	 Moneda contabilización adicional
+	Este campo sólo se encontrará 
+	 visible y habilitado si se definió una Moneda de valuación y contabilización adicional. 
+	 En ese caso se exhibirá en este campo el valor de las amortizaciones 
+	 previas expresado en dicha moneda.
+	 Valor 
+	 restante
+	 
+	 Modificar valor restante
+	Si se activa este campo se pueden 
+	 modificar el valor restante del bien en moneda local, y en moneda 
+	 de contabilización adicional (si es que este último campo estuviera 
+	 habilitado).
+	 
+	 Moneda local
+	Es el valor que no se debe amortizar 
+	 expresado en moneda local.
+	Se resta del valor a amortizar 
+	 del inventario al generar las cuotas de amortización.
+	 
+	 Moneda contabilización adicional
+	Este campo sólo se encontrará 
+	 visible y habilitado si se definió una Moneda de valuación y contabilización adicional. 
+	 En ese caso se exhibirá en este campo el valor restante expresado 
+	 en dicha moneda.
+ 
+ Ficha Observaciones
+
+	 Observaciones
+	Permite ingresar un texto aclaratorio 
+	 acerca de la modificación ingresada. Este aparece en todos los informes 
+	 en los que se incluye a este comprobante.
+ 
+ Ficha Adjuntos 
+Permite adjuntar archivos externos. Una vez 
+ grabado el comprobante la administración de los archivos adjuntados se 
+ realiza desde el Proceso de Adjuntos.
+//<![CDATA[
+	if( typeof( TextPopupInit ) != 'function' ) TextPopupInit = new Function();
+	TextPopupInit('a3', 'POPUP741322481');
+	TextPopupInit('a4', 'POPUP741337041');
+	TextPopupInit('a5', 'POPUP741379405');
+	TextPopupInit('a6', 'POPUP741374646');
+	TextPopupInit('a7', 'POPUP741385424');
+	TextPopupInit('a8', 'POPUP741393012');
+	TextPopupInit('a9', 'POPUP741411026');
+	TextPopupInit('a10', 'POPUP741417263');
+	TextPopupInit('a11', 'POPUP741436836');
+	TextPopupInit('a1', 'POPUP749875520');
+	TextPopupInit('a2', 'POPUP749895078');
+//]]>
+
+

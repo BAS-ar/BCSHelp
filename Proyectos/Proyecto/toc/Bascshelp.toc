@@ -1,0 +1,771 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map type="toc">
+<title>Table of Contents</title>
+<book navtitle="Manual del usuario" format="html" processing-role="normal">
+  <page href="../contents/BASCSHTML/bienvenido.htm" format="html" processing-role="normal"></page>
+</book>
+<book navtitle="Base de datos" format="html" processing-role="normal">
+  <page href="../contents/BASCSHTML/cambio_de_empresa_sucursal.htm" format="html" processing-role="normal"></page>
+</book>
+<book navtitle="Comprobantes" format="html" processing-role="normal">
+  <book navtitle="Ventas" format="html" processing-role="normal">
+    <book navtitle="Pedidos" format="html" processing-role="normal">
+      <page href="../contents/BASCSHTML/pedidos.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Impresión" href="../contents/BASCSHTML/pedidos__Impresion.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Autorización" href="../contents/BASCSHTML/pedidos__Autorizacion.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Cancelación" href="../contents/BASCSHTML/pedidos__Cancelacion.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Registro de visitas " href="../contents/BASCSHTML/registro_de_visitas.htm" format="html" processing-role="normal"></page>
+    </book>
+    <book navtitle="Facturas" format="html" processing-role="normal">
+      <page navtitle="Ingreso" href="../contents/BASCSHTML/comprobantes_de_venta.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Impresión" href="../contents/BASCSHTML/comprobantes_de_venta__Impresion.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Autorización de notas de crédito" href="../contents/BASCSHTML/autorizacion_de_notas_de_credito.htm" format="html" processing-role="normal"></page>
+      <page href="../contents/BASCSHTML/pasaje_a_cuenta_corriente.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Reserva de crédito" href="../contents/BASCSHTML/reserva_de_credito.htm" format="html" processing-role="normal"></page>
+    </book>
+    <book navtitle="Facturas de crédito (en desuso)" format="html" processing-role="normal">
+      <page navtitle="Modificación (en desuso)" href="../contents/BASCSHTML/facturas_de_credito__Modificacion.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Impresión (en desuso)" href="../contents/BASCSHTML/facturas_de_credito__Impresion.htm" format="html" processing-role="normal"></page>
+    </book>
+    <book navtitle="Novedades de facturación" format="html" processing-role="normal">
+      <page href="../contents/BASCSHTML/novedades_por_cliente.htm" format="html" processing-role="normal"></page>
+      <page href="../contents/BASCSHTML/novedades_por_atributo.htm" format="html" processing-role="normal"></page>
+    </book>
+    <book navtitle="Generación automática" format="html" processing-role="normal">
+      <page navtitle="Reserva de mercadería por ítem" href="../contents/BASCSHTML/generacion_aut___Reserva_de_mercaderia_por_item.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Reserva de mercadería por destino" href="../contents/BASCSHTML/generacion_aut___Reserva_de_mercaderia_por_destino.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Reserva de mercadería con colores y medidas " href="../contents/BASCSHTML/generacion_aut__Reservar_mer__por_colo__y_medidas.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Reserva de mercadería automática " href="../contents/BASCSHTML/generacion_aut___Reserva_de_mercaderia_automatica.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Liberar reserva de mercadería automática" href="../contents/BASCSHTML/generacion_aut___Liberar_reserva_de_mercaderia_aut_.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Generación" href="../contents/BASCSHTML/generacion_automatica.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Modificación del lote de facturas automáticas" href="../contents/BASCSHTML/generacion_aut___Modif__del_lote_de_fact__autom_.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Modificación del lote de egresos automáticos" href="../contents/BASCSHTML/generacion_aut___Modif__del_lote_de_egresos_aut_.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Cierre de lote" href="../contents/BASCSHTML/generacion_automatica__Cierre_del_lote.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Eliminación del lote" href="../contents/BASCSHTML/generacion_automatica__Eliminacion_del_lote.htm" format="html" processing-role="normal"></page>
+    </book>
+    <book navtitle="Distribución " format="html" processing-role="normal">
+      <page navtitle="Distribución de carga" href="../contents/BASCSHTML/distribucion_de_cargas.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Edición de carga" href="../contents/BASCSHTML/edicion_de_carga.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Cierre de carga / Generación de guía" href="../contents/BASCSHTML/cierre_de_carga_Generacion_guia.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Impresión de guías" href="../contents/BASCSHTML/impresion_de_guias.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Cierre de guía" href="../contents/BASCSHTML/cierre_de_guia.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Cierre de camión" href="../contents/BASCSHTML/cierre_de_camion.htm" format="html" processing-role="normal"></page>
+    </book>
+  </book>
+  <book navtitle="Compras" format="html" processing-role="normal">
+    <page navtitle="Carpetas de Importación" href="../contents/BASCSHTML/carpetas_de_importacion.htm" format="html" processing-role="normal"></page>
+    <book navtitle="Pedidos internos" format="html" processing-role="normal">
+      <page navtitle="Ingreso" href="../contents/BASCSHTML/pedidos_internos.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Impresión" href="../contents/BASCSHTML/pedidos_internos__Impresion.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Autorización" href="../contents/BASCSHTML/pedidos_internos__Autorizacion.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Cancelación" href="../contents/BASCSHTML/pedidos_internos__Cancelacion.htm" format="html" processing-role="normal"></page>
+    </book>
+    <book navtitle="Requerimientos" format="html" processing-role="normal">
+      <page href="../contents/BASCSHTML/requerimientos_de_compra_o_produccion.htm" format="html" processing-role="normal"></page>
+      <page href="../contents/BASCSHTML/requerimientos_de_compra__Autorizacion.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Cancelación" href="../contents/BASCSHTML/requerimientos_de_compra_produccion__Cancelacion.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Impresión" href="../contents/BASCSHTML/requerimientos_de_compra_o_produccion__Impresion.htm" format="html" processing-role="normal"></page>
+      <page href="../contents/BASCSHTML/requerimientos_de_compra__Autorizacion.htm" format="html" processing-role="normal"></page>
+    </book>
+    <book navtitle="Cotizaciones" format="html" processing-role="normal">
+      <page href="../contents/BASCSHTML/registro_de_cotizaciones.htm" format="html" processing-role="normal"></page>
+    </book>
+    <book navtitle="Ordenes de compra" format="html" processing-role="normal">
+      <page navtitle="Ingreso" href="../contents/BASCSHTML/ordenes_de_Compra.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Impresión" href="../contents/BASCSHTML/ordenes_de_compra__Impresion.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Autorización" href="../contents/BASCSHTML/ordenes_de_compra__Autorizacion.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Cancelación" href="../contents/BASCSHTML/ordenes_de_compra__Cancelacion.htm" format="html" processing-role="normal"></page>
+    </book>
+    <book navtitle="Facturas" format="html" processing-role="normal">
+      <page navtitle="Ingreso" href="../contents/BASCSHTML/comprobantes_de_compra.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Impresión" href="../contents/BASCSHTML/comprobantes_de_compras__Impresion.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Autorización" href="../contents/BASCSHTML/autorizacion_de_facturas_de_compra.htm" format="html" processing-role="normal"></page>
+      <page href="../contents/BASCSHTML/comprobantes_de_compras__Fecha_impositiva.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Imputación del I.V.A. al Costo" href="../contents/BASCSHTML/imputacion_del_IVA_al_Costo.htm" format="html" processing-role="normal"></page>
+    </book>
+  </book>
+  <book navtitle="Movimientos de materiales" format="html" processing-role="normal">
+    <page navtitle="Despacho de importación" href="../contents/BASCSHTML/despachos.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/partidas.htm" format="html" processing-role="normal"></page>
+    <page navtitle="Revalúo de materiales" href="../contents/BASCSHTML/revaluo_de_materiales.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/pasaje_a_mesa_de_saldos.htm" format="html" processing-role="normal"></page>
+    <book navtitle="Ingresos" format="html" processing-role="normal">
+      <page navtitle="Ingreso" href="../contents/BASCSHTML/ingresos_de_mercaderia.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Control " href="../contents/BASCSHTML/ingresos_de_mercaderia__Control.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Impresión" href="../contents/BASCSHTML/ingresos_de_mercaderia__Impresion.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Cancelación" href="../contents/BASCSHTML/ingresos_de_mercaderia__Cancelacion.htm" format="html" processing-role="normal"></page>
+      <page href="../contents/BASCSHTML/control_de_Calidad.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Resolución de Partes de Diferencias" href="../contents/BASCSHTML/resolucion_de_Partes_de_Diferencias.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Resolución de Transferencias Incompletas" href="../contents/BASCSHTML/resolucion_de_transferencias_incompletas.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Autorización" href="../contents/BASCSHTML/ingresos_de_mercaderia__Autorizacion.htm" format="html" processing-role="normal"></page>
+    </book>
+    <book navtitle="Egresos" format="html" processing-role="normal">
+      <page href="../contents/BASCSHTML/comprobantes_de_egreso_de_mercaderia.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Impresión" href="../contents/BASCSHTML/comprobantes_de_egreso_de_mercaderia__Impresion.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Generación archivo de egresos" href="../contents/BASCSHTML/generacion_archivo_de_egresos.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Cancelación de egresos diferidos " href="../contents/BASCSHTML/cancelacion_de_egresos_de_mercaderia_diferidos.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Cancelación de egresos" href="../contents/BASCSHTML/cancelacion_de_egresos_de_mercaderia.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Control " href="../contents/BASCSHTML/comprobantes_de_egreso_de_mercaderia__Control.htm" format="html" processing-role="normal"></page>
+      <page href="../contents/BASCSHTML/armado_de_transferencias.htm" format="html" processing-role="normal"></page>
+    </book>
+    <book navtitle="Ubicar en depósito" format="html" processing-role="normal">
+      <page navtitle="Ingreso" href="../contents/BASCSHTML/reubicar_en_el_deposito.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Impresión" href="../contents/BASCSHTML/reubicar_en_el_deposito__Impresion.htm" format="html" processing-role="normal"></page>
+    </book>
+  </book>
+  <book navtitle="Cajas" format="html" processing-role="normal">
+    <page navtitle="Rendición de gastos" href="../contents/BASCSHTML/rendicion_de_gastos.htm" format="html" processing-role="normal"></page>
+    <book navtitle="Ordenes de pago" format="html" processing-role="normal">
+      <page href="../contents/BASCSHTML/ordenes_de_pago.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Impresión" href="../contents/BASCSHTML/ordenes_de_pago__Impresion.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Autorización" href="../contents/BASCSHTML/ordenes_de_pago__Autorizacion.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Efectivización " href="../contents/BASCSHTML/ordenes_de_pago__Efectivizacion.htm" format="html" processing-role="normal"></page>
+      <page href="../contents/BASCSHTML/ordenes_de_pago__Recibo_asociado.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Impresión de cheques" href="../contents/BASCSHTML/impresion_de_cheques.htm" format="html" processing-role="normal"></page>
+      <book navtitle="Comprobantes de retención" format="html" processing-role="normal">
+        <page navtitle="Retención de ganancias" href="../contents/BASCSHTML/impresion_de_comprob__de_retencion_de_ganancias.htm" format="html" processing-role="normal"></page>
+        <page navtitle="Retención de I.V.A." href="../contents/BASCSHTML/impresion_de_comprobantes_de_retencion_de_I_V_A_.htm" format="html" processing-role="normal"></page>
+        <page navtitle="Retención de Ing. Brutos" href="../contents/BASCSHTML/impresion_de_comprob__de_ret__de_ingresos_brutos.htm" format="html" processing-role="normal"></page>
+        <page navtitle="Retención de S.U.S.S." href="../contents/BASCSHTML/impresion_de_comprob__de_retencion_de_S_U_S_S_.htm" format="html" processing-role="normal"></page>
+        <page href="../contents/BASCSHTML/impresion_de_otras_retenciones.htm" format="html" processing-role="normal"></page>
+      </book>
+    </book>
+    <book navtitle="Recibos" format="html" processing-role="normal">
+      <page href="../contents/BASCSHTML/recibos.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Impresión" href="../contents/BASCSHTML/recibos__Impresion.htm" format="html" processing-role="normal"></page>
+    </book>
+    <book navtitle="Comprobantes internos" format="html" processing-role="normal">
+      <page href="../contents/BASCSHTML/comprobantes_internos_de_caja.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Impresión" href="../contents/BASCSHTML/comprobantes_internos_de_caja__Impresion.htm" format="html" processing-role="normal"></page>
+    </book>
+    <book navtitle="Transferencias" format="html" processing-role="normal">
+      <page href="../contents/BASCSHTML/transferencias_entre_cajas.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Impresión" href="../contents/BASCSHTML/transferencias_entre_cajas__Impresion.htm" format="html" processing-role="normal"></page>
+    </book>
+  </book>
+  <book navtitle="Bancos" format="html" processing-role="normal">
+    <page navtitle="Débitos bancarios" href="../contents/BASCSHTML/debitos_bancarios.htm" format="html" processing-role="normal"></page>
+    <page navtitle="Créditos bancarios" href="../contents/BASCSHTML/creditos_bancarios.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/rechazo_de_cheques.htm" format="html" processing-role="normal"></page>
+    <page navtitle="Liquidación de tarjetas" href="../contents/BASCSHTML/tarjetas__Liquidacion.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/tarjetas__Rechazo_de_cupones.htm" format="html" processing-role="normal"></page>
+    <book navtitle="Extracciones bancarias" format="html" processing-role="normal">
+      <page href="../contents/BASCSHTML/extracciones_bancarias.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Impresión Extracciones Bancarias" href="../contents/BASCSHTML/extracciones_bancarias__Impresion.htm" format="html" processing-role="normal"></page>
+    </book>
+    <book navtitle="Depósitos" format="html" processing-role="normal">
+      <page href="../contents/BASCSHTML/depositos_bancarios.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Impresión" href="../contents/BASCSHTML/depositos_bancarios__Impresion.htm" format="html" processing-role="normal"></page>
+    </book>
+    <book navtitle="Presentación de tarjetas" format="html" processing-role="normal">
+      <page href="../contents/BASCSHTML/tarjetas__Presentacion.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Impresión" href="../contents/BASCSHTML/tarjetas__Impresion_de_presentaciones.htm" format="html" processing-role="normal"></page>
+    </book>
+  </book>
+  <book navtitle="Asientos de diario" format="html" processing-role="normal">
+    <page href="../contents/BASCSHTML/asientos__Ingreso.htm" format="html" processing-role="normal"></page>
+    <page navtitle="Reversión" href="../contents/BASCSHTML/asientos__Reversion.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/asientos_de_ajuste.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/asientos_de_cierre_de_ejercicio.htm" format="html" processing-role="normal"></page>
+    <page navtitle="Impresión" href="../contents/BASCSHTML/asientos__Impresion.htm" format="html" processing-role="normal"></page>
+  </book>
+  <book navtitle="Producción " format="html" processing-role="normal">
+    <book navtitle="Ordenes de producción" format="html" processing-role="normal">
+      <page href="../contents/BASCSHTML/ordenes_de_produccion.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Impresión" href="../contents/BASCSHTML/ordenes_de_produccion__Impresion.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Autorización" href="../contents/BASCSHTML/ordenes_de_produccion__Autorizacion.htm" format="html" processing-role="normal"></page>
+      <page href="../contents/BASCSHTML/ordenes_de_produccion__Control.htm" format="html" processing-role="normal"></page>
+      <page href="../contents/BASCSHTML/ordenes_de_produccion__Cierre.htm" format="html" processing-role="normal"></page>
+      <page href="../contents/BASCSHTML/ordenes_de_produccion__Reapertura.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Cancelación" href="../contents/BASCSHTML/ordenes_de_produccion__Cancelacion.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Modificación de ordenes de producción" href="../contents/BASCSHTML/ordenes_de_produccion__Modificacion.htm" format="html" processing-role="normal"></page>
+      <book navtitle="Tareas" format="html" processing-role="normal">
+        <page href="../contents/BASCSHTML/ordenes_de_produccion__Iniciar_tarea.htm" format="html" processing-role="normal"></page>
+        <page href="../contents/BASCSHTML/ordenes_de_produccion__Parte_parcial.htm" format="html" processing-role="normal"></page>
+        <page href="../contents/BASCSHTML/ordenes_de_produccion__Terminar_tarea.htm" format="html" processing-role="normal"></page>
+        <page href="../contents/BASCSHTML/ordenes_de_produccion__Anular_inicio.htm" format="html" processing-role="normal"></page>
+        <page navtitle="Anular terminación" href="../contents/BASCSHTML/ordenes_de_produccion__Anular_terminacion.htm" format="html" processing-role="normal"></page>
+        <page navtitle="Generar Orden de compra" href="../contents/BASCSHTML/ordenes_de_produccion__Generar_orden_de_compra.htm" format="html" processing-role="normal"></page>
+      </book>
+    </book>
+    <book navtitle="Partes de producción" format="html" processing-role="normal">
+      <page navtitle="Partes de producción" href="../contents/BASCSHTML/partes_de_produccion.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Impresión" href="../contents/BASCSHTML/partes_de_produccion__Impresion.htm" format="html" processing-role="normal"></page>
+    </book>
+  </book>
+  <book navtitle="Bienes de uso" format="html" processing-role="normal">
+    <page navtitle="Afectación de bienes de uso" href="../contents/BASCSHTML/bienes_de_uso__Afectacion.htm" format="html" processing-role="normal"></page>
+    <page navtitle="Modificación del inventario" href="../contents/BASCSHTML/bienes_de_uso__Modificacion_del_inventario.htm" format="html" processing-role="normal"></page>
+    <page navtitle="Desafectación a bienes de uso" href="../contents/BASCSHTML/bienes_de_uso__Desafectacion.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/bienes_de_uso__Ajuste.htm" format="html" processing-role="normal"></page>
+  </book>
+  <book navtitle="Comprobantes internos de cuenta corriente" format="html" processing-role="normal">
+    <page href="../contents/BASCSHTML/comprobantes_internos_de_cuenta_corriente.htm" format="html" processing-role="normal"></page>
+    <page navtitle="Impresión" href="../contents/BASCSHTML/comprob__internos_de_cuenta_corriente__Impresion.htm" format="html" processing-role="normal"></page>
+  </book>
+  <book navtitle="Fiscalización electrónica" format="html" processing-role="normal">
+    <page navtitle="Administrador de comprobantes electrónicos" href="../contents/BASCSHTML/administrador_de_comprobantes_electronicos.htm" format="html" processing-role="normal"></page>
+    <page navtitle="Importación de CAE" href="../contents/BASCSHTML/importacion_de_CAE.htm" format="html" processing-role="normal"></page>
+    <page navtitle="Modificación de Cae" href="../contents/BASCSHTML/modificacion_de_Cae.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/comprobantes_de_credito_rechazados.htm" format="html" processing-role="normal"></page>
+  </book>
+</book>
+<book navtitle="Procesos" format="html" processing-role="normal">
+  <page navtitle="Exportación a la colectora " href="../contents/BASCSHTML/exportacion_a_la_colectora.htm" format="html" processing-role="normal"></page>
+  <page navtitle="Eliminación" href="../contents/BASCSHTML/eliminacion_de_comprobantes.htm" format="html" processing-role="normal"></page>
+  <page navtitle="Anulación" href="../contents/BASCSHTML/anulacion_de_comprobantes.htm" format="html" processing-role="normal"></page>
+  <page navtitle="Anulación de cheques" href="../contents/BASCSHTML/anulacion_de_cheques.htm" format="html" processing-role="normal"></page>
+  <page href="../contents/BASCSHTML/efectivizacion_de_cheques_diferidos_emitidos.htm" format="html" processing-role="normal"></page>
+  <page navtitle="Renumeración de asientos del diario" href="../contents/BASCSHTML/renumeracion_de_asientos_del_diario.htm" format="html" processing-role="normal"></page>
+  <page navtitle="Reasignación de subdiarios" href="../contents/BASCSHTML/reasignacion_de_subdiarios.htm" format="html" processing-role="normal"></page>
+  <page navtitle="Evaluación de proveedores" href="../contents/BASCSHTML/evaluacion_de_proveedores.htm" format="html" processing-role="normal"></page>
+  <page navtitle="Evaluación de pagos" href="../contents/BASCSHTML/evaluacion_de_pagos.htm" format="html" processing-role="normal"></page>
+  <page navtitle="Evaluación de monotributistas" href="../contents/BASCSHTML/evaluacion_de_monotributistas.htm" format="html" processing-role="normal"></page>
+  <page navtitle="Incorporación a padrones" href="../contents/BASCSHTML/incorporacion_a_padrones.htm" format="html" processing-role="normal"></page>
+  <page href="../contents/BASCSHTML/adjuntos.htm" format="html" processing-role="normal"></page>
+  <page navtitle="Efect. de mesa de saldos" href="../contents/BASCSHTML/efectivizacion_de_mesa_de_saldos.htm" format="html" processing-role="normal"></page>
+  <page href="../contents/BASCSHTML/valuacion.htm" format="html" processing-role="normal"></page>
+  <book navtitle="Cuenta Corriente" format="html" processing-role="normal">
+    <page href="../contents/BASCSHTML/aplicaciones_de_cuentas_corrientes.htm" format="html" processing-role="normal"></page>
+    <page navtitle="Cancelación automática de saldos" href="../contents/BASCSHTML/cancelacion_automatica_de_saldos.htm" format="html" processing-role="normal"></page>
+    <page navtitle="Eliminación de diferencias de cambio" href="../contents/BASCSHTML/eliminacion_de_diferencias_de_cambio.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/notas_de_debito_credito_por_dif__de_cambio.htm" format="html" processing-role="normal"></page>
+  </book>
+  <book navtitle="Cuentas a cobrar" format="html" processing-role="normal">
+    <page navtitle="Refinanciación de vencimientos - A cobrar" href="../contents/BASCSHTML/refinanciacion_de_vencimientos___A_cobrar.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/notas_de_debito_credito_por_dif__de_cambio.htm" format="html" processing-role="normal"></page>
+  </book>
+  <book navtitle="Cuentas a pagar" format="html" processing-role="normal">
+    <page navtitle="Refinanciación de vencimientos" href="../contents/BASCSHTML/refinanciacion_de_vencimientos___A_pagar.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/generacion_de_liq__por_diferencias_de_cambio.htm" format="html" processing-role="normal"></page>
+  </book>
+  <book navtitle="Inventario físico" format="html" processing-role="normal">
+    <page href="../contents/BASCSHTML/inventario__Inicio.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/inventario__Registro.htm" format="html" processing-role="normal"></page>
+    <page navtitle="Importación por archivo" href="../contents/BASCSHTML/inventario__Importacion_por_archivo.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/inventario__Cierre.htm" format="html" processing-role="normal"></page>
+    <page navtitle="Informe Control de inventario" href="../contents/BASCSHTML/listado__Control_de_inventario.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/inventario__Planilla_para_toma.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/inventario__Comprobantes_de_ajuste.htm" format="html" processing-role="normal"></page>
+  </book>
+  <book navtitle="Conciliación bancaria" format="html" processing-role="normal">
+    <page href="../contents/BASCSHTML/conciliacion_bancaria.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/conciliacion_bancaria__Cierre.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/conciliacion_bancaria__Reapertura.htm" format="html" processing-role="normal"></page>
+  </book>
+  <book navtitle="Cierres" format="html" processing-role="normal">
+    <page href="../contents/BASCSHTML/cierre_operativo.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/reapertura_del_cierre_operativo.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/cierre_de_negocios.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/cierre_de_caja.htm" format="html" processing-role="normal"></page>
+    <page navtitle="Depósito" href="../contents/BASCSHTML/cierre_de_deposito.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/cierre_fiscal.htm" format="html" processing-role="normal"></page>
+    <page navtitle="Depuración de datos históricos" href="../contents/BASCSHTML/depuracion_de_datos_historicos.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/cierre_de_ejercicio.htm" format="html" processing-role="normal"></page>
+    <book navtitle="Rendiciones de gastos" format="html" processing-role="normal">
+      <page href="../contents/BASCSHTML/rendicion_de_gastos__Cierre.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Reapertura" href="../contents/BASCSHTML/rendicion_de_gastos__Reapertura.htm" format="html" processing-role="normal"></page>
+    </book>
+  </book>
+</book>
+<book navtitle="Informes" format="html" processing-role="normal">
+  <book navtitle="Cuentas a cobrar" format="html" processing-role="normal">
+    <page navtitle="Análisis de cuentas" href="../contents/BASCSHTML/listado__Analisis_de_cuentas___A_cobrar.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/listado__Saldos___A_cobrar.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/listado__Vencimientos___A_cobrar.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/listado__Resumen_de_cuentas___A_cobrar.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/listado__Diferencias_de_cambio___A_cobrar.htm" format="html" processing-role="normal"></page>
+    <page navtitle="Análisis de cobranzas" href="../contents/BASCSHTML/listado__Analisis_de_cobranzas.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/listado__Comprob__internos_de_cta__cte___A_cobrar.htm" format="html" processing-role="normal"></page>
+    <page navtitle="Facturas de crédito pendientes" href="../contents/BASCSHTML/listado__Fact__de_credito_a_cobrar_pend__recep_.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/listado__Aging.htm" format="html" processing-role="normal"></page>
+    <page navtitle="Cancelación de saldos" href="../contents/BASCSHTML/listado__Cancelacion_de_saldos___A_cobrar.htm" format="html" processing-role="normal"></page>
+  </book>
+  <book navtitle="Cuentas a pagar" format="html" processing-role="normal">
+    <page navtitle="Análisis de cuentas" href="../contents/BASCSHTML/listado__Analisis_de_cuentas___A_pagar.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/listado__Saldos___A_pagar.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/listado__Vencimientos___A_pagar.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/listado__Resumen_de_cuentas___A_pagar.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/listado__Diferencias_de_cambio___A_pagar.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/listado__Comprob__internos_de_cta__cte____A_pagar.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/listado__Fact__de_comp__con_rec__FC_pend__recep_.htm" format="html" processing-role="normal"></page>
+    <page navtitle="Cancelación de saldos" href="../contents/BASCSHTML/listado__Cancelacion_de_saldos___A_pagar.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/listado__Analisis_de_pagos.htm" format="html" processing-role="normal"></page>
+  </book>
+  <book navtitle="Movimientos de materiales" format="html" processing-role="normal">
+    <page navtitle="Stock físico" href="../contents/BASCSHTML/listado__Stock_fisico.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/listado__Despachos.htm" format="html" processing-role="normal"></page>
+    <page navtitle="Números de serie" href="../contents/BASCSHTML/listado__Series.htm" format="html" processing-role="normal"></page>
+    <page navtitle="Ingresos de mercadería" href="../contents/BASCSHTML/listado__Ingresos_de_mercaderia.htm" format="html" processing-role="normal"></page>
+    <page navtitle="Egresos de mercadería" href="../contents/BASCSHTML/listado__Egresos_de_mercaderia.htm" format="html" processing-role="normal"></page>
+    <page navtitle="Revalúo de materiales" href="../contents/BASCSHTML/listado__Revaluo_de_materiales.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/listado__Movimientos_de_materiales.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/listado__Detalle_de_movimientos_valorizados.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/listado__Stock_valorizado.htm" format="html" processing-role="normal"></page>
+    <page navtitle="Rotación de inventario" href="../contents/BASCSHTML/listado__Rotacion_de_inventario.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/listado__Stock_disponible.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/listado__Necesidad_de_abastecimiento.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/listado__Resumen_de_movimientos_por_concepto.htm" format="html" processing-role="normal"></page>
+    <page navtitle="Requerimientos por ítem " href="../contents/BASCSHTML/listado__Requerimientos_por_item.htm" format="html" processing-role="normal"></page>
+    <page navtitle="Requerimientos " href="../contents/BASCSHTML/listado__Requerimientos.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/listado__Pedidos_internos.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/listado__Armado_de_transferencias.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/listado__Partes_de_diferencias.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/listado__Stock_inmovilizado.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/listado__Efectividad_de_entregas.htm" format="html" processing-role="normal"></page>
+    <page navtitle="Errores de la valorización" href="../contents/BASCSHTML/listado__Errores_de_la_valorizacion.htm" format="html" processing-role="normal"></page>
+    <page navtitle="Mesa de Saldos" href="../contents/BASCSHTML/listado__Mesa_de_saldos.htm" format="html" processing-role="normal"></page>
+  </book>
+  <book navtitle="Producción" format="html" processing-role="normal">
+    <page navtitle="Comprobantes de producción" href="../contents/BASCSHTML/listado__Comprobantes_de_produccion.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/listado__Disponibilidad_de_insumos.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/listado__Hojas_de_ruta.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/listado__Calendario_de_recursos.htm" format="html" processing-role="normal"></page>
+    <page navtitle="Estimación de costos" href="../contents/BASCSHTML/listado__Estimacion_de_costos.htm" format="html" processing-role="normal"></page>
+    <page navtitle="Producción posible" href="../contents/BASCSHTML/listado__Produccion_posible.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/listado__Productos_en_proceso.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/listado__Productividad_de_recursos.htm" format="html" processing-role="normal"></page>
+    <page navtitle="Servicios de terceros" href="../contents/BASCSHTML/listado__Servicios_de_terceros.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/listado__Estadistica_de_produccion.htm" format="html" processing-role="normal"></page>
+    <book navtitle="Desvíos" format="html" processing-role="normal">
+      <page navtitle="Desvíos de Planificación" href="../contents/BASCSHTML/listado__Desvios_de_planificacion.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Desvíos en productividad" href="../contents/BASCSHTML/listado__Desvios_en_productividad.htm" format="html" processing-role="normal"></page>
+    </book>
+  </book>
+  <book navtitle="Movimiento de fondos" format="html" processing-role="normal">
+    <page href="../contents/BASCSHTML/listado__Inventario_de_valores.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/listado__Valores_egresados.htm" format="html" processing-role="normal"></page>
+    <page navtitle="Cupones pendientes de acreditación" href="../contents/BASCSHTML/listado__Cupones_pendientes_de_acreditacion.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/listado__Comprobantes_de_cajas.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/listado__Comprobantes_de_bancos.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/listado__Saldos_bancarios.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/listado__Resumen_de_cuenta_bancaria.htm" format="html" processing-role="normal"></page>
+    <page navtitle="Rendición de gastos" href="../contents/BASCSHTML/listado__Rendicion_de_gastos.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/listado__Arqueo_de_caja.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/listado__Flujo_de_fondos.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/listado__Flujo_de_fondos_presupuestado.htm" format="html" processing-role="normal"></page>
+    <page navtitle="Origen y aplicación de fondos" href="../contents/BASCSHTML/listado__Origen_y_aplicacion_de_fondos.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/listado__Comisiones_por_cobranzas.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/listado__Cobros_y_pagos_por_banco.htm" format="html" processing-role="normal"></page>
+    <book navtitle="Conciliación bancaria" format="html" processing-role="normal">
+      <page navtitle="Conciliación" href="../contents/BASCSHTML/listado__Conciliacion.htm" format="html" processing-role="normal"></page>
+      <page href="../contents/BASCSHTML/listado__Operaciones_tildadas.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Conciliación por archivo" href="../contents/BASCSHTML/conciliacion_por_archivo.htm" format="html" processing-role="normal"></page>
+    </book>
+  </book>
+  <book navtitle="Contables e impositivos" format="html" processing-role="normal">
+    <page href="../contents/BASCSHTML/listado__Diario.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/listado__Mayores.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/listado__Balance.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/listado__Balance_comparativo.htm" format="html" processing-role="normal"></page>
+    <page navtitle="Centros de apropiación" href="../contents/BASCSHTML/listado__Movimientos_por_centro_de_apropiacion.htm" format="html" processing-role="normal"></page>
+    <page navtitle="Posición impositiva" href="../contents/BASCSHTML/listado__Posicion_impositiva.htm" format="html" processing-role="normal"></page>
+    <page navtitle="Informes de retención" href="../contents/BASCSHTML/listado__Informes_de_retencion.htm" format="html" processing-role="normal"></page>
+    <page navtitle="Informes de percepción" href="../contents/BASCSHTML/listado__Informes_de_percepcion.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/listado__Impuestos_internos.htm" format="html" processing-role="normal"></page>
+    <page navtitle="Libro de fact. de créd. emitidas" href="../contents/BASCSHTML/listado__Libro_de_facturas_de_credito_emitidas.htm" format="html" processing-role="normal"></page>
+    <page navtitle="Análisis de ajustes" href="../contents/BASCSHTML/listado__Analisis_de_ajustes.htm" format="html" processing-role="normal"></page>
+    <book navtitle="Cuadros definibles" format="html" processing-role="normal">
+      <page navtitle="Definición" href="../contents/BASCSHTML/tabla__Cuadros_definibles.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Emisión" href="../contents/BASCSHTML/listado__Emision_de_cuadros_definibles.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Emisión de formatos" href="../contents/BASCSHTML/listado__Emision_del_formato_de_cuadros_def_.htm" format="html" processing-role="normal"></page>
+    </book>
+    <book navtitle="Ingresos brutos" format="html" processing-role="normal">
+      <page href="../contents/BASCSHTML/listado__Ingresos_brutos___Compras.htm" format="html" processing-role="normal"></page>
+      <page href="../contents/BASCSHTML/listado__Ingresos_brutos___Ventas.htm" format="html" processing-role="normal"></page>
+    </book>
+    <book navtitle="Tasa departamental" format="html" processing-role="normal">
+      <page href="../contents/BASCSHTML/listado__Tasa_departamental_por_comprobante.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Por ítem" href="../contents/BASCSHTML/listado__Tasa_departamental_por_item.htm" format="html" processing-role="normal"></page>
+    </book>
+  </book>
+  <book navtitle="Bienes de uso" format="html" processing-role="normal">
+    <page href="../contents/BASCSHTML/listado__Comprobantes_de_bienes_de_uso.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/listado__Inventario_de_bienes_de_uso.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/listado__Anexo_bienes_de_uso.htm" format="html" processing-role="normal"></page>
+    <page navtitle="Análisis de ajustes de bienes de uso" href="../contents/BASCSHTML/listado__Analisis_de_ajustes_de_bienes_de_uso.htm" format="html" processing-role="normal"></page>
+  </book>
+  <book navtitle="Estadísticas de compras" format="html" processing-role="normal">
+    <page navtitle="Estadísticas de compras" href="../contents/BASCSHTML/listado__Estadistica_de_compras.htm" format="html" processing-role="normal"></page>
+  </book>
+  <book navtitle="Estadísticas de ventas" format="html" processing-role="normal">
+    <page navtitle="Estadísticas de ventas" href="../contents/BASCSHTML/listado__Estadistica_de_ventas.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/listado__Clientes_sin_ventas.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/listado__Rentabilidad_bruta.htm" format="html" processing-role="normal"></page>
+  </book>
+  <book navtitle="Administración de ventas" format="html" processing-role="normal">
+    <page href="../contents/BASCSHTML/listado__Pedidos.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/listado__Pedidos_pendientes.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/listado__Pedidos_pendientes_por_atributo.htm" format="html" processing-role="normal"></page>
+    <page navtitle="Visitas " href="../contents/BASCSHTML/listado__Visitas.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/listado__Comisiones_por_ventas.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/listado__Comprobantes_de_ventas.htm" format="html" processing-role="normal"></page>
+    <page navtitle="Ítems por lote/carga/guía" href="../contents/BASCSHTML/listado__Items_por_lote_carga_guia.htm" format="html" processing-role="normal"></page>
+    <page navtitle="Comprobantes por lote/carga/guía" href="../contents/BASCSHTML/listado__Comprobantes_por_lote_carga_guia.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/listado__Novedades.htm" format="html" processing-role="normal"></page>
+    <page navtitle="Negocios " href="../contents/BASCSHTML/listado__Negocios.htm" format="html" processing-role="normal"></page>
+  </book>
+  <book navtitle="Administración de compras" format="html" processing-role="normal">
+    <page href="../contents/BASCSHTML/listado__Comprobantes_de_compras.htm" format="html" processing-role="normal"></page>
+    <page navtitle="Auditoría de compras" href="../contents/BASCSHTML/listado__Auditoria_de_compras.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/listado__Ordenes_de_compra_pendientes.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/listado__Ordenes_de_compra.htm" format="html" processing-role="normal"></page>
+    <page navtitle="Estado de órdenes de compra" href="../contents/BASCSHTML/listado__Estado_de_ordenes_de_compra.htm" format="html" processing-role="normal"></page>
+    <page navtitle="Cotizaciones por comprobante " href="../contents/BASCSHTML/listado__Cotizaciones_por_comprobante.htm" format="html" processing-role="normal"></page>
+    <page navtitle="Cotizaciones por ítem " href="../contents/BASCSHTML/listado__Cotizaciones_por_item.htm" format="html" processing-role="normal"></page>
+    <page navtitle="Carpetas de Importación" href="../contents/BASCSHTML/listado__Carpetas_de_importacion.htm" format="html" processing-role="normal"></page>
+  </book>
+  <book navtitle="Etiquetas" format="html" processing-role="normal">
+    <page navtitle="Etiquetas de clientes" href="../contents/BASCSHTML/listado__Etiquetas_de_clientes.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/listado__Etiquetas_de_productos.htm" format="html" processing-role="normal"></page>
+    <page navtitle="Etiquetas de proveedores" href="../contents/BASCSHTML/listado__Etiquetas_de_proveedores.htm" format="html" processing-role="normal"></page>
+  </book>
+  <book navtitle="Auditoría" format="html" processing-role="normal">
+    <page href="../contents/BASCSHTML/listado__Auditoria_de_ingreso_de_comprobantes.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/listado__Auditoria_de_chequeras.htm" format="html" processing-role="normal"></page>
+    <page navtitle="Impresión de comprobantes" href="../contents/BASCSHTML/listado__Auditoria_de_impresion_de_comprobantes.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/listado__Control_de_secuencia_de_comprobantes.htm" format="html" processing-role="normal"></page>
+    <page navtitle="Emisión de informes" href="../contents/BASCSHTML/listado__Auditoria_de_Emision_de_Informes.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/listado__Auditoria_de_precios_y_bonificaciones_digitadas.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/listado__Estado_de_autorizaciones.htm" format="html" processing-role="normal"></page>
+  </book>
+  <book navtitle="Tablas" format="html" processing-role="normal">
+    <page href="../contents/BASCSHTML/listado__Clientes.htm" format="html" processing-role="normal"></page>
+    <page navtitle="Ítems" href="../contents/BASCSHTML/listado__Items.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/listado__Proveedores.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/listado__Plan_de_cuentas.htm" format="html" processing-role="normal"></page>
+    <page navtitle="Vistas" href="../contents/BASCSHTML/listado__Vistas.htm" format="html" processing-role="normal"></page>
+    <page navtitle="Centros de apropiación" href="../contents/BASCSHTML/listado__Centros_de_apropiacion.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/listado__Impuestos.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/listado__Posiciones_contables.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/listado__Tratamientos_impositivos.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/listado__Tratamientos_impositivos_provinciales.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/listado__Tablas_de_bonificaciones.htm" format="html" processing-role="normal"></page>
+    <page navtitle="Índices y Cotizaciones" href="../contents/BASCSHTML/listado__Indices_y_Cotizaciones.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/listado__Tablas_de_despachos.htm" format="html" processing-role="normal"></page>
+    <page navtitle="Permisos de Importación " href="../contents/BASCSHTML/listado__Permisos_de_importacion.htm" format="html" processing-role="normal"></page>
+  </book>
+  <book navtitle="Consultas" format="html" processing-role="normal">
+    <page navtitle="Clientes" href="../contents/BASCSHTML/consulta_de_clientes.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/consulta_de_proveedores.htm" format="html" processing-role="normal"></page>
+    <page navtitle="Depósitos/Plantas" href="../contents/BASCSHTML/consulta_de_Depositos_Plantas.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/consulta_de_cheques.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/consulta_de_cupones.htm" format="html" processing-role="normal"></page>
+    <page navtitle="Bienes de uso " href="../contents/BASCSHTML/consulta_de_bienes_de_uso.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/consulta_de_comprobantes.htm" format="html" processing-role="normal"></page>
+    <page navtitle="Estado de autorizaciones" href="../contents/BASCSHTML/consulta_de_estado_de_autorizaciones.htm" format="html" processing-role="normal"></page>
+    <page navtitle="Listas de comprobantes" href="../contents/BASCSHTML/consulta_de_listas_de_comprobantes.htm" format="html" processing-role="normal"></page>
+    <page navtitle="Producción en proceso" href="../contents/BASCSHTML/consulta_de_produccion_en_proceso.htm" format="html" processing-role="normal"></page>
+    <book navtitle="Items" format="html" processing-role="normal">
+      <page href="../contents/BASCSHTML/consulta_de_items_(Ventas).htm" format="html" processing-role="normal"></page>
+      <page href="../contents/BASCSHTML/consulta_de_items_(Compras).htm" format="html" processing-role="normal"></page>
+    </book>
+    <book navtitle="Contable" format="html" processing-role="normal">
+      <page href="../contents/BASCSHTML/consulta_de_balance.htm" format="html" processing-role="normal"></page>
+      <page href="../contents/BASCSHTML/consulta_de_mayor.htm" format="html" processing-role="normal"></page>
+      <page href="../contents/BASCSHTML/consulta_de_estado_de_cierres.htm" format="html" processing-role="normal"></page>
+    </book>
+  </book>
+  <book navtitle="Utilitarios " format="html" processing-role="normal">
+    <page navtitle="R.G. 1361/1681" href="../contents/BASCSHTML/bCS1361__Generacion_de_datos.htm" format="html" processing-role="normal"></page>
+    <page navtitle="R.G. 1547" href="../contents/BASCSHTML/bCS1547__Generacion_de_archivos.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/bCSARBA__Exportacion_a_SIAp_AR.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/bCSARCIBA__Exportacion_a_SIAp_Arciba.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/bCSCITI__Exportacion_a_AFIP_DGI_CITI_Compras.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/bCSIB__Exportacion_a_SIAp_IB.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/bCSIVAGAN__Exportacion_a_SIAp_IVA_y_Ganancias.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/bCSSICORE__Exportacion_a_SIAp_Sicore.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/bCSSIFERE__Exportacion_a_Siap_Sifere.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/bCSSIJP__Exportacion_de_retenciones_del_SUSS.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/sIRCAR__Exportacion_a_sircar.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/bCSSEDRONAR__Listado_Sedronar.htm" format="html" processing-role="normal"></page>
+  </book>
+</book>
+<book navtitle="Tablas" format="html" processing-role="normal">
+  <book navtitle="Bienes y Servicios" format="html" processing-role="normal">
+    <page href="../contents/BASCSHTML/tabla__Bienes.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/tabla__Servicios.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/tabla__Items_varios.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/tabla__Acumuladores.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/tabla__Unidades_de_medida.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/tabla__Rubros.htm" format="html" processing-role="normal"></page>
+    <page navtitle="Depósitos/Plantas" href="../contents/BASCSHTML/tabla__Depositos_Plantas.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/tabla__Conceptos.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/tabla__Grupos_de_compras.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/tabla__Tablas_de_colores.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/tabla__Tablas_de_medidas.htm" format="html" processing-role="normal"></page>
+    <page navtitle="Títulos de informes para medidas" href="../contents/BASCSHTML/titulos_de_informes_para_medidas.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/tabla__Impuestos.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/tabla__Posiciones_contables.htm" format="html" processing-role="normal"></page>
+    <page navtitle="Permisos de Importación" href="../contents/BASCSHTML/tabla__Permisos_de_importacion.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/tabla__Posiciones_arancelarias.htm" format="html" processing-role="normal"></page>
+    <page navtitle="Unidades logísticas" href="../contents/BASCSHTML/tabla__Unidades_logisticas.htm" format="html" processing-role="normal"></page>
+    <book navtitle="Precios" format="html" processing-role="normal">
+      <page navtitle="Políticas de precios" href="../contents/BASCSHTML/listas_de_precios__Politicas_de_precios.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Definición de listas de precios" href="../contents/BASCSHTML/listas_de_precios__Definicion.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Generación de listas de precios" href="../contents/BASCSHTML/listas_de_precios__Generacion.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Emisión de listas de precios" href="../contents/BASCSHTML/listas_de_precios__Emision.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Modificación de precios por atributo" href="../contents/BASCSHTML/listas_de_precios__Modif__de_precios_por_atrib_.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Modificación de precios por ítem" href="../contents/BASCSHTML/listas_de_precios__Modif__de_precios_por_item.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Modificación de listas por ítem" href="../contents/BASCSHTML/listas_de_precios__Modif__de_listas_por_item.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Autorización de listas de precios" href="../contents/BASCSHTML/listas_de_precios__Autorizacion.htm" format="html" processing-role="normal"></page>
+    </book>
+    <book navtitle="Bienes de uso" format="html" processing-role="normal">
+      <page href="../contents/BASCSHTML/tabla__Grupos_de_bienes_de_uso.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Ubicaciones físicas" href="../contents/BASCSHTML/tabla__Ubicaciones_fisicas.htm" format="html" processing-role="normal"></page>
+    </book>
+    <book navtitle="Producción " format="html" processing-role="normal">
+      <page href="../contents/BASCSHTML/tabla__Hojas_de_ruta.htm" format="html" processing-role="normal"></page>
+      <page href="../contents/BASCSHTML/tabla__Recursos.htm" format="html" processing-role="normal"></page>
+      <page href="../contents/BASCSHTML/tabla__Tipos_de_recursos.htm" format="html" processing-role="normal"></page>
+      <page href="../contents/BASCSHTML/tabla__Uso_especial_de_recursos.htm" format="html" processing-role="normal"></page>
+    </book>
+  </book>
+  <book navtitle="Caja y Bancos" format="html" processing-role="normal">
+    <page href="../contents/BASCSHTML/tabla__Cajas.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/tabla__Bancos.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/tabla__Cuentas_bancarias.htm" format="html" processing-role="normal"></page>
+    <page navtitle="Formatos de importación" href="../contents/BASCSHTML/formatos_de_importacion.htm" format="html" processing-role="normal"></page>
+    <page navtitle="Códigos del Banco Central" href="../contents/BASCSHTML/tabla__Codigos_del_Banco_Central.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/tabla__Medios_de_pago.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/tabla__Tarjetas.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/tabla__Rangos_inhabilitados.htm" format="html" processing-role="normal"></page>
+  </book>
+  <book navtitle="Clientes y Proveedores" format="html" processing-role="normal">
+    <page href="../contents/BASCSHTML/tabla__Clientes.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/tabla__Proveedores.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/tabla__Tratamientos_impositivos.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/tabla__Tratamientos_impositivos_provinciales.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/tabla__Descripciones_de_I_V_A_.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/tabla__Camiones.htm" format="html" processing-role="normal"></page>
+    <page navtitle="Rutas " href="../contents/BASCSHTML/tabla__Rutas.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/tabla__Condiciones_de_compra_y_venta.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/tabla__Negocios.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/tabla__Departamentos.htm" format="html" processing-role="normal"></page>
+    <page navtitle="Padrón de tasas" href="../contents/BASCSHTML/tabla__Padron_de_tasas.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/tabla__Tasas_por_CUIT.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/tabla__Sinonimos_para_codigos_de_padrones.htm" format="html" processing-role="normal"></page>
+    <page navtitle="Importación de padrones" href="../contents/BASCSHTML/tabla__Importacion_de_padrones.htm" format="html" processing-role="normal"></page>
+    <page navtitle="Eliminación de padrones" href="../contents/BASCSHTML/tabla__Eliminacion_de_padrones.htm" format="html" processing-role="normal"></page>
+    <page navtitle="Importación de exenciones impositivas" href="../contents/BASCSHTML/tabla__Importacion_de_exenciones_impositivas.htm" format="html" processing-role="normal"></page>
+    <page navtitle="Importación de porcentajes para Convenio Multilateral" href="../contents/BASCSHTML/tabla__Importacion_de_porcentajes_para_Convenio_Multilateral.htm" format="html" processing-role="normal"></page>
+  </book>
+  <book navtitle="Configuración" format="html" processing-role="normal">
+    <page href="../contents/BASCSHTML/tabla__Plantillas_de_e_mail.htm" format="html" processing-role="normal"></page>
+    <page navtitle="Formatos de Exportación" href="../contents/BASCSHTML/tabla__Formatos_de_Exportacion.htm" format="html" processing-role="normal"></page>
+    <page navtitle="Formatos de importación" href="../contents/BASCSHTML/tabla__Formatos_de_Importacion.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/tabla__Talonarios.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/tabla__Agentes.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/tabla__Atributos.htm" format="html" processing-role="normal"></page>
+    <page navtitle="Países" href="../contents/BASCSHTML/tabla__Paises.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/tabla__Provincias.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/tabla__Empresas.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/tabla__Sucursales.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/bASCSQP__Configuracion_de_sucursal.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/tabla__Usuarios.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/tabla__Tipos_de_comprobantes.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/tabla__Tipos_de_documentos.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/tabla__Permisos_por_programa.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/tabla__Observaciones_de_preventa.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/tabla__Feriados.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/formatos_para_prefijos.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/tabla__Tipos_de_operaciones.htm" format="html" processing-role="normal"></page>
+    <book navtitle="Tablas de bonificaciones" format="html" processing-role="normal">
+      <page navtitle="Definición" href="../contents/BASCSHTML/tablas_de_bonificaciones__Definicion.htm" format="html" processing-role="normal"></page>
+      <page href="../contents/BASCSHTML/tablas_de_bonificaciones__Ingreso.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Generación" href="../contents/BASCSHTML/tablas_de_bonificaciones__Generacion.htm" format="html" processing-role="normal"></page>
+    </book>
+    <book navtitle="Parámetros" format="html" processing-role="normal">
+      <page href="../contents/BASCSHTML/parametros__Datos_generales.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Ítems" href="../contents/BASCSHTML/parametros__Items.htm" format="html" processing-role="normal"></page>
+      <page href="../contents/BASCSHTML/parametros__Cuentas_corrientes.htm" format="html" processing-role="normal"></page>
+      <page href="../contents/BASCSHTML/parametros__Control_de_pedidos.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Parámetros fiscalización electrónica" href="../contents/BASCSHTML/parametros__Fiscalizacion_electronica.htm" format="html" processing-role="normal"></page>
+      <page href="../contents/BASCSHTML/parametros__Usuarios.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Parámetros del equipo" href="../contents/BASCSHTML/parametros__Equipo.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Evaluación de proveedores" href="../contents/BASCSHTML/parametros__Evaluacion_de_proveedores.htm" format="html" processing-role="normal"></page>
+      <page href="../contents/BASCSHTML/parametros__Base_para_informes.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Administración de Documentos" href="../contents/BASCSHTML/parametros__Administracion_de_documentos.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Parámetros especiales" href="../contents/BASCSHTML/parametros__Especiales.htm" format="html" processing-role="normal"></page>
+    </book>
+    <book navtitle="Autorizaciones" format="html" processing-role="normal">
+      <page href="../contents/BASCSHTML/tabla__Tablas_de_autorizaciones.htm" format="html" processing-role="normal"></page>
+      <page href="../contents/BASCSHTML/parametros__Autoriz__manual_de_listas_de_precios.htm" format="html" processing-role="normal"></page>
+      <page href="../contents/BASCSHTML/parametros__Autoriz__manual_de_ordenes_de_pago.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Ordenes de producción" href="../contents/BASCSHTML/parametros__Autoriz__manual_de_ordenes_de_produccion.htm" format="html" processing-role="normal"></page>
+      <book navtitle="Ventas" format="html" processing-role="normal">
+        <page href="../contents/BASCSHTML/parametros__Autoriz__manual_de_pedidos_externos.htm" format="html" processing-role="normal"></page>
+        <page navtitle="Pedidos de devolución" href="../contents/BASCSHTML/parametros__Autoriz__manual_de_pedidos_de_dev_.htm" format="html" processing-role="normal"></page>
+        <page navtitle="Notas de crédito" href="../contents/BASCSHTML/parametros__Autoriz__manual_de_notas_de_credito.htm" format="html" processing-role="normal"></page>
+      </book>
+      <book navtitle="Compras" format="html" processing-role="normal">
+        <page href="../contents/BASCSHTML/parametros__Autoriz__manual_de_pedidos_internos.htm" format="html" processing-role="normal"></page>
+        <page href="../contents/BASCSHTML/parametros__Autoriz__manual_de_ordenes_de_compra.htm" format="html" processing-role="normal"></page>
+        <page navtitle="Requerimientos" href="../contents/BASCSHTML/parametros__Autoriz__manual_de_requerimientos_de_compra.htm" format="html" processing-role="normal"></page>
+        <page href="../contents/BASCSHTML/parametros_Autoriz__manual_de_facturas_de_compra.htm" format="html" processing-role="normal"></page>
+        <page href="../contents/BASCSHTML/parametros__Autoriz__manual_de_presup__de_compras.htm" format="html" processing-role="normal"></page>
+        <page navtitle="Ingresos de mercadería" href="../contents/BASCSHTML/parametros__Autoriz__manual_de_ingresos_de_mercaderia.htm" format="html" processing-role="normal"></page>
+        <page navtitle="Parámetros Autorización de Requerimientos" href="../contents/BASCSHTML/parametros__Autoriz__manual_de_requerimientos_de_compra.htm" format="html" processing-role="normal"></page>
+      </book>
+    </book>
+    <book navtitle="Programación de alertas" format="html" processing-role="normal">
+      <page href="../contents/BASCSHTML/alertas__Saldos_vencidos.htm" format="html" processing-role="normal"></page>
+      <page href="../contents/BASCSHTML/alertas__Pedidos_demorados.htm" format="html" processing-role="normal"></page>
+      <page href="../contents/BASCSHTML/alertas__Ordenes_de_compra_demoradas.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Ordenes de producción demoradas" href="../contents/BASCSHTML/alertas__Ordenes_de_produccion_demoradas.htm" format="html" processing-role="normal"></page>
+      <page href="../contents/BASCSHTML/alertas__Prog__de_alerta_de_comprobantes_no_aut_.htm" format="html" processing-role="normal"></page>
+      <page href="../contents/BASCSHTML/alertas__Control_de_secuencialidad_de_talonarios.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Transmisión de comprobantes" href="../contents/BASCSHTML/alertas__Prog__de_transmision_de_comprobantes.htm" format="html" processing-role="normal"></page>
+      <page href="../contents/BASCSHTML/alertas__Control_de_vencimiento_de_talonarios.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Stock bajo mínimo" href="../contents/BASCSHTML/alertas__Stock_bajo_minimo.htm" format="html" processing-role="normal"></page>
+      <page href="../contents/BASCSHTML/alertas__Partidas_a_vencer.htm" format="html" processing-role="normal"></page>
+    </book>
+    <book navtitle="Programación de procesos" format="html" processing-role="normal">
+      <page href="../contents/BASCSHTML/alertas__Prog__de_efect__de_cheques_dif__emit_.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Compactación comp. vtas. B" href="../contents/BASCSHTML/alertas__Compactacion_comp__vtas__B.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Evaluación de proveedores" href="../contents/BASCSHTML/alertas__Prog__de_la_evaluacion_de_proveedores.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Evaluación de pagos" href="../contents/BASCSHTML/alertas__Prog__de_la_evaluacion_de_pagos.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Evaluación de monotributistas" href="../contents/BASCSHTML/alertas__Prog__de_la_evaluacion_de_monotributistas.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Incorporación a padrones" href="../contents/BASCSHTML/alertas__Prog__de_la_incorporacion_a_padrones.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Efectivización mesa de saldos" href="../contents/BASCSHTML/alertas__Prog__de_efect__de_mesa_de_saldos.htm" format="html" processing-role="normal"></page>
+    </book>
+    <book navtitle="Workflow" format="html" processing-role="normal">
+      <page href="../contents/BASCSHTML/workflow__Parametros_para_remitir_pedidos.htm" format="html" processing-role="normal"></page>
+      <page href="../contents/BASCSHTML/workflow__Parametros_para_remitir_facturas.htm" format="html" processing-role="normal"></page>
+      <page href="../contents/BASCSHTML/workflow__Parametros_para_facturar_pedidos.htm" format="html" processing-role="normal"></page>
+      <page href="../contents/BASCSHTML/workflow__Parametros_para_facturar_remitos.htm" format="html" processing-role="normal"></page>
+      <page href="../contents/BASCSHTML/workflow__Parametros_para_ordenes_de_pago.htm" format="html" processing-role="normal"></page>
+    </book>
+  </book>
+  <book navtitle="Contables e Impositivos" format="html" processing-role="normal">
+    <page navtitle="Centros de apropiación" href="../contents/BASCSHTML/tabla__Centros_de_apropiacion.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/tabla__Subdiarios.htm" format="html" processing-role="normal"></page>
+    <page navtitle="Regímenes" href="../contents/BASCSHTML/tabla__Regimenes.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/tabla__Percepciones_provinciales.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/tabla__Retenciones_provinciales.htm" format="html" processing-role="normal"></page>
+    <book navtitle="Plan de cuentas" format="html" processing-role="normal">
+      <page href="../contents/BASCSHTML/tabla__Cuentas.htm" format="html" processing-role="normal"></page>
+      <page href="../contents/BASCSHTML/tabla__Vistas.htm" format="html" processing-role="normal"></page>
+    </book>
+    <book navtitle="Presupuestos" format="html" processing-role="normal">
+      <page navtitle="Definición de presupuestos" href="../contents/BASCSHTML/tabla__Presupuestos.htm" format="html" processing-role="normal"></page>
+      <page href="../contents/BASCSHTML/tabla__Componentes_de_presupuestos.htm" format="html" processing-role="normal"></page>
+      <page href="../contents/BASCSHTML/listado__Componentes_de_presupuestos.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Informe de ejecución de presupuestos" href="../contents/BASCSHTML/listado__Informe_de_ejecucion_de_presupuestos.htm" format="html" processing-role="normal"></page>
+    </book>
+    <book navtitle="Índices y cotizaciones" format="html" processing-role="normal">
+      <page navtitle="Definición de tablas" href="../contents/BASCSHTML/tabla__Tablas_de_indices_y_cotizaciones.htm" format="html" processing-role="normal"></page>
+      <page href="../contents/BASCSHTML/tabla__Indices_y_cotizaciones.htm" format="html" processing-role="normal"></page>
+    </book>
+    <book navtitle="Tablas de percepción" format="html" processing-role="normal">
+      <page navtitle="Percepción I.V.A." href="../contents/BASCSHTML/tabla__Tablas_de_percepciones_de_I_V_A_.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Percepción Ganancias" href="../contents/BASCSHTML/tabla__Tablas_de_percepciones_de_ganancias.htm" format="html" processing-role="normal"></page>
+    </book>
+    <book navtitle="Tablas de retención" format="html" processing-role="normal">
+      <page navtitle="Retención de I.V.A." href="../contents/BASCSHTML/tabla__Tablas_de_retenciones_de_I_V_A_.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Retención de Ganancias" href="../contents/BASCSHTML/tabla__Tablas_de_retenciones_de_ganancias.htm" format="html" processing-role="normal"></page>
+      <page navtitle="Retención de S.U.S.S." href="../contents/BASCSHTML/tabla__Tablas_de_retenciones_de_S_U_S_S_.htm" format="html" processing-role="normal"></page>
+    </book>
+  </book>
+  <book navtitle="Presupuestos de compras" format="html" processing-role="normal">
+    <page navtitle="Definición" href="../contents/BASCSHTML/tabla__Presupuestos_de_compras.htm" format="html" processing-role="normal"></page>
+    <page navtitle="Componentes" href="../contents/BASCSHTML/tabla__Componentes_de_Presupuestos_de_Compras.htm" format="html" processing-role="normal"></page>
+    <page navtitle="Aprobación" href="../contents/BASCSHTML/tabla__Aprobacion_de_Presupuestos_de_Compras.htm" format="html" processing-role="normal"></page>
+    <page navtitle="Autorización" href="../contents/BASCSHTML/presupuestos_de_compra__Autorizacion.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/tabla__Cierre_Reapertura_de_Presup__de_Compras.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/listado__Presupuestos_de_compras.htm" format="html" processing-role="normal"></page>
+    <page navtitle="Informe de ejecución de presupuestos" href="../contents/BASCSHTML/listado__Ejecucion_de_presup__de_compras.htm" format="html" processing-role="normal"></page>
+  </book>
+  <book navtitle="Agenda" format="html" processing-role="normal">
+    <page href="../contents/BASCSHTML/agenda.htm" format="html" processing-role="normal"></page>
+  </book>
+</book>
+<book navtitle="Generalidades del sistema" format="html" processing-role="normal">
+  <page href="../contents/BASCSHTML/botones_de_la_barra_de_herramientas.htm" format="html" processing-role="normal"></page>
+  <page navtitle="Búsquedas" href="../contents/BASCSHTML/browsers.htm" format="html" processing-role="normal"></page>
+  <page href="../contents/BASCSHTML/modelos.htm" format="html" processing-role="normal"></page>
+  <page href="../contents/BASCSHTML/fecha_de_certeza_contable.htm" format="html" processing-role="normal"></page>
+  <page navtitle="Comprobantes en preparación" href="../contents/BASCSHTML/comprobantes_en_preparacion.htm" format="html" processing-role="normal"></page>
+  <page href="../contents/BASCSHTML/fijar_columnas_en_grillas.htm" format="html" processing-role="normal"></page>
+  <page navtitle="Base para la emisión de informes " href="../contents/BASCSHTML/base_para_la_emision_de_informes.htm" format="html" processing-role="normal"></page>
+  <page navtitle="Prefijos en la emisión de informes y comprobantes" href="../contents/BASCSHTML/prefijos_en_la_emision_de_informes_y_comprobantes.htm" format="html" processing-role="normal"></page>
+</book>
+<book navtitle="Ocultos" format="html" processing-role="resource-only">
+  <page href="../contents/BASCSHTML/administracion_de_Documentos.htm" format="html" processing-role="normal"></page>
+  <page href="../contents/BASCSHTML/afectacion_Bienes_de_uso_Items.htm" format="html" processing-role="normal"></page>
+  <page href="../contents/BASCSHTML/aplicaciones_en_comprobantes.htm" format="html" processing-role="normal"></page>
+  <page href="../contents/BASCSHTML/autorizaciones.htm" format="html" processing-role="normal"></page>
+  <page href="../contents/BASCSHTML/bcsImpIB__Importacion_del_padron_para_Ingresos_Brutos.htm" format="html" processing-role="normal"></page>
+  <page href="../contents/BASCSHTML/boton_provincias_para_IIBB_compras.htm" format="html" processing-role="normal"></page>
+  <page href="../contents/BASCSHTML/boton_provincias_para_IIBB_en_Ventas.htm" format="html" processing-role="normal"></page>
+  <page href="../contents/BASCSHTML/comprobantes_de_compras_Impuestos.htm" format="html" processing-role="normal"></page>
+  <page href="../contents/BASCSHTML/comprobantes_referenciados_cotizaciones.htm" format="html" processing-role="normal"></page>
+  <page href="../contents/BASCSHTML/comprobantes_referenciados_de_Pedidos_de_venta.htm" format="html" processing-role="normal"></page>
+  <page href="../contents/BASCSHTML/comprobantes_referenciados_de_Requerimientos.htm" format="html" processing-role="normal"></page>
+  <page href="../contents/BASCSHTML/comprobantes_referenciados_egreso_de_mercaderia.htm" format="html" processing-role="normal"></page>
+  <page href="../contents/BASCSHTML/comprobantes_referenciados_facturas_compras.htm" format="html" processing-role="normal"></page>
+  <page href="../contents/BASCSHTML/comprobantes_referenciados_ingreso_de_asientos.htm" format="html" processing-role="normal"></page>
+  <page href="../contents/BASCSHTML/comprobantes_referenciados_ordenes_compra.htm" format="html" processing-role="normal"></page>
+  <page href="../contents/BASCSHTML/comprobantes_referenciados_Partes_de_produccion.htm" format="html" processing-role="normal"></page>
+  <page href="../contents/BASCSHTML/comprobantes_referenciados_Pedidos_internos.htm" format="html" processing-role="normal"></page>
+  <page href="../contents/BASCSHTML/comprobantes_referenciados_ordenes_de_produccion.htm" format="html" processing-role="normal"></page>
+  <page href="../contents/BASCSHTML/conciliacion_bancaria_por_archivo.htm" format="html" processing-role="normal"></page>
+  <page href="../contents/BASCSHTML/control_de_cantidades.htm" format="html" processing-role="normal"></page>
+  <page href="../contents/BASCSHTML/control_de_productos_terminados.htm" format="html" processing-role="normal"></page>
+  <page href="../contents/BASCSHTML/calculo_de_totales_del_comprobante.htm" format="html" processing-role="normal"></page>
+  <page href="../contents/BASCSHTML/detalle_de_auditoria_de_cierres.htm" format="html" processing-role="normal"></page>
+  <page href="../contents/BASCSHTML/domicilios.htm" format="html" processing-role="normal"></page>
+  <page href="../contents/BASCSHTML/ejemplo_asiento_de_materiales.htm" format="html" processing-role="normal"></page>
+  <page href="../contents/BASCSHTML/emision_por_base_informes.htm" format="html" processing-role="normal"></page>
+  <page href="../contents/BASCSHTML/emision.htm" format="html" processing-role="normal"></page>
+  <page href="../contents/BASCSHTML/estados_Carpeta_de_Importacion_Version_XE_.htm" format="html" processing-role="normal"></page>
+  <page href="../contents/BASCSHTML/estimacion_de_costos.htm" format="html" processing-role="normal"></page>
+  <page href="../contents/BASCSHTML/evento.htm" format="html" processing-role="normal"></page>
+  <page href="../contents/BASCSHTML/factor_de_Precosteo.htm" format="html" processing-role="normal"></page>
+  <page href="../contents/BASCSHTML/fecha_de_certeza_contable.htm" format="html" processing-role="normal"></page>
+  <page href="../contents/BASCSHTML/fechas_avance_y_operaciones_de_la_tarea.htm" format="html" processing-role="normal"></page>
+  <page href="../contents/BASCSHTML/ficha_Clientes.htm" format="html" processing-role="normal"></page>
+  <page href="../contents/BASCSHTML/ficha_Empresas.htm" format="html" processing-role="normal"></page>
+  <page href="../contents/BASCSHTML/ficha_Proveedores.htm" format="html" processing-role="normal"></page>
+  <page href="../contents/BASCSHTML/ficha_Retencion_de_ganancias.htm" format="html" processing-role="normal"></page>
+  <page href="../contents/BASCSHTML/ficha_retencion_de_I_V_A.htm" format="html" processing-role="normal"></page>
+  <page href="../contents/BASCSHTML/fiscalizacion_manual.htm" format="html" processing-role="normal"></page>
+  <page href="../contents/BASCSHTML/formato_archivos_utilitarios.htm" format="html" processing-role="normal"></page>
+  <page href="../contents/BASCSHTML/formato_de_importacion_de_listas_de_precios.htm" format="html" processing-role="normal"></page>
+  <page href="../contents/BASCSHTML/gastos_Carpeta_de_Importacion.htm" format="html" processing-role="normal"></page>
+  <page href="../contents/BASCSHTML/grilla_Domicilios.htm" format="html" processing-role="normal"></page>
+  <page href="../contents/BASCSHTML/inventario__Importacion_por_archivo.htm" format="html" processing-role="normal"></page>
+  <page href="../contents/BASCSHTML/impresion_automatica_Consideraciones.htm" format="html" processing-role="normal"></page>
+  <page href="../contents/BASCSHTML/impresion_de_comprobantes_de_retenciones.htm" format="html" processing-role="normal"></page>
+  <page href="../contents/BASCSHTML/importar_archivo_de_inventario.htm" format="html" processing-role="normal"></page>
+  <page href="../contents/BASCSHTML/lineas_de_comprobantes_de_compras.htm" format="html" processing-role="normal"></page>
+  <page href="../contents/BASCSHTML/lineas_de_comprobantes_de_egreso.htm" format="html" processing-role="normal"></page>
+  <page href="../contents/BASCSHTML/lineas_de_control_de_ingresos.htm" format="html" processing-role="normal"></page>
+  <page href="../contents/BASCSHTML/lineas_de_Pedidos_y_Facturas.htm" format="html" processing-role="normal"></page>
+  <page href="../contents/BASCSHTML/listado_documentos_valorizados_tener_en_cuenta.htm" format="html" processing-role="normal"></page>
+  <page href="../contents/BASCSHTML/modelos.htm" format="html" processing-role="normal"></page>
+  <page href="../contents/BASCSHTML/modificacion_de_inventario_Items.htm" format="html" processing-role="normal"></page>
+  <page href="../contents/BASCSHTML/movimientos_depositos_planta.htm" format="html" processing-role="normal"></page>
+  <page href="../contents/BASCSHTML/necesidad_de_abastecimiento_por_comprobante.htm" format="html" processing-role="normal"></page>
+  <page href="../contents/BASCSHTML/necesidad_de_abastecimiento_por_item.htm" format="html" processing-role="normal"></page>
+  <page href="../contents/BASCSHTML/ordenamiento_Aplicaciones.htm" format="html" processing-role="normal"></page>
+  <page href="../contents/BASCSHTML/ordenamiento_de_datos_en_consultas.htm" format="html" processing-role="normal"></page>
+  <page href="../contents/BASCSHTML/otras_retenciones.htm" format="html" processing-role="normal"></page>
+  <page href="../contents/BASCSHTML/periodo_a_considerar.htm" format="html" processing-role="normal"></page>
+  <page href="../contents/BASCSHTML/prefijo_de_comprobantes_externos.htm" format="html" processing-role="normal"></page>
+  <page href="../contents/BASCSHTML/provincias_para_ingresos_brutos_en_Ventas.htm" format="html" processing-role="normal"></page>
+  <page href="../contents/BASCSHTML/refrescar.htm" format="html" processing-role="normal"></page>
+  <page href="../contents/BASCSHTML/remito_carnico.htm" format="html" processing-role="normal"></page>
+  <page href="../contents/BASCSHTML/retencion_de_IIBB_en_recibos.htm" format="html" processing-role="normal"></page>
+  <page href="../contents/BASCSHTML/retencion_de_ingresos_brutos_en_pagos.htm" format="html" processing-role="normal"></page>
+  <page href="../contents/BASCSHTML/retencion_de_SUSS_en_pagos_y_recibos.htm" format="html" processing-role="normal"></page>
+  <page href="../contents/BASCSHTML/seleccion_comprobantes.htm" format="html" processing-role="normal"></page>
+  <page href="../contents/BASCSHTML/tareas_de_la_orden_de_produccion.htm" format="html" processing-role="normal"></page>
+  <page href="../contents/BASCSHTML/ver_aplicaciones.htm" format="html" processing-role="normal"></page>
+  <page href="../contents/BASCSHTML/ver_ultimos_movimientos_consultas.htm" format="html" processing-role="normal"></page>
+  <page href="../contents/BASCSHTML/comprobantes_referenciados_facturas.htm" format="html" processing-role="normal"></page>
+  <page href="../contents/BASCSHTML/comprobantes_referenciados_ingreso_de_materiales.htm" format="html" processing-role="normal"></page>
+  <page href="../contents/BASCSHTML/ficha_Productos.htm" format="html" processing-role="normal"></page>
+  <page href="../contents/BASCSHTML/lineas_de_comprobantes_de_ingreso.htm" format="html" processing-role="normal"></page>
+</book>
+</map>

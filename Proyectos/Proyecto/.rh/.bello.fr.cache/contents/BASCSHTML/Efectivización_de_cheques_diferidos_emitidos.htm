@@ -1,0 +1,65 @@
+
+
+Efectivización de cheques diferidos emitidos
+Esta tarea permite efectivizar manualmente, es decir, 
+ en forma independiente de la programación que se haya establecido en la 
+ tarea de Programación de la efectivización 
+ de cheques diferidos emitidos, los cheques diferidos emitidos pendientes 
+ de efectivización cuya fecha de pago sea anterior o igual a la fecha del 
+ día.
+Para realizar la tarea debe presionarse el botón Efectivizar 
+ La fecha de cada comprobante de efectivización coincidirá con la fecha 
+ de vencimiento de los cheques que dicho comprobante efectiviza. Se generan 
+ tantos comprobantes de efectivización como fechas de vencimiento distintas 
+ tengan los cheques que se efectivizan.
+ 
+ 
+ Empresa
+
+	Empresa sobre la cual se realiza el proceso. 
+	 Este dato lo sugiere el sistema y no se puede modificar.
+ 
+ Hasta fecha
+
+	En este dato se ofrecerá como valor por 
+	 defecto la fecha del día y la misma podrá modificarse.
+	Para la fecha de los comprobantes que 
+	 se generen se tendrá en cuenta, que no coincida con un feriado o con 
+	 fin de semana, en ese caso, se correrán los días necesarios.
+ 
+ Ultima efectivización
+
+	Fecha del último comprobante de efectivización 
+	 generado.
+	 
+ 
+ Efectivizar
+
+	Al presionarse este botón y previo pedido 
+	 de confirmación se efectivizan todos los cheques que correspondan.
+	 
+ 
+ Para tener en cuenta
+
+	Antes de comenzar el proceso de efectivización, 
+	 se muestra un aviso si se detecta que hay cheques sin efectivizar 
+	 con vencimiento anterior al último cierre operativo efectuado, para 
+	 el subdiario al cual irán las efectivizaciones que se generen.
+	Se permitirá continuar o no en caso de 
+	 detectar cheques en este estado. Si se elige continuar, los cheques 
+	 de fecha anterior al último cierre del subdiario de efectivización, 
+	 se efectivizan en un comprobante que tendrá como fecha la fecha del 
+	 día (pues no se podrían generar con su fecha de vencimiento porque 
+	 no pueden ingresarse comprobantes con fecha anterior al último cierre 
+	 operativo).
+	Al finalizar este proceso, se muestra 
+	 la cantidad de comprobantes de efectivización generados, y pulsando 
+	 el botón Detalles puede verse 
+	 una lista con todos los comprobantes generados, detallando la fecha 
+	 y número de los mismos. Si hacemos clic sobre el número de comprobante 
+	 de efectivización generado, se abre una nueva ventana en donde se 
+	 pueden visualizar todos los cheques que se efectivizaron en ese comprobante.
+ 
+
+
+

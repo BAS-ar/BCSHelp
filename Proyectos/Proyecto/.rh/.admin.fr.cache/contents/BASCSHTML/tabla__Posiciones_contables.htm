@@ -1,0 +1,141 @@
+
+
+Posiciones contables
+Las posiciones contables tienen por objeto, mediante 
+ su asociación a los bienes y servicios 
+ , determinar las cuentas a imputar cuando 
+ dichos bienes y servicios se incluyen en los diferentes comprobantes que 
+ administra el sistema.
+La información mediante la cual se define una posición 
+ contable es:
+ 
+ 
+ Código
+
+	Código identificatorio de la posición 
+	 contable. Por ejemplo, PT, IN, PR, MV, SER, etc.
+	 
+ 
+ Descripción
+
+	Nombre correspondiente a la posición contable. 
+	 Por ejemplo, Productos Terminados, Insumos, Productos de reventa, 
+	 Materiales varios, Tabla:_Servicios, etc.
+	 
+ 
+ Imputaciones Contables
+
+	Aquí deben detallarse las cuentas 
+	 a imputar según sea el comprobante y el tipo de movimiento en que 
+	 se incluyen los bienes y servicios 
+	 a los que se les asocia la posición contable informada.
+	El apartado que trata sobre los asientos 
+	 generados por los comprobantes analiza en detalle los asientos que 
+	 se contabilizan con cada comprobante que se registra en el sistema.
+	  Materiales 
+	  en depósito/Servicios  gozados y prestados
+	Cuenta 
+	 contable que se debita y acredita con los movimientos que afectan 
+	 la existencia del bien. Es decir, aquella en la que se ha de reflejar 
+	 la posición contable de los bienes 
+	 .
+	Podemos decir, en general, que es 
+	 la cuenta que se acredita en movimientos de egresos de materiales 
+	 y se debita en movimientos de ingresos de materiales.
+	Esta cuenta se utiliza también en 
+	 la registración contable de servicios prestados y recibidos o gozados. 
+	 
+	 Comprobantes 
+	 de Ventas
+	Cuenta 
+	 que se imputa cuando el bien o servicio se incluye en comprobantes 
+	 de ventas (facturas, notas de débito y notas de crédito).
+	Esta cuenta se acredita en facturas 
+	 (de contado y de cuenta corriente) y en notas de débito y se acredita 
+	 en notas de crédito.
+	 En planta
+	Cuenta contable que se acredita y 
+	 se debita cuando los bienes asociados a la posición contable egresan 
+	 e ingresan de una planta.
+	 En planta de terceros
+	Ídem anterior pero cuando se trata 
+	 de una planta de terceros.
+	 Tabla 
+	 de Movimientos de Materiales
+	Esta tabla incluye los conceptos 
+	 y las cuentas respectivas, asociadas 
+	 la posición contable que se está definiendo
+	Cuando en un comprobante de movimiento 
+	 de materiales se incluya un bien que 
+	 tenga asociada la posición contable, según sea el concepto que se 
+	 asocie al comprobante, se imputarán las cuentas 
+	 que se indiquen en esta tabla.
+	Los elementos de la tabla pueden administrarse 
+	 desde aquí o desde la tabla de conceptos, 
+	 indistintamente.
+	Efectivamente, al incorporar en un 
+	 concepto una posición contable y la imputación 
+	 correspondiente, éstos pasan a formar parte de esta tabla.
+	Del mismo modo, al incorporar conceptos 
+	 e imputaciones a una posición contable, la posición contable y las 
+	 imputaciones correspondientes integrarán las tablas correspondientes 
+	 a dichos conceptos.
+	Es conveniente hacer una aclaración 
+	 relativa a los servicios.
+	Los servicios 
+	 no constituyen bienes tangibles, por lo cual las posiciones contables 
+	 que se les asocien, en general, no incluirán conceptos para el movimiento 
+	 de materiales.
+	Efectivamente, los servicios no participan 
+	 en comprobantes de movimientos de materiales, por lo cual, solo debe 
+	 preverse su participación en comprobantes de compras. La cuenta 
+	 a imputar en dichos comprobantes es la que se asocie al Concepto para 
+	 compras.
+	Al respecto, BAS CS prevé la existencia 
+	 de dos parámetros generales para informar, en forma global dos conceptos 
+	 de uso, prácticamente, obligatorio; éstos son el Concepto 
+	 para compras y el Concepto 
+	 para ventas.
+	El Concepto 
+	 para compras se utiliza en todos los comprobantes de compras 
+	 (facturas, remitos, notas de débito y notas de crédito), por lo cual, 
+	 la imputación que se asocie será 
+	 la que se debite en facturas, remitos de egresos por devolución y 
+	 notas de débito y la que se acredite en remitos de ingreso y notas 
+	 de crédito.
+	El Concepto 
+	 para ventas se utiliza en forma automática cuando se genera 
+	 un remito de egreso a partir de la registración de una factura “con 
+	 entrega”. Es decir, cuando el ingreso de una factura lleva implícito 
+	 la generación del correspondiente remito.
+	Estos dos conceptos 
+	 , entonces, se informan en forma global y, luego, bastará asociarles 
+	 una imputación contable en cada una 
+	 de las posiciones contables que se definan.
+	Concepto
+	Código de un concepto 
+	 definido en la tabla correspondiente.
+	Descripción
+	Exhibe el nombre del concepto 
+	 correspondiente al código informado.
+	Imputación Contable
+	Cuenta 
+	 que se imputa cuando los bienes que 
+	 tienen asociada esta posición contable participan en comprobantes 
+	 de movimientos de materiales donde se invoca este concepto.
+	Al respecto recordemos que los 
+	 conceptos se definen en la tabla 
+	 destinada a tal fin y han sido creados para ser utilizados en los 
+	 comprobantes de movimientos de materiales (ingreso y egreso).
+	Nombre
+	Nombre de la cuenta informada 
+	 en el campo anterior, según figura en el Plan de Cuentas.
+ 
+//<![CDATA[
+	if( typeof( TextPopupInit ) != 'function' ) TextPopupInit = new Function();
+	TextPopupInit('a1', 'POPUP666439302');
+	TextPopupInit('a2', 'POPUP666446227');
+	TextPopupInit('a3', 'POPUP666455320');
+//]]>
+
+

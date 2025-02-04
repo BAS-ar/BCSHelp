@@ -1,0 +1,156 @@
+
+
+Planilla de inventario
+Esta tarea permite obtener la impresión de una planilla 
+ que puede ser utilizada en la toma de inventario para registrar en ella 
+ en forma manual la cantidad de unidades de cada ítem.
+La planilla se emite para un depósito determinado y 
+ puede emitirse, si se desea, por ubicación física.
+Se imprime cada ítem con su código y descripción, y 
+ se deja en blanco para cada uno la columna correspondiente a la cantidad 
+ para que sea completada al tomar el inventario.
+Los ítems que manejan colores y medidas se imprimirán 
+ en forma detallada, es decir, una línea para cada color y medida posible, 
+ permitiendo detallar las cantidades para cada uno.
+Es posible, además, incluir en la impresión del informe 
+ una carátula en la que se detallan 
+ todas las opciones seleccionadas por el usuario al solicitarlo.
+Los datos a ingresar para emitir la planilla son:
+ 
+ 
+ Rangos
+
+	 Depósito
+	Número de depósito 
+	 a listar.
+	Debe corresponder a un depósito definido 
+	 en el sistema y con un inventario iniciado.
+	 Ubicación 
+	 física
+	La planilla podrá emitirse por ubicación 
+	 física.
+	Las opciones son:
+	 
+	 Todas las ubicaciones
+	Si se selecciona Todas 
+	 las ubicaciones se incluirán en el informe todos los bienes, 
+	 tengan o no una ubicación física definida, agrupándolos en diferentes 
+	 planillas una para cada ubicación física definida.
+	 
+	 Una ubicación
+	Si se selecciona esta opción se 
+	 deberá indicar luego el código de ubicación física a listar. Se incluirán 
+	 en la planilla sólo los bienes que 
+	 se encuentran en esa ubicación dentro del depósito 
+	 indicado.
+	 
+	 Ubicación
+	Ubicación a listar.
+ 
+ Opciones
+
+	Permite indicar una serie de datos para 
+	 la emisión del informe.
+	 Colores
+	Si el sistema maneja colores es posible 
+	 emitir el informe consolidándolos o en forma detallada.
+	 Medidas
+	Si el sistema maneja medidas es posible 
+	 emitir el informe consolidando, detallando o en forma tabular por 
+	 medida.
+	En el caso de emitir el informe en 
+	 forma tabular, se podrá indicar la tabla de títulos y si se desea 
+	 ordenar a los ítems en el informe por tabla.
+	 
+ 
+ Ficha Productos
+
+	En esta ficha pueden indicarse diferentes 
+	 filtros a aplicar a los ítems que se incluyen en el listado.
+	Pueden filtrarse los ítems por código, 
+	 por código de selección o por atributos y valores de atributos.
+	Ítem
+	Códigos de los ítems que se desean 
+	 incluir en el listado.
+	Puede seleccionarse un ítem en 
+	 particular o un grupo de ítems. Si este dato es dejado en blanco, 
+	 se incluirán todos los ítems en el informe.
+	Código de selección
+	De acuerdo al código que se indique 
+	 se considerará o no cada uno de los ítems del rango seleccionado, 
+	 según el código de selección que se haya asignado a cada uno de ellos.
+	Los ítems que se incluyen son 
+	 aquellos cuyo código de selección coincide con el ingresado. Se pueden 
+	 ingresar los caracteres ? 
+	 y * que cumplen la función 
+	 de comodines. El carácter ? 
+	 se utiliza para un único carácter y el * 
+	 para varios.
+	Si no se especifica ningún código 
+	 de selección, todos los ítems del rango solicitado intervendrán en 
+	 el listado.
+	Provisto por
+	Permite indicar un conjunto de 
+	 proveedores. Cuando se indiquen, sólo se listarán aquellos bienes 
+	 que presenten al menos uno de los proveedores indicados en la solapa 
+	 correspondiente a clientes y proveedores de las altas, bajas y modificaciones 
+	 de bienes.
+	 Tabla 
+	 de Atributos
+	Esta tabla permite informar los atributos 
+	 asociados a los ítems que se desean incluir en el listado con sus 
+	 valores.
+	Código
+	Código del atributo asociado a 
+	 los ítems que se desean incluir en el listado.
+	De acuerdo al atributo y al valor 
+	 de atributo que se indique se considerará o no cada uno de los ítems 
+	 del rango seleccionado, según los atributos y valores que se hayan 
+	 asignado a cada uno de ellos.
+	Si no se especifica ningún atributo, 
+	 todos los ítems del rango solicitado intervendrán en el listado.
+	Descripción
+	Descripción del atributo correspondiente 
+	 al código informado.
+	Valor
+	Valor del atributo informado asociado 
+	 a los ítems que se desean incluir en el listado.
+	Debe corresponder a un valor ya 
+	 definido en el sistema para el atributo indicado en el campo Código.
+	De acuerdo al atributo y al valor 
+	 de atributo que se indique se considerará o no cada uno de los ítems 
+	 del rango seleccionado, según los atributos y valores que se hayan 
+	 asignado a cada uno de ellos.
+	Si se indica un valor, se incluirán 
+	 en el listado los ítems que tengan asociados el valor del atributo 
+	 indicado.
+	Si no se especifica ningún valor 
+	 de atributo, todos los ítems del rango solicitado que tengan el atributo 
+	 indicado, intervendrán en el listado.
+	Descripción
+	Descripción del valor asociado 
+	 al atributo correspondiente al código informado.
+ 
+Para emitir la planilla primero se ingresan los datos 
+ en la tarea, de manera tal de filtrar la información de acuerdo a las 
+ necesidades. Luego se debe presionar el ícono (botón) de la barra de herramientas 
+ superior que corresponda al tipo de emisión requerida. El uso de estos 
+ botones se detalla en el link Emisión 
+ disponible en un párrafo posterior.
+Al momento de imprimir la planilla (tanto por pantalla 
+ como por papel) se puede utilizar el formato standard del sistema, o indicar 
+ un formato personalizado de impresión. 
+ Este último se indica en el campo homónimo que se encuentra en la zona 
+ inferior de la pantalla y su funcionalidad está detallada a continuación 
+ en el link Emisión.
+ 
+ 
+ Emisión
+//<![CDATA[
+	if( typeof( TextPopupInit ) != 'function' ) TextPopupInit = new Function();
+	TextPopupInit('a1', 'POPUP738704324');
+	TextPopupInit('a2', 'POPUP738715810');
+	TextPopupInit('a3', 'POPUP738789676');
+//]]>
+
+

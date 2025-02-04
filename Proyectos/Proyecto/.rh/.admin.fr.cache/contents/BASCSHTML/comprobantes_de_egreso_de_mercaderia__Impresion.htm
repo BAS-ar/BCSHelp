@@ -1,0 +1,139 @@
+
+
+Impresión
+Permite imprimir los comprobantes registrados en el 
+ sistema.
+Pueden imprimirse mediante esta tarea los egresos de 
+ mercadería ingresados en forma manual o los generados automáticamente 
+ mediante procesos de generación automática, y también los correspondientes 
+ a facturas-remito (facturas con entrega de mercadería y facturas con entrega 
+ diferida de mercadería) ingresadas en forma manual o generadas automáticamente.
+La cantidad de copias, formato de impresión, tipo de 
+ emisión (impresora o archivo) se definen en el talonario correspondiente.
+Independientemente de lo que se indique en el talonario, 
+ se dispone de botones 
+ para emitir el comprobante por impresora y en un archivo PDF.
+El formato de impresión está contenido en un archivo 
+ de extensión QRP que contiene 
+ los datos del comprobante que se deseen imprimir, la ubicación de los 
+ mismos en el formulario, la forma que tiene el encabezado, cuerpo y pie 
+ del formulario, etc.
+Si se imprime en archivo, si se desea, se podrá utilizar 
+ una plantilla a utilizar como fondo.
+Si se lo desea es posible consolidar los despachos y 
+ las partidas al momento de imprimir, lo cual debe ser configurado en la 
+ pantalla de Talonarios.
+En caso de imprimir un conjunto de comprobantes por 
+ Controlador fiscal, antes de realizarse 
+ la impresión aparecerá un resumen indicando la cantidad total de comprobantes 
+ detectados; la cantidad de comprobantes que ya han sido impresos, la cantidad 
+ de comprobantes que contienen errores y la cantidad de comprobantes a 
+ imprimir. Si se oprime el botón Continuar 
+ que exhibe dicho resumen se efectuará la impresión de los comprobantes 
+ indicados, si en cambio, se oprime el botón Cancelar, 
+ la misma no se efectuará. Oprimiendo el botón Detalles, 
+ se accederá a la información relativa a los comprobantes cuya impresión 
+ se ha solicitado, se exhibe el tipo de comprobante, la fecha, el prefijo, 
+ el número, el cliente, el total del comprobante y la moneda. En caso que 
+ algunos comprobantes incluyan errores, se exhibe también un texto que 
+ describe el tipo de error del cual se trate.
+No se podrán imprimir remitos cuyo talonario requiera 
+ fiscalización electrónica hasta que dicho comprobante no esté correctamente 
+ fiscalizado (para Uruguay).
+Los datos a ingresar para la emisión son:
+ 
+ 
+ Comprobante
+
+	Se debe informar el tipo de comprobante 
+	 de egreso de mercadería que se desea imprimir:
+	Egreso de mercadería
+	Egreso de mercadería diferido
+ 
+ Lote
+
+	 Tipo
+	Tipo de lote cuyos comprobantes se 
+	 desea imprimir.
+	 Fecha
+	Fecha correspondiente al lote cuyos 
+	 comprobantes se han de imprimir.
+	 Carga
+	En caso de indicar un lote, es posible 
+	 indicar la carga correspondiente a los comprobantes a imprimir.
+	Cuando habiendo indicado un lote no 
+	 se indique número de carga se imprimirán todas los egresos de mercadería 
+	 o facturas del lote cualesquiera sea su carga.
+ 
+ Número de armado
+
+	Número correspondiente al armado 
+	 de transferencias cuyos comprobantes de egreso se desea imprimir.
+	 
+ 
+ Desde número
+
+	Número de comprobante del egreso de mercadería 
+	 desde el que se desea imprimir.
+	Deben completarse el prefijo y el número 
+	 de comprobante. Si el número no se completa, se realizará la impresión 
+	 desde el primer egreso de mercadería existente para el prefijo indicado.
+	El prefijo y el número pueden ser completados 
+	 manualmente o seleccionarse de la lista de comprobantes ingresados 
+	 que provee el sistema en este punto para permitir la selección.
+	El prefijo trae asociado el número de 
+	 talonario de los egresos de mercadería 
+	 a imprimir.
+ 
+ Hasta número
+
+	Número de comprobante del egreso de mercadería 
+	 hasta el que se desea imprimir.
+	Deben completarse el prefijo y el número 
+	 de comprobante. Si el número no se completa, se realizará la impresión 
+	 hasta el último egreso de mercadería existente para el prefijo indicado.
+	El prefijo y el número pueden ser completados 
+	 manualmente o seleccionarse de la lista de comprobantes ingresados 
+	 que provee el sistema en este punto para permitir la selección.
+	Si se indica desde y hasta un mismo número 
+	 de comprobante, se realizará la emisión de ese egreso de mercadería 
+	 en particular.
+ 
+ Sólo los comprobantes no impresos
+
+	Indicación de si se desean emitir solamente 
+	 los egresos de mercadería que aún no han sido emitidos o todos los 
+	 que se incluyen en el rango de números indicado.
+	 
+ 
+ Período a considerar
+ 
+ Para tener en cuenta
+
+	El ingreso de rango de fechas 
+	 no es obligatorio.
+	El 
+	 sistema al momento de imprimir verifica si para el rango de números 
+	 indicado hay comprobantes repetidos en más de una vigencia, avisando 
+	 al usuario de tal eventualidad sugiriendo indicar un rango de fechas 
+	 para evitar las repeticiones. Además, se consulta al usuario si desea 
+	 seguir con la impresión o no.
+	En 
+	 caso de continuar con la impresión el sistema imprimirá todos los 
+	 comprobantes en el rango indicado teniendo en cuenta el rango de fechas 
+	 indicado aunque haya números de comprobante repetidos, por lo que 
+	 un mismo número de comprobante podría imprimirse más de una vez para 
+	 diferentes vigencias de fechas.
+ 
+//<![CDATA[
+	if( typeof( TextPopupInit ) != 'function' ) TextPopupInit = new Function();
+	TextPopupInit('a1', 'POPUP616713891');
+	TextPopupInit('a2', 'POPUP616761304');
+	TextPopupInit('a3', 'POPUP616821345');
+	TextPopupInit('a4', 'POPUP616771822');
+	TextPopupInit('a5', 'POPUP616751904');
+	TextPopupInit('a6', 'POPUP616798815');
+	TextPopupInit('a7', 'POPUP616736257');
+//]]>
+
+

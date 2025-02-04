@@ -1,0 +1,275 @@
+
+
+Exportación a la colectora
+Este proceso permite generar los archivos que contienen 
+ la información que necesita el software de la colectora que se lleva el 
+ preventista. Es decir, las tablas de bonificaciones, las rutas, los bienes, 
+ las condiciones de venta, las listas de precios y las observaciones.
+Para la generación de archivos se debe indicar una Ruta, 
+ un Preventista (el código no podrá tener más de 3 caracteres) y un directorio 
+ o carpeta en donde se generarán los archivos.
+Es posible indicar también, que en el archivo de clientes 
+ que se ha de generar, se incluyan a los clientes del Preventista. Se consideran 
+ como clientes del Preventista los que están incluidos en la ruta indicada 
+ en el campo correspondiente y los que lo tienen asociado como vendedor 
+ en la tabla de clientes. La ruta y el agente preventista deberán estar 
+ habilitados para la empresa del usuario, como así también los clientes 
+ e ítems que se indiquen.
+También opcionalmente, se podrá seleccionar un rango 
+ de ítems, como así también un rango de clientes. Tanto para unos como 
+ para otros se pueden indicar atributos y valores.
+Los errores que se detecten y determinen la exclusión 
+ de clientes, productos, etc. podrán observarse al finalizar el proceso 
+ de exportación a través del botón Detalles 
+ de la pantalla Detalle de errores. 
+ A través de dicha opción podrán observarse los primeros 50 errores, y 
+ cuando el número de errores sea mayor, aparecerá una sentencia indicando 
+ que hay más errores pero éstos no se exhibirán.
+El proceso genera los siguientes archivos de texto:
+ 
+Bonif.odb
+
+	Contiene la información correspondiente 
+	 a la tabla de bonificaciones informada en la ficha Datos 
+	 Preventa ubicada en los Parámetros de Datos Generales. Si no 
+	 se indicó ninguna tabla, el archivo se generará vacío.
+	La información contenida en los registros 
+	 se organiza de la misma forma en que se presentan los valores en la 
+	 tablas de bonificaciones cuando éstas exhiben sus valores por tipo 
+	 de producto.
+	Es importante tener en cuenta que si bien 
+	 no hay límite en la cantidad de valores de los atributos de clientes 
+	 que se pueden utilizar para definir una tabla de bonificaciones, para 
+	 la exportación a la colectora, solamente se tendrán en cuenta los 
+	 nueve primeros valores del atributo de clientes. En caso que los atributos 
+	 de clientes e ítems tengan más de 9 valores, se tomarán solamente 
+	 los 9 primeros, considerando los valores de los mismos ordenados alfabéticamente.
+	En caso que la cantidad de valores asociados 
+	 al atributo de clientes sea menor a 9, se completarán a 9, definiéndose 
+	 los que sean necesarios con porcentaje 0.
+	La cantidad de Tipos 
+	 de productos tampoco podrá ser mayor a 9.
+ 
+Clies.odb
+
+	Contiene información de los clientes seleccionados 
+	 durante la generación. Es decir, contendrá los clientes de la ruta 
+	 y, si corresponde, los asociados al preventista (habilitados para 
+	 operar en la empresa del usuario).
+	Debe tenerse en cuenta que, tanto para 
+	 los clientes que están incluidos en la ruta correspondiente al preventista 
+	 como para los que tienen asociado un agente preventista, la lista 
+	 de precios estándar correspondiente a la condición de venta por defecto, 
+	 debe ser alguna de las listas de precios que se indican en la ficha 
+	 Datos Preventa ubicada en 
+	 los Parámetros de Datos Generales.
+ 
+Rutas.odb
+
+	Contiene información relacionada con la 
+	 ruta solicitada al ejecutar la tarea. Sólo se incluirán los clientes 
+	 de la ruta y si corresponde, los asociados al preventista (habilitados 
+	 para trabajar con la empresa del usuario).
+ 
+Prods.odb
+
+	Contiene información relacionada con los 
+	 bienes que se han de vender. El archivo 
+	 contendrá los bienes que están incluidos en las listas de precios 
+	 que se hayan informado en la ficha Datos 
+	 Preventa de los Parámetros 
+	 de Datos Generales siempre y cuando estén habilitados para 
+	 operar con la empresa del usuario que está realizando la tarea.
+	Es importante tener en cuenta que sólo 
+	 se incluirán en el archivo los productos cuyos códigos presenten, 
+	 a lo sumo, 13 caracteres. Si bien el sistema se prevén hasta 18 caracteres 
+	 para el código de los bienes, para la exportación a la colectora se 
+	 requiere que los códigos sean como máximo de 13 caracteres.
+	Si se trabaja con medidas y colores, un 
+	 bien que se administre con tablas de medidas y colores generará tantos 
+	 registros en el archivo como códigos de productos resulten de su apertura 
+	 por medida y color. En estos casos deberá tenerse en cuenta que el 
+	 código de producto incluirá color, medida y delimitador cuando así 
+	 corresponda y esto aumentará la cantidad de caracteres del código 
+	 de producto.
+	El tipo de bonificación que se incluye 
+	 en el archivo corresponde al orden alfabético en que el valor del 
+	 atributo de ítems aparece en la definición de la tabla de bonificaciones. 
+	 Si el tipo de bonificación fueses mayor a 9, se emitirá un mensaje 
+	 de error y no se incluirá en el archivo. Análogamente, si el valor 
+	 del atributo de ítems asociado no correspondiese a ninguno de los 
+	 que definen la tabla de bonificaciones indicada en la ficha Datos de Preventa, se emitirá un 
+	 mensaje de error y se grabará con tipo de bonificación 0 (cero).
+ 
+Conds.odb
+
+	Contiene información relacionada con la 
+	 tabla de condiciones de venta. Se exportan todas las condiciones definidas 
+	 en el sistema.
+ 
+Control.odb
+
+	Contiene información relacionada con el 
+	 agente Preventista. Entre otros datos, se incluye, la password del 
+	 preventista y los permisos informados para él en la ficha Datos 
+	 Preventa ubicada en los Parámetros de Datos Generales, que 
+	 le permitirán que pueda modificar, o no, los datos que se han de exportar 
+	 a la colectora.
+ 
+Listas.odb
+
+	Contiene la información correspondiente 
+	 a las listas de precios habilitadas para la empresa del usuario que 
+	 se han indicado en la ficha Datos 
+	 Preventa ubicada en los Parámetros de Datos generales.
+ 
+Obses.odb
+
+	Contiene la información registrada en 
+	 la tabla de observaciones de preventa.
+	Los errores que se produzcan y determinen 
+	 la exclusión de clientes, productos, etc., se podrán consultar al 
+	 finalizar el proceso de generación. Efectivamente, se exhibirá un 
+	 mensaje informando que se produjeron errores y se ofrece la posibilidad 
+	 de acceder a una pantalla que muestra los errores producidos.
+ 
+Los datos solicitados para la generación de esta proceso 
+ son los siguientes:
+ 
+ Ruta
+
+	Código de la ruta cuyos clientes se desea 
+	 incluir en el proceso.
+ Preventista
+
+	Código del agente preventista cuyos datos 
+	 se desea incluir en los archivos a generar.
+	 
+ Incluir clientes del preventista
+
+	Indicación de si se desean incluir, 
+	 o no, en el proceso a los clientes del preventista. Es decir los clientes 
+	 que lo tienen asociado como vendedor en la tabla de clientes.
+	 
+ Directorio
+
+	Nombre y ubicación del directorio o carpeta 
+	 donde se han de guardar los archivos que resulten de la exportación. 
+	 El mismo podrá ser seleccionado a través del botón Examinar.
+ Comando
+
+	Nombre y ubicación del programa que 
+	 se ejecutará al finalizar el proceso de generación de los archivos 
+	 compatibles.
+	Mediante este campo será posible invocar, 
+	 por ejemplo, un programa que se encargue de indicarle al operador 
+	 los pasos necesarios para conectar el dispositivo móvil y transferir 
+	 al mismo el contenido de los archivos generados.
+ 
+ 
+ Ficha Ítems
+En esta ficha pueden indicarse diferentes 
+ filtros destinados a seleccionar los ítems 
+ que se han de exportar. Recuérdese que dichos ítems deben estar habilitados 
+ para operar con la empresa del usuario y deben pertenecer a alguna de 
+ las listas de precios establecidas para la preventa.
+Pueden filtrarse los ítems por código 
+ o por atributos y valores de los atributos.
+ Ítem
+Código del ítem 
+ que se desea exportar.
+Puede seleccionarse un ítem en particular 
+ o un grupo de ítems. Si este dato es dejado en blanco, se exportarán todos 
+ los ítems incluidos en las listas de precios establecidas para la preventa.
+ Tabla de Tabla:_Atributos
+
+	Esta tabla permite informar los 
+	 atributos asociados a los ítems 
+	 que se desea exportar a la colectora con sus valores de atributo.
+	Atributo
+	Código de atributo 
+	 de los ítems que se desea incluir en la exportación.
+	De acuerdo al atributo y al valor 
+	 de atributo que se indique se considerará o no cada uno de los ítems 
+	 según los atributos y valores que se hayan asignado a cada uno de 
+	 ellos y según estén incluidos en alguna de las listas de precios establecidas 
+	 para la preventa.
+	Si no se especifica ningún atributo, 
+	 todos los ítems que estén incluidos en alguna de las listas de precios 
+	 establecidas para la preventa intervendrán en el proceso.
+	Descripción
+	Descripción del atributo correspondiente 
+	 al código informado.
+	Valor
+	Valor del atributo 
+	 informado asociado a los ítems que se desean exportar.
+	Debe corresponder a un valor ya 
+	 definido en el sistema para el atributo indicado en el campo Código.
+	De acuerdo al atributo y al valor 
+	 de atributo que se indique se considerará o no cada uno de los ítems 
+	 del rango seleccionado, según los atributos y valores que se hayan 
+	 asignado a cada uno de ellos y según estén incluidos en alguna de 
+	 las listas de precios establecidas para la preventa.
+	Si se indica un valor, se incluirán 
+	 en el listado los ítems que tengan asociados el valor del atributo 
+	 indicado y que estén incluidos en alguna de las listas de precios 
+	 mencionadas.
+	Si no se especifica ningún valor 
+	 de atributo, todos los ítems del rango solicitado que tengan el atributo 
+	 indicado y que estén incluidos en alguna de las lista de precios establecidas 
+	 para la preventa, quedarán incluidos en el proceso.
+	Descripción
+	Descripción del valor asociado 
+	 al atributo correspondiente al código informado.
+ 
+ 
+ Ficha Clientes
+En esta ficha pueden indicarse diferentes 
+ filtros para aplicar a los clientes incluidos en la ruta indicada y a 
+ los clientes asociados al preventista, en caso de haberlos incluido.
+Pueden filtrarse los clientes por atributos 
+ y valores de atributos.
+ 
+ Tabla de Atributos
+
+	Esta tabla permite informar los atributos asociados a los clientes 
+	 que se desea incluir en la exportación.
+	Código
+	Código del atributo 
+	 asociado a los clientes que se desean 
+	 exportar.
+	De acuerdo al atributo y al valor 
+	 del atributo que se indique se considerará o no cada uno de los clientes 
+	 asociados a la ruta indicada y/o al preventista elegido, según los 
+	 atributos y valores que se hayan asignado a cada uno de ellos.
+	Si no se especifica ningún atributo, 
+	 todos los clientes incluidos en la ruta indicada y que estén asociados 
+	 al preventista informado, se exportarán al archivo que se indique.
+	Descripción
+	Descripción del atributo correspondiente 
+	 al código informado.
+	Valor
+	Valor del atributo 
+	 informado asociado a los clientes 
+	 que se desean exportar.
+	Debe corresponder a un valor ya 
+	 definido en el sistema para el atributo indicado en el campo Código.
+	De acuerdo al atributo y al valor 
+	 de atributo que se indique se considerará o no cada uno de los clientes 
+	 asociados a la ruta indicada y al preventista informado, según los 
+	 atributos y valores que se hayan asignado a cada uno de ellos.
+	Si se indica un valor, se exportarán 
+	 los clientes que tengan asociados el valor del atributo indicado y 
+	 que estén incluidos en la ruta indicada o que estén asociados al preventista 
+	 informado.
+	Si no se especifica ningún valor 
+	 de atributo, todos los clientes que tengan el atributo indicado y 
+	 que estén incluidos en la ruta indicada o que estén asociados al preventista 
+	 informado, intervendrán en la exportación.
+	Descripción
+	Descripción del valor asociado 
+	 al atributo correspondiente al código informado.
+ 
+
+
+

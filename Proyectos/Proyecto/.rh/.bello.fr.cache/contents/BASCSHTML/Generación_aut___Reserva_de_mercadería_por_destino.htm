@@ -1,0 +1,273 @@
+
+
+Reserva de mercadería por destino 
+Una vez que se ha indicado el código del destino (cliente, agente 
+ o depósito) de los pedidos 
+ a los cuales se les va a reservar, el depósito 
+ al cual se le pidió, y la fecha de entrega de los pedidos hasta la cual 
+ se va a reservar, pulsando el botón Cargar 
+ pedidos, se completará en pantalla una lista conteniendo todos 
+ los pedidos internos y externos pendientes del destino, con la cantidad 
+ pedida de cada ítem, la cantidad disponible y la reservada a cada uno 
+ hasta ese momento. A partir de allí podrá modificarse la cantidad reservada, 
+ en forma manual o automática, y finalizar la tarea, para efectuar la registración 
+ de las nuevas reservas de mercadería efectuadas.
+Los datos a ingresar para realizar la reserva de mercadería 
+ son:
+ 
+ Destino
+
+	Tipo de destinatario de los pedidos a 
+	 los cuales se les desea reservar mercadería.
+	Las opciones son:
+	Cliente
+	Agente
+	Depósito
+	Una vez indicado el tipo de destinatario 
+	 se deberá ingresar el código de destino correspondiente a los pedidos 
+	 que se desean incluir en la reserva.
+	En función del tipo de destino seleccionado, 
+	 se deberá ingresar el código de un cliente, 
+	 agente o depósito 
+	 titular de los pedidos que se desean incluir en la reserva.
+	Todos los pedidos externos tienen destino 
+	 cliente, porque siempre son efectuados por clientes. Los pedidos internos 
+	 pueden tener destino agente o depósito dependiendo de quién haya efectuado 
+	 el pedido.
+ 
+ Depósito
+
+	Código del depósito 
+	 en el cual se desea reservar la mercadería del destino indicado.
+	Al cargar en pantalla la lista de los 
+	 pedidos a los cuales se va a reservar mercadería, en la columna Cantidad disponible se exhibirá 
+	 el stock disponible de cada ítem en el depósito que aquí se indique.
+ 
+ Fecha de entrega 
+ hasta
+
+	En el caso en que el destino seleccionado 
+	 tenga muchos pedidos pendientes es posible acotar el rango de pedidos 
+	 a los cuales se va a reservar mercadería, mediante el ingreso de una 
+	 fecha de entrega hasta la cual se va a realizar la reserva.
+	Este campo es opcional. Si no se ingresa 
+	 ninguna fecha se exhibirán todos los pedidos internos y externos pendientes 
+	 del destino seleccionado.
+	Si se indica una fecha sólo será posible 
+	 reservar mercadería a los pedidos cuya fecha de entrega no sea posterior 
+	 a esta.
+ 
+ Solo líneas pendientes 
+ de reservar
+
+	Indicación de si se desea que solo se 
+	 exhiban las líneas de los pedidos que aún no han sido reservadas.
+	 
+ 
+ Ordenamiento Código de ítem-Color-Medida-Fecha-Número de comprobante
+Al hacer clic en este enlace se habilita una 
+ ventana que permite definir el ordenamiento que se le desea dar a los 
+ pedidos del ítem a los cuales se desea reservar mercadería.
+El ordenamiento por defecto es Código de ítem-Color-Medida-Fecha-Número 
+ de comprobante. Si el sistema no maneja colores y medidas el ordenamiento 
+ por defecto es Código del ítem-Fecha-Número de comprobante.
+ Ordenamiento
+
+	Esta ventana permite seleccionar las 
+	 columnas por las que se desea ordenar la tabla:
+	Tabla A
+	Tabla B
+	En la Tabla A (primer columna) aparecen 
+	 los siguientes datos, que son los nombres de las columnas que permiten 
+	 el ordenamiento: Código de ítem, descripción del ítem, Color, Medida, 
+	 Fecha, número del comprobante y fecha de entrega.
+	En la Tabla B (segunda columna) se 
+	 agregan los criterios en base a los cuales se desea ordenar la información. 
+	 Se puede incluir un dato, algunos o todos los datos que se vayan seleccionando 
+	 de la primer columna para definir el ordenamiento. Cada uno de estos 
+	 datos pueden ser ordenados en forma ascendente o descendente.
+	Para seleccionar y copiar datos de 
+	 la primer columna a la segunda y viceversa en forma unitaria se disponen 
+	 de los siguientes botones  
+	 y  . Para copiar todos los 
+	 datos de la columna A a la columna B o quitarlos existen los botones 
+	  y. 
+	 También para copiar una selección de columnas o eliminar una selección 
+	 de columnas se pueden utilizar las teclas SHIFT o CTRL.
+	Existen otros dos botones para subir 
+	 o bajar las columnas en la tabla derecha. El orden de las columnas 
+	 en dicha tabla establece el orden de los comprobantes a reservar.
+	Cabe aclarar que el ordenamiento por 
+	 medida se hace respecto de la posición de dicha medida en la tabla 
+	 de medidas y no respecto del orden alfabético de su código.
+	Si no se elige ninguna columna para 
+	 definir el ordenamiento se ubican los pedidos en la lista sin ordenamiento, 
+	 y el sistema indica tal estado al lado del campo ordenamiento.
+ Cargar 
+ pedidos
+
+	Pulsando este botón se cargarán los pedidos 
+	 en pantalla observando el ordenamiento indicado en el punto anterior.
+	Si se cambiara el ordenamiento luego de 
+	 haber cargado los pedidos en pantalla, automáticamente, éstos volverán 
+	 a cargarse observando el nuevo ordenamiento elegido.
+ 
+ Reserva automática
+
+	Mediante este botón se efectúa la reserva 
+	 de mercadería automática del destino indicado, a los pedidos internos 
+	 y externos exhibidos en la tabla de pedidos pendientes.
+	Una vez pulsado este botón, y realizada 
+	 la reserva automática es posible nuevamente modificar la reserva si 
+	 existen pedidos para los cuales el usuario lo considere necesario.
+	Al oprimir este botón el sistema propone 
+	 dicha reserva precargando la tabla de comprobantes a reservar con 
+	 dichos valores pero sin actualizar la base de datos.
+	Para hacer efectiva la reserva automática 
+	 el usuario tiene que grabar los valores propuestos por el sistema. 
+	 Si oprime la tecla cancelar o salir se pierden los valores de dicha 
+	 reserva automática.
+ 
+ 
+ Tabla de Pedidos pendientes
+En esta tabla se exhiben todos los pedidos 
+ pendientes del destino indicado, a los cuales es posible reservar mercadería. 
+ Se mostrarán los pedidos externos y los internos.
+Se muestra cada pedido con su fecha, tipo, 
+ número de comprobante, fecha de entrega, ítem, cantidad disponible en 
+ el depósito, cantidad pedida, cantidad pendiente y cantidad reservada 
+ hasta el momento.
+Se muestran también en esta lista los pedidos 
+ que requieran autorización manual y aún no hayan sido autorizados, pero 
+ no podrá reservarse mercadería a los mismos.
+Al hacer doble clic sobre las columnas de 
+ fecha, fecha de entrega, número del comprobante, código del ítem, descripción 
+ del ítem, color, medida y número de comprobante se ordenarán los comprobantes 
+ mostrados en la tabla de ítems por el criterio seleccionado.
+Es posible reservar la mercadería a cada pedido 
+ en forma manual o en forma automática mediante el botón Reserva 
+ automática. Al pulsar este botón, el sistema reserva automáticamente 
+ la mercadería teniendo en cuenta la antigüedad de cada pedido.
+Si no se controlan las entregas en exceso 
+ el sistema permite reservar los pedidos hasta el máximo de la cantidad 
+ disponible para dicho ítem aunque se supere la cantidad pendiente del 
+ pedido.
+Si se controlan las entregas en exceso pero 
+ se definió un porcentaje de exceso permitido en las entregas, el sistema 
+ permite reservar los pedidos hasta una cantidad que se corresponde a la 
+ cantidad pendiente del comprobante más el porcentaje por exceso permitido. 
+ Siempre teniendo en cuenta que haya stock disponible suficiente para reservar 
+ dicho ítem.
+Código 
+ de ítem
+
+	Código del ítem asociado a cada 
+	 pedido al cual es posible reservar mercadería.
+Ítem
+
+	Descripción correspondiente al 
+	 ítem del código que se exhibe en el campo anterior.
+	 
+Cantidad 
+ disponible
+
+	Cantidad de unidades del ítem, 
+	 disponibles en el depósito indicado expresadas en las dos unidades 
+	 de medida, exhibiendo las descripciones de ambas.
+Cantidad 
+ pedida
+
+	Cantidad de unidades del ítem, 
+	 solicitadas en el pedido cuyo número se exhibe en la columna Número. Esta cantidad se encuentra 
+	 expresada en la Unidad para cantidades 
+	 pendientes informada para cada ítem en la tabla de bienes.
+Cantidad 
+ pendiente
+
+	Cantidad de unidades del ítem, 
+	 que se encuentran pendientes de entrega en el pedido cuyo número se 
+	 exhibe en la columna Número. 
+	 Esta cantidad se encuentra expresada en la Unidad 
+	 para cantidades pendientes informada para cada ítem en la tabla 
+	 de bienes.
+Cantidad 
+ reservada
+
+	Cantidad de unidades del ítem, 
+	 que se desean reservar al pedido cuyo número se exhibe en la columna 
+	 Número.
+	Al cargar los pedidos en la tabla 
+	 se muestra la cantidad reservada del ítem hasta el momento. Este valor 
+	 es el que podrá modificarse, ya sea en forma manual o automática.
+	Al modificar la cantidad reservada 
+	 del pedido, se actualizará también para dicho ítem, color y medida 
+	 el stock disponible que se muestra en la grilla y se controlará que 
+	 la cantidad reservada no supere el stock disponible.
+	Al oprimir el botón de la consulta 
+	 posicionados en esta columna, se abre la consulta de ítems de ventas 
+	 precargada con los diferentes códigos que se encuentran en esta grilla.
+Fecha
+
+	Fecha de cada pedido pendiente 
+	 del destino solicitado, al cual es posible reservar mercadería.
+Tipo
+
+	Tipo de comprobante de cada pedido 
+	 pendiente del destino solicitado, al cual es posible reservar mercadería.
+Número
+
+	Número de comprobante de cada 
+	 pedido pendiente del ítem solicitado, al cual es posible reservar 
+	 mercadería.
+Fecha 
+ de entrega
+
+	Fecha de entrega del pedido cuyo 
+	 número se exhibe en la columna anterior.
+	 
+Autorizado
+
+	Indicación de si el pedido está 
+	 o no autorizado.
+	 
+ 
+ Cancelar línea
+
+	Pulsando este botón es posible cancelar 
+	 líneas pedidos pendientes.
+	 
+ 
+ Reemplazar línea
+
+	Pulsando este botón es posible reemplazar 
+	 líneas de pedidos internos pendientes. 
+	 Esto es posible siempre y cuando los ítems se reemplacen por otros 
+	 definidos como alternativos de los mismos . En ese caso se generarán 
+	 nuevos pedidos internos con las líneas reemplazadas.
+	Las cantidades que se informen en 
+	 reemplazo pueden ser superiores a la cantidad pendiente de la línea 
+	 original. Si no se indican cantidades en los ítems alternativos y 
+	 la cantidad del ítem original es inferior o igual a la cantidad pendiente, 
+	 se asume que no está reemplazando la línea.
+	Para llevar a cabo las tareas de cancelación 
+	 y reemplazo es necesario efectuar ciertas especificaciones en la tabla 
+	 de sucursales.
+ 
+ 
+ A tener en cuenta
+
+	Esta tarea contempla la posibilidad de definir Modelos. Estos guardan todas las 
+	 modificaciones que se realicen en las columnas correspondientes a 
+	 la grilla de trabajo-
+	Al modificar la posición y el ancho de las columnas 
+	 de la tabla de detalle de comprobantes a reservar y grabar el modelo, 
+	 la posición y el ancho de las mismas queda almacenada en dicho modelo. 
+	 Al seleccionar un modelo que incluya la posición de las columnas, 
+	 la tabla se acomodará para mostrar las nuevas posiciones.
+	El ordenamiento de la tabla de comprobantes a reservar 
+	 indicado se puede guardar en el modelo cuando se selecciona la opción 
+	 Modifica los valores predeterminados guardados en el modelo.
+ 
+
+
+

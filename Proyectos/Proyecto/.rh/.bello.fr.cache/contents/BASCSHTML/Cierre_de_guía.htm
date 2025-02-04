@@ -1,0 +1,467 @@
+
+
+Cierre de guía 
+Cuando los conductores vuelven luego de haber efectuado 
+ todas las entregas deben rendir el viaje. El cierre de la guía de un camión permite registrar y controlar 
+ todas las operaciones relacionadas con el mismo.
+ 
+ 
+ Número
+
+	Se debe ingresar aquí el Prefijo y el 
+	 Número de guía que 
+	 se ha de cerrar. A través de la consulta que ofrece el sistema puede 
+	 accederse a una lista con todas las guías generadas.
+	Una vez seleccionada la guía, se exhibirán 
+	 en pantalla todos datos correspondientes a la misma. Estos son la 
+	 fecha, la caja, el depósito, el camión, el lote, la carga y los comprobantes 
+	 correspondientes a la misma.
+ 
+ Ficha comprobantes
+ Tabla 
+ de Comprobantes de la guía
+
+	Esta tabla muestra los datos de todos 
+	 los comprobantes incluidos en la guía que se desea cerrar como fecha, 
+	 tipo, número, cliente, cantidad de unidades e importe total.
+	Estando el cursor posicionado en una 
+	 línea de esta tabla, haciendo doble click o pulsando el botón Modificar se accede al detalle del 
+	 comprobante correspondiente a dicha línea y es posible efectuar modificaciones 
+	 con respecto a la mercadería entregada o a la cobranza.
+	Además se muestran para cada comprobante 
+	 las siguientes columnas:
+	 
+	 Anular
+	Indicación de si se desea anular 
+	 el comprobante correspondiente a la línea de la tabla.
+	Una vez efectuado el cierre de 
+	 la guía, dicho comprobante será registrado como Anulado 
+	 en todos los informes del sistema, como si se hubiera anulado mediante 
+	 la Anulación de comprobantes 
+	 provista por el sistema.
+	 
+	 Cuenta corriente
+	Para las facturas de pago contado 
+	 diferido asociadas a la guía es posible indicar si la misma se desea 
+	 pasar a cuenta corriente en el momento de cerrar la guía.
+	Esta opción debe utilizarse en 
+	 el caso de facturas de pago diferido que no hayan sido cobradas en 
+	 el viaje, y permite que la correspondiente deuda se documente en la 
+	 cuenta corriente del cliente titular de la misma.
+	Al efectuar el cierre de la guía, 
+	 se modificará la registración contable de todas aquellas facturas 
+	 para las cuáles se informó el pasaje a cuenta corriente, cambiando 
+	 la imputación contable de ventas 
+	 contado por la imputación contable default del cliente 
+	 titular de la factura.
+	Además, si la condición de venta 
+	 asociada a estas facturas tiene indicado que genera vencimientos a 
+	 documentar, se generarán desde esta tarea las FC 
+	 que correspondan.
+	 
+	 Postergar
+	Indicación de si se desea postergar 
+	 el comprobante correspondiente a la línea de la tabla. La postergación 
+	 de un comprobante implica sacarlo de la guía en la que se lo incluyó, 
+	 de modo que quede pendiente para poder ser distribuido en otra carga 
+	 o incorporado a otro lote para ser remitido con posterioridad. El 
+	 comprobante postergado queda asociado al tipo y lote de facturación, 
+	 pero sin carga asociada.
+ Modificar
+
+	Esta tarea permite:
+	Informar un rechazo 
+	 de mercadería, parcial o total
+	Informar las cobranzas 
+	 que fueron realizadas con valores diferentes al previsto como método 
+	 de cobranza habitual del camión
+	Informar los envases 
+	 adeudados por el cliente
+	Al seleccionar un comprobante desde 
+	 el cierre de guía se accede al detalle del mismo y la información 
+	 se presenta de la siguiente forma:
+ 
+ Ficha 
+ Ítems
+Esta ficha sólo se habilitará si el 
+ comprobante que se está modificando involucra entrega de mercadería.
+En esta ficha se muestra el detalle 
+ de los ítems entregados con el comprobante 
+ de la guía y se pueden efectuar modificaciones a las cantidades entregadas 
+ en los casos en que el cliente devuelva 
+ parte, o toda, la mercadería.
+Si el comprobante que se está modificando 
+ es una factura, al cerrar la guía , si hay rechazos de mercadería informados, 
+ se generará una Nota de Crédito de devolución por la mercadería no entregada. 
+ Esta nota quedará aplicada, en forma automática, a la factura.
+Si el comprobante que se está modificando 
+ es un remito diferido, al cerrar la guía, si hay rechazos de mercadería 
+ informados, se generará un comprobante de cancelación parcial del remito 
+ diferido por las unidades no entregadas y un comprobante de egreso que 
+ documentará las entregas efectivamente efectuadas.
+ 
+ Tabla de Ítems
+
+	Esta tabla muestra una línea 
+	 por cada ítem entregado tal cual como fuera especificado al ingresar 
+	 el comprobante que se está modificando.
+	Para cada ítem se muestra 
+	 la cantidad entregada y se deberá indicar, si corresponde, la cantidad 
+	 de unidades no entregadas. En función al tipo de ítem del que se trate, 
+	 se requerirá información adicional.
+	Al respecto, y a título de 
+	 ejemplo, podemos mencionar que para algunos bienes 
+	 se deben detallar las cantidades no entregadas por color 
+	 y por medida.
+	En caso de bienes 
+	 tales que cada unidad disponible en stock tenga asociado un número 
+	 de serie en particular, cada unidad no entregada deberá identificarse, 
+	 también, por su respectivo número de serie.
+	En otros casos, como por ejemplo, 
+	 cuando deben ingresarse códigos de despachos o partidas, se incorporan 
+	 columnas adicionales para permitir incluir dicha información.
+	En cada línea se muestra:
+	Item
+	Código del ítem 
+	 incluido en el comprobante.
+	Descripción
+	Descripción del ítem.
+	Si el ítem tiene asociada 
+	 una descripción larga, se exhibirá esta. Si no, se exhibirá la otra 
+	 descripción.
+	Cantidad
+	Cantidad de unidades entregadas 
+	 del ítem según se indicó en el ingreso del comprobante que se está 
+	 modificando, expresadas en la primera unidad.
+	Cantidad No entregada
+	Cantidad de unidades no entregadas 
+	 del ítem.
+	Inicialmente este campo se 
+	 muestra en cero y si hay unidades no entregadas se deberá indicar 
+	 la cantidad correspondiente.
+	Si el ítem trabaja con doble 
+	 unidad de medida, se solicitará este campo si las ventas se registran 
+	 en la primera unidad. Si las ventas se registran en segunda unidad, 
+	 al ingresar la cantidad no entregada en la segunda unidad se completará 
+	 este dato en forma automática.
+	Si el ítem trabaja con colores y medidas 
+	 se abrirá una ventana que solicitará el ingreso de las cantidades 
+	 no entregadas para cada color y medida entregada, y al finalizar el 
+	 ingreso de datos en esa ventana, se completará este dato con la cantidad 
+	 total de unidades no entregadas para todos los colores y medidas del 
+	 ítem.
+	Cantidad en 2da 
+	 unidad
+	Cantidad de unidades entregadas 
+	 del ítem según se indicó en el ingreso del comprobante que se está 
+	 modificando, expresadas en la segunda unidad.
+	Si el ítem no trabaja con 
+	 doble unidad de medida, no se exhibirá información en este campo.
+	Cantidad no entregada 
+	 en 2da unidad
+	Cantidad de unidades no entregadas 
+	 del ítem en la segunda unidad de medida.
+	Si el ítem no trabaja con 
+	 doble unidad de medida, no se solicitará información en este campo.
+	Inicialmente este campo se 
+	 muestra en cero y si hay unidades no entregadas en esta unidad se 
+	 deberá indicar la cantidad correspondiente.
+	Si el ítem trabaja con doble 
+	 unidad de medida, se solicitará este campo si las ventas se registran 
+	 en la segunda unidad. Si las ventas se registran en primera unidad, 
+	 al ingresar la cantidad no entregada en la primera unidad se completará 
+	 este dato en forma automática.
+ 
+ Ficha 
+ Pago
+Esta ficha sólo se habilitará si se 
+ están informando novedades en una factura contado de pago diferido.
+Entre los datos que se asocian al 
+ camión se informa el medio 
+ de pago Por defecto para la cobranza de facturas correspondientes 
+ al viaje.
+El cierre de guía genera, en forma 
+ automática, recibos que registran cobranzas efectuadas con el medio de 
+ pago informado en el camión, para cancelar todas las facturas que se encuentran 
+ con pago pendiente, en relación a la guía que se cierra.
+Si alguna factura fue cobrada con 
+ otro tipo de valor, deberán registrarse específicamente en esta ficha, 
+ los valores que conforman su cobranza.
+Para cada valor recibido, habrá que 
+ informar, el importe cobrado. El importe que se informe debe coincidir, 
+ exactamente, con el importe correspondiente a la mercadería efectivamente 
+ entregada.
+ 
+ Caja
+
+	Código de la caja en la que 
+	 se registra el pago.
+	Se exhibirá el código de la 
+	 caja asociada al camión que participó de la guía que se está cerrando.
+ 
+ Importe total a 
+ pagar
+
+	Importe total correspondiente 
+	 a la factura que se está modificando.
+	Si se informaron devoluciones 
+	 de mercadería no se exhibirá este campo, ya que el importe a pagar 
+	 estará conformado por el importe de la mercadería que efectivamente 
+	 se haya entregado.
+ 
+ Tabla de Medios 
+ de pago
+
+	En esta tabla se ingresan 
+	 los valores que conforman el pago. Los valores se ingresan invocando 
+	 códigos de medios de pago 
+	 . La información a asociar a cada uno dependerá del tipo de valor 
+	 del que se trate.
+	Si el medio de pago es de 
+	 tipo Efectivo, bastará con 
+	 ingresar el importe, si es en moneda extranjera, además, se solicita 
+	 la cantidad y el cambio correspondiente.
+	Si el medio de pago corresponde 
+	 a cheques de terceros, documentos, facturas de crédito o tarjetas 
+	 de crédito se deben informar los datos del mismo, por ejemplo, banco, 
+	 importe, número, fecha, plazo, vencimiento, observaciones, etc.
+	Si el medio de pago corresponde 
+	 a cheques propios, se deberán seleccionar de la lista provista por 
+	 el sistema, cuáles son los que se reciben. La lista muestra para cada 
+	 cheque, el número, la fecha, chequera, plazo de acreditación, banco, 
+	 importe, cuenta origen, etc.
+	Si el medio de pago corresponde 
+	 a un cobro por banco se deben informar los datos del mismo: cuenta 
+	 bancaria, importe, número, fecha, plazo y observaciones.
+	Los detalles de cómo trabajar 
+	 con cada medio de pago en particular, pueden verse en el apartado 
+	 correspondiente a las tablas de 
+	 medios de pago .
+	Valor
+	Código del medio 
+	 de pago correspondiente al valor con el que nos paga el cliente.
+	Debe corresponder a un medio 
+	 de pago definido en el sistema y de tipo Efectivo, Cheque recibido, 
+	 Pagaré recibido, Tarjeta, Factura de crédito recibida, Cobro por banco 
+	 o Cheque emitido.
+	Descripción
+	Descripción del medio de pago 
+	 cuyo código se informó en el dato anterior.
+	Importe
+	Importe que se cobra con el 
+	 medio de pago informado.
+	Si se recibe un cheque emitido, 
+	 el importe se copiará automáticamente a la línea en el momento de 
+	 seleccionar el cheque de la lista provista por el sistema.
+	Fecha
+	Fecha del valor que se recibe.
+	Si se cobra con efectivo no 
+	 se exhibe esta información.
+	Si se recibe un cheque emitido, 
+	 la fecha del mismo se copiará automáticamente a la línea en el momento 
+	 de seleccionar el cheque de la lista provista por el sistema.
+	Si se recibe un valor (cheque, 
+	 pagaré, etc.) corresponde a la fecha del mismo.
+	Número
+	Número del valor que se recibe.
+	Si se cobra con efectivo no 
+	 se exhibe esta información.
+	Si se recibe un cheque emitido, 
+	 el número del mismo se copiará automáticamente a la línea en el momento 
+	 de seleccionar el cheque de la lista provista por el sistema.
+	Si se recibe un valor (cheque, 
+	 pagaré, etc.) corresponde al número del mismo.
+ 
+ Ficha 
+ Deuda de envases
+Esta ficha sólo se habilitará si el 
+ comprobante que se está modificando involucra entrega de mercadería en 
+ contenedores retornables y si el camión 
+ asociado a la guía tiene un concepto 
+ y un talonario para registrar deudas 
+ de envases.
+En esta ficha se muestra el detalle 
+ de los contenedores retornables que se le entregan al cliente con la mercadería 
+ y se pueden efectuar modificaciones si el cliente no devuelve todos los 
+ envases correspondientes a dicha mercadería.
+ 
+ Tabla de contenedores 
+ retornables
+
+	En esta tabla se muestran 
+	 todos los contenedores retornables correspondientes a la mercadería 
+	 entregada con el comprobante de la guía que se está modificando.
+	Código
+	Código del contenedor retornable.
+	Descripción
+	Descripción del ítem de tipo 
+	 contenedor retornable que se exhibe en el campo anterior.
+	Si el ítem tiene asociada 
+	 una descripción larga, se exhibirá esta. Si no, se exhibirá la otra 
+	 descripción.
+	Cantidad a devolver
+	Cantidad de unidades a devolver 
+	 del contenedor retornable.
+	Esta cantidad corresponde 
+	 a la cantidad de unidades del contenedor retornable que contienen 
+	 a la mercadería entregada.
+	Si el cliente rechaza toda 
+	 la mercadería este campo exhibirá un cero ya que el cliente no debe 
+	 devolver envases. Si no, esta cantidad corresponderá a la cantidad 
+	 de mercadería entregada con el comprobante menos la cantidad de unidades 
+	 no entregadas, según se haya informado en la ficha Items.
+	Cantidad No devuelta
+	Cantidad de unidades no devueltas 
+	 del contenedor retornable.
+	Inicialmente este campo se 
+	 muestra en cero y si hay envases no devueltos se deberá indicar la 
+	 cantidad correspondiente.
+ 
+ 
+ Ficha Configuración
+
+	Esta ficha sólo se habilitará si la guía 
+	 a cerrar corresponde a un camión que no tiene indicada una caja o 
+	 si se cierra una guía que no tiene asociado camión 
+	 de reparto.
+	 Caja
+	Código de la caja en la cual se han 
+	 de generar los recibos correspondientes a los comprobantes cobrados.
+	Este campo solo se exhibirá en caso 
+	 que la guía no tenga asociado un camión 
+	 o si tiene asociado camión, pero el mismo no tiene informada una caja.
+	 Medio 
+	 de pago
+	Es el medio 
+	 de pago Por defecto que se utilizará para registrar las cobranzas 
+	 de las facturas de pago diferido asociadas a las guías que se cierran 
+	 y para las cuales no se ingresó la cobranza correspondiente.
+	Estas facturas se cancelarán en forma 
+	 automática mediante la registración de un recibo que incluirá este 
+	 medio de pago. Estos recibos tomarán su numeración del talonario de 
+	 recibos asociado al talonario correspondiente a las facturas de pago 
+	 diferido que se incluyen en la guía que se cierra.
+	Este campo solo se exhibirá en caso 
+	 que la guía no tenga asociado un camión 
+	 o si tiene asociado camión, pero el mismo no tiene informada una caja.
+	 Talonarios
+	Este cuadro solo se exhibirá en caso 
+	 de cerrar una guía que no tiene asociado camión 
+	 de reparto.
+	 Entregas
+	Talonario 
+	 para entregas de mercadería que se utilizará para confirmar todas 
+	 las entregas de mercadería correspondientes a comprobantes de entrega 
+	 diferida.
+	Se generará en forma automática un 
+	 comprobantes de egreso (con numeración correspondiente a este talonario), 
+	 por cada comprobante de egreso diferido (egreso de mercadería diferido 
+	 o factura con entrega diferida) incluido en la guía que se cierra.
+	Si el talonario de entrega utiliza 
+	 Numeración asociada, el comprobante 
+	 de entrega se genera con el mismo número que el comprobante de entrega 
+	 diferida correspondiente. Es altamente conveniente utilizar este método 
+	 de numeración ya que el remito impreso que reciben los clientes 
+	 corresponde a la impresión de comprobantes de entrega diferida. De 
+	 este modo, la numeración de los comprobantes de egreso, propiamente 
+	 dichos, que se generan en el sistema, coincidirá con la numeración 
+	 de los “remitos” (comprobantes de egreso diferido) que reciben los 
+	 clientes.
+	 N. Crédito 
+	 A
+	Talonario 
+	 que se utilizará para registrar las notas de crédito de devolución 
+	 letra A correspondientes a los rechazos de mercadería efectuados por 
+	 los clientes , informados por el 
+	 conductor al retornar de su viaje.
+	Si la mercadería que se rechaza corresponde 
+	 a facturas con entrega diferida, este talonario deberá tener asociado 
+	 un talonario de comprobantes de cancelación de comprobantes de entrega 
+	 diferida. De modo que, conjuntamente a la generación de la Nota de 
+	 Crédito, se registra un comprobante de egreso confirmando la mercadería 
+	 entregada, y se cancela el resto.
+	Si la mercadería que se rechaza corresponde 
+	 a facturas con entrega no diferida, este talonario deberá tener asociado 
+	 un talonario correspondiente a comprobantes de ingreso de mercadería. 
+	 De modo que, conjuntamente a la generación de la Nota de Crédito, 
+	 se registra un comprobante de egreso confirmando la mercadería entregada, 
+	 y uno de ingreso que refleja el reingreso de la mercadería que se 
+	 devuelve.
+	En la generación automática de las 
+	 notas, se redondeará el comprobante a la base de redondeo indicada 
+	 para moneda local o para la moneda en la que se expresa el comprobante, 
+	 utilizando para ello, el ítem indicado en los parámetros generales 
+	 como ítem para base por redondeo.
+	 Canc. 
+	 Egr. Dif.
+	Talonario 
+	 que se utilizará para cancelar, en forma total o parcial, comprobantes 
+	 de entrega diferida, en los casos en que el cliente rechaza mercadería 
+	 cuya entrega fue documentada con un comprobante de entrega diferida.
+	Si la guía incluye comprobantes de 
+	 egreso de mercadería diferida, y si en la tarea correspondiente al 
+	 Cierre de guía se informa que parte, o toda, la mercadería fue rechazada, 
+	 el comprobante de egreso que genera el cierre de guía en forma automática, 
+	 incluye como cantidad la realmente aceptada por el cliente y cancela 
+	 el resto mediante el uso de este talonario.
+	 N. de 
+	 Crédito B/C
+	Talonario 
+	 que se utilizará para registrar las notas de crédito de devolución 
+	 letra B o C correspondientes a los rechazos de mercadería efectuados 
+	 por los clientes , informados por 
+	 el conductor al retornar de su viaje.
+	Si la mercadería que se rechaza corresponde 
+	 a facturas con entrega diferida, este talonario deberá tener asociado 
+	 un talonario de comprobantes de cancelación de comprobantes de entrega 
+	 diferida. De modo que, conjuntamente a la generación de la Nota de 
+	 Crédito, se registra un comprobante de egreso confirmando la mercadería 
+	 entregada, y se cancela el resto.
+	Si la mercadería que se rechaza corresponde 
+	 a facturas con entrega no diferida, este talonario deberá tener asociado 
+	 un talonario correspondiente a comprobantes de ingreso de mercadería. 
+	 De modo que, conjuntamente a la generación de la Nota de Crédito, 
+	 se registra un comprobante de egreso confirmando la mercadería entregada, 
+	 y uno de ingreso que refleja el reingreso de la mercadería que se 
+	 devuelve.
+	En la generación automática de las 
+	 notas, se redondeará el comprobante a la base de redondeo indicada 
+	 para moneda local o para la moneda en la que se expresa el comprobante, 
+	 utilizando para ello, el ítem indicado en los parámetros generales 
+	 como ítem para base por redondeo.
+	 Datos 
+	 para deuda de envases
+	Este cuadro solo se exhibirá en caso 
+	 de cerrar una guía que no tiene asociado camión 
+	 de reparto.
+	Cuando se realiza una entrega de bienes que se comercializan en envases 
+	 retornables, se sabe que el sistema automáticamente ingresa la misma 
+	 cantidad de envases que egresan.
+	Es posible al cerrar una guía, informar 
+	 como novedad que un cliente no entregó la cantidad de envases que 
+	 debiera (la que corresponde a los bienes que se le fueron entregados 
+	 y que se comercializan en envases retornables).
+	En ese caso, se generan, en forma 
+	 automática, comprobantes de egreso incluyendo los envases informados 
+	 como deuda del cliente. Estos comprobantes utilizarán el concepto 
+	 y el talonario para entregas que 
+	 aquí se indiquen.
+	 Concepto
+	Es el concepto 
+	 que se asociará a los comprobantes de egreso de contenedores retornables 
+	 que se generarán al cerrar las guías del camión si se informan envases 
+	 adeudados.
+	Si no se indica un concepto no se 
+	 habilitará la opción de registrar los envases adeudados.
+	El concepto que se indique debe estar 
+	 habilitado para Clientes.
+	 Talonario 
+	 para entregas
+	Talonario 
+	 para entregas de mercadería que se utilizará para registrar el egreso 
+	 de los envases adeudados que se informen.
+	Este talonario no debe utilizar Numeración asociada.
+ 
+
+
+

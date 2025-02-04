@@ -1,0 +1,102 @@
+
+  Facturas de compra
+  Según las necesidades de la empresa, es posible establecer circuitos de trabajo que requieran autorizar facturas de compra antes de ser pagadas.
+  Se puede implementar el sistema de modo que las facturas requieran de autorización para que sea posible darles curso. El que la requieran o no y, en el caso que la requieran, las condiciones que hacen que una factura deba autorizarse, quedan a elección del usuario.
+  Las autorizaciones se realizan utilizando las tablas de autorizaciones ya disponibles en el sistema para el resto de los comprobantes que también requieren de autorización.
+  Las facturas de compra pendientes de autorización no estarán disponibles en el proceso previsto por el sistema para la función Aplicaciones de proveedores.
+  Las facturas de compra pendientes de autorización se exhiben con la letra A (no autorizadas) en los listados de Análisis de Cuentas a pagar, Resumen de Cuentas a pagar, Vencimientos de proveedores, Auditoria de compras, Comprobantes de compras, Rendiciones de gastos.
+  La información a completar es la siguiente:
+  
+  Evaluar en función del:  comprobante
+  
+    Permite indicar qué importe se tiene en cuenta para autorizar, puede seleccionarse:
+    Total
+    Total gravado
+  
+   Para todas las facturas de compra
+  
+    Indicación de si se desea que todas las facturas de compra se autoricen. La forma en que deber efectuarse la autorización dependerá de la tabla de autorizaciones que se indique.
+  
+   Tabla de autorizaciones
+  
+    Tabla que se usa para autorizar todas las facturas de compra.
+  
+   Con Ítems determinados
+  
+    Indicación de si las facturas de compra de ítems determinados requieren o no autorización manual.
+     Atributo
+    Código de atributo. Debe corresponder a un atributo ya definido en el sistema y aplicable a Ítems.
+    Esta opción sólo se habilita si se indicó la autorización de facturas de compra con Ítems determinados.
+    Las facturas de compra que incluyan ítems que tengan este atributo serán tenidas en cuenta para decidir si la factura de compra requiere o no autorización. El que la requieran o no y la forma en que deberá efectuarse la misma dependerá de los valores del atributo que se informen en la tabla que sigue y de la tabla de autorizaciones que se indique para cada uno de dichos valores.
+     Tabla de valores
+    En esta tabla se deberán ingresar los distintos valores del atributo de ítems, indicado en el campo precedente, para los cuales se desea definir un circuito de autorización.
+    Valor
+    Valor del atributo cuyo código se indicó en el campo Atributo.
+    Esta opción sólo se habilita si se indicó la autorización manual de facturas de compra con Ítems determinados.
+    Las facturas de compra que incluyan ítems que tengan este valor para el atributo indicado en el campo correspondiente, requerirán autorización para poder continuar su curso, la forma en que debe efectuarse la autorización dependerá de la tabla de autorizaciones que se indique.
+  
+   Con textos varios determinados
+  
+    Permite indicar criterios de autorización por textos varios del tipo importe o porcentaje. Requerirán autorización manual los comprobantes  que se ingresen con algún ítem texto vario de tipo importe o porcentaje y que cumpla además con los demás criterios indicados.
+     De proveedores determinados
+    Indicación de si las facturas de compra efectuadas a determinados proveedores requieren o no autorización manual.
+     Atributo
+    Código de atributo. Debe corresponder a un atributo ya definido en el sistema y aplicable a proveedores.
+    Esta opción sólo se habilita si se indicó que la autorización manual de facturas de compra es en De proveedores determinados.
+    Las facturas de compra efectuadas a proveedores que tengan este atributo serán tenidos en cuenta para decidir si el comprobante requiere o no autorización. El que la requieran o no y la forma en que deberá efectuarse la misma dependerá de los valores del atributo que se informen en la tabla que sigue y de la tabla de autorizaciones que se indique para cada uno de dichos valores.
+     Tabla de valores
+    En esta tabla se deberán ingresar los distintos valores del atributo de proveedores, indicado en el campo precedente, para los cuales se desea definir un circuito de autorización.
+    Valor
+    Valor del atributo cuyo código se indicó en el campo anterior.
+    Esta opción sólo se habilita si se indicó que la autorización manual de facturas de compra se requiere que sean De proveedores determinados.
+    Los facturas de compra efectuadas a proveedores que tengan este valor para el atributo indicado en el campo anterior, requerirán autorización para poder seguir su curso y la forma en que debe efectuarse la autorización dependerá de la tabla de autorizaciones que se indique.
+  
+   Por presupuesto excedido
+  
+    Si se activa esta opción las facturas de compra que al registrarse excedan los valores presupuestas (por importe y/o cantidad) quedarán pendientes de autorización.
+     Tabla de autorizaciones
+    Los usuarios responsables de autorizar se indican en la tabla respectiva.
+  
+   Por recepción pendiente o pendiente de autorizar
+  
+    Para la evaluación de esta opción se revisará la existencia de líneas de la factura que sean bienes o servicios de tipo cantidad, sin entrega, que no referencien a un ingreso de mercadería o que dicho ingreso no esté autorizado.
+    Si la factura de compra está pendiente de autorizar por este criterio y en algún momento se ingresan todos los remitos de ingreso, para todas las líneas pendientes de entrega, y los mismos están todos autorizados, o se autorizan todos los remitos asociados por el proceso de autorización, se dará por autorizada la factura de compra por este criterio, quedando pendiente de autorizar si hay algún otro criterio definido por el que aún no esté autorizada la factura.
+     Tabla de autorizaciones
+    Los usuarios responsables de autorizar se indican en la tabla respectiva.
+  
+   Diferencias de precios
+  
+    Indicación de si las facturas de compra que fueron registradas en base a una orden de compra y presentan diferencias de precios respecto de esta última requieren o no autorización manual.
+  
+   Diferencias de fechas de entrega
+  
+    Indicación de si las facturas de compra que fueron registradas en base a una orden de compra y presentan diferencias en relación a las fechas de entrega indicadas en esta última requieren o no autorización manual.
+  
+   Diferencias de cantidades
+  
+    Indicación de si las facturas de compra que fueron registradas en base a una orden de compra y presentan diferencias en sus cantidades respecto de esta última requieren o no autorización manual.
+  
+   Tabla de autorizaciones
+  
+    Los usuarios responsables de autorizar se indican en la tabla respectiva.
+  
+   Diferencias de condiciones de compra
+  
+    Indicación de si las facturas de compra que fueron registradas en base a una orden de compra y presentan diferentes condiciones de compra respecto de esta última requieren o no autorización manual.
+  
+   Sin orden de compra
+  
+    Indicación de si las facturas de compra que fueron registradas sin una orden de compra previa requieren o no autorización manual.
+    El circuito de autorizaciones que regirá para cada uno de estos casos dependerá de la tabla de autorizaciones que se informe.
+  
+   Destinatarios
+  
+    Es posible indicar a quien/es se les envía email cuando una factura de compra queda totalmente autorizada o rechazada.
+     Al autorizar
+    Una o mas direcciones de email a las que se envía aviso al autorizar totalmente una factura de compra. Puede indicarse una dirección de email o un tag que permita obtener una dirección de email. Por ejemplo,el tag "Comprador" indica que se utilice la dirección de email del agente comprador del comprobante.
+     Al rechazar
+    Una o mas direcciones de email a las que se envía aviso al rechazar totalmente una factura de compra. Puede indicarse una dirección de email o un tag que permita obtener una dirección de email. Por ejemplo,el tag "Comprador" indica que se utilice la dirección de email del agente comprador del comprobante.
+  
+  
+  
+

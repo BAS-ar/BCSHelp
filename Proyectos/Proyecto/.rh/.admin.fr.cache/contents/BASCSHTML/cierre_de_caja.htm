@@ -1,0 +1,56 @@
+
+Cierre de Caja
+Mediante esta tarea se efectúa el cierre del lote de 
+ una caja determinada.
+Un Lote de caja 
+ incluye un conjunto de operaciones que tienen lugar, en dicha caja, en 
+ un determinado lapso de tiempo. Dicho lapso, es el tiempo que media entre 
+ dos cierres de caja consecutivos.
+El trabajar, o no, con lotes de cajas es opcional. En 
+ el único caso en que los lotes deben utilizarse obligatoriamente, es en 
+ aquellos en los cuales se trabaja con procesos de distribución mediante 
+ camiones y se desea administrar la liquidación de los correspondientes 
+ viajes. En ese caso, el sistema administra automáticamente los lotes de 
+ las cajas que se asocian a los camiones.
+Cuando se comienza a trabajar con una caja 
+ en el sistema, automáticamente se está trabajando en el lote Número 
+ 1 de esa caja y se continuará incorporando información en él, hasta 
+ tanto se realice un cierre de caja. En ese momento, se cierra el Lote Número 1 y, automáticamente, 
+ se abre el Lote Número 2 que incorporará 
+ información hasta tanto vuelva a realizarse el siguiente cierre de caja, 
+ abriéndose el Lote Número 3 y 
+ así sucesivamente.
+De lo dicho se desprende que, por cada caja, existe 
+ un único lote activo a la vez y es en dicho lote en el que se está trabajando, 
+ a este lote lo llamaremos Lote actual.
+Los lotes se identifican por su número de lote, por 
+ la fecha y la hora de su apertura (que corresponde a la fecha de cierre 
+ del lote anterior) y por la fecha y la hora correspondientes a su cierre.
+La administración de cajas por lotes es útil al momento 
+ de controlar y auditar los valores registrados en una caja en determinado 
+ período ya que, independientemente de la fecha que se informe al registrar 
+ los comprobantes, permite listar la información de una caja en base a 
+ la fecha de registración de los mismos.
+Las cajas 
+ asociadas a camiones activos no pueden cerrarse mediante esta tarea sino 
+ que su cierre se produce, en forma automática, al realizar la tarea de 
+ Cierre de camión, del camión del cual se trate.
+Al realizar dicha tarea, 
+ se cierra automáticamente el lote de la caja asociada al camión que se 
+ está cerrando y se imprime, en caso que se lo solicite, el arqueo de caja 
+ correspondiente a la caja mencionada.
+Si se trabaja con camiones, 
+ los lotes de un camión , de su caja 
+ y de su depósito siempre llevan la misma numeración, siempre avanzan juntos.
+Se debe ingresar:
+ 
+ Caja
+Código de la caja 
+ que se desea cerrar.
+Se debe 
+ ingresar el código de una caja que no esté asociada a un camión activo, 
+ ya que en ese caso la caja se cerrará al cerrar el camión.
+Luego de ingresada la caja, se mostrarán la fecha de 
+ cierre y el número de lote del último cierre efectuado para esa caja.
+
+

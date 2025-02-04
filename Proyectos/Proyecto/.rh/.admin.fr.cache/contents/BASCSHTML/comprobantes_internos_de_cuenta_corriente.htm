@@ -1,0 +1,202 @@
+
+
+Ingreso de Comprobantes internos de cuenta corriente
+El CICC permite 
+ transferir un comprobante registrado en una imputación contable de cuenta 
+ corriente, de un cliente o proveedor, a otra imputación contable de cuenta 
+ corriente del mismo cliente o proveedor.
+Los comprobantes que es posible transferir de una imputación 
+ contable a otra son las facturas, las notas de crédito, de débito, de 
+ débito autónomas, los recibos, las órdenes de pago y los propios CICC.
+Cuando se registra un CICC para transferir un comprobante 
+ de una imputación contable a otra, el CICC queda aplicado automáticamente 
+ al comprobante que se transfiere en la imputación de origen y queda pendiente 
+ en la imputación de destino.
+Las imputaciones contables pueden ser en moneda local 
+ o pueden tener asociada una tabla de ajuste. En caso que las dos imputaciones 
+ contables tengan asociada una tabla de ajuste, dichas tablas podrán ser 
+ iguales o diferentes. Es decir que se podrá, por ejemplo, transferir una 
+ factura de una imputación contable en dólares a otra imputación, también 
+ en dólares, o transferir la factura a una imputación contable en marcos.
+Los datos a ingresar, además de la fecha y el número 
+ de comprobante son:
+ 
+ 
+ Titular
+
+	En función del titular del CICC 
+	 se debe seleccionar:
+	Proveedor
+	Cliente
+	Una vez seleccionado el tipo se debe ingresar 
+	 el código correspondiente al beneficiario.
+	Al precargar los datos del mismo se exhibe 
+	 un tooltip con sunombre de fantasía y de no contar con dicho dato, 
+	 se observará la razón social. 
+ 
+ Ficha Origen
+
+	En esta ficha se incluyen los datos del 
+	 comprobante a transferir.
+	 Imputación 
+	 origen
+	Imputación contable de cuenta corriente 
+	 habilitada para el cliente o proveedor informado en el campo titular 
+	 y en la cual se encuentra imputado el comprobante a transferir.
+	 Comprobante
+	Tipo de comprobante a transferir.
+	 Número
+	Número del comprobante que se desea 
+	 transferir.
+	 Cambio
+	Este campo solo se encontrará habilitado 
+	 en caso que la cuenta contable informada en el campo Imputación 
+	 origen tenga una tabla de ajuste asociada. El valor que se 
+	 ofrece puede ser modificado libremente.
+	El cambio que se exhibe depende de 
+	 lo que se haya indicado en el talonario en relación a la columna de 
+	 cotizaciones a considerar.
+	Si el talonario tiene indicada la 
+	 columna segunda o tercera y no hay valor en dichas columnas para la 
+	 mayor fecha de cotización que es menor o igual a la fecha del comprobante, 
+	 se utilizará el valor de la primera columna de cotizaciones. Cabe 
+	 destacar que lo indicado en el talonario sólo se utilizará para mostrar 
+	 la cotización inicial de las monedas cuyo cambio se ingresa en el 
+	 encabezado del comprobante.
+	Si se modifica el talonario por otro 
+	 que tiene indicada una columna de cotización diferente o inicialmente 
+	 no se indicó nada y el sistema ya ha utilizado dicha cotización para 
+	 el cálculo del precio de un ítem o el valor de un medio de pago, el 
+	 sistema no permitirá la modificación avisando de tal eventualidad. 
+	 En caso contrario se modificará la cotización según lo indicado en 
+	 el nuevo talonario indicado.
+	 Buscar
+	Mediante este botón se abre una ventana 
+	 que permite visualizar una lista con todos los comprobantes del tipo 
+	 informado y permite elegir el que se desea transferir.
+	 Grilla 
+	 Aplicados
+	Presionando el botón  
+	 se accede a la tarea destinada a registrar Aplicaciones 
+	 para el comprobante que se está registrando.
+ 
+ Ficha Destino
+
+	En esta ficha se debe informar la imputación 
+	 contable de cuenta corriente habilitada para el cliente o proveedor 
+	 diferente a la indicada en la ficha Origen. La operación a realizar 
+	 sobre dicha imputación contable es la contraria a la realizada sobre 
+	 el origen (si se debita el origen se acredita el destino y viceversa).
+	Es importante tener en cuenta que el sistema 
+	 permitirá realizar aplicaciones en la imputación contable de destino. 
+	 Por ejemplo, si se está transfiriendo un recibo de una imputación 
+	 contable a otra, en ésta última, el recibo se podrá aplicar a facturas, 
+	 a notas de débito, de débito autónomas o a CICC del cliente (que debiten 
+	 dicha cuenta). Al respecto, se puede consultar el ejemplo que se incluye 
+	 al final de este apartado.
+	 Imputación 
+	 destino
+	En este campo se debe informar la 
+	 imputación contable de cuenta corriente habilitada para el cliente 
+	 o proveedor diferente a la indicada en la ficha Origen.
+	 Cambio
+	Este campo solo se encontrará habilitado 
+	 en caso que la cuenta contable indicada en el campo precedente tenga 
+	 una tabla de ajuste asociada.
+	El valor que se ofrece puede ser modificado 
+	 libremente.
+	El cambio que se exhibe depende de 
+	 lo que se haya indicado en el talonario en relación a la columna de 
+	 cotizaciones a considerar.
+	Si el talonario tiene indicada la 
+	 columna segunda o tercera y no hay valor en dichas columnas para la 
+	 mayor fecha de cotización que es menor o igual a la fecha del comprobante, 
+	 se utilizará el valor de la primera columna de cotizaciones. Cabe 
+	 destacar que lo indicado en el talonario sólo se utilizará para mostrar 
+	 la cotización inicial de las monedas cuyo cambio se ingresa en el 
+	 encabezado del comprobante.
+	Si se modifica el talonario por otro 
+	 que tiene indicada una columna de cotización diferente o inicialmente 
+	 no se indicó nada y el sistema ya ha utilizado dicha cotización para 
+	 el cálculo del precio de un ítem o el valor de un medio de pago, el 
+	 sistema no permitirá la modificación avisando de tal eventualidad. 
+	 En caso contrario se modificará la cotización según lo indicado en 
+	 el nuevo talonario indicado.
+	 Total 
+	 a Acreditar
+	Exhibe el total correspondiente a 
+	 los comprobantes originales
+	 Vencimientos 
+	 originales
+	Permite copiar los vencimientos originales 
+	 del comprobante seleccionado, según figuran en la solapa Origen. Dicho 
+	 botón copia las fechas de los vencimientos aplicados y los correspondientes 
+	 importes aplicados 
+	 Tabla 
+	 Vencimientos
+	En esta tabla deben ingresarse los 
+	 nuevos vencimientos a aplicar al comprobante a transferir. A tal efecto 
+	 se dispone de un botón que permite copiar los vencimientos originales 
+	 del comprobante seleccionado, según figuran en la solapa Origen. 
+	 Dicho botón copia las fechas de los vencimientos aplicados y los correspondientes 
+	 importes aplicados. Dichos vencimientos pueden ser modificados en 
+	 cualquier momento.
+	Si se están transfiriendo comprobantes 
+	 de compra, o de venta, el sistema permite indicar uno o más vencimientos. 
+	 Si en cambio se trata de recibos, órdenes de pago o notas de crédito, 
+	 solo se podrá indicar un único vencimiento.
+	Vencimiento
+	Exhibe la fecha de vencimiento 
+	 del comprobante.
+	Importe
+	Exhibe el importe correspondiente 
+	 al vencimiento del comprobante.
+	Al ingresar manualmente vencimientos 
+	 se ofrece como importe del vencimiento el importe que falta para que 
+	 la suma de los vencimientos coincida con el importe total del comprobante 
+	 que se está ingresando.
+	 Grilla 
+	 Aplicados
+	Presionando el botón  
+	 se accede a la tarea destinada a registrar Aplicaciones 
+	 para el comprobante que se está registrando.
+	 Para tener en cuenta
+	
+		En ambas fichas se prevé un campo 
+		 para el cambio. Si las imputaciones contables involucradas no 
+		 tienen tabla de ajuste (están en moneda local), ambos campos se 
+		 encuentran deshabilitados con un valor por defecto de 1.
+		En el caso de que las imputaciones 
+		 contables involucradas tengan tabla de ajuste, se mostrará en 
+		 pantalla el cambio vigente para la moneda, indicado en la tabla 
+		 de cotizaciones, a la fecha del comprobante. Dicho valor puede 
+		 modificarse.
+		Si la tabla de ajuste de ambas 
+		 imputaciones contables es la misma se podrá indicar un cambio 
+		 para cualquiera de las dos y dicho valor se copiará al campo cambio 
+		 de la otra imputación.
+		No es posible indicar un cambio 
+		 igual a cero, en caso que se informe cero, el sistema asumirá 
+		 un valor de 1.
+		 
+ 
+ Ficha Observaciones
+
+	 Observaciones
+	Permite ingresar un texto aclaratorio. 
+	 Este aparece en todos los informes en los que se incluye al comprobante.
+ 
+ Ficha Adjuntos 
+Permite adjuntar archivos externos. Una vez 
+ grabado el comprobante la administración de los archivos adjuntados se 
+ realiza desde el Proceso de Adjuntos.
+//<![CDATA[
+	if( typeof( TextPopupInit ) != 'function' ) TextPopupInit = new Function();
+	TextPopupInit('a1', 'POPUP779125133');
+	TextPopupInit('a2', 'POPUP778926185');
+	TextPopupInit('a5', 'POPUP769990645');
+	TextPopupInit('a3', 'POPUP779225486');
+	TextPopupInit('a4', 'POPUP778931640');
+//]]>
+
+

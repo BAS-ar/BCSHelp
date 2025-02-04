@@ -1,0 +1,428 @@
+
+
+Consulta de ítems (Compras)
+Mediante este proceso es posible obtener en forma inmediata 
+ toda la información de un determinado ítem 
+ registrado en el sistema.
+Desde cualquier punto del sistema en donde sea posible 
+ indicar un código de ítem pulsando la tecla F5 
+ se accede a esta ventana, en donde se debe indicar el código del ítem 
+ a consultar.
+Otra opción es pulsar la tecla F5 
+ luego de haber tipeado ya el código de un ítem en la tarea que se estuviera 
+ ejecutando. Si el código del ítem es tipeado antes de acceder a la consulta, 
+ la misma no requiere que se ingrese un ítem y se muestran directamente 
+ los datos del ítem indicado en el punto desde el que se accedió a la consulta.
+Solo es posible acceder a esta consulta desde un link 
+ si se tiene permiso de ingreso a la misma, es decir, si la consulta esté 
+ habilitada como ítem del menú. Si el usuario no la tiene en su menú, no 
+ podrá acceder a la consulta de ítems desde la consulta de comprobantes 
+ ni desde ninguna otra consulta que tenga un link a dicha consulta, mostrándose 
+ el siguiente mensaje: Usted no está habilitado para ingresar a la pantalla 
+ solicitada al hacer click en el acceso.
+Además, a través de los datos que se exhiben en la consulta 
+ es posible acceder a información detallada que justifica los valores expuestos. 
+ Para ello, los valores donde se prevé ampliar la información se exhiben 
+ en color azul y subrayados, de esta forma se indica que los mismos constituyen 
+ vínculos (links) a pantallas que permiten obtener más detalles (drilling). Al posicionarse sobre 
+ ellos el cursor toma la forma de una mano y mediante un cuadro que se 
+ despliega se indica la información a la que se ha de acceder. Luego, haciendo 
+ clic se accede al detalle de la información de la que se trata.
+ 
+ 
+ Código de ítem
+
+	Código del ítem que se desea consultar.
+	 
+ 
+ Descripción
+
+	Descripción del ítem seleccionado.
+	 
+ 
+ Consulta de ítems 
+ (Ventas)
+
+	Para acceder a la consulta de ventas, 
+	 directamente desde esta ventana.
+	 
+La información del ítem solicitado se divide en fichas 
+ que se describen a continuación:
+ 
+ Ficha Datos Generales
+
+	Aquí se muestran los datos generales del 
+	 ítem que fueron ingresados al registrar el mismo en el sistema. Entre 
+	 otros, se exhiben las descripciones, rubro, subrubro y el grupo de 
+	 compras.
+	 
+ 
+ Ficha Stock
+
+	En esta ficha se exhiben los una serie 
+	 de datos relativos al stock, como por ejemplo, indicación si el ítem 
+	 administra stock, si administra partida, despacho o número de serie, 
+	 stock mínimo, máximo, punto de reposición, unidad de medida, peso 
+	 y volumen.
+ 
+ Ficha Contable
+
+	En esta solapa se muestran información 
+	 destinada a la registración y valuación contable, entre otros, tabla 
+	 de impuestos, tabla de posición contable, método de valuación contable, 
+	 entre otros datos.
+	 
+ 
+ Ficha Atributos
+
+	Exhibe los valores de cada uno de los 
+	 atributos en relación al ítem.
+	 
+ 
+ Ficha Precios
+
+	Esta ficha muestra una tabla que contiene 
+	 el detalle de los precios de compra del ítem que se está consultando.
+	Se pueden ver los precios del ítem registrados 
+	 en las listas de precios (normales y dinámicas), con código de lista, 
+	 vigencia y fecha de expiración; los precios registrados en las cotizaciones 
+	 dadas por los proveedores mostrando 
+	 el código de proveedor, su evaluación, la condición de compra y la 
+	 fecha de la cotización y el precio con el que se registró la última 
+	 compra del ítem que se está consultando, mostrando en este caso la 
+	 fecha de dicha operación y el tipo de comprobante del que se trata.
+	En la columna Tipo 
+	 se exhibe C.Cpra (comprobante de compra), Cotiz.” (cotización) o Lista.
+	En las columnas comp.” 
+	 y Proveedor, el sistema ofrece 
+	 enlaces que permiten consultar los comprobantes de compras o cotizaciones 
+	 y los correspondientes proveedores, respectivamente.
+	En el caso de las cotizaciones se exhibe, 
+	 si corresponde, la cantidad correspondiente, La consulta no incluye 
+	 las cotizaciones expiradas a la fecha en que ésta se realiza.
+	Ordenamiento
+	Haciendo clic sobre el código de proveedor 
+	 se accede a la consulta de ese proveedor.
+	Para los ítems que trabajan con medidas 
+	 y colores, si al registrar el ítem se informó que se manejan distintos 
+	 precios por cada medida y color, se mostrarán los precios para cada 
+	 medida y color posible del ítem.
+	 
+ 
+ Ficha Existencias
+
+	Esta ficha sólo está habilitada si el 
+	 ítem indicado administra stock.
+	También es posible realizar la consulta 
+	 en la empresa donde se está ejecutando el sistema o en todas las empresas. 
+	 La opción por defecto que sugiere el sistema es la empresa.
+	Si se elige la opción todas las empresas 
+	 aparece una columna en la primer posición de la grilla con el código 
+	 de la empresa y en la columna de descripción se muestra el nombre 
+	 del depósito concatenado con el nombre de la empresa; la información 
+	 queda ordenada por empresa-depósito.
+	La grilla contiene además el detalle de 
+	 las unidades en stock del ítem indicado, para cada ítem en el que 
+	 hay stock del mismo.
+	Para cada depósito se muestra el stock 
+	 Asignado, el Disponible, 
+	 el que está En tránsito y 
+	 el stock Físico expresado 
+	 en la primera y en la segunda unidad de medida (si el ítem trabaja 
+	 con doble unidad de medida).
+	Para que se exhiba el stock en tránsito 
+	 debe estar tildada la opción Mostrar 
+	 stock en tránsito, que se encuentra al pie de esta solapa.
+	En el caso que un depósito maneje múltiples 
+	 ubicaciones por ítem, se ofrece un link en el campo Código, correspondiente 
+	 al ítem, que permite acceder al detalle de las existencias por ubicación 
+	 del ítem, color y medida en dicho depósito.
+	Para los ítems que trabajan con medidas 
+	 y colores, se muestran las existencias de cada medida y color posible 
+	 del ítem.
+	Haciendo un clic sobre las cantidades 
+	 que se exhiben en la columna En tránsito 
+	 se accede al detalle de los comprobantes que conforman dicho valor. 
+	 Desde esta lista puede accederse a cada comprobante en particular 
+	 a través del vínculo que ofrece el campo Número 
+	 y consultar los datos con los que fue registrado el comprobante seleccionado.
+	También la columna Asignado 
+	 permite acceder a todos los comprobantes que conforman las cantidades 
+	 asignadas que se exhiben en pantalla.
+	La ficha incluye el campo Detallar 
+	 colores y medidas que permite incluir (o no) la información 
+	 por colores y medidas. Si no está activado, se exhibe una columna 
+	 Col/Med con una lupa. Haciendo clic en ella se accede al detalle de 
+	 stock del ítem por color y medida.
+	Si no está activado, se incluyen columnas 
+	 para detallar la medida y el color de cada uno de los ítems.
+	En los casos en que el bien administre 
+	 números de serie, existe la posibilidad de consultar una columna denominada 
+	 Series en la grilla. Al hacer clic en la lupa de esta columna se accede 
+	 al detalle de las series de ese ítem para el depósito y la empresa 
+	 vinculada, mostrando para cada serie su partida y/o despacho (si la 
+	 tuviere).
+ 
+ Ficha Ult. Movimientos
+
+	Esta ficha muestra un detalle de los últimos 
+	 comprobantes registrados que involucren al bien que se está consultando. 
+	 Por defecto trae los últimos cinco movimientos, pero se puede indicar 
+	 el número de movimientos que se desee considerar.
+	Esta ficha muestra un detalle de los últimos 
+	 comprobantes registrados que involucren al bien que se está consultando. 
+	 Por defecto trae los últimos cinco movimientos, pero se puede indicar 
+	 el número de movimientos que se desee considerar.
+	Para seleccionar los comprobantes a incluir 
+	 en la grilla se debe acceder al enlace que se ofrece en el rótulo 
+	 Comprobantes. Por defecto, la consulta no tiene ningún comprobante 
+	 seleccionado.
+	 
+	 Comprobantes
+	 Incluir 
+	 comprobantes del lote
+	Si se tilda esta opción se incluye 
+	 los comprobantes pertenecientes a lotes de facturación. Estos se distinguen 
+	 con un (*) en la columna del comprobante.
+	Los comprobantes de lotes de facturación 
+	 no se pueden mostrar en detalle.
+	Se dispone de un enlace, en el rótulo 
+	 Ordenamiento, destinado a indicar las columnas en base a las cuáles 
+	 se desea orden la información en la grilla y el orden correspondiente 
+	 a cada una de ellas.
+	 
+	 Ordenamiento
+	Si el ítem que ese está consultando se 
+	 administra mediante números de serie, partidas y/o despachos, es posible 
+	 filtrar los movimientos de modo que sólo se exhiban los que incluyen 
+	 el número de serie que se indique.
+	Por cada comprobante se exhiben las cantidades 
+	 involucradas del bien, expresadas en primera y segunda unidad, y se 
+	 ofrecen enlaces para consultar el detalle de cada uno.
+	También se exhiben el código y la razón 
+	 social del cliente titular de la operación.
+	 Período 
+	 a considerar
+	Debajo de la grilla se ofrece un enlace 
+	 destinado a indicar la cantidad de movimientos a consultar.
+	 
+	 Ver últimos movimientos
+	 Refrescar
+ 
+ Ficha Partidas
+
+	Esta ficha se incorpora a la consulta 
+	 en forma automática si el bien que se está consultando administra 
+	 su stock en base a partidas. En ella se 
+	 exhiben el stock (en ambas unidades de medida) por empresa y por partida.
+	El stock que se exhibe corresponde al 
+	 consolidado de todos los depósitos, no obstante se ofrecen enlaces 
+	 que permiten acceder a un detalle de las existencias por depósito.
+	También es posible incorporar a la consulta 
+	 las partidas que se encuentran agotadas. Para ello, deberá activarse 
+	 la opción Ver partidas agotadas.
+	En el caso que el ítem administre stock 
+	 por partida y despacho 
+	 en forma simultánea, inicialmente se detallan sólo las partidas y 
+	 se adiciona a la ficha una opción denominada Detalla 
+	 despachos que, si se activa, exhibe los despachos asociados 
+	 al ítem y sus correspondientes fechas.
+	En caso que el ítem se administre también 
+	 mediante medidas y colores se dispone de una columna con una lupa 
+	 que permite acceder a la información de stock detalla por medida y 
+	 color.
+	 
+ 
+ Ficha Despachos
+
+	Esta ficha se incorpora a la consulta 
+	 en forma automática si el bien que se está consultando administra 
+	 su stock en base a despachos. En ella 
+	 se exhiben el stock (en ambas unidades de medida) por empresa y por 
+	 despacho.
+	El stock que se exhibe corresponde al 
+	 consolidado de todos los depósitos, no obstante se ofrecen enlaces 
+	 que permiten acceder a un detalle de las existencias por depósito.
+	También es posible incorporar a la consulta 
+	 los despachos que se encuentran agotados. Para ello, deberá activarse 
+	 la opción Ver despachos agotados.
+	En caso que el ítem se administre también 
+	 mediante medidas y colores se dispone de una columna con una lupa 
+	 que permite acceder a la información de stock detalla por medida y 
+	 color.
+	 
+ 
+ Ficha Proveedores
+
+	Se muestra aquí una lista que contiene 
+	 los proveedores registrados en 
+	 el sistema que proveen a la empresa del ítem que se está consultando.
+	Esta lista de proveedores se actualiza 
+	 en forma automática cada vez que en el sistema se registre un ingreso 
+	 del bien o servicio indicado.
+	Además, haciendo clic sobre cualquiera 
+	 de las cantidades exhibidas en la columna Cantidad 
+	 de operaciones se muestra el detalle de los comprobantes que 
+	 conforman dicho número. Desde esta lista puede accederse, además, 
+	 a cada comprobante en particular a través del vínculo que ofrece el 
+	 campo Número y consultar los 
+	 datos con los que fue registrado el comprobante seleccionado.
+	Haciendo clic sobre el código de proveedor 
+	 se accede a la consulta de ese proveedor.
+	 
+ 
+ Ficha Alternativos
+
+	Se muestra aquí una lista que contiene 
+	 los posibles bienes alternativos del 
+	 ítem que se está consultando, tal cual como haya sido indicado en 
+	 la definición del ítem que se está consultando.
+	 
+ 
+ Ficha Disponible
+
+	 Empresas
+	Permite indicar la empresa donde se 
+	 está ejecutando el sistema o todas las empresas.
+	Por defecto se ofrece la empresa donde 
+	 se está ejecutando el sistema.
+	 Depósito
+	Permite indicar uno o más depósitos 
+	 de modo de limitar a los depósitos que se indiquen la información 
+	 que se exhibe. También es posible indicar la opción todos los depósitos.
+	Por defecto se ofrece la opción de 
+	 seleccionar un depósito.
+	 Unidad 
+	 de medida
+	Según la unidad en la que se desee 
+	 consultar la disponibilidad se debe seleccionar Venta o Pendiente.
+	 Refrescar
+	 Grilla
+	Se muestra una tabla que informa, 
+	 para el ítem que se haya indicado, el stock Físico 
+	 existente, las cantidades A entregar 
+	 asignadas, el stock Disponible físico, 
+	 las cantidades A ingresar, 
+	 las cantidades A entregar pendientes 
+	 de asignación y, finalmente, el stock Disponible 
+	 proyectado. Se trata de una consulta de stock proyectada a 
+	 futuro.
+	El stock Disponible 
+	 físico, representa el stock físico con el que se cuenta en 
+	 el momento de realizar la consulta para hacer frente a las entregas 
+	 de bienes previstas.
+	El stock Disponible 
+	 proyectado, en cambio, incorpora al stock las unidades que 
+	 deberían ingresar y compromete las cantidades correspondientes a pedidos 
+	 que aún no se han asignado.
+	La consulta también dispone de una 
+	 columna Col/Med donde aparece 
+	 una lupa si el ítem se administra con medidas y colores. Haciendo 
+	 clic en la lupa se accede al detalle de las cantidades del ítem desglosado 
+	 por color y medida pudiendo avanzar o retroceder a través de las fechas 
+	 de navegación de la barra superior para observar la información de 
+	 cada fecha en forma más ágil.
+	Se incluirá una línea por cada fecha 
+	 en la que se produzcan movimientos de ingreso o egreso del ítem en 
+	 cuestión.
+	Es posible consultar el stock disponible 
+	 en un depósito en particular, en un conjunto de depósitos (indicando 
+	 un rango de depósitos) y obtener la información de todos los depósitos 
+	 en forma consolidada, esto se consigue dejando el dato Depósito 
+	 en blanco.
+	Se podrá indicar, además, si se desea 
+	 que las cantidades que exhibe la consulta sean expresadas en la unidad de compras del bien 
+	 o en la unidad para cantidades pendientes.
+	 
+ 
+ Ficha Pendientes
+
+	Esta ficha permite consultar los comprobantes 
+	 pendientes relacionados al ítem.
+	Para seleccionar los comprobantes a incluir 
+	 en la grilla se debe acceder al enlace que se ofrece en el rótulo 
+	 Comprobantes. Por defecto, la consulta no tiene ningún comprobante 
+	 seleccionado.
+	Comprobantes
+	Una vez indicados, la grilla exhibe la 
+	 lista de comprobantes pendientes disponiendo, en cada uno de ellos, 
+	 de un link a la consulta de comprobantes de modo de obtener el detalle 
+	 del comprobante del que se trate.
+	Se dispone de un enlace, en el rótulo 
+	 Ordenamiento, destinado a indicar las columnas en base a las cuáles 
+	 se desea orden la información en la grilla y el orden correspondiente 
+	 a cada una de ellas.
+	Ordenamiento
+	Debajo de la grilla se ofrece un enlace 
+	 destinado a indicar la cantidad de movimientos a consultar.
+	Ver 
+	 últimos movimientos
+	 
+ 
+ Ficha Traza
+
+	Esta solapa se habilita si el ítem maneja 
+	 despachos, partidas o series. Se pueden visualizar los insumos, los 
+	 recursos o lo producido del ítem seleccionado, presionando el botón 
+	 Refrescar.
+	 Mostrar
+	Insumos
+	Recursos
+	Producido
+	Si se elige la opción insumos se muestran 
+	 los insumos que formaron parte del producto terminado siempre y cuando 
+	 tengan despacho, partida o serie.
+	Si se elige la opción recursos se 
+	 muestran los recursos que intervinieron en la construcción del producto 
+	 terminado.
+	Si se elige la opción producido se 
+	 observan los productos terminados generados a partir del insumo siempre 
+	 y cuando éstos ítems utilicen despacho, partida o serie. En este caso 
+	 se muestra además el parte de producción interviniente con la posibilidad 
+	 de acceder al mismo a través del atajo, clic en el número del comprobante.
+ 
+ Col/Med 
+
+	Esta solapa se habilita si el ítem administra 
+	 colores y medidas. En ella se exhibe la información de colores y medidas 
+	 registrada en la tabla de ítems para el ítem en cuestión.
+ 
+ Ficha Adjuntos
+
+	Permitir 
+	 visualizar los documentos adjuntos al ítem.  
+	Los datos 
+	 que se observan son: fecha y nombre del adjunto. Además, posicionando 
+	 el mouse en la línea o fila se muestra un tooltip que informa el comentario 
+	 asociado al documento, si existiera.
+	Existe la 
+	 posibilidad de acceder al documento adjuntado a través del hipervínculo, 
+	 si el usuario lo tiene permitido.
+ Ficha 
+ Emp-Suc
+
+	Permite indicar las empresas y sucursales 
+	 a tener en cuenta como filtro para las consultas de Últimos Movimientos 
+	 y Pendientes.
+	Por defecto se muestra la lista con todas 
+	 las empresas y sucursales habilitadas para el usuario que está efectuando 
+	 la consulta, y en esta lista se ofrecen todas ellas como seleccionadas.
+	Tanto para la selección de empresas como 
+	 para la de sucursales, se dispone de botones que permiten agilizar 
+	 la selección. También se puede realizar la selección marcándolo desde 
+	 la grilla.
+	Dentro de cada solapa de consulta se observa 
+	 una etiqueta con la selección de empresas y sucursales. De estar todas 
+	 seleccionadas se indica 'Todas'.
+	 
+ 
+ Para tener en cuenta
+
+	Para acceder a los enlaces de Ordenamiento, 
+	 Comprobantes y Cantidad máxima es necesario contar con los permisos 
+	 de consulta, caso contrario, estos enlaces se exhibirán deshabilitados 
+	 (en gris).
+	 
+
+
+

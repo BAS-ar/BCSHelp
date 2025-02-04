@@ -1,0 +1,231 @@
+
+
+Ubicar en el depósito
+Es posible administrar múltiples ubicaciones por ítem 
+ en cada uno de los depósitos que administra el sistema.
+En los depósitos que se desee usar esta facilidad se 
+ lo deberá indicar específicamente activando el campo Administra múltiples 
+ ubicaciones por ítem.
+En ese caso, cuando ingrese mercadería al depósito se 
+ deberá indicar en que lugares físicos se ha de ubicar y, cuando sale, 
+ también se deberá indicar de las ubicaciones de las cuáles se está sacando 
+ la mercadería.
+Para los depósitos que no tiene activado le campo mencionado, 
+ esta tarea no tiene ninguna aplicación y los ítems tienen una única ubicación 
+ que es la que se indica en la tabla de ítems, en la ficha Depósitos.
+Para poder registrar información en esta tarea se debe 
+ habilitar un talonario y asociarle el tipo de comprobante "ub-Ubicar 
+ en depósito".
+Se prevén tareas de reubicación de productos dentro 
+ del depósito. Esta funcionalidad puede utilizarse, por ejemplo, si se 
+ requiere transferir productos de un sector del depósito a otro, o para 
+ corregir productos mal ubicados.
+En todos los casos se ofrecen facilidades operativas 
+ que automatizan las tareas a realizar. En particular, en el caso de salidas 
+ del depósito (operación que denominaremos "Desubicar"), se podrá 
+ indicar cuáles son los productos que salen (a desubicar) invocando directamente 
+ el comprobante que documenta la salida (factura, remito, lote de comprobantes, 
+ etc.).
+ 
+ 
+ Fecha
+
+	Fecha correspondiente al comprobante de 
+	 ubicación.
+ 
+ Número
+
+	Prefijo y número del comprobante correspondientes 
+	 al talonario habilitado para el tipo de comprobante ub-Ubicar en depósito.
+	 
+ 
+ Depósito
+
+	Correspondiente a los ítems a ubicar, 
+	 reubicar o desubicar.
+	Debe haberse definido con el campo Administra 
+	 múltiples ubicaciones por ítem, activado.
+ 
+ Opciones
+
+	En esta ventana se debe indicar que operación 
+	 se desea realizar, ubicar, desubicar o reubicar.
+	 Ubicar
+	Seleccionada esta opción, al oprimir 
+	 el botón Precarga, se cargan en la tabla de la izquierda todos los 
+	 ítems que tienen existencia mayor a cero en el depósito indicado, 
+	 y que aun no están ubicados.
+	Al presionar el botón, se abre una 
+	 ventana que permite establecer filtros de modo de cargar en la ventana 
+	 de trabajo los ítems (sin ubicación) que cumplen con los filtros establecidos.
+	Es posible filtrar por atributo y/o 
+	 indicar específicamente los códigos de ítems a ubicar. Si se desea 
+	 cargar todos los ítems del depósito que aun no están ubicados, no 
+	 se establecerá ningún filtro y se presionará F10, o el botón correspondiente.
+	Los productos a ubicar se cargan en 
+	 la tabla de la izquierda y quedan disponibles para que se informe 
+	 la ubicación que ocuparán dentro del depósito.
+	 Reubicar
+	Al seleccionar esta opción y oprimir 
+	 el botón Precarga se abre una ventana donde es posible indicar la 
+	 ubicación donde se encuentran los ítems , es decir, la ubicación de 
+	 origen.
+	Una vez indicada y aprobada, la tabla 
+	 se precargará con los ítems, con existencia mayor a cero, que estén 
+	 en la ubicación indicada.
+	Una vez que se ha reubicado a un conjunto 
+	 de ítems, es posible oprimir nuevamente el botón Precarga de modo 
+	 de reubicar otro conjunto de ítems que correspondan a otro ubicación 
+	 de origen. Lo que queremos decir es que la información de la tabla 
+	 de la derecha no se sobrescribe, sino que se agrega a la ya existente. 
+	 Por lo cual se pueden reubicar, sin necesidad de grabar cada vez, 
+	 ítems de distintas ubicaciones de origen.
+	Para ver un ejemplo de aplicación 
+	 de esta funcionalidad, pensemos en un caso en que se requiere pasar 
+	 a un pasillo (por ejemplo, al pasillo 3), ítems que se encuentran 
+	 en dos pasillos (el 1 y el 5). En ese caso se precargan en la tabla 
+	 de la izquierda los ítems del pasillo 1 y se transfieren a la tabla 
+	 de la derecha (ubicación: pasillo 3). Luego, se precargan en la tabla 
+	 de la izquierda los ítems del pasillo 5 y también se transfieren a 
+	 la tabla de la derecha (ubicación: pasillo 3).
+	 Desubicar
+	Esta opción saca, de la ubicación 
+	 en la que se encuentran, a los ítems que se indiquen.
+	Puede aplicarse, por ejemplo, cuando 
+	 se debe recopilar la mercadería a entregar a clientes, a sucursales, 
+	 a los repartos, etc.
+	Es por ello que se ofrece la posibilidad 
+	 de seleccionar los ítems a "desubicar" indicando el comprobante, 
+	 o comprobantes, que los incluyen.
+	Al oprimir el botón "Precarga", 
+	 aparece una ventana donde se permite seleccionar, utilizando diversos 
+	 criterios, un comprobante, o un grupo de ellos, que involucren un 
+	 movimiento de egreso para el depósito indicado.
+	Las opciones de selección de comprobantes 
+	 a desubicar pueden ser: por lote, carga, guía y comprobante. Según 
+	 lo que se indique en la ventana, se precargará automáticamente la 
+	 tabla de la izquierda con los bienes que estén incluidos en dichos 
+	 comprobantes.
+	También es posible indicar los ítems 
+	 a desubicar, directamente, a partir de una selección de los mismos 
+	 por atributo y valor o por código o descripción.
+	Si la selección se realiza por código 
+	 o por descripción, es posible indicar patrones como “*” (cualquier 
+	 conjunto de caracteres) o “?” (cualquier carácter).
+ 
+ Ficha Ítems
+
+	Esta ficha presenta dos tablas, que llamaremos, 
+	 tabla origen (a la de la izquierda) y tabla destino (a la de la derecha).
+	Independientemente de lo que se esté haciendo 
+	 (ubicando, desubicando o reubicando), desde la tabla origen, se podrán 
+	 enviar comprobantes a la tabla destino utilizando los botones que 
+	 se encuentran entre dichas tablas o haciendo doble clic sobre la fila 
+	 correspondiente en la tabla de la izquierda.
+	En el caso de las opciones de ubicar y 
+	 reubicar, al hacer doble clic sobre una fila de la tabla origen, o 
+	 al presionar el botón correspondiente, aparece una pantalla para indicar 
+	 la ubicación destino.
+	En la opción de desubicar, una vez cargada 
+	 la tabla origen, al hacer doble clic sobre una de sus filas, o al 
+	 presionar el botón correspondiente, aparece una ventana donde se listan 
+	 las ubicaciones donde hay existencias del ítem del cual se trata, 
+	 debiéndose indicar qué cantidad se desea desubicar en relación a cada 
+	 una de las ubicaciones.
+	 Tabla 
+	 origen
+	Incluye los códigos, descripciones 
+	 y cantidades (en ambas unidades de medida) de los ítems a ubicar, 
+	 desubicar o reubicar.
+	En los tres casos, la línea que se 
+	 selecciona se agrega a la tabla destino, permitiéndose, en dicha tabla, 
+	 modificar los datos de la ubicación de destino o de origen y la cantidad 
+	 correspondiente.
+	Cuando se han agregado líneas a la 
+	 tabla destino (ya sea ubicando, reubicando o desubicando), haciendo 
+	 doble clic sobre la fila correspondiente en la tabla origen, se elimina 
+	 la línea de la tabla de la derecha.
+	Cuando nos referimos a "eliminar 
+	 una línea de la tabla destino", queremos significar que volvemos 
+	 al estado anterior. Es decir, retrotraemos la situación al estado 
+	 en que se encontraba antes de ubicar, desubicar o reubicar, según 
+	 corresponda.
+	Para seleccionar un rango de líneas 
+	 de la tabla origen en forma simultanea, se debe marcar la primera 
+	 y luego, presionando la tecla [Shift], marcar la última. Para marcar 
+	 líneas salteadas se deben marcar las líneas manteniendo presionada 
+	 la tecla [Ctrl].
+	También es posible hacer "drag 
+	 and drop". Para ello, se hace clic sobre las líneas seleccionadas, 
+	 se mantiene un momento el mouse en esa posición y cuando el cursor 
+	 cambia de forma (aparece una flecha con un rectángulo), sin soltar 
+	 el mouse, se arrastran hacia la tabla destino. Las opciones que aparecen 
+	 son las mismas que ya hemos enumerado. Es decir, independientemente 
+	 que el pasaje de líneas a la tabla de la derecha se realice de esta 
+	 forma, las opciones que se presentan dependen de si se está ubicando, 
+	 reubicando o desubicando.
+	 Tabla 
+	 destino
+	Incluye los códigos, descripciones 
+	 y cantidades (en ambas unidades de medida) de los ítems a ubicar, 
+	 desubicar o reubicar.
+	En el caso que se esté desubicando, 
+	 la tabla sólo incluye la columna "Origen", 
+	 pues se está desubicando.
+	En caso de "Ubicar" la tabla 
+	 incluye la columna "Destino" 
+	 y, por último, en el caso de "Reubicar", se incluyen ambas 
+	 columnas.
+	 Precarga
+	Este botón permite precargar los ítems 
+	 en la ventana de trabajo según se ha explicado en los párrafos anteriores.
+	Se dispone de botones para pasar rápidamente 
+	 ítems d euna venta a la otra.
+	El botón [>>] permite ingresar 
+	 automáticamente, en la tabla de la derecha, todas las filas que se 
+	 encuentran en la tabla de la izquierda. Se solicitan los datos ya 
+	 comentados, según la opción de la que se trate. Pero, además, se dispone 
+	 de la opción "Aplicar a toda la selección" que permite indicar 
+	 el dato una sola vez (para las opciones de ubicar y reubicar) y aplicarlo 
+	 a todas las líneas.
+	El botón [>] permite ingresar automáticamente, 
+	 en la tabla de la derecha, todas las líneas que se hayan seleccionado 
+	 de la tabla de la izquierda.
+	El botón [<] permite eliminar de 
+	 la tabla de la derecha todas las líneas seleccionadas.
+	El botón [<<] permite eliminar 
+	 de la tabla de la derecha todas las líneas.
+	En todos los casos, se permite el 
+	 ingreso manual de ítems en la tabla de la derecha.
+	Las líneas de la tabla de la izquierda 
+	 que se trasladan a la tabla de la derecha se muestran en diferentes 
+	 colores según el estado al que corresponden:
+	Rojo
+	Si la cantidad o cantidades indicadas 
+	 en la tabla de la derecha son menores a la cantidad mostrada en la 
+	 tabla de la izquierda.
+	Verde
+	Si se exhibe la misma cantidad a la 
+	 izquierda y a la derecha.
+	Azul
+	Si la cantidad de la tabla de la derecha 
+	 es mayor que la que figura en la tabla de la izquierda.
+	Vale aclarar que sólo se permite indicar 
+	 una cantidad mayor a la del comprobante en la opción de desubicar. 
+	 En el resto de los casos no se puede indicar una cantidad mayor a 
+	 la disponible en stock en la ubicación origen.
+	Al modificar la cantidad en la tabla 
+	 de la derecha, se actualiza el color de la fila correspondiente en 
+	 la tabla de la izquierda.
+ 
+ 
+ Ficha Observaciones
+
+	 Observaciones
+	Permite registrar un texto a asociar 
+	 al comprobante que se registra.
+ 
+ 
+
+
+

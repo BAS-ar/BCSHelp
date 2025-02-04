@@ -1,0 +1,183 @@
+
+Depuración de datos históricos
+La depuración de datos 
+ históricos es el proceso por el cual se recorren todos los movimientos 
+ hasta una fecha determinada, se obtienen todos los saldos pendientes de 
+ cuenta corriente, caja, bancos, movimientos de materiales y movimientos 
+ pendientes, se borran todos los movimientos hasta esa fecha y se conservan 
+ los saldos para seguir utilizándolos en un nuevo ejercicio contable.
+Uno de los fines de esta 
+ depuración es achicar el tamaño de la información ya que no tiene sentido 
+ conservar movimientos muy antiguos que ya no cumplen ninguna función por 
+ no estar pendientes y por pertenecer a subdiarios ya cerrados. Pero sí 
+ deben conservarse los saldos en las cuentas corrientes, en las imputaciones 
+ contables, y deben conservarse los comprobantes que aún están pendientes 
+ de entrega o de facturación.
+El proceso de depuración 
+ consta de tres partes:
+    Verificación de la base de datos
+   Proceso de depuración
+  Borrado 
+ de los movimientos anteriores.
+La verificación es lo 
+ primero que se realiza al comenzar el cierre. Se revisa la base de datos 
+ para comprobar que se encuentra en condiciones para efectuar el cierre. 
+ Si hay algún inconveniente no se podrá continuar con el cierre pero aparecerá 
+ una ventana informando los problemas encontrados que deberán solucionarse 
+ para poder continuar.
+También es posible hacer 
+ la verificación pulsando el botón "Verificar" de la figura siguiente para ver qué problemas 
+ se detectan y volver a intentar cerrar una vez que los mismos se hayan 
+ solucionado.
+ 
+
+ 
+Algunos de los problemas 
+ que se informan en la verificación, que surgen de los controles que se 
+ realizan sobre los comprobantes anteriores a la fecha que se indique, 
+ son los siguientes:
+Existen facturas pendientes
+Existen cheques de pago diferido pendientes 
+ de efectivizar
+Existen notas de crédito no autorizadas
+ Existen egresos de mercadería pendientes 
+ de control
+ Existen ingresos de mercadería pendientes 
+ de autorización
+Estos se muestran en una ventana similar a la siguiente:
+ 
+
+ 
+Al solucionar los inconvenientes detectados, se presenta 
+ la siguiente ventana:
+ 
+
+ 
+Si la base está en condiciones 
+ de ser depurada aparece una ventana que informa la situación y se puede 
+ continuar con el cierre o depuración.
+Durante el proceso de 
+ cierre se generan asientos del diario general con fecha igual a la fecha 
+ de cierre que se informa.
+Dichos asientos ponen 
+ en 0 (cero) los saldos de todas las imputaciones contables, también se 
+ pone en 0 (cero) el stock, las partidas LIFO y FIFO, los costos, las existencias 
+ por depósito, partidas, números de serie y despachos. Estos asientos son 
+ asientos de cierre que permiten dejar todo lo anterior al cierre en condiciones 
+ de eliminarse. Y a la vez se generan otros asientos (de apertura) que 
+ levantan la información que interesa conservar del ejercicio anterior, 
+ y tienen la fecha correspondiente al día siguiente al indicado como fecha 
+ de cierre.
+Los asientos de apertura 
+ generan nuevamente los saldos de las cuentas corrientes, de las imputaciones 
+ contables, el stock de los ítems, los costos de los mismos, y todo lo 
+ necesario para continuar en el nuevo ejercicio o período.
+La tercera parte de la 
+ depuración consiste en borrar todos los movimientos anteriores incluyendo 
+ los asientos de cierre generados en el proceso.
+Durante el proceso aparece 
+ la siguiente ventana que va mostrando las distintas etapas  y se 
+ van tildandocomo finalizados los distintos cierres que se van ejecutando 
+ y terminando. 
+ 
+
+ 
+Si ocurre algún problema 
+ el proceso se interrumpe y la información se recupera automáticamente 
+ para que quede en el estado en que estaba antes de comenzar el cierre. 
+ 
+Por ejemplo, en la 
+ figura anterior se observa que ocurrió un 
+ inconveniente al cerrar cuentas corrientes, Pulsando el botón Detalles 
+ se mostrará el detalle del error ocurrido o si no hay errores, se mostrarán 
+ los números y tipos de todos los asientos de cierre y apertura que se 
+ hayan generado.
+Los asientos de apertura 
+ que se generen aparecerán en los distintos informes del sistema, en las 
+ consultas o en procesos que deban considerarlos.
+ 
+Verificaciones que realiza el sistema 
+ al cerrar
+Antes de generar los asientos de cierre y 
+ apertura, el sistema verifica que se cumplan una serie de condiciones. 
+ Si algunas no se cumplen, se emitirá un mensaje al usuario y se suspenderá 
+ la tarea.
+Se 
+ deben realizar todos los cierres operativos
+Se 
+ debe realizar el cierre operativo del diario
+La 
+ fecha del asiento de cierre debe coincidir con un cierre operativo del 
+ diario
+Es 
+ necesario que se hayan hecho, a la fecha de cierre, todos los ajustes 
+ por valor corriente y por inflación de todas las cuentas.
+ 
+Además el proceso controla que no haya:
+Cheques 
+ de pago diferido pendientes de efectivizar
+Pedidos 
+ externos pendientes de autorización
+Pedidos 
+ internos pendientes de autorización
+Notas 
+ de crédito de ventas pendientes de autorización
+Ordenes 
+ de compra pendientes de autorización
+Facturas 
+ de compra pendientes de autorización
+Ordenes 
+ de pago pendientes de autorización
+Ordenes 
+ de pago pendientes de efectivización
+Facturas 
+ de venta de pago diferido pendientes de pago
+Pedidos 
+ externos pendientes
+Pedidos 
+ internos pendientes
+Ordenes 
+ de compra pendientes
+Egresos 
+ de mercadería pendientes
+Ingresos 
+ de mercadería pendientes
+No 
+ puede haber facturas de compra pendientes
+Facturas 
+ de venta pendientes
+Requerimientos 
+ pendientes
+Egresos 
+ de mercadería diferidos pendientes
+Ordenes 
+ de producción pendientes
+egresos 
+ de mercadería pendientes de control
+En 
+ el lote de facturación automática, comprobantes con fecha anterior a la 
+ de cierre
+En 
+ el lote de facturación automática, referencias a comprobantes de fecha 
+ anterior a la de cierre
+Pasajes 
+ a mesas de saldos anteriores al cierre que aún no han sido enviados
+Pasajes 
+ a mesas de saldos anteriores al cierre que han sido enviados pero aún 
+ no se respondido ese envío
+Guías 
+ de fecha anterior al cierre, que aún no han sido cerradas
+Guías 
+ abiertas de fecha posterior al cierre, que fueron modificadas. Deberían 
+ cerrarse antes de continuar
+Guías 
+ abiertas de fecha posterior al cierre, que tienen asociadas comprobantes 
+ de fecha anterior al cierre
+Armados 
+ de transferencias anteriores al cierre, que aún no han sido transmitidos
+Comprobantes 
+ internos de cuenta corriente posteriores a la fecha de cierre que tienen 
+ como origen comprobantes anteriores al cierre
+ 
+
+

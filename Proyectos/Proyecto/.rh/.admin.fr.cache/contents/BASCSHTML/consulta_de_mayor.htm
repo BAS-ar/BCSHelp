@@ -1,0 +1,125 @@
+
+
+Consulta de Mayores
+Esta consulta permite acceder, en forma directa, a los 
+ mayores de una o más cuentas.
+Las consultas de mayores que se ejecuten pueden almacenarse 
+ mediante la definición de modelos. La consulta almacenada quedará disponible 
+ para volver a ser utilizada en el futuro.
+Por lo cual, es posible seleccionar un modelo previamente 
+ definido en el informe de mayores o generar nuevos modelos con las opciones 
+ que se completen en la tarea.
+Los modelos que se incorporen desde la consulta también 
+ estarán disponibles en los informes del sistema correspondientes a la 
+ emisión de mayores.
+Cabe aclarar que si un usuario no tiene en su menú el 
+ punto correspondiente a la Consulta de mayor tampoco podrá consultar los 
+ asientos desde otro punto del menú de consultas como, por ejemplo, desde 
+ el link disponible en la consulta de comprobantes.
+La consulta exhibe el detalle de los movimientos del 
+ mayor de cada cuenta siendo posible ordenar los movimientos por diferentes 
+ criterios. Estos se seleccionan en el enlace disponible en el campo “Ordenamiento ”.
+El ordenamiento inicial, 
+ por defecto,  para una determinada imputación contable es por fecha 
+ y número de comprobante. Si hay asientos de cierre, aparecerán siempre 
+ al final del día en que se generaron, sin importar si hay otros asientos 
+ del diario de esa misma cuenta, con un talonario y número de asiento posterior 
+ para ese mismo día.
+ 
+ 
+ Filtros Básicos
+
+	En esta ficha se informan las cuentas 
+	 cuyos mayores se desean emitir, el período a considerar y una serie 
+	 de filtros a tener en cuenta en la emisión.
+	 Cuenta
+	Códigos de las imputaciones contables 
+	 cuyos mayores se desea consultar.
+	 Diario 
+	 General
+	Activar si se desea consultar los 
+	 movimientos de las cuentas contabilizados en el diario general.
+	En este caso se incluyen en la consulta 
+	 todos los asientos registrados manualmente en el diario general, los 
+	 asientos de ajuste, los asientos de cierre, los asientos resumen generados 
+	 en cierres operativos de subdiarios que resumen en el diario y los 
+	 asientos correspondientes a subdiarios que no resumen en el diario.
+	 Subdiario
+	Activar si se desea consultar los 
+	 movimientos de las cuentas contabilizados en un subdiario.
+	En caso de activarlo se debe indicar 
+	 también el código del subdiario que corresponda. Se incluirán todos 
+	 los asientos registrados automáticamente por el sistema, al ingresar 
+	 comprobantes en el subdiario indicado.
+	 Fechas
+	La fecha que se seleccione (Comprobante 
+	 o valorización) se  tendrá en cuenta tanto para filtrar los comprobantes 
+	 a considerar, como para el ordenamiento de la información 
+	 Comprobante
+	 Valorización
+	 Período 
+	 a considerar
+	 Asientos
+	 
+	 Detallar Resumidos
+	Esta opción sólo está habilitada 
+	 si se seleccionó imprimir el Diario general.
+	En caso que la consulta incluya 
+	 asientos resúmenes Indica si se consideran o no en el listado, los 
+	 asientos de subdiarios que resumen en el diario pero que aun no se 
+	 han resumido.
+	Al consultar un asiento resumen 
+	 se dispone del enlace Ver lista de comprobantes que permite acceder 
+	 a todos los comprobantes que conforman el asiento resumen.
+	 
+	 Incluir no resumidos
+	Esta opción sólo está habilitada 
+	 si se seleccionó imprimir el Diario general.
+	Indica si se consideran o no en 
+	 el listado, los asientos de subdiarios que resumen en el diario pero 
+	 que aún no tienen efectuado el correspondiente cierre operativo, o 
+	 sea, que todavía no registraron en el diario los asientos resumen 
+	 de los subdiarios correspondientes.
+	 Detallar 
+	 saldos iniciales
+	En caso que esté activado se incluye 
+	 el saldo a la fecha informada en el campo "Fecha inicial" 
+	 para cada una de las cuentas.
+	 En moneda
+	En caso de estar habilitada la contabilidad 
+	 bimonetaria, se debe indicar si se desea consultar los mayores:
+ 
+ Empresas y sucursales
+
+	Permite indicar las empresas y sucursales 
+	 a tener en cuenta en los mayores de las cuentas. En caso de indicar 
+	 varias, los mayores de las cuentas incluyen los movimientos de todas 
+	 las empresas que se indiquen.
+	Tanto para la selección de empresas 
+	 como para la de sucursales, se dispone de botones que permiten agilizar 
+	 la selección:
+	 Todos
+	Incluye el tilde de "activadas" 
+	 a todas las empresas, o sucursales, según se trate.
+	 Ninguno
+	Quita el tilde de "activadas" 
+	 a todas las empresas, o sucursales, según se trate.
+	 Invertir
+	Invierte la selección de empresas, 
+	 o sucursales, existente.
+	Código/Nombre de la Empresa
+	Se exhiben las empresas habilitadas 
+	 y se debe indicar, mediante un tilde, las empresas que se desea incluir 
+	 en la consulta.
+	Código/Nombre de la Sucursal
+	Se exhiben las sucursales de cada 
+	 una de las empresas habilitadas y se debe indicar, mediante un tilde, 
+	 las sucursales que se desea incluir en la consulta.
+	 
+//<![CDATA[
+	if( typeof( TextPopupInit ) != 'function' ) TextPopupInit = new Function();
+	TextPopupInit('a1', 'POPUP641018659');
+	TextPopupInit('a2', 'POPUP641040577');
+//]]>
+
+

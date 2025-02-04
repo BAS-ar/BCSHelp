@@ -1,0 +1,126 @@
+
+
+Armado de transferencias
+Esta tarea permite generar en forma automática egresos 
+ de mercadería desde un depósito 
+ de la empresa a otros depósitos . Se deberá indicar el depósito de origen 
+ y varios depósitos de destino. Se generará un comprobante de egreso para 
+ cada destino que se indique. El depósito de origen será el mismo para 
+ todos los egresos que se generen.
+Los comprobantes de egreso que se generen podrán imprimirse 
+ al momento de su generación y también, en esa instancia, se podrán generar 
+ los mensajes y/o los archivos para actualizar a las sucursales correspondientes 
+ a los depósitos de destino informados.
+Si la información no se envía al momento de generar 
+ el comprobante, se podrá realizar el envío en una instancia posterior 
+ desde el punto Generación 
+ de archivos de egresos.
+Para registrar un armado de transferencias se debe completar, 
+ además de la fecha y el número, la siguiente información:
+ 
+ 
+ Depósito
+
+	Código del depósito del cual egresa la 
+	 mercadería.
+	 
+ 
+ Talonario de egresos
+
+	Código del talonario que se ha de utilizar 
+	 para generar los comprobantes de egreso.
+	 
+ 
+ Generar Egresos
+
+	Al pulsar este botón, previo pedido de 
+	 confirmación, se generarán los egresos de mercadería desde el depósito 
+	 de origen, a cada uno de los depósitos indicados en la distribución 
+	 por depósitos.
+	 
+ 
+ Precarga
+
+	Si los bienes a transferir a los diferentes 
+	 depósitos están disponibles en un remito de ingreso, es posible precargar 
+	 el armado de transferencia con la información que figura en dicho 
+	 comprobante. Luego se podrán modificar las cantidades de las líneas 
+	 del mismo o, directamente eliminar el comprobante. Esta prestación 
+	 resulta útil cuando, por ejemplo, la casa central recibe mercadería 
+	 de un proveedor (que se registra en el sistema mediante un remito 
+	 de ingreso) y dicha mercadería debe distribuirse a locales de venta 
+	 representados por diferentes depósitos del sistema.
+	 Desde 
+	 fecha
+	Fecha a partir de la cual se desean 
+	 considerar los ingresos de mercadería en la consulta.
+	Si no se indica ninguna fecha, se 
+	 incluyen todos los ingresos desde el principio.
+	 Hasta 
+	 fecha
+	Fecha hasta la cual se desean considerar 
+	 los ingresos de mercadería en la consulta.
+	Si no se indica ninguna fecha, se 
+	 incluyen todos los ingresos hasta el final.
+	 Proveedor
+	Código del proveedor titular de los 
+	 ingresos de mercadería que se desea incluir en la consulta.
+	 Mov. 
+	 de Materiales
+	Mediante este botón se accede a la 
+	 consulta de ingresos de mercadería que tuvieron como destino el depósito 
+	 informado y que corresponden al rango de fechas y al proveedor 
+	 informados en los campos precedentes.
+ 
+ Tabla de Items
+
+	Mediante esta tabla se informan los bienes a incluir en el armado el transferencias 
+	 que se está confeccionando.
+	Para cada ítem se debe informar la cantidad 
+	 que se entrega. Luego de informarla, se abre una ventana donde se 
+	 deberá indicar la distribución por depósito, es decir, la cantidad 
+	 de unidades del ítem que se desea transferir a cada depósito.
+	Para los ítems que administran colores 
+	 y medidas se prevé indicar la cantidad a transferir, a cada depósito, 
+	 para cada color y medida del bien.
+	Los ítems que se incluyen en el armado 
+	 de transferencias se agrupan por depósito de destino de modo de generar 
+	 cada comprobante de egreso. Recién en ese momento se actualizará el 
+	 stock de los depósitos involucrados.
+	Es importante tener en cuenta que no son 
+	 aptos para esta tarea los ítems de tipo conjunto, ni aquellos que 
+	 administran despachos y/o partidas.
+	Item
+	Código del ítem a incluir en el comprobante.
+	Debe corresponder a un bien 
+	 ingresado en el sistema.
+	Puede ingresarse el código del ítem, 
+	 su GTIN o su código alternativo.
+	GTIN / Alternativo
+	Código alternativo del ítem indicado 
+	 en el dato anterior.
+	Descripción
+	Descripción del ítem indicado en el 
+	 dato anterior.
+	Si el ítem tiene asociada una descripción 
+	 larga, se exhibirá esta. Si no, se exhibirá la otra descripción.
+	Cantidad
+	Cantidad de unidades que egresan del 
+	 ítem indicado.
+	Distribuida
+	Cantidad de unidades distribuidas 
+	 del ítem indicado.
+	Pendiente
+	Cantidad de unidades aún no distribuidas 
+	 del ítem indicado.
+ 
+//<![CDATA[
+	if( typeof( TextPopupInit ) != 'function' ) TextPopupInit = new Function();
+	TextPopupInit('a1', 'POPUP633202668');
+	TextPopupInit('a2', 'POPUP633188722');
+	TextPopupInit('a3', 'POPUP633169500');
+	TextPopupInit('a4', 'POPUP633150588');
+	TextPopupInit('a5', 'POPUP633151457');
+//]]>
+
+

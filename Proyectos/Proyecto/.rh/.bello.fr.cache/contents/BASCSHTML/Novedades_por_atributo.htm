@@ -1,0 +1,294 @@
+
+
+Ingreso de novedades de facturación por atributo
+Aquí se ingresan las novedades para un determinado atributo 
+ de clientes y un determinado valor del mismo. Las novedades afectarán 
+ a todos los clientes que tengan definido 
+ el atributo y valor de atributo indicado en la novedad.
+Los datos a ingresar son:
+ 
+ 
+ Empresa
+
+	Código de empresa en la cual se ingresan 
+	 las novedades que se están definiendo.
+	Este dato no se ingresa manualmente, se 
+	 completa el automáticamente con el código de la empresa en la cual 
+	 está el usuario en ese momento.
+ 
+ Atributo
+
+	Código de atributo de clientes para el 
+	 que se definen las novedades.
+	Debe ingresarse el código de un atributo 
+	 definido en el sistema y aplicable a Clientes.
+ 
+ Valor
+
+	Código de valor del atributo de clientes 
+	 indicado para el que se definen las novedades.
+	Debe ingresarse el código de un valor 
+	 definido en el sistema para el atributo indicado en el dato anterior.
+ 
+ 
+ Tabla de Ítems
+En esta tabla se ingresan todas las líneas 
+ correspondientes a las novedades del atributo y valor indicados.
+Las novedades se componen de una lista de 
+ ítems que pueden tener cantidades asociadas, 
+ precios, bonificaciones, importes y prioridades.
+Tienen además una fecha de vencimiento asociada 
+ que indicará, según la fecha del comprobante, si la novedad se incluye 
+ o no. La prioridad determina el orden en que se ingresarán las líneas 
+ en el comprobante, primero aparecerán las líneas de mayor prioridad. Las 
+ prioridades se ordenan en forma ascendente, es decir, un número bajo implica 
+ mayor prioridad que uno mas alto.
+Item
+
+	Código del ítem a incluir en las novedades 
+	 del atributo y valor indicados.
+	Debe corresponder a un bien 
+	 , servicio o ítem vario ingresado en el sistema.
+	Puede ingresarse el código del ítem 
+	 o su código alternativo.
+Descripción
+
+	Descripción del ítem indicado en el 
+	 dato anterior.
+	Si el ítem tiene asociada una descripción 
+	 larga, se exhibirá esta. Si no, se exhibirá la otra descripción. Si 
+	 el ítem no tiene descripción asociada, se solicitará el ingreso de 
+	 un detalle del mismo en este momento.
+Observaciones
+
+	Si se registra una novedad para un 
+	 ítem que requiere observación en pedidos o en facturas de venta, se 
+	 debe informar la observación en este campo.
+	Si el ítem tiene una observación ya 
+	 asignada, ésta se mostrará y podrá modificarse libremente.
+	Cuando se incorporen las novedades 
+	 en pedidos, en facturas de venta o en la generación automática de 
+	 facturas, se asociará a cada ítem que requiera observación, la observación 
+	 que se haya indicado al ingresar la novedad.
+Cantidad
+
+	Cantidad de unidades del ítem indicado. 
+	 Este dato puede o no ingresarse dependiendo de si la cantidad se mantiene 
+	 constante al pedir o facturar el ítem indicado, para los clientes 
+	 que cumplen con el atributo y valor 
+	 a los cuales se les define la novedad.
+	Independientemente de si la cantidad 
+	 está presente o no en la novedad, la misma podrá ser modificada cuando 
+	 se incluye la novedad en los comprobantes de venta.
+	Aquí se presentan varias posibilidades.
+	Si el ítem es un ítem vario o es un 
+	 servicio de tipo Porcentaje 
+	 o Importe, no se solicitará 
+	 información en este campo.
+	Si el ítem trabaja con doble unidad 
+	 de medida, se solicitará este campo si las ventas se registran en 
+	 la primera unidad. Si las ventas se registran en segunda unidad, al 
+	 ingresar la cantidad en la segunda unidad se completará este dato 
+	 en forma automática y podrá ser modificado sólo si se indicó que la 
+	 relación entre las unidades de medida es Variable.
+	Si el ítem trabaja con colores y medidas 
+	 se abrirá una ventana que solicitará el ingreso de las cantidades 
+	 para cada color y medida a incluir en la novedad, y al finalizar el 
+	 ingreso de datos en esa ventana, se completará este dato con la cantidad 
+	 total de unidades ingresadas para todos los colores y medidas del 
+	 ítem.
+	Si el ítem es un contenedor, se abrirá 
+	 una ventana que solicita el código del ítem que contiene (se ofrecerá 
+	 el ítem indicado como default en la tabla de contenedores del bien) 
+	 y la cantidad del mismo, y luego se completará este dato con la cantidad 
+	 resultante de multiplicar la cantidad indicada por la cantidad de 
+	 unidades de este indicada en la definición del ítem contenedor.
+	Si el ítem trabaja con dimensiones, 
+	 se abrirá una ventana que solicitará el ingreso de cantidades para 
+	 cada dimensión posible definida para el ítem, y luego se completará 
+	 este dato con la cantidad resultante de multiplicar la cantidad indicada 
+	 por todas las dimensiones del ítem.
+Cantidad 
+ en 2da unidad
+
+	Cantidad de unidades del ítem indicado 
+	 en la segunda unidad de medida.
+	Si el ítem no trabaja con doble unidad 
+	 de medida, no se solicitará información en este campo.
+	Si el ítem trabaja con doble unidad 
+	 de medida, se solicitará este campo si las ventas se registran en 
+	 la segunda unidad. Si las ventas se registran en primera unidad, al 
+	 ingresar la cantidad en la primera unidad se completará este dato 
+	 en forma automática y podrá ser modificado sólo si se indicó que la 
+	 relación entre las unidades de medida es Variable.
+Precio
+
+	Precio del ítem indicado. Este dato 
+	 puede o no ingresarse dependiendo de si el precio unitario se mantiene 
+	 constante al pedir o facturar el ítem indicado, para los clientes 
+	 que cumplen con el atributo y valor a los cuales se les define la 
+	 novedad.
+	Independientemente de si el precio 
+	 está presente o no en la novedad, el mismo podrá ser modificado cuando 
+	 se incluye la novedad en los comprobantes de venta.
+	Si el ítem es un servicio o un ítem 
+	 vario de tipo Importe o Nada, no se solicitará información 
+	 en este campo.
+	Si el ítem es de tipo Porcentaje, 
+	 se solicitará el ingreso de un porcentaje que será aplicado al total 
+	 del comprobante ingresado en el momento de incluir la novedad.
+	Si el ítem trabaja con colores y medidas, 
+	 en la ventana donde se ingresaron las cantidades, podrán ingresarse 
+	 también los precios para cada color y medida. Esto es útil si se manejan 
+	 distintos precios por medida o por color. Si se utiliza un solo precio, 
+	 podrá indicarse el mismo en este dato.
+Bonificación
+
+	Porcentaje de bonificación a aplicar 
+	 sobre el precio unitario del ítem. Este dato puede o no ingresarse 
+	 dependiendo de si la bonificación se mantiene constante al pedir o 
+	 facturar el ítem indicado, para los clientes 
+	 que cumplen con el atributo y valor a los cuales se les define la 
+	 novedad.
+	Independientemente de si la bonificación 
+	 está presente o no en la novedad, la misma podrá ser modificada cuando 
+	 se incluye la novedad en los comprobantes de venta.
+	El sistema utiliza la tabla de bonificaciones 
+	 indicada en los Parámetros de Cuentas 
+	 corrientes como Primera bonificación, 
+	 para obtener el porcentaje a ofrecer, de acuerdo al valor del atributo 
+	 del cliente y al valor del atributo del ítem indicado.
+	El porcentaje de bonificación ofrecido 
+	 por el sistema podrá modificarse hasta un máximo que está determinado 
+	 por la tabla de bonificaciones indicada en los Parámetros 
+	 de Cuentas corrientes como Máxima 
+	 de la Primera bonificación.
+	Si el ítem trabaja con colores y medidas, 
+	 en la ventana donde se ingresaron las cantidades, podrán ingresarse 
+	 también las bonificaciones para cada color y medida. Esto es útil 
+	 si se manejan distintos porcentajes por medida o por color. Si se 
+	 utiliza un solo porcentaje, podrá indicarse el mismo en este dato.
+Bonificación 
+ 2
+
+	Porcentaje de bonificación a aplicar 
+	 sobre el precio unitario del ítem con la primera bonificación ya aplicada.
+	El sistema utiliza la tabla de bonificaciones 
+	 indicada en los Parámetros de cuentas 
+	 corrientes como Segunda bonificación, 
+	 para obtener el porcentaje a ofrecer, de acuerdo al valor del atributo 
+	 del cliente y al valor del atributo 
+	 del ítem indicado.
+	El porcentaje de bonificación ofrecido 
+	 por el sistema podrá modificarse hasta un máximo que está determinado 
+	 por la tabla de bonificaciones indicada en los Parámetros 
+	 de Cuentas corrientes como Máxima 
+	 de la Segunda bonificación.
+	Si el ítem trabaja con colores y medidas, 
+	 en la ventana donde se ingresaron las cantidades, podrán ingresarse 
+	 también las bonificaciones para cada color y medida. Esto es útil 
+	 si se manejan distintos porcentajes por medida o por color. Si se 
+	 utiliza un solo porcentaje, podrá indicarse el mismo en este dato.
+Importe
+
+	Importe de la línea.
+	Si el ítem es un servicio, o un ítem 
+	 vario o servicio de tipo Porcentaje y al darlo de alta ya se ha informado 
+	 el porcentaje que le corresponde, al incorporarse el ítem al comprobante 
+	 se asumirá el valor indicado en el alta de ítem, independientemente 
+	 de lo que acá se haya indicado.
+	Si el servicio o ítem vario es de 
+	 tipo Importe se debe ingresar 
+	 aquí el valor correspondiente al mismo.
+Moneda 
+ y Símbolo
+
+	Moneda y símbolo correspondiente en 
+	 la que se expresa el importe.
+Prioridad
+
+	Número que indica la prioridad que 
+	 se le asigna a la novedad. Se ordena en forma ascendente, es decir, 
+	 un número bajo implica una mayor prioridad que uno mas alto.
+	La prioridad se asigna dependiendo 
+	 de la importancia que tenga cada novedad con respecto a las demás.
+	Las novedades se incluyen en los comprobantes 
+	 ordenadas por prioridad en forma ascendente, es decir, primero las 
+	 de prioridad más alta.
+	Conviene, en el caso de novedades 
+	 correspondientes a ítems de tipo texto o porcentaje, darles una baja 
+	 prioridad para lograr que se incluyan al final de los comprobantes 
+	 al facturar las novedades. De esta forma, en el caso de los porcentajes, 
+	 se aplicarán los mismos sobre el total de los ítems facturados.
+Nota 
+ de crédito
+
+	Si se tilda este campo significa que 
+	 la novedad está a la generación de notas de crédito en la facturación 
+	 automática de novedades. Las novedades de este tipo no se incorporan 
+	 ni en los pedidos ni en la facturación manual de comprobantes de ventas 
+	 al oprimir el botón correspondiente.
+	Estas novedades se incorporan a las 
+	 notas de crédito en los procesos correspondientes a aquellos para 
+	 los cuáles se habilitan.
+Manual
+
+	Indicación de si la novedad se incluye 
+	 o no en la facturación manual.
+	Las novedades que tienen esta indicación 
+	 se ingresarán automáticamente en los comprobantes de venta cuando 
+	 se pulse el botón de Novedades.
+Auto 
+ 1
+
+	Indicación de si la novedad se incluye 
+	 o no en los procesos de facturación automática número 1.
+	El proceso de facturación automática 
+	 puede llevar asociado un número de 1 
+	 a 3 que se indica en el momento 
+	 de efectuar la facturación.
+	Las novedades que tienen esta indicación 
+	 son las que se incluirán en las facturaciones automáticas que se generen 
+	 con número de proceso 1.
+Auto 
+ 2 a Auto 12
+
+	Estos trabajan en forma absolutamente 
+	 análoga a la explicada en “Auto 1”.
+	Las novedades que tengan activado 
+	 auto 2 se incluirán en las facturaciones automáticas que se generen 
+	 con número de proceso 2, las que tengan indicado 3 en las que se indique 
+	 3 y así, sucesivamente.
+Inicio 
+ vigencia
+
+	Fecha desde la cual entra en vigencia 
+	 la novedad.
+	Al generar comprobantes de venta, 
+	 tanto en forma manual como automática, no se incluirán las novedades 
+	 que no hayan iniciado su fecha de vigencia, respecto a la fecha del 
+	 comprobante que se genera.
+Fecha 
+ vencimiento
+
+	Fecha de vencimiento de la novedad.
+	Al generar comprobantes de venta, 
+	 tanto en forma manual como automática, no se incluirán las novedades 
+	 que estén vencidas con respecto a la fecha del comprobante que se 
+	 genera.
+Centro 
+ de costo A y Centro de costo B
+
+	Si la imputación contable del bien 
+	 tiene asociada subcuenta de tipo A y/o B, estos se informan en las 
+	 columnas correspondientes.
+Negocio 
+ 
+
+	Si alguno de los centros de apropiación 
+	 indicados administran negocios, se debe informar el código de negocio 
+	 correspondiente.
+ 
+
+
+

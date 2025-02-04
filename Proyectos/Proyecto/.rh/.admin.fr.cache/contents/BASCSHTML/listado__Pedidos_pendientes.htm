@@ -1,0 +1,292 @@
+
+
+Listado de pedidos pendientes
+Este informe permite ver los datos asociados a los pedidos 
+ registrados en el sistema que se encuentran pendientes de entrega al momento 
+ de la emisión del listado. Se consideran los pedidos internos y los externos.
+Se pueden imprimir los pedidos pendientes por rangos 
+ de fechas, fechas de entrega, clientes 
+ , conceptos , ítems 
+ , depósitos y atributos 
+ , y con diferentes ordenamientos.
+Pueden incluirse en el listado todos los ítems pedidos 
+ en los comprobantes que se listan o pueden seleccionarse los productos 
+ a listar por código de ítem o por atributos 
+ y valores de atributos de los ítems pedidos.
+Se muestran los datos de cada pedido y para cada ítem 
+ del pedido se muestran la cantidad pedida, la cantidad asignada, la no 
+ asignada y los importes correspondientes. A tal efecto, es importante 
+ destacar que las cantidades pendientes exhibidas se encuentran expresadas 
+ en la Unidad para cantidades pendientes 
+ informada para cada ítem en la tabla de bienes.
+Los importes de cada comprobante se muestran expresados 
+ en la moneda 
+ de cada pedido.
+Si el informe se emite ordenado por ítem se exhibirán 
+ las columnas cantidades e importes por color y medida.
+Es posible, incluir en el informe, los números de órdenes 
+ de producción a los cuales corresponden los pedidos pendientes, a listar. 
+ Estos se exhiben separados por por “/”.
+También se incluye un dato que indica si la orden de 
+ producción está terminada. En ese caso, se exhibe el código de tarea en 
+ curso. Si hay varias tareas en curso se indica la que tiene fecha estimada 
+ de finalización menor. Si la orden no está terminada y no hay ninguna 
+ tarea en curso, se exhibe el código de la tarea pendiente de iniciarse, 
+ si hay varias tareas por iniciarse, se muestra la que tiene la fecha estimada 
+ de inicio menor. Si la orden no está terminada, no hay ninguna tarea en 
+ curso, ni pendiente de iniciarse, el código de la tarea que debería iniciarse, 
+ si hay varias tareas sin iniciar se muestra la que tiene la fecha estimada 
+ de inicio menor.
+Es posible, además, incluir en la impresión del informe 
+ una carátula en la que se detallan 
+ todas las opciones seleccionadas por el usuario al solicitarlo.
+Para emitir el listado primero se ingresan los datos 
+ en las distintas fichas contenidas en la tarea, de manera tal de filtrar 
+ la información de acuerdo a las necesidades. Luego se debe presionar el 
+ ícono (botón) de la barra de herramientas superior que corresponda al 
+ tipo de emisión requerida. El uso de estos botones se detalla en el link 
+ Emisión disponible en un párrafo 
+ posterior.
+Al momento de imprimir un informe (tanto por pantalla 
+ como por papel) se puede utilizar el formato standard del sistema, o indicar 
+ un formato personalizado de impresión. 
+ Este último se indica en el campo homónimo que, en general, se encuentra 
+ en la zona inferior de la primer solapa y su funcionalidad está detallada 
+ a continuación en el link Emisión.
+ 
+ 
+ Emisión
+Cabe acotar que, en las emisiones personalizadas, es 
+ posible detallar las observaciones de las cancelaciones asociadas al pedido.
+Los datos solicitados para la emisión del listado son 
+ los siguientes:
+ 
+ Ficha Rangos
+
+	 Período 
+	 a considerar
+	 Fecha 
+	 de Entrega
+	 Destino
+	 
+	 Destino
+	Mediante estas opciones se establece 
+	 el rango de clientes, agentes o depósitos cuyos pedidos pendientes 
+	 intervendrán en el informe.
+	Se debe indicar el destino de 
+	 los pedidos pendientes que se desean incluir en el listado.
+	Las opciones son:
+	Cliente
+	Agente
+	Depósito
+	Recordemos que los pedidos externos 
+	 siempre son efectuados por clientes y los pedidos internos pueden 
+	 tener destino depósito o agente.
+	Si se selecciona destino Cliente se incluirán en el listado 
+	 los pedidos externos pendientes y se podrá seleccionar luego un rango 
+	 de clientes .
+	Si se selecciona destino Agente se incluirán en el listado 
+	 los pedidos internos pendientes hechos por agentes y se podrá seleccionar 
+	 luego un rango de agentes a incluir 
+	 en el listado.
+	Si se selecciona destino Depósito se incluirán en el listado 
+	 los pedidos internos pendientes hechos por depósitos y se podrá seleccionar 
+	 luego un rango de depósitos destino a incluir en el listado.
+	 
+	 Atributo
+	Código de atributo 
+	 de los clientes cuyos pedidos se desean incluir en el listado.
+	Este dato sólo se encuentra habilitado 
+	 si se seleccionó destino Cliente.
+	De acuerdo al atributo y al valor 
+	 de atributo que se indique se considerará o no cada uno de los clientes 
+	 del rango seleccionado, según los atributos y valores que se hayan 
+	 asignado a cada uno de ellos.
+	Si no se especifica ningún atributo, 
+	 los pedidos pendientes de todos los clientes del rango solicitado 
+	 intervendrán en el listado.
+	 
+	 Valor
+	Valor del atributo 
+	 indicado.
+	Este dato sólo se encuentra habilitado 
+	 si se seleccionó destino Cliente.
+	De acuerdo al atributo y al valor 
+	 de atributo que se indique se considerará o no cada uno de los clientes 
+	 del rango seleccionado, según los atributos y valores que se hayan 
+	 asignado a cada uno de ellos.
+	Si se indica un valor, se incluirán 
+	 en el listado los pedidos pendientes de todos los clientes que tengan 
+	 asociados el valor del atributo indicado.
+	Si no se especifica ningún valor 
+	 de atributo, todos los clientes del rango solicitado que tengan el 
+	 atributo indicado, intervendrán en el listado.
+	 Depósito
+	Código de depósito cuyos pedidos asociados 
+	 se desean incluir en el informe. Este código de depósito se refiere 
+	 a los depósitos a los que se le pidió la mercadería en los pedidos 
+	 que se incluyen en el listado.
+	Puede seleccionarse un depósito en 
+	 particular o un grupo de depósitos. Si este dato es dejado en blanco, 
+	 se incluirán todos los depósitos en el informe.
+	 Concepto
+	Código de tres caracteres correspondiente 
+	 al concepto asociado a los pedidos 
+	 pendientes que se desean incluir en el informe.
+	Puede seleccionarse un concepto en 
+	 particular o un grupo de conceptos. Si este dato es dejado en blanco, 
+	 se incluirán los pedidos de todos los conceptos en el informe.
+	 Vendedor
+	Código del vendedor o rango de vendedores asociados a los pedidos pendientes 
+	 que se desea incluir en el informe.
+	Puede seleccionarse un vendedor en 
+	 particular o un grupo de vendedores. Si este dato es dejado en blanco, 
+	 se incluirán los pedidos de todos los vendedores en el informe.
+	 Prefijo
+	Prefijo correspondiente a los comprobantes 
+	 que se desean incluir en el listado.
+	El prefijo debe corresponder a un 
+	 talonario que admita el ingreso 
+	 de pedidos.
+	Si este dato es dejado en blanco se 
+	 incluirán en el listado pedidos sin tener en cuenta su numeración.
+	 Número
+	Números de los comprobantes que se 
+	 desean incluir en el listado.
+	Puede ingresarse un número en particular 
+	 o un rango de números. Si este dato es dejado en blanco y se indicó 
+	 un prefijo, se incluirán todos los pedidos ingresados con el prefijo 
+	 indicado.
+ 
+ Ficha Opciones
+
+	 Ordenamiento
+	Tipo de ordenamiento con el que se 
+	 desean emitir el informe.
+	 
+	 Destino
+	Si se selecciona ordenamiento 
+	 Destino se ordenan los datos 
+	 listados por código de destino, es decir, por código de cliente, 
+	 agente o depósito dependiendo del 
+	 tipo de destino seleccionado. Se muestran para cada cliente, agente 
+	 o depósito los pedidos pendientes asociados y se incluyen totales 
+	 por destino.
+	 
+	 Item
+	Si se selecciona ordenamiento 
+	 Ítem se ordenan los datos 
+	 listados por código de ítem. Se muestran 
+	 para cada ítem los pedidos en los que participa y se incluyen totales 
+	 por ítem.
+	 
+	 Fecha de entrega
+	Para ordenar los pedidos por fecha 
+	 de entrega. Si se selecciona esta opción se podrá ordenar, para cada 
+	 fecha, por destino o por ítem.
+	 
+	 Ubicación
+	En caso que se indique un solo 
+	 depósito, se puede indicar que se ordene por ubicación. Este ordenamiento 
+	 no presenta totales por ubicación.
+	Cualquiera sea la selección, la información 
+	 puede ordenarse por código o descripción de clientes o ítems.
+	 Columnas
+	Columnas que se desean listar. Deben 
+	 seleccionarse tres columnas de las siguientes:
+	 
+	 Pedido
+	 
+	 Pendiente reservado
+	 
+	 Pendiente no reservado
+	 
+	 Pendiente
+	 
+	 Entregado
+	 
+	 Cancelado
+	Se mostrará para cada ítem incluido 
+	 en los pedidos que se listen, la cantidad pedida, la cantidad pendiente 
+	 asignada o no, y/o la cantidad ya entregada, dependiendo de las columnas 
+	 que aquí se seleccionen.
+	 Sólo 
+	 pedidos con reserva pendiente
+	Indicación de si se desean incluir 
+	 en el informe solamente los pedidos pendientes de asignación de mercadería 
+	 o todos los pedidos.
+	Los pedidos con asignación pendiente 
+	 son aquellos que tienen ítems que aún no han sido asignados ya sea 
+	 en forma manual o automática.
+	 Sólo 
+	 pedidos con autorización pendiente
+	Indicación de si se desean incluir 
+	 en el informe solamente los pedidos pendientes de autorización o todos 
+	 los pedidos.
+	Los pedidos con autorización pendiente 
+	 son aquellos que requieren autorización, según lo indicado en los 
+	 parámetros del sistema, pero que aún no se ha realizado la misma.
+	 Sólo 
+	 pedidos autorizados
+	Si se activa, se listarán los pedidos 
+	 pendientes de entrega que se encuentran autorizados.
+	 Pedidos 
+	 internos
+	Indicación de si se desean incluir 
+	 o no en el informe los pedidos internos que se encuentren pendientes.
+	 Pedidos 
+	 externos
+	Indicación de si se desean incluir 
+	 o no en el informe los pedidos externos que se encuentren pendientes.
+	 Incluir 
+	 pedidos expirados
+	Indicación de si se desean incluir 
+	 o no en el informe los pedidos externos que se encuentren expirados.
+	 Incluir 
+	 líneas cumplidas
+	Indicación de si se desean incluir 
+	 o no en el listado las líneas ya cumplidas de los pedidos pendientes 
+	 seleccionados.
+	Esta opción sólo se activará en caso 
+	 de haber seleccionado el ordenamiento por Destino.
+	 Detallar 
+	 componentes
+	Si se activa, en caso que el informe 
+	 incluya ítems de tipo Conjunto, se detallan sus componentes.
+	 Medidas 
+	 tabuladas
+	Si se activa, las medidas se muestran 
+	 en forma tabular y se activa el campo Títulos. 
+	 En esta campo es posible indicar una tabla de Títulos determinada.
+	En caso de seleccionar esta opción 
+	 sólo se permite elegir un tipo de columna.
+	Si se indica una tabla de títulos 
+	 la información se detallará de acuerdo a ésta. Es decir, para cada 
+	 ítem, si por definición su tabla de medidas está incluida en alguna 
+	 de las filas de la tabla de títulos indicada y la medida aparece entre 
+	 las que se definieron para esa fila en la tabla de títulos, la cantidad 
+	 se encolumnará bajo dicha medida. Caso contrario se incluirá en la 
+	 columna que corresponde a cantidades cuya medida no está en la tabla 
+	 de títulos.
+	En este listado el total general de 
+	 cantidades está disponible en la segunda unidad de medida.
+	 Método 
+	 de pago
+	 
+	 Contado
+	Indicación de si se desean incluir 
+	 o no en el listado los pedidos externos con método de pago de contado.
+	 
+	 Cuenta corriente
+	Indicación de si se desean incluir 
+	 o no en el listado los pedidos externos con método de pago Cuenta 
+	 corriente.
+ 
+ Ficha Productos
+//<![CDATA[
+	if( typeof( TextPopupInit ) != 'function' ) TextPopupInit = new Function();
+	TextPopupInit('a1', 'POPUP613818583');
+	TextPopupInit('a2', 'POPUP613877245');
+//]]>
+
+

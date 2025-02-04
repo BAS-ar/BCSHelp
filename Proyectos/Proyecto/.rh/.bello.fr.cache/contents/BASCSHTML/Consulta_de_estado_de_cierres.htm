@@ -1,0 +1,107 @@
+
+
+Estado de cierres
+Esta consulta permite conocer los detalles de los subdiarios 
+ definidos en el sistema.
+La consulta ofrece precargada la empresa por defecto, 
+ siendo posible seleccionar varias empresas a incluir en la consulta.
+También puede indicarse el tipo de subdiario a consultar 
+ o, directamente, consultar todos los subdiarios habilitados de las empresas 
+ que se hayan indicado.
+La consulta incluye, para cada uno de los subdiarios, 
+ los datos que tienen asociados en la tabla correspondiente y la fecha 
+ de ultimo cierre Si esta fecha está en color rojo indica que falta generar 
+ el cierre mensual obligatorio.
+En el encabezado de la consulta se indica la Fecha 
+ de certeza contable (FCC). Esta es la menor fecha de cierre de los 
+ subdiarios y del diario general de las empresas. Si alguno no presenta 
+ fecha de cierre como FCC se indicará Ninguna.
+ 
+ 
+ Empresa
+
+	Se deben indicar los códigos de las empresas 
+	 a consultar.
+	 
+ 
+ Tipo Subdiario
+
+	Debe indicarse el tipo de subdiario a 
+	 consultar (Ventas, Compras. Materiales, Otros, Caja y Bancos, Bienes 
+	 de uso, Diario General) o Todos
+	 
+ 
+ Subdiarios
+
+	En esta tabla se detalla la información 
+	 de cada uno de los subdiarios que corresponden al tipo indicado (o 
+	 de todos los subdiarios si se ha indicado Todos).
+	Subdiario
+	Exhibe el Código y Descripción de 
+	 cada uno de los subdiarios que se incluyen en la consulta.
+	Haciendo clic en esta columna se accede 
+	 al detalle de auditoría 
+	 de cierres del subdiario, ordenados desde el más reciente al más 
+	 antiguo. SI algún subdiario no posee enlace se debe a que no se ha 
+	 realizado ningún cierre.
+	En el caso de subdiarios que resumen 
+	 desde la consulta del asiento resumen se puede acceder, a través del 
+	 enlace 'Ver lista de comprobantes' ,al detalle de todos los comprobantes 
+	 que conformaron el asiento resumen. Haciendo clic en cada comprobante 
+	 se llega al detalle del asiento del mismo, pudiendo navegar entre 
+	 las diferentes asientos.
+	Tipo
+	Tipo correspondiente al subdiario.
+	En el caso del diario general 
+	 es inoperante.
+	Ultimo Cierre
+	Fecha del último cierre del subdiario.
+	Se dispone de un botón, a la derecha 
+	 de la fecha, que permite acceder a la situación de los parámetros 
+	 utilizados al momento en que se efectuó dicho cierre.
+	 Por ejemplo para el caso 
+	 del cierre del subdiario de materiales, se indica si resumió o no 
+	 en el diario, si generó o no asiento en el cierre, los métodos de 
+	 valuación habilitados a la fecha de cierre, si ajustó o no bienes 
+	 de uso, etc. Esta información se muestra siempre y ciando se haya 
+	 seleccionado una empresa.
+	Resume en el diario
+	Este campo aparece tildado si 
+	 en la definición del subdiario se ha indicado que resume en el diario.
+	En el caso del diario general 
+	 es inoperante.
+	Cierre mensual
+	Este campo aparece tildado si 
+	 en la definición del subdiario (o en el diario) se ha indicado que 
+	 requiere cierre mensual obligatorio.
+	Genera asiento de cierre
+	Este campo aparece tildado si 
+	 el subdiario genera asiento de cierre.
+	En realidad el único tipo de subdiario 
+	 que puede no generar asiento de cierre es el de materiales, por lo 
+	 cual, solo puede aparecer destildado para este tipo de subdiario.
+	Participa pos. impositiva
+	Este campo aparece tildado si 
+	 en la definición del subdiario se ha indicado que participa en la 
+	 posición impositiva.
+	Fecha desde
+	Si se elige más de una empresa, 
+	 este capo se deshabilita.
+	Fecha hasta
+	Si se elige más de una empresa, 
+	 este capo se deshabilita.
+ 
+ 
+ Para tener en cuenta
+
+	Es importante aclarar que si se accede 
+	 a esta consulta a través de la FCC (Fecha de certeza contable) puede 
+	 mostrar la información de la base de informes o de la base principal. 
+	 Si lo que se exhibe corresponde a la base de informes en la cabecera 
+	 de la pantalla se indica como título: Estado de cierres (Información 
+	 de la base de informes)” y se permite navegar únicamente hasta el 
+	 detalle de cierres.
+ 
+
+
+

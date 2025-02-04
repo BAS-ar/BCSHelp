@@ -1,0 +1,131 @@
+
+
+Registro de inventario
+Mediante esta tarea se registra la mercadería en stock 
+ en un depósito en el cual está iniciado un inventario .
+Al indicar en qué depósito se efectúa el registro, se 
+ mostrará el número de inventario iniciado en ese depósito y se podrán 
+ ingresar los ítems y cantidades existentes.
+Al definir ítems en el sistema puede indicarse mediante 
+ un código de ocho caracteres, la ubicación física del ítem dentro de cada 
+ depósito en los que puede haber stock del mismo.
+El sistema brinda la posibilidad de registrar el inventario 
+ por ubicación física, lo cual es de gran utilidad para la toma de inventario, 
+ ya que permite ingresar las cantidades dependiendo de la ubicación y además 
+ no es necesario tipear los códigos de ítem, sino que se ingresan en forma 
+ automática.
+A tal efecto, se puede indicar una ubicación física 
+ y automáticamente se mostrará en pantalla una lista con todos los ítems 
+ correspondientes a esa ubicación, en el depósito indicado. De la misma 
+ forma, puede completarse esta lista pulsando el botón Ítems 
+ sin ubicación, mediante el cual automáticamente se completará la 
+ pantalla con todos los ítems sin una ubicación física determinada en el 
+ depósito indicado. Luego, deberá ingresarse en forma manual la cantidad 
+ de unidades para cada ítem del depósito.
+No obstante, el sistema permite que igualmente se ingrese 
+ el registro del inventario de ítems cuya ubicación difiera de la que fue 
+ informada.
+Por otro lado, se exhibe un mensaje de advertencia cada 
+ vez que el usuario intenta registrar el inventario de un depósito cuyo 
+ stock ya ha sido ajustado con anterioridad.
+Los datos a ingresar para el registro de inventario 
+ son:
+ 
+ 
+ Depósito
+
+	Número de depósito 
+	 en el cual se efectúa el registro el inventario.
+	Debe corresponder a un depósito definido 
+	 en el sistema y con un inventario iniciado.
+	Al indicar el depósito se muestra el número 
+	 de inventario iniciado y si ya se hizo el cierre de inventario de 
+	 ese depósito, se mostrará también la fecha de cierre correspondiente.
+ 
+ Ubicación
+
+	Código de ubicación física de los ítems 
+	 a incluir en el registro de inventario.
+	Debe corresponder a una ubicación física 
+	 ingresada para los bienes del depósito 
+	 indicado.
+	Al indicar una ubicación automáticamente 
+	 se completará la pantalla con una lista con todos los bienes correspondientes 
+	 a esa ubicación, en el depósito indicado. Si no se informa nada en 
+	 este campo, la pantalla se completará con los bienes que no tienen 
+	 asociada ubicación alguna.
+ 
+ Inventario
+
+	En este campo el sistema informará el 
+	 número de inventario iniciado en el depósito informado.
+	 
+ 
+ Fecha de cierre
+
+	En este campo el sistema el sistema informará, 
+	 en caso de haber cerrado el inventario para el depósito 
+	 indicado, la fecha en que operó dicho cierre.
+	 
+ 
+ Precarga
+
+	Este botón se habilita al indicar el código 
+	 del depósito y, si se requiere, la ubicación.
+	Al presionarlo se precarga la grilla con 
+	 los datos del inventario.
+ 
+ Ajustar el stock a cero en ítems no informados 
+
+	Si se marca esta opción, al generar los 
+	 remitos de ajuste de inventario, llevará a cero la cantidad de los 
+	 ítems para los cuales no se informe cantidad. Por el contrario, si 
+	 no es marcada, al generar los citados remitos de ajuste, no tendrá 
+	 en cuenta aquellos ítems a los cuales no se les ha ingresado cantidad.
+ 
+ 
+ Registros por pantalla
+Este campo permite indicar un número que actuará 
+ como tope de modo de cargar la cantidad de datos que se indiquen.
+La tabla de ítems se carga hasta este tope, 
+ pudiendo navegar entre las distintas líneas mediante los botones disponibles 
+ a la derecha de la tabla.
+ Tabla de 
+ Ítems
+Mediante esta tabla se ingresan, uno a 
+ uno, los bienes que componen el inventario 
+ del depósito indicado.
+Los ítems pueden ingresarse en forma manual 
+ indicando el código de cada uno, o en forma automática, seleccionando 
+ su ubicación física en el depósito o mediante el botón Ítems 
+ sin ubicación para los ítems sin ubicación fija dentro del depósito.
+Si el ítem maneja despachos y/o partidas, 
+ y/o series se pone la línea en gris para distinguirla.
+Una vez indicado, en forma manual o automática, 
+ el código del ítem debe ingresarse la cantidad de unidades de cada uno 
+ dentro del depósito.
+Línea
+Número de secuencia del ítem que se 
+ registra en el inventario.
+Este campo es completado por el sistema 
+ en forma automática.
+Ítem
+Código de ítem del cual se está registrando 
+ su inventario en el depósito indicado.
+Como ya fue mencionado, este código 
+ puede cargarse en la tabla en forma manual o en forma automática.
+Debe corresponder a un bien 
+ ingresado en el sistema y que administre stock.
+Descripción
+Descripción del ítem correspondiente 
+ al código de bien indicado.
+Cantidad
+Cantidad de unidades del ítem indicado 
+ dentro del depósito en el cual 
+ se efectúa el registro de inventario.
+Los ítems que no se incluyan en la 
+ tabla de ítems o los que están incluidos pero no se les indica ninguna 
+ cantidad, no se registrarán en el inventario del depósito.
+
+
+

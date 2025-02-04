@@ -1,0 +1,62 @@
+
+  Cancelación de saldos
+  Mediante esta tarea es posible listar notas de crédito y/o débito que se pueden generar para cancelar saldos de clientes inferiores a un valor indicado.
+  Las notas se generarán con la letra correspondiente a la categoría de IVA del cliente titular pero no calcularán impuestos de ningún tipo.
+  Para emitir el listado primero se ingresan los datos en las distintas fichas contenidas en la tarea, de manera tal de filtrar la información de acuerdo a las necesidades. Luego se debe presionar el ícono (botón) de la barra de herramientas superior que corresponda al tipo de emisión requerida. El uso de estos botones se detalla en el link Emisión disponible en un párrafo posterior.
+  Al momento de imprimir un informe (tanto por pantalla como por papel) se puede utilizar el formato standard del sistema, o indicar un formato personalizado de impresión. Este último se indica en el campo homónimo que, en general, se encuentra en la zona inferior de la primer solapa y su funcionalidad está detallada a continuación en el link Emisión.
+  
+   Emisión
+  FCC Fecha de certeza contable
+  
+   Ficha Opciones
+  
+     Período
+        a considerar
+     Moneda
+    Moneda
+      en la cual se desean reexpresar los saldos.
+    Debe corresponder a un código de tabla
+      de cotizaciones ingresado en el sistema.
+    Si no se indica ninguna moneda el
+      listado se reexpresará en moneda local.
+    Saldos menores a
+    Importe correspondiente al valor máximo
+      de los saldos a ajustar.
+    Esto permite ajustar sólo aquellos
+      saldos inferiores a un determinado importe.
+     Imputación
+      contable
+    Código de imputación
+        contable de clientes asociada a los comprobantes que se desean
+      considerar para la generación de las notas. Es posible indicar un
+      rango de imputaciones contables asociadas a los comprobantes que se
+      han de cancelar.
+    Si este dato es dejado en blanco,
+      se considerarán todas las imputaciones correspondientes a la moneda
+      indicada.
+    Esta opción nos permite listar, del
+      rango de clientes seleccionado, solo los saldos de las operaciones
+      efectuadas con determinada imputación contable.
+     Incluir
+    
+      Comprobantes que generan notas de crédito
+    Si se tilda esta opción se incluyen
+      en el listado saldos que generan notas de crédito.
+    
+      Comprobantes que generan notas de débito
+    Si se tilda esta opción se incluyen
+      en el listado saldos que generan notas de débito.
+    
+      Comprobantes de caja
+    Si se tilda esta opción se incluyen
+      en el listado los saldos pendientes de órdenes de pago y recibos.
+  
+   Ficha Clientes
+   Empresas
+  
+    //<![CDATA[
+    if (typeof(TextPopupInit) != 'function') TextPopupInit = new Function();
+    TextPopupInit('a1', 'POPUP684217503');
+    //]]>
+  
+

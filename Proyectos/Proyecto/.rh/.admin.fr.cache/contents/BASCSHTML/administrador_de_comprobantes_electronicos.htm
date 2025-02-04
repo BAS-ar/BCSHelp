@@ -1,0 +1,181 @@
+
+  Administrador de comprobantes electrónicos
+  Este programa permite ver los comprobantes pendientes de CAE en el orden en que serán procesados y realizar tareas de administración (renumerar y eliminar comprobantes).
+  
+   Empresa
+  
+    Exhibe el código de la empresa en curso.
+    Estado del Servicio
+    Indica el estado del servicio. Posee
+      un hipervínculo que permite acceder a datos adicionales del servicio
+      como la fecha y hora desde la que está operando, si está detenido,
+      si no está operativo, en qué máquina está instalado el servicio, la
+      fecha, hora y datos del último comprobante procesado y la fecha y
+      hora de la última vez que reportó actividad el servicio La información
+      del estado del servicio se actualiza automáticamente cada 10 segundos
+      mientras se mantenga abierta la ventana de este programa.
+  
+   Talonario
+  
+    Se debe ingresar el talonario correspondiente
+      a los comprobantes que requieren el número de CAE, sólo serán aceptados
+      códigos de talonarios para los cuáles se haya indicado que requieren
+      fiscalización electrónica (facturas, notas y remitos cárnicos).
+    Estado del talonario
+    Exhibe el estado del talonario (Correcto,
+      Pausado, Bloqueado, etc.). Dispone de un hipervínculo que permite
+      ver datos adicionales del estado del talonario, además la fecha, hora
+      y datos del último comprobante procesado del talonario y si el mismo
+      fue procesado electrónicamente o manualmente.
+    En caso que el estado del talonario
+      sea bloqueado, al acceder al hipervínculo de datos adicionales se
+      podrá ver un detalle de todos los inconvenientes registrados para
+      el talonario con sugerencias en algunos casos para corregir los mismos.
+      Los posibles inconvenientes en el estado del talonario que provocan
+      su bloqueo son:
+    comprobantes con fecha futura
+    comprobantes con fecha menor a cinco
+      días
+    discontinuidades en la numeración
+    comprobantes pendientes de autorizar
+    inconsistencias de números y fechas
+      en los comprobantes.
+  
+   Ficha Comprobantes
+  
+    Exhibe la lista de comprobantes pendientes de fiscalizar electrónicamente en el orden en que serán procesados. Para cada uno de los comprobantes se muestra su fecha, tipo de comprobante y su número, el importe total, la moneda del comprobante, el cliente y las observaciones. Estas últimas indican si el comprobante está pendiente de autorizar o fue rechazado en una solicitud previa de fiscalización electrónica o manual por del Agente de recaudación nacional.
+    La ventana ofrece enlaces, en los campos correspondientes al número del comprobante y al cliente, desde los que se puede acceder a las consultas respectivas.
+    Vale aclarar que estando funcionando el Servicio, si no se producen errores o si no se pausa el talonario, difícilmente puedan visualizarse comprobantes en esta ventana pues permanecen el tiempo que media entre su grabación y procesamiento.
+    La información de la lista de comprobantes pendientes de fiscalizar y la correspondiente al estado del talonario se actualizan automáticamente cada 10 segundos mientras se mantenga abierta la ventana de este programa. De todas formas se dispone del botón Actualizar) que, al oprimirse, refresca el estado del talonario y la lista de comprobantes.
+     Actualizar
+    Refresca el estado del talonario y la lista de comprobantes (siempre que el talonario no esté pausado).
+     Pausar
+    Permite pausar un talonario.
+    Al pausar un talonario no será atendido por ningún servicio que esté parametrizado para fiscalizar electrónicamente dicha base de datos, por lo que los comprobantes pendientes de fiscalizar permanecerán en ese estado a menos que se fiscalicen manualmente.
+    A partir del momento en que se pausa un talonario no se refresca automáticamente la información del estado de dicho talonario ni la lista de comprobantes, para ello hay que oprimir el botón de actualizar manualmente.
+    Al pausar un talonario se habilitan las opciones Eliminar comprobantes y Fiscalizar manualmente (excepto que el comprobante sea E). Si el talonario no es preimpreso se habilita también la opción Renumerar.
+    Es importarte remarcar que, bajo ningún motivo, debería haber dos usuarios realizando modificaciones en la lista de comprobantes con el talonario pausado en forma simultanea.
+     Eliminar comprobantes
+    Para eliminar un comprobante primero hay que seleccionarlo haciendo doble clic en la cabecera de la fila y luego oprimir el botón de eliminar comprobantes. Si la eliminación provoca huecos en la numeración al terminar dicho proceso de advertirá de dicha eventualidad al operador sugiriendo renumerar los comprobantes pendientes de procesar.
+     Renumerar
+    Esta opción aplica para talonarios que no correspondan al método de numeración Preimpreso.
+    Su efecto es renumerar los comprobantes pendientes de fiscalizar empezando a partir del último comprobante fiscalizado correctamente o del número inicial de talonario si no se fiscalizó nunca ningún comprobante.
+    Para la renumeración se tienen en cuenta las fechas de los comprobantes para no provocar inconsistencias entre fechas y números de comprobantes (que un comprobante de fecha posterior quede con un número anterior).
+    La renumeración soluciona inconvenientes de huecos en la numeración o inconsistencias entre fechas y números de comprobantes.
+    Vale aclarar que para poder renumerar comprobantes se requiere que no haya comprobantes marcados para eliminar en la lista que se exhibe en pantalla.
+    Hay que destacar que si los comprobantes renumerados tienen comprobantes asociados y éstos tienen numeración asociada dichos comprobantes también son renumerados como el comprobante principal.
+     Consultar comprobantes
+    Permite consultar un comprobante fiscalizado en el Agente de recaudación nacional. Para que se visualice este botón es necesario tener configurado alguno de los siguientes servicios de fiscalización:
+    Fiscalización de Argentina
+    Fiscalización detallada
+    De exportación
+    Bienes de capital
+    Al oprimir el botón  se habilita una pantalla donde es posible indicar un talonario que fiscalice según los métodos anteriormente mencionados. Al indicar el talonario se precarga automáticamente el prefijo , un tipo de comprobante y un número a consultar entre los comprobantes fiscalizados en el Agente de recaudación nacional. Si no se indica el número la solicitud responde con el último comprobante fiscalizado en el Agente de recaudación nacional para los datos indicados de talonario y tipo de comprobante.
+    Puede ser obligatorio además indicar la fecha del comprobante, por si dicho número de comprobante se repite entre diferentes vigencias del talonario.
+    Eventualmente puede aparecer una ventana que avisa que se está procesando la  consulta, indicando el estado del servicio y las solicitudes pendientes de procesar, pudiendo cancelar la espera del resultado de dicha consulta.
+    Como resultado de la consulta se mostrará una ventana con los datos del comprobante consultado (fecha, tipo de comprobante, prefijo, número, CUIT, total del comprobante, número de CAE y vencimiento del mismo). En caso de consultar un comprobante inexistente se mostrará un texto que avisa de dicha eventualidad.
+    La ventana de resultados de la consulta dispone también de un botón de Archivo que al oprimirse abre un Bloc de notas con la respuesta en formato XML  del Agente de recaudación nacional a dicha consulta. Este archivo puede ser guardado para su posterior envío.
+    Las consultas son procesadas por el servicio de fiscalización, y los resultados o pueden observarse en la solapa de seguimiento del administrador de comprobantes electrónicos. Así mismo el servicio de fiscalización eliminará automáticamente las solicitudes de consultas que tengan más de un mes de vigencia.
+  
+   Ficha Seguimiento
+  
+    En esta solapa, junto con la información
+      del estado del servicio, es posible visualizar errores o comentarios
+      que se producen como consecuencia de la operatoria del mismo.
+    La información de la solapa Seguimiento
+      se actualiza automáticamente, siempre que no se haya detenido el seguimiento
+      del funcionamiento del servicio.
+    Los comentarios registrados se exhiben
+      en color verde y los errores en color negro. Los errores graves se
+      registran siempre, independientemente de que haya o no seguimiento
+      y se exhiben en color rojo.
+    Se dispone de un rótulo Seguimiento que
+      indica que tipo de seguimiento se está haciendo de la actividad del
+      servicio de fiscalización electrónica. Las opciones posibles son:
+      que no se esté haciendo seguimiento de eventos, que se esté haciendo
+      seguimiento de errores o que se esté haciendo seguimiento del funcionamiento
+      general del servicio (comentarios).
+    Haciendo clic sobre el hipervínculo del
+      texto del tipo de seguimiento se accede a la pantalla que permite
+      indicar o modificar el tipo de seguimiento que se desea hacer de los
+      eventos durante el funcionamiento del servicio, con la posibilidad
+      de eliminar el seguimiento que tiene el sistema hasta el momento.
+     Seguimiento
+    Permite indicar los elementos para
+      los cuáles se realizará el seguimiento.
+    
+      Errores
+    Tildar si se quiere realizar el
+      seguimiento de errores.
+    
+      Comentarios
+    Tildar si se quiere realizar el
+      seguimiento de los comentarios.
+    
+      Limpiar
+    Al presionarlo, previo pedido
+      de confirmación, se elimina la información de seguimiento almacenada
+      hasta el momento.
+    Importante: El seguimiento sólo
+      se debe habilitar en los casos en que por alguna razón no se estén
+      fiscalizando comprobantes. Una vez que se haya solucionado el inconveniente,
+      o la causa por la cual no se está fiscalizando, se deben destildar
+      los campos correspondientes para finalizar el seguimiento y, también,
+      se debe presionar el botón “Limpiar” para eliminar los registros realizados.
+     Ver.
+      
+    Esta información está destinada a
+      indicar qué elementos del seguimiento se desea visualizar y en que
+      cantidad.
+    
+      Ver últimos movimientos
+    Permite indicar la cantidad de
+      movimiento del seguimiento que se quieren ver. Por defecto, se exhiben
+      los últimos 100 movimientos del seguimiento del funcionamiento del
+      servicio.
+    Los comentarios registrados se
+      exhiben en color verde y los errores en color negro. Los errores graves
+      se registran siempre, independientemente de que haya o no seguimiento
+      y se exhiben en color rojo.
+    
+      Errores
+    Tildar si se quieren ver los errores.
+    
+      Comentarios
+    Tildar si se quieren ver los comentarios.
+    
+      Actualizar automáticamente
+    Tildar si se desea que la información
+      se actualice automáticamente a medida que se van registrando nuevos
+      eventos del funcionamiento del servicio o no (se desea que se mantenga
+      la última información que se está visualizando).
+    En el caso de mantener la actualización
+      automática, la información de la tabla se actualizará cada 7 segundos
+      según los filtros indicados y los eventos registrados.
+  
+   Ficha Historial
+  
+    En esta solapa pueden consultarse las
+      facturas ya fiscalizadas con la posibilidad de filtrar la información
+      por fecha.
+     
+  
+   Ficha Historial consultas
+  
+    Esta solapa muestra ordenadas por fecha de solicitud desde la más nueva a la más vieja, todas las consultas realizadas para la empresa actual en el sistema. Para ello se dispone de un botón de precarga, que al oprimirlo muestra la lista de solicitudes existentes, pudiéndose ver los datos del talonario, comprobante, resultado de la consulta, fecha y usuario que la realizó.
+    Se dispone de un tooltip en la columna de Resultado que permite ver los resultados de la consulta de dicho comprobante mencionados anteriormente. Haciendo clic en una fila de dicha columna de Resultados, aparecerá a la derecha de dicha columna un botón con puntos suspensivos, que permite acceder a la ventana de resultados de la consulta, que a su vez permite generar el archivo con la respuesta XML del Agente de recaudación nacional.
+  
+  
+  
+  
+    //<![CDATA[
+    if (typeof(TextPopupInit) != 'function') TextPopupInit = new Function();
+    TextPopupInit('a1', 'POPUP669706303');
+    TextPopupInit('a2', 'POPUP669751991');
+    TextPopupInit('a3', 'POPUP667735774');
+    TextPopupInit('a4', 'POPUP667724764');
+    TextPopupInit('a5', 'POPUP675132603');
+    TextPopupInit('a6', 'POPUP675183362');
+    //]]>
+  
+

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aliaslist version="1.0">
+  <alias name="Consulta_de_listas_de_comprobantes" value="8" link="../../contents/BASCSHTML/consulta_de_listas_de_comprobantes.htm"></alias>
+  <alias name="Consulta_de_produccion_en_proceso" value="9" link="../../contents/BASCSHTML/consulta_de_produccion_en_proceso.htm"></alias>
+  <alias name="Listado_servicios_de_terceros" value="10" link="../../contents/BASCSHTML/listado__Servicios_de_terceros.htm"></alias>
+  <alias name="Parametros_autoriz_manual_de_ordenes_de_produccion" value="13" link="../../contents/BASCSHTML/parametros__Autoriz__manual_de_ordenes_de_produccion.htm"></alias>
+  <alias name="Tabla_importacion_de_porcentajes_para_convenio_multilateral" value="16" link="../../contents/BASCSHTML/tabla__Importacion_de_porcentajes_para_Convenio_Multilateral.htm"></alias>
+  <alias name="Tabla_unidades_logisticas" value="17" link="../../contents/BASCSHTML/tabla__Unidades_logisticas.htm"></alias>
+  <alias name="Tabla_Importacion_de_exenciones_impositivas" value="15" link="../../contents/BASCSHTML/tabla__Importacion_de_exenciones_impositivas.htm"></alias>
+  <alias name="ordenes_de_produccion_generar_orden_de_compra" value="12" link="../../contents/BASCSHTML/ordenes_de_produccion__Generar_orden_de_compra.htm"></alias>
+  <alias name="Ordenes_de_produccion_Autorizacion" value="11" link="../../contents/BASCSHTML/ordenes_de_produccion__Autorizacion.htm"></alias>
+  <alias name="Reubicar_en_el_deposito_impresion" value="14" link="../../contents/BASCSHTML/reubicar_en_el_deposito__Impresion.htm"></alias>
+  <alias name="Valuación" value="18" link="../../contents/BASCSHTML/valuacion.htm"></alias>
+  <alias name="Reapertura_del_cierre_operativo" value="19" link="../../contents/BASCSHTML/reapertura_del_cierre_operativo.htm"></alias>
+  <alias name="Formatos_para_prefijos" value="20" link="../../contents/BASCSHTML/formatos_para_prefijos.htm"></alias>
+  <alias name="Listado_Estadística_de_producción" value="22" link="../../contents/BASCSHTML/listado__Estadistica_de_produccion.htm"></alias>
+  <alias name="Tabla_Tipos_de_operaciones" value="23" link="../../contents/BASCSHTML/tabla__Tipos_de_operaciones.htm"></alias>
+  <alias name="Cierre_de_ejercicio" value="24" link="../../contents/BASCSHTML/cierre_de_ejercicio.htm"></alias>
+  <alias name="Listado_Análisis_de_pagos" value="21" link="../../contents/BASCSHTML/listado__Analisis_de_pagos.htm"></alias>
+  <alias name="Comprobantes_de_crédito_rechazados" value="25" link="../../contents/BASCSHTML/comprobantes_de_credito_rechazados.htm"></alias>
+  <alias name="Parametros_Autoriz_manual_de_ingresos_de_mercaderia" value="26" link="../../contents/BASCSHTML/parametros__Autoriz__manual_de_ingresos_de_mercaderia.htm"></alias>
+  <alias name="Ingresos_de_mercaderia_Autorizacion" value="27" link="../../contents/BASCSHTML/ingresos_de_mercaderia__Autorizacion.htm"></alias>
+  <alias name="Listado_Estado_de_autorizaciones" value="1" link="../../contents/BASCSHTML/listado__Estado_de_autorizaciones.htm"></alias>
+  <alias name="Parametros__Autoriz_manual_de_requerimientos_de_compra" value="33" link="../../contents/BASCSHTML/parametros__Autoriz__manual_de_requerimientos_de_compra.htm"></alias>
+  <alias name="Requerimientos_de_compra__Autorizacion" value="34"></alias>
+  <alias name="Autorización" value="35" link="../../contents/BASCSHTML/requerimientos_de_compra__Autorizacion.htm"></alias>
+</aliaslist>

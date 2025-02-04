@@ -1,0 +1,560 @@
+
+
+Generación
+Los comprobantes a tener en cuenta en el proceso, pueden 
+ seleccionarse por rangos de fechas de entrega, por destino, por cliente, 
+ por ítem, por rutas, o por atributos 
+ .
+En el caso de facturar o remitir pedidos, sólo se tiene 
+ en cuenta la cantidad asignada a cada pedido, ya sea la asignada automáticamente 
+ por el sistema al registrar los pedidos o la asignada manualmente por 
+ el usuario con los procesos de asignación provistos por el sistema.
+Al facturar remitos se facturará la cantidad pendiente 
+ de cada uno y hasta donde alcance el stock disponible de cada ítem.
+Si se generan comprobantes 
+ de venta tipo A (facturas o notas de crédito) para una empresa inscripta, 
+ si está parametrizado en el sistema el control de constancia de CUIT, 
+ se verifica la constancia de CUIT de los clientes involucrados, antes 
+ de proceder a la generación de los comprobantes del lote.
+La verificación puede 
+ demorar un poco de tiempo, y mientras se está realizando, se mostrará 
+ en una ventana, una barra de avance del proceso, el número de clientes 
+ a verificar y los números de CUIT que se van verificando.
+En caso de producirse 
+ errores en la verificación de dichos clientes, se interrumpirá el proceso 
+ de generación del lote y se podrá ver el detalle de los clientes con errores, 
+ o se podrá generar un archivo con dichos errores.
+La verificación de constancia 
+ de CUIT se parametriza en los parámetros de cuentas corrientes, indicando 
+ si se desea realizar la misma y especificando algunos datos técnicos más, 
+ relativos a esa verificación. 
+Al generar facturas de 
+ venta se controla el crédito disponible de los clientes. Si los comprobantes 
+ se generan en base a pedidos que fueron autorizados por crédito excedido, 
+ o egresos registrados en base a pedidos autorizados por crédito excedido, 
+ se generan las facturas a pesar de que exceda el crédito disponible. 
+La generación se realizará por prioridad de facturación 
+ de cliente, es decir, los pedidos de 
+ clientes con mayor prioridad se facturarán o remitirán primero y para 
+ clientes con igual prioridad se considerarán primero los comprobantes 
+ más antiguos. Para los pedidos internos la generación se realizará dando 
+ prioridad a la antigüedad de los pedidos.
+Además existe la prioridad de cada novedad, que determina 
+ el orden en que se ingresan las líneas en las facturas automáticas. Primero 
+ se ingresan las líneas correspondientes a las novedades con prioridad 
+ menor que cinco, que corresponden a las novedades a las que se les da 
+ mayor prioridad; después se ingresan las líneas correspondientes a los 
+ comprobantes que se facturan, y por último se ingresan las novedades con 
+ prioridad mayor o igual a cinco.
+El proceso de generación no asigna numeración definitiva 
+ a los comprobantes. Esto se debe a que los comprobantes, una vez generados 
+ y antes de su registración definitiva, quedan disponibles para su modificación 
+ o eliminación en el lote cuyo tipo se indique al generarlos.
+Es posible, una vez efectuada la generación automática, 
+ seguir incorporando nuevos comprobantes al mismo lote, mediante nuevos 
+ procesos automáticos asociados al mismo lote.
+Cuando termina el proceso de generación se muestra una 
+ ventana que indica la cantidad de comprobantes generados. En el caso que 
+ durante la generación se hayan producido errores al finalizar el proceso 
+ se avisa y además se indica un fichero temporal donde pueden leerse los 
+ mismos. Se puede abrir el fichero en ese mismo momento con el Bloc 
+ de notas o consultarlo más tarde.
+Si se parametriza una lista para valor declarado, el 
+ sistema calcula automáticamente el valor declarado en moneda local de 
+ los ítems bienes con entrega, multiplicando el precio del ítem en la lista 
+ indicada por la cantidad en la unidad de venta, para los comprobantes 
+ de venta con entrega o remitos de egreso.
+Los datos a ingresar para generar los comprobantes automáticamente 
+ se ingresan en dos fichas. Estas son:
+ 
+ Ficha Generación
+En esta ficha se ingresan al sistema los datos 
+ correspondientes al origen y al destino de los comprobantes a generar. 
+ Los datos son:
+ Lote
+
+	 
+	 Tipo
+	Los comprobantes automáticos generados 
+	 mediante este proceso pueden tener asignados un código de lote, que 
+	 se indica en este campo.
+	De esta forma, al efectuar el 
+	 cierre del lote para convertir los comprobantes provisorios en comprobantes 
+	 convencionales, será posible indicar el tipo de lote a cerrar y efectuar 
+	 el cierre sólo de un lote determinado.
+	 
+	 Fecha
+	El lote de comprobantes automáticos 
+	 generados mediante este proceso puede tener asignado una fecha de 
+	 lote, que se indica en este campo.
+	De esta forma, al efectuar el 
+	 cierre del lote para convertir los comprobantes provisorios en comprobantes 
+	 convencionales, será posible indicar el tipo de lote a cerrar y la 
+	 fecha del mismo, para efectuar el cierre sólo de un lote determinado.
+	 
+	 Depósito lote
+	Depósito que se asociará a los 
+	 comprobantes automáticos generados en el lote indicado.
+	El sistema asignará automáticamente 
+	 los comprobantes al depósito que aquí se indique y descargará de este 
+	 depósito, la mercadería entregada en cada comprobante.
+	Esto es útil, por ejemplo, en 
+	 aquellos casos en que al momento de tomar al pedido se ha optado por 
+	 un depósito y, luego, por algún motivo, se hace necesario despachar 
+	 la mercadería desde otro depósito.
+ Origen
+
+	Indicación del tipo de comprobante 
+	 a partir del cual se generarán los comprobantes automáticos.
+	Debe seleccionarse alguna de estas 
+	 opciones:
+	Pedidos
+	Egresos de mercadería
+	Sólo Novedades
+	Pedidos internos
+	Facturas
+	Si se selecciona comprobantes Pedidos se considerarán para la 
+	 generación automática, los pedidos externos pendientes de facturación 
+	 o de entrega que cumplan con los rangos y opciones solicitadas. Si 
+	 la condición de venta asociada al cliente tiene un ítem asociado para 
+	 descuento o recargo, éste se agregará a la factura y, si el pedido 
+	 que se factura también lo incluía, no se tendrá en cuenta.
+	Si se selecciona comprobantes Egresos de mercadería se facturarán 
+	 automáticamente los comprobantes de egreso de mercadería pendientes 
+	 de facturación que cumplan con los rangos y opciones solicitadas.
+	Si se selecciona Novedades 
+	 se facturarán o remitirán sólo las novedades registradas para cada 
+	 cliente y las novedades correspondientes 
+	 a los atributos y valores de atributos 
+	 de cada cliente que cumpla con los rangos y opciones solicitadas. 
+	 Se incluirán las novedades asociadas a los ítems de los cuales haya 
+	 stock disponible y cuyas fechas de vencimiento sean anteriores a las 
+	 fechas de las facturas que se generan.
+	Si no se selecciona Novedades, 
+	 igualmente al generar los comprobantes se agregarán automáticamente 
+	 las novedades asociadas al cliente titular de cada uno, y a los atributos 
+	 y valores de atributos de cada uno. La diferencia es que si se selecciona 
+	 Novedades se incluyen en los 
+	 comprobantes automáticos sólo las novedades, sin tener en cuenta ningún 
+	 comprobante.
+	Si se selecciona comprobantes Pedidos internos 
+	 se remitirán automáticamente los pedidos internos pendientes que cumplan 
+	 con los rangos y opciones solicitadas.
+	Si se selecciona Facturas 
+	 se asume que se generarán egresos de mercadería y se remitirán automáticamente 
+	 las facturas de venta pendientes de remitir que cumplan con los rangos 
+	 y opciones solicitadas.
+	 
+	 Pedido/Factura
+	Prefijo y número de comprobante 
+	 del pedido o la factura que se desea facturar o remitir automáticamente.
+	En el caso en que se desee facturar 
+	 o remitir automáticamente un comprobante en particular, es posible 
+	 indicar aquí el número del mismo mediante la búsqueda y selección 
+	 del pedido o la factura, pulsando el botón Buscar.
+	Se podrán indicar un número de 
+	 pedido, pedido interno o factura dependiendo del origen de los comprobantes 
+	 a partir del cual se efectúa la generación automática.
+	 
+	 Buscar
+	Este botón sólo se encuentra habilitado 
+	 si se seleccionó origen Pedidos, 
+	 Pedidos internos o Facturas.
+	Se podrán buscar pedidos, pedidos 
+	 internos o facturas dependiendo del origen de los comprobantes a partir 
+	 del cual se efectúa la generación automática.
+	Sólo debe utilizarse este botón 
+	 si se desea facturar o remitir automáticamente un comprobante en particular, 
+	 si no la generación automática incluirá a todos los pedidos o facturas 
+	 que cumplan con los rangos y opciones indicadas.
+	Mediante este botón se abre una 
+	 ventana que muestra los pedidos o las facturas posibles de seleccionar 
+	 para la generación automática de facturas o remitos. Se puede restringir 
+	 la búsqueda indicando un destino (agente o depósito) y un depósito 
+	 al que se le pide.
+	Se muestra cada comprobante pendiente 
+	 con su fecha, tipo de comprobante, número y destino (nombre del cliente, 
+	 agente o depósito).
+	Los pedidos que requieren autorización 
+	 manual y aún no han sido autorizados también se exhiben en esta lista, 
+	 aunque no es posible seleccionarlos.
+	Una vez seleccionado el pedido 
+	 o la factura, se cierra la ventana y los datos del comprobante se 
+	 copian a la pantalla.
+	 
+	 Depósito
+	Esta opción sólo se encuentra 
+	 habilitada si se seleccionó origen Pedidos, 
+	 Pedidos internos o Facturas.
+	Depósitos asociado a los pedidos 
+	 o facturas que se desean facturar o remitir automáticamente.
+	En el caso en que se deseen facturar 
+	 o remitir automáticamente sólo los pedidos o las facturas de un depósito 
+	 en particular, es posible indicar aquí el número del depósito.
+ Comprobantes 
+ a generar
+Indicación del tipo de comprobante a generar. 
+ Mediante este proceso pueden generarse facturas o comprobantes de egreso 
+ de mercadería.
+Debe seleccionarse alguna de estas opciones:
+Egresos de mercadería
+Factura / Remito
+Factura
+Egreso Diferido
+Factura / Remito diferido
+Nota de crédito
+Nota de crédito / Remito
+Liquidación
+Liquidación / Remito
+Liquidación / Remito diferido
+Liquidación crédito
+Liquidación crédito / Remito
+Comprobantes E (Facturas y Notas 
+ de crédito) 
+Si se selecciona Egresos 
+ de mercadería el proceso generará comprobantes de egreso de mercadería 
+ a partir de los comprobantes indicados como Origen 
+ de la generación. Es decir, se remitirán en forma automática todas las 
+ novedades, pedidos, pedidos internos o facturas pendientes que cumplan 
+ con los rangos y opciones indicadas.
+Si se selecciona Factura/Remito 
+ el proceso generará facturas con entrega de la mercadería a partir de 
+ los comprobantes indicados como Origen 
+ de la generación. Es decir, se facturarán en forma automática todas las 
+ novedades o pedidos pendientes que cumplan con los rangos y opciones indicadas.
+Si se selecciona Factura 
+ el proceso generará facturas sin entrega de la mercadería a partir de 
+ los comprobantes indicados como Origen 
+ de la generación. Es decir, se facturarán en forma automática todas las 
+ novedades, pedidos o egresos de mercadería pendientes que cumplan con 
+ los rangos y opciones indicadas.
+Si se selecciona Egreso 
+ Diferido el proceso generará comprobantes de egreso de mercadería 
+ diferidos a partir de los comprobantes indicados como Origen 
+ de la generación. Es decir se asignarán, mediante un remito de egreso 
+ diferido, en forma automática todos los pedidos pendientes que cumplan 
+ con los rangos u opciones indicadas.
+Si se selecciona Factura 
+ / Remito diferido el proceso 
+ generará facturas con entrega diferida de la mercadería a partir de los 
+ comprobantes indicados como Origen 
+ de la generación. Es decir, se facturarán en forma automática todos los 
+ pedidos pendientes que cumplan con los rangos u opciones indicadas.
+La posibilidad de seleccionar notas 
+ de crédito sin entrega y con entrega 
+ se habilita si se facturan novedades. En estos casos el sistema generará, 
+ en base a las novedades que tengan indicado que generan notas de crédito 
+ y que se correspondan con el número de proceso indicado, comprobantes 
+ del tipo nota de crédito, con los mismos criterios de agrupación de líneas 
+ de novedades que los actuales para la generación automática de facturas 
+ de venta en base a novedades.
+Al generar Liquidaciones 
+ remito, Liquidaciones de crédito remito, Facturas E remito o Notas de 
+ crédito E remito, el proceso generará comprobantes con entrega 
+ de la mercadería, es decir, se facturarán en forma automática todas las 
+ novedades o pedidos pendientes que cumplan con los rangos y opciones indicadas.
+Al generar Liquidaciones, 
+ Liquidaciones de crédito, Facturas E o Notas de crédito E, el proceso 
+ generará comprobantes sin entrega de la mercadería, es decir, se facturarán 
+ en forma automática todas las novedades, pedidos o egresos de mercadería 
+ pendientes que cumplan con los rangos y opciones indicadas.
+ Importe mínimo
+
+	Si se generan facturas se puede 
+	 indicar un importe mínimo por debajo del cual no se generan los comprobantes.
+	 
+ Cantidad de líneas
+
+	Se indica en este campo la cantidad 
+	 máxima de líneas (o ítems) que admitirá cada uno de los comprobantes 
+	 a generar. Si no se especifica nada en este campo o se pone 0, no 
+	 hay límite de líneas a incluir.
+	Se incluye en este número de líneas 
+	 las que provienen novedades.
+ Número de proceso
+
+	Número que indica el tipo de proceso 
+	 de generación automática que se está realizando.
+	Puede ser un valor entre 0 y 12.
+	Este número define el tipo de 
+	 novedades que se van a incluir en los comprobantes que se generen, 
+	 dependiendo del tipo de proceso para el que están habilitadas las 
+	 novedades.
+	Un 0 en este dato indica que no 
+	 se incluyan novedades, un 1 indica que se incluyan las novedades habilitadas 
+	 para el proceso automático 1, un 2 incluirá las novedades habilitadas 
+	 para el proceso automático 2, etc.
+ Vigentes al
+
+	Indicar una fecha de vigencia 
+	 de las novedades para controlar la inclusión de las mismas en la generación 
+	 del lote de facturación según su fecha de vencimiento.
+	 
+ Período a imputar
+
+	 
+	 Período 
+	Rango de fechas que se habilita 
+	 al generar notas de crédito automáticas. El ingreso del período no 
+	 es obligatorio de indicar y solo se va a exigir su ingreso para poder 
+	 generar notas de crédito con percepciones provinciales en alguna provincia 
+	 que tenga indicado que solo se calculan percepciones en orígenes del 
+	 mismo mes.
+	 
+	 Desde fecha
+	Fecha desde que va a ser utilizada 
+	 al generar notas de crédito con percepciones provinciales en alguna 
+	 provincia que tenga indicado que solo se calculan percepciones en 
+	 orígenes del mismo mes.
+	 
+	 Hasta fecha
+	Fecha hasta que va a ser utilizada 
+	 al generar notas de crédito con percepciones provinciales en alguna 
+	 provincia que tenga indicado que solo se calculan percepciones en 
+	 orígenes del mismo mes.
+ Opciones 
+ para la generación
+
+	 
+	 Moneda
+	Esta opción sólo se habilita cuando 
+	 la facturación se realiza en base a novedades.
+	Permite indicar una moneda de 
+	 modo que sólo se facturen las novedades definidas para esa moneda.
+	 
+	 Sólo novedades en esa moneda
+	Esta opción sólo se habilita cuando 
+	 la facturación se realiza en base a novedades.
+	Permite indicar que se generan 
+	 comprobantes sólo para las novedades cuya moneda coincide con la que 
+	 se ha informado en el campo Moneda.
+	Si no se indica nada en dicho 
+	 campo, y se activa esta opción, la facturación sólo tiene en cuenta 
+	 las novedades en moneda local.
+	 
+	 Genera un comprobante por comprobante de origen
+	Indicación de si se genera un 
+	 comprobante por cada comprobante de origen que cumple con los rangos 
+	 y opciones solicitadas o si se genera un solo comprobante que incluya 
+	 a todos los comprobantes.
+	Si se marca esta opción cada comprobante 
+	 que se genere tendrá los datos del comprobante que factura o remite. 
+	 Por ejemplo, la provincia , condiciones 
+	 de venta, vendedor, concepto, etc.
+	Si se genera un único comprobante 
+	 por cliente que factura o remite todos sus comprobantes asociados, 
+	 estos datos se obtienen de los defaults existentes, por ejemplo, provincia 
+	 asociada al cliente, vendedor asociado, etc.
+	Se debe tener en cuenta que en 
+	 el caso de no generar un comprobante por comprobante de origen, clientes 
+	 o destinos (si se remiten pedidos internos), monedas y conceptos diferentes 
+	 provocan generación de comprobantes diferentes.
+	 
+	 Genera comprobantes distintos por negocio
+	Se hace posible generar comprobantes 
+	 distintos por negocio en el caso de la facturación automática de novedades.
+	Las líneas de novedades que no 
+	 tengan indicado un negocio se facturarán juntas en un solo comprobante 
+	 y luego se generarán comprobantes separados por los negocios diferentes 
+	 indicados en las líneas de las novedades.
+	En caso que un negocio indique 
+	 que no se puede imputar a otro cliente, al facturar novedades, se 
+	 controla que la novedad corresponda al cliente del negocio.
+	 
+	 Asignar despachos en facturas sin entrega
+	Permite indicar si se asignarán 
+	 números de despachos en la generación de facturas sin entrega.
+	 
+	 No ignorar novedades por Atributos si existen novedades por cliente
+	Este check sólo se habilita si 
+	 el origen es "Sólo novedades"., y sirve para indicar que 
+	 se tengan en cuenta todos los ítems indicados en las novedades por 
+	 atributo y los indicados en las novedades por cliente.
+	Si no está marcado este check, 
+	 ante la existencia del mismo ítem en las novedades por atributos y 
+	 en las novedades del cliente, el ítem aparecerá sólo una vez en la 
+	 factura, con la cantidad indicada en los atributos del cliente.
+	No 
+	 asignar partida en facturas con entrega
+	Si se indica, al generar egresos 
+	 de mercadería y facturas/remito de ventas, con ítems que sólo manejan 
+	 partidas, no se asignará una partida a esos ítems. No aplica para 
+	 ítems que manejan despachos y/o números de serie, además de partida.
+	De todos modos, para cerrar con 
+	 posterioridad el lote de facturación automática, será obligatorio 
+	 indicar una partida para dichos ítems, y con stock suficiente. Por 
+	 lo tanto, antes del cerrar el lote habrá que asignar las partidas 
+	 correspondientes, mediante los procesos de modificación del lote de 
+	 facturas o remitos.
+ 
+ Ficha Rangos
+ Destino
+ Tipo 
+ de destino
+
+	Si se generan comprobantes de 
+	 egreso de mercadería, es posible indicar el destino de los comprobantes 
+	 automáticos.
+	Las opciones son:
+	Cliente
+	Agente
+	Depósito
+	Si los comprobantes se generan 
+	 para destino Cliente, se solicitará 
+	 luego el ingreso del código del cliente titular de los comprobantes 
+	 automáticos a generar. Si este dato es dejado en blanco, se facturarán 
+	 o remitirán los comprobantes pendientes y las novedades asociadas 
+	 a todos los clientes.
+	Si se indica un cliente, sólo 
+	 se facturarán o remitirán los comprobantes y las novedades asociadas 
+	 al mismo.
+	Si los comprobantes se generan 
+	 para destino Agente o Depósito se solicitará luego el 
+	 ingreso del código de agente o del depósito, según corresponda.
+	 
+	 Vendedor
+	Código de vendedor cuyos clientes 
+	 serán considerados para la generación automática.
+	Si se indica un vendedor, sólo 
+	 se generarán automáticamente los comprobantes que tengan como titular 
+	 a los clientes asociados al mismo.
+	estar habilitada para los clientes 
+	 que se incluyen en el proceso de generación.
+	 
+	 Atributo
+	Código de atributo de los clientes 
+	 cuyos comprobantes y novedades asociadas se desean considerar en la 
+	 generación automática.
+	Si se indica un atributo, sólo 
+	 se considerarán los comprobantes asociados a los clientes que tengan 
+	 definido el atributo indicado.
+	 
+	 Valor
+	Este dato sólo se encuentra habilitado 
+	 si se seleccionó un atributo de clientes.
+	Es el valor del atributo indicado 
+	 asociado a los clientes cuyos comprobantes asociados y novedades se 
+	 desean considerar en la generación automática.
+	Si se indica un valor de atributo, 
+	 sólo se facturarán los comprobantes pendientes asociados a los clientes 
+	 que tengan definido el atributo y valor de atributo indicados.
+	 
+	 Imputación contable
+	Código de imputación contable 
+	 de cuenta corriente que se ha de utilizar.
+	 
+	 Ruta
+	Códigos de las rutas cuyos clientes 
+	 serán considerados para la generación automática.
+	Si se indica un rango de rutas, 
+	 sólo se generarán automáticamente los comprobantes asociados a los 
+	 clientes que se encuentren en dichas rutas.
+	Los comprobantes generados se 
+	 ordenarán por el número de posición del cliente en la ruta. Los clientes 
+	 que no tienen número de orden en la ruta se considerarán al final.
+ 
+ Ítem
+
+	 
+	 Ítem
+	Código de ítems cuyos comprobantes 
+	 asociados se desean considerar en la generación automática.
+	Si este dato es dejado en blanco, 
+	 se facturarán o remitirán los ítems de todos los comprobantes pendientes.
+	Si se indica un ítem, sólo se 
+	 facturarán o remitirán los comprobantes pendientes asociados al mismo.
+	 
+	 Atributo
+	Código de atributo de los ítems 
+	 cuyos comprobantes asociados se desean considerar en la generación 
+	 automática.
+	Si se indica un atributo, sólo 
+	 se facturarán o remitirán los comprobantes asociados a los ítems que 
+	 tengan definido el atributo indicado.
+	 
+	 Valor
+	Este dato sólo se encuentra habilitado 
+	 si se seleccionó un atributo de ítems.
+	Valor del atributo indicado asociado 
+	 a los ítems de los comprobantes que se desean incluir en la generación 
+	 automática.
+	Si se indica un valor de atributo, 
+	 sólo se facturarán o remitirán los comprobantes pendientes de los 
+	 ítems que tengan definido el atributo y valor de atributo indicados.
+ Fecha 
+ de entrega
+
+	 
+	 Desde Fecha
+	Es posible acotar el rango de 
+	 comprobantes a facturar o remitir, mediante el ingreso de una fecha 
+	 de entrega desde la cual se van a considerar los comprobantes.
+	Si este dato es dejado en blanco, 
+	 se facturarán o remitirán todos los comprobantes pendientes.
+	Si se indica una fecha, sólo se 
+	 facturarán o remitirán los comprobantes cuya fecha de entrega no sea 
+	 anterior a esta.
+	 
+	 Hasta Fecha
+	Es posible acotar el rango de 
+	 comprobantes a facturar o remitir, mediante el ingreso de una fecha 
+	 de entrega hasta la cual se van a considerar los comprobantes.
+	Si se indica una fecha, sólo se 
+	 facturarán o remitirán los comprobantes cuya fecha de entrega no sea 
+	 posterior a esta.
+ Método 
+ de pago del pedido
+
+	 
+	 Cta. Cte.
+	Si se selecciona la opción Cta. 
+	 Cte., se facturarán o remitirán sólo los pedidos que tengan indicado 
+	 el método de pago Cuenta corriente.
+	 
+	 Contado
+	Si se selecciona la opción Contado, 
+	 se facturarán sólo aquellos pedidos que tengan indicado el método 
+	 de pago Contado. Estos pedidos generan facturas de venta de pago contado 
+	 diferido.
+ 
+ Ficha Sucursales
+
+	Si se trabaja con varias sucursales, aquí 
+	 se puede indicar de cuales de ellas provienen los comprobantes a cancelar 
+	 mediante el proceso de generación 
+	 automática que se va a llevar a cabo.
+	Esta ficha sólo se habilitará si los comprobantes 
+	 a generar son facturas que toman como base a Pedidos 
+	 o a Comprobantes de egreso. 
+	 Por defecto esta ficha presenta activada solamente la sucursal en 
+	 la cual está trabajando el usuario al ingresar a la tarea. En caso 
+	 que no tenga asignada ninguna sucursal en los Parámetros 
+	 del usuario, 
+	 se activará la sucursal correspondiente al depósito del lote que se 
+	 haya informado en la ficha Generación.
+	 Empresa
+	Código de empresa en la cual está 
+	 el usuario en el momento de ingresar a la tarea.
+	 Tabla 
+	 Sucursales
+	Esta tabla muestra todas sucursales 
+	 Empresas habilitadas para el usuario que ingresó a la tarea. Recordemos 
+	 que un usuario podrá tener habilitadas algunas sucursales de todas 
+	 las existentes y esta información podrá indicarse en los Parámetros 
+	 del Usuario.
+	De las sucursales habilitadas para 
+	 el usuario se mostrará en color rojo aquella en la que está trabajando 
+	 actualmente.
+	Sucursal
+	Código de la sucursal habilitada 
+	 para el usuario desde los Parámetros del usuario o, en su defecto, 
+	 la correspondiente al depósito del lote que se haya informado en la 
+	 ficha Generación Empresas.
+	Nombre
+	Nombre de la sucursal correspondiente 
+	 al código informado.
+ 
+ 
+
+
+

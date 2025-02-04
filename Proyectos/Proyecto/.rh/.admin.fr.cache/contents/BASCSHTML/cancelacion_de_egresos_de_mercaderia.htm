@@ -1,0 +1,105 @@
+
+
+Cancelación de egresos
+Esta tarea permite cancelar, parcial o totalmente, comprobantes 
+ de egreso de mercadería que se encuentren pendientes. Cuando hablamos 
+ de cancelación parcial, nos referimos a cancelar sólo algunas líneas del 
+ comprobante de egreso original; no es posible modificar las cantidades 
+ descriptas en una línea.
+Cancelar un comprobante de egreso de mercadería significa 
+ que este deja de figurar como pendiente. Es decir que esta cancelación 
+ no implica un movimiento de stock, sólo se trata de indicar que dicho 
+ comprobante, ó las líneas del mismo incluidas en el comprobante de cancelación, 
+ han dejado de estar pendientes.
+ Del mismo modo, cancelar una línea de un comprobante 
+ implica que la mercadería que en ella figura ya no está pendiente de ingresar, 
+ o egresar, según se trate. 
+Por lo cual no debe entenderse la cancelación como un 
+ proceso que revierte el egreso que se cancela, el movimiento que se cancela 
+ seguirá figurando, sólo que dejará de estar pendiente.
+ 
+ 
+ Egresos
+
+	Mediante este botón se accede a una ventana 
+	 que exhibe todos los comprobantes de egreso de mercadería que se encuentran 
+	 pendientes para el destino indicado. Seleccionar el ó los comprobantes 
+	 a considerar en la cancelación.
+	 
+ 
+ Fecha
+
+	El sistema exhibe la fecha del día. Esta 
+	 puede cambiarse libremente por el operador.
+	 
+ 
+ Número
+
+	Prefijo y número de comprobante, asignado 
+	 por el sistema, que identifica al comprobante de cancelación.
+	 
+ 
+ Depósito
+
+	Código de depósito del cual egresó la 
+	 mercadería. No es obligatorio su ingreso.
+	Se puede utilizar como filtro de selección 
+	 cuando existen comprobantes pendientes para el destino solicitado, 
+	 asociados a diferentes depósitos.
+ 
+ Destino
+
+	En función del destino de la mercadería, 
+	 se deberá seleccionar:
+	Proveedor
+	Cliente
+	Agente
+	Depósito
+	Una vez seleccionado el destino, se indicará 
+	 el código que lo identifica. Es decir, en función del mismo se ingresará 
+	 un código de proveedor, cliente, agente o deposito.
+ 
+ Items
+
+	Esta tabla exhibe las líneas correspondientes 
+	 a los comprobante de egreso seleccionados. Estas líneas solo podrán 
+	 ingresarse en forma indirecta, es decir, haciendo referencia a los 
+	 comprobantes de egreso que se encuentran pendientes.
+	Item
+	Código de ítem incluido en el comprobante, 
+	 corresponde a un bien, servicio 
+	 o ítem vario ingresado al sistema.
+	Descripción
+	Descripción del ítem indicado en el 
+	 campo anterior.
+	Cantidad
+	Cantidad de unidades que egresaron 
+	 del sistema.
+	2da unidad
+	Cantidad de unidades, del ítem indicado, 
+	 expresadas en la segunda unidad.
+	Despacho
+	Código que indica el número de despacho 
+	 del cual salió el ítem indicado.
+	Partida
+	Código que indica el número de partida 
+	 con el cual egresó el ítem indicado.
+ 
+ Observaciones
+
+	 Observación
+	Esta ficha permite ingresar un texto 
+	 aclaratorio referido a la cancelación ingresada.
+ 
+//<![CDATA[
+	if( typeof( TextPopupInit ) != 'function' ) TextPopupInit = new Function();
+	TextPopupInit('a1', 'POPUP632097257');
+	TextPopupInit('a2', 'POPUP632079567');
+	TextPopupInit('a3', 'POPUP632078532');
+	TextPopupInit('a4', 'POPUP632059475');
+	TextPopupInit('a5', 'POPUP632039243');
+	TextPopupInit('a6', 'POPUP631948484');
+	TextPopupInit('a7', 'POPUP643593631');
+//]]>
+
+

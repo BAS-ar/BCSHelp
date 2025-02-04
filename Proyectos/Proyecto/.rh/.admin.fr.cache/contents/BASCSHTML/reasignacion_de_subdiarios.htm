@@ -1,0 +1,44 @@
+
+
+Reasignación de subdiarios
+Esta tarea permite cambiar un subdiario por otro siempre 
+ que sean del mismo tipo.
+Puede utilizarse por ejemplo, en caso que se necesite 
+ modificar la opción de resumir en el diario de subdiarios que ya tuvieron 
+ cierres operativos efectuados. Como tal cosa no está permitida, a través 
+ de esta tarea, se puede crear un nuevo subdiario con la opción de resumir 
+ en el diario o no, según se desee; y luego a través de este proceso pasar 
+ todos los movimientos del subdiario que se quiere cambiar, al subdiario 
+ creado.
+ 
+ 
+ Subdiario a reasignar
+
+	Subdiario que se desea reasignar o subdiario 
+	 viejo.
+ 
+ Nuevo subdiario
+
+	Subdiario al cual pasarán todos los comprobantes 
+	 no cerrados que se encuentran en el subdiario viejo, o sea, los de 
+	 fecha posterior al último cierre operativo del subdiario que se reasigna. 
+	 Este subdiario tiene que ser del mismo tipo que el Subdiario a reasignar.
+	 
+ 
+ Reasignar
+
+	Al hacer clic en este botón el proceso 
+	 reasigna todos los comprobantes del subdiario indicado posteriores 
+	 al último cierre operativo, al nuevo subdiario.
+	Se modifican también los talonarios que 
+	 utilizaba el subdiario viejo, los modelos y la generación de archivos 
+	 de la RG 1361.
+ 
+//<![CDATA[
+	if( typeof( TextPopupInit ) != 'function' ) TextPopupInit = new Function();
+	TextPopupInit('a1', 'POPUP671273295');
+	TextPopupInit('a2', 'POPUP671271475');
+	TextPopupInit('a3', 'POPUP671260245');
+//]]>
+
+

@@ -1,0 +1,199 @@
+
+  Análisis de cuentas a pagar
+  Exhibe los comprobantes que integran la cuenta corriente de los proveedores detallados por imputación contable, abiertos por vencimiento e incluyendo las aplicaciones.
+  Las facturas de compra pendientes de autorización se exhiben acompañadas con la letra A indicando que aún no están autorizadas.
+  El informe siempre incluye los comprobantes aplicados.
+  Para los comprobantes, la idea es llevar un mayor de cada uno indicando sus aplicaciones y desaplicaciones, partiendo de un saldo inicial y haciendo la cuenta del saldo del comprobante que va quedando a medida que se detallan las aplicaciones.
+  Las desaplicaciones se muestran en la columna correspondiente pero con el importe en negativo.
+  Vale aclarar que las aplicaciones de destino de los Comprobantes Internos de Cuenta Corriente aparecen con los datos del comprobante al que refinancian y, entre paréntesis, se exhiben los datos del Comprobante Interno de Cuenta Corriente.
+  Al momento de imprimir un informe (tanto por pantalla como por papel) se puede utilizar el formato standard del sistema, o indicar un formato personalizado de impresión. Este último se indica en el campo homónimo que, en general, se encuentra en la zona inferior de la primer solapa y su funcionalidad está detallada a continuación en el link Emisión.
+  
+   Emisión
+  FCC (Fecha de certeza contable)
+  Los datos a ingresar para solicitar la emisión del listado son:
+  
+   Ficha Rangos
+  
+    Proveedor
+    Códigos de los proveedores que se
+      desean incluir en el listado.
+    Puede seleccionarse un proveedor en
+      particular o un grupo de proveedores. Si este dato es dejado en blanco,
+      se incluirán todos los proveedores en el informe.
+    Código de selección
+    De acuerdo al código que se indique
+      se considerará o no cada uno de los proveedores del rango seleccionado,
+      según el código de selección que se haya asignado a cada uno de ellos.
+    Los proveedores que se incluyen son
+      aquellos cuyo código de selección coincide con el ingresado. Se pueden
+      ingresar los caracteres ?
+      y * que cumplen la función
+      de comodines. El carácter ?
+      se utiliza para un único carácter y el *
+      para varios.
+    Si no se especifica ningún código
+      de selección, todos los proveedores del rango solicitado intervendrán
+      en el listado.
+    Período
+        a considerar
+     Imputación
+      contable
+    Códigos de las imputaciones contables
+      de proveedores que se desean incluir en el listado.
+    Puede seleccionarse una cuenta en
+      particular o un grupo de cuentas. Si este dato es dejado en blanco,
+      se incluirán en el listado, todas las cuentas asociadas a los proveedores.
+    Si se indica alguna imputación sólo
+      se listará para cada proveedor la información vinculada con las imputaciones
+      que se indicaron.
+     
+  
+   Ficha Opciones
+  
+     Tipo
+      de Listado
+    Indicar la forma en que se desea imprimir
+      el listado.
+    Las opciones son:
+    
+      Continuo
+    Para imprimir un proveedor a continuación
+      de otro.
+    
+      Un proveedor por hoja
+    Para imprimir cada proveedor en
+      una hoja aparte.
+     Incluir
+    
+      Cuentas sin movimientos
+    Para incluir a los proveedores
+      que no han tenido movimientos en el período de tiempo especificado.
+    
+      Comprobantes saldados
+    Permite incluir en el informe
+      los comprobantes ya cancelados correspondientes al rango de fechas
+      especificado.
+    
+      Comprobantes de contado
+    Para indicar si se incluyen las
+      facturas correspondientes a compras de contado efectuadas a los proveedores.
+    
+      Rendiciones de gastos
+    Indicación de si se detallan o
+      no en el informe las facturas correspondientes a compras canceladas
+      con rendiciones de gastos.
+    
+      Cheques, pagarés y fac. de crédito emitidos
+    Para indicar si se incluyen todos
+      aquellos documentos ingresados mediante pagos.
+    
+      Vencidos no confirmados
+    Se habilita en caso de haber seleccionado
+      el campo anterior.
+    Indicación de si se incluye o
+      no en el informe un apartado con todos aquellos documentos entregados
+      cuya fecha de operación se encuentre dentro del margen de días de
+      seguridad para confirmación especificado en el punto Parámetros/ Datos
+      Generales.
+    
+      Cheques y pagares recibidos entregados
+    Si se tilda esta opción se incluyen
+      el informe los valores recibidos que luego fueron entregados a proveedores.
+     No netear
+      aplicaciones y desaplicaciones del período
+    Se debe
+        activar este campo  si se desea visualizar en
+        el informe toda la historia
+        de las aplicaciones/desaplicaciones de un comprobante.
+     Consolidar
+      información en el administrador
+    En caso que se incluyan proveedores
+      administrados, se debe indicar si la información de los mismos se
+      desea exhibir en forma separada o si se desea consolidar en la cuenta
+      administradora.
+     Ordenamiento
+      proveedor
+    Se debe indicar cómo ordenar los proveedores
+      en el informe, seleccionando alguna de las siguientes opciones:
+    
+      Código
+    
+      Razón social
+    
+      Nombre de fantasía
+     Vista
+      por comprobante de
+    Indicación de la forma en que se desean
+      ver los comprobantes aplicados que aparecen en el listado.
+    Las opciones son:
+    
+      Origen de deuda
+    Se detallan los comprobantes que
+      originan la deuda y, para cada uno, se muestran los comprobantes que
+      tiene aplicados.
+    
+      Cancelación de deuda
+    Se detallan los comprobantes que
+      cancelan la deuda y, para cada uno, se muestra a qué comprobantes
+      se aplica.
+     Comprobantes
+      detallados por vencimiento
+    Para ordenar a los comprobantes cronológicamente
+      según la fecha de carga de los mismos.
+     Comprobantes
+      ordenados por vencimiento
+    Para ordenar a los comprobantes cronológicamente
+      según su fecha de vencimiento.
+  
+   Ficha Proveedores
+  
+    En esta ficha pueden indicarse diferentes
+      filtros a aplicar a los proveedores que se incluyen en el listado.
+    Pueden filtrarse los proveedores por atributos
+      y valores de atributos.
+     Tabla
+      de Atributos
+    Esta tabla permite informar los atributos
+      asociados a los proveedores que se desean incluir en el listado con
+      sus valores.
+    Código
+    Código del atributo asociado a los
+      proveedores que se desean incluir en el listado.
+    De acuerdo al atributo y al valor
+      de atributo que se indique se considerará o no cada uno de los proveedores
+      del rango seleccionado, según los atributos y valores que se hayan
+      asignado a cada uno de ellos.
+    Si no se especifica ningún atributo,
+      todos los proveedores del rango solicitado intervendrán en el listado.
+    Descripción
+    Descripción del atributo correspondiente
+      al código informado.
+    Valor
+    Valor del atributo informado asociado
+      a los proveedores que se desean incluir en el listado.
+    Debe corresponder a un valor ya definido
+      en el sistema para el atributo indicado en el campo Código.
+    De acuerdo al atributo y al valor
+      de atributo que se indique se considerará o no cada uno de los proveedores
+      del rango seleccionado, según los atributos y valores que se hayan
+      asignado a cada uno de ellos.
+    Si se indica un valor, se incluirán
+      en el listado los proveedores que tengan asociados el valor del atributo
+      indicado.
+    Si no se especifica ningún valor de
+      atributo, todos los proveedores del rango solicitado que tengan el
+      atributo indicado, intervendrán en el listado.
+    Descripción
+    Descripción del valor asociado al
+      atributo correspondiente al código informado.
+  
+   Empresas
+  
+    //<![CDATA[
+    if (typeof(TextPopupInit) != 'function') TextPopupInit = new Function();
+    TextPopupInit('a1', 'POPUP671793783');
+    TextPopupInit('a2', 'POPUP671861151');
+    TextPopupInit('a3', 'POPUP671903125');
+    //]]>
+  
+

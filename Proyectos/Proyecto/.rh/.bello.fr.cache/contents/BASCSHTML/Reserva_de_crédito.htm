@@ -1,0 +1,82 @@
+
+
+Reserva de crédito
+Esta funcionalidad está destinada al funcionamiento 
+ de BAS CS con el sistema de punto de venta y permite que éste último, 
+ al registrar ventas en cuenta corriente, verifique si el cliente tiene 
+ crédito disponible .
+Para registrar una reserva de crédito se debe definir 
+ un talonario y asociar el tipo de comprobante Reserva de crédito.
+Al ingresar el comprobante, el sistema realiza un control 
+ de crédito, en forma análoga a la que se realiza al ingresar comprobantes 
+ de venta, y no permitirá completar la operación si el cliente se excede 
+ en los créditos máximos definidos.
+Si el ingreso del comprobante se puede realizar satisfactoriamente 
+ el sistema genera un código de autorización aleatorio para dicho comprobante 
+ que constará de 6 dígitos numéricos, y que no se repetirá por empresa.
+También es posible anular Reservas de crédito. Sólo 
+ podrán anularse reservas de crédito que no estén asociadas a ningún comprobante 
+ (no está prevista la eliminación de reservas de crédito).
+Al ingresar el comprobante de anulación, el sistema 
+ anulará la reserva de crédito correspondiente al código de autorización 
+ ingresado. Para que el comprobante pueda ingresarse correctamente los 
+ datos correspondientes a la sucursal, condición de venta, cliente y moneda 
+ del comprobante deben ser iguales a los de la reserva de crédito correspondiente. 
+ Además el importe total del comprobante debe ser inferior o igual al importe 
+ de la reserva de crédito.
+Las reservas de crédito que no estén anuladas, se considerarán 
+ a partir de ahora como parte de la deuda no documentada del cliente y 
+ se podrán consultar en la consulta de cliente.
+En cualquier momento es posible dejar el comprobante 
+ en estado de preparación, de modo de seguir con el ingreso del mismo 
+ en una instancia posterior.
+Los datos a ingresar son:
+ 
+ 
+ Fecha
+
+	Fecha del comprobante.
+	 
+ 
+ Número
+
+	Prefijo y número correspondiente al comprobante 
+	 de reserva. El talonario debe corresponder a la sucursal que realiza 
+	 la reserva.
+ 
+ Sucursal
+
+	Código de la sucursal que realiza la reserva
+ 
+ Caja
+
+	Caja desde la que se realiza la reserva.
+ 
+ Cliente
+
+	Código del titular de la operación.
+	Al precargar los datos del cliente y se 
+	 exhibe un tooltip con el nombre de fantasía del cliente, de no contar 
+	 con dicho dato, se observará la razón social. 
+ 
+ Condición de venta
+
+	Código de la condición correspondiente 
+	 a la operación
+	 
+ 
+ Moneda - Importe
+
+	Moneda y monto correspondiente a la operación 
+	 para la cual se solicita la reserva de crédito.
+ 
+ Observaciones
+
+	Observación asociada al comprobante que 
+	 se genera. Ofrece como default la observación asociada al talonario 
+	 del comprobante.
+ 
+ 
+
+
+

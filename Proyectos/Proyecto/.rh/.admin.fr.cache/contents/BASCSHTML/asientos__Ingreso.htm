@@ -1,0 +1,227 @@
+
+  Ingreso de asientos
+  A través de esta tarea se ingresan manualmente asientos en el Diario General, no obstante también ofrece la opción de ingresar un asiento en base a otro asiento ya ingresado.
+  En cualquier momento es posible dejar el comprobante en estado de preparación, de modo de seguir con el ingreso del mismo en una instancia posterior.
+  
+   Comprobantes_referenciados_ingreso_de_asientos
+  Este combo de selección permite elegir asientos ya ingresados al sistema.
+  Los datos a ingresar, sin precargar ningún asiento son:
+  
+   Fecha
+  
+    Fecha del asiento.
+    El campo ofrece, por defecto, la fecha
+      correspondiente al asiento inmediatamente anterior.
+    Si no se grabó un asiento con anterioridad,
+      el campo se presenta en blanco.
+  
+   Número
+  
+    Número que se asocia al asiento.
+     
+  
+   Valorización
+  
+    Esta fecha es la que se utiliza para efectuar
+      el ajuste por inflación. También se utiliza para obtener las cotizaciones
+      que usan las cuentas en moneda extranjera que participan del asiento.
+    Por lo tanto, es posible ingresar asientos
+      registrados en una fecha y valorizar los mismos a la fecha en que
+      sucedieron.
+    Si se trabaja con moneda de contabilización
+      alternativa, esta fecha se utilizará para obtener la cotización de
+      dicha moneda y de esta forma obtener los importes de los débitos y
+      los créditos en moneda alternativa (o en moneda local, en el caso
+      en que el asiento se ingrese en moneda alternativa).
+  
+   Asiento de ajuste
+  
+    No
+    Por valor corriente
+    Por inflación
+    Este dato es importante para que el sistema pueda realizar posteriormente los asientos de ajuste en forma correcta, ya que toda vez que sea necesario realizar el ajuste a una fecha determinada se le restarán a los ajustes obtenidos todos los ajustes previos.
+    Si se selecciona la opción No, el sistema asumirá que el asiento que se ha de registrar no es un asiento de ajuste.
+    Si se selecciona la opción Por valor corriente, el sistema asumirá que el asiento que se ha de registrar es un asiento de ajuste que actuará sobre cuentas ajustables por valore corriente.
+    Si se selecciona la opción Por inflación, el sistema asumirá que el asiento que se ha de registrar es un asiento de ajuste que actuará sobre cuentas ajustables por inflación. Los asientos de ajuste podrán incluirse o no en los balances que se emitan.
+    Es posible ingresar un asiento de ajuste por inflación sobre un período (o ejercicio) ya cerrado, de tal manera de poder ajustar los valores a la fecha de fin del período anterior y sentar las bases para el proceso de ajuste por inflación del período en curso. Este asiento debe ingresarse con fecha en el período actual y fecha de valorización del periodo anterior
+    Si se trabaja con moneda de contabilización alternativa, los asientos de ajuste por valor corriente podrán ingresarse en moneda local o alternativa, y sólo en el caso del asiento de ajuste, no se expresarán en el asiento los importes en la otra 
+        moneda
+      , para permitir realizar ajustes de saldos y demás en una moneda solamente.
+     
+  
+   Moneda 
+  
+    Indicación de la moneda en la cual se ingresarán los importes de los débitos y los créditos en el asiento.
+    Este dato estará visible y habilitado si se opera con la contabilidad en forma bimonetaria, es decir, si hay una moneda de contabilización alternativa indicada en el punto Datos generales.
+    Se podrá optar entre la moneda local y la moneda de contabilización alternativa indicada en los parámetros.
+    Si se selecciona la moneda local se ingresarán los importes del asiento en moneda local y al grabar el mismo se calcularán automáticamente los importes de todos los pases del asiento en moneda alternativa.
+    Si se selecciona la moneda alternativa se asumirá que los débitos y créditos del asiento se ingresarán en moneda alternativa, y al grabar el asiento se calcularán automáticamente los importes de todos los pases del asiento en moneda local.
+    En ambos casos se utilizará para estos cálculos, la cotización de la moneda alternativa correspondiente a la fecha de valorización del asiento o bien la que se indique en el campo siguiente.
+  
+   Cambio vigente 
+  
+    Valor
+        de la cotización a la cual se grabará el asiento en la contabilidad
+        adicional. Puede modificarse libremente.
+    El cambio
+      que se muestra depende de lo que se haya indicado en el talonario
+      en relación a la columna de cotizaciones a considerar.
+    Si el talonario
+      tiene indicada la columna segunda o tercera y no hay valor en dichas
+      columnas para la mayor fecha de cotización que es menor o igual a
+      la fecha del comprobante, se utilizará el valor de la primera columna.
+    Cabe destacar
+      que lo indicado en el talonario sólo se utilizará para mostrar la
+      cotización inicial de las monedas cuyo cambio se ingresa en el encabezado
+      del comprobante.
+    Si se modifica
+      el talonario por otro que tiene indicada una columna de cotización
+      diferente o inicialmente no se indicó nada y el sistema ya ha utilizado
+      dicha cotización para el cálculo del valor de un medio de pago, el
+      sistema no permitirá la modificación avisando de tal eventualidad.
+      En caso contrario se modificará la cotización según lo indicado en
+      el nuevo talonario indicado.
+  
+   Revertir asiento
+  
+    Permite revertir lo ingresado, es decir, cambiar la columna Debe por Haber y viceversa, los importes al Debe pasan al Haber y los importes al Haber pasan al Debe.
+  
+   Ficha Comprobante
+   Tabla de Cuentas
+  
+    Mediante esta tabla se ingresan los
+      datos que conforman el detalle del asiento. Para esto se ingresan
+      una a una, las imputaciones contables que participan del asiento que
+      se está registrando, con los correspondientes importes de débitos
+      y créditos que se imputan.
+    Al registrar el asiento se verificará
+      que el importe total de los débitos ingresados coincida con el de
+      los créditos.
+    Cuenta
+    Código de la cuenta
+      a imputar en el pase del asiento que se está registrando.
+    Debe corresponder a una cuenta
+      ya definida en el Plan de Cuentas y sin subcuentas o con subcuentas
+      Centros de apropiación.
+    
+    Nombre
+    Nombre de la cuenta indicada en
+      el dato anterior.
+    Detalle
+    Detalle o aclaración que se quiera
+      agregar al pase del asiento.
+    Aparece en la emisión del Diario
+      general y en los demás informes en los que se detallan los pases de
+      los asientos.
+    Debe
+    Importe que se debita a la cuenta
+      indicada.
+    Si no se opera con la contabilidad
+      en forma bimonetaria, el importe se ingresa en moneda local. Si se
+      trabaja con moneda alternativa, el importe se deberá ingresar en moneda
+      local o alternativa según se haya indicado en el encabezado del asiento.
+    Si la cuenta indicada se ajusta
+      por cotización se solicitará luego el ingreso del importe al debe
+      en la moneda de la cuenta.
+    Haber
+    Importe que se acredita a la cuenta
+      indicada.
+    Si no se opera con la contabilidad
+      en forma bimonetaria, el importe se ingresa en moneda local. Si se
+      trabaja con moneda alternativa, el importe se deberá ingresar en moneda
+      local o alternativa según se haya indicado en el encabezado del asiento.
+    Si la cuenta indicada se ajusta
+      por cotización se solicitará luego el ingreso del importe al haber
+      en la moneda de la cuenta.
+    Cantidad
+    Importe en 
+        moneda
+      .
+    Corresponde al importe al debe
+      o al haber expresado en la moneda asociada a la cuenta indicada.
+    Si este dato no se ingresa será
+      calculado automáticamente luego de ingresar el importe al debe o al
+      haber, y la cotización.
+    Cotización
+    Cambio
+      de la moneda
+      extranjera que se utiliza en el pase del asiento.
+    Si
+      ya fueron ingresados los importes en moneda local o en moneda alternativa,
+      y el importe en la moneda extranjera de la cuenta, se ofrecerá la
+      cotización resultante.
+    Si
+      no, se ofrecerá el cambio de la moneda asociada a la cuenta indicada,
+      a la fecha de valorización del asiento. Si es necesario, el cambio
+      ofrecido podrá ser modificado por el que corresponda.
+    Si
+      se trabaja con contabilidad bimonetaria y la cuenta contable de la
+      línea se ajusta por valor corriente con la misma tabla de cotización
+      utilizada para la contabilidad bimonetaria, el cambio que se informe
+      en el encabezado se ofrecerán como cotización por defecto en la línea
+      correspondiente. De ese modo, en el momento de generar el asiento
+      en la mca,.se utiliza dicho
+      cambio para efectuar las conversiones. En el caso de asientos que
+      se registran en mca, el cambio
+      que se ingresa se utiliza para obtener los importes del asiento en
+      moneda local. El sistema se comportará de esta manera siempre y cuando
+      en los Parámetros
+        Generales se haya habilitado la opción "Respetar
+        cambio del comprobante al generar el asiento". En caso
+      contrario, al generar los asientos en moneda local, no se utiliza
+      el cambio informado en el comprobante, sino el que surja de la tabla
+      de cotizaciones para esa fecha.
+    Centro de apropiación
+      A
+    Código del centro
+        de apropiación A asociado a la línea del asiento.
+    La columna solo se exhibe si la
+      imputación contable administra subcuentas de tipo "Centro de
+      apropiación A".
+    Si el centro de agrupación que
+      se informa se ha definido como grupal, al grabar el asiento se generarán
+      tantas líneas como centros se agrupen en el centro grupal que se indica.
+    Además, a cada una de las líneas
+      se le asigna el importe resultante de aplicar, al importe original
+      de la línea del comprobante, el porcentaje que cada centro tenga definido.
+    Centro de apropiación
+      B
+    Código del centro
+        de apropiación B asociado a la línea del asiento.
+    La columna solo se exhibe si la
+      imputación contable administra subcuentas de tipo "Centro de
+      apropiación B".
+    Si el centro de agrupación que
+      se informa se ha definido como grupal, al grabar el asiento se generarán
+      tantas líneas como centros se agrupen en el centro grupal que se indica.
+    Además, a cada una de las líneas
+      se le asigna el importe resultante de aplicar, al importe original
+      de la línea del comprobante, el porcentaje que cada centro tenga definido.
+  
+   Ficha Observaciones
+  
+     Observaciones
+    Permite ingresar un texto aclaratorio
+      acerca del asiento ingresado. Este aparece en los informes en los
+      que se incluye al asiento.
+  
+   
+      Ficha Adjuntos
+    
+  Permite adjuntar archivos externos. Una vez grabado el comprobante la administración de los archivos adjuntados se realiza desde el Proceso de Adjuntos.
+   Para tener en cuenta
+  Al grabar un asiento la fecha queda con la del último asiento ingresado.
+  
+    //<![CDATA[
+    if (typeof(TextPopupInit) != 'function') TextPopupInit = new Function();
+    TextPopupInit('a1', 'POPUP676505299');
+    TextPopupInit('a2', 'POPUP676485476');
+    TextPopupInit('a3', 'POPUP676460855');
+    TextPopupInit('a4', 'POPUP676502751');
+    TextPopupInit('a5', 'POPUP676538258');
+    TextPopupInit('a6', 'POPUP676575121');
+    TextPopupInit('a7', 'POPUP676743025');
+    TextPopupInit('a8', 'POPUP676758637');
+    //]]>
+  
+

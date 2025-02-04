@@ -1,0 +1,70 @@
+
+
+Renumeración de asientos del diario
+El sistema permite mediante esta tarea modificar en 
+ forma automática, los números de los asientos registrados para que queden 
+ numerados en forma correlativa respecto de la fecha de registración de 
+ cada asiento.
+Este proceso es muy útil ya que posibilita que el diario 
+ general se emita ordenado por fecha y por número de asiento.
+Pueden renumerarse todos los asientos del diario general 
+ o pueden renumerarse los que correspondan a un prefijo determinado. En 
+ este caso, el prefijo que se indique determina el talonario 
+ correspondiente a los asientos a renumerar.
+Otra opción posible con este proceso es la de pasar 
+ todos los asientos de un talonario a otro cuyo prefijo se indique en pantalla. 
+ En este caso, se pueden indicar dos prefijos: uno que permite seleccionar 
+ los asientos y otro que indica con qué prefijo se numerarán.
+Se renumerarán todos los asientos del Diario general 
+ a partir de la fecha del último cierre 
+ operativo del diario efectuado. También se renumerarán los asientos 
+ anulados que tengan el prefijos que se indique para renumerar.
+Los asientos que se ingresaron como anulaciones de asientos 
+ inexistentes también serán renumerados.
+Los asientos que se seleccionen para renumerar serán 
+ numerados correlativamente a partir del último número de asiento existente 
+ del talonario al cual corresponde cada asiento o del talonario al cual 
+ se pasan los asientos, en el caso en que haya cambio de talonario.
+Los datos a ingresar para efectuar la renumeración son:
+ 
+ Prefijo a renumerar
+
+	Prefijo de los asientos del diario 
+	 general que se desean renumerar.
+	El prefijo debe estar asociado a un 
+	 talonario habilitado para registrar 
+	 asientos.
+	Todos los asientos del diario ingresados 
+	 con el talonario mencionado a partir del último cierre operativo efectuado, 
+	 serán renumerados.
+	Si no se indica nada en este dato, 
+	 se renumerarán todos los asientos del diario general.
+ Nuevo prefijo
+
+	Prefijo que tendrán los asientos que 
+	 se seleccionaron para renumerar.
+	Este dato es opcional, sólo debe indicarse 
+	 en el caso en que se deseen cambiar de talonario, los asientos del 
+	 diario seleccionados.
+	El prefijo debe estar asociado a un 
+	 talonario habilitado para registrar 
+	 asientos.
+	Todos los asientos del diario seleccionados 
+	 serán ingresados en el talonario asociado al prefijo indicado en este 
+	 dato.
+	Si se selecciona un nuevo prefijo, 
+	 los asientos seleccionados serán numerados correlativamente a partir 
+	 del último número de asiento existente del nuevo talonario.
+ Renumerar
+
+	Presionando el botón se realizará 
+	 la renumeración.
+	 
+//<![CDATA[
+	if( typeof( TextPopupInit ) != 'function' ) TextPopupInit = new Function();
+	TextPopupInit('a1', 'POPUP610469879');
+	TextPopupInit('a2', 'POPUP610473933');
+	TextPopupInit('a3', 'POPUP610486104');
+//]]>
+
+

@@ -1,0 +1,190 @@
+
+  Saldos de clientes
+  Este informe brinda los totales pendientes de las cuentas corrientes de los clientes de la empresa.
+  Permite obtener los saldos a cobrar a una fecha determinada, reexpresar las deudas a otras monedas, obtener saldos por referencias contables, por grupos de clientes, y hasta saldos mayores a determinado importe.
+  El informe puede emitirse detallando los saldos por cada imputación contable de clientes o consolidando los mismos.
+  Se muestra para cada cliente la fecha de último movimiento y el saldo total expresado en la moneda de cada imputación contable o en la moneda en la cual se deseen reexpresar los valores.
+  También es posible imprimir el listado tipo Ranking. En este caso para cada cliente se informa además, a qué porcentaje del total corresponde su saldo.
+  Se podrán indicar diferentes filtros para seleccionar los clientes cuyos saldos se desean listar.
+  Es posible, además, incluir en la impresión del informe una carátula en la que se detallan todas las opciones seleccionadas por el usuario al solicitarlo.
+  Para emitir el listado primero se ingresan los datos en las distintas fichas contenidas en la tarea, de manera tal de filtrar la información de acuerdo a las necesidades. Luego se debe presionar el ícono (botón) de la barra de herramientas superior que corresponda al tipo de emisión requerida. El uso de estos botones se detalla en el link Emisión disponible en un párrafo posterior.
+  Al momento de imprimir un informe (tanto por pantalla como por papel) se puede utilizar el formato standard del sistema, o indicar un formato personalizado de impresión. Este último se indica en el campo homónimo que, en general, se encuentra en la zona inferior de la primer solapa y su funcionalidad está detallada a continuación en el link Emisión.
+  
+   Emisión
+  FCC (Fecha de certeza contable)
+  Los datos solicitados para la emisión del listado son los siguientes:
+  
+   Ficha Períodos
+  
+    Desde esta ficha podemos seleccionar el
+      rango de fechas o los períodos a considerar en el informe.
+     Rango
+     A Fecha
+    Fecha hasta la cual se desean obtener
+      los saldos en el informe.
+    Esta fecha permite incluir los saldos
+      de las cuentas a pagar cuyos vencimientos sean anteriores a la misma.
+    Si no se indica ninguna fecha se obtienen
+      los saldos hasta el final.
+     Períodos
+    Se podrá indicar hasta cuatro fechas
+      que determinarán los distintos períodos a considerar en el informe.
+      Es posible informar un Intervalo
+        en días de modo de calcular las fechas en base al mismo.
+    Si se elige esta opción para emitir
+      el informe, se deberá informar al menos un período y, si se indica
+      más de uno, éstos deberán corresponder a fechas ordenadas de menor
+      a mayor, y que no se repitan.
+    El listado presentará una columna
+      por cada período indicado. También se incluirá una columna denominada
+      Posterior, cuyo importe sumado
+      a los de las columnas previas será coincidente con el saldo que se
+      obtiene al emitir el informe A fecha sin indicar fecha alguna.
+    
+     Imputación
+      contable
+    Código de cuenta
+      del Plan de cuentas cuyo saldo desea incluirse en el informe.
+    Esta opción nos permite listar, del
+      rango de clientes seleccionado, solo los saldos de las operaciones
+      efectuadas con determinada imputación contable.
+    Si no se indica ninguna imputación
+      se obtendrán los saldos de todas las imputaciones contables con las
+      cuales los clientes registraron sus movimientos.
+     
+  
+   Ficha Opciones
+  
+    Desde esta ficha podemos optar por pedir
+      los saldos de una imputación contable específica, reexpresar los saldos
+      a otra moneda, etc.
+     Reexpresado
+    Indicación de si se desea reexpresar
+      los saldos de las cuentas corrientes de los clientes. Si no se marca
+      esta opción, los importes del listado no se reexpresarán.
+    La reexpresión en la emisión por Períodos se hará teniendo en cuenta
+      la fecha del primer período indicado, en cambio, cuando se emita A fecha, se utilizará la fecha que
+      se haya indicado, en caso contrario se reexpresará a la fecha de emisión
+      del listado.
+     en moneda
+    Moneda
+      en la cual se desean reexpresar los saldos de las cuentas corrientes
+      de los clientes.
+    Debe corresponder a un código de tabla
+      de cotizaciones ingresado en el sistema.
+    Si se indica la opción Reexpresado
+      y no se indica ninguna moneda el listado se reexpresará en moneda
+      local.
+     Saldos
+      mayores a
+    Importe correspondiente al valor mínimo
+      de saldos a listar.
+    Esto permite listar sólo aquellos
+      saldos que superan un determinado importe.
+     en
+    Moneda
+      de expresión correspondiente al saldo fijado como límite en el campo
+      anterior. Si no se indica moneda se considerará que el limite está
+      fijado en moneda local.
+     Tipo
+      de Listado
+    Indicación de la forma en que se desea
+      imprimir el listado.
+    Las opciones son:
+    Detallado
+    Detallado por comprobante
+    Consolidado
+    Si se selecciona tipo Detallado
+      se imprimen los saldos de los clientes seleccionados, por imputación
+      contable.
+    Si se selecciona Detallado
+        por comprobante se imprimen los comprobantes de los clientes
+      seleccionados con sus respectivos saldos. Esta opción se habilita
+      si se selecciona el rango A fecha.
+    Si se selecciona tipo Consolidado
+      se imprimen los saldos de los clientes totalizando los saldos de las
+      imputaciones contables de cada uno.
+     Ordenamiento
+    Tipo de ordenamiento con el que se
+      desea emitir el informe.
+    Las opciones son:
+    Cliente
+    Imputación contable
+    Ranking
+    Vendedor-Localidad
+    Si se selecciona ordenamiento Cliente se ordenan los datos listados
+      por cliente , puede ser alfabéticamente
+      por nombre o por código.
+    Si se selecciona ordenamiento Imputación contable se ordenan los
+      datos listados por código de imputación
+        contable.
+    Si se selecciona ordenamiento Ranking se ordenan los datos listados
+      por el saldo de las cuentas corrientes. Se mostrará qué porcentaje
+      del total de saldos listados, corresponde al saldo de cada cliente.
+      De esta forma aparecerán primero en el listado los clientes con mayor
+      deuda y se irán imprimiendo los siguientes, ordenados en forma descendente
+      por su saldo.
+    Si se selecciona ordenamiento Vendedor-Localidad la información
+      se lista por vendedor, y para cada vendedor se muestran los clientes
+      con su correspondiente saldo. El saldo se mostrará detallando por
+      imputación contable o no, dependiendo de si se lista el informe detallado
+      o consolidado. En este caso se utiliza el vendedor asociado al cliente
+      y no el que se ingresó en el comprobante.
+    
+    Al listar los saldos de los clientes
+      por vendedor se mostrarán los mismos ordenados por la localidad de
+      cada cliente, y antes de ordenar por localidad se ordenarán por la
+      descripción de la provincia asociada al cliente. Por lo tanto, los
+      saldos se ordenarán por vendedor-descripción de la provincia del cliente-
+      localidad del cliente.
+    Las opción tipo Ranking
+      sólo se encuentra habilitada si se selecciona tipo de listado consolidado.
+     Porcentaje
+      de corte
+    Permite incluir en el informe todos
+      aquellos clientes cuyas cuentas corrientes representen el porcentaje
+      total de la deuda indicado.
+    Este dato sólo está habilitado si
+      el listado se imprime tipo Ranking.
+    Se puede indicar aquí un porcentaje
+      hasta el cual se desean imprimir los clientes de acuerdo al porcentaje
+      de incidencia de cada uno. Es decir, se imprimirán los clientes acumulando
+      el porcentaje de cada uno hasta llegar al primero para el cual el
+      acumulado supera el porcentaje aquí indicado.
+    Los clientes en los cuales el acumulado
+      de los porcentajes supera el porcentaje de corte no se incluyen en
+      el informe.
+     Columna
+    Este campo se habilita si como rango
+      se ha elegido Períodos. En ese caso se deberá indicar la columna en
+      base a cual se desea establecer el ranking.
+     Incluir
+      saldos en cero
+    Indicación de si se incluyen o no
+      en el informe todas aquellas cuentas corrientes de clientes cuyo saldo
+      sea cero.
+     Incluir
+      valores en cartera
+    Indicación de si se incluyen o no
+      en el informe los valores entregados por el cliente y que aún se encuentran
+      en cartera.
+     Por separado
+    Esta opción solo se habilita en caso
+      de incluir valores en cartera e implica que los saldos correspondientes
+      a la tenencia de dichos valores de cada cliente se exhibirá en forma
+      separada dentro del informe.
+    No obstante, solo es posible decidir
+      marcar o no esta opción si el listado a emitir es del tipo Consolidado.
+      En caso contrario (si se solicitó Detallado),
+      la opción aparecerá tildada por defecto y no se podrá modificar.
+  
+   Ficha Clientes
+   Empresas
+  
+    //<![CDATA[
+    if (typeof(TextPopupInit) != 'function') TextPopupInit = new Function();
+    TextPopupInit('a1', 'POPUP731537014');
+    TextPopupInit('a2', 'POPUP731579688');
+    //]]>
+  
+

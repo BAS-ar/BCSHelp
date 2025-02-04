@@ -1,0 +1,176 @@
+
+
+Conceptos
+Los conceptos se utilizan en el ingreso de comprobantes 
+ de movimientos de materiales.
+Efectivamente, los movimientos de ingreso y egreso de 
+ mercadería solicitan, entre otros datos, que se informe el concepto a 
+ asociar al movimiento.
+Es importante mencionar que el sistema efectúa un control 
+ destinado a impedir que se elimine un concepto que ya ha sido utilizado. 
+ Al intentar la eliminación se emite un aviso de alerta y se impide continuar 
+ adelante con la tarea.
+Los conceptos cumplen dos objetivos fundamentales, a 
+ saber:
+Determinar, 
+ mediante su inclusión en las Posiciones contables que se asocian a los 
+ bienes, las cuentas a imputar en relación al tipo de movimientos en los 
+ que éstos intervienen.
+Informar 
+ si los comprobantes a los cuales se asocian, quedan pendientes o no. Los 
+ comprobantes pendientes pueden ser utilizados como fuente de otros comprobantes, 
+ cuando éstos últimos se ingresan al sistema.
+Los datos a ingresar son:
+ 
+ 
+ Código
+
+	Código identificatorio del concepto.
+	Como ejemplos podemos mencionar, PRE, 
+	 AJU, VEN, etc.
+ 
+ Descripción
+
+	Texto que identifica al concepto. Por 
+	 ejemplo, Préstamo, Ajuste, Ventas, etc.
+ 
+ Deja comprobantes pendientes
+
+	Se debe indicar si los comprobantes de 
+	 ingreso o egreso de mercadería que lo utilicen, quedarán pendientes 
+	 o no.
+	Los comprobantes pendientes pueden ser 
+	 invocados cuando se ingresen otros comprobantes, de modo que éstos 
+	 últimos se confeccionen en base a la información que contienen.
+	Como ejemplo de lo que se quiere significar 
+	 supongamos que se ha definido un concepto Ventas para asociar a los 
+	 remitos de egresos por ventas.
+	Si la forma de trabajo de la empresa es 
+	 facturar los remitos en una instancia posterior, en el concepto se 
+	 deberá indicar Deja comprobantes pendientes.
+	De este modo los remitos que utilicen 
+	 el concepto quedan como remitos pendientes de facturación. Estos, 
+	 además, podrán ser invocados en la tarea de facturación de modo que 
+	 la información que contienen se pre-cargue como base del comprobante 
+	 a registrar.
+	Es importante tener en cuenta que es obligatorio 
+	 tildar este campo en caso de estar definiendo un concepto habilitado 
+	 para depósitos.
+	 
+ 
+ Habilitado para
+
+	Como se ha dicho, los conceptos que se 
+	 definan serán asociados, en una instancia posterior, a comprobantes 
+	 de movimientos de mercadería.
+	Los titulares de dichos comprobantes pueden 
+	 ser:
+	 Clientes
+	 Proveedores
+	 Agentes
+	 Depósitos
+	 Plantas
+	Según sean los destinatarios de los comprobantes 
+	 que usarán el concepto, éstos deberán habilitarse mediante un tilde 
+	 en los cuadros de selección que correspondan a dichos destinatarios.
+	Por ejemplo, para un concepto Préstamo, 
+	 si se producen tanto egresos de mercadería por préstamos a clientes 
+	 como ingresos de mercadería por préstamos de proveedores, dicho concepto 
+	 debe habilitarse para Tabla:_Proveedores y Clientes.
+	Como ejemplos de conceptos a utilizar 
+	 en movimientos de egreso, podemos mencionar, Ventas, Devolución, Préstamo, 
+	 Consignación, Ajuste, etc. Para movimientos de ingreso, se pueden 
+	 definir Compras, Devolución, Préstamo, Ajuste, etc.
+	Es importante tener en cuenta que un concepto 
+	 está habilitado para depósitos 
+	 debe dejar comprobantes pendientes.
+ 
+ Tabla de Posiciones Contables
+
+	Esta tabla permite informar las posiciones 
+	 contables en las que se incluye el concepto y las cuentas que se han 
+	 de imputar en cada caso.
+	Los elementos de esta tabla pueden administrarse 
+	 desde aquí o desde la tabla de Posiciones contables.
+	Es decir, al incorporar un concepto y 
+	 la imputación contable correspondiente 
+	 a una posición contable, ésta última, junto a la mencionada imputación, 
+	 pasan a formar parte de esta tabla. Este elemento, que se agrega a 
+	 la tabla, es indistinguible de los que se dan de alta directamente 
+	 mediante esta tarea.
+	Del mismo modo, al incorporar nuevos elementos 
+	 a la tabla mediante esta tarea, éstos se verán reflejados en la tabla 
+	 de posiciones contables.
+	Código
+	Corresponde a una posición contable.
+	Nombre
+	Exhibe el nombre de la posición 
+	 contable correspondiente al código informado.
+	Imputación Contable
+	Cuenta que se imputa cuando los 
+	 productos que tienen asociada la posición contable informada, participan 
+	 en comprobantes de materiales donde se invoca el concepto.
+	Nombre
+	Exhibe el nombre correspondiente 
+	 a la cuenta informada en el dato anterior, según figura en el Plan 
+	 de Cuentas.
+ 
+ Para tener en cuenta
+
+	Hemos mencionado que el concepto permite 
+	 informar, a través de su inclusión en las posiciones contables, qué 
+	 cuentas se han de imputar en relación al movimiento de los bienes.
+	Citemos algunos ejemplos:
+	Supongamos que en la posición contable 
+	 del ítem 001 se indica como 
+	 imputación contable de inventario 
+	 Mercadería en existencia, 
+	 para el concepto PRE-Préstamo, 
+	 la imputación contable Mercadería 
+	 en préstamo, para el concepto CSG-Consignación, 
+	 la imputación contable Mercadería 
+	 en consignación, para el concepto VEN-Costo 
+	 ventas, la imputación contable Costo 
+	 de Ventas y para el 
+	 concepto COM-Compras, la imputación 
+	 contable Compras.
+	Cuando el ítem se incluya en un remito 
+	 de egreso y se informe que corresponde al concepto PRE-Préstamo, 
+	 el asiento correspondiente al movimiento debitará la cuenta Mercadería en préstamo y acreditará 
+	 la cuenta Mercadería en existencia.
+	Si, en cambio el egreso corresponde al 
+	 concepto CSG-Consignación, 
+	 la cuenta que se acreditará será Mercadería 
+	 en consignación.
+	Si el concepto invocado es VEN 
+	 - Costo ventas, se debitará la cuenta Costo 
+	 de Ventas y se acreditará 
+	 la cuenta Mercadería en existencia.
+	Si el bien ejemplificado se utiliza en 
+	 un remito de ingreso y se invoca el concepto COM 
+	 – Compras, el asiento debitará la cuenta Mercadería 
+	 en existencia y acreditará la cuenta Compras.
+	Vale la pena aclarar que se prevén dos 
+	 parámetros generales para informar en forma global dos conceptos de 
+	 uso, prácticamente, obligatorio; éstos son el Concepto 
+	 para compras y el Concepto 
+	 para ventas.
+	El Concepto 
+	 para compras se utiliza en todos los comprobantes de compras 
+	 (facturas, remitos, notas de débito y notas de crédito), por lo cual, 
+	 la imputación contable que se asocie 
+	 será la que se debite en facturas, remitos de egresos por devolución 
+	 y notas de débito y la que se acredite en remitos de ingreso y notas 
+	 de crédito.
+	El Concepto 
+	 para ventas se utiliza en forma automática cuando se genera 
+	 un remito de egreso a partir de la registración de una factura con 
+	 entrega. Es decir, cuando el ingreso de una factura lleva implícita 
+	 la generación del correspondiente remito.
+	Estos dos conceptos, entonces, se informan 
+	 en forma global y, luego, bastará asociarles una imputación 
+	 contable en cada una de las posiciones contables que se definan.
+	 
+
+
+

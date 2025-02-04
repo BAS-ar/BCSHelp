@@ -1,0 +1,408 @@
+
+  Servicios
+  Aquí se administra toda la información referida a los bienes intangibles, es decir, todos aquellos servicios que se comercializan en la empresa, o que se compran o contratan a terceros.
+  Tanto en lo que respecta a su codificación como a la forma en que se los identifica, presentan las mismas características que los bienes tangibles.
+  A continuación se detallan todos los datos que deben ingresarse:
+  
+   Código
+  
+    Código de hasta dieciocho caracteres que
+      identifica al servicio y será utilizado para individualizar el producto
+      en todo el sistema.
+    Como ejemplos podemos mencionar, GASTO, HORASERVICE,
+      ABONO1/1, etc.
+    
+  
+   Descripción
+  
+    Denominación del servicio. Se dispone
+      de hasta treinta y dos caracteres para el ingreso. Por ejemplo, Hora de capacitación, Abono
+        mantenimiento, Gastos de emisión, etc.
+    Esta información figurará en todos los
+      informes en los que intervenga el servicio y en los comprobantes que
+      se impriman.
+    Es importante destacar que no es posible
+      definir ítems que carezcan de descripción.
+  
+   Ficha Generales
+  
+     GTIN / alternativo
+    En los casos en que sea necesario, es posible asociar un segundo código a cada servicio.
+    El GTIN (Global Trade Item Number) es el código mundial de un artículo comercial, el cual es utilizado para identificar de manera única a cualquier producto o ítem.
+    Se dispone de un botón a la derecha del campo que permite validar el GTIN, avisando si es correcto o no. No es obligatorio que el GTIN esté correcto para poder grabar.
+     Descripción larga
+    Es posible asociar a cada servicio, una segunda denominación que puede incluir muchos más caracteres que la principal. Esta prestación está dirigida fundamentalmente a aquellas empresas que, en la impresión de la factura, o en determinados informes, deben identificar al servicio con una descripción preestablecida pero, internamente, prefieren utilizar otra denominación.
+     Tipo de valor
+    Debe seleccionarse alguna de las siguientes opciones, que indica el tipo de valor que tiene el servicio que se está ingresando:
+    Cantidad
+    Porcentaje
+    Importe
+    Los servicios de tipo Cantidad son los que pueden cuantificarse, es decir, se puede hablar de una cantidad de ese servicio. Por ejemplo, las horas de curso dictadas. En estos casos el importe de comprar o vender el servicio surge del precio unitario por la cantidad, tal como lo hacen los bienes.
+    Los servicios de tipo Porcentaje representan un porcentaje para el comprobante en el cual intervienen. El porcentaje puede estar asociado al servicio en el campo correspondiente o, si se deja en blanco, puede ingresarse directamente al registrar el comprobante.
+    Los servicios de tipo Importe solicitan un importe cuando se los invoca en un comprobante. Acá el importe de comprar o vender el servicio se ingresa directamente y es siempre unitario. Por ejemplo, gastos, fletes, etc.
+     Porcentaje
+    Porcentaje asociado al servicio en caso que éste sea de tipo “Porcentaje”.
+    En caso de indicarse, debe ser distinto de cero y r mayor o igual a -100.00 y menor o igual a 999.99.
+    Al modificar el porcentaje de un servicio, si el mismo está definido como ítem de descuento/recargo en alguna condición de venta, se modificará también el porcentaje correspondiente en dicha condición de venta, por el que acá se indique.
+     Tipo de servicio
+    En esta tabla es posible seleccionar alguna de las siguientes opciones, que indican el tipo al que corresponde el servicio que se está ingresando. Es posible seleccionar más de un tipo a la vez, aunque no está previsto que un mismo servicio sea de tipo Impositivo, Bancario y/o Base Imponible a la vez.
+    En esta tabla se dispone de los siguientes tipos:
+    Gasto
+    Reventa
+    Propio
+    Insumo
+    Bancario
+    Base Imponible
+    Impositivo
+    Gasto de Importación 
+    Manufactura
+    El asociar un Tipo a un servicio determina la forma en que éste ha de operar en el sistema, el momento en que podrá utilizarse, en qué comprobantes, para qué aplicaciones, etc.
+    Los servicios de tipo Base Imponible permiten ingresar líneas de comprobantes con impuestos solamente, ya que el importe asociado a ítems de este tipo no formará parte del importe gravado del comprobante, sino que se utilizará como una base para el cálculo de impuestos. Estos ítems pueden ingresarse en comprobantes de compras, ventas, en débitos bancarios y en liquidaciones de tarjetas.
+    Los servicios de tipo Impositivo están destinados al cálculo de un impuesto aplicado en la República Oriental del Uruguay denominado C.O.F.I.S.. A tal efecto, además de definirse como un servicio de tipo Impositivo, el tipo de valor que le corresponda al mismo será Porcentaje. Este impuesto se calcula sobre el neto gravado de las facturas y tiene la particularidad de que sobre él, también se calcula el I.V.A.. Para determinar sobre que grupo de bienes se ha aplicar el porcentaje calculado por este servicio, se debe informar un Acumulador, el mismo contiene el dato de las tablas de impuestos asociadas a los bienes a gravar.
+    Para definir el porcentaje con el que se gravará a este grupo de bienes se debe asociar estos servicios a los tratamientos impositivos definidos para los clientes.
+    El Gasto de Importación se utiliza para aquellos comprobantes de compra que serán asociados a una 
+        Carpeta de Importación
+       (CI) como gastos. El mismo, no se puede indicar en forma conjunta para un mismo servicio con los tipos: Impositivo, Base Imponible y Bancario. No se podrá indicar que un servicio no es mas gasto de importación, si hay comprobantes de compras con dicho gasto ingresado asociados a CI que no estén cerradas. La imputación contable asociada al servicio a utilizar en una CI, no puede tener subcuentas de ningún tipo.
+     Acumulador
+    Este campo reviste utilidad en caso de administrar el impuesto vigente en la República Oriental del Uruguay denominado C.O.F.I.S. En ese caso, el dato a informar en este campo será el código del acumulador que indica cuales son las tablas de impuestos asociadas a los bienes a gravar con este impuesto.
+     Aplica al
+    Este valor permite indicar que el porcentaje del acumulador se aplica sobre un porcentaje de los importes de los ítems que consideran dicho acumulador.
+    El porcentaje debe ser un número entre 0 y 100 que indica un porcentaje. Esta funcionalidad sólo estará disponible cuando se ingrese el servicio impositivo en un comprobante de compras.
+     Rubro
+    Código del rubro al que pertenece el servicio.
+    Por ejemplo, GAS-Gastos, ABN-Abonos, etc.
+     Subrubro
+    Código del subrubro al que pertenece el servicio.
+    Por ejemplo, se pueden definir como subrubros del rubro GAS-Gastos,
+      GA1-Gastos Bancarios, GA2-Gastos Varios, etc.
+    
+    Es posible que el nivel de detalle que se necesite para agrupar los servicios requiera solamente de la definición de rubros. Si este es su caso, defina sólo los rubros y no utilice la subdivisión en subrubros.
+     Grupo de compras
+    Código del grupo de compras al que pertenece el servicio.
+    El grupo contiene información que determina el comportamiento de los servicios que agrupa frente a una compra.
+  
+   Ficha Atributos
+  
+    En esta ficha es posible especificar a
+      que rubro y/o subrubro pertenece el servicio que se está definiendo.
+    Además, se ofrece la posibilidad de asociar
+      a los servicios determinadas características mediante el uso de los
+      llamados Atributos.
+    En muchos casos, y por diversos motivos,
+      se hace necesario asociar a los servicios determinadas características.
+      Estas características, propias de cada ítem, se informan al sistema
+      mediante el uso de Atributos.
+      Luego, será posible realizar una serie de tareas como, por ejemplo,
+      emitir estadísticas de ventas o definir listas de precios, en función
+      a los atributos que se hayan definido y asociado a los servicios.
+     Tabla
+      de Atributos
+    Esta tabla permite informar los atributos
+      que se le asocian al servicio con sus valores.
+    Código
+    Código del atributo a asociar al servicio.
+      Debe corresponder a un atributo ya definido en el sistema y debe ser
+      aplicable a Items.
+    Descripción
+    Exhibe la descripción del atributo
+      correspondiente al código informado.
+    Valor
+    Valor del atributo informado que se
+      le define al servicio. Debe corresponder a un valor ya definido en
+      el sistema y asociado al atributo indicado en el campo Código.
+    Al ingresar valores de atributos que
+      fueron definidos como que afectan al código de selección, se irán
+      completando los caracteres del código de selección del servicio con
+      el valor que se indicó y en la posición y largo indicados en la definición
+      del atributo. De esta forma, el ingreso de valores de atributos de
+      este tipo define el código de selección del servicio.
+    Descripción
+    Exhibe la descripción del valor asociado
+      al atributo correspondiente al código informado.
+  
+   Ficha Contable
+  
+     Tabla
+      de impuestos
+    Código de la tabla de impuestos utilizada
+      por el servicio. Este dato es obligatorio, no es posible grabar el
+      servicio sin él.
+    Esta tabla contiene las tasas, las
+      tablas de porcentajes y las cuentas a imputar en el cálculo del impuesto
+      al valor agregado, de los impuestos internos, de las retenciones y
+      de las percepciones que se efectúan en las ventas y en las compras
+      del servicio. De este modo, cuando dicho servicio sea invocado por
+      los diferentes comprobantes que administra el sistema, los impuestos,
+      retenciones y percepciones se calcularán y se registrarán contablemente,
+      en forma automática.
+     Posición
+      contable
+    Código de la tabla de posición contable
+      utilizada por el servicio.
+    Indica qué cuentas deben imputarse
+      según sea el movimiento del cual participa. O sea, indica, para cada
+      tipo de movimiento, la cuenta contable que corresponde imputar.
+     Método
+      de valuación contable
+    Si el servicio es de tipo cantidad
+      se habilita el campo donde se debe seleccionar el método por el cual
+      se valuará el servicio:
+    Lista de precios
+    Precio de compra 
+  
+   Ficha Cliente / Proveedor
+  
+    En esta ficha es posible informar cuales
+      son los proveedores (registrados
+      en el sistema) que le proveen a la empresa del servicio que se está
+      definiendo o cuales son los clientes
+      (también registrados en el sistema) que le compran a la empresa dicho
+      servicio.
+    Las opciones que se ofrecen en la misma
+      son:
+     Proveedor
+    Si se marca la opción Proveedor
+      se habilitará una tabla en la cual se podrá informar el código del
+      proveedor y su nombre. A su vez se podrá informar el código asignado
+      por dicho proveedor al servicio en cuestión.
+     Cliente
+    Si se marca la opción Cliente,
+      se habilitará una tabla en la cual se podrá informar el código de
+      cliente y su nombre. A su vez se podrá informar el código asignado
+      por dicho cliente al servicio en cuestión.
+     Tabla
+      de Clientes y Proveedores
+    Cliente/Proveedor
+    Código del cliente o del proveedor,
+      según se indique en la opción anterior.
+    Nombre
+    Nombre del cliente o proveedor.
+    Código propio
+    Código identificatorio asignado por
+      el cliente o por el proveedor al servicio que se está definiendo.
+    Estos códigos son designados en todas
+      las pantallas y tareas del sistema como Códigos propios, de clientes
+      o de proveedores, según sea el caso.
+    La aplicación más importante en relación
+      a los Códigos propios, es que éstos están disponibles para ser utilizados
+      en los formatos de impresión de comprobantes correspondientes a clientes
+      y a proveedores.
+    De este modo, por ejemplo, al emitir
+      órdenes de compra a distintos proveedores, cada una de ellas codificará
+      los servicios con los códigos informados para el proveedor del que
+      se trate.
+    De igual modo, al emitir facturas
+      de venta, éstas codificarán los servicios de acuerdo a los códigos
+      que fueron asignados a los clientes destinatarios de las mismas
+    Además de incorporar manualmente en
+      esta tabla a los proveedores que se deseen, cada vez que en el sistema
+      se registre un ingreso del servicio (ya sea con un ingreso de materiales
+      o con una factura de compra), se agregará automáticamente a esta lista
+      el proveedor que interviene en la operación. Del mismo modo, cada
+      vez que se registre un egreso de este servicio (ya sea con un egreso
+      de materiales o con una factura de venta), se agregará automáticamente
+      a esta lista el cliente titular de la operación.
+    Por defecto
+    Esta columna aparee sólo para proveedores
+      y permite indicar cuál es el proveedor por defecto del bien..
+  
+   Ficha Comprobantes
+  
+    En esta ficha es posible suspender al
+      servicio que se está definiendo para realizar alguna/s operación/es
+      en particular, o para realizar cualquier operación y también prefijar
+      la posibilidad de efectuar observaciones a las líneas de los comprobantes
+      que invoquen a este servicio.
+     Comprobantes
+      Suspendidos
+    Es posible indicar que todos los comprobantes
+      están suspendidos salvo excepciones. Estas se detallan en la tabla
+      Excepto los indicados. Del mismo modo es posible indicar que todos
+      están habilitados salvo alguno o algunos que se detallan, también,
+      en la tabla mencionada
+    Esto puede ser útil, por ejemplo,
+      si en algún momento por algún motivo la empresa decide no vender determinado
+      servicio. Entonces para que el sistema no permita esto, se habilita
+      al servicio para todos los comprobantes, excepto para las facturas
+      de venta, es decir, se marca la opción Todos habilitados y se agrega
+      la factura de venta en la lista de comprobantes exceptuados para el
+      ítem. Y, cuando se decide volver a vender, se saca la factura de venta
+      de la lista de comprobantes exceptuados.
+     Todos
+      suspendidos
+    Indicación de si se desea suspender
+      el ingreso de todos los comprobantes para el servicio que se está
+      definiendo. No obstante podrán luego indicarse, en la tabla que sigue,
+      si hay comprobantes que estén exceptuados de esta suspensión.
+     Todos
+      habilitados
+    Indicación de si se desea habilitar
+      el ingreso de todos los comprobantes para el servicio que se está
+      definiendo. No obstante podrá luego indicarse, en la tabla que sigue,
+      si hay comprobantes que estén exceptuados de esta habilitación, vale
+      decir que se encuentren suspendidos.
+     Tabla
+      Excepto los indicados
+    Esta tabla permite informar todos
+      los tipos de comprobante que se encuentran exceptuados de la suspensión
+      o habilitación general efectuada en alguno de los campos precedentes.
+    Puede ingresarse un tipo de comprobante
+      en particular o un grupo de ellos.
+    Pulsando el botón Todos los comprobantes,
+      se incluirán todos los tipos de comprobantes en la tabla.
+    Por otro lado, el botón Vaciar
+      Tabla, permite quitar a todos los comprobantes de la tabla.
+    Código
+    Código del tipo de comprobante
+      que se desea exceptuar de la suspensión o habilitación indicada más
+      arriba para el servicio que se está definiendo.
+    Se permitirá el ingreso de cualquier
+      tipo de comprobante definido en el sistema en el cual sea posible
+      ingresar ítems (compras, ventas, producción, movimientos de materiales,
+      etc).
+    Nombre
+    Descripción del tipo de comprobantes
+      correspondiente al código informado.
+  
+   Ficha Observaciones
+  
+    El sistema brinda la posibilidad de que,
+      al ingresar comprobantes, para los ítems que se desee, se ingrese
+      un texto con observaciones asociado a la línea del comprobante correspondiente
+      a dicho ítem. Además, al definir el servicio es posible informar un
+      texto de Observación Default
+      que se sugerirá al momento de registrar el comprobante para el servicio
+      del que se trate, pudiéndose modificar, quitar o agregar texto a la
+      observación cuando sea necesario.
+    A tal efecto, se prevé que en los campos
+      siguientes se indique si todos los comprobantes en los que ha de participar
+      este servicio requieren de observación o ninguno de ellos requiere
+      de observación. No obstante, en la tabla que sigue podrá indicarse
+      si existe algún comprobante o algunos comprobantes que están exceptuados
+      de dicha indicación.
+     Observación
+      Default
+    Texto de observación que se desea
+      asociar al ítem. Este texto será sugerido por defecto en cada uno
+      de los comprobantes en los que se requiere acompañar al ítem con una
+      observación.
+    Por lo tanto, al indicar que un ítem
+      requiere de observación en ciertos comprobantes, si el mismo cuenta
+      con una Observación Default
+      asociada, se ofrecerá ésta, pudiendo ser modificada por el usuario.
+    Es importante destacar que el hecho
+      de modificar la Observación Default
+      ofrecida en un comprobante, sólo afecta al comprobante que se está
+      ingresando y no modifica a la observación default indicada en esta
+      tabla.
+     Todos
+      requieren
+    Indicación de si se desea que todos
+      los comprobantes en los que participe el bien que se está definiendo,
+      requieran que se adicione una observación a la línea correspondiente
+      al mismo. No obstante podrán luego indicarse, en la tabla que sigue,
+      si hay comprobantes que estén exceptuados de este requisito.
+     Ninguno
+      requiere
+    Indicación de si se desea que ninguno
+      de los comprobantes en los que participe el servicio que se está definiendo,
+      requieran que se adicione observación alguna. No obstante podrá luego
+      indicarse, en la tabla que sigue, si hay comprobantes en los que sí
+      se requiere de una observación.
+     Tabla
+      Excepto los indicados
+    Esta tabla permite informar todos
+      los tipos de comprobante
+      que se encuentran exceptuados del requisito o si, requieren de observación
+      a excepción de todos los demás (en caso de haber indicado, en el campo
+      precedente, que Ninguno requiere
+      de observación).
+    Puede ingresarse un tipo de comprobante
+      en particular o un grupo de ellos.
+    Pulsando el botón Todos
+        los comprobantes, se incluirán todos los tipos de comprobantes
+      en la tabla.
+    Por otro lado, el botón Vaciar
+        Tabla, permite quitar a todos los comprobantes de la tabla.
+    Código
+    Código del tipo de comprobante que
+      se desea exceptuar del requisito indicado más arriba o para el que
+      se desea establecer el requisito del cual han sido liberados los demás
+      tipos de comprobantes.
+    Se permitirá el ingreso de cualquier
+      tipo de comprobante definido en el sistema en el cual sea posible
+      ingresar ítems (compras, ventas, producción, movimientos de materiales,
+      etc).
+    Nombre
+    Descripción del tipo de comprobantes
+      correspondiente al código informado.
+  
+   Ficha Empresas
+  
+    Si se trabaja con múltiples empresas,
+      aquí se puede indicar para cada bien que se define en qué empresas
+      podrá utilizarse.
+    Por default se muestra una lista con todas
+      las empresas habilitadas para el usuario que está ingresando el bien,
+      y en esta lista se ofrecen marcadas como habilitadas (en color rojo)
+      todas las empresas, de manera de no tener que acceder a esta solapa
+      si se ingresan bienes comunes a todas las empresas.
+    Los bienes comunes a todas las empresas
+      también estarán habilitados en las nuevas empresas que se ingresen
+      en el sistema. Al habilitar un bien en una empresa también se habilita
+      al mismo para ser utilizado en todas las sucursales de la empresa.
+    Pulsando el botón Invertir
+        selección las empresas habilitadas se deshabilitan y las no
+      habilitadas se marcan automáticamente como habilitadas.
+     Empresa
+      de alta
+    Código de empresa en la cual está
+      el usuario en el momento de ingresar el bien en el sistema.
+    Un usuario solamente podrá efectuar
+      modificaciones al bien si se encuentra en la empresa de alta asociada
+      al mismo.
+    Este dato no se ingresa manualmente.
+      Para los bienes nuevos que se ingresen, se muestra la empresa en la
+      cual está el usuario, y para los bienes ya existentes se muestra la
+      empresa en la cual estaba el usuario en el momento de ingresar el
+      bien.
+     Tabla
+      de Empresas
+    Esta tabla muestra todas las empresas
+      habilitadas para el usuario que está ingresando el bien. Recordemos
+      que un usuario podrá tener habilitadas algunas empresas de todas las
+      existentes y esta información podrá indicarse en el punto Usuarios.
+    De las empresas habilitadas para el
+      usuario se mostrarán en color rojo las empresas en las cuales el bien
+      está habilitado.
+    Un bien podrá habilitarse o deshabilitarse
+      para una empresa haciendo doble click en la fila de la tabla correspondiente
+      a la misma.
+    Empresa
+    Código de la empresa en la cual el
+      bien que se está definiendo podrá estar o no habilitado.
+    Nombre
+    Nombre de la empresa correspondiente
+      al código informado.
+  
+   
+        Ficha Adjuntos
+       
+  Permite adjuntar archivos externos.
+  Se pueden asociar múltiples documentos , se podrán agregar o eliminar cuando se deseen, e incluir comentarios en cada documento adjuntado.
+  El nombre de cada documento adjunto funciona como un hipervínculo, al pulsar sobre el nombre del documento es posible abrirlo, editarlo y volverlo a guardar usando las características del editor o programa que corresponda al tipo de documento o archivo.
+  
+    //<![CDATA[
+    if (typeof(TextPopupInit) != 'function') TextPopupInit = new Function();
+    TextPopupInit('a1', 'POPUP607091104');
+    TextPopupInit('a2', 'POPUP607096786');
+    TextPopupInit('a3', 'POPUP607214899');
+    TextPopupInit('a4', 'POPUP607249241');
+    TextPopupInit('a5', 'POPUP607272492');
+    TextPopupInit('a6', 'POPUP607287834');
+    TextPopupInit('a7', 'POPUP607385100');
+    TextPopupInit('a8', 'POPUP607516015');
+    TextPopupInit('a9', 'POPUP607522003');
+    //]]>
+  
+

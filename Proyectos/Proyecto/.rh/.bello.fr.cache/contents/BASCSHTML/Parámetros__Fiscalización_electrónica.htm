@@ -1,0 +1,251 @@
+
+Parámetros fiscalización electrónica
+Permite informar las direcciones de los servicios de 
+ fiscalización electrónica de comprobantes y una serie de datos adicionales 
+ necesarios para el proceso.
+ 
+ FE Argentina
+ Indicar 
+ servicios de homologación/producción
+Para poder hacer pruebas antes de 
+ implementar la fiscalización electrónica de comprobantes, es posible indicar 
+ mediante este hipervínculo las direcciones de los servicios correspondientes 
+ al servidor de homologación de la AFIP.
+Cuando se oprime el hipervínculo, 
+ dependiendo que datos estén ingresados, ya sea los de los servidores de 
+ homologación o los de producción, aparece un mensaje informando que se 
+ van a cambiar los servicios de homologación de la AFIP por los servicios 
+ de producción o viceversa preguntando al usuario si desea continuar.
+Esto cambia los datos de los campos 
+ que dependen de lo indicado para la Fiscalización RG 2485, Fiscalización 
+ RG 2758, Bienes de Capital RG 2557 y Fiscalización RG 2904. Estos campos 
+ se pueden copiar pero no se permite su modificación.
+El sistema mantiene coherentemente 
+ las direcciones de todos los servicios direccionados al servidor de la 
+ AFIP o al de homologación.
+ Autorización
+Se precarga la dirección del servicio 
+ de autenticación y no puede modificarse.
+ Destino
+Se precarga el destino y no puede 
+ modificarse.
+ Fiscalización 
+ RG 2485
+Si se tilda esta opción se precarga 
+ el campo de Fiscalización con la dirección del servicio de fiscalización 
+ de la AFIP y se habilitan los campos para la carga de los formatos correspondientes 
+ a la cabecera emisor, cabecera y detalle del régimen de emisión de comprobantes 
+ electrónicos.
+ 
+ Fiscalización
+Exhibe la dirección del servicio 
+ de fiscalización.
+ 
+ Formatos para comprobante original electrónico
+ 
+ Cabecera emisor
+ 
+ Cabecera
+ 
+ Detalle
+Para dar cumplimiento a lo dispuesto 
+ en el Anexo VI de la resolución general 2485, es posible indicar y definir, 
+ los formatos correspondientes a cabecera emisor, formato cabecera y formato 
+ detalle. El sistema dispone de tres formatos estándares (uno para cada 
+ campo) cuyas características son las requeridas por el anexo VI de la 
+ RG 2485.
+Cuando el comprobante de ventas 
+ presente CAE, el talonario asociado al comprobante indique que la emisión 
+ es por PDF y que se debe enviar por mail, si se indicaron los formatos 
+ en estos campos, junto con el archivo .PDF, se enviará el archivo de texto 
+ correspondiente al RECE - Comprobante original electrónico de acuerdo 
+ a la Resolución 2485.
+Este archivo presentará el mismo 
+ nombre que el archivo con extensión PDF pero con extensión TXT.
+Para acceder a la definición de 
+ los formatos se debe presionar la tecla de función F4 o el botón de alta. 
+ Estos pueden ser modificados o crear nuevos formatos.
+ Exportación 
+ RG 2758
+Si se tilda esta opción se precarga 
+ el campo de Fiscalización con la dirección del servicio de fiscalización 
+ de la AFIP.
+ 
+ Exportación
+Exhibe la dirección del servicio 
+ de fiscalización.
+ Bienes 
+ de capital RG 2557
+Si se tilda esta opción se precarga 
+ el campo de Fiscalización con la dirección del servicio de fiscalización 
+ de la AFIP.
+ 
+ Bienes de capital
+Exhibe la dirección del servicio 
+ de fiscalización.
+ Máquina 
+ donde opera el servicio
+Está destinado a indicar el nombre 
+ de la PC donde opera el servicio de fiscalización electrónica (BCSCAE). 
+ En caso de no indicarlo el servicio de fiscalización correspondiente se 
+ completa al iniciar su actividad.
+Junto al campo se dispone de dos botones. 
+ El primero () permite acceder 
+ al entorno de red para buscar un nombre de PC que esté en la red local; 
+ el segundo () sirve para indicar 
+ como nombre de la PC que opera el servicio, el nombre de la máquina donde 
+ se está ejecutando BASCS.
+Si el campo Máquina donde opera el 
+ servicio se deja en blanco, cuando se ejecute el servicio de fiscalización 
+ electrónica indicando una base de datos, éste completará el dato indicando 
+ la máquina donde está ejecutándose.
+Por el contrario, si al ejecutar el 
+ servicio de fiscalización electrónica para la base de datos en cuestión 
+ el dato del nombre de la máquina que opera el servicio es diferente al 
+ nombre de la máquina donde se está ejecutando dicho servicio, el mismo 
+ se detiene y no se ejecuta, reportando en el seguimiento de dicho servicio 
+ dicha eventualidad.
+Esta metodología de trabajo es la 
+ que permite controlar que no haya dos servicios para una misma base de 
+ datos intentando fiscalizar electrónicamente comprobantes pendientes de 
+ fiscalizar.
+ Buscar 
+ comprobantes cada
+En este campo es posible indicar el 
+ tiempo en segundos que se desea que transcurra entre búsqueda de comprobantes 
+ pendientes de fiscalización electrónica, para proceder a fiscalizarlos.
+ Habilitar 
+ fiscalización en excepción
+Si se tilda esta opción se permite 
+ utilizar esta fiscalización en los ingresos de los siguientes comprobantes 
+ de venta: notas de débito, notas de débito autónomas, y notas de crédito 
+ que no sean diferencias de cambio. 
+ 
+ FE Argentina con detalle
+ Fiscalización 
+ RG 2904
+Si se tilda esta opción se precarga 
+ el campo de Fiscalización con la dirección del servicio de fiscalización 
+ de la AFIP.
+ 
+ Fiscalización
+Exhibe la dirección del servicio 
+ de fiscalización.
+ 
+ Autorización
+Se precarga la dirección del servicio 
+ de autenticación y no puede modificarse.
+ 
+ Informar código alternativo
+Tildar en caso que se desee incluir 
+ el código alternativo de los ítems.
+ 
+ FE Uruguay
+ Fiscalización
+Tildar para activar la fiscalización.
+ Máquina 
+ donde opera el servicio
+Está destinado a indicar el nombre 
+ de la PC donde opera el servicio de fiscalización electrónica (BCSSINURU). 
+ En caso de no indicarlo el servicio de fiscalización correspondiente se 
+ completa al iniciar su actividad.
+Junto al campo se dispone de dos botones. 
+ El primero () permite acceder 
+ al entorno de red para buscar un nombre de PC que esté en la red local; 
+ el segundo () sirve para indicar 
+ como nombre de la PC que opera el servicio, el nombre de la máquina donde 
+ se está ejecutando BASCS.
+Si el campo Máquina donde opera el 
+ servicio se deja en blanco, cuando se ejecute el servicio de fiscalización 
+ electrónica indicando una base de datos, éste completará el dato indicando 
+ la máquina donde está ejecutándose.
+Por el contrario, si al ejecutar el 
+ servicio de fiscalización electrónica para la base de datos en cuestión 
+ el dato del nombre de la máquina que opera el servicio es diferente al 
+ nombre de la máquina donde se está ejecutando dicho servicio, el mismo 
+ se detiene y no se ejecuta, reportando en el seguimiento de dicho servicio 
+ dicha eventualidad.
+Esta metodología de trabajo es la 
+ que permite controlar que no haya dos servicios para una misma base de 
+ datos intentando fiscalizar electrónicamente comprobantes pendientes de 
+ fiscalizar.
+ Buscar 
+ comprobantes cada
+En este campo es posible indicar el 
+ tiempo en segundos que se desea que transcurra entre búsqueda de comprobantes 
+ pendientes de fiscalización electrónica, para proceder a fiscalizarlos.
+ IVA
+ 
+ Tasa básica
+ 
+ Tasa mínima
+Estos datos son requeridos para a 
+ fiscalización en Uruguay.
+Su ingreso sólo estará habilitado 
+ cuando se tilde Fiscalización y se deben indicar valores mayores a cero.
+ Lista 
+ para valuación de egresos de mercadería de exportación
+Código de la lista de precios de egresos 
+ de mercadería de exportación.
+ 
+ FE Remitos argentina
+Esta solapa permite parametrizar la fiscalización 
+ del remito cárnico.
+Para realizar 
+ la fiscalización con el servicio de remito cárnico hay que instalar en 
+ un servidor dicho servicio (BasFiscalizador) y configurarlo.
+ La 
+ documentación asociada con este fiscalizador, su funcionamiento e instalación 
+ es la misma que se utiliza para el fiscalizador de comprobantes de venta 
+ que de QuickPos. Se la puede consultar en la documentación de dicho producto.
+ Fiscalización 
+ de remito cárnico
+Tildar para activar la fiscalización.
+ Servidor 
+ de fiscalización
+Indicar 
+ la IP o nombre del servidor de fiscalización, para ello se disponen de 
+ botones para entorno de red o para indicar mi PC. En caso de usar mi PC, 
+ se recomienda indicar LocalHost.
+ Puerto
+Indicar el puerto TCP/IP para la comunicación con el 
+ servidor de fiscalización.
+ FE Paraguay
+Si se requiriese, se puede tildar fiscalización 
+ Paraguay sin indicar ninguno de los restantes datos relacionados con esta 
+ fiscalización, para el caso en que todos los talonarios que precisan dicha 
+ fiscalización importan CAE en su parametrización.
+En caso que existan talonarios que fiscalicen 
+ a través de BASCS se deberán indicar todos los datos asociados a esta 
+ fiscalización para que el proceso pueda ejecutarse satisfactoriamente.
+ Fiscalización
+Tildar para activar la fiscalización.
+ URL
+Dirección 
+ donde se encuentra instalado el servicio de fiscalización.
+Código de cliente BAS
+Código 
+ asignado a Buenos Aires Software que tiene el emisor de los comprobantes.
+ 
+ Usuario
+Usuario 
+ definido en el fiscalizador electrónico de Paraguay, que tiene que tener 
+ el rol adecuado habilitado, para poder fiscalizar.
+Contraseña
+Clave del 
+ usuario indicado para el fiscalizador.
+Tipo de operación
+Atributo de clientes que va a identificar 
+ el dato “tipo de operación” que se realiza con dicho cliente, dato necesario 
+ para la posterior fiscalización del comprobante.
+Dicho atributo debe tener los siguientes 
+ valores como mínimo:
+Valor: 1 – Descripción: B2B
+Valor: 2 – Descripción: B2C
+Valor: 3 – Descripción: B2G
+Valor: 4 – Descripción: B2F
+Los clientes involucrados en comprobantes 
+ que se fiscalizan electrónicamente en Paraguay tienen que tener siempre 
+ un valor indicado para dicho atributo entre los informados anteriormente.
+
+

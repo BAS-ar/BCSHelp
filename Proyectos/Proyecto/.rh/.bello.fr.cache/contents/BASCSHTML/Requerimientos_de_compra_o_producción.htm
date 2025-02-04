@@ -1,0 +1,129 @@
+
+
+Ingreso de requerimientos
+Esta tarea permite registrar requerimientos. No se permite 
+ registrar comprobantes que no tengan ninguna línea asociada.
+En cualquier momento es posible dejar el comprobante 
+ en estado de preparación, de modo de seguir con el ingreso del mismo 
+ en una instancia posterior.
+ 
+ Comprobantes_referenciados_de_Requerimientos
+Los datos a ingresar, además de la fecha y el número 
+ de comprobante son:
+ 
+ Tipo de requerimiento
+
+	Se debe seleccionar el tipo de requerimiento 
+	 que se va a ingresar.
+	Las opciones son:
+	 Compra
+	 Producción
+	 Requerido 
+	 por
+	Código del agente que hace el requerimiento. 
+	 Debe corresponder al tipo Destino de materiales.
+	Este dato tiene como único fin el ser 
+	 incluido en el informe de requerimientos.
+	 Depósito
+	Código del depósito 
+	 en el que se origina el requerimiento.
+	Debe ingresarse el código de un deposito 
+	 definido en el sistema.
+	 Concepto
+	Concepto asociado al comprobante. Debe 
+	 estar habilitado para proveedores y depósitos.
+	De no indicarse ningún dato se utilizará 
+	 el concepto indicado para compras en los parámetros generales siempre 
+	 y cuando el mismo esté habilitado para agentes o depósitos, caso contrario 
+	 será solicitado.
+ 
+ Necesidad de abastecimiento
+ Por 
+ ítem
+ 
+ Por comprobante
+ 
+ Ficha Ítems
+ Tabla 
+ de Ítems
+
+	Mediante esta tabla se ingresan, uno 
+	 a uno, los ítems que conforman el requerimiento que se está registrando.
+	Para cada ítem se debe informar la 
+	 cantidad que se requiere y la fecha en que es necesario contar con 
+	 ellos.
+	Es importante tener en cuenta que 
+	 la forma en que el sistema solicita los datos a incluir en el comprobante 
+	 varía según cuál sea el tipo de bienes 
+	 de los que se trate. En algunos casos, como por ejemplo cuando se 
+	 trabaja con medidas y colores , se abre una ventana 
+	 en el campo Cantidad para 
+	 requerir los datos necesarios.
+	Ítem
+	Código del ítem a incluir en el requerimiento.
+	Debe corresponder a un bien 
+	 , servicio o ítem 
+	 vario ingresado en el sistema.
+	Puede ingresarse el código del ítem 
+	 o su código alternativo.
+	Descripción
+	Descripción del ítem indicado en el 
+	 dato anterior.
+	Si el ítem tiene asociada una descripción 
+	 larga, se exhibirá esta. Si no, se exhibirá la otra descripción. Si 
+	 el ítem no tiene descripción asociada, se solicitará el ingreso de 
+	 un detalle del mismo en este momento.
+	Cantidad
+	Cantidad de unidades que se requieren 
+	 del ítem indicado.
+	Aquí se presentan varias posibilidades.
+	Si el ítem es un ítem 
+	 vario o es un servicio de tipo 
+	 Porcentaje o Importe, 
+	 no se solicitará información en este campo.
+	Si el ítem trabaja con doble unidad 
+	 de medida, se solicitará el ingreso de las unidades expresado en la 
+	 primera unidad de medida.
+	Si el ítem trabaja con colores 
+	 y medidas se abrirá una 
+	 ventana que solicitará el ingreso de las cantidades para cada color 
+	 y medida solicitada, y al finalizar el ingreso de datos en esa ventana, 
+	 se completará este dato con la cantidad total de unidades pedidas 
+	 para todos los colores y medidas del ítem.
+	Si el ítem es un contenedor, se abrirá 
+	 una ventana que solicita el código del ítem que contiene (se ofrecerá 
+	 el ítem indicado como default en la tabla de contenedores del bien) 
+	 y la cantidad del mismo, y luego se completará este dato con la cantidad 
+	 resultante de multiplicar la cantidad indicada por la cantidad de 
+	 unidades de este indicada en la definición del ítem contenedor.
+	Si el ítem trabaja con dimensiones, 
+	 se abrirá una ventana que solicitará el ingreso de cantidades para 
+	 cada dimensión posible definida para el ítem, y luego se completará 
+	 este dato con la cantidad resultante de multiplicar la cantidad indicada 
+	 por todas las dimensiones del ítem.
+	Entrega
+	Fecha para la que se necesita contar 
+	 con el ítem requerido en la línea del comprobante.
+	Centro de apropiación
+	En caso que la imputación contable 
+	 de compras maneje subcuentas de tipo centro de apropiación, su código 
+	 se debe indicar en este campo.
+	Negocio
+	Si el centro de apropiación administra 
+	 negocios, éste se debe indicar en este campo.
+ 
+ Ficha Observaciones
+
+	 Observaciones
+	Permite ingresar un texto aclaratorio 
+	 acerca del requerimiento ingresado. Este aparece en todos los informes 
+	 en los que se incluye al comprobante.
+ 
+ Ficha 
+ Adjuntos 
+Permite adjuntar archivos externos. Una vez 
+ grabado el comprobante la administración de los archivos adjuntados se 
+ realiza desde el Proceso de Adjuntos.
+
+
+

@@ -1,0 +1,67 @@
+
+
+Impresión Extracciones Bancarias
+Permite imprimir las extracciones bancarias en el sistema.
+La cantidad de copias, formato de impresión, tipo de 
+ emisión (impresora o archivo) se definen en el talonario correspondiente.
+Independientemente de lo que se indique en el talonario, 
+ se dispone de botones 
+ para emitir el comprobante por impresora y en un archivo PDF.
+El formato de impresión está contenido en el archivo 
+ spbfex01.qrp  que contiene los datos del comprobante que se deseen 
+ imprimir y el formato personalizado es  bcsfex01.qrp.
+Si se imprime en archivo, si se desea, se podrá utilizar 
+ una plantilla a utilizar como fondo.
+Los datos a ingresar para la emisión son:
+ 
+ 
+ Desde número
+
+	Número de comprobante de la extracción 
+	 bancaria desde la que se desea imprimir.
+	Deben completarse el prefijo y el número 
+	 de comprobante. Si el número no se completa, se realizará la impresión 
+	 desde la primera extracción bancaria existente para el prefijo indicado.
+	El prefijo trae asociado el número de 
+	 talonario de las extracciones 
+	 bancarias a imprimir.
+ 
+ Hasta número
+
+	Número de comprobante  de la extracción 
+	 bancaria hasta la que se desea imprimir.
+	Deben completarse el prefijo y el número 
+	 de comprobante. Si el número no se completa, se realizará la impresión 
+	 hasta la última extracción bancaria existente para el prefijo indicado.
+	Si se indica desde y hasta un mismo número 
+	 de comprobante, se realizará la emisión de ese depósito en particular.
+ 
+ Sólo los comprobantes no impresos
+
+	Indicación de si se desean emitir solamente las 
+	 extracciones bancarias que aún no han sido emitidas o todas las que 
+	 se incluyen en el rango de números indicado.
+	 
+ 
+ Período a considerar
+ 
+ Para tener en cuenta
+
+	El ingreso de rango de fechas 
+	 no es obligatorio.
+	El 
+	 sistema al momento de imprimir verifica si para el rango de números 
+	 indicado hay comprobantes repetidos en más de una vigencia, avisando 
+	 al usuario de tal eventualidad sugiriendo indicar un rango de fechas 
+	 para evitar las repeticiones. Además, se consulta al usuario si desea 
+	 seguir con la impresión o no.
+	En 
+	 caso de continuar con la impresión el sistema imprimirá todos los 
+	 comprobantes en el rango indicado teniendo en cuenta el rango de fechas 
+	 indicado aunque haya números de comprobante repetidos, por lo que 
+	 un mismo número de comprobante podría imprimirse más de una vez para 
+	 diferentes vigencias de fechas.
+ 
+
+
+

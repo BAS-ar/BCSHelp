@@ -1,0 +1,200 @@
+
+
+Vencimientos
+Mediante este informe se puede obtener un listado de 
+ comprobantes de venta no saldados, ordenados por vencimiento, con su correspondiente 
+ antigüedad en días, y el importe total de la deuda de un determinado cliente o de varios.
+El listado muestra los vencimientos de los comprobantes 
+ de ventas detallando fecha de vencimiento, fecha, tipo, número de comprobante, 
+ cliente , días de antigüedad, importe 
+ del comprobante e importe pendiente de cobrar. Los importes se expresan 
+ en la moneda 
+ de cada comprobante.
+Se imprimen los totales a cobrar discriminados por moneda. 
+ Se podrán indicar diferentes filtros para seleccionar los clientes 
+ cuyos vencimientos se desean listar.
+Es posible, además, incluir en la impresión del informe 
+ una carátula en la que se detallan 
+ todas las opciones seleccionadas por el usuario al solicitarlo.
+Para emitir el listado primero se ingresan los datos 
+ en las distintas fichas contenidas en la tarea, de manera tal de filtrar 
+ la información de acuerdo a las necesidades. Luego se debe presionar el 
+ ícono (botón) de la barra de herramientas superior que corresponda al 
+ tipo de emisión requerida. El uso de estos botones se detalla en el link 
+ Emisión disponible en un párrafo 
+ posterior.
+Al momento de imprimir un informe (tanto por pantalla 
+ como por papel) se puede utilizar el formato standard del sistema, o indicar 
+ un formato personalizado de impresión. 
+ Este último se indica en el campo homónimo que, en general, se encuentra 
+ en la zona inferior de la primer solapa y su funcionalidad está detallada 
+ a continuación en el link Emisión.
+ 
+ Emisión
+FCC (Fecha de 
+ certeza contable)
+ 
+Los datos a ingresar para solicitar la emisión del listado 
+ son:
+ 
+ Ficha Períodos
+
+	 Rango
+	 A Fecha
+	Permite listar los vencimientos a 
+	 una fecha determinada.
+	Los vencimientos que se detallan al 
+	 indicar una fecha en este campo se exhiben con el saldo a tal fecha 
+	 sin ser afectados por todos los comprobantes cuya fecha sea posterior 
+	 a la opción A Fecha.
+	Si no se indica ninguna fecha, se 
+	 incluyen todos los vencimientos.
+	Períodos
+	Se podrán indicar aquí hasta cuatro 
+	 fechas que delimiten distintos períodos en los cuales operan los vencimientos 
+	 de los comprobantes que se desea incluir en el informe.
+	A fin de poder indicar con mayor facilidad 
+	 los períodos se prevé la posibilidad de informar un intervalo de días 
+	 entre período y período, en base al cual el sistema construirá automáticamente 
+	 cada una de las fechas de corte.
+	 Vendedor
+	Código de vendedor 
+	 asociado a los comprobantes de venta cuyos vencimientos se desean 
+	 incluir en el informe.
+	Debe corresponder al código de un 
+	 agente de tipo Vendedor definido 
+	 en el sistema.
+	Puede seleccionarse un vendedor en 
+	 particular o un grupo de vendedores. Si este dato es dejado en blanco, 
+	 se incluirán todos los vendedores en el informe.
+	 Cobrador
+	Código de cobrador 
+	 asociado a los comprobantes de venta cuyos vencimientos se desean 
+	 incluir en el informe. Permite obtener un informe de todos aquellos 
+	 clientes que se incluyen en la gestión de un determinado cobrador.
+	Debe corresponder al código de un 
+	 agente de tipo Cobrador definido 
+	 en el sistema.
+	Puede seleccionarse un cobrador en 
+	 particular o un grupo de cobradores. Si este dato es dejado en blanco, 
+	 se incluirán todos los cobradores en el informe.
+	 Imputación 
+	 contable
+	Códigos de las imputaciones 
+	 contables de clientes asociadas a los comprobantes que se desean 
+	 incluir en el listado.
+	Puede seleccionarse una cuenta en 
+	 particular o un grupo de cuentas. Si este dato es dejado en blanco, 
+	 se considerarán los comprobantes de todos los clientes que se incluyen 
+	 en el listado.
+	Si se indica alguna imputación sólo 
+	 se listarán para cada cliente los comprobantes que tengan asociados 
+	 las imputaciones que se indicaron.
+ 
+ Ficha Opciones
+
+	Desde esta ficha podemos especificar el 
+	 ordenamiento de los datos en el informe y el tipo de listado a obtener.
+	 Ordenamiento
+	Permite ordenar los datos del informe 
+	 con diferentes criterios.
+	Las opciones son:
+	Vencimiento
+	Cliente
+	Cobrador
+	Vendedor
+	Si se selecciona ordenamiento Vencimiento se ordenan los comprobantes 
+	 listados por fecha de vencimiento. Para cada fecha de vencimiento 
+	 se detallan los comprobantes correspondientes a esa fecha.
+	Si se selecciona ordenamiento Cliente se ordenan los datos listados 
+	 por código, razón social o nombre de fantasía, según se indique en 
+	 el cuadro Ordenamiento cliente. Para cada cliente se detallan los 
+	 vencimientos de sus comprobantes asociados y se incluyen totales por 
+	 cliente. Cuando se ordenen las cuentas corrientes por nombre de fantasía 
+	 se detallará el nombre de fantasía junto al código de la cuenta corriente 
+	 y en la misma línea la razón social. Análogamente cuando se orden 
+	 por código o razón social se detallará la razón social junto con el 
+	 código de la cuenta corriente y en la misma línea el nombre de fantasía.
+	Si se selecciona ordenamiento Cobrador se ordenan los datos listados 
+	 por código de cobrador . Para cada 
+	 cobrador se detallan los vencimientos de sus comprobantes asociados 
+	 y se incluyen totales por cobrador.
+	Si se selecciona ordenamiento Vendedor se ordenan los datos listados 
+	 por código de vendedor . Para cada 
+	 vendedor se detallan los vencimientos de sus comprobantes asociados 
+	 y se incluyen totales por vendedor.
+	Si se ordena por cobrador o por vendedor 
+	 se puede indicar un segundo nivel de ordenamiento. Las opciones en 
+	 este caso son:
+	Cliente
+	localidad
+	Ruta
+	Importe
+	Vencimiento
+	Esto implica que los vencimientos 
+	 de los comprobantes correspondientes a cada cobrador o vendedor, serán 
+	 a su vez ordenados por código de cliente, por importe del vencimiento, 
+	 por fecha de vencimiento, o por ruta.
+	En caso de seleccionar cliente, éstos 
+	 se podrán ordenar por código, razón social o nombre de fantasía según 
+	 se indique en el cuadro Ordenamiento cliente.
+	En los informes ordenados por ruta, 
+	 cada ruta presenta totales. Cuando un cliente se encuentre en más 
+	 de una ruta sólo aparece en la primera. Los clientes que no figuren 
+	 en ninguna aparecerán bajo el membrete Sin ruta.
+	Cuando se emita ordenado por cobrador 
+	 o vendedor se puede ordenar por Localidad. En este caso, el ordenamiento 
+	 no sólo considera la localidad asociada al cliente al que corresponde 
+	 el comprobante si no que también considera la descripción de la provincia 
+	 y luego la localidad. En las emisiones detalladas, este tipo de ordenamiento, 
+	 determina totales por provincia-localidad.
+	En las emisiones detalladas, independientemente 
+	 del ordenamiento, cuando se usen formatos personalizados de impresión, 
+	 es posible detallar la cuota, el código de condición de compra/venta 
+	 y la descripción de la condición de compra/venta que corresponden 
+	 al comprobante.
+	 Incluir 
+	 contactos y domicilio
+	Indicación de si se incluyen o no en el 
+	 informe los contactos asociados a los clientes. Si se activa esta 
+	 opción, no se podrá ordenar la información en base a los vencimientos.
+	Cuando se incluyan contactos y domicilio, 
+	 en las emisiones detalladas se detallarán los datos del cliente, los 
+	 del domicilio y los de los contactos pero en las emisiones consolidadas 
+	 se detallarán los datos del cliente, los de los contactos y luego 
+	 los del domicilio.
+	 Tipo 
+	 de Listado
+	Indicación de la forma en que se desean 
+	 listar los datos de los vencimientos de los clientes. Si se desea 
+	 que se exhiban los vencimientos consolidados por cliente 
+	 o detallados por comprobante.
+	Consolidado
+	Detallado
+	En todas las emisiones consolidadas 
+	 se consolidará la información más interna de acuerdo a los cortes 
+	 y, cuando corresponda, subcortes.
+	 Opciones
+	Ficha
+	Continuo
+	El dato Ficha no se encuentra habilitado 
+	 si se indicó ordenamiento Vencimiento.
+	Si se selecciona tipo Ficha 
+	 se imprimen los clientes , cobradores 
+	 o vendedores (según el ordenamiento 
+	 solicitado) separados entre sí, utilizando al menos una hoja para 
+	 cada uno.
+	Las emisiones tipo ficha sólo cambian 
+	 de hoja cuando cambia el valor por el cual se realiza el ordenamiento 
+	 principal, es decir, cuando cambia el cliente/proveedor, cobrador 
+	 o vendedor/comprador y no si cambia el valor correspondiente al subordenamiento.
+	Si se selecciona tipo Continuo 
+	 se imprime un cliente , cobrador 
+	 o vendedor a continuación de otro.
+ 
+ Ficha Clientes
+ 
+ Empresas
+
+
+

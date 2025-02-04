@@ -1,0 +1,144 @@
+
+
+Reserva de mercadería con colores y medidas 
+Esta es una nueva tarea destinada a facilitar la operatoria 
+ relativa a la reserva de mercadería cuando los ítems se administran mediante 
+ medidas y colores.
+Es una pantalla de trabajo muy cómoda destinada a reservar 
+ mercadería disponiendo de toda la información con la que se requiere contar 
+ "a la vista".
+Permite reservar mercadería para un depósito y también 
+ para un ítem que se administra mediante colores y medidas.
+ 
+ 
+ Depósito
+
+	Depósito del cual se reservará la mercadería.
+ 
+ Ítem
+
+	Código del ítem para el cual se realizará 
+	 la reserva.
+	Debe ser un código genérico correspondiente 
+	 a un ítem que maneje colores y medidas.
+ 
+ Cargar pedidos
+
+	Al oprimir el botón "Cargar pedidos" 
+	 aparece un ventana donde se permite indicar los rangos a aplicar para 
+	 la selección de los pedidos externos e internos a reserva.
+	Entre dichos rangos es posible seleccionar:
+	 Fecha 
+	 de entrega hasta
+	Se cargarán los pedidos cuya fecha 
+	 de entrega sea menor o igual a la que se ingresa.
+	 Pedidos
+	Seleccionar Internos y/o Externos, 
+	 según corresponda.
+	 Clientes
+	Si se desea se puede indicar un 
+	 atributo y valor para filtrar los pedidos por cliente.
+ 
+ Ver
+
+	Una vez seleccionados los rangos se precargarán, 
+	 en la grilla superior izquierda, los totales de cantidades en forma 
+	 de grilla de colores y medidas de los pedidos seleccionados.
+	Presionando este botón es posible elegir 
+	 el tipo de cantidades a visualizar entre:
+	cantidades asignadas
+	cantidades pendientes
+	cantidades pendientes de 
+	 reserva.
+	Por defecto se muestran las cantidades 
+	 reservadas pero, al presionar el botón, se despliega un menú contextual 
+	 donde es posible indicar el tipo de cantidades.
+	Al seleccionar alguna de las opciones, 
+	 el título de la tabla indica el tipo de cantidades que se están mostrando.
+ 
+ Grilla de Cantidades (asignadas, pendientes 
+ o pendientes de reserva)
+
+	Según la opción que se haya seleccionado 
+	 en "Ver" serán las cantidades que se exhiban en esta ventana.
+	Al hacer doble clic, o clic, sobre la 
+	 cabecera de las filas (o en cualquier lugar de la fila), se precarga 
+	 la grilla superior derecha (rotulada Pedidos) con un detalle de los 
+	 pedidos correspondientes al color seleccionado o de todos los colores 
+	 si se selecciona la fila Totales.
+ 
+ Pedidos
+
+	Los pedidos se ordenan por fecha de comprobante, 
+	 número de comprobante y fecha de entrega.
+	El título de la tabla indica si se están 
+	 mostrando todos los pedidos (leyenda Pedidos) 
+	 o los pedidos de un determinado color (leyenda Pedidos 
+	 con color xxx).
+	Al hacer doble clic, o clic, sobre la 
+	 cabecera de las filas mostradas en la grilla (o en cualquier lugar 
+	 de la fila), se precarga la grilla inferior izquierda con un detalle 
+	 de los totales de cantidades en forma de grilla de colores y medidas 
+	 del pedido seleccionado para dicha fecha de entrega.
+	Los datos de dicho pedido (número, fecha 
+	 de entrega y destino) se muestran en una leyenda en el centro de la 
+	 pantalla.
+ 
+ Cantidades (reservadas, pendientes o pendientes 
+ de reserva)
+
+	La ventana inferior derecha exhibe el 
+	 título correspondiente a la opción seleccionada en Ver.
+	Al hacer doble clic o clic sobre la cabecera 
+	 de las filas mostradas en esta grilla (o en cualquier lugar de la 
+	 fila), se precarga la grilla inferior derecha, con las cantidades 
+	 asignadas de dicho pedido para el color seleccionado (el título de 
+	 dicha tabla indica el color seleccionado).
+ 
+ Ventana de trabajo de pedidos
+
+	Además de la cantidad reservada, la grilla 
+	 muestra para cada medida, la cantidad pendiente, la cantidad pedida, 
+	 el stock y el stock disponible para cada medida y color.
+	Esta grilla es la grilla de trabajo y, 
+	 en ella, sólo se permite modificar las cantidades reservadas. El resto 
+	 de las grillas tiene por fin consultar su información para facilitar 
+	 la tarea.
+	Al reservar, no se pueden indicar cantidades 
+	 negativas, cantidades superiores a lo establecido en la tolerancia 
+	 en la entrega permitida para los pedidos, o cantidades mayores a la 
+	 disponibilidad para dicho color y medida. Al modificar la cantidad 
+	 reservada el resto de las grillas se actualizan adecuadamente.
+	Si no se controlan las entregas en exceso 
+	 el sistema permite reservar los pedidos hasta el máximo de la cantidad 
+	 disponible para dicho ítem aunque se supere la cantidad pendiente 
+	 del pedido.
+	Si se controlan las entregas en exceso 
+	 pero se definió un porcentaje de exceso permitido en las entregas, 
+	 el sistema permite reservar los pedidos hasta una cantidad que se 
+	 corresponde a la cantidad pendiente del comprobante más el porcentaje 
+	 por exceso permitido. Siempre teniendo en cuenta que haya stock disponible 
+	 suficiente para reservar dicho ítem. Vale aclarar que la modificación 
+	 del tipo de cantidades (grilla superior izquierda) afecta a los datos 
+	 mostrados en las grillas superiores y en la grilla inferior izquierda. 
+	 Pero la grilla inferior derecha siempre muestra las cantidades reservadas 
+	 y, además, es la única que permite la modificación de los datos o 
+	 edición de los mismos. Las demás grillas sólo permiten la consulta 
+	 de dichos datos.
+	Al oprimir el botón de grabar o al oprimir 
+	 F10, el sistema modificará las cantidades reservadas de los pedidos 
+	 de acuerdo a las modificaciones realizadas.
+ 
+//<![CDATA[
+	if( typeof( TextPopupInit ) != 'function' ) TextPopupInit = new Function();
+	TextPopupInit('a1', 'POPUP704930842');
+	TextPopupInit('a2', 'POPUP704937272');
+	TextPopupInit('a3', 'POPUP704973697');
+	TextPopupInit('a4', 'POPUP704992248');
+	TextPopupInit('a5', 'POPUP705001990');
+	TextPopupInit('a6', 'POPUP705012468');
+	TextPopupInit('a7', 'POPUP705027473');
+	TextPopupInit('a8', 'POPUP705030111');
+//]]>
+
+

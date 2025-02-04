@@ -1,0 +1,193 @@
+
+
+Grupo de bienes de uso
+El Grupo de Bienes 
+ de Uso está destinado a automatizar y facilitar el proceso de amortización 
+ de los bienes de uso, mediante la configuración de algunos datos relacionados 
+ con dicho proceso.
+El grupo se asocia a los bienes de uso en el momento 
+ de la afectación de los mismos. El sistema permite afectar como bien de 
+ uso a cualquier bien definido en el sistema. 
+ En el momento en que se hace la afectación se debe indicar a qué grupo 
+ corresponde el inventario conformado por los bienes afectados.
+El grupo lleva información que será utilizada en la 
+ registración contable de los comprobantes de afectación a bienes de uso 
+ y de modificación de inventario, y en la registración contable de los 
+ comprobantes de amortización.
+Los datos a ingresar para definir grupos de este tipo 
+ son:
+ 
+ 
+ Grupo
+
+	Código que identifica al grupo de bienes 
+	 de uso que se está definiendo.
+	Debe indicarse un código de hasta tres 
+	 caracteres, por ejemplo, G1, 
+	 11, BU2, 
+	 etc.
+ 
+ Descripción
+
+	Denominación del grupo que se está definiendo.
+	 
+ 
+ Vida útil
+
+	En este campo es posible indicar la vida 
+	 útil en meses del grupo de bienes de uso.
+	Se debe informar la vida útil correspondiente 
+	 a los bienes a los cuáles se les asociará este grupo de bienes de 
+	 uso.
+	El dato vida útil se utilizará en la afectación 
+	 de bienes de uso y podrá ser modificado en la modificación de bienes 
+	 de uso de inventarios.
+	La vida útil determina la cantidad de 
+	 cuotas de amortización que será necesario generar para amortizar los 
+	 bienes de uso del inventario. Esta cantidad de cuotas depende además 
+	 de la vida útil transcurrida de los bienes del inventario antes de 
+	 la afectación.
+	Las cuotas de amortización se registran 
+	 en el sistema en forma automática a través de la generación de comprobantes 
+	 de amortización, al efectuar el cierre 
+	 operativo de los correspondientes subdiarios 
+	 de bienes de uso.
+	 
+ 
+ Imputaciones contables
+
+	 Bien 
+	 de uso
+	Código de la imputación 
+	 contable en la que se debitará el importe del egreso de los bienes del stock, en los asientos contables 
+	 de los comprobantes de afectación y modificación de inventario que 
+	 tienen asociados el grupo que se está definiendo.
+	Debe ser una imputación contable definida 
+	 en el plan de cuentas del sistema y sin subcuentas o con subcuentas 
+	 de tipo centros de apropiación.
+	Los comprobantes de afectación a bienes 
+	 de uso deben tener asociados un talonario con un subdiario 
+	 de tipo Materiales (puede 
+	 utilizarse dicho talonario tanto como para la afectación como para 
+	 la modificación del inventario), y la registración contable de los 
+	 mismos se realiza en forma automática en el proceso de cierre operativo 
+	 del subdiario de materiales correspondiente.
+	 Amortización
+	Código de la imputación 
+	 contable en la que se debitará el importe de la amortización, 
+	 en los asientos contables de los comprobantes de amortización correspondiente 
+	 a los inventarios que tienen asociados el grupo que se está definiendo.
+	Debe ser una imputación contable definida 
+	 en el plan de cuentas del sistema y sin subcuentas o con subcuentas 
+	 de tipo centros de apropiación.
+	Los comprobantes de amortización deben 
+	 tener asociados un talonario con 
+	 un subdiario de tipo Bienes 
+	 de Uso y la generación y registración contable de los mismos 
+	 se realiza en forma automática en el proceso de cierre 
+	 operativo del subdiario de bienes de uso correspondiente.
+	 Amortiz. 
+	 previas a la afectación
+	Código de la imputación 
+	 contable en la que se acreditará el importe de la amortizaciones 
+	 previas a la afectación, en los asientos contables de los comprobantes 
+	 de amortización correspondiente a los inventarios que tienen asociados 
+	 el grupo que se está definiendo, ,y es utilizada cuando un bien de 
+	 uso del grupo, ya tiene vida útil transcurrida.
+	Debe ser una imputación contable definida 
+	 en el plan de cuentas del sistema y sin subcuentas o con subcuentas 
+	 de tipo centros de apropiación.
+	Los comprobantes de amortización deben 
+	 tener asociados un talonario con un subdiario 
+	 de tipo Bienes de Uso y la 
+	 generación y registración contable de los mismos se realiza en forma 
+	 automática en el proceso de cierre operativo del subdiario de bienes 
+	 de uso correspondiente.
+	 Amortización 
+	 acumulada
+	Código de la imputación 
+	 contable en la que se acreditará el importe de la amortización, 
+	 en los asientos contables de los comprobantes de amortización correspondiente 
+	 a los inventarios que tienen asociados el grupo que se está definiendo.
+	Debe ser una imputación contable definida 
+	 en el plan de cuentas del sistema y sin subcuentas o con subcuentas 
+	 de tipo centros de apropiación.
+	Los comprobantes de amortización deben 
+	 tener asociados un talonario con un subdiario 
+	 de tipo Bienes de Uso y la 
+	 generación y registración contable de los mismos se realiza en forma 
+	 automática en el proceso de cierre operativo del subdiario de bienes 
+	 de uso correspondiente.
+ 
+ Prefijos
+
+	 Para 
+	 comprobantes de amortización
+	Prefijo que determina el talonario 
+	 que se asociará a los comprobantes de amortización que se generarán 
+	 en el proceso de cierre operativo del subdiario de bienes de uso correspondiente.
+	El talonario determinará la numeración 
+	 de los comprobantes que se generen y el subdiario 
+	 de bienes de uso en el cual se registrarán los mismos.
+	 Para 
+	 modificaciones de ajuste
+	Prefijo que determina el talonario 
+	 que se asociará a los comprobantes de modificación de bienes de uso 
+	 que se generen al efectuar el proceso de Ajuste 
+	 de bienes de uso, que afecten a la cuenta informada en el campo 
+	 Bienes de uso del grupo del 
+	 que se trate.
+	El talonario determinará la numeración 
+	 de los comprobantes que se generen y el subdiario 
+	 de materiales en el que se generarán los mismos.
+	 Para 
+	 asientos de ajuste
+	Prefijo que determina el talonario 
+	 que se asociará a los asientos de ajuste que se generen en el Diario 
+	 General al efectuar el proceso de Ajuste 
+	 de bienes de uso, que afecte n a la cuenta informada en el 
+	 campo Amortización acumulada 
+	 del grupo del que se trate.
+ 
+ Ajusta valor restante
+
+	 En moneda 
+	 local
+	Indicación de si se desea que el proceso 
+	 de Ajuste de bienes de uso 
+	 efectuado en la moneda local afecte al valor restante que se haya 
+	 informado para cada uno de los bienes de uso pertenecientes al grupo.
+	 En moneda 
+	 de contabilización adicional
+	Indicación de si se desea que el proceso 
+	 de Ajuste de bienes de uso 
+	 efectuado en la moneda de contabilización adicional afecte al valor 
+	 restante que se haya informado para cada uno de los bienes de uso 
+	 pertenecientes al grupo.
+	Esta opción estará visible si se opera 
+	 con la contabilidad en forma bimonetaria, es decir, si hay una moneda 
+	 de contabilización adicional indicada en el punto Parámetros 
+	 de Datos Generales y se habilitó el mantenimiento de una contabilidad 
+	 bimonetaria (F.A.S. 52).
+ 
+ Ítem para modificación de ajustes
+
+	Código de texto vario que se utilizará 
+	 como ítem en los comprobantes de modificación de inventario que se 
+	 generen al efectuar el proceso de Ajuste 
+	 de bienes de uso, que afecten a la cuenta informada en el campo 
+	 Bienes de uso del grupo del 
+	 que se trate.
+ 
+//<![CDATA[
+	if( typeof( TextPopupInit ) != 'function' ) TextPopupInit = new Function();
+	TextPopupInit('a1', 'POPUP655560853');
+	TextPopupInit('a2', 'POPUP655548745');
+	TextPopupInit('a3', 'POPUP655530918');
+	TextPopupInit('a4', 'POPUP655501889');
+	TextPopupInit('a5', 'POPUP655502137');
+	TextPopupInit('a6', 'POPUP655564161');
+	TextPopupInit('a7', 'POPUP655567596');
+//]]>
+
+

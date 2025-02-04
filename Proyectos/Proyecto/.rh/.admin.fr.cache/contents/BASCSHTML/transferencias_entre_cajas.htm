@@ -1,0 +1,154 @@
+
+
+Ingreso de transferencias
+Una vez informados la fecha y el número del comprobante 
+ se deben completar los datos que se detallan.
+En cualquier momento es posible dejar el comprobante 
+ en estado de preparación, de modo de seguir con el ingreso del mismo 
+ en una instancia posterior.
+ 
+ 
+ Caja Origen
+
+	Código correspondiente a la caja desde 
+	 la cual se realiza la transferencia.
+	 
+ 
+ Caja Destino
+
+	Código correspondiente a la caja a la 
+	 cual se han de transferir los valores.
+	Si se trata de una transferencia entre 
+	 sucursales o de la casa central hacia una sucursal, la caja que aquí 
+	 se informe debe estar asociada a la sucursal en la que se está registrando 
+	 el comprobante.
+ 
+ Cargar los valores
+
+	Mediante este botón es posible agregar 
+	 automáticamente en el comprobante todos los valores en cartera ingresados 
+	 en la caja origen de la transferencia, hasta una fecha determinada.
+	Una vez ingresada la fecha hasta la cual 
+	 se desean cargar los valores, al pulsar el botón se ingresan automáticamente 
+	 en la transferencia todos los valores que se encuentran en cartera 
+	 en la caja indicada como caja origen del comprobante hasta la fecha 
+	 indicada.
+	Las líneas de los valores en cartera que 
+	 no se quieran transferir a la caja destino pueden sacarse del comprobante 
+	 haciendo doble click en las líneas correspondientes de la transferencia.
+ 
+ Ficha Valores
+En esta ficha se deben informar los códigos 
+ de los medios de pago correspondientes 
+ a los valores que se transfieren y el importe de los mismos.
+La información a suministrar para transferir 
+ cada valor depende del tipo de valor a transferir. Por ejemplo, si se 
+ transfiere efectivo en moneda local bastará con suministrar el importe. 
+ Si, en cambio, se transfieren dólares, además se deberá suministrar la 
+ cotización y/o cantidad de dólares.
+Si se transfieren cheques o documentos, BAS 
+ CS exhibe en pantalla el inventario de valores en cartera, de cheques 
+ o pagarés según corresponda, de modo que se seleccionen los cheques o 
+ pagarés a transferir.
+Para cada valor que se ingrese se debe informar 
+ el código del medio de pago que 
+ lo identifica y, en función del tipo de valor del que se trate, se solicitan 
+ diferentes datos.
+ Tabla de valores
+
+	Valor
+	Código de medio 
+	 de pago correspondiente al valor que se transfiere.
+	El tipo de medio de pago que se 
+	 ingrese define la forma en que se solicitarán los datos de la línea 
+	 de la transferencia.
+	A medida que se ingresan líneas 
+	 en la transferencia se va acumulando en el campo Total 
+	 el importe total de los valores transferidos.
+	Cada vez que se ingrese un medio 
+	 de pago, si la imputación contable 
+	 asociada al medio de pago (recordemos que esta depende además de las 
+	 caja origen y destino en las cuales se ingresa el comprobante) trabaja 
+	 en moneda extranjera, se solicitará además el ingreso del importe 
+	 en esta moneda y del cambio correspondiente a la misma.
+	En este caso puede ingresarse 
+	 el importe en moneda local y el cambio, y el sistema calcula automáticamente 
+	 el importe en moneda extranjera; o si se ingresan los 2 importes el 
+	 sistema calcula el cambio resultante.
+	Los detalles de cómo trabaja cada 
+	 medio de pago en particular, pueden verse en el apartado correspondiente 
+	 a las tablas de medios de pago 
+	 . Aquí se explica la forma en que se solicitan los datos a ingresar 
+	 en función del tipo de valor del medio de pago:
+	Efectivo:
+	Se solicita el ingreso del importe 
+	 que se transfiere.
+	Cheque recibido / Cheque 
+	 pago diferido recibido:
+	En este caso se abre una ventana 
+	 que muestra la lista de cheques recibidos que se encuentran en cartera 
+	 en la caja indicada como caja origen de la transferencia. Si se desea 
+	 que se exhiban todos los cheques recibidos, bastará con marcar la 
+	 opción Todos que se encuentra 
+	 un la parte superior derecha de la ventana.
+	Se muestra para cada cheque su 
+	 fecha, banco , número, cuenta corriente, 
+	 plazo e importe.
+	Puede seleccionarse un solo cheque 
+	 o varios haciendo doble click 
+	 en las filas correspondientes a los cheques buscados. Los cheques 
+	 seleccionados quedan marcados en la ventana y al pulsar el botón Ok situado en la parte inferior 
+	 de la ventana, se cierra la ventana de cheques en cartera, y se agregan 
+	 en la transferencia tantas líneas como cheques se hayan seleccionado.
+	Pagaré recibido / Factura 
+	 de crédito recibida:
+	En este caso se abre una ventana 
+	 que muestra la lista de pagarés recibidos que se encuentran en cartera 
+	 en la caja indicada como caja origen de la transferencia. Si se desea 
+	 que se exhiban todos los pagarés recibidos, bastará con marcar la 
+	 opción Todos que se encuentra 
+	 un la parte superior derecha de la ventana.
+	Se muestra para cada pagaré su 
+	 fecha, fecha de vencimiento, cuenta corriente e importe.
+	Puede seleccionarse un solo pagaré 
+	 o varios haciendo doble click 
+	 en las filas correspondientes a los pagarés buscados. Los pagarés 
+	 seleccionados quedan marcados en la ventana y al pulsar el botón Ok situado en la parte inferior 
+	 de la ventana, se cierra la ventana de pagarés en cartera, y se agregan 
+	 en la transferencia tantas líneas como pagarés se hayan seleccionado.
+	Tarjeta:
+	En este caso se abre una ventana 
+	 que muestra la lista de cupones en cartera posibles de seleccionar. 
+	 Se muestran los cupones ingresados en la caja indicada como caja origen 
+	 de la transferencia.
+	Se muestra para cada cupón su 
+	 número, fecha, datos de la tarjeta e importe.
+	Puede seleccionarse un solo cupón 
+	 o varios haciendo doble click 
+	 en las filas correspondientes a los cupones buscados. Los cupones 
+	 seleccionados quedan marcados en la ventana y al pulsar el botón Ok situado en la parte inferior 
+	 de la ventana, se cierra la ventana de cupones en cartera, y se agregan 
+	 en la transferencia tantas líneas como cupones se hayan seleccionado.
+	 
+ 
+ Ficha Observaciones
+
+	 Observaciones
+	Permite ingresar un texto aclaratorio. 
+	 Este aparece en todos los informes en los que se incluye al comprobante.
+ 
+ Ficha 
+ Adjuntos 
+Permite adjuntar archivos externos. Una vez 
+ grabado el comprobante la administración de los archivos adjuntados se 
+ realiza desde el Proceso de Adjuntos.
+//<![CDATA[
+	if( typeof( TextPopupInit ) != 'function' ) TextPopupInit = new Function();
+	TextPopupInit('a1', 'POPUP626739821');
+	TextPopupInit('a2', 'POPUP626754161');
+	TextPopupInit('a3', 'POPUP626723226');
+	TextPopupInit('a4', 'POPUP626707378');
+	TextPopupInit('a5', 'POPUP626723851');
+//]]>
+
+

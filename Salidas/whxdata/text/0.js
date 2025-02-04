@@ -1,0 +1,1 @@
+rh._.exports({"0":[["BASCSQP Configuracion de sucursal"]],"1":[["Sucursales con Quick Pos"]],"2":[[" ","Sucursales con Quick Pos"]],"3":[[" ","Documentación disponible en la documentación de implementación de QP en el SAC."]],"id":"0"})

@@ -1,0 +1,132 @@
+
+
+Definición de cuadros definibles
+Hay una serie de informes que se requieren en la presentación 
+ de los estados contables donde se hace necesario disponer la información 
+ contable en cuadros, agrupando las cuentas de determinada manera de modo 
+ de exponer en forma concisa y clara la información, entre otros podemos 
+ mencionar los cuadros de resultados y los anexos y notas al balance de 
+ presentación.
+A este fin BAS CS dispone de los Cuadros 
+ definibles. Estos permiten diseñar informes contables que muestran 
+ los resultados de efectuar operaciones entre imputaciones contables o 
+ entre los valores correspondientes a determinados centros de costos de 
+ las mismas, exhibiendo los saldos de una cuenta o de un grupos de cuentas, 
+ etc.
+ 
+ 
+ Código
+
+	Identifica al cuadro que se define.
+	 
+ 
+ Descripción
+
+	Identifica, conjuntamente con el código, 
+	 al cuadro que se define.
+	La Descripción figurará como título del 
+	 informe contable correspondiente al cuadro definible.
+ 
+ Atributo
+
+	Se debe indicar un atributo aplicable 
+	 a imputaciones contables.
+	Los valores del atributo que se indique 
+	 serán los que se utilicen para agrupar las imputaciones contables 
+	 en el informe.
+ 
+ Tabla de imputaciones
+
+	En esta tabla ,y en el orden en que se 
+	 desee imprimir, se deben indicar cada una de las líneas a incluir 
+	 en el cuadro definible. Para cada línea es posible indicar los datos 
+	 que se detallan en este cuadro.
+	En caso que deba insertarse una línea, 
+	 se debe posicionar el mouse en la línea siguiente, y presionar la 
+	 tecla de función F6.
+	Descripción
+	Este texto se imprimirá en el cuadro 
+	 definible, en relación al importe de la línea.
+	Dato a imprimir
+	Se debe seleccionar alguna de las 
+	 siguientes opciones:
+	Acumulador
+	Cuentas
+	Valores atributo
+	Según el dato que se seleccione se 
+	 deberán completar, o no, las columnas siguientes en relación a la 
+	 línea.
+	Valor atributo
+	En caso que en Dato a imprimir se 
+	 seleccione Valores atributo, se debe indicar el rango de valores del 
+	 mismo.
+	Luego la línea incluirá los importes 
+	 de las imputaciones correspondientes a los valores del atributo que 
+	 aquí se indiquen.
+	Cuentas
+	En caso que en Dato a imprimir se 
+	 seleccione Cuentas, se debe indicar el rango de imputaciones contables 
+	 a incluir.
+	La línea del cuadro definible exhibirá 
+	 los importes correspondientes a las imputaciones contables que aquí 
+	 se indiquen.
+	Centro de apropiación A
+	En caso que corresponda, se deben 
+	 informar los valores del centro A correspondientes a la cuenta de 
+	 la línea.
+	En el caso que en Dato a imprimir 
+	 se haya informado Valor de atributo o Cuentas, es posible indicar 
+	 un rango de centros de apropiación correspondiente al tipo indicado 
+	 en el encabezado.
+	La línea del cuadro definible exhibirá 
+	 los importes correspondientes a los centros de costos que aquí se 
+	 indiquen en relación a las imputaciones contables informadas.
+	Centro de apropiación B
+	En caso que corresponda, se deben 
+	 informar los valores del centro B correspondientes a la cuenta de 
+	 la línea.
+	En el caso que en Dato a imprimir 
+	 se haya informado Valor de atributo o Cuentas, es posible indicar 
+	 un rango de centros de apropiación correspondiente al tipo indicado 
+	 en el encabezado.
+	La línea del cuadro definible exhibirá 
+	 los importes correspondientes a los centros de costos que aquí se 
+	 indiquen en relación a las imputaciones contables informadas.
+	Cambiar signo
+	En el caso que en Dato a imprimir 
+	 se haya informado Valor de atributo o Cuentas, es posible cambiar 
+	 el signo a los saldos correspondientes a las cuentas indicadas.
+	Recuérdese que los saldos deudores 
+	 son positivos y los acreedores, negativos.
+	Acum.
+	Si se indicó Como Dato a imprimir 
+	 Acumulador, se debe indicar el número de acumulador a imprimir.
+	Se dispone de 99 acumuladores que 
+	 se identifican con los números d e1 a 99.
+	Para acumular el importe de las cuentas 
+	 correspondientes a una línea en un acumulador basta con informar en 
+	 la columna Acumula a, el número de acumulador en el cual se desea 
+	 acumular el importe correspondiente a los saldos de las mismas.
+	Operación
+	Si el importe de la línea se ha de 
+	 acumular en un acumulador, se debe indicar si suma o resta su importe 
+	 del mismo.
+	Acumula a
+	Si el importe de la línea se acumula 
+	 en un acumulador, se debe indicar el número de acumulador correspondiente.
+	No imprimir
+	Se debe activar en caso que la línea 
+	 no se deba imprimir. Por ejemplo, en el caso de estar realizando en 
+	 ella un cálculo intermedio que no se desea mostrar en el cuadro.
+	Nivel
+	Indica el número de nivel de la línea, 
+	 se admite un dígito (0 a 9).
+	Este nivel se utilizará, luego, en 
+	 la emisión de cuadros definibles para que en el formato personalizado 
+	 se apliquen características de formato diferentes a cada tipo de línea 
+	 según cual sea su nivel. Por ejemplo, imprimir determinados niveles 
+	 en negrita, indentados, con otro tipo de letra, etc.
+ 
+
+
+

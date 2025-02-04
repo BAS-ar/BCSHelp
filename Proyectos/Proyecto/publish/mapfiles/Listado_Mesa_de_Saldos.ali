@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aliaslist version="1.0">
+  <alias name="Listado:_Mesa_de_saldos" value="117501" link="../../contents/BASCSHTML/listado__Mesa_de_saldos.htm"></alias>
+  <alias name="Alertas:_Stock_bajo_mínimo" value="117502" link="../../contents/BASCSHTML/alertas__Stock_bajo_minimo.htm"></alias>
+</aliaslist>

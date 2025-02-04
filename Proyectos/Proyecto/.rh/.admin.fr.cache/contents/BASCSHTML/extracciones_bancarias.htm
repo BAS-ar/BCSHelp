@@ -1,0 +1,89 @@
+
+
+Extracciones bancarias
+Luego de ingresar la fecha y el número que identifican 
+ al comprobante, la información a suministrar al sistema se completa con 
+ los datos que se detallan.
+En cualquier momento es posible dejar el comprobante 
+ en estado de preparación, de modo de seguir con el ingreso del mismo 
+ en una instancia posterior.
+ 
+ 
+ Cuenta Bancaria
+
+	Código que identifica a la cuenta 
+	 bancaria de la cual se efectúa la extracción.
+	Los importes que se ingresen en el comprobante 
+	 estarán expresados en la moneda 
+	 de la imputación contable asociada 
+	 a la cuenta bancaria. Si esta imputación trabaja con moneda extranjera 
+	 luego se solicitará el ingreso del cambio correspondiente.
+ 
+ Cambio vigente
+
+	Cambio correspondiente a la moneda de 
+	 la imputación contable asociada a la cuenta bancaria indicada.
+	Puede modificarse libremente.
+	El cambio que se muestra depende de lo 
+	 que se haya indicado en el talonario en relación a la columna de cotizaciones 
+	 a considerar.
+	Si el talonario tiene indicada la columna 
+	 segunda o tercera y no hay valor en dichas columnas para la mayor 
+	 fecha de cotización que es menor o igual a la fecha del comprobante, 
+	 se utilizará el valor de la primera columna.
+	Cabe destacar que lo indicado en el talonario 
+	 sólo se utilizará para mostrar la cotización inicial de las monedas 
+	 cuyo cambio se ingresa en el encabezado del comprobante.
+	Si se modifica el talonario por otro que 
+	 tiene indicada una columna de cotización diferente o inicialmente 
+	 no se indicó nada y el sistema ya ha utilizado dicha cotización para 
+	 el cálculo del valor de un medio de pago, el sistema no permitirá 
+	 la modificación avisando de tal eventualidad. En caso contrario se 
+	 modificará la cotización según lo indicado en el nuevo talonario indicado.
+ 
+ Caja
+
+	Código de la caja 
+	 a la cual ingresa el dinero que se extrae.
+	 
+ 
+ Total comprobante
+
+	Este dato se actualiza automáticamente 
+	 y exhibe el importe correspondiente al total del dinero que se extrae.
+ Ficha Comprobantes
+
+	Como hemos mencionado anteriormente las 
+	 extracciones pueden ser en moneda 
+	 local o extranjera.
+	Consecuentemente, en esta ficha, se deberá 
+	 informar el código (o códigos, en el caso que en el mismo comprobante 
+	 se registren extracciones en ambas monedas) de los correspondientes 
+	 medios de pago .
+	Estos deben corresponder a medios de pago 
+	 de tipo Efectivo y la imputación 
+	 contable de los mismos debe tener la misma moneda que la imputación 
+	 contable de la cuenta bancaria 
+	 asociada al comprobante.
+ 
+ Ficha Observaciones
+
+	 Observaciones
+	Permite ingresar un texto aclaratorio. 
+	 Este aparece en todos los informes en los que se incluye al comprobante.
+ 
+ Ficha Adjuntos 
+Permite adjuntar archivos externos. Una vez 
+ grabado el comprobante la administración de los archivos adjuntados se 
+ realiza desde el Proceso de Adjuntos.
+//<![CDATA[
+	if( typeof( TextPopupInit ) != 'function' ) TextPopupInit = new Function();
+	TextPopupInit('a1', 'POPUP738281605');
+	TextPopupInit('a2', 'POPUP738255455');
+	TextPopupInit('a3', 'POPUP738227116');
+	TextPopupInit('a4', 'POPUP738188464');
+	TextPopupInit('a5', 'POPUP738167296');
+	TextPopupInit('a6', 'POPUP738149792');
+//]]>
+
+

@@ -1,0 +1,138 @@
+
+
+Cierre de carga / Generación de guía
+Mediante esta tarea se cierra la carga en forma definitiva 
+ y no se permite efectuar más modificaciones a la misma.
+Al cerrar una carga se debe asignar la misma a una guía 
+ que puede generarse en este momento.
+Una guía es una entidad que agrupa a los comprobantes 
+ de ventas que conforman una determinada carga. La guía se identifica mediante 
+ un número de comprobante, por lo tanto, debe tener asociado un talonario.
+En los casos en que la mercadería se distribuye, la 
+ guía es la herramienta fundamental para preparar el reparto. Al generar 
+ la guía puede indicarse quién será el transportista 
+ que efectuará el reparto y el camión 
+ que se utilizará.
+Si al generar el comprobante de guía el mismo incluye 
+ egresos de mercadería cuyo talonario requiere fiscalización electrónica 
+ según el servicio Fiscalización Paraguay, los mismos procederán a ser 
+ fiscalizados. Por tanto la impresión de dichos comprobantes con todos 
+ los datos que precisan legalmente, solo podrá realizarse al finalizar 
+ la generación de la guía. 
+En caso que la guía incluya egresos de mercadería que 
+ se fiscalicen según la fiscalización de Paraguay, el sistema controlará 
+ en el ingreso de la misma, que se haya indicado una modalidad de transporte, 
+ una fecha estimada de fin de traslado, el transportista, el camión, que 
+ el transportista tenga indicado un tipo y número de documento, que el 
+ camión tenga indicado el tipo, patente y marca, que se haya indicado un 
+ conductor, y que el mismo tenga indicado un tipo y número de documento.
+En cualquier momento es posible dejar el comprobante 
+ en estado de preparación, de modo de seguir con el ingreso del mismo 
+ en una instancia posterior.
+Los datos a ingresar para el cierre de carga son:
+ 
+ 
+ Lote
+
+	 Tipo
+	Código de lote correspondiente a las 
+	 facturas automáticas cuya carga se desea cerrar.
+	Si se desea cerrar cargas de facturas 
+	 que no provienen del cierre de un lote de facturación automática, 
+	 se debe dejar en blanco este campo.
+	 Fecha
+	Fecha del lote correspondiente a las 
+	 facturas automáticas cuya carga se desea cerrar.
+	Si se desea cerrar cargas de facturas 
+	 que no provienen del cierre de un lote de facturación automática, 
+	 se debe indicar aquí la fecha de los comprobantes de venta que componen 
+	 dichas cargas.
+ 
+ Carga
+
+	Número de carga que se desea cerrar.
+	Debe corresponder a una carga asignada 
+	 a comprobantes de venta del lote y fecha de lote indicados.
+ 
+ Fecha
+
+	Fecha que tendrá la guía que se genere 
+	 al cerrar la carga.
+	 
+ 
+ Número
+
+	Prefijo y número de comprobante que tendrá 
+	 la guía que se genere al cerrar la carga.
+	 
+ 
+ Camión
+
+	Código de camión que se asigna a la guía 
+	 para efectuar el reparto de la mercadería contenida en la carga que 
+	 se está cerrando.
+	 
+ 
+ Patente
+
+	Exhibe la patente del camión indicado.
+ 
+ Modalidad de transporte
+
+	Se puede seleccionar:
+	No aplica
+	Terrestre
+	Marítima/Fluvial
+	Aéreo
+	Multimodal
+	Otro
+ 
+ Número de vuelo
+
+	Aplica para modalidad de transporte Aérea.
+ 
+ Tipo, Marca, Patente
+
+	Estos tres datos se registran para ls 
+	 modalidades de transporte Marítima/Fluvial y Aéreo.
+	 
+ 
+ Fecha estimada de fin de traslado
+
+	Fecha estimada en que finaliza el traslado 
+	 de la carga.
+	 
+ 
+ Transportista
+
+	Código de transportista 
+	 que efectuará el reparto de la mercadería asociada a la carga que 
+	 se está cerrando.
+	 
+ 
+ Conductor
+
+	Código de conductor que efectuará el reparto 
+	 de la mercadería asociada a la carga que se está cerrando.
+	 
+ 
+ Caja
+
+	Este campo se completará automáticamente 
+	 si se informa un camión que tenga indicado en la tabla correspondiente 
+	 una caja. No puede modificarse por el operador.
+ 
+ Depósito
+
+	Este campo se completará automáticamente 
+	 si se informa un camión que tenga indicado en la tabla correspondiente 
+	 un depósito. No puede modificarse por el operador.
+	 
+ 
+ Observaciones
+
+	Texto aclaratorio de la guía que se genera.
+	 
+
+
+

@@ -1,0 +1,224 @@
+
+
+Saldos de proveedores
+Este informe brinda los totales pendientes de las cuentas 
+ corrientes de los proveedores de 
+ la empresa.
+Permite obtener los saldos a pagar a una fecha determinada, 
+ reexpresar las deudas a otras monedas, obtener saldos por referencias 
+ contables, por grupos de proveedores, y hasta deudas con saldos mayores 
+ a un determinado importe.
+El informe puede emitirse detallando los saldos por 
+ cada imputación contable de proveedores 
+ o consolidando los mismos.
+Se muestra para cada proveedor la fecha de último movimiento 
+ y el saldo expresado en la moneda 
+ de cada imputación contable o en la moneda en la cual se deseen reexpresar 
+ los valores.
+También es posible imprimir el listado tipo Ranking. 
+ En este caso para cada proveedor se informa además, a qué porcentaje del 
+ total corresponde su saldo.
+Se podrán indicar diferentes filtros para seleccionar 
+ los proveedores cuyos saldos se desean 
+ listar.
+Es posible, además, incluir en la impresión del informe 
+ una carátula en la que se detallan 
+ todas las opciones seleccionadas por el usuario al solicitarlo.
+Para emitir el listado primero se ingresan los datos 
+ en las distintas fichas contenidas en la tarea, de manera tal de filtrar 
+ la información de acuerdo a las necesidades. Luego se debe presionar el 
+ ícono (botón) de la barra de herramientas superior que corresponda al 
+ tipo de emisión requerida. El uso de estos botones se detalla en el link 
+ Emisión disponible en un párrafo 
+ posterior.
+Al momento de imprimir un informe (tanto por pantalla 
+ como por papel) se puede utilizar el formato standard del sistema, o indicar 
+ un formato personalizado de impresión. 
+ Este último se indica en el campo homónimo que, en general, se encuentra 
+ en la zona inferior de la primer solapa y su funcionalidad está detallada 
+ a continuación en el link Emisión.
+ 
+ Emisión
+ FCC 
+ (Fecha de certeza contable)
+Los datos solicitados para la emisión del listado son 
+ los siguientes:
+ 
+ 
+ Ficha Rangos
+
+	Desde esta ficha podemos seleccionar el 
+	 rango de datos que queremos que incluya el informe. Datos tales como 
+	 proveedores, grupos de proveedores, saldos anteriores a una determinada 
+	 fecha y el destino físico de nuestro informe.
+	Proveedor
+	Códigos de los proveedores 
+	 que se desean incluir en el listado.
+	Puede seleccionarse un proveedor en 
+	 particular o un grupo de proveedores. Si este dato es dejado en blanco, 
+	 se incluirán todos los proveedores en el informe.
+	Código de selección
+	Esta opción nos permite agrupar, en 
+	 nuestros informes, algunos proveedores 
+	 con características en común.
+	De acuerdo al código que se indique 
+	 se considerará o no cada uno de los proveedores del rango seleccionado, 
+	 según el código de selección que se haya asignado a cada uno de ellos.
+	Los proveedores que se incluyen son 
+	 aquellos cuyo código de selección coincide con el ingresado. Se pueden 
+	 ingresar los caracteres ? 
+	 y * que cumplen la función 
+	 de comodines. El carácter ? 
+	 se utiliza para un único carácter y el * 
+	 para varios.
+	Si no se especifica ningún código 
+	 de selección, todos los proveedores del rango solicitado intervendrán 
+	 en el listado.
+	A Fecha
+	Fecha hasta la cual se desean obtener 
+	 los saldos en el informe.
+	Esta fecha permite incluir los saldos 
+	 de las cuentas a pagar cuyos vencimientos sean anteriores a la misma.
+	Si no se indica ninguna fecha se obtienen 
+	 los saldos hasta el final.
+	Imputación contable
+	Código de cuenta 
+	 del Plan de cuentas cuyo saldo desea incluirse en el informe.
+	Esta opción nos permite listar, del 
+	 rango de proveedores seleccionado, sólo los saldos de las operaciones 
+	 efectuadas con determinada imputación contable.
+	Si no se indica ninguna imputación 
+	 se obtendrán los saldos de todas las imputaciones contables con las 
+	 cuales los proveedores registraron sus movimientos.
+	 
+ 
+ Ficha Opciones
+
+	Desde esta ficha podemos optar por pedir 
+	 los saldos de una imputación contable específica, reexpresar los saldos 
+	 a otra moneda, etc.
+	 Reexpresado
+	Indicación de si se desea reexpresar 
+	 los saldos de las cuentas corrientes de los proveedores. Si no se 
+	 marca esta opción, los importes del listado no se reexpresarán.
+	La reexpresión en la emisión por Períodos se hará teniendo en cuenta 
+	 la fecha del primer período indicado, en cambio, cuando se emita A fecha, se utilizará la fecha que 
+	 se haya indicado, en caso contrario se reexpresará a la fecha de emisión 
+	 del listado.
+	en moneda
+	Moneda 
+	 en la cual se desean reexpresar los saldos de las cuentas corrientes 
+	 de los proveedores.
+	Debe corresponder a un código de tabla 
+	 de cotizaciones ingresado en el sistema.
+	Si se indica la opción Reexpresado 
+	 y no se indica ninguna moneda el listado se reexpresará en moneda 
+	 local.
+	Saldos mayores a
+	Importe correspondiente al valor mínimo 
+	 de saldos a listar.
+	Esto permite listar sólo aquellos 
+	 saldos que superan un determinado importe.
+	 Incluir 
+	 saldos en cero
+	Indicación de si se incluyen o no 
+	 en el informe todas aquellas cuentas corrientes de proveedores cuyo 
+	 saldo sea cero.
+	Tipo de Listado
+	Indicación de la forma en que se desea 
+	 imprimir el listado.
+	Las opciones son:
+	Detallado
+	Detallado por comprobante
+	Consolidado
+	Si se selecciona tipo Detallado 
+	 se imprimen los saldos de los proveedores seleccionados, por imputación 
+	 contable.
+	Si se selecciona tipo Detallado 
+	 por comprobante se imprimen los saldos de los comprobantes 
+	 de proveedores con sus respectivos saldos.
+	Si se selecciona tipo Consolidado 
+	 se imprimen los saldos de los proveedores totalizando los saldos de 
+	 las imputaciones contables de cada uno.
+	Ordenamiento
+	Tipo de ordenamiento con el que se 
+	 desea emitir el informe.
+	Las opciones son:
+	Proveedor
+	Imputación contable
+	Ranking
+	Si se selecciona ordenamiento Proveedor se ordenan los datos listados 
+	 por proveedor , puede ser alfabéticamente 
+	 por nombre o por código.
+	Si se selecciona ordenamiento Imputación contable se ordenan los 
+	 datos listados por código de imputación 
+	 contable .
+	Si se selecciona ordenamiento Ranking se ordenan los datos listados 
+	 por el saldo total de las cuentas corrientes. Se mostrará qué porcentaje 
+	 del total de saldos listados, corresponde al saldo de cada proveedor. 
+	 De esta forma aparecerán primero en el listado los proveedores con 
+	 los que la empresa posee mayor deuda y se irán imprimiendo los siguientes, 
+	 ordenados en forma descendente por su saldo.
+	Las opciones tipo Ranking sólo se 
+	 encuentran habilitadas si se selecciona tipo de listado consolidado.
+	Porcentaje de corte
+	Permite incluir en el informe todos 
+	 aquellos proveedores cuyas cuentas corrientes representen el porcentaje 
+	 total de la deuda indicado.
+	Este dato sólo está habilitado si 
+	 el listado se imprime tipo Ranking.
+	Se puede indicar aquí un porcentaje 
+	 hasta el cual se desean imprimir los proveedores de acuerdo al porcentaje 
+	 de incidencia de cada uno. Es decir, se imprimirán los proveedores 
+	 acumulando el porcentaje de cada uno hasta llegar al primero para 
+	 el cual el acumulado supera el porcentaje aquí indicado.
+	Los proveedores en los cuales el acumulado 
+	 de los porcentajes supera el porcentaje de corte no se incluyen en 
+	 el informe.
+ 
+ Ficha Proveedores
+
+	En esta ficha pueden indicarse diferentes 
+	 filtros a aplicar a los proveedores que se incluyen en el listado.
+	Pueden filtrarse los proveedores por atributos y valores de atributos.
+	 Tabla 
+	 de Atributos
+	Esta tabla permite informar los atributos asociados a los proveedores 
+	 que se desean incluir en el listado con sus valores.
+	Código
+	Código del atributo 
+	 asociado a los proveedores que 
+	 se desean incluir en el listado.
+	De acuerdo al atributo y al valor 
+	 de atributo que se indique se considerará o no cada uno de los proveedores 
+	 del rango seleccionado, según los atributos y valores que se hayan 
+	 asignado a cada uno de ellos.
+	Si no se especifica ningún atributo, 
+	 todos los proveedores del rango solicitado intervendrán en el listado.
+	Descripción
+	Descripción del atributo correspondiente 
+	 al código informado.
+	Valor
+	Valor del atributo 
+	 informado asociado a los proveedores 
+	 que se desean incluir en el listado.
+	Debe corresponder a un valor ya 
+	 definido en el sistema para el atributo indicado en el campo Código.
+	De acuerdo al atributo y al valor 
+	 de atributo que se indique se considerará o no cada uno de los proveedores 
+	 del rango seleccionado, según los atributos y valores que se hayan 
+	 asignado a cada uno de ellos.
+	Si se indica un valor, se incluirán 
+	 en el listado los proveedores que tengan asociados el valor del atributo 
+	 indicado.
+	Si no se especifica ningún valor 
+	 de atributo, todos los proveedores del rango solicitado que tengan 
+	 el atributo indicado, intervendrán en el listado.
+	Descripción
+	Descripción del valor asociado 
+	 al atributo correspondiente al código informado.
+ 
+ Empresas
+
+
+

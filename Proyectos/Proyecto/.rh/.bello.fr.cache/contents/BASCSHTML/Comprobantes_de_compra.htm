@@ -1,0 +1,853 @@
+
+
+Ingreso de facturas de compra
+Para registrar facturas de compra se deben completar 
+ los datos de esta ventana. No se permite registrar comprobantes que no 
+ tengan ninguna línea asociada.
+Si el talonario asociado indica generar parte de diferencia, 
+ al ingresar el comprobante al sistema se generará el correspondiente parte 
+ (si hay una talonario asociado adecuado para realizar dicha operación). 
+ En dicho parte se ingresarán automáticamente todas las diferencias detectadas 
+ por comparación con la/s orden/es de compra a la/s cual/es referencia 
+ el comprobante (o a las que referencia el comprobante referenciado).
+En ese caso se agregarán al parte de diferencia las 
+ diferencias encontradas en el precio (mayor o menor), cantidad (mayor 
+ o menor), fecha de entrega (posterior), ítems que no están incluidos en 
+ las órdenes de compra o ítems que están en las órdenes de compra y no 
+ están en el comprobante.
+Cabe destacar que las diferencias de cantidad, fecha 
+ de entrega e ítems que están en las órdenes de compra y no están en el 
+ comprobante sólo se controlarán si la línea del comprobante es con entrega.
+En comprobantes de compras con y sin entrega se controlará 
+ siempre la diferencia en el precio.
+En cualquier momento es posible dejar el comprobante 
+ en estado de preparación, de modo de seguir con el ingreso del mismo 
+ en una instancia posterior.
+Los datos a ingresar son:
+ 
+ 
+ Comprobantes 
+ referenciados facturas compras
+ 
+ Tipo de comprobante
+
+	El comprobante que se registra puede ser 
+	 de alguno de los siguientes tipos:
+	Factura de compra
+	Nota de Débito
+	Nota de Débito autónoma
+	Nota de Crédito
+	Ticket
+	Comprobante interno de compra
+	Factura-Recibo
+	Liquidación
+	Liquidación (crédito)
+	Las notas de débito, notas de crédito 
+	 y facturas pueden ser de contado o de cuenta corriente. Una nota de 
+	 crédito de contado puede corresponder, por ejemplo, cuando se devuelve 
+	 mercadería a un proveedor y éste 
+	 nos reintegra los valores que se han pagado por ella.
+	El Comprobante 
+	 Interno permite registrar aquellos gastos para los que no se 
+	 dispone de los comprobantes correspondientes como, por ejemplo, los 
+	 gastos de transporte, las propinas, etc. Se utiliza fundamentalmente 
+	 para registrar gastos que realizan los titulares de los fondos a rendir 
+	 en los comprobantes de Rendición de Gastos.
+	Mediante el tipo de comprobante Ticket es posible también registrar 
+	 compras que se paguen de contado o que generen una obligación en cuenta 
+	 corriente. Se identifican con una sigla diferente a la que corresponde 
+	 a las facturas de compra, de modo de distinguirlos en todos los informes 
+	 que provee el sistema.
+	Las notas 
+	 de débito autónomas permiten ingresar movimientos que afecten 
+	 la cuenta corriente de los proveedores pero sin que no estén relacionados 
+	 con algún comprobante de compras previamente ingresado en el sistema.
+	Es posible registrar las Factura-Recibo 
+	 que se reciban, tanto de tipo A como de tipo B y C. Estas tienen la 
+	 particularidad de que el pago se registra simultáneamente al registro 
+	 del comprobante, en forma análoga al caso de compras de contado.
+	Las Liquidaciones 
+	 de compra se utilizan en los casos en que no se registran facturas 
+	 al comprar, sino que se documenta la compra con la emisión de una 
+	 liquidación de compras. Un ejemplo de esto es el caso de las compras 
+	 franquiciadas.
+ 
+ Letra
+
+	Letra asociada al tipo de comprobante 
+	 que se registra. Las opciones son:
+	A
+	B
+	C
+	I
+	M
+	La letra I 
+	 se utiliza para las facturas de importación y permite registrar compras 
+	 realizadas mediante importaciones y también, en el caso que corresponda, 
+	 es posible registrar notas de crédito correspondientes a importaciones 
+	 realizadas. Ambos comprobantes se distinguen como comprobantes de 
+	 importación en todos los informes del sistema.
+	La letra M 
+	 aplica a facturas, notas de crédito y de débito y los respectivos 
+	 comprobantes tienen el mismo tratamiento que los que corresponden 
+	 a la letra A.
+ 
+ Número externo
+
+	Para los comprobantes de compra, por ser 
+	 éstos externos al sistema, se prevé la posibilidad de indicar el número 
+	 original con el que fueron generados por el proveedor 
+	 titular de la compra.
+	Este número está compuesto por el prefijo 
+	 y el número propiamente dicho, y el mismo será visualizado en todos 
+	 los informes en los que se incluyan los datos del comprobante.
+	Se controla que no puedan ingresarse dos 
+	 comprobantes de compra con igual número externo y tipo y número de 
+	 documento. Excepto en el caso que ambas tengan distinto soporte.
+ 
+ Número interno
+
+	Número de comprobante que asocia el sistema 
+	 a la factura que se está ingresando. Está compuesto por el prefijo 
+	 o sucursal, y el número propiamente dicho.
+	Cada uno de los comprobantes de compra 
+	 que se registran en el sistema tiene asociado un talonario 
+	 , que se asigna al indicar el prefijo del número. El talonario determina 
+	 el subdiario donde se contabiliza el comprobante, el formato de impresión, 
+	 la impresora en la cual se imprime, la cantidad de copias a emitir 
+	 y la numeración interna que le asigna el sistema dependiendo del tipo 
+	 de numeración del talonario.
+	El talonario determina además si la factura 
+	 es de contado, el subdiario y la numeración del comprobante mediante 
+	 el que se registra el pago contado y si la factura lleva asociada 
+	 la entrega de la mercadería, el subdiario y la numeración del comprobante 
+	 de ingreso de mercadería. Estos datos se obtienen de la tabla de talonarios 
+	 asociados que se indica en la definición del talonario.
+ 
+ Fecha externa
+
+	Fecha asignada por el proveedor 
+	 al comprobante que se está registrando.
+	Este dato quedará siempre en blanco luego 
+	 de grabar una factura.
+	Vale aclarar que si se selecciona un modelo 
+	 que tiene asociado un proveedor, el sistema solicita, antes de cargar 
+	 dicho modelo, la fecha externa del comprobante. En caso de no indicarla 
+	 no se cargará ningún modelo en la ventana; indicándola, se cargará 
+	 el modelo sin inconvenientes.
+	Es importante tener en cuenta que, cuando 
+	 se solicita la emisión de un informe contable en un rango de fechas 
+	 determinado, para decidir qué comprobantes se han de incluir, se tiene 
+	 en cuenta la fecha de registración de los mismos pero, en el listado, 
+	 se exhibe la fecha de los comprobantes propiamente dicha, es decir, 
+	 la fecha externa de los mismos.
+ 
+ Fecha
+
+	Fecha del comprobante.
+ 
+ Soporte
+
+	Permite seleccionar alguna de las siguientes 
+	 opciones:
+	Impreso
+	Impreso Controlador Fiscal
+	Comprobante electrónico
+	Comprobante electrónico de crédito
+	Si se selecciona "Impreso Controlador 
+	 fiscal" se deshabilitan los campos que solicitan el nro de CAI/ 
+	 CAE y el de fecha de vencimiento del mismo. Si se selecciona "Comprobante 
+	 electrónico" se exige el ingreso de nro de CAE y la fecha de 
+	 vencimiento.
+	En los comprobantes con soporte "Comprobante 
+	 electrónico de crédito" se exigirá el ingreso del número de CAE 
+	 y fecha de vencimiento si el talonario así lo requiere. 
+ 
+ Proveedor
+
+	Código del proveedor 
+	 titular del comprobante.
+	Si se está registrando una factura contado 
+	 y el código del proveedor es dejado en blanco, se asumirá que se trata 
+	 de un proveedor ocasional, se permitirá el ingreso del nombre del 
+	 mismo y se asociarán al comprobante los datos configurados para el 
+	 proveedor ocasional en los Parámetros de datos generales.
+	Al ingresar el proveedor se completa la 
+	 pantalla con los datos asociados al mismo, como por ejemplo, el comprador, 
+	 la condición de compra, tratamiento impositivo, provincia, etc. Estos 
+	 datos se ofrecen para agilizar y automatizar el ingreso de la factura, 
+	 pero de ser necesario, pueden modificarse en este momento y los datos 
+	 que se ingresen sólo afectarán al comprobante que se está ingresando.
+	En un tool tip con el  nombre de 
+	 fantasía del proveedor y, de no contar con dicho dato, se observará 
+	 la razón social.
+	Toda vez que se ingrese un comprobante 
+	 de compras, en caso que los bienes comprados tengan informado el rubro 
+	 al que pertenecen, se actualizará automáticamente la tabla de rubros 
+	 correspondiente al proveedor para el que se ingresó el comprobante. 
+	 Los comprobantes que actualizan esta tabla son: Notas de Débito, Tickets, 
+	 Comprobantes internos, Facturas de Compra, Liquidaciones y Factura-Recibo.
+ 
+ Imputación contable
+
+	Código de la imputación 
+	 contable asociada al proveedor.
+	En los comprobantes que se registran en 
+	 cuenta corriente, se ofrecerá en este campo la imputación contable 
+	 Por defecto indicada para 
+	 el proveedor. Esta puede ser modificada por otra imputación de las 
+	 habilitadas en el ingreso del proveedor.
+	En los comprobantes de contado o de tipo 
+	 rendición de gastos, se ofrecerá en este campo la Imputación 
+	 contable para compras contado indicada en el punto Parámetros 
+	 de Datos Generales.
+	Esta cuenta será imputada en el asiento 
+	 contable del comprobante que se está registrando.
+ 
+ Cambio
+
+	Este campo solo se encontrará habilitado 
+	 en caso que la cuenta contable informada en el campo precedente tenga 
+	 una tabla de ajuste asociada. El valor que se ofrece puede ser modificado 
+	 libremente.
+	El cambio que se exhibe depende de lo 
+	 que se haya indicado en el talonario en relación a la columna de cotizaciones 
+	 a considerar.
+	Si el talonario tiene indicada la columna 
+	 segunda o tercera y no hay valor en dichas columnas para la mayor 
+	 fecha de cotización que es menor o igual a la fecha del comprobante, 
+	 se utilizará el valor de la primera columna de cotizaciones. Cabe 
+	 destacar que lo indicado en el talonario sólo se utilizará para mostrar 
+	 la cotización inicial de las monedas cuyo cambio se ingresa en el 
+	 encabezado del comprobante.
+	Si se modifica el talonario por otro que 
+	 tiene indicada una columna de cotización diferente o inicialmente 
+	 no se indicó nada y el sistema ya ha utilizado dicha cotización para 
+	 el cálculo del precio de un ítem o el valor de un medio de pago, el 
+	 sistema no permitirá la modificación avisando de tal eventualidad. 
+	 En caso contrario se modificará la cotización según lo indicado en 
+	 el nuevo talonario indicado.
+	En caso que la moneda del comprobante 
+	 coincida con la moneda de la imputación contable de cuenta corriente 
+	 (o la de contado), sólo se mostrará habilitado el campo del cambio 
+	 de la imputación contable de cuenta corriente (o de la imputación 
+	 contable de contado) y el valor que se ingrese en dicho campo se copiará 
+	 al campo "Cambio" correspondiente a la moneda del comprobante.
+ 
+ Moneda
+
+	Moneda en la cual se ingresa el comprobante.
+	Debe corresponder al código de una tabla 
+	 de tipo Cotización ingresada 
+	 en el sistema.
+	Si no se ingresa una moneda en particular, 
+	 se asumirá que los importes de la factura se ingresan en moneda local. 
+	 En caso contrario, los mismos se ingresarán en la moneda que se indique.
+	Las facturas de compra en moneda local 
+	 pueden registrarse referenciando órdenes de compra en moneda local 
+	 y en otra moneda diferente. En cambio, si la factura es en moneda 
+	 extranjera, todas las órdenes de compra  deberán ser de la misma 
+	 moneda.
+	En el primer 
+	 caso, las órdenes de compra referenciadas que no estén en moneda local, 
+	 deberán tener todas una misma moneda. Es decir, desde una factura 
+	 en moneda local pueden seleccionarse órdenes de compra en moneda local, 
+	 o en moneda local y otra moneda extranjera, o en moneda extranjera 
+	 solamente.
+	Se solicita 
+	 el cambio a utilizar para convertir los precios de las órdenes de 
+	 compra en moneda extranjera  a moneda local, ofreciendo como 
+	 default el cambio de dicha moneda a la fecha externa de la factura. 
+	 Si la imputación contable de cuenta corriente es en la misma moneda 
+	 de la orden de compra y ya se indicó un cambio para dicha moneda, 
+	 no se solicitará el ingreso de la cotización y directamente se convertirán 
+	 los precios utilizando el cambio ya indicado.
+	Independientemente de la moneda en que 
+	 se registra el comprobante, la cuenta corriente se actualiza en la 
+	 moneda asociada a la imputación contable 
+	 que se indique. Por ejemplo, si los precios de compra están en marcos 
+	 y la cuenta corriente se debe actualizar en dólares, mediante las 
+	 cotizaciones correspondientes a ambas monedas se calcula, a partir 
+	 del importe de la factura (expresado en marcos), la deuda en dólares 
+	 y este valor se acredita de la correspondiente cuenta corriente. Las 
+	 cotizaciones a tener en cuenta son las que figuran en las tablas de 
+	 cotizaciones que se administran en el sistema y se tomarán las correspondientes 
+	 a la fecha de registración del comprobante.
+ 
+ Cambio
+
+	Este campo solo se encontrará habilitado 
+	 en caso que se indique una tabla de cotizaciones en el campo precedente. 
+	 El valor que se ofrece puede ser modificado libremente.
+	El cambio que se exhibe depende de lo 
+	 que se haya indicado en el talonario en relación a la columna de cotizaciones 
+	 a considerar.
+	Si el talonario tiene indicada la columna 
+	 segunda o tercera y no hay valor en dichas columnas para la mayor 
+	 fecha de cotización que es menor o igual a la fecha del comprobante, 
+	 se utilizará el valor de la primera columna de cotizaciones. Cabe 
+	 destacar que lo indicado en el talonario sólo se utilizará para mostrar 
+	 la cotización inicial de las monedas cuyo cambio se ingresa en el 
+	 encabezado del comprobante.
+	Si se modifica el talonario por otro que 
+	 tiene indicada una columna de cotización diferente o inicialmente 
+	 no se indicó nada y el sistema ya ha utilizado dicha cotización para 
+	 el cálculo del precio de un ítem o el valor de un medio de pago, el 
+	 sistema no permitirá la modificación avisando de tal eventualidad. 
+	 En caso contrario se modificará la cotización según lo indicado en 
+	 el nuevo talonario indicado.
+	En caso que la moneda del comprobante 
+	 coincida con la moneda de la imputación contable de cuenta corriente 
+	 (o la de contado), sólo se mostrará habilitado el campo del cambio 
+	 de la imputación contable de cuenta corriente (o de la imputación 
+	 contable de contado) y el valor que se ingrese en dicho campo se copiará 
+	 al campo "Cambio" correspondiente a la moneda del comprobante.
+	Cabe destacar también que si la moneda 
+	 de la lista de precios utilizada en el comprobante coincide con la 
+	 moneda de la imputación contable de cuenta corriente (o de contado) 
+	 y, si dicha moneda es diferente a la moneda del comprobante, se utilizará 
+	 el cambio tipeado en pantalla para realizar la conversión del precio 
+	 de la lista a moneda local.
+ 
+ Depósito
+
+	Código del depósito que se asigna a la 
+	 compra.
+	Este depósito será asignado automáticamente 
+	 a todos los ítems que se incluyan en el comprobante, pudiendo modificar 
+	 el mismo, en el caso de algún ítem que no ingrese en este depósito.
+ 
+ Ajuste
+
+	Indicación de si el comprobante es de 
+	 ajuste o no. Este dato sólo puede indicarse para las notas de crédito
+	Las notas de crédito que no son de ajuste 
+	 siempre implican el egreso de los ítems de stock que incluyen, ya 
+	 sea que dicho egreso se registre en el mismo momento, o en una instancia 
+	 anterior o posterior. Las notas de crédito por ajuste, en cambio, 
+	 incluyen información referida a modificaciones de los precios de alguna 
+	 compra realizada, por lo cual, no afectan el stock.
+	Las notas de débito siempre son de ajuste.
+ 
+ Diferencia de cambio
+
+	Indicación de si el comprobante es por 
+	 diferencias de cambio o no. Este dato sólo puede indicarse para las 
+	 liquidaciones tanto de crédito como de débito.
+	El efecto que tienen las liquidaciones 
+	 por diferencias de cambio ingresadas manualmente es el mismo que el 
+	 de las liquidaciones generadas mediante el proceso automático de generación 
+	 de liquidaciones por diferencias de cambio.
+ 
+ Método de pago
+
+	Tipo de pago del comprobante.
+	Las opciones son:
+	Contado
+	Cuenta corriente
+	Rendición de gastos
+	En los comprobantes de Contado, 
+	 el pago debe registrarse conjuntamente con el registro del comprobante
+	Si el comprobante es de Cuenta 
+	 corriente, actualiza la cuenta corriente correspondiente al 
+	 proveedor titular de la operación. 
+	 En este caso, las fechas de vencimiento y los importes a vencer en 
+	 cada fecha se calculan teniendo en cuenta la condición de compra asociada 
+	 al comprobante.
+	Los comprobantes de cuenta corriente, 
+	 en los casos que corresponda, pueden aplicarse, al momento de su registración, 
+	 a los comprobantes que cancelan. Así, por ejemplo, una nota de crédito 
+	 por descuento se aplicará, al momento de su registración, a la factura 
+	 sobre la cual el proveedor ha otorgado el descuento.
+	Mediante la Rendición 
+	 de gastos es posible efectuar el seguimiento del destino que 
+	 se ha dado al dinero otorgado a un individuo o sector.
+	Al ingresar facturas de compra con método 
+	 de pago "Rendición de gastos" se controlará (al grabar el 
+	 comprobante), que no haya ningún ítem en la factura, ni ningún impuesto 
+	 calculado, que utilicen en la registración contable, la imputación 
+	 contable asociada a la rendición de gastos que se indique.
+	Este comprobante, especie de planilla 
+	 en lo que a su uso se refiere, se utiliza para rendir los gastos del 
+	 individuo responsable de los fondos asignados. Su uso posibilita también 
+	 la administración de fondos fijos en caso que la empresa utilice esta 
+	 metodología de trabajo.
+ 
+ Condición de compra
+
+	Código de la condición de compra que se 
+	 asocia a la factura.
+	Se mostrará en este campo el código de 
+	 la condición de compra asociada al proveedor y la misma puede ser 
+	 modificada.
+	La condición de compra determina las fechas 
+	 de vencimiento del comprobante y los importes a vencer en cada fecha.
+	Se ofrece la condición de compra informada 
+	 "Por defecto". En caso que para el proveedor en cuestión 
+	 se hayan habilitado solamente un grupo de condiciones de compra, la 
+	 condición que ofrece el sistema podrá reemplazarse, solamente, por 
+	 algunas de las habilitadas.
+	Si no se han informado, la condición puede 
+	 remplazarse, libremente, por cualquier a de las condiciones de compra 
+	 registradas en el sistema.
+	Si la condición de compra que se utiliza 
+	 se ha definido con el campo "No permite agregar ítems en facturas 
+	 sobre pedido/orden de compra" activado, no será posible agregar 
+	 ítems al comprobante.
+	La excepción a esto sólo está permitida 
+	 en el caso que el comprobante genere partes de diferencia. En ese 
+	 caso se permitirá ingresar bienes (no servicios ni textos varios que 
+	 no sean de tipo de valor nada) que no referencian a ningún comprobante.
+ 
+ 
+ Ficha Ítems
+ Tabla 
+ de Ítems
+
+	Mediante esta tabla se ingresan, uno 
+	 a uno, los ítems que conforman la factura que se está registrando.
+	Dichos ítems pueden ingresarse en 
+	 forma manual invocándolos mediante su código identificatorio o, en 
+	 forma automática, apretando los botones de comprobantes pendientes 
+	 y seleccionando los que se deban cumplimentar.
+	Para cada ítem se debe informar la 
+	 cantidad que se factura, el precio de cada unidad y, en función al 
+	 tipo de ítem del que se trate, se requerirá información adicional.
+	Al respecto, y a título de ejemplo, 
+	 podemos mencionar que para algunos bienes 
+	 se deben detallar las cantidades por color y por medida.
+	Para otros bienes como, por ejemplo, 
+	 los importados que deben administrarse mediante despachos 
+	 , debe informarse el número de despacho que avala el ingreso. Dicho 
+	 despacho debe haberse definido en el sistema con anterioridad.
+	Para aquellos bienes donde cada unidad 
+	 se identifica con un número de serie, se deben informar los números 
+	 de serie asociados a cada una de las unidades que ingresan.
+	Para los bienes que llevan asociado 
+	 un código de partida se debe informar el 
+	 código de la partida correspondiente. La misma debe haberse definido 
+	 con anterioridad en la tabla destinada a tal fin.
+	Es importante tener en cuenta que 
+	 la forma en que el sistema solicita los datos a incluir en el comprobante 
+	 varía según cuál sea el tipo de bienes de los que se trate. En algunos 
+	 casos, como por ejemplo cuando se trabaja con doble unidad de medida 
+	 o con medidas y colores 
+	 , se abre una ventana en el campo Cantidad 
+	 para requerir los datos necesarios.
+	En otros casos, como por ejemplo, 
+	 cuando deben informarse códigos de despachos, de partidas o de centros 
+	 de apropiación, se incorporan columnas adicionales para permitir incluir 
+	 dicha información.
+	 
+	Si el ítem trabaja con colores 
+	 y medidas, en la ventana 
+	 donde se ingresan las cantidades por medida y color, se ve el importe 
+	 correspondiente y haciendo click en cada importe se accede a la ventana 
+	 de detalle de impuestos 
+	 de ese color y esa medida.
+	Datos 
+	 a ingresar en cada línea del comprobante.
+ 
+ Ficha Totales
+
+	Esta ficha exhibe y permite modificar 
+	 impuestos e importes del comprobante.
+	 Provincia 
+	 para Ingresos brutos
+	 Base 
+	 para Retenciones
+	Permite indicar un importe a tener 
+	 en cuenta como base imponible para el cálculo de las retenciones en 
+	 los pagos.
+	Esta funcionalidad toma relevancia 
+	 en los casos en que, por la condición fiscal de la empresa, se reciben 
+	 comprobantes de compras B o C que, si bien incluyen IVA, no lo tienen 
+	 discriminado.
+ 
+ Ficha Entrega
+
+	Esta ficha contiene datos sobre la mercadería 
+	 que se entrega. A saber:
+	 Proviene 
+	 de:
+	Permite seleccionar un domicilio de 
+	 los que corresponden al proveedor.
+	 Cantidad
+	Cantidad entregada de unidades del 
+	 ítem indicado. Ejemplo: 10 copas de cristal.
+	 Peso
+	Peso de la mercadería entregada expresada 
+	 en la unidad de peso del bien indicada en Parámetros de Items. Ejemplo: 
+	 1 Kg.
+	 2da 
+	 unidad
+	Si el bien administra doble unidad 
+	 de medida, en este campo figura la cantidad entregada expresada en 
+	 la segunda unidad del bien.
+	 Volumen
+	Volumen del bien entregado expresado 
+	 en la unidad de volumen indicada en los Parámetros de Ítems.
+ 
+ Ficha Vencim./Aplic. (Vencimientos y Aplicaciones)
+Esta ficha sólo se encuentra habilitada para 
+ los comprobantes con método de pago Cuenta 
+ corriente. Muestra los vencimientos calculados automáticamente 
+ y los comprobantes a los cuales es posible aplicar la factura que se está 
+ registrando.
+Esta ficha puede ser consultada todas las 
+ veces que sea necesario durante el ingreso del comprobante y la información 
+ de la misma se actualizará en forma automática a medida que se ingresan 
+ líneas en el comprobante.
+Las fechas de vencimiento y los importes a 
+ vencer en cada fecha se calculan teniendo en cuenta la condición de venta 
+ asociada al comprobante.
+Si la condición de compra lo indica, no se 
+ permiten modificar las fechas de vencimiento calculadas.
+Si la condición de compra indica la posibilidad 
+ de efectuar modificaciones a las fechas e importes calculados, estas se 
+ podrán efectuar al momento de registrar la factura o, posteriormente, 
+ mediante el uso de una tarea denominada refinanciación de vencimientos
+Los comprobantes de cuenta corriente, en los 
+ casos que corresponda, pueden aplicarse, al momento de su registración, 
+ a los comprobantes que cancelan. Así, por ejemplo, una nota de crédito 
+ por descuento se aplicara, al momento de su registración, a la factura 
+ sobre la cual el proveedor ha otorgado 
+ el descuento.
+ Tabla 
+ de Vencimientos (o Vencimientos a documentar)
+
+	Esta tabla muestra una lista con todos 
+	 los vencimientos calculados por el sistema en base a las líneas ingresadas 
+	 en el comprobante de cuenta corriente.
+	Los importes de los vencimientos se 
+	 expresan en la moneda de la cuenta corriente, es decir, la tabla de 
+	 ajustes definida en la imputación contable 
+	 que se asoció al comprobante.
+	Si el comprobante es ingresado con 
+	 una condición de venta que genera vencimientos a documentar, esta 
+	 tabla pasa a llamarse Vencimientos 
+	 a documentar y en ella se exhiben los importes y los vencimientos 
+	 de las facturas de crédito que emitió el proveedor junto con este 
+	 comprobante. Además, deberá ingresarse el prefijo y el número de cada 
+	 una de ellas.
+	Vencimiento
+	Fecha de vencimiento de la cuota.
+	La misma podrá ser modificada sólo 
+	 si la condición de compra asociada al comprobante lo permite.
+	Importe
+	Importe del vencimiento correspondiente 
+	 a la fecha indicada en el dato anterior.
+	El mismo podrá ser modificado si la 
+	 condición de compra asociada al comprobante lo permite, y al finalizar 
+	 el ingreso del comprobante, para poder registrar el mismo, se controlará 
+	 que la suma de los importes de los vencimientos coincida con el total 
+	 del comprobante ingresado.
+	Al ingresar manualmente vencimientos 
+	 se ofrece como importe del vencimiento el importe que falta para que 
+	 la suma de los vencimientos coincida con el importe total del comprobante 
+	 que se está ingresando. Modificación 
+	 de fechas de vencimiento
+	
+		Es posible modificar la fecha de vencimiento 
+		  de facturas, notas de crédito y liquidaciones.
+		Si bien no se permite indicar más 
+		 de un vencimiento en las notas de crédito, tickets-nota de crédito 
+		 de compras y liquidaciones de crédito de compras, se permite cambiar 
+		 la fecha ofrecida por otra, siempre que sea igual o posterior 
+		 a la fecha del comprobante que se ingresa.
+		Se debe tener en cuenta que no se 
+		 va a permitir modificar la fecha de vencimiento  si se utiliza 
+		 una condición de  venta que indica No 
+		 permitir modificar vencimientos.
+ Aplicados
+
+	Presionando el botón  
+	 se accede a la tarea destinada a registrar Aplicaciones 
+	 para el comprobante que se está registrando.
+ 
+ Ficha Pago Contado
+
+	Esta ficha sólo se encuentra habilitada 
+	 para los comprobantes con método de pago Contado.
+	Aquí se ingresa el pago correspondiente 
+	 a la compra contado que se está registrando.
+	El sistema registra en el inventario de 
+	 valores y en la caja que se indique para efectuar el pago, la salida 
+	 de los valores que conforman el pago y los datos del destinatario 
+	 del mismo. Si el pago se realiza con cheques propios, se actualiza 
+	 la información asociada a las cuentas bancarias correspondientes a 
+	 los cheques que se emiten (resúmenes de cuenta, saldos bancarios, 
+	 etc.).
+	Caja
+	Código de la caja en la que se efectúa 
+	 el pago.
+	Debe indicarse una caja definida en el 
+	 sistema.
+	Importe total a pagar
+	Se exhibe el importe total del pago calculado 
+	 en base a la factura ingresada.
+	Al ingresar los valores que conforman 
+	 el pago se controlará que el total de los mismos coincida exactamente 
+	 con este importe, es decir, que se pague el total de la factura ingresada.
+ Tabla 
+ de Medios de pago
+
+	En esta tabla se ingresan los valores 
+	 que conforman el pago. Los valores se ingresan invocando códigos de 
+	 medios de pago . La información 
+	 a asociar a cada uno dependerá del tipo de valor del que se trate.
+	Si el medio de pago es de tipo Efectivo, bastará con ingresar el 
+	 importe, si es en moneda extranjera, además, se solicita la Cantidad y el Cambio 
+	 correspondiente.
+	Si el medio de pago corresponde a 
+	 cheques de terceros, documentos, o tarjetas de crédito, se deberán 
+	 seleccionar de las listas provistas por el sistema en cada caso, cuáles 
+	 son los valores en cartera que se entregan. Las listas muestran para 
+	 cada tipo de valor, el número, la fecha, fecha de vencimiento, plazo 
+	 de acreditación, banco, importe, cuenta origen, etc.
+	Si el medio de pago corresponde a 
+	 cheques propios se deben informar los datos del mismo: cuenta bancaria, 
+	 importe, chequera, número, fecha, plazo y observaciones.
+	Los detalles de cómo trabajar con 
+	 cada medio de pago en particular, pueden verse en el apartado correspondiente 
+	 a las tablas de medios de pago.
+	Código
+	Código del medio 
+	 de pago correspondiente al valor con el que se paga.
+	Debe corresponder a un medio de pago 
+	 definido en el sistema y de tipo Efectivo, Cheque recibido, Pagaré 
+	 recibido, Tarjeta o Cheque emitido.
+	Descripción
+	Descripción del medio de pago cuyo 
+	 código se informó en el dato anterior.
+	Importe
+	Importe que se paga con el medio de 
+	 pago informado.
+	Si se entrega un valor en cartera, 
+	 el importe se copiará automáticamente a la línea en el momento de 
+	 seleccionar el valor de la lista de valores en cartera provista en 
+	 cada caso dependiendo del tipo de medio de pago indicado.
+	Fecha
+	Fecha del valor que se entrega.
+	Si se paga con efectivo no se solicita 
+	 esta información.
+	Si se entrega un valor en cartera, 
+	 la fecha del mismo se copiará automáticamente a la línea en el momento 
+	 de seleccionar el valor de la lista de valores en cartera provista 
+	 en cada caso dependiendo del tipo de medio de pago indicado.
+	Si se paga con un cheque propio corresponde 
+	 a la fecha del cheque.
+	Número
+	Número del valor que se entrega.
+	Si se paga con efectivo no se solicita 
+	 esta información.
+	Si se entrega un valor en cartera, 
+	 el número del mismo se copiará automáticamente a la línea en el momento 
+	 de seleccionar el valor de la lista de valores en cartera provista 
+	 en cada caso dependiendo del tipo de medio de pago indicado.
+	Si se paga con un cheque propio corresponde 
+	 al número del cheque.
+ 
+ Ficha Más
+
+	En esta ficha se ingresan algunos datos 
+	 generales de la factura.
+	 Tratamiento 
+	 impositivo
+	Código del tratamiento impositivo 
+	 asociado a la factura.
+	Se mostrará, en este campo, el código 
+	 del tratamiento impositivo asociado al proveedor y el mismo puede 
+	 ser modificado.
+	El tratamiento impositivo determina 
+	 la posición del proveedor frente al cálculo del I.V.A. y las categorías 
+	 de percepción de Ganancias e I.V.A.
+	 Trat. 
+	 impositivo provincial
+	Código del tratamiento impositivo 
+	 provincial asociado a la factura.
+	Se mostrará, en este campo, el código 
+	 del tratamiento impositivo provincial asociado al proveedor y el mismo 
+	 puede ser modificado.
+	El tratamiento impositivo provincial 
+	 determina la posición del proveedor frente al cálculo de percepción 
+	 de ingresos brutos.
+	 Despacho
+	En este campo se puede indicar un 
+	 despacho existente. De no existir se puede dar el alta directamente 
+	 desde este campo.
+	Este dato se utiliza para completar 
+	 el número de despacho aduanero en los archivos compatibles de percepciones 
+	 aduaneras, generados con el utilitario BCSSifere. Este utilitario 
+	 permite generar las salidas compatibles conforme a los formatos de 
+	 importación establecidos por el Sistema Federal de Recaudación-Convenio 
+	 multilateral del S.I.A.P.
+	 Comprador
+	Código del comprador 
+	 asociado a la factura.
+	Si todas las órdenes de compra que 
+	 se seleccionan son del mismo comprador, se trae ese código de comprador, 
+	 sino se asume el indicado como comprador por defecto, en relación 
+	 al proveedor.
+	Debe corresponder al código de un 
+	 agente de tipo Comprador definido 
+	 en el sistema.
+	 Provincia
+	Código de la provincia 
+	 asociada a la factura.
+	Se mostrará en este campo el código 
+	 de la provincia asociada al proveedor y la misma puede ser modificada.
+	Debe corresponder al código de una 
+	 provincia definida en el sistema.
+	 Tipo 
+	 de operación
+	Código del tipo de operación asociado 
+	 a la factura.
+	Debe corresponder al código de un 
+	 tipo de operación definido en el sistema.
+	 Observaciones
+	Permite ingresar un texto aclaratorio. 
+	 Este aparece en todos los informes en los que se incluye al comprobante.
+	 Nro. 
+	 Aut. (CAI/CAE)
+	Permite ingresar el número de Código 
+	 de Autorización de Impresión o el Código de Autorización electrónico 
+	 correspondiente al proveedor titular del comprobante.
+	Cabe aclarar que es posible leer con 
+	 un scanner el código de barras que contiene el número de CAI/CAE y 
+	 la correspondiente fecha de vencimiento.
+	 Vencimiento
+	Permite ingresar la fecha de vencimiento 
+	 correspondiente al CAI/CAE informado en el campo anterior.
+	 Código 
+	 de control
+	Campo alfanumérico de 14 posiciones 
+	 que se mantendrá cuando se guarde un comprobante en preparación.
+	 Hojas
+	Permite informar la cantidad de hojas 
+	 correspondiente al comprobante que se está ingresando.
+ 
+ Ficha Rendición 
+ de Gastos
+
+	Esta ficha sólo se encuentra habilitada 
+	 para los comprobantes con método de pago Rendición 
+	 de Gastos.
+	Mediante la Rendición de gastos es posible 
+	 efectuar el seguimiento del destino que se ha dado al dinero otorgado 
+	 a un individuo o sector.
+	Cuando se entrega dinero a un individuo 
+	 habilitado como titular de una Rendición 
+	 de Gastos, se puede 
+	 hacer referencia a una planilla o comprobante de rendición, en particular. 
+	 Del mismo modo, al registrar sus compras y gastos, se puede referenciar 
+	 también, dicha rendición. Luego, los listados correspondientes, mostrarán 
+	 el detalle del dinero que se le ha otorgado y el destino que se la 
+	 ha dado a dichos fondos.
+	Aquí se ingresan los datos del comprobante 
+	 de rendición que se afecta con la compra.
+	 Agente
+	Código del agente 
+	 titular de la rendición de gastos.
+	Debe ingresarse el código de un agente 
+	 definido en el sistema y de tipo Fondo 
+	 fijo.
+	 Comprobante 
+	 de rendición Número
+	Número del comprobante de rendición 
+	 al cual se imputa la compra que se está registrando.
+	Debe ingresarse el prefijo y el número 
+	 del comprobante de un comprobante de rendición de gastos ya definido 
+	 en el sistema y para el agente indicado.
+ 
+ Ficha Proveedores
+
+	Esta ficha se habilita cuando se indica 
+	 como titular de la factura a un proveedor 
+	 ocasional.
+	Además de los datos asociados al mismo 
+	 que se indiquen en los Parámetros de Datos Generales , se pueden indicar 
+	 aquí otros datos asociados específicos del proveedor para el cual 
+	 se ingresa el comprobante.
+	Se puede ingresar el domicilio, localidad, 
+	 código postal, teléfonos, fax, e_mail, provincia, país y tipo y número 
+	 impositivo.
+ 
+ Ficha Control de calidad
+En esta ficha es posible registrar todos los 
+ bienes que presentan fallas de calidad, disponiéndose de los mismos alcances 
+ que ofrece la tarea "Control de calidad".
+Pueden informarse fallas en relación a algunos 
+ ítems y luego continuar suministrando información en relación al comprobante 
+ mediante la tarea "Control de calidad". También es posible no 
+ registrar información en esta instancia, dejando el control para otro 
+ momento.
+ Control 
+ finalizado
+
+	Permite dar por concluido el control 
+	 de calidad en relación al comprobante que se exhibe en pantalla.
+	A pesar de ello, hasta tanto no se 
+	 resuelva el parte de diferencias correspondiente, es posible actuar 
+	 sobre comprobantes para los cuales se haya informado que el control 
+	 se ha finalizado desde la tarea "Control de calidad".
+ Control 
+ de calidad
+
+	En esta ventana es posible registrar 
+	 todos los bienes que presentan fallas de calidad, con los mismos alcances 
+	 que ofrece la tarea "Control de calidad". Se debe informar:
+	Ítem
+	Se deben informar los códigos de los 
+	 ítems para los cuáles se deben informar fallas. Estos deben ser bienes 
+	 (no se permite informar ni servicios ni textos) y deben estar incluidos 
+	 en el comprobante que se está controlando.
+	Si se accede a la ventana de búsqueda, 
+	 se ofrecen todos los ítems del comprobante, siendo posible seleccionar 
+	 varios productos a la vez de modo de precargarlos en forma conjunta.
+	Los bienes que manejan colores y medidas 
+	 deberán ingresarse, uno por cada línea, de acuerdo con la codificación 
+	 del color y la medida correspondiente indicada en los parámetros de 
+	 ítems (no se dispone de la grilla de "medidas-colores" para 
+	 la selección de los ítems a incluir en la ventana).
+	Descripción
+	Corresponde al ítem informado en el 
+	 campo anterior.
+	Cantidad
+	Cantidad de unidades del ítem que 
+	 presentan problemas.
+	Para los bienes que se administran 
+	 con números de serie, se deben seleccionar aquellos en los que, específicamente, 
+	 se observan las fallas a informar en el comprobante.
+	Al registrar el código de un ítem, 
+	 siempre se ofrece por defecto la cantidad ingresada en el comprobante 
+	 a controlar, ésta puede modificarse reemplazándola siempre por una 
+	 cantidad menor.
+	Si se registra en forma directa un 
+	 bien con contenedores o dimensiones (sin seleccionarlo de la búsqueda), 
+	 el sistema ofrecerá los datos correspondientes al primero que se haya 
+	 ingresado en el comprobante.
+	Cantidad en 2da. unidad
+	En caso que las compras se registren 
+	 en la 2da. Unidad, se deben ingresar en este campo la cantidad de 
+	 unidades que presentan fallas.
+	Falla
+	Este campo permite registrar un texto 
+	 descriptivo de la falla detectada en el control de calidad.
+	Despacho
+	Código de despacho correspondiente, 
+	 al ítem a observar (en caso que corresponda).
+	Partida
+	Código de partida correspondiente, 
+	 al ítem a observar (en caso que corresponda).
+	Serie
+	Número de serie correspondiente, al 
+	 ítem a observar (en caso que corresponda).
+ Ficha 
+ Adjuntos 
+Permite adjuntar archivos externos. Una vez 
+ grabado el comprobante la administración de los archivos adjuntados se 
+ realiza desde el Proceso de Adjuntos.
+
+
+

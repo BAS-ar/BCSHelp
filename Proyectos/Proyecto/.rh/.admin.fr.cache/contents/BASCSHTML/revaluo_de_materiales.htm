@@ -1,0 +1,182 @@
+
+
+Revalúo de materiales
+Este comprobante permite aumentar el costo de los bienes en stock incorporando, al valor 
+ de compra o producción, los gastos adicionales que se hubieran realizado 
+ para obtener el bien, por ejemplo, gastos de transporte, de nacionalización, 
+ etc. Dichos gastos se asocian a los comprobantes de ingreso de mercadería 
+ mediante los cuales los bienes mencionados, ingresaron al stock.
+Podemos decir entonces que el valor al cual ingresa 
+ la mercadería estará compuesto por el valor de compra o producción más 
+ todos los revalúos que se le hayan aplicado.
+Los revalúos de materiales no modifican las existencias 
+ de los bienes que incluyen, sino que modifican el costo de dichos bienes.
+En cuanto a la metodología de trabajo, propiamente dicha, 
+ la tarea consiste en invocar un comprobante de ingreso en particular e 
+ imputar, a cada uno de los bienes que figuran en él, un importe determinado. 
+ Este importe se incorpora al costo del bien.
+Si se revalúan bienes que trabajan con medidas 
+ y colores el valor del revalúo 
+ que se ingrese se repartirá proporcionalmente entre todas las medidas 
+ y colores entregadas de cada ítem.
+Las facturas de gastos que se registren en el sistema, 
+ y que luego se deban incorporar a los costos de los bienes 
+ que figuran en un determinado ingreso o parte de producción, deben imputar 
+ una determinada cuenta del plan de cuentas 
+ definida a tal fin, a la que llamaremos, cuenta 
+ compensadora.
+Luego, al invocar el movimiento de ingreso asociado 
+ al gasto se asociará, a cada uno de los bienes incluidos en ese comprobante, 
+ un importe. Dicho importe se incorporará al valor de inventario de cada 
+ bien y el asiento utilizará como contrapartida contable a la cuenta compensadora 
+ mencionada antes. Si el importe que se incorpora al costo coincide (como 
+ debe ser) con el total de la factura de gastos, la cuenta compensadora 
+ quedará saldada.
+La cuenta compensadora, 
+ entonces, funciona como cuenta puente en el sentido que permite transferir 
+ los gastos adicionales relacionados a las compras a los costos de los 
+ correspondientes bienes comprados o producidos.
+Los datos a ingresar para registrar revalúos de materiales, 
+ son los siguientes:
+ 
+ 
+ Fecha
+
+	Fecha del comprobante.
+ 
+ Número
+
+	Número de comprobante que se asocia 
+	 al revalúo que se está ingresando. Está compuesto por el prefijo o 
+	 sucursal, y el número propiamente dicho.
+	Cada uno de los revalúos de materiales 
+	 que se registran en el sistema tiene asociado un talonario 
+	 , que se asigna al indicar el prefijo del número. El talonario determina 
+	 el subdiario donde se contabiliza el comprobante, el tipo de numeración 
+	 del comprobante, etc.
+ 
+ Cuenta compensadora
+
+	Código de la imputación 
+	 contable asociada al comprobante.
+	Debe ingresarse el código de una cuenta 
+	 imputable ya definida en el Plan de cuentas y sin subcuentas.
+	Esta cuenta será imputada en el asiento 
+	 contable del revalúo que se está registrando.
+ 
+ Comprobantes a revaluar
+
+	Indicación del tipo de comprobante que 
+	 se desea revaluar.
+	Las opciones son:
+	 Ingreso
+	Si se selecciona Ingreso se activará 
+	 además el campo Proveedor destinado 
+	 a indicar el código del proveedor titular del comprobantes a revaluar. 
+	 Luego, mediante el botón Buscar, podrá seleccionarse el comprobante 
+	 a revaluar entre todos los comprobantes de ingreso existentes de dicho 
+	 proveedor.
+	 Parte 
+	 Producción
+	Si se selecciona Parte Producción 
+	 podrá seleccionarse el comprobante a revaluar mediante el botón Buscar.
+	 Buscar
+	Mediante este botón se accede a una 
+	 ventana que exhibe todos los ingresos de mercadería o partes de producción 
+	 registrados en el sistema y es posible seleccionar el comprobante 
+	 cuyos bienes se deban revaluar. Serán 
+	 posibles de seleccionar todas las facturas de compra que tengan la 
+	 correspondiente entrega de la mercadería (facturas-remito),todos los 
+	 ingresos de mercadería que ya hayan sido facturados o todos los partes 
+	 de producción registrados.
+	No se pueden revaluar Partes de producción 
+	 (no se ofrecen en la búsqueda) que:
+	 no referencien órdenes 
+	 de producción.
+	 referencien 
+	 órdenes de producción que no estén cerradas.
+	  ocurran en una planta, es decir que 
+	 no sean de depósitos.
+	Una vez seleccionado el comprobante, 
+	 al salir de la ventana de selección, los ítems incluidos en dicho 
+	 comprobante pasan a formar parte del revalúo y se completa la pantalla 
+	 con la fecha y el número del comprobante seleccionado.
+ 
+ Revalúo proporcional
+ 
+ Importe
+
+	Aquí es posible ingresar un importe, 
+	 y pulsando el botón Revaluar, 
+	 el sistema automáticamente distribuye este valor en forma proporcional 
+	 entre los bienes que se están valuando.
+	Esto es útil si se quiere repartir 
+	 el importe de un determinado gasto entre todos los bienes de un ingreso 
+	 de mercadería.
+	Si para algunos bienes ya se había 
+	 ingresado un importe, el importe resultante de este revalúo proporcional 
+	 se agrega a dicho importe.
+ 
+ Ficha Ítems
+ Tabla 
+ de Ítems
+
+	En esta tabla se informan los bienes 
+	 a incluir en el revalúo de materiales que se está ingresando.
+	Dichos ítems se ingresan automáticamente 
+	 al revalúo al seleccionar el comprobante de ingreso de mercadería.
+	Para cada ítem a revaluar se debe 
+	 informar el importe correspondiente.
+	Ítem
+	Código del bienes 
+	 a incluir en el revalúo.
+	Se exhiben los códigos de todos los 
+	 ítems incluidos en el comprobante de ingreso de mercadería seleccionado 
+	 para revaluar.
+	Descripción
+	Descripción del ítem indicado en el 
+	 dato anterior.
+	Cantidad
+	Cantidad de unidades del ítem indicado.
+	Se exhibe la cantidad de unidades 
+	 especificada en el comprobante de ingreso de mercadería seleccionado 
+	 para revaluar.
+	Importe
+	Importe del revalúo asociado al bien 
+	 cuyo código se exhibe en la columna Ítem.
+	El costo de los bienes revaluados 
+	 aumentará incorporando al valor de compra de cada bien, el importe 
+	 aquí indicado.
+ 
+ Ficha Observaciones
+
+	 Observaciones
+	Permite ingresar un texto aclaratorio 
+	 acerca del revalúo ingresado. Este aparece en todos los informes en 
+	 los que se incluye al comprobante.
+ Ficha 
+ Adjuntos 
+Permite adjuntar archivos externos. Una vez 
+ grabado el comprobante la administración de los archivos adjuntados se 
+ realiza desde el Proceso de Adjuntos.
+Para 
+ tener en cuenta
+
+	El sistema no permite revaluar por importes 
+	 en negativo que provoquen que el costo final del producto quede en 
+	 negativo, o sea no se podrán poner importes en negativo cuyo monto 
+	 sea superior al costo del movimiento más el importe de todos los revalúos 
+	 hechos hasta el momento.
+//<![CDATA[
+	if( typeof( TextPopupInit ) != 'function' ) TextPopupInit = new Function();
+	TextPopupInit('a1', 'POPUP775239057');
+	TextPopupInit('a2', 'POPUP775210318');
+	TextPopupInit('a3', 'POPUP775225068');
+	TextPopupInit('a4', 'POPUP774870240');
+	TextPopupInit('a5', 'POPUP775176916');
+	TextPopupInit('a6', 'POPUP775129772');
+	TextPopupInit('a8', 'POPUP637141435');
+	TextPopupInit('a7', 'POPUP775161910');
+//]]>
+
+

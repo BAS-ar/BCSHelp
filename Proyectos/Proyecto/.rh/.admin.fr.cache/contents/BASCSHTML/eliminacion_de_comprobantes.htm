@@ -1,0 +1,238 @@
+
+
+Eliminación de comprobantes
+El sistema permite eliminar comprobantes ingresados 
+ en el sistema.
+Esto es útil si, por ejemplo, debido a errores en la 
+ operación, un comprobante fue registrado en el sistema en forma errónea 
+ y se necesita reingresarlo correctamente.
+En este caso primero debe eliminarse el comprobante 
+ erróneo y luego debe volver a ingresarse el mismo nuevamente en la forma 
+ correcta.
+Se debe tener en cuenta que al eliminar un comprobante 
+ que referencia a otro que tiene indicado un workflow el mismo vuelve a 
+ quedar pendiente como tarea para el tipo de workflow parametrizado.
+La diferencia entre comprobantes eliminados y anulados 
+ radica en que los primeros desaparecen del sistema y pueden ser reingresados 
+ nuevamente, mientras que los comprobantes anulados, no pueden ser reingresados 
+ al sistema. Esto significa que no puede reutilizarse el número de comprobante 
+ asignado a un comprobante anulado, es decir, no puede ingresarse otro 
+ comprobante con el mismo número que el anulado.
+La pantalla solicita una serie de datos a completar 
+ para identificar al comprobante que se desea eliminar. Pueden ingresarse 
+ estos datos o puede seleccionarse el comprobante a eliminar con el botón 
+ Buscar que figura en la parte 
+ inferior de la pantalla. Mediante este botón se accede a una lista que 
+ muestra todos los comprobantes existentes en el sistema con sus datos 
+ asociados. Si algún dato de la pantalla es ingresado antes de pulsar el 
+ botón, ese dato será utilizado como un filtro para buscar comprobantes. 
+ Por ejemplo, si se indica una fecha y luego se pulsa el botón aparecerán 
+ en la lista sólo los comprobantes con la fecha indicada en la pantalla, 
+ si no se indica ninguna fecha aparecerán todos.
+Es importante tener en cuenta que:
+No 
+ se podrán eliminar Partes de Producción parciales si la Orden de Producción 
+ ya tiene el Parte final. En ese caso se debe eliminar, primero, el Parte 
+ final y luego los parciales.
+No 
+ se podrán eliminar cancelaciones de órdenes de producción y partes de 
+ producción que referencien a órdenes de producción cerradas, se tendrá 
+ que reabrir las mismas para realizar la eliminación.
+Cuando 
+ se trabaje con Carpetas 
+ de Importación , no se podrá 
+ eliminar ningún comprobante de compras (facturas, nota de debito o crédito, 
+ remitos de ingreso, ordenes de compra, etc) que tuviera líneas de bienes 
+ asociadas a carpetas de importación.
+No 
+ es posible eliminar un comprobante de compras o ventas si el mismo está 
+ aplicado a otro comprobante. Durante el proceso de eliminación el sistema 
+ informará de dicha eventualidad y ofrecerá una lista con los comprobantes 
+ a los que está aplicado.
+No 
+ se permite eliminar una efectivización de cheques diferidos si efectiviza 
+ algún cheque que fue reingresado luego de ser efectivizado. En ese caso 
+ primero va a tener que eliminarse ese comprobante que reingresa el/los 
+ cheque/s y luego sí se podrá eliminar la efectivización.
+Debe tenerse en cuenta que los datos de la pantalla 
+ pueden ser completados manualmente o automáticamente mediante el botón 
+ Buscar. Si los datos se ingresan 
+ en forma manual al finalizar el ingreso de los mismos y ejecutar la eliminación, 
+ el sistema verifica que los mismos correspondan a un comprobante existente 
+ en el sistema.
+ 
+Los datos a ingresar para solicitar una eliminación 
+ son:
+ 
+ Fecha
+
+	Fecha del comprobante a eliminar.
+	 
+ 
+ Tipo de comprobante
+
+	Tipo 
+	 de comprobante a eliminar.
+	El sistema permite seleccionar el tipo 
+	 de comprobante de una lista que contiene todos los tipos de comprobantes 
+	 posibles de eliminar. Pulsando el botón Buscar 
+	 se accede a esta lista que muestra los tipos de comprobante ordenados 
+	 alfabéticamente por su nombre.
+	El tipo que se seleccione determinará 
+	 qué datos de la pantalla es necesario completar para posibilitar la 
+	 eliminación.
+ 
+ Número interno
+
+	Número interno de comprobante que 
+	 se desea eliminar. Está compuesto por el prefijo o sucursal, y el 
+	 número propiamente dicho.
+	 
+ 
+ Número externo
+
+	Número externo de comprobante que 
+	 se desea eliminar. Está compuesto por el prefijo o sucursal, y el 
+	 número propiamente dicho.
+	Este dato sólo será necesario indicarlo 
+	 si se seleccionó un tipo de comprobante que lo requiera, por ejemplo, 
+	 un comprobante de compras o cualquier otro que sea externo al sistema.
+ 
+ Fecha externa
+
+	Fecha externa asignada al comprobante 
+	 que se está seleccionando para eliminar.
+	Este dato sólo será necesario indicarlo 
+	 si se seleccionó un tipo de comprobante que lo requiera, por ejemplo, 
+	 un comprobante de compras o cualquier otro que sea externo al sistema.
+ 
+ Cliente-Proveedor-Agente
+
+	Código del cliente 
+	 , proveedor o agente 
+	 titular del comprobante que se desea eliminar.
+	 
+ 
+ Cuenta bancaria
+
+	Cuenta 
+	 bancaria asociada al comprobante que se desea eliminar.
+	Este dato sólo será necesario indicarlo 
+	 si se seleccionó un tipo de comprobante que lo requiera, por ejemplo, 
+	 un comprobante de bancos como depósito bancario, liquidación de tarjetas, 
+	 etc.
+	 
+ 
+ Caja
+
+	Caja del comprobante que se desea eliminar
+ 
+ Depósito/Planta
+
+	Depósito o planta del comprobante 
+	 que se desea eliminar.
+	 
+ 
+ Importe
+
+	Importe del comprobante que se desea 
+	 eliminar.
+	 
+ 
+ Buscar
+
+	Precarga una grilla con los comprobantes 
+	 que correspondan a los filtros ingresados, de modo se seleccionar 
+	 el que corresponde eliminar.
+	 
+ 
+ Motivo de la eliminación
+
+	Si se 
+	 requiere, se puede ingresar acá el  motivo por el cual se elimina 
+	 el comprobante.
+	 
+ 
+ Para tener en cuenta
+
+	Al eliminar un egreso de mercaderías, factura de 
+	 venta con entrega o nota de crédito de compras con entrega, que generaron 
+	 comprobantes de desubicación cuando se ingresaron las eliminaciones 
+	 se ofrece la posibilidad de eliminar en el mismo momento los comprobantes 
+	 de desubicación, con opciones de: aceptar la eliminación, no eliminar 
+	 las desubicaciones asociadas o cancelar la eliminación del comprobante 
+	 de egreso.
+	Para comprobantes que ingresen mercadería al stock, 
+	 si el depósito maneja múltiples ubicaciones, se controla que la cantidad 
+	 a eliminar se encuentre no ubicada.
+	Los comprobantes que 
+	 participan en el circuito de producción que son generados automáticamente 
+	 al registrar otros comprobantes, quedarán relacionados al comprobante 
+	 que les dio origen. Esta dependencia  influirá en el momento de la eliminación 
+	 o anulación de dichos comprobantes.
+	Lo mismo ocurre con 
+	 los remitos de egreso con origen en una planta de terceros generados 
+	 automáticamente por el ingreso con origen en dicha planta de terceros. 
+	 Dicho egreso no podrá eliminarse individualmente y sólo podrá hacerse  eliminando el comprobante 
+	 de ingreso que le dio origen.
+	Los partes de producción 
+	 de plantas de terceros generados automáticamente podrán ser eliminados 
+	 individualmente al igual que los ingresos por los servicios de terceros, 
+	 pero se eliminarán automáticamente al eliminar el ingreso que les 
+	 dio origen.
+ 
+Controles 
+ personalizados
+
+	Es  posible para 
+	 un usuario, agregar controles especiales o acciones propias de su 
+	 implementación, que se ejecutarán luego de los controles que realiza 
+	 BASCS en el momento de la eliminación o anulación de un comprobante.
+	Esos controles y/o 
+	 acciones deben incluirse en la base de datos en una nueva stored procedure 
+	 llamada sp_eliminacion_valida_programable.
+	La stored procedure 
+	 tiene los siguientes parámetros:
+	   @Nrotrans     integer                                número 
+	 de transacción del comprobante de eliminación/anulación
+	   @error             integer 
+	 OUTPUT               número 
+	 de error
+	   @msgerror     char(155) 
+	 OUTPUT           mensaje 
+	 de error que se quiere devolver
+	Los parámetros @error 
+	 y @msgerror sirven para indicar que el proceso NO terminó satisfactoriamente 
+	 y se generó un aviso al operador que impedirá continuar con la eliminación/anulación.
+	En el caso de que 
+	 el proceso termine exitosamente el parámetro @error debería valer 
+	 0 (es el valor que tiene al inicio de la llamada).
+	Para abortar la transacción 
+	 es necesario indicar un valor diferente a cero en el parámetro @error 
+	 y el mensaje de aviso al operador en el parámetro @msgerror.
+	Se debe tener 
+	 en cuenta que EL CÓDIGO INGRESADO 
+	 EN ESTA STORED PROCEDURE NO PUEDE DEVOLVER RESULTSET DE DATOS, GENERAR 
+	 TRANSACCIONES O HACER COMMIT O ROLLBACK DE NINGÚN TIPO.
+	Se encontrarán ejemplos 
+	 de funcionalidad en el código de dicha stored procedure.
+ 
+//<![CDATA[
+	if( typeof( TextPopupInit ) != 'function' ) TextPopupInit = new Function();
+	TextPopupInit('a3', 'POPUP668979738');
+	TextPopupInit('a4', 'POPUP668963629');
+	TextPopupInit('a5', 'POPUP668994625');
+	TextPopupInit('a6', 'POPUP669008937');
+	TextPopupInit('a7', 'POPUP669828643');
+	TextPopupInit('a8', 'POPUP669819636');
+	TextPopupInit('a9', 'POPUP669851896');
+	TextPopupInit('a10', 'POPUP669871242');
+	TextPopupInit('a11', 'POPUP669886899');
+	TextPopupInit('a12', 'POPUP669905586');
+	TextPopupInit('a13', 'POPUP669906313');
+	TextPopupInit('a14', 'POPUP669921990');
+	TextPopupInit('a1', 'POPUP640865394');
+	TextPopupInit('a2', 'POPUP638871421');
+//]]>
+
+
