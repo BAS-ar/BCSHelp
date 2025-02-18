@@ -29,6 +29,7 @@ jobs:
           password: ${{ secrets.password }}
           local-dir: ./Salidas/
           server-dir: /BASCS-4.2.1/Reuniones/RoboHelp2/
+          port: 2112
 
       - name: enviar correo 
         if: failure() || cancelled()
