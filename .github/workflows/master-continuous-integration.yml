@@ -30,6 +30,7 @@ jobs:
           local-dir: ./Salidas/
           server-dir: /BASCS-4.2.1/Reuniones/RoboHelp2/
           port: 2112
+          protocol: ftps
 
       - name: enviar correo 
         if: failure() || cancelled()
