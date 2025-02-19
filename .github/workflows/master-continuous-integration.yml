@@ -24,8 +24,8 @@ jobs:
       - name: Copy files to FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          server: ftp.bas.com.ar
-          username: bascsd
+          server: bas.com.ar
+          username: uploadcontent
           password: ${{ secrets.password }}
           local-dir: ./Salidas/
           server-dir: /BASCS-4.2.1/Reuniones/RoboHelp2/
