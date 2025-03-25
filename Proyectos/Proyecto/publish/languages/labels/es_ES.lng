@@ -26,7 +26,7 @@
     <element name="HighlightSearchResults" value="Resaltar resultados de búsqueda"></element>
     <element name="Filter" value="Filtrar"></element>
     <element name="NavTip" value="Menú"></element>
-    <element name="Copyright" value="Versión 4.6.0 (actualizado hasta FX047 inclusive) Vigencia: 31-07-2024"></element>
+    <element name="Copyright" value="Versión 4.6.0 (actualizado hasta FX052 inclusive) Vigencia: 25/03/25"></element>
     <element name="unsetAsFavorite" value="Quitar de favoritos"></element>
     <element name="nofavoritesFound" value="No ha marcado ninguna página como favorita."></element>
     <element name="SearchButtonTitle" value="Buscar"></element>
