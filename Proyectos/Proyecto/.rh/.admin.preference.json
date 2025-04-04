@@ -3,7 +3,12 @@
     "title": "bienvenido",
     "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/bienvenido.htm",
     "pinned": false,
-    "time": "Mar 25, 9:33 AM"
+    "time": "Apr 4, 10:41 AM"
+  }, {
+    "title": "Bascshelp",
+    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/toc/Bascshelp.toc",
+    "pinned": false,
+    "time": "Apr 4, 10:41 AM"
   }, {
     "title": "es_ES",
     "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/publish/languages/labels/es_ES.lng",
@@ -119,11 +124,6 @@
     "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/comprobantes_de_compras__Impresion.htm",
     "pinned": false,
     "time": "Mar 21, 1:47 PM"
-  }, {
-    "title": "parametros__Cuentas_corrientes",
-    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/parametros__Cuentas_corrientes.htm",
-    "pinned": false,
-    "time": "Mar 21, 10:37 AM"
   }],
   "generate.outputs": {
     "C:/Productos LES RH2022/Bascshelp_test/publish/presets/Test2.preset": {
@@ -165,7 +165,7 @@
     "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/publish/presets/Responsive HTML.preset": {
       "exists": true,
       "path": "C:/Productos LEN RH2022/BASCS/Salidas/index.htm",
-      "time": "2025-03-25T09:39:00-03:00",
+      "time": "2025-04-04T09:51:03-03:00",
       "logFile": "C:/Users/admin/AppData/Local/Temp/RHTMP/Responsive HTML.ehtml"
     }
   },
