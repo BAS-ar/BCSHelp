@@ -3,12 +3,82 @@
     "title": "bienvenido",
     "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/bienvenido.htm",
     "pinned": false,
-    "time": "Apr 4, 10:41 AM"
+    "time": "Apr 8, 9:33 AM"
+  }, {
+    "title": "Topic References",
+    "path": "Topic References.report",
+    "pinned": false,
+    "time": "Apr 8, 9:32 AM"
+  }, {
+    "title": "retencion_de_SUSS_en_pagos_y_recibos",
+    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/retencion_de_SUSS_en_pagos_y_recibos.htm",
+    "pinned": false,
+    "time": "Apr 8, 9:30 AM"
+  }, {
+    "title": "retencion_de_IIBB_en_recibos",
+    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/retencion_de_IIBB_en_recibos.htm",
+    "pinned": false,
+    "time": "Apr 8, 9:30 AM"
+  }, {
+    "title": "ficha_retencion_de_I_V_A",
+    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/ficha_retencion_de_I_V_A.htm",
+    "pinned": false,
+    "time": "Apr 8, 9:28 AM"
+  }, {
+    "title": "ficha_Retencion_de_ganancias",
+    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/ficha_Retencion_de_ganancias.htm",
+    "pinned": false,
+    "time": "Apr 8, 9:20 AM"
+  }, {
+    "title": "recibos",
+    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/recibos.htm",
+    "pinned": false,
+    "time": "Apr 8, 9:17 AM"
+  }, {
+    "title": "tabla__Empresas",
+    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/tabla__Empresas.htm",
+    "pinned": false,
+    "time": "Apr 8, 9:11 AM"
+  }, {
+    "title": "tarjetas__Liquidacion",
+    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/tarjetas__Liquidacion.htm",
+    "pinned": false,
+    "time": "Apr 8, 9:10 AM"
+  }, {
+    "title": "parametros__Fiscalizacion_electronica",
+    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/parametros__Fiscalizacion_electronica.htm",
+    "pinned": false,
+    "time": "Apr 8, 9:07 AM"
+  }, {
+    "title": "consulta_de_comprobantes",
+    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/consulta_de_comprobantes.htm",
+    "pinned": false,
+    "time": "Apr 7, 4:54 PM"
+  }, {
+    "title": "listado__Comprobantes_de_ventas",
+    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/listado__Comprobantes_de_ventas.htm",
+    "pinned": false,
+    "time": "Apr 7, 4:48 PM"
+  }, {
+    "title": "comprobantes_de_compra",
+    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/comprobantes_de_compra.htm",
+    "pinned": false,
+    "time": "Apr 7, 4:28 PM"
+  }, {
+    "title": "tabla__Talonarios",
+    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/tabla__Talonarios.htm",
+    "pinned": false,
+    "time": "Apr 7, 4:25 PM"
+  }, {
+    "title": "parametros__Datos_generales",
+    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/parametros__Datos_generales.htm",
+    "pinned": false,
+    "time": "Apr 7, 3:53 PM"
   }, {
     "title": "Bascshelp",
     "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/toc/Bascshelp.toc",
     "pinned": false,
-    "time": "Apr 4, 10:41 AM"
+    "time": "Apr 7, 3:51 PM"
   }, {
     "title": "es_ES",
     "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/publish/languages/labels/es_ES.lng",
@@ -54,76 +124,6 @@
     "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/comprob__internos_de_cuenta_corriente__Impresion.htm",
     "pinned": false,
     "time": "Mar 21, 2:22 PM"
-  }, {
-    "title": "ordenes_de_compra__Impresion",
-    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/ordenes_de_compra__Impresion.htm",
-    "pinned": false,
-    "time": "Mar 21, 2:20 PM"
-  }, {
-    "title": "partes_de_produccion__Impresion",
-    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/partes_de_produccion__Impresion.htm",
-    "pinned": false,
-    "time": "Mar 21, 2:20 PM"
-  }, {
-    "title": "ordenes_de_produccion__Generar_orden_de_compra",
-    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/ordenes_de_produccion__Generar_orden_de_compra.htm",
-    "pinned": false,
-    "time": "Mar 21, 2:12 PM"
-  }, {
-    "title": "ordenes_de_produccion__Impresion",
-    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/ordenes_de_produccion__Impresion.htm",
-    "pinned": false,
-    "time": "Mar 21, 2:10 PM"
-  }, {
-    "title": "asientos__Impresion",
-    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/asientos__Impresion.htm",
-    "pinned": false,
-    "time": "Mar 21, 2:09 PM"
-  }, {
-    "title": "extracciones_bancarias__Impresion",
-    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/extracciones_bancarias__Impresion.htm",
-    "pinned": false,
-    "time": "Mar 21, 2:08 PM"
-  }, {
-    "title": "depositos_bancarios__Impresion",
-    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/depositos_bancarios__Impresion.htm",
-    "pinned": false,
-    "time": "Mar 21, 2:06 PM"
-  }, {
-    "title": "recibos__Impresion",
-    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/recibos__Impresion.htm",
-    "pinned": false,
-    "time": "Mar 21, 2:05 PM"
-  }, {
-    "title": "ordenes_de_pago__Impresion",
-    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/ordenes_de_pago__Impresion.htm",
-    "pinned": false,
-    "time": "Mar 21, 2:03 PM"
-  }, {
-    "title": "comprobantes_de_egreso_de_mercaderia__Impresion",
-    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/comprobantes_de_egreso_de_mercaderia__Impresion.htm",
-    "pinned": false,
-    "time": "Mar 21, 2:02 PM"
-  }, {
-    "title": "ingresos_de_mercaderia__Impresion",
-    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/ingresos_de_mercaderia__Impresion.htm",
-    "pinned": false,
-    "time": "Mar 21, 2:00 PM"
-  }, {
-    "title": "autorizaciones",
-    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/autorizaciones.htm",
-    "pinned": false,
-    "time": "Mar 21, 1:51 PM"
-  }, {
-    "title": "ordenes_de_compra__Autorizacion",
-    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/ordenes_de_compra__Autorizacion.htm",
-    "pinned": false,
-    "time": "Mar 21, 1:50 PM"
-  }, {
-    "title": "comprobantes_de_compras__Impresion",
-    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/comprobantes_de_compras__Impresion.htm",
-    "pinned": false,
-    "time": "Mar 21, 1:47 PM"
   }],
   "generate.outputs": {
     "C:/Productos LES RH2022/Bascshelp_test/publish/presets/Test2.preset": {
@@ -165,7 +165,7 @@
     "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/publish/presets/Responsive HTML.preset": {
       "exists": true,
       "path": "C:/Productos LEN RH2022/BASCS/Salidas/index.htm",
-      "time": "2025-04-04T09:51:03-03:00",
+      "time": "2025-04-08T09:36:54-03:00",
       "logFile": "C:/Users/admin/AppData/Local/Temp/RHTMP/Responsive HTML.ehtml"
     }
   },

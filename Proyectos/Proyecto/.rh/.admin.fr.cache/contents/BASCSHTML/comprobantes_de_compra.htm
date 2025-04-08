@@ -463,12 +463,15 @@
       en la unidad de volumen indicada en los Parámetros de Ítems.
   
    Ficha Vencim./Aplic. (Vencimientos y Aplicaciones)
-  Esta ficha sólo se encuentra habilitada para los comprobantes con método de pago Cuenta corriente. Muestra los vencimientos calculados automáticamente y los comprobantes a los cuales es posible aplicar la factura que se está registrando.
-  Esta ficha puede ser consultada todas las veces que sea necesario durante el ingreso del comprobante y la información de la misma se actualizará en forma automática a medida que se ingresan líneas en el comprobante.
-  Las fechas de vencimiento y los importes a vencer en cada fecha se calculan teniendo en cuenta la condición de venta asociada al comprobante.
-  Si la condición de compra lo indica, no se permiten modificar las fechas de vencimiento calculadas.
-  Si la condición de compra indica la posibilidad de efectuar modificaciones a las fechas e importes calculados, estas se podrán efectuar al momento de registrar la factura o, posteriormente, mediante el uso de una tarea denominada refinanciación de vencimientos
-  Los comprobantes de cuenta corriente, en los casos que corresponda, pueden aplicarse, al momento de su registración, a los comprobantes que cancelan. Así, por ejemplo, una nota de crédito por descuento se aplicara, al momento de su registración, a la factura sobre la cual el proveedor ha otorgado el descuento.
+  
+    Esta ficha sólo se encuentra habilitada para los comprobantes con método de pago Cuenta corriente. Muestra los vencimientos calculados automáticamente y los comprobantes a los cuales es posible aplicar la factura que se está registrando.
+    Esta ficha puede ser consultada todas las veces que sea necesario durante el ingreso del comprobante y la información de la misma se actualizará en forma automática a medida que se ingresan líneas en el comprobante.
+    Las fechas de vencimiento y los importes a vencer en cada fecha se calculan teniendo en cuenta la condición de venta asociada al comprobante.
+    Si la condición de compra lo indica, no se permiten modificar las fechas de vencimiento calculadas.
+    Si la condición de compra indica la posibilidad de efectuar modificaciones a las fechas e importes calculados, estas se podrán efectuar al momento de registrar la factura o, posteriormente, mediante el uso de una tarea denominada refinanciación de vencimientos
+    Los comprobantes de cuenta corriente, en los casos que corresponda, pueden aplicarse, al momento de su registración, a los comprobantes que cancelan. Así, por ejemplo, una nota de crédito por descuento se aplicara, al momento de su registración, a la factura sobre la cual el proveedor ha otorgado el descuento.
+  
+  
    Tabla de Vencimientos (o Vencimientos a documentar)
   
     Esta tabla muestra una lista con todos
@@ -628,15 +631,19 @@
     Código de la provincia asociada a la factura.
     Se mostrará en este campo el código de la provincia asociada al proveedor y la misma puede ser modificada.
     Debe corresponder al código de una provincia definida en el sistema.
+     Observaciones
+    Permite ingresar un texto aclaratorio. Este aparece en todos los informes en los que se incluye al comprobante.
+    
+  
+   Ficha Más (2)...
+  
+    En esta ficha se ingresan los siguientes datos.
      Tipo de operación
     Código del tipo de operación asociado a la factura.
     Debe corresponder al código de un tipo de operación definido en el sistema.
      Comprobante origen
-    Prefijo y número del comprobante de origen, en caso que se ingrese una nota de crédito o débito, que no sea diferencia de cambio.
-      Se puede indicar directamente un prefijo y número de comprobante, o seleccionarlo mediante la búsqueda de comprobantes origen. 
-      Si se trata de un crédito el comprobante origen debe ser un crédito del mismo proveedor y si se trata de un débito debe corresponder a un débito del mismo proveedor.
-     Observaciones
-    Permite ingresar un texto aclaratorio. Este aparece en todos los informes en los que se incluye al comprobante.
+    Prefijo y número del comprobante de origen, en caso que se ingrese una nota de crédito o débito, que no sea diferencia de cambio.Se puede indicar directamente un prefijo y número de comprobante, o seleccionarlo mediante la búsqueda de comprobantes origen. Si se trata de un crédito el comprobante origen debe ser un crédito del mismo proveedor y si se trata de un débito debe corresponder a un débito del mismo proveedor.
+    
      Nro. Aut. (CAI/CAE)
     Permite ingresar el número de Código de Autorización de Impresión o el Código de Autorización electrónico correspondiente al proveedor titular del comprobante.
     Cabe aclarar que es posible leer con un scanner el código de barras que contiene el número de CAI/CAE y la correspondiente fecha de vencimiento.
@@ -695,8 +702,11 @@
       impositivo.
   
    Ficha Control de calidad
-  En esta ficha es posible registrar todos los bienes que presentan fallas de calidad, disponiéndose de los mismos alcances que ofrece la tarea "Control de calidad".
-  Pueden informarse fallas en relación a algunos ítems y luego continuar suministrando información en relación al comprobante mediante la tarea "Control de calidad". También es posible no registrar información en esta instancia, dejando el control para otro momento.
+  
+    En esta ficha es posible registrar todos los bienes que presentan fallas de calidad, disponiéndose de los mismos alcances que ofrece la tarea "Control de calidad".
+    Pueden informarse fallas en relación a algunos ítems y luego continuar suministrando información en relación al comprobante mediante la tarea "Control de calidad". También es posible no registrar información en esta instancia, dejando el control para otro momento.
+  
+  
    Control finalizado
   
     Permite dar por concluido el control

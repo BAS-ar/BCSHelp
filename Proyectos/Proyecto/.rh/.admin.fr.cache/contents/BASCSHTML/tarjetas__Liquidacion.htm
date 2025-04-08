@@ -74,8 +74,11 @@
       al comprobante los cupones que cumplen con los filtros que se indican.
   
    Ficha Comprobantes
-  Mediante esta ficha es posible informar al sistema los cupones que se liquidan o, en caso que corresponda y que esté habilitada la opción, un importe a liquidar en forma directa a pesar de que no estén registrados en el sistema los cupones que lo avalen.
-  Una vez informados los datos del encabezado del comprobante, la tabla incluida en la ficha exhibe cada uno de los vencimientos de los cupones correspondientes a la tarjeta (y plan) informados. Luego, entonces, será posible indicar cuáles son aquellos que se incluyen en esta liquidación.
+  
+    Mediante esta ficha es posible informar al sistema los cupones que se liquidan o, en caso que corresponda y que esté habilitada la opción, un importe a liquidar en forma directa a pesar de que no estén registrados en el sistema los cupones que lo avalen.
+    Una vez informados los datos del encabezado del comprobante, la tabla incluida en la ficha exhibe cada uno de los vencimientos de los cupones correspondientes a la tarjeta (y plan) informados. Luego, entonces, será posible indicar cuáles son aquellos que se incluyen en esta liquidación.
+  
+  
    Importe Sin Presentación
   
     Permite informar un importe a liquidar,
@@ -129,9 +132,12 @@
     
   
    Tabla de Comprobantes
-  Esta tabla incluye una línea por cada uno de los vencimientos de los cupones que corresponden a la tarjeta, y eventualmente al plan, informados en el encabezado del comprobante y que han sido presentados en la cuenta bancaria informada en el encabezado del mismo.
-  La mayoría de las columnas que se incluyen en la tabla son informativas y están destinadas a facilitar la tarea al momento de seleccionar los cupones a incluir en la liquidación que se está registrando.
-  Las únicas dos columnas cuya información es accesible al usuario son las que llevan por título Liquida y Grupo, respectivamente.
+  
+    Esta tabla incluye una línea por cada uno de los vencimientos de los cupones que corresponden a la tarjeta, y eventualmente al plan, informados en el encabezado del comprobante y que han sido presentados en la cuenta bancaria informada en el encabezado del mismo.
+    La mayoría de las columnas que se incluyen en la tabla son informativas y están destinadas a facilitar la tarea al momento de seleccionar los cupones a incluir en la liquidación que se está registrando.
+    Las únicas dos columnas cuya información es accesible al usuario son las que llevan por título Liquida y Grupo, respectivamente.
+  
+  
    Liquida
   
     Se debe indicar Sí
@@ -236,9 +242,12 @@
       en la columna correspondiente.
   
    Ficha Gastos
-  Mediante esta ficha se informan los gastos que deduce el banco en relación a la liquidación que se registra, el I.V.A., las retenciones y, en caso que correspondan, las percepciones de I.V.A., Ganancias e Ingresos Brutos, en base al tratamiento impositivo del proveedor asociado al banco o del proveedor de la tarjeta según la parametrización realizada al definir la tarjeta.
-  En el caso que deba discriminarse el gasto en varias partes, ya sea porque se contabiliza en cuentas diferentes o porque está gravado a tasas distintas, es posible indicar distintos códigos de ítem que llevarán los gastos asociados.
-  Los ítems a los cuales se asocian estos gastos se ingresan en una tabla con los correspondientes importes.
+  
+    Mediante esta ficha se informan los gastos que deduce el banco en relación a la liquidación que se registra, el I.V.A., las retenciones y, en caso que correspondan, las percepciones de I.V.A., Ganancias e Ingresos Brutos, en base al tratamiento impositivo del proveedor asociado al banco o del proveedor de la tarjeta según la parametrización realizada al definir la tarjeta.
+    En el caso que deba discriminarse el gasto en varias partes, ya sea porque se contabiliza en cuentas diferentes o porque está gravado a tasas distintas, es posible indicar distintos códigos de ítem que llevarán los gastos asociados.
+    Los ítems a los cuales se asocian estos gastos se ingresan en una tabla con los correspondientes importes.
+  
+  
    Tabla de ítems de gastos
   
     En esta tabla se ingresan uno a uno los ítems a los cuales se asocian los gastos que deduce el banco en la liquidación que se está registrando.
@@ -311,9 +320,12 @@
       puede modificarse libremente por el usuario.
   
    Ficha Retenciones
-  Esta ficha permite informar, en caso que correspondan, las tablas e importes de las retenciones que nos efectúa el banco.
-  En el caso de calcular retenciones de ingresos brutos, los comprobantes de retención se podrán imprimir al registrar la liquidación, según lo indicado para cada tipo de retención en la empresa en la cual se efectúa la liquidación, en el campo Imprime al generar el comprobante. Allí se informan además el formato de impresión, la impresora, y el último número de comprobante de retención generado para cada tipo de retención.
-  Si el proveedor (del banco o de la tarjeta de acuerdo a lo indicado en la tarjeta) es agente de retención de ingresos brutos, y si la empresa está adherida al convenio multilateral se aplicará al importe sujeto de retención de ingresos brutos de cada provincia asociada a los comprobantes aplicados, el porcentaje de coparticipación de cada una de las provincias.
+  
+    Esta ficha permite informar, en caso que correspondan, las tablas e importes de las retenciones que nos efectúa el banco.
+    En el caso de calcular retenciones de ingresos brutos, los comprobantes de retención se podrán imprimir al registrar la liquidación, según lo indicado para cada tipo de retención en la empresa en la cual se efectúa la liquidación, en el campo Imprime al generar el comprobante. Allí se informan además el formato de impresión, la impresora, y el último número de comprobante de retención generado para cada tipo de retención.
+    Si el proveedor (del banco o de la tarjeta de acuerdo a lo indicado en la tarjeta) es agente de retención de ingresos brutos, y si la empresa está adherida al convenio multilateral se aplicará al importe sujeto de retención de ingresos brutos de cada provincia asociada a los comprobantes aplicados, el porcentaje de coparticipación de cada una de las provincias.
+  
+  
    Tablas de retenciones
   
     
@@ -520,27 +532,14 @@
    Ficha Mas
   
      Observaciones
-    Permite ingresar un texto aclaratorio.
-      Este aparece en todos los informes en los que se incluye al comprobante.
-    Además, si corresponde calcular percepciones,
-      es posible informar la provincia del comprobante. Por defecto, se
-      ofrece la provincia asociada al proveedor (del banco o de la tarjeta
-      de acuerdo a lo indicado en la tarjeta) y la misma puede modificarse.
-    Si la empresa tiene Convenio multilateral,
-      al calcular percepciones de ingresos brutos, se tomará toda la base
-      imponible o el porcentaje de coparticipación de la provincia del comprobante,
-      según lo que la misma tenga indicado.
-    Si la empresa no tiene Convenio multilateral,
-      no se tiene en cuenta el nuevo parámetro de las provincias.
-     Nro.aut.
-      (CAI/CAE)
-    El ingreso de este dato es obligatorio
-      si así lo exige el proveedor asociado al banco de la cuenta bancaria
-      ingresada en la liquidación.
+    Permite ingresar un texto aclaratorio. Este aparece en todos los informes en los que se incluye al comprobante.
+    Además, si corresponde calcular percepciones, es posible informar la provincia del comprobante. Por defecto, se ofrece la provincia asociada al proveedor (del banco o de la tarjeta de acuerdo a lo indicado en la tarjeta) y la misma puede modificarse.
+    Si la empresa tiene Convenio multilateral, al calcular percepciones de ingresos brutos, se tomará toda la base imponible o el porcentaje de coparticipación de la provincia del comprobante, según lo que la misma tenga indicado.
+    Si la empresa no tiene Convenio multilateral, no se tiene en cuenta el nuevo parámetro de las provincias.
+     Nro.aut. (CAI/CAE)
+    El ingreso de este dato es obligatorio si así lo exige el proveedor asociado al banco de la cuenta bancaria ingresada en la liquidación. Permite hasta 40 caracteres.
      Vencimiento
-    El ingreso de este dato es obligatorio
-      si así lo exige el proveedor asociado al banco de la cuenta bancaria
-      ingresada en la liquidación. 
+    El ingreso de este dato es obligatorio si así lo exige el proveedor asociado al banco de la cuenta bancaria ingresada en la liquidación.
   
    
       Ficha Adjuntos

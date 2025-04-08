@@ -20,7 +20,8 @@
   <title>Recibos Ingreso</title>
   <link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
   <meta name="rh-index-keywords" content="Ingreso"/>
-<meta name="rh-authors" content=""/></head>
+  <meta name="rh-authors" content=""/>
+</head>
 
 <body>
   <div class="topic-header rh-hide" id="rh-topic-header">
@@ -194,22 +195,25 @@
       del resto de los comprobantes posibles de aplicar.</p>
   </div>
   <p class="H_Parrafo_de_Item"></p>
-  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> Ficha Valores</p>
-  <p class="H_Parrafo_de_Item">Mediante esta ficha se ingresan al sistema los valores que se reciben (cheques, efectivos, facturas de crédito, etc.) y que conforman la cobranza.</p>
-  <p class="H_Parrafo_de_Item">Los valores ingresan al comprobante invocando códigos de <a href="tabla__Medios_de_pago.htm">medios de pago</a> . La información a asociar a cada uno dependerá del tipo de valor del que se trate.</p>
-  <p class="H_Parrafo_de_Item">Si está activada la opción <font style="font-weight: bold;">Aplicación automática en Recibos</font> en los Parámetros de Cuentas corrientes, esta es la ficha que se presenta en pantalla al ingresar a la tarea.</p>
-  <p class="H_Parrafo_de_Item">Esta observación puede parecer innecesaria si se piensa que, independientemente de la ficha que se ofrece, un simple click permite cambiarla.</p>
-  <p class="H_Parrafo_de_Item">Pero acá se nos está insinuando, la forma de trabajo correspondiente a <font style="font-weight: bold;">aplicación</font>
-    <font style="font-weight: bold;">automática</font> (en el caso de cobranzas a clientes).
-  </p>
-  <p class="H_Parrafo_de_Item">Efectivamente, si se desea que el sistema aplique automáticamente los valores, bastará con informarlos y, a medida que éstos ingresan, son aplicados en forma automática a los comprobantes del cliente que aún se encuentran pendientes.</p>
-  <p class="H_Parrafo_de_Item">Las aplicaciones se realizan comenzando por el comprobante de fecha más antigua y continuando con los comprobantes de fechas más recientes hasta completar el importe total de los valores ingresados (independientemente de las imputaciones contables correspondientes a cada vencimiento).</p>
-  <p class="H_Parrafo_de_Item">Si el importe correspondiente a los valores ingresados supera al de los comprobantes pendientes de cobranza, el exceso queda como pago a cuenta.</p>
-  <p class="H_Parrafo_de_Item">Si se desea consultar cómo se ha realizado la asignación de importes a los comprobantes pendientes, bastará con abrir la ficha <font style="font-weight: bold;">Aplicaciones</font>. Las aplicaciones realizadas por el sistema pueden variarse si se lo considera necesario.</p>
-  <p class="H_Parrafo_de_Item">Si no se ha seteado la opción <font style="font-weight: bold;">Aplicación automática</font> la ficha que se presenta en pantalla es la que corresponde a <font style="font-weight: bold;">Aplicaciones</font>. Nuevamente, el sistema nos está ofreciendo (en el caso de clientes) la ficha por la cual debe comenzarse, en función de la forma de trabajo elegida.</p>
-  <p class="H_Parrafo_de_Item">En este caso se informan primero los importes que se cancelan, de modo que, al abrir la ficha <font style="font-weight: bold;">Valores</font>, ya se conoce el importe total del comprobante. Por lo cual, al ir ingresando los valores que conforman la cobranza, el sistema está en condiciones de ofrecer el importe que resta cobrar. Basándose en las aplicaciones efectuadas, se van calculado las retenciones que corresponde pagar y se ofrece directamente el importe neto que debe cobrarse al cliente.</p>
-  <p class="H_Parrafo_de_Item">Si los valores que se ingresan no se aplican a ningún comprobante, y si éstos corresponden a diferentes <a href="tabla__Cuentas.htm">imputaciones contables</a> , el importe queda a cuenta en la imputación contable informada en el encabezado del comprobante.</p>
-  <p class="H_Parrafo_de_Item">Para cada valor que se ingrese se debe informar el código del <a href="tabla__Medios_de_pago.htm">medio de pago</a> que lo identifica y, en función del tipo de valor del que se trate, se solicitan diferentes datos.</p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down" href="#"><span data-open-text="true" data-skip-index="true"> Ficha Valores</span><span data-close-text="true"> Ficha Valores</span></a></p>
+  <div class="droptext" data-targetname="drop-down">
+    <p class="H_Parrafo_de_Item">Mediante esta ficha se ingresan al sistema los valores que se reciben (cheques, efectivos, facturas de crédito, etc.) y que conforman la cobranza.</p>
+    <p class="H_Parrafo_de_Item">Los valores ingresan al comprobante invocando códigos de <a href="tabla__Medios_de_pago.htm">medios de pago</a> . La información a asociar a cada uno dependerá del tipo de valor del que se trate.</p>
+    <p class="H_Parrafo_de_Item">Si está activada la opción <font style="font-weight: bold;">Aplicación automática en Recibos</font> en los Parámetros de Cuentas corrientes, esta es la ficha que se presenta en pantalla al ingresar a la tarea.</p>
+    <p class="H_Parrafo_de_Item">Esta observación puede parecer innecesaria si se piensa que, independientemente de la ficha que se ofrece, un simple click permite cambiarla.</p>
+    <p class="H_Parrafo_de_Item">Pero acá se nos está insinuando, la forma de trabajo correspondiente a <font style="font-weight: bold;">aplicación</font>
+      <font style="font-weight: bold;">automática</font> (en el caso de cobranzas a clientes).
+    </p>
+    <p class="H_Parrafo_de_Item">Efectivamente, si se desea que el sistema aplique automáticamente los valores, bastará con informarlos y, a medida que éstos ingresan, son aplicados en forma automática a los comprobantes del cliente que aún se encuentran pendientes.</p>
+    <p class="H_Parrafo_de_Item">Las aplicaciones se realizan comenzando por el comprobante de fecha más antigua y continuando con los comprobantes de fechas más recientes hasta completar el importe total de los valores ingresados (independientemente de las imputaciones contables correspondientes a cada vencimiento).</p>
+    <p class="H_Parrafo_de_Item">Si el importe correspondiente a los valores ingresados supera al de los comprobantes pendientes de cobranza, el exceso queda como pago a cuenta.</p>
+    <p class="H_Parrafo_de_Item">Si se desea consultar cómo se ha realizado la asignación de importes a los comprobantes pendientes, bastará con abrir la ficha <font style="font-weight: bold;">Aplicaciones</font>. Las aplicaciones realizadas por el sistema pueden variarse si se lo considera necesario.</p>
+    <p class="H_Parrafo_de_Item">Si no se ha seteado la opción <font style="font-weight: bold;">Aplicación automática</font> la ficha que se presenta en pantalla es la que corresponde a <font style="font-weight: bold;">Aplicaciones</font>. Nuevamente, el sistema nos está ofreciendo (en el caso de clientes) la ficha por la cual debe comenzarse, en función de la forma de trabajo elegida.</p>
+    <p class="H_Parrafo_de_Item">En este caso se informan primero los importes que se cancelan, de modo que, al abrir la ficha <font style="font-weight: bold;">Valores</font>, ya se conoce el importe total del comprobante. Por lo cual, al ir ingresando los valores que conforman la cobranza, el sistema está en condiciones de ofrecer el importe que resta cobrar. Basándose en las aplicaciones efectuadas, se van calculado las retenciones que corresponde pagar y se ofrece directamente el importe neto que debe cobrarse al cliente.</p>
+    <p class="H_Parrafo_de_Item">Si los valores que se ingresan no se aplican a ningún comprobante, y si éstos corresponden a diferentes <a href="tabla__Cuentas.htm">imputaciones contables</a> , el importe queda a cuenta en la imputación contable informada en el encabezado del comprobante.</p>
+    <p class="H_Parrafo_de_Item">Para cada valor que se ingrese se debe informar el código del <a href="tabla__Medios_de_pago.htm">medio de pago</a> que lo identifica y, en función del tipo de valor del que se trate, se solicitan diferentes datos.</p>
+  </div>
+  <p class="H_Parrafo_de_Item"></p>
   <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Grilla.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Grilla.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP671131860" href="#"><span data-open-text="true" data-skip-index="true">Tabla de valores</span><span data-close-text="true">Tabla de valores</span></a></p>
   <div data-targetname="POPUP671131860">
     <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita" style="counter-set: prl-p-h_sub_item_con_vineta_negrita 0;">Valor</p>
