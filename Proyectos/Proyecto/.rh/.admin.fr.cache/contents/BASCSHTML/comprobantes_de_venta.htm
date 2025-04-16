@@ -120,39 +120,14 @@
    Cliente
   
     Código del cliente titular de la factura.
-    Debe ingresarse el código de un cliente
-      definido en el sistema, con una condición de venta y una lista de
-      precios asociadas.
-    Al ingresar un código de cliente el sistema
-      valida si está habilitado para ingresar el comprobante (RG 1817).
-    Se exhibe en el tooltip del cliente o
-      proveedor, el nombre de fantasía. De no contar con dicho dato, se
-      observará la razón social.
-    Si en parámetros tiene indicado Advierte, aparece el mensaje La fecha del comprobante es anterior a
-        la indicada en el campo 'Habilitado hasta' en la solapa 'Suspendido'
-        del programa de mantenimiento de clientes. Desea continuar?”.
-      De modo que el operador decida si sigue adelante, o no.
-    Si se ha parametrizado Prohíbe
-      se exhibe el mensaje Revise el dato
-        Habilitado hasta en la solapa Suspendido del programa de mantenimiento
-        de clientes y no se permite seguir adelante.
-    Si se está registrando una factura contado
-      y el código del cliente es dejado en blanco, se asumirá que se trata
-      de un cliente ocasional, se permitirá el ingreso del nombre del mismo
-      y se asociarán al comprobante los datos configurados para el cliente
-      ocasional en los Parámetros de datos generales.
-    Al ingresar el cliente se completa la
-      pantalla con los datos asociados al mismo, como por ejemplo, el vendedor,
-      los datos de entrega, la condición de venta por defecto, imputación
-      contable, tratamiento impositivo, provincia, etc. Estos datos se ofrecen
-      para agilizar y automatizar el ingreso de la factura, pero de ser
-      necesario, pueden modificarse en este momento y los valores que se
-      ingresen sólo afectarán a la factura que se está ingresando.
-    La lista de precios asociada a la condición
-      de venta del cliente no podrá ser modificada en este momento. Se utilizará
-      para todos los comprobantes de venta del cliente de dicha condición
-      y de ser necesario cambiarla, debe modificarse desde el punto de ingreso
-      de Clientes.
+    Debe ingresarse el código de un cliente definido en el sistema, con una condición de venta y una lista de precios asociadas.
+    Se controla, en caso que el comprobante deba ser fiscalizado electrónicamente, que el cliente tenga asignada la categoría frente al IVA en "Descripciones de IVA" para la letra indicada en su tratamiento impositivo.
+      No se permite ingresar el comprobante si el cliente tiene una categoría asociada  "No inscripto".
+      Si en parámetros tiene indicado Advierte, aparece el mensaje La fecha del comprobante es anterior a la indicada en el campo 'Habilitado hasta' en la solapa 'Suspendido' del programa de mantenimiento de clientes. Desea continuar?”. De modo que el operador decida si sigue adelante, o no.
+    Si se ha parametrizado Prohíbe se exhibe el mensaje Revise el dato Habilitado hasta en la solapa Suspendido del programa de mantenimiento de clientes y no se permite seguir adelante.
+    Si se está registrando una factura contado y el código del cliente es dejado en blanco, se asumirá que se trata de un cliente ocasional, se permitirá el ingreso del nombre del mismo y se asociarán al comprobante los datos configurados para el cliente ocasional en los Parámetros de datos generales.
+    Al ingresar el cliente se completa la pantalla con los datos asociados al mismo, como por ejemplo, el vendedor, los datos de entrega, la condición de venta por defecto, imputación contable, tratamiento impositivo, provincia, etc. Estos datos se ofrecen para agilizar y automatizar el ingreso de la factura, pero de ser necesario, pueden modificarse en este momento y los valores que se ingresen sólo afectarán a la factura que se está ingresando.
+    La lista de precios asociada a la condición de venta del cliente no podrá ser modificada en este momento. Se utilizará para todos los comprobantes de venta del cliente de dicha condición y de ser necesario cambiarla, debe modificarse desde el punto de ingreso de Clientes.
   
    Imputación contable
   
