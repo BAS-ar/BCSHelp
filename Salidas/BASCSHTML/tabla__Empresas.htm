@@ -266,7 +266,48 @@
     <p class="H_Sub-Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Por sistema operativo</p>
     <p class="H_Parrafo_de_Sub-Sub-Sub_Item">En este lo envía una sola vez y es el sistema operativo el que se ocupa junto con la impresora de generar las distintas copias.</p>
   </div>
-  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down8" href="#"><span data-open-text="true" data-skip-index="true">Ficha Ret. S.U.S.S.</span><span data-close-text="true">Ficha Ret. S.U.S.S.</span></a></p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down14" href="#"><span data-open-text="true" data-skip-index="true">Ficha Ret. Gan.</span><span data-close-text="true">Ficha Ret. Gan.</span></a></p>
+  <div class="droptext" data-targetname="drop-down14">
+    <p class="H_Parrafo_de_Item">Aquí se definen los datos correspondientes a las retenciones de ganancias efectuadas.</p>
+    <p class="H_Parrafo_de_Item">La información que aquí se ingrese permitirá, en los casos que corresponda, que se efectúe el cálculo de estas retenciones dado un importe sujeto, en los ingresos de pagos y cobranzas.</p>
+    <p class="H_Parrafo_de_Item">Los comprobantes en los que se calculan estas retenciones son las órdenes de pago y los recibos y se calcularán siempre que se haya configurado la información que se solicita en este punto.</p>
+    <p class="H_Parrafo_de_Item">Se prevé además la impresión de los comprobantes de retención correspondientes a las retenciones efectuadas. Para esto se debe informar con qué formato se imprimirán dichos comprobantes.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Mínimo imponible</p>
+    <p class="H_Parrafo_de_Sub-Item">Corresponde al importe gravado mínimo que tienen que tener los comprobantes aplicados en Recibos y Ordenes de pago para que se calcule la retención.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Importe mínimo a retener</p>
+    <p class="H_Parrafo_de_Sub-Item">Debe ingresarse el importe mínimo a tener en cuenta para efectuar la retención de  ganancias.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si al efectuar el cálculo de las retenciones, el sistema detecta que el importe de la retención resultante es inferior al indicado en este dato, no se efectúa la retención.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Próximo número de comprobante</p>
+    <p class="H_Parrafo_de_Sub-Item">Número del próximo comprobante de retención a generar.</p>
+    <p class="H_Parrafo_de_Sub-Item">Cada vez que se efectúan retenciones de este tipo es posible informar el número del comprobante de retención para su posterior emisión.</p>
+    <p class="H_Parrafo_de_Sub-Item">Este número puede administrarse en forma correlativa y aquí se exhibe el siguiente al del último comprobante generado. El siguiente comprobante de retención se numerará con este número.</p>
+    <p class="H_Parrafo_de_Sub-Item">Podrán ingresarse dos próximos números, uno para cada tipo de retención.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Permite repetir número en distintos años</p>
+    <p class="H_Parrafo_de_Sub-Item">En caso que se active se permite repetir la numeración de los comprobantes que se emiten en años diferentes. Por ejemplo, comenzar siempre en el número 1.</p>
+    <p class="H_Parrafo_de_Sub-Item">El estado del parámetro es el mismo para todas las empresas de la base de datos. Con esto queremos decir que no es posible indicar que para unas empresas que se repita la numeración y para otras no.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Formato de impresión</p>
+    <p class="H_Parrafo_de_Sub-Item">Este campo permite seleccionar el formato con el que se imprimen los comprobantes de retención.</p>
+    <p class="H_Parrafo_de_Sub-Item">El formato está contenido en un archivo de extensión <font style="font-weight: bold;">QRP</font> que contiene los datos del comprobante que se deseen imprimir, la ubicación de los mismos en el formulario, la forma que tiene el encabezado, cuerpo y pie del formulario, etc.</p>
+    <p class="H_Parrafo_de_Sub-Item">El sistema se entrega con una serie de archivos QRP que contienen los formatos de impresión standard de todos los comprobantes que se imprimen. Estos pueden ser modificados por el usuario según las necesidades de la empresa.</p>
+    <p class="H_Parrafo_de_Sub-Item">El nombre del archivo QRP podrá tipearse directamente o podrá buscarse y seleccionarse con el botón <font style="font-weight: bold;">Explorar</font>.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Impresora</p>
+    <p class="H_Parrafo_de_Sub-Item">Impresora en la cual se realizará la impresión de los comprobantes de retenciones de ganancias.</p>
+    <p class="H_Parrafo_de_Sub-Item">Se dispone del botón que permite seleccionar, inicializar y configurar la impresora a utilizar.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> Copias</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Cantidad</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Número que indica la cantidad de copias que se deseen imprimir de los comprobantes de retención.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Es importante tener en cuenta que en caso de activar la opción <font style="font-weight: bold;">con controlador fiscal</font>, el número de copias no puede superar las 4. En caso de informar un 0 en este campo, el sistema interpreta que se imprime una vez el comprobante y las copias se realizan mediante papel carbónico. En ese caso en el encabezado del comprobante se exhibe la leyenda &quot;Original Blanco/Copia Color&quot;. Si en cambio, se especifica una cantidad de copias superior a 0, se imprime el comprobante tantas veces como se haya indicado con una leyenda informando el número de copia (Original, Duplicado, Triplicado y Cuadruplicado)</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">La cantidad de copias que se indiquen podrán imprimirse según las siguientes modalidades:</p>
+    <p class="H_Sub-Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Por programa</p>
+    <p class="H_Parrafo_de_Sub-Sub-Sub_Item">En este caso, se envía el comprobante a imprimir tantas veces como sea necesario.</p>
+    <p class="H_Sub-Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Por sistema operativo</p>
+    <p class="H_Parrafo_de_Sub-Sub-Sub_Item">En este lo envía una sola vez y es el sistema operativo el que se ocupa junto con la impresora de generar las distintas copias.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Se imprime al generar el comprobante</p>
+    <p class="H_Parrafo_de_Sub-Item">Indicación de si se realiza o no la emisión automática de los comprobantes de retenciones de ganancias,  en el momento en que se registran los comprobantes que les dan origen (recibos, órdenes de pago).</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Avisa antes de imprimir</p>
+    <p class="H_Parrafo_de_Sub-Item">Indicación de si se avisa o no la impresión automática de los comprobantes de retenciones de ganancias.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down8" href="#"><span data-open-text="true" data-skip-index="true">Ficha Ret. S.U.S.S. </span><span data-close-text="true">Ficha Ret. S.U.S.S. </span></a></p>
   <div class="droptext" data-targetname="drop-down8">
     <p class="H_Parrafo_de_Item">Aquí se definen los datos correspondientes a las retenciones por contribuciones al S.U.S.S.</p>
     <p class="H_Parrafo_de_Item">La información que aquí se ingrese permitirá, en los casos que corresponda, que se efectúe el cálculo de estas retenciones dado un importe sujeto, en los ingresos de pagos y cobranzas.</p>
@@ -428,6 +469,78 @@
     <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" data-cke-saved-src="../assets/images/BASCSIMAG/campo_para_dato.gif" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Depósito</p>
     <p class="H_Parrafo_de_Sub-Sub-Item">Se debe informar el depósito al cual ingresan los servicios de terceros (si bien se trata de servicios, por ser de tipo de valor Cantidad y formar parte de un comprobante de ingreso, se debe indicar un depósito).</p>
   </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" style="cursor: nesw-resize;" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down17" href="#"><span data-open-text="true" data-skip-index="true">Ficha Ret. I.V.A.</span><span data-close-text="true">Ficha Ret. I.V.A.</span></a></p>
+  <div class="droptext" data-targetname="drop-down17">
+    <p class="H_Parrafo_de_Item">Aquí se definen los datos correspondientes a las retenciones de I.V.A. efectuadas.</p>
+    <p class="H_Parrafo_de_Item">La información que aquí se ingrese permitirá, en los casos que corresponda, que se efectúe el cálculo de estas retenciones dado un importe sujeto, en los ingresos de pagos y cobranzas.</p>
+    <p class="H_Parrafo_de_Item">Los comprobantes en los que se calculan estas retenciones son las órdenes de pago y los recibos y se calcularán siempre que se haya configurado la información que se solicita en este punto.</p>
+    <p class="H_Parrafo_de_Item">Se prevé además la impresión de los comprobantes de retención correspondientes a las retenciones efectuadas. Para esto se debe informar con qué formato se imprimirán dichos comprobantes.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" data-cke-saved-src="../assets/images/BASCSIMAG/campo_para_dato.gif" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Mínimo imponible</p>
+    <p class="H_Parrafo_de_Sub-Item">Corresponde al importe gravado mínimo que tienen que tener los comprobantes aplicados en Recibos y Ordenes de pago para que se calcule la retención.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" data-cke-saved-src="../assets/images/BASCSIMAG/campo_para_dato.gif" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Importe mínimo a retener</p>
+    <p class="H_Parrafo_de_Sub-Item">Debe ingresarse el importe mínimo a tener en cuenta para efectuar la retención de I.V.A..</p>
+    <p class="H_Parrafo_de_Sub-Item">Si al efectuar el cálculo de las retenciones, el sistema detecta que el importe de la retención resultante es inferior al indicado en este dato, no se efectúa la retención.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" data-cke-saved-src="../assets/images/BASCSIMAG/campo_para_dato.gif" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Próximo número de comprobante</p>
+    <p class="H_Parrafo_de_Sub-Item">Número del próximo comprobante de retención a generar.</p>
+    <p class="H_Parrafo_de_Sub-Item">Cada vez que se efectúan retenciones de este tipo es posible informar el número del comprobante de retención para su posterior emisión.</p>
+    <p class="H_Parrafo_de_Sub-Item">Este número puede administrarse en forma correlativa y aquí se exhibe el siguiente al del último comprobante generado. El siguiente comprobante de retención se numerará con este número.</p>
+    <p class="H_Parrafo_de_Sub-Item">Podrán ingresarse dos próximos números, uno para cada tipo de retención.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" data-cke-saved-src="../assets/images/BASCSIMAG/Check.gif" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Permite repetir número en distintos años</p>
+    <p class="H_Parrafo_de_Sub-Item">En caso que se active se permite repetir la numeración de los comprobantes que se emiten en años diferentes. Por ejemplo, comenzar siempre en el número 1.</p>
+    <p class="H_Parrafo_de_Sub-Item">El estado del parámetro es el mismo para todas las empresas de la base de datos. Con esto queremos decir que no es posible indicar que para unas empresas que se repita la numeración y para otras no.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" data-cke-saved-src="../assets/images/BASCSIMAG/campo_para_dato.gif" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Formato de impresión</p>
+    <p class="H_Parrafo_de_Sub-Item">Este campo permite seleccionar el formato con el que se imprimen los comprobantes de retención.</p>
+    <p class="H_Parrafo_de_Sub-Item">El formato está contenido en un archivo de extensión <font style="font-weight: bold;">QRP</font> que contiene los datos del comprobante que se deseen imprimir, la ubicación de los mismos en el formulario, la forma que tiene el encabezado, cuerpo y pie del formulario, etc.</p>
+    <p class="H_Parrafo_de_Sub-Item">El sistema se entrega con una serie de archivos QRP que contienen los formatos de impresión standard de todos los comprobantes que se imprimen. Estos pueden ser modificados por el usuario según las necesidades de la empresa.</p>
+    <p class="H_Parrafo_de_Sub-Item">El nombre del archivo QRP podrá tipearse directamente o podrá buscarse y seleccionarse con el botón <font style="font-weight: bold;">Explorar</font>.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" data-cke-saved-src="../assets/images/BASCSIMAG/campo_para_dato.gif" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Impresora</p>
+    <p class="H_Parrafo_de_Sub-Item">Impresora en la cual se realizará la impresión de los comprobantes de retenciones de I.V.A.</p>
+    <p class="H_Parrafo_de_Sub-Item">Se dispone del botón que permite seleccionar, inicializar y configurar la impresora a utilizar.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" data-cke-saved-src="../assets/images/BASCSIMAG/Frame.gif" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> Copias</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" data-cke-saved-src="../assets/images/BASCSIMAG/campo_para_dato.gif" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Cantidad</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Número que indica la cantidad de copias que se deseen imprimir de los comprobantes de retención.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Es importante tener en cuenta que en caso de activar la opción <font style="font-weight: bold;">con controlador fiscal</font>, el número de copias no puede superar las 4. En caso de informar un 0 en este campo, el sistema interpreta que se imprime una vez el comprobante y las copias se realizan mediante papel carbónico. En ese caso en el encabezado del comprobante se exhibe la leyenda &quot;Original Blanco/Copia Color&quot;. Si en cambio, se especifica una cantidad de copias superior a 0, se imprime el comprobante tantas veces como se haya indicado con una leyenda informando el número de copia (Original, Duplicado, Triplicado y Cuadruplicado)</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">La cantidad de copias que se indiquen podrán imprimirse según las siguientes modalidades:</p>
+    <p class="H_Sub-Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" data-cke-saved-src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Por programa</p>
+    <p class="H_Parrafo_de_Sub-Sub-Sub_Item">En este caso, se envía el comprobante a imprimir tantas veces como sea necesario.</p>
+    <p class="H_Sub-Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" data-cke-saved-src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Por sistema operativo</p>
+    <p class="H_Parrafo_de_Sub-Sub-Sub_Item">En este lo envía una sola vez y es el sistema operativo el que se ocupa junto con la impresora de generar las distintas copias.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" data-cke-saved-src="../assets/images/BASCSIMAG/Check.gif" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Se imprime al generar el comprobante</p>
+    <p class="H_Parrafo_de_Sub-Item">Indicación de si se realiza o no la emisión automática de los comprobantes de retenciones de ganancias,  en el momento en que se registran los comprobantes que les dan origen (recibos, órdenes de pago).</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" data-cke-saved-src="../assets/images/BASCSIMAG/Check.gif" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Avisa antes de imprimir</p>
+    <p class="H_Parrafo_de_Sub-Item">Indicación de si se avisa o no la impresión automática de los comprobantes de retenciones de I.V.A.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Ficha.gif"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down18" href="#"><span data-open-text="true" data-skip-index="true">Ficha Sinónimos</span><span data-close-text="true">Ficha Sinónimos</span></a></p>
+  <div class="droptext" data-targetname="drop-down18">
+    <p class="H_Parrafo_de_Item">En esta ficha se definen los sinónimos de conceptos para compras, códigos de ítems, etc.</p>
+    <p class="H_Parrafo_de_Item">La selección de códigos válidos para BAS CS es similar a la que existe para los sinónimos de sucursales.</p>
+    <p class="H_Parrafo_de_Item"></p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Código</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Se debe informar código a definir:</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Las opciones son:</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">- Concepto de compras</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">- Concepto de ventas</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">- Código medio de pago</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">- Código de Item</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">- Código de tarjeta</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">- Código de plan</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">- Caja</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">- Tratamiento Impositivo</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">- Tratamiento impositivo provincial</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">- Tipo de documento</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">- Lista de precios</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">- Depósitos por clientes</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">- Depósitos por proveedor</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">- Imputación contable</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">- Prefijo</p>
+    <p class="H_Parrafo_de_Sub-Sub-Sub_Item_(XE)"></p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Dato interno</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Se debe seleccionar el concepto de BAS CS a definir el sinónimo.</p>
+    <p class="H_Sub-Item_con_imagen_negrita_XE"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Dato externo</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Indicar el dato sinónimo.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"></p>
+  <p class="H_Item_con_imagen_negrita"></p>
   <p class="H_Item_con_vineta_negrita_XE"></p>
   <p class="H_Item_con_vineta_negrita_XE"></p>
   <p class="H_Item_con_vineta_negrita_XE"></p>

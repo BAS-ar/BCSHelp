@@ -3,12 +3,37 @@
     "title": "bienvenido",
     "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/bienvenido.htm",
     "pinned": false,
-    "time": "Apr 22, 3:14 PM"
+    "time": "Jun 24, 4:43 PM"
   }, {
     "title": "Bascshelp",
     "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/toc/Bascshelp.toc",
     "pinned": false,
-    "time": "Apr 16, 3:11 PM"
+    "time": "Jun 24, 4:43 PM"
+  }, {
+    "title": "tabla__Empresas",
+    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/tabla__Empresas.htm",
+    "pinned": false,
+    "time": "Jun 24, 4:01 PM"
+  }, {
+    "title": "tabla__Agentes",
+    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/tabla__Agentes.htm",
+    "pinned": false,
+    "time": "Jun 24, 3:41 PM"
+  }, {
+    "title": "tabla__Clientes",
+    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/tabla__Clientes.htm",
+    "pinned": false,
+    "time": "Jun 18, 4:02 PM"
+  }, {
+    "title": "tabla__Proveedores",
+    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/tabla__Proveedores.htm",
+    "pinned": false,
+    "time": "Jun 18, 3:56 PM"
+  }, {
+    "title": "consulta_de_clientes",
+    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/consulta_de_clientes.htm",
+    "pinned": false,
+    "time": "Jun 18, 3:45 PM"
   }, {
     "title": "comprobantes_de_venta",
     "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/comprobantes_de_venta.htm",
@@ -40,25 +65,10 @@
     "pinned": false,
     "time": "Apr 15, 5:29 PM"
   }, {
-    "title": "tabla__Proveedores",
-    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/tabla__Proveedores.htm",
-    "pinned": false,
-    "time": "Apr 15, 5:26 PM"
-  }, {
-    "title": "consulta_de_clientes",
-    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/consulta_de_clientes.htm",
-    "pinned": false,
-    "time": "Apr 15, 5:17 PM"
-  }, {
     "title": "administracion_de_Documentos",
     "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/administracion_de_Documentos.htm",
     "pinned": false,
     "time": "Apr 15, 5:14 PM"
-  }, {
-    "title": "tabla__Clientes",
-    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/tabla__Clientes.htm",
-    "pinned": false,
-    "time": "Apr 15, 5:11 PM"
   }, {
     "title": "Topic References",
     "path": "Topic References.report",
@@ -90,11 +100,6 @@
     "pinned": false,
     "time": "Apr 8, 9:17 AM"
   }, {
-    "title": "tabla__Empresas",
-    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/tabla__Empresas.htm",
-    "pinned": false,
-    "time": "Apr 8, 9:11 AM"
-  }, {
     "title": "tarjetas__Liquidacion",
     "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/tarjetas__Liquidacion.htm",
     "pinned": false,
@@ -119,11 +124,6 @@
     "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/tabla__Talonarios.htm",
     "pinned": false,
     "time": "Apr 7, 4:25 PM"
-  }, {
-    "title": "parametros__Datos_generales",
-    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/parametros__Datos_generales.htm",
-    "pinned": false,
-    "time": "Apr 7, 3:53 PM"
   }],
   "generate.outputs": {
     "C:/Productos LES RH2022/Bascshelp_test/publish/presets/Test2.preset": {
@@ -165,7 +165,7 @@
     "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/publish/presets/Responsive HTML.preset": {
       "exists": true,
       "path": "C:/Productos LEN RH2022/BASCS/Salidas/index.htm",
-      "time": "2025-04-22T15:22:13-03:00",
+      "time": "2025-06-24T16:46:49-03:00",
       "logFile": "C:/Users/admin/AppData/Local/Temp/RHTMP/Responsive HTML.ehtml"
     }
   },
@@ -194,6 +194,11 @@
     "Folder": false
   },
   "recent-files::internal:image": [{
+    "title": "Ficha",
+    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/assets/images/BASCSIMAG/Ficha.gif",
+    "pinned": false,
+    "time": "Jun 24, 4:05 PM"
+  }, {
     "title": "boton_Examinar",
     "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/assets/images/BASCSIMAG/boton_Examinar.JPG",
     "pinned": false,

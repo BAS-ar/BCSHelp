@@ -222,7 +222,48 @@
      Por sistema operativo
     En este lo envía una sola vez y es el sistema operativo el que se ocupa junto con la impresora de generar las distintas copias.
   
-   Ficha Ret. S.U.S.S.
+   Ficha Ret. Gan.
+  
+    Aquí se definen los datos correspondientes a las retenciones de ganancias efectuadas.
+    La información que aquí se ingrese permitirá, en los casos que corresponda, que se efectúe el cálculo de estas retenciones dado un importe sujeto, en los ingresos de pagos y cobranzas.
+    Los comprobantes en los que se calculan estas retenciones son las órdenes de pago y los recibos y se calcularán siempre que se haya configurado la información que se solicita en este punto.
+    Se prevé además la impresión de los comprobantes de retención correspondientes a las retenciones efectuadas. Para esto se debe informar con qué formato se imprimirán dichos comprobantes.
+     Mínimo imponible
+    Corresponde al importe gravado mínimo que tienen que tener los comprobantes aplicados en Recibos y Ordenes de pago para que se calcule la retención.
+     Importe mínimo a retener
+    Debe ingresarse el importe mínimo a tener en cuenta para efectuar la retención de  ganancias.
+    Si al efectuar el cálculo de las retenciones, el sistema detecta que el importe de la retención resultante es inferior al indicado en este dato, no se efectúa la retención.
+     Próximo número de comprobante
+    Número del próximo comprobante de retención a generar.
+    Cada vez que se efectúan retenciones de este tipo es posible informar el número del comprobante de retención para su posterior emisión.
+    Este número puede administrarse en forma correlativa y aquí se exhibe el siguiente al del último comprobante generado. El siguiente comprobante de retención se numerará con este número.
+    Podrán ingresarse dos próximos números, uno para cada tipo de retención.
+     Permite repetir número en distintos años
+    En caso que se active se permite repetir la numeración de los comprobantes que se emiten en años diferentes. Por ejemplo, comenzar siempre en el número 1.
+    El estado del parámetro es el mismo para todas las empresas de la base de datos. Con esto queremos decir que no es posible indicar que para unas empresas que se repita la numeración y para otras no.
+     Formato de impresión
+    Este campo permite seleccionar el formato con el que se imprimen los comprobantes de retención.
+    El formato está contenido en un archivo de extensión QRP que contiene los datos del comprobante que se deseen imprimir, la ubicación de los mismos en el formulario, la forma que tiene el encabezado, cuerpo y pie del formulario, etc.
+    El sistema se entrega con una serie de archivos QRP que contienen los formatos de impresión standard de todos los comprobantes que se imprimen. Estos pueden ser modificados por el usuario según las necesidades de la empresa.
+    El nombre del archivo QRP podrá tipearse directamente o podrá buscarse y seleccionarse con el botón Explorar.
+     Impresora
+    Impresora en la cual se realizará la impresión de los comprobantes de retenciones de ganancias.
+    Se dispone del botón que permite seleccionar, inicializar y configurar la impresora a utilizar.
+     Copias
+     Cantidad
+    Número que indica la cantidad de copias que se deseen imprimir de los comprobantes de retención.
+    Es importante tener en cuenta que en caso de activar la opción con controlador fiscal, el número de copias no puede superar las 4. En caso de informar un 0 en este campo, el sistema interpreta que se imprime una vez el comprobante y las copias se realizan mediante papel carbónico. En ese caso en el encabezado del comprobante se exhibe la leyenda "Original Blanco/Copia Color". Si en cambio, se especifica una cantidad de copias superior a 0, se imprime el comprobante tantas veces como se haya indicado con una leyenda informando el número de copia (Original, Duplicado, Triplicado y Cuadruplicado)
+    La cantidad de copias que se indiquen podrán imprimirse según las siguientes modalidades:
+     Por programa
+    En este caso, se envía el comprobante a imprimir tantas veces como sea necesario.
+     Por sistema operativo
+    En este lo envía una sola vez y es el sistema operativo el que se ocupa junto con la impresora de generar las distintas copias.
+     Se imprime al generar el comprobante
+    Indicación de si se realiza o no la emisión automática de los comprobantes de retenciones de ganancias,  en el momento en que se registran los comprobantes que les dan origen (recibos, órdenes de pago).
+     Avisa antes de imprimir
+    Indicación de si se avisa o no la impresión automática de los comprobantes de retenciones de ganancias.
+  
+   Ficha Ret. S.U.S.S. 
   
     Aquí se definen los datos correspondientes a las retenciones por contribuciones al S.U.S.S.
     La información que aquí se ingrese permitirá, en los casos que corresponda, que se efectúe el cálculo de estas retenciones dado un importe sujeto, en los ingresos de pagos y cobranzas.
@@ -383,6 +424,78 @@
     Se debe informar el talonario que se utiliza para los ingresos de servicios a terceros.
      Depósito
     Se debe informar el depósito al cual ingresan los servicios de terceros (si bien se trata de servicios, por ser de tipo de valor Cantidad y formar parte de un comprobante de ingreso, se debe indicar un depósito).
+  
+   Ficha Ret. I.V.A.
+  
+    Aquí se definen los datos correspondientes a las retenciones de I.V.A. efectuadas.
+    La información que aquí se ingrese permitirá, en los casos que corresponda, que se efectúe el cálculo de estas retenciones dado un importe sujeto, en los ingresos de pagos y cobranzas.
+    Los comprobantes en los que se calculan estas retenciones son las órdenes de pago y los recibos y se calcularán siempre que se haya configurado la información que se solicita en este punto.
+    Se prevé además la impresión de los comprobantes de retención correspondientes a las retenciones efectuadas. Para esto se debe informar con qué formato se imprimirán dichos comprobantes.
+     Mínimo imponible
+    Corresponde al importe gravado mínimo que tienen que tener los comprobantes aplicados en Recibos y Ordenes de pago para que se calcule la retención.
+     Importe mínimo a retener
+    Debe ingresarse el importe mínimo a tener en cuenta para efectuar la retención de I.V.A..
+    Si al efectuar el cálculo de las retenciones, el sistema detecta que el importe de la retención resultante es inferior al indicado en este dato, no se efectúa la retención.
+     Próximo número de comprobante
+    Número del próximo comprobante de retención a generar.
+    Cada vez que se efectúan retenciones de este tipo es posible informar el número del comprobante de retención para su posterior emisión.
+    Este número puede administrarse en forma correlativa y aquí se exhibe el siguiente al del último comprobante generado. El siguiente comprobante de retención se numerará con este número.
+    Podrán ingresarse dos próximos números, uno para cada tipo de retención.
+     Permite repetir número en distintos años
+    En caso que se active se permite repetir la numeración de los comprobantes que se emiten en años diferentes. Por ejemplo, comenzar siempre en el número 1.
+    El estado del parámetro es el mismo para todas las empresas de la base de datos. Con esto queremos decir que no es posible indicar que para unas empresas que se repita la numeración y para otras no.
+     Formato de impresión
+    Este campo permite seleccionar el formato con el que se imprimen los comprobantes de retención.
+    El formato está contenido en un archivo de extensión QRP que contiene los datos del comprobante que se deseen imprimir, la ubicación de los mismos en el formulario, la forma que tiene el encabezado, cuerpo y pie del formulario, etc.
+    El sistema se entrega con una serie de archivos QRP que contienen los formatos de impresión standard de todos los comprobantes que se imprimen. Estos pueden ser modificados por el usuario según las necesidades de la empresa.
+    El nombre del archivo QRP podrá tipearse directamente o podrá buscarse y seleccionarse con el botón Explorar.
+     Impresora
+    Impresora en la cual se realizará la impresión de los comprobantes de retenciones de I.V.A.
+    Se dispone del botón que permite seleccionar, inicializar y configurar la impresora a utilizar.
+     Copias
+     Cantidad
+    Número que indica la cantidad de copias que se deseen imprimir de los comprobantes de retención.
+    Es importante tener en cuenta que en caso de activar la opción con controlador fiscal, el número de copias no puede superar las 4. En caso de informar un 0 en este campo, el sistema interpreta que se imprime una vez el comprobante y las copias se realizan mediante papel carbónico. En ese caso en el encabezado del comprobante se exhibe la leyenda "Original Blanco/Copia Color". Si en cambio, se especifica una cantidad de copias superior a 0, se imprime el comprobante tantas veces como se haya indicado con una leyenda informando el número de copia (Original, Duplicado, Triplicado y Cuadruplicado)
+    La cantidad de copias que se indiquen podrán imprimirse según las siguientes modalidades:
+     Por programa
+    En este caso, se envía el comprobante a imprimir tantas veces como sea necesario.
+     Por sistema operativo
+    En este lo envía una sola vez y es el sistema operativo el que se ocupa junto con la impresora de generar las distintas copias.
+     Se imprime al generar el comprobante
+    Indicación de si se realiza o no la emisión automática de los comprobantes de retenciones de ganancias,  en el momento en que se registran los comprobantes que les dan origen (recibos, órdenes de pago).
+     Avisa antes de imprimir
+    Indicación de si se avisa o no la impresión automática de los comprobantes de retenciones de I.V.A.
+  
+   Ficha Sinónimos
+  
+    En esta ficha se definen los sinónimos de conceptos para compras, códigos de ítems, etc.
+    La selección de códigos válidos para BAS CS es similar a la que existe para los sinónimos de sucursales.
+    
+     Código
+    Se debe informar código a definir:
+    Las opciones son:
+    - Concepto de compras
+    - Concepto de ventas
+    - Código medio de pago
+    - Código de Item
+    - Código de tarjeta
+    - Código de plan
+    - Caja
+    - Tratamiento Impositivo
+    - Tratamiento impositivo provincial
+    - Tipo de documento
+    - Lista de precios
+    - Depósitos por clientes
+    - Depósitos por proveedor
+    - Imputación contable
+    - Prefijo
+    
+     Dato interno
+    Se debe seleccionar el concepto de BAS CS a definir el sinónimo.
+     Dato externo
+    Indicar el dato sinónimo.
+  
+  
   
   
   
