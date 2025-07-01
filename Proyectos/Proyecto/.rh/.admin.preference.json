@@ -3,17 +3,62 @@
     "title": "bienvenido",
     "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/bienvenido.htm",
     "pinned": false,
-    "time": "Jun 24, 4:43 PM"
+    "time": "Jul 1, 8:50 AM"
   }, {
     "title": "Bascshelp",
     "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/toc/Bascshelp.toc",
     "pinned": false,
-    "time": "Jun 24, 4:43 PM"
+    "time": "Jul 1, 8:50 AM"
   }, {
     "title": "tabla__Empresas",
     "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/tabla__Empresas.htm",
     "pinned": false,
-    "time": "Jun 24, 4:01 PM"
+    "time": "Jun 30, 3:38 PM"
+  }, {
+    "title": "tabla__Sucursales",
+    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/tabla__Sucursales.htm",
+    "pinned": false,
+    "time": "Jun 30, 3:38 PM"
+  }, {
+    "title": "parametros__Datos_generales",
+    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/parametros__Datos_generales.htm",
+    "pinned": false,
+    "time": "Jun 30, 3:27 PM"
+  }, {
+    "title": "consulta_de_clientes",
+    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/consulta_de_clientes.htm",
+    "pinned": false,
+    "time": "Jun 30, 3:25 PM"
+  }, {
+    "title": "consulta_de_proveedores",
+    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/consulta_de_proveedores.htm",
+    "pinned": false,
+    "time": "Jun 30, 3:23 PM"
+  }, {
+    "title": "tabla__Talonarios",
+    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/tabla__Talonarios.htm",
+    "pinned": false,
+    "time": "Jun 30, 3:13 PM"
+  }, {
+    "title": "cierre_operativo",
+    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/cierre_operativo.htm",
+    "pinned": false,
+    "time": "Jun 30, 3:10 PM"
+  }, {
+    "title": "tabla__Descripciones_de_I_V_A_",
+    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/tabla__Descripciones_de_I_V_A_.htm",
+    "pinned": false,
+    "time": "Jun 30, 3:07 PM"
+  }, {
+    "title": "tabla__Tratamientos_impositivos",
+    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/tabla__Tratamientos_impositivos.htm",
+    "pinned": false,
+    "time": "Jun 30, 3:07 PM"
+  }, {
+    "title": "tabla__Percepciones_provinciales",
+    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/tabla__Percepciones_provinciales.htm",
+    "pinned": false,
+    "time": "Jun 30, 3:04 PM"
   }, {
     "title": "tabla__Agentes",
     "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/tabla__Agentes.htm",
@@ -30,25 +75,10 @@
     "pinned": false,
     "time": "Jun 18, 3:56 PM"
   }, {
-    "title": "consulta_de_clientes",
-    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/consulta_de_clientes.htm",
-    "pinned": false,
-    "time": "Jun 18, 3:45 PM"
-  }, {
     "title": "comprobantes_de_venta",
     "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/comprobantes_de_venta.htm",
     "pinned": false,
     "time": "Apr 15, 5:52 PM"
-  }, {
-    "title": "consulta_de_proveedores",
-    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/consulta_de_proveedores.htm",
-    "pinned": false,
-    "time": "Apr 15, 5:49 PM"
-  }, {
-    "title": "cierre_operativo",
-    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/cierre_operativo.htm",
-    "pinned": false,
-    "time": "Apr 15, 5:38 PM"
   }, {
     "title": "lineas_de_comprobantes_de_compras",
     "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/lineas_de_comprobantes_de_compras.htm",
@@ -59,11 +89,6 @@
     "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/comprobantes_de_compra.htm",
     "pinned": false,
     "time": "Apr 15, 5:33 PM"
-  }, {
-    "title": "tabla__Descripciones_de_I_V_A_",
-    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/tabla__Descripciones_de_I_V_A_.htm",
-    "pinned": false,
-    "time": "Apr 15, 5:29 PM"
   }, {
     "title": "administracion_de_Documentos",
     "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/administracion_de_Documentos.htm",
@@ -99,31 +124,6 @@
     "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/recibos.htm",
     "pinned": false,
     "time": "Apr 8, 9:17 AM"
-  }, {
-    "title": "tarjetas__Liquidacion",
-    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/tarjetas__Liquidacion.htm",
-    "pinned": false,
-    "time": "Apr 8, 9:10 AM"
-  }, {
-    "title": "parametros__Fiscalizacion_electronica",
-    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/parametros__Fiscalizacion_electronica.htm",
-    "pinned": false,
-    "time": "Apr 8, 9:07 AM"
-  }, {
-    "title": "consulta_de_comprobantes",
-    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/consulta_de_comprobantes.htm",
-    "pinned": false,
-    "time": "Apr 7, 4:54 PM"
-  }, {
-    "title": "listado__Comprobantes_de_ventas",
-    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/listado__Comprobantes_de_ventas.htm",
-    "pinned": false,
-    "time": "Apr 7, 4:48 PM"
-  }, {
-    "title": "tabla__Talonarios",
-    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/tabla__Talonarios.htm",
-    "pinned": false,
-    "time": "Apr 7, 4:25 PM"
   }],
   "generate.outputs": {
     "C:/Productos LES RH2022/Bascshelp_test/publish/presets/Test2.preset": {
@@ -165,7 +165,7 @@
     "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/publish/presets/Responsive HTML.preset": {
       "exists": true,
       "path": "C:/Productos LEN RH2022/BASCS/Salidas/index.htm",
-      "time": "2025-06-24T16:46:49-03:00",
+      "time": "2025-07-01T08:54:01-03:00",
       "logFile": "C:/Users/admin/AppData/Local/Temp/RHTMP/Responsive HTML.ehtml"
     }
   },
