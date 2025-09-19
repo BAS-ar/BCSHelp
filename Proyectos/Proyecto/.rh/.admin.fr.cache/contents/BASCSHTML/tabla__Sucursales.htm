@@ -103,7 +103,7 @@
      Tipo
      Intercambiar mensajes mediante tablas
     Permite indicar si la sucursal intercambia mensajes con BAS CS mediante tablas.
-    La ICR recorrerá las sucursales que tienen mensajes en la tabla de entrada y las que tienen marcadas este campo.
+    La interfase de conexión remota recorrerá las sucursales que tienen mensajes en la tabla de entrada y las que tienen marcadas este campo.
      Cola de Entrada
     Texto de hasta 64 caracteres para indicar el nombre de la cola de mensajes de entrada a BAS CS desde la aplicación externa vía MSMQ (desde Discovery o desde otra aplicación). En el caso de QP la mensajería se suele establecer por tablas y no por MSMQ, por lo cual no se utilizará este dato.
      Cola de Salida
@@ -135,7 +135,7 @@
     Código de un proveedor del sistema que será el titular de los comprobantes que se importen sin un proveedor asociado (facturas contado, órdenes de pago varias, etc).
      Talonarios
      Ingresos de mercadería
-    El talonario que se informe en este campo es el que se utilizará en el ICR para importar remitos de ingreso cuando no se indicó el prefijo correspondiente en el comprobante a importar.
+    El talonario que se informe en este campo es el que se utilizará la interface de conexión remota para importar remitos de ingreso cuando no se indicó el prefijo correspondiente en el comprobante a importar.
      Imputaciones contables
      Contado
     Cuenta del Plan de cuentas del sistema que será utilizada en la registración contable de las facturas contado que se importen sin imputación contable asociada.

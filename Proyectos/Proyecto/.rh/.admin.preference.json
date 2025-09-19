@@ -3,27 +3,67 @@
     "title": "bienvenido",
     "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/bienvenido.htm",
     "pinned": false,
-    "time": "Jul 1, 9:37 AM"
+    "time": "Sep 19, 10:17 AM"
+  }, {
+    "title": "tabla__Retenciones_provinciales",
+    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/tabla__Retenciones_provinciales.htm",
+    "pinned": false,
+    "time": "Sep 19, 10:17 AM"
+  }, {
+    "title": "tabla__Percepciones_provinciales",
+    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/tabla__Percepciones_provinciales.htm",
+    "pinned": false,
+    "time": "Sep 19, 10:15 AM"
   }, {
     "title": "Bascshelp",
     "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/toc/Bascshelp.toc",
     "pinned": false,
-    "time": "Jul 1, 9:37 AM"
+    "time": "Sep 19, 10:15 AM"
+  }, {
+    "title": "parametros__Datos_generales",
+    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/parametros__Datos_generales.htm",
+    "pinned": false,
+    "time": "Jul 22, 9:36 AM"
+  }, {
+    "title": "tabla__Talonarios",
+    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/tabla__Talonarios.htm",
+    "pinned": false,
+    "time": "Jul 22, 9:34 AM"
+  }, {
+    "title": "pasaje_a_mesa_de_saldos",
+    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/pasaje_a_mesa_de_saldos.htm",
+    "pinned": false,
+    "time": "Jul 22, 9:32 AM"
+  }, {
+    "title": "comprobantes_de_venta__Impresion",
+    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/comprobantes_de_venta__Impresion.htm",
+    "pinned": false,
+    "time": "Jul 22, 9:30 AM"
+  }, {
+    "title": "generacion_archivo_de_egresos",
+    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/generacion_archivo_de_egresos.htm",
+    "pinned": false,
+    "time": "Jul 22, 9:28 AM"
+  }, {
+    "title": "parametros__Especiales",
+    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/parametros__Especiales.htm",
+    "pinned": false,
+    "time": "Jul 22, 9:26 AM"
+  }, {
+    "title": "comprobantes_referenciados_Partes_de_produccion",
+    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/comprobantes_referenciados_Partes_de_produccion.htm",
+    "pinned": false,
+    "time": "Jul 22, 9:17 AM"
+  }, {
+    "title": "tabla__Sucursales",
+    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/tabla__Sucursales.htm",
+    "pinned": false,
+    "time": "Jul 22, 9:13 AM"
   }, {
     "title": "tabla__Empresas",
     "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/tabla__Empresas.htm",
     "pinned": false,
     "time": "Jun 30, 3:38 PM"
-  }, {
-    "title": "tabla__Sucursales",
-    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/tabla__Sucursales.htm",
-    "pinned": false,
-    "time": "Jun 30, 3:38 PM"
-  }, {
-    "title": "parametros__Datos_generales",
-    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/parametros__Datos_generales.htm",
-    "pinned": false,
-    "time": "Jun 30, 3:27 PM"
   }, {
     "title": "consulta_de_clientes",
     "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/consulta_de_clientes.htm",
@@ -34,11 +74,6 @@
     "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/consulta_de_proveedores.htm",
     "pinned": false,
     "time": "Jun 30, 3:23 PM"
-  }, {
-    "title": "tabla__Talonarios",
-    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/tabla__Talonarios.htm",
-    "pinned": false,
-    "time": "Jun 30, 3:13 PM"
   }, {
     "title": "cierre_operativo",
     "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/cierre_operativo.htm",
@@ -54,11 +89,6 @@
     "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/tabla__Tratamientos_impositivos.htm",
     "pinned": false,
     "time": "Jun 30, 3:07 PM"
-  }, {
-    "title": "tabla__Percepciones_provinciales",
-    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/tabla__Percepciones_provinciales.htm",
-    "pinned": false,
-    "time": "Jun 30, 3:04 PM"
   }, {
     "title": "tabla__Agentes",
     "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/tabla__Agentes.htm",
@@ -94,36 +124,6 @@
     "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/administracion_de_Documentos.htm",
     "pinned": false,
     "time": "Apr 15, 5:14 PM"
-  }, {
-    "title": "Topic References",
-    "path": "Topic References.report",
-    "pinned": false,
-    "time": "Apr 8, 9:32 AM"
-  }, {
-    "title": "retencion_de_SUSS_en_pagos_y_recibos",
-    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/retencion_de_SUSS_en_pagos_y_recibos.htm",
-    "pinned": false,
-    "time": "Apr 8, 9:30 AM"
-  }, {
-    "title": "retencion_de_IIBB_en_recibos",
-    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/retencion_de_IIBB_en_recibos.htm",
-    "pinned": false,
-    "time": "Apr 8, 9:30 AM"
-  }, {
-    "title": "ficha_retencion_de_I_V_A",
-    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/ficha_retencion_de_I_V_A.htm",
-    "pinned": false,
-    "time": "Apr 8, 9:28 AM"
-  }, {
-    "title": "ficha_Retencion_de_ganancias",
-    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/ficha_Retencion_de_ganancias.htm",
-    "pinned": false,
-    "time": "Apr 8, 9:20 AM"
-  }, {
-    "title": "recibos",
-    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/recibos.htm",
-    "pinned": false,
-    "time": "Apr 8, 9:17 AM"
   }],
   "generate.outputs": {
     "C:/Productos LES RH2022/Bascshelp_test/publish/presets/Test2.preset": {
@@ -165,7 +165,7 @@
     "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/publish/presets/Responsive HTML.preset": {
       "exists": true,
       "path": "C:/Productos LEN RH2022/BASCS/Salidas/index.htm",
-      "time": "2025-07-01T09:40:45-03:00",
+      "time": "2025-09-19T10:21:21-03:00",
       "logFile": "C:/Users/admin/AppData/Local/Temp/RHTMP/Responsive HTML.ehtml"
     }
   },

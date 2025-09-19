@@ -62,7 +62,7 @@
     Se presenta desactivado. En ese caso, si en un asiento resumen una cuenta tiene movimientos al debe y al haber aparecerá en el asiento con los dos pases. En caso contrario, se exhibirá imputada por el importe neto, en el debe o en el haber, según corresponda.
      Importación
      Orden de las percepciones
-    En el mensaje de la ICR destinado a importar comprobantes, los campos correspondientes a las percepciones tienen un orden, importe de la percepción de IVA y luego Importe de la percepción de IIBB.
+    En el mensaje de la interfaz de conexión remota destinado a importar comprobantes, los campos correspondientes a las percepciones tienen un orden, importe de la percepción de IVA y luego Importe de la percepción de IIBB.
     Pero en Discovery estas percepciones se parametrizan como Impuestos 1 e Impuestos 2, por lo cual, según la parametrización realizada en Discovery vendrán en un orden o en otro. Este campo permite indicar el orden en que vienen las percepciones en el mensaje.
     Si en Discovery se parametriza Impuestos 1 para la percepción de IVA e Impuestos 2 para la percepción de IIBB, está bien. Si se parametrizó al revés, habrá que utilizar este parámetro.
      Controlar los importes de las líneas de las aplicaciones
@@ -70,7 +70,7 @@
      Habilitar el envío de listas con vigencias futuras
     Tildar para trasmitir las listas de precios de fecha de vigencia futura, a QP:
      Minimizar control en devolución de cupones
-    En caso de chequear esta opción el ICR no considerará, en los controles para la devolución de cupones, la fecha y número de tarjeta en primera instacia. En segunda instancia no considerará el número de cupón informado utilizando para el control el importe, el cliente y el código de la tarjeta
+    En caso de chequear esta opción al realizar la importación no se considerará, en los controles para la devolución de cupones, la fecha y número de tarjeta en primera instacia. En segunda instancia no considerará el número de cupón informado utilizando para el control el importe, el cliente y el código de la tarjeta
      No controlar empresa de alta en modificación de clientes
     Si se indica, al modificar datos de clientes mediante importación de datos no se controlará que la modificación se realice estando en la empresa de alta de ese cliente, sino que podrá realizarse desde cualquier otra empresa.
   
