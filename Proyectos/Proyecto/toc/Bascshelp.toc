@@ -500,6 +500,7 @@
     <page navtitle="Permisos de Importación" href="../contents/BASCSHTML/tabla__Permisos_de_importacion.htm" format="html" processing-role="normal"></page>
     <page href="../contents/BASCSHTML/tabla__Posiciones_arancelarias.htm" format="html" processing-role="normal"></page>
     <page navtitle="Unidades logísticas" href="../contents/BASCSHTML/tabla__Unidades_logisticas.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/BASCSHTML/nomencladores.htm" format="html" processing-role="normal"></page>
     <book navtitle="Precios" format="html" processing-role="normal">
       <page navtitle="Políticas de precios" href="../contents/BASCSHTML/listas_de_precios__Politicas_de_precios.htm" format="html" processing-role="normal"></page>
       <page navtitle="Definición de listas de precios" href="../contents/BASCSHTML/listas_de_precios__Definicion.htm" format="html" processing-role="normal"></page>
