@@ -1,5 +1,25 @@
 {
   "recent-files::internal:document": [{
+    "title": "cancelacion_automatica_de_saldos",
+    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/cancelacion_automatica_de_saldos.htm",
+    "pinned": false,
+    "time": "Nov 6, 10:49 AM"
+  }, {
+    "title": "generacion_automatica__Cierre_del_lote",
+    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/generacion_automatica__Cierre_del_lote.htm",
+    "pinned": false,
+    "time": "Nov 6, 10:49 AM"
+  }, {
+    "title": "comprobantes_de_venta",
+    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/comprobantes_de_venta.htm",
+    "pinned": false,
+    "time": "Nov 6, 10:48 AM"
+  }, {
+    "title": "generacion_automatica",
+    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/generacion_automatica.htm",
+    "pinned": false,
+    "time": "Nov 6, 10:41 AM"
+  }, {
     "title": "bienvenido",
     "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/bienvenido.htm",
     "pinned": false,
@@ -14,11 +34,6 @@
     "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/cierre_de_guia.htm",
     "pinned": false,
     "time": "Nov 6, 9:46 AM"
-  }, {
-    "title": "comprobantes_de_venta",
-    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/comprobantes_de_venta.htm",
-    "pinned": false,
-    "time": "Nov 6, 9:43 AM"
   }, {
     "title": "tabla__Clientes",
     "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/tabla__Clientes.htm",
@@ -109,21 +124,6 @@
     "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/tabla__Sucursales.htm",
     "pinned": false,
     "time": "Jul 22, 9:13 AM"
-  }, {
-    "title": "tabla__Empresas",
-    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/tabla__Empresas.htm",
-    "pinned": false,
-    "time": "Jun 30, 3:38 PM"
-  }, {
-    "title": "consulta_de_proveedores",
-    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/consulta_de_proveedores.htm",
-    "pinned": false,
-    "time": "Jun 30, 3:23 PM"
-  }, {
-    "title": "cierre_operativo",
-    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/cierre_operativo.htm",
-    "pinned": false,
-    "time": "Jun 30, 3:10 PM"
   }],
   "generate.outputs": {
     "C:/Productos LES RH2022/Bascshelp_test/publish/presets/Test2.preset": {
@@ -165,7 +165,7 @@
     "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/publish/presets/Responsive HTML.preset": {
       "exists": true,
       "path": "C:/Productos LEN RH2022/BASCS/Salidas/index.htm",
-      "time": "2025-11-06T10:02:59-03:00",
+      "time": "2025-11-06T10:57:06-03:00",
       "logFile": "C:/Users/admin/AppData/Local/Temp/RHTMP/Responsive HTML.ehtml"
     }
   },
