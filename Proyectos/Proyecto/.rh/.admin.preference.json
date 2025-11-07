@@ -1,5 +1,10 @@
 {
   "recent-files::internal:document": [{
+    "title": "bienvenido",
+    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/bienvenido.htm",
+    "pinned": false,
+    "time": "Nov 7, 10:09 AM"
+  }, {
     "title": "cancelacion_automatica_de_saldos",
     "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/cancelacion_automatica_de_saldos.htm",
     "pinned": false,
@@ -19,11 +24,6 @@
     "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/generacion_automatica.htm",
     "pinned": false,
     "time": "Nov 6, 10:41 AM"
-  }, {
-    "title": "bienvenido",
-    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/bienvenido.htm",
-    "pinned": false,
-    "time": "Nov 6, 10:00 AM"
   }, {
     "title": "notas_de_debito_credito_por_dif__de_cambio",
     "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/notas_de_debito_credito_por_dif__de_cambio.htm",
@@ -165,7 +165,7 @@
     "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/publish/presets/Responsive HTML.preset": {
       "exists": true,
       "path": "C:/Productos LEN RH2022/BASCS/Salidas/index.htm",
-      "time": "2025-11-06T10:57:06-03:00",
+      "time": "2025-11-07T10:14:54-03:00",
       "logFile": "C:/Users/admin/AppData/Local/Temp/RHTMP/Responsive HTML.ehtml"
     }
   },
