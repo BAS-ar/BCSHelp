@@ -5,9 +5,9 @@ model = rh.model;
 var defaultTopic = "BASCSHTML/bienvenido.htm";
 rh._.exports(defaultTopic);
 rh.consts('DEFAULT_TOPIC', encodeURI("BASCSHTML/bienvenido.htm"));
-rh.consts('HOME_FILEPATH', encodeURI('index.htm'));
-rh.consts('START_FILEPATH', encodeURI('index.htm'));
-rh.consts('HELP_ID', 'efa6e8ad-312f-49da-934a-b1a9b5fe63ad' || 'preview');
+rh.consts('HOME_FILEPATH', encodeURI('index.html'));
+rh.consts('START_FILEPATH', encodeURI('index.html'));
+rh.consts('HELP_ID', 'd66269e2-68e8-4be9-ab68-08c94f5e51c1' || 'preview');
 rh.consts('LNG_SUBSTR_SEARCH', 0);
 
 model.publish(rh.consts('KEY_LNG_NAME'), "es");

@@ -3,7 +3,12 @@
     "title": "bienvenido",
     "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/bienvenido.htm",
     "pinned": false,
-    "time": "Nov 14, 10:50 AM"
+    "time": "Nov 18, 4:47 PM"
+  }, {
+    "title": "Responsive HTML",
+    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/publish/presets/Responsive HTML.preset",
+    "pinned": false,
+    "time": "Nov 14, 11:18 AM"
   }, {
     "title": "cancelacion_automatica_de_saldos",
     "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/cancelacion_automatica_de_saldos.htm",
@@ -119,11 +124,6 @@
     "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/comprobantes_referenciados_Partes_de_produccion.htm",
     "pinned": false,
     "time": "Jul 22, 9:17 AM"
-  }, {
-    "title": "tabla__Sucursales",
-    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/tabla__Sucursales.htm",
-    "pinned": false,
-    "time": "Jul 22, 9:13 AM"
   }],
   "generate.outputs": {
     "C:/Productos LES RH2022/Bascshelp_test/publish/presets/Test2.preset": {
@@ -164,8 +164,8 @@
     },
     "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/publish/presets/Responsive HTML.preset": {
       "exists": true,
-      "path": "C:/Productos LEN RH2022/BASCS/Salidas/index.htm",
-      "time": "2025-11-14T10:54:51-03:00",
+      "path": "C:/Productos LEN RH2022/BASCS/Salidas/index.html",
+      "time": "2025-11-18T16:51:29-03:00",
       "logFile": "C:/Users/admin/AppData/Local/Temp/RHTMP/Responsive HTML.ehtml"
     }
   },
