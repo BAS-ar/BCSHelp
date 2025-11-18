@@ -31,4 +31,51 @@ jobs:
           output_location: "." # Built app content directory - optional
           ###### End of Repository/Build Configurations ######
 
+      - name: enviar correo 
+        if: failure() || cancelled()
+        uses: dawidd6/action-send-mail@v3
+        with:
+         connection_url: smtp://proyectosbas:${{ secrets.emailpassword }}@mail.bas.com.ar:25
+         server_address: mail.bas.com.ar
+         server_port: 25 
+         secure: false
+
+         from: GitHub <proyectosbas@bas.com.ar>
+         to: capacitacion@bas.com.ar
+         subject: Error en la actualización en Azure del help de BASCS
+         body: |
+            Se ha producido un error en la actualización en Azure del help de BASCS.
+           
+            Commit: ${{github.sha}}
+            Autor: ${{github.actor}}
+            Mensaje: ${{github.event.head_commit.message}}
+
+         ignore_cert: true
+         nodemailerlog: true
+         nodemailerdebug: true          
+
+      - name: enviar correo 
+        if: success()
+        uses: dawidd6/action-send-mail@v3
+        with:
+         connection_url: smtp://proyectosbas:${{ secrets.emailpassword }}@mail.bas.com.ar:25
+         server_address: mail.bas.com.ar
+         server_port: 25 
+         secure: false
+
+         from: GitHub <proyectosbas@bas.com.ar>
+         to: capacitacion@bas.com.ar
+         subject: Actualización en Azure del help de BASCS
+         body: |
+            Se ha actualizado exitosamente en Azure el help de BASCS.
+           
+            Commit: ${{github.sha}}
+            Autor: ${{github.actor}}
+            Mensaje: ${{github.event.head_commit.message}}
+
+         ignore_cert: true
+         nodemailerlog: true
+         nodemailerdebug: true          
+
+
 
