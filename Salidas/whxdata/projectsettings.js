@@ -7,7 +7,7 @@ rh._.exports(defaultTopic);
 rh.consts('DEFAULT_TOPIC', encodeURI("BASCSHTML/bienvenido.htm"));
 rh.consts('HOME_FILEPATH', encodeURI('index.html'));
 rh.consts('START_FILEPATH', encodeURI('index.html'));
-rh.consts('HELP_ID', 'd66269e2-68e8-4be9-ab68-08c94f5e51c1' || 'preview');
+rh.consts('HELP_ID', 'fd331ee7-520f-4e51-8bcc-6ae966770cc5' || 'preview');
 rh.consts('LNG_SUBSTR_SEARCH', 0);
 
 model.publish(rh.consts('KEY_LNG_NAME'), "es");

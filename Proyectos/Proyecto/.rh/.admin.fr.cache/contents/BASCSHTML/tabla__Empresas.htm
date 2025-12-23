@@ -83,12 +83,17 @@
      Fecha inicio actividad
     Fecha de inicio de las actividades de la empresa.
     Este dato es requerido para generar el archivo que acompaña a las facturas fiscalizadas electrónicamente cuando se mandan por mail.
+     Actividad
+    Código de la actividad principal de la empresa.
+    Será utilizada al exportar los archivos de débitos fiscales y restitución de débitos fiscales, en la apertura de Otros Conceptos del libro de IVA (En el utilitario BCSIvaSimple).
      Usar tasa de IVA nominal
     Campo para indicar si se desea realizar el cálculo de IVA según una tasa nominal.
     Para ser utilizado en Bolivia (el IVA en Bolivia es del 13% y se define mediante Tasas Nominales, esto significa que se aplican sobre el total del comprobante y no sobre el neto gravado. Así por ejemplo, si el total de la factura es de 100, el IVA será 13 y el neto gravado será 87. Esta forma de cálculo del IVA es independiente del tipo de cliente -inscripto o consumidor final-).
      Formato  para prefijos internos
     Se debe indicar el formato de prefijo a utilizar en los números internos de comprobantes, es decir, el formato de prefijo con el que se ingresaran todos los comprobantes que se generan. 
     Este formato podrá variar por empresa y no podrá ser modificado una vez que la empresa tenga comprobantes ingresados.
+    
+    
     
      Aplica IVA diferencial para consumidores finales
     Además de los consumidores finales, es posible utilizar tasa de I.V.A. diferencial de consumidores finales, en otros clientes, independientemente de cual sea su categoría de I.V.A.
