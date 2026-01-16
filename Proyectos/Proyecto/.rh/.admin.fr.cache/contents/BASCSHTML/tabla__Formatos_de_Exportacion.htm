@@ -22,10 +22,12 @@
     Los formatos pueden ser de dos tipos de acuerdo a la forma en que se detallan los campos en los registros:
      C.S.V. (valores separados por comas)
     En este caso los valores se separan por comas por lo que se debe indicar el orden (posición) en el registro de los campos que se detallen.
+     Separador datos: seleccionar "." o ";".
      Posición fija
     Si se indica esta opción, los valores se ubican a partir de la columna que se indique (inicio) ocupando tantos caracteres / dígitos como se indique (largo). Los mismos se completarán con ceros o espacios a derecha o izquierda de acuerdo a lo que se establezca en el aplicativo para cada valor.
      Longitud registro
     En el caso de que el formato sea de Posición fija es conveniente que se complete el dato Longitud de registro. En caso que no se informe, la longitud del registro se determina analizando los datos inicio y largo de cada uno de los campos para determinar la columna mayor (es la mayor que resulta de adicionar al dato Inicio de cada campo la longitud que le corresponde). Si este valor resulta inferior al indicado por el aplicativo en cuestión, se considera como longitud del registro el del aplicativo.
+     Separador decimal: seleccionar ".", "," o "Ninguno".
      Campos
     En esta grilla se define la estructura de los registros del archivo a exportar.
     Si se activa el campo Posición fija se deben completar las siguientes columnas.

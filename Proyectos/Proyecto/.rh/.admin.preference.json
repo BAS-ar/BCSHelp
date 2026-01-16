@@ -3,7 +3,37 @@
     "title": "bienvenido",
     "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/bienvenido.htm",
     "pinned": false,
-    "time": "Dec 23, 5:26 PM"
+    "time": "Jan 16, 9:03 AM"
+  }, {
+    "title": "Bascshelp",
+    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/toc/Bascshelp.toc",
+    "pinned": false,
+    "time": "Jan 16, 9:03 AM"
+  }, {
+    "title": "tabla__Clientes",
+    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/tabla__Clientes.htm",
+    "pinned": false,
+    "time": "Jan 8, 5:42 PM"
+  }, {
+    "title": "tabla__Formatos_de_Importacion",
+    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/tabla__Formatos_de_Importacion.htm",
+    "pinned": false,
+    "time": "Jan 8, 5:41 PM"
+  }, {
+    "title": "tabla__Formatos_de_Exportacion",
+    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/tabla__Formatos_de_Exportacion.htm",
+    "pinned": false,
+    "time": "Jan 8, 5:41 PM"
+  }, {
+    "title": "consulta_de_estado_de_cierres",
+    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/consulta_de_estado_de_cierres.htm",
+    "pinned": false,
+    "time": "Jan 8, 5:16 PM"
+  }, {
+    "title": "cierre_operativo",
+    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/cierre_operativo.htm",
+    "pinned": false,
+    "time": "Jan 8, 5:15 PM"
   }, {
     "title": "tabla__Empresas",
     "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/tabla__Empresas.htm",
@@ -75,11 +105,6 @@
     "pinned": false,
     "time": "Nov 6, 10:41 AM"
   }, {
-    "title": "tabla__Clientes",
-    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/tabla__Clientes.htm",
-    "pinned": false,
-    "time": "Nov 6, 9:41 AM"
-  }, {
     "title": "consulta_de_clientes",
     "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/consulta_de_clientes.htm",
     "pinned": false,
@@ -99,31 +124,6 @@
     "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/tabla__Paises.htm",
     "pinned": false,
     "time": "Nov 6, 9:16 AM"
-  }, {
-    "title": "tabla__Retenciones_provinciales",
-    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/tabla__Retenciones_provinciales.htm",
-    "pinned": false,
-    "time": "Sep 19, 10:17 AM"
-  }, {
-    "title": "tabla__Percepciones_provinciales",
-    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/tabla__Percepciones_provinciales.htm",
-    "pinned": false,
-    "time": "Sep 19, 10:15 AM"
-  }, {
-    "title": "Bascshelp",
-    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/toc/Bascshelp.toc",
-    "pinned": false,
-    "time": "Sep 19, 10:15 AM"
-  }, {
-    "title": "parametros__Datos_generales",
-    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/parametros__Datos_generales.htm",
-    "pinned": false,
-    "time": "Jul 22, 9:36 AM"
-  }, {
-    "title": "pasaje_a_mesa_de_saldos",
-    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/pasaje_a_mesa_de_saldos.htm",
-    "pinned": false,
-    "time": "Jul 22, 9:32 AM"
   }],
   "generate.outputs": {
     "C:/Productos LES RH2022/Bascshelp_test/publish/presets/Test2.preset": {
@@ -165,7 +165,7 @@
     "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/publish/presets/Responsive HTML.preset": {
       "exists": true,
       "path": "C:/Productos LEN RH2022/BASCS/Salidas/index.html",
-      "time": "2025-12-23T17:29:39-03:00",
+      "time": "2026-01-16T09:07:13-03:00",
       "logFile": "C:/Users/admin/AppData/Local/Temp/RHTMP/Responsive HTML.ehtml"
     }
   },
