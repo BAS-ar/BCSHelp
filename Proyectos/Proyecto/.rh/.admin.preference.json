@@ -3,7 +3,12 @@
     "title": "bienvenido",
     "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/bienvenido.htm",
     "pinned": false,
-    "time": "Jan 16, 9:03 AM"
+    "time": "Jan 29, 11:30 AM"
+  }, {
+    "title": "listado__Estado_de_autorizaciones",
+    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/listado__Estado_de_autorizaciones.htm",
+    "pinned": false,
+    "time": "Jan 29, 11:27 AM"
   }, {
     "title": "Bascshelp",
     "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/toc/Bascshelp.toc",
@@ -119,11 +124,6 @@
     "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/tabla__Observaciones_de_preventa.htm",
     "pinned": false,
     "time": "Nov 6, 9:18 AM"
-  }, {
-    "title": "tabla__Paises",
-    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/tabla__Paises.htm",
-    "pinned": false,
-    "time": "Nov 6, 9:16 AM"
   }],
   "generate.outputs": {
     "C:/Productos LES RH2022/Bascshelp_test/publish/presets/Test2.preset": {
@@ -165,7 +165,7 @@
     "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/publish/presets/Responsive HTML.preset": {
       "exists": true,
       "path": "C:/Productos LEN RH2022/BASCS/Salidas/index.html",
-      "time": "2026-01-16T09:07:13-03:00",
+      "time": "2026-01-29T11:34:40-03:00",
       "logFile": "C:/Users/admin/AppData/Local/Temp/RHTMP/Responsive HTML.ehtml"
     }
   },
