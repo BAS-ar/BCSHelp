@@ -1,1 +1,1 @@
-rh._.exports({"0":[[" ","presupuestos de compra Autorizacion"]],"2":[[" ","Autorización de presupuestos de compra"]],"3":[[" ","Si se trabaja con autorización de componentes, los usuarios responsables de las autorizaciones deben realizar la tarea de autorización, propiamente dicha, en este punto del menú."," ","Autorizar"]],"id":"1"})
+rh._.exports({"0":[[" ","BASCSQP Configuracion de sucursal"]],"1":[["Sucursales con Quick Pos"]],"2":[[" ","Sucursales con Quick Pos"]],"3":[[" ","Documentación disponible en la documentación de implementación de QP en el SAC."]],"id":"1"})

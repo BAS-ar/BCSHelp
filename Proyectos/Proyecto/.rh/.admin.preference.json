@@ -3,17 +3,17 @@
     "title": "bienvenido",
     "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/bienvenido.htm",
     "pinned": false,
-    "time": "Jan 29, 11:30 AM"
+    "time": "Feb 27, 12:05 PM"
+  }, {
+    "title": "Bascshelp",
+    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/toc/Bascshelp.toc",
+    "pinned": false,
+    "time": "Feb 27, 12:05 PM"
   }, {
     "title": "listado__Estado_de_autorizaciones",
     "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/listado__Estado_de_autorizaciones.htm",
     "pinned": false,
     "time": "Jan 29, 11:27 AM"
-  }, {
-    "title": "Bascshelp",
-    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/toc/Bascshelp.toc",
-    "pinned": false,
-    "time": "Jan 16, 9:03 AM"
   }, {
     "title": "tabla__Clientes",
     "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/tabla__Clientes.htm",
@@ -165,7 +165,7 @@
     "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/publish/presets/Responsive HTML.preset": {
       "exists": true,
       "path": "C:/Productos LEN RH2022/BASCS/Salidas/index.html",
-      "time": "2026-01-29T11:34:40-03:00",
+      "time": "2026-02-27T12:08:42-03:00",
       "logFile": "C:/Users/admin/AppData/Local/Temp/RHTMP/Responsive HTML.ehtml"
     }
   },
