@@ -50,28 +50,18 @@
   
    Selección de cupones
   
-    Se incluyen una serie de filtros para
-      la selección de los cupones.
-     Desde
-      fecha
-    Fecha de presentación desde la corresponde
-      liquidar cupones.
-     Hasta
-      fecha
-    Fecha de presentación hasta la que
-      corresponde liquidar cupones.
-     Código
-      de comercio
-    Si se informa un código se incluyen
-      sólo los cupones correspondientes al mismo.
-     Prefijo
-      presentación
-    Permite informar un prefijo de modo
-      de incluir solamente las presentaciones que tienen dicho prefijo.
-     Cargar
-      cupones
-    Presionando este botón se ingresan
-      al comprobante los cupones que cumplen con los filtros que se indican.
+    Se incluyen una serie de filtros para la selección de los cupones.
+     Desde fecha
+    Fecha de presentación desde la corresponde liquidar cupones.
+     Hasta fecha
+    Fecha de presentación hasta la que corresponde liquidar cupones.
+     Código de comercio
+    Si se informa un código se incluyen sólo los cupones correspondientes al mismo.
+     Prefijo presentación
+    Permite informar un prefijo de modo de incluir solamente las presentaciones que tienen dicho prefijo.
+     Cargar cupones
+    Presionando este botón se ingresan al comprobante los cupones que cumplen con los filtros que se indican.
+    En caso de tratarse de cupones de devolución sus importes se exhiben en negativo.
   
    Ficha Comprobantes
   
@@ -245,7 +235,8 @@
   
     Mediante esta ficha se informan los gastos que deduce el banco en relación a la liquidación que se registra, el I.V.A., las retenciones y, en caso que correspondan, las percepciones de I.V.A., Ganancias e Ingresos Brutos, en base al tratamiento impositivo del proveedor asociado al banco o del proveedor de la tarjeta según la parametrización realizada al definir la tarjeta.
     En el caso que deba discriminarse el gasto en varias partes, ya sea porque se contabiliza en cuentas diferentes o porque está gravado a tasas distintas, es posible indicar distintos códigos de ítem que llevarán los gastos asociados.
-    Los ítems a los cuales se asocian estos gastos se ingresan en una tabla con los correspondientes importes.
+    Si la liquidación incluye cupones de devolución, los gastos se muestran en negativo. Se impide grabar una liquidación con el total de los gastos en negativo.
+      Los ítems a los cuales se asocian estos gastos se ingresan en una tabla con los correspondientes importes.
   
   
    Tabla de ítems de gastos

@@ -27,86 +27,35 @@
   
    Ficha Opciones
   
-     Incluir
-      código propio de
-    Este campo permite indicar un código
-      de cliente o proveedor de modo de incluir el código propio de los
-      ítems para el proveedor o cliente indicado, al emitir el informe.
+     Incluir código propio de
+    Este campo permite indicar un código de cliente o proveedor de modo de incluir el código propio de los ítems para el proveedor o cliente indicado, al emitir el informe.
      Ordenamiento
-    Indicación del ordenamiento con el
-      que se desea emitir el listado.
-    
-      Ítem
-    Si se selecciona ordenamiento
-      Ítem se imprimirá el detalle
-      de movimientos ordenado por código de ítem
-      .
-    
-    
-      Rubro
-    Si se selecciona ordenamiento
-      Rubro se imprimirá el detalle de movimientos ordenado por código
-        de rubro y por código de subrubro. Se mostrará cada rubro del
-      rango seleccionado con el detalle de los movimientos de los ítems
-      de ese rubro. Los ítems sin rubro se imprimirán al principio del listado
-      agrupados bajo el título Sin rubro.
-    
-      Cuenta
-    Al seleccionar el ordenamiento
-      por Cuenta, se deberá indicar si se ordena por Ítem o por comprobante.
-      Es decir, si para cada cuenta se ordena el informe por Ítem-Comprobante,
-      o por Comprobante-Ítem. 
+    Indicación del ordenamiento con el que se desea emitir el listado.
+     Ítem
+    Si se selecciona ordenamiento Ítem se imprimirá el detalle de movimientos ordenado por código de ítem .
+     Rubro
+    Si se selecciona ordenamiento Rubro se imprimirá el detalle de movimientos ordenado por código de rubro y por código de subrubro. Se mostrará cada rubro del rango seleccionado con el detalle de los movimientos de los ítems de ese rubro. Los ítems sin rubro se imprimirán al principio del listado agrupados bajo el título Sin rubro.
+     Cuenta
+    Al seleccionar el ordenamiento por Cuenta, se deberá indicar si se ordena por Ítem o por comprobante. Es decir, si para cada cuenta se ordena el informe por Ítem-Comprobante, o por Comprobante-Ítem.
      
-    Luego se solicita un segundo nivel
-      de ordenamiento para indicar si se desea ordenar el listado por código
-      de ítem o por su descripción. Las opciones son:
-    
-      Código
-    
-      Descripción
-    Valores
-      en
-    Moneda de valuación que se desea
-      utilizar para valorizar los movimientos que se incluyen en el listado.
-      Este cuadro solo se habilitará en caso de haber definido una Moneda
-      de valuación y contabilización adicional.
+    Luego se solicita un segundo nivel de ordenamiento para indicar si se desea ordenar el listado por código de ítem o por su descripción. Las opciones son:
+     Código
+     Descripción
+    Valores en
+    Moneda de valuación que se desea utilizar para valorizar los movimientos que se incluyen en el listado. Este cuadro solo se habilitará en caso de haber definido una Moneda de valuación y contabilización adicional.
      Valorización
-    
-      Método de valuación
-    Método de valuación que se desea
-      utilizar para valorizar los movimientos que se incluyen en el listado.
-    Las opciones que se ofrezcan dependerán
-      de los métodos indicados en métodos
-        de valuación habilitados indicados en la pantalla parámetros de
-      ítems.
-    Si
-        se indica como método de valuación precio de compra o método contable,
-        para los bienes que no administran stock y servicios de tipo cantidad
-        que tienen método de valuación precio de compra, se dispone del detalle
-        del ingreso que le da costo.
-    Como el método de valuación contable
-      de un ítem puede modificarse en cualquier momento  aunque
-        el mismo tenga movimientos y estos estén en un subdiario de materiales
-        cerrado, si el informe se pide según el método contable (sólo en este
-        método), el método de valuación asociado al ítem al momento de emitir
-        el listado puede no coincidir con el que se observa en el informe.
-        La figura muestra un ejemplo donde los movimientos valorizados
-      de un ítem tenían valuación por costo FIFO hasta el mes de enero y
-      en febrero cambió su método de valuación a CPP al cierre, por lo tanto
-      el listado muestra los movimientos agrupados según el método por el
-      que se valuaron. 
+     Método de valuación
+    Método de valuación que se desea utilizar para valorizar los movimientos que se incluyen en el listado.
+    Las opciones que se ofrezcan dependerán de los métodos indicados en métodos de valuación habilitados indicados en la pantalla parámetros de ítems.
+    Si se indica como método de valuación precio de compra o método contable, para los bienes que no administran stock y servicios de tipo cantidad que tienen método de valuación precio de compra, se dispone del detalle del ingreso que le da costo.
+    Como el método de valuación contable de un ítem puede modificarse en cualquier momento  aunque el mismo tenga movimientos y estos estén en un subdiario de materiales cerrado, si el informe se pide según el método contable (sólo en este método), el método de valuación asociado al ítem al momento de emitir el listado puede no coincidir con el que se observa en el informe. La figura muestra un ejemplo donde los movimientos valorizados de un ítem tenían valuación por costo FIFO hasta el mes de enero y en febrero cambió su método de valuación a CPP al cierre, por lo tanto el listado muestra los movimientos agrupados según el método por el que se valuaron.
     
      
-    
-      Lista de precios
-    En caso de haber elegido como
-      Método de valuación "Ocasional" se debe indicar la lista
-      de precios.
-    La lista de precios que se indique
-      puede haberse definido como dinámica.
-    Como este informe se muestra en
-      primera unidad de medida, la lista que se utilice para valorizar se
-      convierte, de la unidad que esté, a primera unidad de medida.
+     Lista de precios
+    En caso de haber elegido como Método de valuación "Ocasional" se debe indicar la lista de precios.
+    La lista de precios que se indique puede haberse definido como dinámica.
+    En este caso, se utilizarán los precios de la última vigencia a la fecha autorizada, de las listas estáticas que la conforman.
+    Como este informe se muestra en primera unidad de medida, la lista que se utilice para valorizar se convierte, de la unidad que esté, a primera unidad de medida.
      
   
    Ficha Productos

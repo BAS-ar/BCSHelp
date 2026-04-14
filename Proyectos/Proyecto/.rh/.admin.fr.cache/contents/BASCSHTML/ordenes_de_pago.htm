@@ -346,43 +346,17 @@
   
    Ficha Ingreso de valores
   
-    Esta ficha está prevista para casos eventuales
-      en los que, a la vez de efectuar un pago a un individuo, éste a su
-      vez, entrega valores. En ese caso, dichos valores se registran en
-      esta ficha.
-    Esta situación se puede dar, por ejemplo,
-      si se paga una deuda a un proveedorTabla:_Proveedores y, a la misma
-      vez, se le canjea un documento entregado anteriormente. En ese caso
-      el documento se ingresa mediante esta ficha.
-    Otro ejemplo de uso puede darse en el
-      caso que, al efectuar un pago a un agente, éste nos devuelva un cheque
-      propio que le hemos entregado y que no utilizó. En ese caso el cheque
-      se ingresa al sistema mediante esta ficha.
-    Se ingresan los valores que se reciben
-      (cheques, efectivos, facturas de crédito, etc.).
-    Al igual que al dar ingreso a los valores
-      entregados, estos valores también ingresan al comprobante invocando
-      códigos de medios de pago
-      y la información a asociar a cada uno dependerá del tipo de valor
-      del que se trate.
-    Para cada valor que se ingrese se debe
-      informar el código del medio de
-        pago que lo identifica y, en función del tipo de valor del que
-      se trate, se solicitarán diferentes datos, en forma similar a lo explicado
-      en la ficha Valores.
+    Esta ficha está prevista para casos eventuales en los que, a la vez de efectuar un pago a un individuo, éste a su vez, entrega valores. En ese caso, dichos valores se registran en esta ficha.
+    Esta situación se puede dar, por ejemplo, si se paga una deuda a un proveedorTabla:_Proveedores y, a la misma vez, se le canjea un documento entregado anteriormente. En ese caso el documento se ingresa mediante esta ficha.
+    Otro ejemplo de uso puede darse en el caso que, al efectuar un pago a un agente, éste nos devuelva un cheque propio que le hemos entregado y que no utilizó. En ese caso el cheque se ingresa al sistema mediante esta ficha.
+    Se ingresan los valores que se reciben (cheques, efectivos, facturas de crédito, etc.).
+    Al igual que al dar ingreso a los valores entregados, estos valores también ingresan al comprobante invocando códigos de medios de pago y la información a asociar a cada uno dependerá del tipo de valor del que se trate.
+    Para cada valor que se ingrese se debe informar el código del medio de pago que lo identifica y, en función del tipo de valor del que se trate, se solicitarán diferentes datos, en forma similar a lo explicado en la ficha Valores.
     No obstante, para 
         medios de pago
-       de tipo cheque recibido y cheque
-        de pago diferido recibido, podrá habilitarse el uso de lectoras
-      de medios de pago que permiten registrar en forma automática los datos
-      consignados en los mismos. Pueden ingresarse automáticamente el Número
-      de Cheque, el Código del Banco Central, el número de Sucursal del
-      Banco y el Código Postal.
-    Es importante destacar que el sistema
-      efectúa un control destinado a evitar que se registre dos veces un
-      mismo valor. A tal efecto, se exhibirá un mensaje de aviso "Valor
-      ya ingresado" o "Ticket ya ingresado" cada vez que
-      por error se lea dos veces el mismo número de medio de pago.
+       de tipo cheque recibido y cheque de pago diferido recibido, podrá habilitarse el uso de lectoras de medios de pago que permiten registrar en forma automática los datos consignados en los mismos. Pueden ingresarse automáticamente el Número de Cheque, el Código del Banco Central, el número de Sucursal del Banco y el Código Postal.
+    Es importante destacar que el sistema efectúa un control destinado a evitar que se registre dos veces un mismo valor. A tal efecto, se exhibirá un mensaje de aviso "Valor ya ingresado" o "Ticket ya ingresado" cada vez que por error se lea dos veces el mismo número de medio de pago.
+    Si el medio de pago es "Tarjeta", solo se egresan cupones de devolución o anulación.
   
    Ficha Observaciones
   
