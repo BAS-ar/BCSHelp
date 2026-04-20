@@ -3,7 +3,42 @@
     "title": "bienvenido",
     "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/bienvenido.htm",
     "pinned": false,
-    "time": "Apr 14, 11:53 AM"
+    "time": "Apr 16, 11:16 AM"
+  }, {
+    "title": "listado__Comprobantes_de_ventas",
+    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/listado__Comprobantes_de_ventas.htm",
+    "pinned": false,
+    "time": "Apr 16, 11:15 AM"
+  }, {
+    "title": "lineas_de_Pedidos_y_Facturas",
+    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/lineas_de_Pedidos_y_Facturas.htm",
+    "pinned": false,
+    "time": "Apr 16, 11:06 AM"
+  }, {
+    "title": "comprobantes_de_venta",
+    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/comprobantes_de_venta.htm",
+    "pinned": false,
+    "time": "Apr 16, 11:04 AM"
+  }, {
+    "title": "tabla__Talonarios",
+    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/tabla__Talonarios.htm",
+    "pinned": false,
+    "time": "Apr 16, 11:04 AM"
+  }, {
+    "title": "tabla__Servicios",
+    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/tabla__Servicios.htm",
+    "pinned": false,
+    "time": "Apr 16, 11:03 AM"
+  }, {
+    "title": "listado__Estadistica_de_ventas",
+    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/listado__Estadistica_de_ventas.htm",
+    "pinned": false,
+    "time": "Apr 15, 4:59 PM"
+  }, {
+    "title": "Manual-Salary",
+    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/assets/css/Manual-Salary.css",
+    "pinned": false,
+    "time": "Apr 15, 4:54 PM"
   }, {
     "title": "consulta_de_cupones",
     "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/consulta_de_cupones.htm",
@@ -89,41 +124,6 @@
     "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/comprobantes_internos_de_caja.htm",
     "pinned": false,
     "time": "Apr 14, 11:05 AM"
-  }, {
-    "title": "tabla__Medios_de_pago",
-    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/tabla__Medios_de_pago.htm",
-    "pinned": false,
-    "time": "Apr 14, 11:02 AM"
-  }, {
-    "title": "tarjetas__Liquidacion",
-    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/tarjetas__Liquidacion.htm",
-    "pinned": false,
-    "time": "Apr 14, 10:59 AM"
-  }, {
-    "title": "tarjetas__Presentacion",
-    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/tarjetas__Presentacion.htm",
-    "pinned": false,
-    "time": "Apr 14, 10:58 AM"
-  }, {
-    "title": "tarjetas__Rechazo_de_cupones",
-    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/tarjetas__Rechazo_de_cupones.htm",
-    "pinned": false,
-    "time": "Apr 14, 10:57 AM"
-  }, {
-    "title": "transferencias_entre_cajas",
-    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/transferencias_entre_cajas.htm",
-    "pinned": false,
-    "time": "Apr 14, 10:52 AM"
-  }, {
-    "title": "comprobantes_de_venta",
-    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/comprobantes_de_venta.htm",
-    "pinned": false,
-    "time": "Apr 13, 3:12 PM"
-  }, {
-    "title": "ordenes_de_pago",
-    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/ordenes_de_pago.htm",
-    "pinned": false,
-    "time": "Apr 13, 3:10 PM"
   }],
   "generate.outputs": {
     "C:/Productos LES RH2022/Bascshelp_test/publish/presets/Test2.preset": {
@@ -165,7 +165,7 @@
     "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/publish/presets/Responsive HTML.preset": {
       "exists": true,
       "path": "C:/Productos LEN RH2022/BASCS/Salidas/index.html",
-      "time": "2026-04-14T11:56:31-03:00",
+      "time": "2026-04-16T11:19:10-03:00",
       "logFile": "C:/Users/admin/AppData/Local/Temp/RHTMP/Responsive HTML.ehtml"
     }
   },
