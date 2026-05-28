@@ -15,8 +15,9 @@
   
     Tabla que se usa para autorizar todos los pedidos internos.
   
-   Ítems determinados
+   Items
   
+     Ítems determinados
     Indicación de si los pedidos internos de ítems determinados requieren o no autorización manual.
      Atributo
     Código de atributo. Debe corresponder a un atributo ya definido en el sistema y aplicable a 
@@ -40,9 +41,11 @@
     Indicación de si los pedidos internos advertidos por stock insuficiente requieren o no autorización manual.
      Tabla de autorizaciones
     Debe informarse el código de la tabla de autorización correspondiente a este caso.
+    
   
-   Por agente
+   Agentes
   
+     Por agente
     Indicación de si los pedidos internos que provienen de agentes determinados requieren o no autorización manual.
     Código
     Código del agente. Debe corresponder a un agente ya definido en el sistema.
@@ -53,8 +56,9 @@
     Esta opción sólo se habilita si se indicó que la autorización manual de pedidos se requiere Por Agente.
     Los pedidos internos efectuados por los agentes informados, requerirán autorización para poder seguir su curso, la forma en que debe efectuarse dicha autorización dependerá de la tabla de autorizaciones que se indique.
   
-   Por Depósito
+   Depósitos
   
+     Por Depósito
     Indicación de si los pedidos internos efectuados por determinados depósitos requieren o no autorización manual.
     Empresa
     Código de la empresa a la que pertenece el depósito que efectúa el pedido interno. Debe corresponder a una empresa ya definida en el sistema.
@@ -66,13 +70,23 @@
     
     El que los pedidos internos efectuados por el depósito indicado requieran autorización o no y la forma en que deberá efectuarse la misma dependerá de la tabla de autorizaciones que se indique.
   
-   Destinatarios
+   Advertidos
   
-    Es posible indicar a quien/es se les envía email cuando un pedido queda totalmente autorizado o rechazado.
+     Advertidos por stock insuficiente
+    Indicación de si los pedidos internos advertidos por stock insuficiente requieren o no autorización manual.
+     Tabla de autorizaciones
+    Debe informarse el código de la tabla de autorización correspondiente a este caso.
+  
+   Avisos
+  
+     Imprimir al autorizar
+    Si está tildado, cuando el comprobante quede totalmente autorizado por los usuarios, si el comprobante aun no ha sido impreso será impreso por el sistema, si el talonario así lo indica.
+    Es posible indicar a quien/es se les envía email cuando el comprobante queda totalmente autorizado o rechazado.
      Al autorizar
-    Una o mas direcciones de email a las que se envía aviso al autorizar totalmente un pedido. Puede indicarse una dirección de email o un tag que permita obtener una dirección de email. Por ejemplo,el tag "Responsable del depósito" indica que se utilice la/s dirección/es de email de el/los usuario/s indicado/s como responsable del depósito del comprobante.
+    Una o mas direcciones de email a las que se envía aviso al autorizar totalmente el comprobante. Puede indicarse una dirección de email o un tag que permita obtener una dirección de email. 
      Al rechazar
-    Una o mas direcciones de email a las que se envía aviso al rechazar totalmente un pedido. Puede indicarse una dirección de email o un tag que permita obtener una dirección de email. Por ejemplo,el tag "Responsable del depósito" indica que se utilice la/s dirección/es de email de el/los usuario/s indicado/s como responsable del depósito del comprobante.
+    Una o mas direcciones de email a las que se envía aviso al rechazar totalmente el comprobante. Puede indicarse una dirección de email o un tag que permita obtener una dirección de email. 
+  
   
   
 

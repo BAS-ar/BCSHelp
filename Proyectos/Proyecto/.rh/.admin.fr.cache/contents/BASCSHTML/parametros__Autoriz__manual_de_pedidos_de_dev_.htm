@@ -14,8 +14,13 @@
   
     Indicación de si se desea que todos los pedidos de devolución se autoricen. La forma en que deber efectuarse la autorización dependerá de la tabla de autorizaciones que se indique.
   
-   Con ítems determinados
+   Ítems
+    
   
+  
+     Con textos varios determinados
+    Permite indicar criterios de autorización por textos varios del tipo importe o porcentaje. Requerirán autorización manual los comprobantes  que se ingresen con algún ítem texto vario de tipo importe o porcentaje y que cumpla además con los demás criterios indicados.
+     Con ítems determinados
     Indicación de si los pedidos de devolución de ítems determinados requieren o no autorización manual.
      Atributo
     Código de atributo. Debe corresponder a un atributo ya definido en el sistema y aplicable a Ítems.
@@ -29,13 +34,11 @@
       determinados.
     
     Los pedidos que incluyan ítems que tengan este valor para el atributo indicado en el campo correspondiente, requerirán autorización para poder ser facturados y la forma en que debe efectuarse la autorización dependerá de la tabla de autorizaciones que se indique.
+    
   
-   Con textos varios determinados
+   Clientes
   
-    Permite indicar criterios de autorización por textos varios del tipo importe o porcentaje. Requerirán autorización manual los comprobantes  que se ingresen con algún ítem texto vario de tipo importe o porcentaje y que cumpla además con los demás criterios indicados.
-  
-   De clientes determinados
-  
+     De clientes determinados
     Indicación de si los pedidos de devolución de clientes determinados requieren o no autorización manual.
      Atributo
     Código de atributo. Debe corresponder a un atributo ya definido en el sistema y aplicable a Clientes.
@@ -50,8 +53,9 @@
     Esta opción sólo se habilita si se indicó que la autorización manual de pedidos de devolución se requiere para Clientes determinados.
     Los pedidos de clientes que tengan este valor para el atributo indicado en el campo anterior, requerirán autorización para poder ser facturados y la forma en que debe efectuarse la autorización dependerá de la tabla de autorizaciones que se indique.
   
-   Con condición de venta determinada
+   Condición
   
+     Con condición de venta determin
     Se debe activar este campo en casi que se desee que los pedidos de devolución se autoricen en base a la condición de venta que tienen asociada.
      Tabla de condiciones de venta
     Se debe indicar las condiciones de venta que requieren de autorización y, para cada una de ellas, la correspondiente tabla de autorizaciones.
@@ -61,6 +65,18 @@
     Una o mas direcciones de email a las que se envía aviso al autorizar totalmente un pedido. Puede indicarse una dirección de email o un tag que permita obtener una dirección de email. Por ejemplo,el tag "Vendedor" indica que se utilice la dirección de email del vendedor del comprobante.
      Al rechazar
     Una o mas direcciones de email a las que se envía aviso al rechazar totalmente un pedido. Puede indicarse una dirección de email o un tag que permita obtener una dirección de email. Por ejemplo,el tag "Vendedor" indica que se utilice la dirección de email del vendedor del comprobante.
+  
+   Avisos
+  
+     Imprimir al autorizar
+    Si está tildado, cuando el comprobante quede totalmente autorizado por los usuarios, si el comprobante aun no ha sido impreso será impreso por el sistema, si el talonario así lo indica.
+    Es posible indicar a quien/es se les envía email cuando el comprobante queda totalmente autorizado o rechazado.
+     Al autorizar
+    Una o mas direcciones de email a las que se envía aviso al autorizar totalmente el comprobante. Puede indicarse una dirección de email o un tag que permita obtener una dirección de email. 
+     Al rechazar
+    Una o mas direcciones de email a las que se envía aviso al rechazar totalmente el comprobante. Puede indicarse una dirección de email o un tag que permita obtener una dirección de email. 
+  
+  
   
   
 

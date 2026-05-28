@@ -22,8 +22,9 @@
   
     Tabla que se utiliza para autorizar todas las notas de crédito.
   
-   Con ítems determinados
+   Items
   
+     Con ítems determinados
     Indicación de si las notas de crédito por devolución de ítems determinados requieren o no autorización manual.
      Atributo
     Código de atributo. Debe corresponder a un atributo ya definido en el sistema y aplicable a 
@@ -39,13 +40,12 @@
       determinados.
     
     Las notas de crédito que incluyan ítems que tengan este valor para el atributo indicado en el campo correspondiente, requerirán autorización y la forma en que debe efectuarse la misma dependerá de la tabla de autorizaciones que se indique.
-  
-  Con textos varios determinados
-  
+     Con textos varios determinados
     Permite indicar criterios de autorización por textos varios del tipo importe o porcentaje. Requerirán autorización manual los comprobantes  que se ingresen con algún ítem texto vario de tipo importe o porcentaje y que cumpla además con los demás criterios indicados.
   
-   De clientes determinados
+   Clientes
   
+     De clientes determinados
     Indicación de si las notas de crédito que tengan como titulares a clientes determinados requieren o no autorización manual.
      Atributo
     Código de atributo. Debe corresponder a un atributo ya definido en el sistema y aplicable a Clientes.
@@ -59,14 +59,17 @@
     Valor del atributo cuyo código se indicó en el campo anterior.
     Esta opción sólo se habilita si se indicó que la autorización manual de notas de crédito se requiere para Clientes determinados.
     Las notas de crédito que tengan este valor para el atributo indicado en el campo anterior, requerirán autorización y la forma en que debe efectuarse la misma dependerá de la tabla de autorizaciones que se indique.
+    
   
-   Destinatarios
+   Avisos
   
-    Es posible indicar a quien/es se les envía email cuando una nota de crédito queda totalmente autorizada o rechazada.
+     Imprimir al autorizar
+    Si está tildado, cuando el comprobante quede totalmente autorizado por los usuarios, si el comprobante aun no ha sido impreso será impreso por el sistema, si el talonario así lo indica.
+    Es posible indicar a quien/es se les envía email cuando el comprobante queda totalmente autorizado o rechazado.
      Al autorizar
-    Una o mas direcciones de email a las que se envía aviso al autorizar totalmente una nota de crédito. Puede indicarse una dirección de email o un tag que permita obtener una dirección de email. Por ejemplo,el tag "Vendedor" indica que se utilice la dirección de email del vendedor del comprobante.
+    Una o mas direcciones de email a las que se envía aviso al autorizar totalmente el comprobante. Puede indicarse una dirección de email o un tag que permita obtener una dirección de email. 
      Al rechazar
-    Una o mas direcciones de email a las que se envía aviso al rechazar totalmente  una nota de crédito. Puede indicarse una dirección de email o un tag que permita obtener una dirección de email. Por ejemplo,el tag "Vendedor" indica que se utilice la dirección de email del vendedor del comprobante.
+    Una o mas direcciones de email a las que se envía aviso al rechazar totalmente el comprobante. Puede indicarse una dirección de email o un tag que permita obtener una dirección de email. 
   
   
 

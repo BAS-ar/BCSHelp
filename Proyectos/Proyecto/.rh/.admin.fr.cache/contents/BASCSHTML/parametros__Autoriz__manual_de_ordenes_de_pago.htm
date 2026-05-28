@@ -14,8 +14,9 @@
   
     Código de la tabla de autorización.
   
-   De proveedores determinados
+   Proveedores
   
+     De proveedores determinados
     Indicación de si las ordenes de pago efectuadas a determinados proveedores o Agentes requieren o no autorización manual.
      Atributo
     Código de atributo. Debe corresponder a un atributo ya definido en el sistema y aplicable a proveedores.
@@ -26,9 +27,14 @@
     Valor del atributo cuyo código se indicó en el campo anterior.
     Esta opción sólo se habilita si se indicó que la autorización manual de ordenes de pago se requiere que sean de De proveedores determinados.
     Los ordenes de pago efectuadas a proveedores que tengan este valor para el atributo indicado en el campo anterior, requerirán autorización para poder seguir su curso y la forma en que debe efectuarse la autorización dependerá de la tabla de autorizaciones que se indique.
+    
   
-   De clientes determinados
+   Clientes
   
+     De clientes determinados
+    
+      
+    
     Indicación de si las ordenes de pago efectuadas a determinados clientes requieren o no autorización manual.
      Atributo
     Código de atributo. Debe corresponder a un atributo ya definido en el sistema y aplicable a clientes.
@@ -40,14 +46,26 @@
     Esta opción sólo se habilita si se indicó que la autorización manual de ordenes de pago se requiere que sean De clientes determinados.
     Los ordenes de pago efectuadas a clientes que tengan este valor para el atributo indicado en el campo anterior, requerirán autorización para poder seguir su curso y la forma en que debe efectuarse la autorización dependerá de la tabla de autorizaciones que se indique.
   
-   De agentes determinados
+   Agentes
   
+     De agentes determinados
     Indicación de si las ordenes de pago de agentes determinados requieren o no autorización manual.
      Tabla de agentes
     Código
     Código del agente. Debe corresponder a un agente  ya definido en el sistema Agentes.
     Esta opción sólo se habilita si se indicó que la autorización manual de ordenes de pago De agentes determinados.
     Las ordenes de pago efectuadas por el agente indicado serán tenidos en cuenta para decidir si la orden de pago requiere o no autorización. El que la requieran o no y la forma en que deberá efectuarse la misma dependerá de la tabla de autorizaciones que se indique para cada uno de dichos valores.
+  
+   Avisos
+  
+     Imprimir al autorizar
+    Si está tildado, cuando el comprobante quede totalmente autorizado por los usuarios, si el comprobante aun no ha sido impreso será impreso por el sistema, si el talonario así lo indica.
+    Es posible indicar a quien/es se les envía email cuando el comprobante queda totalmente autorizado o rechazado.
+     Al autorizar
+    Una o mas direcciones de email a las que se envía aviso al autorizar totalmente el comprobante. Puede indicarse una dirección de email o un tag que permita obtener una dirección de email. 
+     Al rechazar
+    Una o mas direcciones de email a las que se envía aviso al rechazar totalmente el comprobante. Puede indicarse una dirección de email o un tag que permita obtener una dirección de email. 
+  
   
   
 

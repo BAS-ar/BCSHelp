@@ -14,8 +14,9 @@
   
     Tabla que se usa para autorizar todas los requerimientos de compra.
   
-   Con Ítems determinados
+   Items
   
+     Con Ítems determinados
     Indicación de si los requerimientos que incluyen determinados ítems requieren o no autorización manual.
      Atributo
     Debe corresponder a un atributo ya definido en el sistema y aplicable a 
@@ -35,22 +36,28 @@
       determinados.
     
     Los requerimientos que incluyan ítems que tengan este valor para el atributo indicado en el campo correspondiente, requerirán autorización para poder continuar su curso, la forma en que debe efectuarse la autorización dependerá de la tabla de autorizaciones que se indique.
+    
   
-   Por grupo de compra
+   Grupo de compra
   
+     Por grupo de compra
     Permite parametrizar el sistema de modo que los requerimientos de compra requieren de autorización si incluyen ítems que pertenecen a determinados grupos de compras.
     Grupo
     Código del grupo de compras correspondiente alguno/s de los ítems que integran el requerimiento.
     Esta opción sólo se habilita si se indicó que la autorización manual Por grupo de compra.
     El que los requerimientos que incluyan ítems que correspondan al grupo de compras indicado requieran autorización o no y la forma en que deberá efectuarse la misma dependerá de la tabla de autorizaciones que se indique para cada grupo.
+    
   
-   Destinatarios
+   Avisos
   
-    Es posible indicar a quien/es se les envía email cuando un requerimiento queda totalmente autorizado o rechazado.
+     Imprimir al autorizar
+    Si está tildado, cuando el comprobante quede totalmente autorizado por los usuarios, si el comprobante aun no ha sido impreso será impreso por el sistema, si el talonario así lo indica.
+    Es posible indicar a quien/es se les envía email cuando el comprobante queda totalmente autorizado o rechazado.
      Al autorizar
-    Una o mas direcciones de email a las que se envía aviso al autorizar totalmente un requerimiento de compra. Puede indicarse una dirección de email o un tag que permita obtener una dirección de email. Por ejemplo,el tag "Requerido por" indica que se utilice la dirección de email del agente asociado al comprobante.
+    Una o mas direcciones de email a las que se envía aviso al autorizar totalmente el comprobante. Puede indicarse una dirección de email o un tag que permita obtener una dirección de email. 
      Al rechazar
-    Una o mas direcciones de email a las que se envía aviso al rechazar totalmente un requerimiento de compra. Puede indicarse una dirección de email o un tag que permita obtener una dirección de email. Por ejemplo,el tag "Requerido por" indica que se utilice la dirección de email del agente comprador del comprobante.
+    Una o mas direcciones de email a las que se envía aviso al rechazar totalmente el comprobante. Puede indicarse una dirección de email o un tag que permita obtener una dirección de email. 
+  
   
   
 
