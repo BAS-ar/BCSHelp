@@ -86,73 +86,83 @@
     Talonario
     Trimestre
     Vendedor
-    Según el dato que se seleccione la información de las compras efectuadas se detallará por ítem, atributo, comprador, condición de compra o rubro y subrubro y se incluirán subtotales para cada ítem, atributo, comprador, condición, etc., según el dato elegido.
-    Si se selecciona atributo de proveedor o de ítem, podrá indicarse un código de atributo para analizar la información según los valores de dicho atributo. Por ejemplo, si se indica un atributo de proveedores, la información de las compras efectuadas se agrupará para cada valor de ese atributo.
-    Por ejemplo, si en el primer nivel se indica condición de compra, en el segundo se indica proveedor y en el tercer nivel se indica ítem, se obtendrá para cada condición el detalle de las compras efectuadas agrupadas por proveedor y se detallarán los ítems comprados a cada uno. Se incluirán subtotales para cada condición, y para cada proveedor al que se le hayan efectuado compras con dicha condición.
+    Según el dato que se seleccione la información de las ventas efectuadas se detallará por ítem, atributo,  condición de venta, rubro, etc. y se incluirán subtotales para cada uno, según el dato elegido.
+    Si se selecciona atributo de cliente o de ítem, podrá indicarse un código de atributo para analizar la información según los valores del mismo. 
+    Por ejemplo, si en el primer nivel se indica condición de venta, en el segundo se indica cliente y en el tercer nivel se indica ítem, se obtendrá para cada condición el detalle de las ventas efectuadas agrupadas por cliente y se detallarán los ítems vendidos cada uno. Se incluirán subtotales para cada condición, y para cada cliente al que se le hayan efectuado ventas con dicha condición.
      Atributo
-    Si en el campo Por se selecciona Atributo de item o Atributo de proveedor este campo se habilita para indicar el atributo deseado.
+    Si en el campo Por se selecciona Atributo de item o Atributo de cliente este campo se habilita para indicar el atributo deseado.
      Nivel 2
      Nivel 2
     Este nivel es optativo y permite agrupar la información con más detalle para cada uno de los valores del dato del nivel 1.
      Cambio de hoja
     Indicación de si se desea efectuar un cambio de hoja cada vez que cambia el contenido del campo seleccionado en cada nivel.
      Tabular
-    Si se tilda esta opción se habilita el campo Títulos.
+    Si se tilda esta opción se habilita el campo Títulos, que solo aplica para items con medidas o colores.
+    También es posible detallar en forma tabular los niveles año, trimestre, mes y día. En estos casos no es posible indicar títulos.
      Títulos
     En este campo se indica la tabla de títulos a través de la cual se detallará la información a contener en el informe.
     Si se indica una tabla de títulos para cada ítem y por definición su tabla de medidas está incluida en alguna de las filas de tabla de títulos indicada, y la medida aparece entre las que se definieron para esa fila en la tabla; la cantidad se encolumnará bajo dicha medida. En caso contrario dicha cantidad se incluirá en la columna que corresponde a cantidades cuya medida no está en la tabla de títulos.
      Por
     Para cada nivel debe seleccionarse una de las siguientes opciones:
     Año
-    Mes
-    Trimestre
-    Ítem
+    Atributo de cliente
     Atributo de ítem
-    Colores
-    Medidas
+    Cliente
+    Color
     Colores y medidas
-    Proveedor
-    Atributo de proveedor
-    Comprador
-    Condición de compra
+    Condición de venta
+    Día
+    Ítem
+    Medida
+    Mes
+    Medio de pago
     Rubro
     Subrubro
+    Subdiario
     Sucursal
-    Sucursal de recepción (sólo si no se ha seleccionado como nivel Medios de pago)
+    Sucursal de entrega/recepción (sólo si no se ha seleccionado como nivel Medios de pago)
+    Talonario
+    Trimestre
+    Vendedor 
     La opción Subrubro sólo se activará en caso de haber seleccionado la opción Rubro en un nivel anterior. Es por eso que sólo se cuenta con dicho campo a partir del segundo nivel.
     En el caso de indicar "Sucursal de recepción" como nivel se podrá emitir en forma tabular, tildando el check box Tabular correspondiente al nivel, cuando se indiquen al menos dos niveles y sólo se indique una columna que no sea del tipo "Sólo total".
      Atributo
-    Si en el campo Por se selecciona Atributo de item o Atributo de proveedor este campo se habilita para indicar el atributo deseado.
+    Si en el campo Por se selecciona Atributo de item o Atributo de cliente este campo se habilita para indicar el atributo deseado.
      Nivel 3
      Nivel 3
     Este nivel es optativo y permite agrupar la información con más detalle para cada uno de los valores del dato del nivel 1.
      Tabular
-    Si se tilda esta opción se habilita el campo Títulos.
+    Si se tilda esta opción se habilita el campo Títulos, que solo aplica para items con medidas o colores.
+    También es posible detallar en forma tabular los niveles año, trimestre, mes y día. En estos casos no es posible indicar títulos.
      Títulos
-    En este campo se indica la tabla de títulos a través de la cual se detallará la información a contener en el informe.
+    En este campo se indica la tabla de títulos a través de la cual se detallará la información a contener en el informe. Solo aplica para items con tabla de medidas.
     Si se indica una tabla de títulos para cada ítem y por definición su tabla de medidas está incluida en alguna de las filas de tabla de títulos indicada, y la medida aparece entre las que se definieron para esa fila en la tabla; la cantidad se encolumnará bajo dicha medida. En caso contrario dicha cantidad se incluirá en la columna que corresponde a cantidades cuya medida no está en la tabla de títulos.
-     Por
+      Por
     Para cada nivel debe seleccionarse una de las siguientes opciones:
     Año
-    Mes
-    Trimestre
-    Ítem
+    Atributo de cliente
     Atributo de ítem
-    Colores
-    Medidas
+    Cliente
+    Color
     Colores y medidas
-    Proveedor
-    Atributo de proveedor
-    Comprador
-    Condición de compra
+    Condición de venta
+    Día
+    Ítem
+    Medida
+    Mes
+    Medio de pago
     Rubro
     Subrubro
+    Subdiario
     Sucursal
-    Sucursal de recepción (sólo si no se ha seleccionado como nivel Medios de pago)
+    Sucursal de entrega/recepción (sólo si no se ha seleccionado como nivel Medios de pago)
+    Talonario
+    Trimestre
+    Vendedor
     La opción Subrubro sólo se activará en caso de haber seleccionado la opción Rubro en un nivel anterior. Es por eso que sólo se cuenta con dicho campo a partir del segundo nivel.
     En el caso de indicar "Sucursal de recepción" como nivel se podrá emitir en forma tabular, tildando el check box Tabular correspondiente al nivel, cuando se indiquen al menos dos niveles y sólo se indique una columna que no sea del tipo "Sólo total".
      Atributo
-    Si en el campo Por se selecciona Atributo de item o Atributo de proveedor este campo se habilita para indicar el atributo deseado.
+    Si en el campo Por se selecciona Atributo de item o Atributo de cliente este campo se habilita para indicar el atributo deseado.
   
    Ficha Clientes
    Ficha Ítems

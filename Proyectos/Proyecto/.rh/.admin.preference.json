@@ -3,7 +3,22 @@
     "title": "bienvenido",
     "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/bienvenido.htm",
     "pinned": false,
-    "time": "May 28, 4:47 PM"
+    "time": "Jun 18, 10:17 AM"
+  }, {
+    "title": "listado__Estadistica_de_produccion",
+    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/listado__Estadistica_de_produccion.htm",
+    "pinned": false,
+    "time": "Jun 18, 10:10 AM"
+  }, {
+    "title": "listado__Estadistica_de_ventas",
+    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/listado__Estadistica_de_ventas.htm",
+    "pinned": false,
+    "time": "Jun 18, 10:07 AM"
+  }, {
+    "title": "listado__Estadistica_de_compras",
+    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/listado__Estadistica_de_compras.htm",
+    "pinned": false,
+    "time": "Jun 18, 10:07 AM"
   }, {
     "title": "consulta_de_comprobantes",
     "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/consulta_de_comprobantes.htm",
@@ -105,25 +120,10 @@
     "pinned": false,
     "time": "Apr 16, 11:03 AM"
   }, {
-    "title": "listado__Estadistica_de_ventas",
-    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/listado__Estadistica_de_ventas.htm",
-    "pinned": false,
-    "time": "Apr 15, 4:59 PM"
-  }, {
     "title": "Manual-Salary",
     "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/assets/css/Manual-Salary.css",
     "pinned": false,
     "time": "Apr 15, 4:54 PM"
-  }, {
-    "title": "consulta_de_cupones",
-    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/consulta_de_cupones.htm",
-    "pinned": false,
-    "time": "Apr 14, 11:50 AM"
-  }, {
-    "title": "consulta_de_proveedores",
-    "path": "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/contents/BASCSHTML/consulta_de_proveedores.htm",
-    "pinned": false,
-    "time": "Apr 14, 11:45 AM"
   }],
   "generate.outputs": {
     "C:/Productos LES RH2022/Bascshelp_test/publish/presets/Test2.preset": {
@@ -165,7 +165,7 @@
     "C:/Productos LEN RH2022/BASCS/Proyectos/Proyecto/publish/presets/Responsive HTML.preset": {
       "exists": true,
       "path": "C:/Productos LEN RH2022/BASCS/Salidas/index.html",
-      "time": "2026-05-28T16:50:38-03:00",
+      "time": "2026-06-18T10:20:38-03:00",
       "logFile": "C:/Users/admin/AppData/Local/Temp/RHTMP/Responsive HTML.ehtml"
     }
   },
