@@ -145,6 +145,7 @@
    Ficha Valores
   Mediante esta ficha se ingresan, uno a uno, los valores que conforman el pago. Es decir, los valores en efectivo, los cheques (propios o de terceros), los documentos, las facturas de crédito, etc.
   Los valores ingresan al comprobante invocando códigos de medios de pago . La información a asociar a cada uno dependerá del tipo de valor del que se trate.
+  Se pueden registrar cheques de terceros con números de cheques ya registrados. 
   Si está activada la opción Aplicación automática en Ordenes de Pago en los Parámetros de Cuentas corrientes, esta es la ficha que se presenta en pantalla al ingresar a la tarea.
   Esta observación puede parecer innecesaria si se piensa que, independientemente de la ficha que se ofrece, un simple "click" permite cambiarla.
   Pero acá se nos está insinuando (sobre todo en pagos a proveedores), la forma de trabajo correspondiente a aplicación
@@ -160,134 +161,50 @@
    Tabla de valores
   
     Código
-    Código de medio
-        de pago correspondiente al valor que se entrega.
-    El tipo de medio de pago que se ingrese
-      define la forma en que se solicitarán los datos de la línea de la
-      orden de pago.
-    A medida que se ingresan líneas en
-      la orden de pago se va acumulando en el campo Total
-      el importe total de los valores entregados.
-    Cada vez que se ingrese un medio de
-      pago, si la imputación contable asociada
-      al medio de pago (recordemos que esta depende además de la caja en
-      la cual se ingresa el comprobante) trabaja en moneda extranjera, se
-      solicitará además el ingreso del importe en esta moneda y del cambio
-      correspondiente a la misma.
-    En este caso puede ingresarse el importe
-      en moneda local y el cambio, y el sistema calcula automáticamente
-      el importe en moneda extranjera; o si se ingresan los 2 importes el
-      sistema calcula el cambio resultante.
-    Los detalles de cómo trabaja cada
-      medio de pago en particular, pueden verse en el apartado correspondiente
-      a las tablas de medios de pago
-      . Aquí se explica la forma en que se solicitan los datos a ingresar
-      en función del tipo de valor del medio de pago:
+    Código de medio de pago correspondiente al valor que se entrega.
+    El tipo de medio de pago que se ingrese define la forma en que se solicitarán los datos de la línea de la orden de pago.
+    A medida que se ingresan líneas en la orden de pago se va acumulando en el campo Total el importe total de los valores entregados.
+    Cada vez que se ingrese un medio de pago, si la imputación contable asociada al medio de pago (recordemos que esta depende además de la caja en la cual se ingresa el comprobante) trabaja en moneda extranjera, se solicitará además el ingreso del importe en esta moneda y del cambio correspondiente a la misma.
+    En este caso puede ingresarse el importe en moneda local y el cambio, y el sistema calcula automáticamente el importe en moneda extranjera; o si se ingresan los 2 importes el sistema calcula el cambio resultante.
+    Los detalles de cómo trabaja cada medio de pago en particular, pueden verse en el apartado correspondiente a las tablas de medios de pago . Aquí se explica la forma en que se solicitan los datos a ingresar en función del tipo de valor del medio de pago:
     Efectivo:
-    Se solicita el ingreso del importe
-      que se entrega.
+    Se solicita el ingreso del importe que se entrega.
     
-      Cheque
-        emitido / Cheque pago diferido emitido:
+      Cheque emitido / Cheque pago diferido emitido:
     
-    En este caso se abre una ventana que
-      solicita el ingreso de la cuenta bancaria, chequera, número, fecha,
-      plazo, a la orden de, observaciones e importes.
-    La única diferencia entre ambos tipos
-      de valores es que en el ingreso de los cheques se solicita sólo el
-      plazo de acreditación, mientras que en el de los cheques diferidos
-      se solicita además la fecha de pago.
-    El valor que se ofrece en chequera
-      corresponde al que se ha informado "Por defecto" para la
-      cuenta bancaria invocada. El que se ofrece como número, es el que
-      figura en el campo próximo número para la chequera en cuestión. Ambas
-      opciones pueden ser modificadas por el usuario.
-    Al finalizar el ingreso de los datos
-      del cheque se debe grabar para aprobar los datos ingresados. En este
-      momento la ventana se cierra y se muestran en la línea de la orden
-      de pago desde la cual se ingresó el medio de pago, el importe del
-      cheque, su fecha y su número.
-    Si se indica una chequera electrónica,
-      se habilitan los campos Multicheque e Identificador del cheque electrónico.
-    
-    En el caso de multicheque se solicita
-      el campo Partes, pudiéndose indicar hasta 10 partes. Las partes serán
-      como cheques independientes todos con el mismo importe, identificador
-      y fecha de cobro.
+    En este caso se abre una ventana que solicita el ingreso de la cuenta bancaria, chequera, número, fecha, plazo, a la orden de, observaciones e importes.
+    La única diferencia entre ambos tipos de valores es que en el ingreso de los cheques se solicita sólo el plazo de acreditación, mientras que en el de los cheques diferidos se solicita además la fecha de pago.
+    El valor que se ofrece en chequera corresponde al que se ha informado "Por defecto" para la cuenta bancaria invocada. El que se ofrece como número, es el que figura en el campo próximo número para la chequera en cuestión. Ambas opciones pueden ser modificadas por el usuario.
+    Al finalizar el ingreso de los datos del cheque se debe grabar para aprobar los datos ingresados. En este momento la ventana se cierra y se muestran en la línea de la orden de pago desde la cual se ingresó el medio de pago, el importe del cheque, su fecha y su número.
+    Si se indica una chequera electrónica, se habilitan los campos Multicheque e Identificador del cheque electrónico.
+    En el caso de multicheque se solicita el campo Partes, pudiéndose indicar hasta 10 partes. Las partes serán como cheques independientes todos con el mismo importe, identificador y fecha de cobro.
     Pagaré emitido:
-    En este caso se abre una ventana que
-      solicita el ingreso de la fecha de emisión del documento, la fecha
-      de vencimiento, si es directo o no, las observaciones y el importe.
-    Al finalizar el ingreso de los datos
-      del documento se debe grabar para aprobar los datos ingresados. En
-      este momento la ventana se cierra y se muestran en la línea de la
-      orden de pago desde la cual se ingresó el medio de pago, el importe
-      del documento y su fecha de vencimiento.
+    En este caso se abre una ventana que solicita el ingreso de la fecha de emisión del documento, la fecha de vencimiento, si es directo o no, las observaciones y el importe.
+    Al finalizar el ingreso de los datos del documento se debe grabar para aprobar los datos ingresados. En este momento la ventana se cierra y se muestran en la línea de la orden de pago desde la cual se ingresó el medio de pago, el importe del documento y su fecha de vencimiento.
     Tarjeta:
-    En este caso se abre una ventana que
-      muestra la lista de cupones en cartera posibles de seleccionar.
-    Se muestra para cada cupón su número,
-      fecha, datos de la tarjeta e importe.
-    Puede seleccionarse un solo cupón
-      o varios haciendo doble click
-      en las filas correspondientes a los cupones buscados. Los cupones
-      seleccionados quedan marcados en la ventana y al pulsar el botón Ok situado en la parte inferior
-      de la ventana, se cierra la ventana de cupones en cartera, y se agregan
-      en la orden de pago tantas líneas como cupones se hayan seleccionado.
+    En este caso se abre una ventana que muestra la lista de cupones en cartera posibles de seleccionar.
+    Se muestra para cada cupón su número, fecha, datos de la tarjeta e importe.
+    Puede seleccionarse un solo cupón o varios haciendo doble click en las filas correspondientes a los cupones buscados. Los cupones seleccionados quedan marcados en la ventana y al pulsar el botón Ok situado en la parte inferior de la ventana, se cierra la ventana de cupones en cartera, y se agregan en la orden de pago tantas líneas como cupones se hayan seleccionado.
+    Es posible egresar tanto cupones en cartera como cupones de devolución, siempre y cuando se encuentre tildada la opcion  de "Permite egresar cupones en comprobantes internos de caja y ordenes de pago" en los Parámetros generales.
+    Si se indica que se permite egresar cupones en este comprobante, es posible ingresar cupones de devolución asociados a un cupón de compra, o egresar cupones de compra en cartera. En este caso, la ventana de ingreso de cupones de devolución muestra dos solapas:
+      •    Devolución: Donde se ingresan los datos del cupón de devolución.
+      •   Egreso: Mediante un botón se pueden buscar los cupones de compra en cartera y se permite la selección de uno o varios de ellos. 
     Pago por banco:
-    Este medio de pago permite registrar
-      los pagos que se realizan a través de débitos bancarios. Se utiliza
-      por ejemplo, para efectuar pagos a proveedores del exterior mediante
-      débitos bancarios.
-    Se abre una ventana que solicita el
-      ingreso del código de cuenta bancaria, el número de comprobante, fecha,
-      observaciones e importes.
-    Al finalizar el ingreso de la información
-      en la ventana se debe grabar para aprobar los datos ingresados. En
-      este momento la ventana de Pago por
-        banco se cierra y se muestran en la línea de la orden de pago
-      desde la cual se ingresó el medio de pago, el importe, la fecha y
-      el número.
+    Este medio de pago permite registrar los pagos que se realizan a través de débitos bancarios. Se utiliza por ejemplo, para efectuar pagos a proveedores del exterior mediante débitos bancarios.
+    Se abre una ventana que solicita el ingreso del código de cuenta bancaria, el número de comprobante, fecha, observaciones e importes.
+    Al finalizar el ingreso de la información en la ventana se debe grabar para aprobar los datos ingresados. En este momento la ventana de Pago por banco se cierra y se muestran en la línea de la orden de pago desde la cual se ingresó el medio de pago, el importe, la fecha y el número.
     
-      Cheque
-        recibido / Cheque pago diferido recibido:
+      Cheque recibido / Cheque pago diferido recibido:
     
-    En este caso se abre una ventana que
-      muestra la lista de cheques recibidos del titular de la orden de pago,
-      posibles de seleccionar. Si se desea que se exhiban todos los cheques
-      recibidos, bastará con marcar la opción Todos
-      que se encuentra un la parte superior derecha de la ventana.
-    Se muestra para cada cheque su fecha,
-      banco , número, cuenta corriente,
-      plazo, importe y tipo y número de documento del librador. Los datos
-      del tipo y número de documento que se informan pueden modificarse
-      desde la consulta de cheques, en relación al valor del que se trate.
-    
-    Puede seleccionarse un solo cheque
-      o varios haciendo doble click
-      en las filas correspondientes a los cheques buscados. Los cheques
-      seleccionados quedan marcados en la ventana y al pulsar el botón Ok situado en la parte inferior
-      de la ventana, se cierra la ventana de cheques en cartera, y se agregan
-      en la orden de pago tantas líneas como cheques se hayan seleccionado.
-    Factura de crédito a cobrar
-      (En desuso):
-    En este caso se abre una ventana de
-      búsqueda y selección que exhibe las FC
-      en cartera (aceptadas por los cliertes).
-    Factura de crédito a pagar
-      (En desuso):
-    En este caso se abre una ventana que
-      solicita el ingreso de una serie de datos relativos a la FC
-      emitidas por el proveedor. Estos
-      son: prefijo, número, fechas de emisión y vencimiento, importes y
-      observaciones.
-    Si antes de ingresar las FC desde
-      esta ficha, se aplica la orden de pago a una factura de compra que
-      generó FC a pagar, se precargarán en forma automática las FC recibidas
-      con dicha factura.
-    Las FC que se incluyen en una orden
-      de pago pasan al estado de FC a pagar
-      formando parte del informe de valores entregados.
+    En este caso se abre una ventana que muestra la lista de cheques recibidos del titular de la orden de pago, posibles de seleccionar. Si se desea que se exhiban todos los cheques recibidos, bastará con marcar la opción Todos que se encuentra un la parte superior derecha de la ventana.
+    Se muestra para cada cheque su fecha, banco , número, cuenta corriente, plazo, importe y tipo y número de documento del librador. Los datos del tipo y número de documento que se informan pueden modificarse desde la consulta de cheques, en relación al valor del que se trate.
+    Puede seleccionarse un solo cheque o varios haciendo doble click en las filas correspondientes a los cheques buscados. Los cheques seleccionados quedan marcados en la ventana y al pulsar el botón Ok situado en la parte inferior de la ventana, se cierra la ventana de cheques en cartera, y se agregan en la orden de pago tantas líneas como cheques se hayan seleccionado.
+    Factura de crédito a cobrar (En desuso):
+    En este caso se abre una ventana de búsqueda y selección que exhibe las FC en cartera (aceptadas por los cliertes).
+    Factura de crédito a pagar (En desuso):
+    En este caso se abre una ventana que solicita el ingreso de una serie de datos relativos a la FC emitidas por el proveedor. Estos son: prefijo, número, fechas de emisión y vencimiento, importes y observaciones.
+    Si antes de ingresar las FC desde esta ficha, se aplica la orden de pago a una factura de compra que generó FC a pagar, se precargarán en forma automática las FC recibidas con dicha factura.
+    Las FC que se incluyen en una orden de pago pasan al estado de FC a pagar formando parte del informe de valores entregados.
      
   
    Ficha Retención de Ganancias

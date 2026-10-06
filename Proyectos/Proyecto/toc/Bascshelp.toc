@@ -225,6 +225,7 @@
   <page href="../contents/BASCSHTML/adjuntos.htm" format="html" processing-role="normal"></page>
   <page navtitle="Efect. de mesa de saldos" href="../contents/BASCSHTML/efectivizacion_de_mesa_de_saldos.htm" format="html" processing-role="normal"></page>
   <page href="../contents/BASCSHTML/valuacion.htm" format="html" processing-role="normal"></page>
+  <page href="../contents/BASCSHTML/gestion_de_cupones.htm" format="html" processing-role="normal"></page>
   <book navtitle="Cuenta Corriente" format="html" processing-role="normal">
     <page href="../contents/BASCSHTML/aplicaciones_de_cuentas_corrientes.htm" format="html" processing-role="normal"></page>
     <page navtitle="Cancelación automática de saldos" href="../contents/BASCSHTML/cancelacion_automatica_de_saldos.htm" format="html" processing-role="normal"></page>
